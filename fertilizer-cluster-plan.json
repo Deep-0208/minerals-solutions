@@ -1,0 +1,185 @@
+{
+  "pillar": {
+    "title": "Fertilizer Granulation Plants & Biomass Pellet Machinery",
+    "keyword": "fertilizer granulation plant manufacturer",
+    "volume": 2100,
+    "template": "ultimate-guide",
+    "wordCount": 3400,
+    "url": "/products/granulation-pellet-plants/"
+  },
+  "clusters": [
+    {
+      "name": "Fertilizer Pan & Disc Granulation",
+      "color": "#1e3a5f",
+      "posts": [
+        {
+          "title": "Pan Disc Fertilizer Granulation Machine",
+          "keyword": "pan disc fertilizer granulator manufacturer ahmedabad",
+          "volume": 1100,
+          "template": "landing-page",
+          "wordCount": 1800,
+          "url": "/products/granulation-pellet-plants/disc-granulator/",
+          "status": "planned"
+        },
+        {
+          "title": "Turnkey Fertilizer Granulation Plant",
+          "keyword": "npk organic fertilizer granulation plant india",
+          "volume": 850,
+          "template": "landing-page",
+          "wordCount": 1800,
+          "url": "/products/granulation-pellet-plants/fertilizer-plant/",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "name": "Biomass Pellet Processing",
+      "color": "#59a14f",
+      "posts": [
+        {
+          "title": "Agro Waste Biomass Pellet Mill",
+          "keyword": "biomass pellet making machine manufacturer gujarat",
+          "volume": 1200,
+          "template": "landing-page",
+          "wordCount": 1600,
+          "url": "/products/granulation-pellet-plants/biomass-pellet-mill/",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "name": "Pellet Mill Tooling & Spares",
+      "color": "#f28e2b",
+      "posts": [
+        {
+          "title": "Pellet Mill Ring Dies & Flat Dies",
+          "keyword": "pellet mill die manufacturer india",
+          "volume": 720,
+          "template": "landing-page",
+          "wordCount": 1400,
+          "url": "/products/granulation-pellet-plants/pellet-mill-die/",
+          "status": "planned"
+        },
+        {
+          "title": "Pellet Mill Roller Shell Assembly",
+          "keyword": "pellet mill roller shell assembly",
+          "volume": 650,
+          "template": "landing-page",
+          "wordCount": 1400,
+          "url": "/products/granulation-pellet-plants/pellet-mill-roller-assembly/",
+          "status": "planned"
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "from": "cluster-0-post-0",
+      "to": "pillar",
+      "type": "mandatory",
+      "anchor": "fertilizer granulation plant manufacturer"
+    },
+    {
+      "from": "pillar",
+      "to": "cluster-0-post-0",
+      "type": "mandatory",
+      "anchor": "pan disc fertilizer granulator manufacturer ahmedabad"
+    },
+    {
+      "from": "cluster-0-post-1",
+      "to": "pillar",
+      "type": "mandatory",
+      "anchor": "fertilizer granulation plant manufacturer"
+    },
+    {
+      "from": "pillar",
+      "to": "cluster-0-post-1",
+      "type": "mandatory",
+      "anchor": "npk organic fertilizer granulation plant india"
+    },
+    {
+      "from": "cluster-1-post-0",
+      "to": "pillar",
+      "type": "mandatory",
+      "anchor": "fertilizer granulation plant manufacturer"
+    },
+    {
+      "from": "pillar",
+      "to": "cluster-1-post-0",
+      "type": "mandatory",
+      "anchor": "biomass pellet making machine manufacturer gujarat"
+    },
+    {
+      "from": "cluster-2-post-0",
+      "to": "pillar",
+      "type": "mandatory",
+      "anchor": "fertilizer granulation plant manufacturer"
+    },
+    {
+      "from": "pillar",
+      "to": "cluster-2-post-0",
+      "type": "mandatory",
+      "anchor": "pellet mill die manufacturer india"
+    },
+    {
+      "from": "cluster-2-post-1",
+      "to": "pillar",
+      "type": "mandatory",
+      "anchor": "fertilizer granulation plant manufacturer"
+    },
+    {
+      "from": "pillar",
+      "to": "cluster-2-post-1",
+      "type": "mandatory",
+      "anchor": "pellet mill roller shell assembly"
+    },
+    {
+      "from": "cluster-0-post-0",
+      "to": "cluster-0-post-1",
+      "type": "recommended",
+      "anchor": "npk organic fertilizer granulation plant india"
+    },
+    {
+      "from": "cluster-0-post-1",
+      "to": "cluster-0-post-0",
+      "type": "recommended",
+      "anchor": "pan disc fertilizer granulator manufacturer ahmedabad"
+    },
+    {
+      "from": "cluster-2-post-0",
+      "to": "cluster-2-post-1",
+      "type": "recommended",
+      "anchor": "pellet mill roller shell assembly"
+    },
+    {
+      "from": "cluster-2-post-1",
+      "to": "cluster-2-post-0",
+      "type": "recommended",
+      "anchor": "pellet mill die manufacturer india"
+    },
+    {
+      "from": "cluster-1-post-0",
+      "to": "cluster-2-post-0",
+      "type": "recommended",
+      "anchor": "precision alloy pellet mill die"
+    },
+    {
+      "from": "cluster-1-post-0",
+      "to": "cluster-2-post-1",
+      "type": "recommended",
+      "anchor": "pellet mill roller shell assembly"
+    },
+    {
+      "from": "cluster-2-post-0",
+      "to": "cluster-2-post-1",
+      "type": "recommended",
+      "anchor": "roller assembly for pellet die"
+    }
+  ],
+  "meta": {
+    "totalPosts": 6,
+    "totalClusters": 3,
+    "totalLinks": 17,
+    "estimatedWords": 11400
+  }
+}
