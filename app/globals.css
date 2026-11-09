@@ -1,0 +1,61 @@
+@import "tailwindcss";
+@config "../tailwind.config.ts";
+
+:root {
+  --brand-primary: #BE2323;
+  --brand-primary-hover: #9E1B1B;
+  --brand-primary-light: #FEF2F2;
+  --brand-secondary: #2A2C2D;
+  --brand-secondary-hover: #1E2124;
+  --brand-accent: #DC2626;
+  --brand-amber: #D97706;
+  --brand-whatsapp: #16A34A;
+  
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #F8FAFC;
+  --bg-surface: #FFFFFF;
+  --bg-dark: #0F172A;
+  
+  --text-primary: #0F172A;
+  --text-secondary: #334155;
+  --text-muted: #64748B;
+  --text-inverse: #FFFFFF;
+  
+  --border-subtle: #E2E8F0;
+  --border-strong: #CBD5E1;
+}
+
+::selection {
+  background-color: var(--brand-primary);
+  color: #FFFFFF;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-secondary);
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+/* Tabular figures for technical data tables */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
