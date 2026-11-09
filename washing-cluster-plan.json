@@ -1,0 +1,185 @@
+{
+  "pillar": {
+    "title": "Turnkey Sand Washing & Mineral Processing Plants",
+    "keyword": "sand washing plant manufacturer gujarat",
+    "volume": 2200,
+    "template": "ultimate-guide",
+    "wordCount": 3200,
+    "url": "/products/mineral-processing/"
+  },
+  "clusters": [
+    {
+      "name": "Sand & Mineral Washing Plants",
+      "color": "#1e3a5f",
+      "posts": [
+        {
+          "title": "River Sand & M-Sand Washing Plant",
+          "keyword": "river sand washing plant manufacturer",
+          "volume": 1300,
+          "template": "landing-page",
+          "wordCount": 1800,
+          "url": "/products/mineral-processing/sand-washing-plant/",
+          "status": "planned"
+        },
+        {
+          "title": "Quartz Stone Washer & Scrubber",
+          "keyword": "quartz stone washer manufacturer gujarat",
+          "volume": 780,
+          "template": "landing-page",
+          "wordCount": 1600,
+          "url": "/products/mineral-processing/quartz-stone-washer/",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "name": "Grading & Screening Equipment",
+      "color": "#f28e2b",
+      "posts": [
+        {
+          "title": "Rotary Trommel Screen Machine",
+          "keyword": "rotary screen trommel manufacturer ahmedabad",
+          "volume": 950,
+          "template": "landing-page",
+          "wordCount": 1500,
+          "url": "/products/mineral-processing/rotary-trommel-screen/",
+          "status": "planned"
+        },
+        {
+          "title": "Industrial Vibrating Screen Machine",
+          "keyword": "vibrating screen manufacturer gujarat",
+          "volume": 1400,
+          "template": "landing-page",
+          "wordCount": 1600,
+          "url": "/products/mineral-processing/vibrating-screen/",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "name": "Primary Crushing Machinery",
+      "color": "#e15759",
+      "posts": [
+        {
+          "title": "Industrial Mineral Jaw Crusher",
+          "keyword": "stone jaw crusher manufacturer ahmedabad",
+          "volume": 1100,
+          "template": "landing-page",
+          "wordCount": 1500,
+          "url": "/products/mineral-processing/jaw-crusher/",
+          "status": "planned"
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "from": "cluster-0-post-0",
+      "to": "pillar",
+      "type": "mandatory",
+      "anchor": "sand washing plant manufacturer gujarat"
+    },
+    {
+      "from": "pillar",
+      "to": "cluster-0-post-0",
+      "type": "mandatory",
+      "anchor": "river sand washing plant manufacturer"
+    },
+    {
+      "from": "cluster-0-post-1",
+      "to": "pillar",
+      "type": "mandatory",
+      "anchor": "sand washing plant manufacturer gujarat"
+    },
+    {
+      "from": "pillar",
+      "to": "cluster-0-post-1",
+      "type": "mandatory",
+      "anchor": "quartz stone washer manufacturer gujarat"
+    },
+    {
+      "from": "cluster-1-post-0",
+      "to": "pillar",
+      "type": "mandatory",
+      "anchor": "sand washing plant manufacturer gujarat"
+    },
+    {
+      "from": "pillar",
+      "to": "cluster-1-post-0",
+      "type": "mandatory",
+      "anchor": "rotary screen trommel manufacturer ahmedabad"
+    },
+    {
+      "from": "cluster-1-post-1",
+      "to": "pillar",
+      "type": "mandatory",
+      "anchor": "sand washing plant manufacturer gujarat"
+    },
+    {
+      "from": "pillar",
+      "to": "cluster-1-post-1",
+      "type": "mandatory",
+      "anchor": "vibrating screen manufacturer gujarat"
+    },
+    {
+      "from": "cluster-2-post-0",
+      "to": "pillar",
+      "type": "mandatory",
+      "anchor": "sand washing plant manufacturer gujarat"
+    },
+    {
+      "from": "pillar",
+      "to": "cluster-2-post-0",
+      "type": "mandatory",
+      "anchor": "stone jaw crusher manufacturer ahmedabad"
+    },
+    {
+      "from": "cluster-0-post-0",
+      "to": "cluster-0-post-1",
+      "type": "recommended",
+      "anchor": "quartz stone washer manufacturer gujarat"
+    },
+    {
+      "from": "cluster-0-post-1",
+      "to": "cluster-0-post-0",
+      "type": "recommended",
+      "anchor": "river sand washing plant manufacturer"
+    },
+    {
+      "from": "cluster-1-post-0",
+      "to": "cluster-1-post-1",
+      "type": "recommended",
+      "anchor": "vibrating screen manufacturer gujarat"
+    },
+    {
+      "from": "cluster-1-post-1",
+      "to": "cluster-1-post-0",
+      "type": "recommended",
+      "anchor": "rotary screen trommel manufacturer ahmedabad"
+    },
+    {
+      "from": "cluster-0-post-0",
+      "to": "cluster-1-post-1",
+      "type": "optional",
+      "anchor": "dewatering vibrating screen"
+    },
+    {
+      "from": "cluster-0-post-1",
+      "to": "cluster-1-post-0",
+      "type": "optional",
+      "anchor": "rotary trommel screening machine"
+    },
+    {
+      "from": "cluster-2-post-0",
+      "to": "cluster-1-post-1",
+      "type": "optional",
+      "anchor": "vibrating screen for crushed stone"
+    }
+  ],
+  "meta": {
+    "totalPosts": 6,
+    "totalClusters": 3,
+    "totalLinks": 17,
+    "estimatedWords": 11200
+  }
+}
