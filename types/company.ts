@@ -37,3 +37,4 @@ export interface CompanyProfile {
   hours: readonly string[];
   sameAs: readonly string[];
 }
+

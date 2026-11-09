@@ -37,3 +37,4 @@ export const company: CompanyProfile = {
     'https://www.indiamart.com/mineralssolutions-ahmedabad/',
   ],
 };
+

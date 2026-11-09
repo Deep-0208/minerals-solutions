@@ -133,3 +133,4 @@ export const specifications: Record<string, EquipmentSpecification> = {
     visualAssetSlug: 'dryer-support-roller',
   },
 };
+

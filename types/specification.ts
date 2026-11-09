@@ -17,3 +17,4 @@ export interface EquipmentSpecification {
   primaryApplications: readonly string[];
   visualAssetSlug: string;
 }
+
