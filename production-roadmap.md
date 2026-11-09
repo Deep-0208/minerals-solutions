@@ -1,336 +1,469 @@
-# Minerals Solutions: Master End-to-End Production Roadmap
-**Target Domain:** `https://mineralssolution.in/`  
-**Client:** Minerals Solutions (Zak GIDC, Dahegam, Gandhinagar / Ahmedabad Corridor, Gujarat)  
+# Minerals Solutions: Master Production Engineering & SEO Roadmap
+
+**Target Canonical Domain:** `https://mineralssolution.in/`  
+**Client Entity:** Minerals Solutions (Proprietorship, Established 2023)  
+**Registered Facility:** 10, Shyam Estate, Zak GIDC, Zak-Vahelal Road, Ta. Dahegam, Dist. Gandhinagar – 382330, Gujarat, India  
 **Engineering Stack:** Next.js 16 (App Router) | React 19 | TypeScript 5 | Tailwind CSS v4 | Sharp WebP Engine  
-**Branching Model:** Isolated `development` branch -> Automated Verification -> Merge into `main`  
-**Document Purpose:** The definitive, exhaustive, phase-by-phase blueprint for taking Minerals Solutions from scraped intelligence and initial data models all the way to a fully audited, #1 Google-ranking production deployment.
+**Branching Model:** Isolated `development` branch -> Automated Verification Suite -> Non-Fast-Forward Merge to `main`  
+**Document Purpose:** The definitive, execution-ready engineering blueprint governing the entire lifecycle from current intelligence baselines to a fully audited, #1 Google-ranking production deployment.
 
 ---
 
-## High-Level Execution Timeline & Gate Sequence
+## 1. High-Level Lifecycle Flow (13 Production Gates)
 
 ```mermaid
 flowchart TD
-    G0["Gate 0: Scraped Intel & Visual Asset Index (DONE)"] --> G1["Gate 1: Single Source of Truth - data/company.ts (DONE)"]
-    G1 --> G2["Gate 2: Master Keyword Map & data/routes.ts (DONE)"]
-    G2 --> G3["Gate 3: Asset WebP Pipeline (89 Real Photos)"]
-    G3 --> G4["Gate 4: Next.js 16 Scaffold & Anti-Slop Design System"]
-    G4 --> G5["Gate 5: Root Architecture, Route Groups & Shared Layouts"]
-    G5 --> G6["Gate 6: Core Page Production (33 Canonical Routes)"]
-    G6 --> G7["Gate 7: Schema.org Structured Data Engine (JSON-LD)"]
-    G7 --> G8["Gate 8: Dynamic SEO Layer (sitemap, robots, manifest, OG)"]
-    G8 --> G9["Gate 9: Build-Time Invariant Audits & CI Verification"]
-    G9 --> G10["Gate 10: Performance, Core Web Vitals & Security Headers"]
-    G10 --> G11["Gate 11: Production Verification & Merge to Main"]
-    G11 --> G12["Gate 12: Launch, Google Search Console & GBP Setup"]
+    G1["Gate 1: Foundation & Business Intelligence (COMPLETED)"] --> G2["Gate 2: Keyword & Search Architecture (COMPLETED)"]
+    G2 --> G3["Gate 3: Asset Optimization & WebP Media Pipeline"]
+    G3 --> G4["Gate 4: Design System & Architectural Scaffolding"]
+    G4 --> G5["Gate 5: Core Website Production (Layouts & Shells)"]
+    G5 --> G6["Gate 6: Content & E-E-A-T Implementation (33 Routes)"]
+    G6 --> G7["Gate 7: Complete SEO Implementation (Schema & Meta)"]
+    G7 --> G8["Gate 8: Conversion Architecture & Analytics"]
+    G8 --> G9["Gate 9: Automated Quality Assurance & Build Audits"]
+    G9 --> G10["Gate 10: Performance & Security Hardening"]
+    G10 --> G11["Gate 11: Staging & Production Verification"]
+    G11 --> G12["Gate 12: Production Launch & Search Engine Setup"]
+    G12 --> G13["Gate 13: Post-Launch Monitoring & 90-Day Growth"]
 ```
 
 ---
 
-## Gate 0 through Gate 2: The Foundation (COMPLETED)
+## 2. Completed Milestones (Gates 1 & 2)
 
-* ✅ **Gate 0: Intelligence & Asset Extraction**
-  * IndiaMART profile scraped (`indiamart-scraped-catalog.md`).
-  * 73 machinery products extracted with prices, capacities, and specs.
-  * 89 authentic photos cataloged (38 client workshop photos + 51 IndiaMART high-res photos).
-  * Initialized local Git repository and switched to `development` branch.
-* ✅ **Gate 1: Single Source of Truth**
-  * Created `types/company.ts` and `data/company.ts`.
-  * Anchored verified corporate facts: GSTIN `24AUSPP9555F1ZZ`, MSME UDYAM, Axis Bank, Zak GIDC facility coordinates (`23.1672, 72.8125`), phone numbers, and official emails (`sales@mineralssolution.in`).
-  * Created `types/specification.ts` and `data/specifications.ts` for standardized equipment parameters.
-* ✅ **Gate 2: Master Keyword Map & Cannibalization Shield**
-  * Generated 4 semantic clusters via `/seo cluster` (`cluster-map.html`, `washing-cluster-map.html`, `fertilizer-cluster-map.html`, `conveyor-cluster-map.html`).
-  * Consolidated into `keyword-map.md` (33 canonical routes, zero keyword collisions).
-  * Created `data/routes.ts` with strict trailing slashes, 50-60 character titles, and 140-160 character descriptions.
+### Gate 1: Foundation & Business Intelligence
+* **Status:** ✅ COMPLETED & COMMITTED (`main` and `development` branches)
+* **Objective:** Establish unassailable single sources of truth for corporate credentials, statutory facts, machine specifications, and real visual assets.
+* **Implementation Evidence:**
+  * IndiaMART profile scraped and cataloged in `indiamart-scraped-catalog.md` (73 products extracted, verified specs).
+  * 89 authentic photographs indexed in `asset-inventory.md` (38 client direct photos + 51 IndiaMART high-res photos, including 4 factory proof images).
+  * Single source of truth implemented in `types/company.ts` and `data/company.ts`:
+    * Legal Name: Minerals Solutions
+    * Proprietor: Mr. Vipulbhai A. Prajapati | CEO: Mr. P Amrutlal
+    * GSTIN: `24AUSPP9555F1ZZ` | MSME UDYAM: `UDYAM-GJ-09-0021428` | Banker: Axis Bank
+    * Address: 10, Shyam Estate, Zak GIDC, Dahegam, Gandhinagar - 382330
+    * Geo-Coordinates: `23.1672° N, 72.8125° E` (Zak GIDC corridor)
+    * Verified Hotlines: `+91 63524 53050`, `+91 91061 63058` | PNS: `+91-8047626632`
+    * Primary Inboxes: `sales@mineralssolution.in`, `mineralssolutions76@gmail.com`
+  * Standardized machinery specifications in `types/specification.ts` and `data/specifications.ts`.
+* **Definition of Done:** Zero hardcoded business strings across visual components; all contact, address, and legal attributes import from `data/company.ts`.
 
----
-
-## Gate 3: Asset WebP Pipeline & Performance Prep
-
-### Objective
-Convert all 89 raw JPEG/PNG photographs into optimized, responsive `.webp` files with exact dimensions. Zero stock photos. Zero Cumulative Layout Shift (CLS).
-
-### Execution Steps
-1. **Install Image Processing Dependencies:**
-   ```bash
-   npm install --save-dev sharp
-   ```
-2. **Create Build Script `scripts/process_all_images.mjs`:**
-   * Reads raw assets from `assets/raw-images/` and `assets/indiamart-images/`.
-   * Standardizes file naming to lowercase hyphenated slugs (e.g., `double-pass-dryer.webp`).
-   * Generates three responsive breakpoints for each image:
-     * **Hero / Feature:** `1200x800` (80% quality WebP, ~70–90 KB)
-     * **Product Card / Grid:** `600x400` (80% quality WebP, ~25–35 KB)
-     * **Thumbnail / Nav:** `150x100` (75% quality WebP, ~5–8 KB)
-   * Places output directly into `public/images/products/`, `public/images/facility/`, and `public/images/hero/`.
-3. **Generate Image Dimension Registry (`data/images.ts`):**
-   * Stores explicit `width`, `height`, `alt`, and `aspectRatio` for every single WebP asset.
-   * Components import from `data/images.ts` to prevent missing dimension warnings in Next.js `<Image />`.
-4. **Verification:**
-   * Confirm total assets generated = 89 * 3 sizes = 267 optimized images.
-   * Verify all images have descriptive alt texts derived from the target keywords in `keyword-map.md`.
+### Gate 2: Keyword & Search Architecture
+* **Status:** ✅ COMPLETED & COMMITTED (`main` and `development` branches)
+* **Objective:** Prevent keyword cannibalization and design an authoritative topic cluster architecture for all 73 scraped products across 4 core manufacturing silos.
+* **Implementation Evidence:**
+  * 4 semantic clusters planned and modeled via `/seo cluster` algorithms:
+    1. Rotary Dryers & Furnaces (`cluster-plan.json`, `cluster-plan.md`, `cluster-map.html`)
+    2. Sand Washing & Mineral Processing (`washing-cluster-plan.json`, `washing-cluster-plan.md`, `washing-cluster-map.html`)
+    3. Fertilizer Granulation & Pellet Plants (`fertilizer-cluster-plan.json`, `fertilizer-cluster-plan.md`, `fertilizer-cluster-map.html`)
+    4. Conveyor Systems & Spares (`conveyor-cluster-plan.json`, `conveyor-cluster-plan.md`, `conveyor-cluster-map.html`)
+  * Consolidated master registry in `keyword-map.md` and typed route definitions in `data/routes.ts`:
+    * Total Canonical Routes: 33 unique routes
+    * Zero Duplicate Primary Keywords across pages
+    * Trailing Slash Invariant: 100% of routes end with `/`
+    * Calibrated Snippet Targets: Titles 50–60 chars, descriptions 140–160 chars.
+* **Definition of Done:** Every URL mapped to exact search intent, target audience, and primary commercial keyword.
 
 ---
 
-## Gate 4: Next.js 16 App Router Scaffold & Anti-Slop Design System
-
-### Objective
-Scaffold the Next.js 16 project with React 19, strict TypeScript, Tailwind CSS, and calibrate the design system to eliminate AI template slop.
-
-### Execution Steps
-1. **Next.js 16 Project Scaffold:**
-   ```bash
-   npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir=false --import-alias="@/*"
-   ```
-2. **Next.js Invariant Configuration (`next.config.ts`):**
-   * **Mandatory Rule from `AGENT.md`:** `trailingSlash: true` (strictly enforced to avoid 308 redirect loops and canonical fragmentation).
-   * Image optimization formats: `image/avif`, `image/webp`.
-   * Production source maps disabled for performance.
-   * Strict React mode enabled.
-3. **Taste Skill & Anti-Slop Calibration (`design-taste-frontend`):**
-   * **Design Read:** Heavy Industrial Manufacturing & Mineral Beneficiation Engineering.
-   * **Aesthetic Family:** Technical Precision / Industrial Blueprint & Tactile Factory Warmth.
-   * **Core Dial Calibration:**
-     * `DESIGN_VARIANCE`: `0.72` (Bespoke asymmetric industrial grids, bold technical hierarchy).
-     * `MOTION_INTENSITY`: `0.35` (Buttery smooth tab transitions, restrained industrial precision, zero distracting animations).
-     * `VISUAL_DENSITY`: `0.78` (Data-rich specification tables, CAD-like diagrams, real factory photography).
-   * **Color Palette (Industrial Dark & Safety Accents):**
-     * Primary Background: Deep Steel Charcoal (`#0f141c` / `#161e2b`)
-     * Surface Container: Machined Slate (`#1e293b` / `#243044`)
-     * Border / Gridlines: Technical Precision Steel (`#334155`)
-     * Primary Brand / CTA: Safety Industrial Amber-Orange (`#d97706` / `#f59e0b`)
-     * Text Primary: Clean White / Platinum (`#f8fafc`)
-     * Text Secondary: Technical Muted Grey (`#94a3b8`)
-   * **Typography:**
-     * Display / Headers: Technical geometric grotesque (e.g. `Space Grotesk` or `Cabinet Grotesk` / `Inter` tight tracking).
-     * Body / Specs: High-legibility sans (`Inter` / `Roboto`) with tabular numbers (`font-mono` / `tabular-nums`) for specification metrics.
+## 3. The Execution Gates (Gates 3 through 13)
 
 ---
 
-## Gate 5: Root Architecture, Route Groups & Shared Layouts
+### Gate 3: Asset Optimization & WebP Media Pipeline
 
-### Objective
-Implement the two-layer shell pattern proven in `Honeywell SEO` and `KpFasteners SEO`.
-
-### Architecture Pattern
-```
-app/
-├── layout.tsx                  # Root Shell: <html>, <body>, global fonts, analytics, JSON-LD container
-├── (site)/                     # Route Group: Visual Shell
-│   ├── layout.tsx              # Site Header, Sticky WhatsApp/Call Bar, Navigation, Footer
-│   ├── page.tsx                # Homepage (/)
-│   ├── about/page.tsx          # /about/
-│   ├── contact/page.tsx        # /contact/
-│   ├── request-quote/page.tsx  # /request-quote/
-│   ├── products/
-│   │   ├── page.tsx            # /products/ (Master Machinery Hub)
-│   │   ├── rotary-dryers/      # Pillar 1 Hub & Spokes
-│   │   ├── mineral-processing/ # Pillar 2 Hub & Spokes
-│   │   ├── granulation-pellet-plants/ # Pillar 3 Hub & Spokes
-│   │   └── conveyor-systems/   # Pillar 4 Hub & Spokes
-│   └── minerals/               # Direct Minerals Hub
-```
-
-### Critical SEO Invariants
-* **Zero `loading.tsx` Files:**
-  * **Rule from `AGENT.md`:** Banned across all static routes. `loading.tsx` causes Next.js to stream empty skeleton shells, risking Googlebot indexing empty content before hydration.
-* **Pure React Server Components on First Byte:**
-  * All page files are Server Components (`async function Page()`).
-  * Full crawlable HTML, H1 tags, spec tables, and schema are delivered on the very first HTTP packet (sub-500ms TTFB).
-* **Client Islands:**
-  * Interactive elements (mobile navigation drawer, specification tab switchers, RFQ modal, quote calculator) are isolated into dedicated `'use client'` leaf components in `components/interactive/`.
-
----
-
-## Gate 6: Core Page Production (33 Canonical Routes)
-
-### Objective
-Author and construct all 33 pages identified in `keyword-map.md`. Every page imports its data directly from `data/routes.ts`, `data/company.ts`, and `data/specifications.ts`.
-
-### Page Template Structure (Product Spokes):
-Each product page follows a high-conversion, E-E-A-T-maximizing layout:
-1. **Hero Section:**
-   * Breadcrumb Trail: `Home > Products > [Pillar] > [Machine Name]`
-   * Target H1: Primary commercial keyword (e.g., *Double Pass Rotary Dryer Manufacturer*)
-   * Value Proposition: Inlet temperature, thermal efficiency, throughput capacity, and fuel options.
-   * High-Resolution Workshop Photo with exact aspect ratio.
-   * Immediate CTAs: *"Request Technical Quote"* and *"Download Specs PDF"*.
-2. **Engineering Highlights & Operational Overview:**
-   * 3–4 technical benefit cards (e.g., 40% smaller footprint, counter-current thermal draft, heavy-duty IS 2062 steel drum).
-3. **Interactive / Tabular Technical Specifications:**
-   * Clean, high-density HTML table importing directly from `data/specifications.ts`.
-   * Highlights key engineering parameters (Moisture reduction, drive HP, cyclone dust separation, operating temperature).
-4. **Workshop Fabrication & Quality Verification (E-E-A-T):**
-   * Real photo gallery of fabrication in the Zak GIDC facility (drum rolling, lathe machining of trunnions, welded flights).
-5. **Turnkey Plant Integration (Cross-Pillar Bridges):**
-   * Contextual links to complementary equipment (e.g., Double Pass Dryer linking to Hot Air Generator and Trunnion Rollers).
-6. **Commercial RFQ & Plant Sizing Form:**
-   * Direct contact card featuring Mr. Vipulbhai A. Prajapati, direct mobile lines, and instant WhatsApp chat.
-7. **Comprehensive Technical FAQ Accordion:**
-   * 4–6 technical buyer questions (e.g. *What is the maximum inlet temperature?*, *Can it run on solid fuel/coal?*, *What is the delivery timeline from Zak GIDC?*).
+* **Objective:** Transform all 89 authentic raw photographs into responsive, optimized `.webp` images with explicit dimensions to achieve zero Cumulative Layout Shift (CLS = 0.00) and instant Largest Contentful Paint (LCP < 1.2s).
+* **Dependencies:** Completed Gate 1 (`assets/raw-images/`, `assets/indiamart-images/`).
+* **Files & Directories Involved:**
+  * `scripts/process_all_images.mjs` (Node.js Sharp conversion engine)
+  * `public/images/products/` (Processed equipment imagery)
+  * `public/images/facility/` (Factory, office, team, and signboard proof photos)
+  * `public/images/hero/` (High-impact banner images)
+  * `data/images.ts` (Typed dimension, aspect ratio, and alt text registry)
+* **Exact Implementation Tasks:**
+  1. Initialize Node.js dependencies (`sharp` for high-performance libvips image processing).
+  2. Implement `scripts/process_all_images.mjs`:
+     * Scan all 89 source files from `assets/raw-images/` and `assets/indiamart-images/`.
+     * Standardize filenames into lowercase hyphenated slugs (e.g. `double-pass-rotary-dryer.webp`).
+     * Generate 3 responsive breakpoints per asset:
+       * **Hero View:** `1200x800` (80% quality WebP, ~70–90 KB)
+       * **Product Card / Grid:** `600x400` (80% quality WebP, ~25–35 KB)
+       * **Thumbnail / Nav:** `150x100` (75% quality WebP, ~5–8 KB)
+     * Total asset generation = 89 * 3 sizes = 267 optimized WebP files.
+  3. Create `data/images.ts` exporting an image registry containing `{ slug, width, height, aspectRatio, altText }` mapped to each equipment model.
+  4. Perform visual spot-check to ensure no blurriness, distortion, or artifacting occurred during conversion.
+* **Technical & SEO Requirements:**
+  * No external stock photos permitted.
+  * Every image must have an accurate, descriptive `alt` attribute describing the machinery and application (e.g. `alt="Double pass rotary dryer operating at 300C inlet temperature for silica sand"`).
+* **Validation Commands:**
+  ```bash
+  node scripts/process_all_images.mjs
+  # Assert file count in public/images/
+  Get-ChildItem -Recurse public/images/*.webp | Measure-Object
+  ```
+* **Acceptance Criteria:**
+  - [ ] 267 WebP files generated in `public/images/`.
+  - [ ] Max hero image size < 100 KB; card images < 40 KB.
+  - [ ] `data/images.ts` compiles without TypeScript errors.
+* **Definition of Done:** All images present in `public/images/`, verified visually, and mapped in `data/images.ts`.
+* **Potential Risks:** Corrupted raw JPEG headers; mitigated by Sharp's automatic format detection and fallback processing.
+* **Rollback Plan:** Re-run script with adjusted compression quality (e.g. 85% instead of 80%).
 
 ---
 
-## Gate 7: Schema.org Structured Data Engine (JSON-LD)
+### Gate 4: Design System & Architectural Scaffolding
 
-### Objective
-Generate 100% compliant, machine-readable JSON-LD schemas directly from `data/company.ts` and `data/specifications.ts`. Zero manual copy-pasting. Zero fake stars.
-
-### Implemented Schemas:
-1. **`Organization` Schema (Global):**
-   * `legalName`: Minerals Solutions
-   * `url`: `https://mineralssolution.in`
-   * `logo`: `https://mineralssolution.in/images/logo.png`
-   * `sameAs`: IndiaMART verified profile
-   * `contactPoint`: Customer Support & Sales (`+91 6352453050`)
-2. **`LocalBusiness` / `Manufacturer` Schema (Global & Contact Page):**
-   * `@type`: `LocalBusiness` / `AutomotiveBusiness` / `ManufacturingFacility`
-   * `name`: Minerals Solutions
-   * `address`: 10, Shyam Estate, Zak GIDC, Zak-Vahelal Road, Dahegam, Gandhinagar - 382330
-   * `geo`: `{"@type": "GeoCoordinates", "latitude": 23.1672, "longitude": 72.8125}`
-   * `taxID` / `gstin`: `24AUSPP9555F1ZZ`
-   * `openingHours`: `Mo-Sa 09:00-19:00`
-3. **`Product` Schema (Every Spoke Route):**
-   * `name`: Machine Model Name
-   * `description`: Targeted commercial description
-   * `image`: High-res WebP URL
-   * `manufacturer`: `{"@type": "Organization", "name": "Minerals Solutions"}`
-   * `offers`: Indicative pricing where available (e.g., ₹25,00,000 for Double Pass Dryer), currency `INR`, itemCondition `NewCondition`.
-   * **KP Fasteners Invariant:** NO fake `AggregateRating` or fabricated 5-star reviews. KP Fasteners' CI rule strictly enforces this to prevent manual penalties from Google.
-4. **`BreadcrumbList` Schema (Every Route):**
-   * Dynamically built from `route.breadcrumbTrail`.
-5. **`FAQPage` Schema:**
-   * Injected on technical spoke pages for rich accordion snippets in Google search results.
-
----
-
-## Gate 8: Dynamic SEO Layer (Sitemap, Robots, Manifest & OG)
-
-### Objective
-Construct the automated machine layer that crawlers and social platforms consume.
-
-### Execution Steps
-1. **`app/sitemap.ts`:**
-   * Iterates over `routes` from `data/routes.ts`.
-   * Automatically outputs all 33 URLs with `lastModified`, `changeFrequency`, and `priority`.
-   * Validates that every generated URL has a trailing slash.
-2. **`app/robots.ts`:**
-   * Allows all standard search crawlers (`*`).
-   * Explicitly points to `https://mineralssolution.in/sitemap.xml`.
-   * Disallows `/api/` or private administrative paths.
-3. **`app/manifest.ts`:**
-   * PWA web manifest with official brand colors (Industrial Amber `#d97706` and Steel `#0f141c`).
-4. **Dynamic OpenGraph Image Generator (`app/api/og/route.tsx`):**
-   * Next.js `@vercel/og` Edge API endpoint.
-   * Generates dynamic 1200x630 social share cards displaying page title, machine category, and Minerals Solutions brand mark.
-   * **Honeywell Invariant:** Fail-safe try/catch returning a pre-rendered static SVG fallback so it NEVER returns HTTP 500 to social crawlers.
+* **Objective:** Scaffold the Next.js 16 App Router application on the `development` branch, configuring Tailwind CSS, typography, and anti-slop design system tokens.
+* **Dependencies:** Gate 1, Gate 2, Gate 3.
+* **Files & Directories Involved:**
+  * `package.json`, `tsconfig.json`, `next.config.ts`, `tailwind.config.ts` / `app/globals.css`
+  * `app/layout.tsx` (Root HTML/Body shell)
+  * `lib/seo.ts` (Metadata builder helper)
+* **Exact Implementation Tasks:**
+  1. Scaffold Next.js 16 with React 19, strict TypeScript, and Tailwind CSS:
+     ```bash
+     npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir=false --import-alias="@/*"
+     ```
+  2. Configure `next.config.ts`:
+     * **URL Normalization Rule:** Set `trailingSlash: true` to align all routes with the sitemap and canonical URLs, eliminating redirect overhead.
+     * Configure `images.formats = ['image/avif', 'image/webp']`.
+     * Disable `productionBrowserSourceMaps` for bundle security.
+  3. Calibrate Taste Skill tokens (`design-taste-frontend`):
+     * **Design Read:** Heavy Industrial Manufacturing & Mineral Processing Engineering.
+     * **Aesthetic Family:** Technical Precision / Industrial Blueprint & Tactile Factory Warmth.
+     * **Core Dials:**
+       * `DESIGN_VARIANCE`: `0.72` (Bespoke asymmetric industrial grids, bold technical hierarchy).
+       * `MOTION_INTENSITY`: `0.35` (Restrained, buttery micro-interactions; zero distracting animation loops).
+       * `VISUAL_DENSITY`: `0.78` (Data-rich specification tables, CAD-like diagrams, real factory photography).
+     * **Color Tokens:**
+       * Dark Canvas: `#0f141c` | Surface Container: `#1e293b`
+       * Borders: `#334155` | Brand Accent / Primary CTA: Safety Amber `#d97706` / `#f59e0b`
+       * Text Primary: Platinum `#f8fafc` | Text Secondary: Steel Grey `#94a3b8`
+     * **Typography:**
+       * Display/Headers: `Space Grotesk` or `Cabinet Grotesk` / `Inter` tight tracking.
+       * Body & Specs: `Inter` with `tabular-nums` / `font-mono` for engineering tables.
+* **Technical Requirements:** Next.js build runs cleanly without warnings; Tailwind classes generate correct utility styles.
+* **Validation Commands:**
+  ```bash
+  npm run build
+  npm run dev
+  ```
+* **Acceptance Criteria:**
+  - [ ] Development server starts cleanly on port 3000.
+  - [ ] `trailingSlash: true` is verified via test request (`/about` 308 redirects to `/about/`).
+  - [ ] Tailwind tokens correctly applied to test page.
+* **Definition of Done:** Next.js 16 scaffold compiles, runs locally, and adheres to design tokens.
+* **Rollback Plan:** Git stash or revert to baseline commit on `development`.
 
 ---
 
-## Gate 9: Build-Time Invariant Audits & CI Verification
+### Gate 5: Core Website Production (Layouts, Shells & Navigation)
 
-### Objective
-Adopt the battle-tested audit script suite from `Honeywell SEO` and `KpFasteners SEO` to verify all SEO invariants before any code is merged into `main`.
-
-### Automated Scripts to Implement:
-1. **`scripts/audit-titles-descs.mjs`:**
-   * Asserts that every page title is between 50 and 60 characters.
-   * Asserts that every meta description is between 140 and 160 characters.
-   * Fails the build if any route is missing metadata or exceeds limits.
-2. **`scripts/audit-canonicals.mjs`:**
-   * Asserts that every page canonical URL exactly matches `https://mineralssolution.in` + route path + trailing slash.
-3. **`scripts/audit-schemas.mjs`:**
-   * Validates all JSON-LD blobs against Schema.org structural definitions using `ajv` or schema validators.
-4. **`scripts/audit-no-rating-leak.mjs`:**
-   * Greps the entire build output for `"AggregateRating"` and fails if any simulated rating is found.
-5. **`scripts/audit-links.mjs`:**
-   * Crawls the local build output to verify that every internal link returns HTTP 200 (zero 404s, zero 308 redirect hops).
-
----
-
-## Gate 10: Performance, Core Web Vitals & Security Headers
-
-### Objective
-Ensure 95+ Mobile Lighthouse score, sub-500ms Time to First Byte (TTFB), and zero Cumulative Layout Shift (CLS).
-
-### Execution Steps
-1. **Security & Performance Headers (`next.config.ts`):**
-   * `X-Frame-Options: SAMEORIGIN`
-   * `X-Content-Type-Options: nosniff`
-   * `Referrer-Policy: strict-origin-when-cross-origin`
-   * Dev-aware Content Security Policy (CSP): relaxed `unsafe-eval` during local development, strict locked-down policy in production.
-2. **Font Optimization:**
-   * Uses `next/font/google` with `display: 'swap'` and preloading to eliminate layout shifts (CLS = 0.00).
-3. **Image Attributes:**
-   * All images above the fold use `priority={true}` for instant Largest Contentful Paint (LCP < 1.2s).
-   * All images below the fold use native lazy loading with blur-up placeholders.
+* **Objective:** Implement the two-layer shell layout pattern, global navigation, sticky inquiry CTAs, and mobile-responsive drawer.
+* **Dependencies:** Gate 4.
+* **Files & Directories Involved:**
+  * `app/layout.tsx` (Root Document Shell: metadataBase, font loading, global JSON-LD)
+  * `app/(site)/layout.tsx` (Visual Shell: Header, Footer, Sticky Inquiry Bar)
+  * `components/layout/Header.tsx`, `components/layout/Footer.tsx`, `components/layout/MobileNav.tsx`
+  * `components/common/Breadcrumbs.tsx`, `components/common/StickyContactBar.tsx`
+* **Exact Implementation Tasks:**
+  1. Build Root `app/layout.tsx`:
+     * Pure Server Component. Loads Google Fonts via `next/font/google` (`display: 'swap'`).
+     * Renders `metadataBase: new URL('https://mineralssolution.in')`.
+     * Injects global `Organization` and `LocalBusiness` JSON-LD via `components/seo/JsonLd.tsx`.
+  2. Build Visual Shell `app/(site)/layout.tsx`:
+     * Navigation Header: Brand logo, Machinery dropdowns (Rotary Dryers, Mineral Processing, Fertilizer Plants, Conveyors), Minerals Supply, About, Contact, and "Request a Quote" CTA.
+     * Sticky Contact Pill: Floating mobile bar with direct WhatsApp and Call buttons linking to `+91 6352453050`.
+     * Comprehensive Footer: Full NAP, GSTIN `24AUSPP9555F1ZZ`, MSME registration, quick links to all 4 pillars, statutory links (Privacy Policy, Terms of Supply), and Zak GIDC industrial area map.
+  3. **Rendering & Architecture Rules:**
+     * **No Streaming Skeleton for Static Content:** Do not wrap core page content in `<Suspense>` boundaries that deliver blank or skeleton HTML to Googlebot.
+     * Keep page components as pure Server Components; isolate client interactivity (toggles, menus) into leaf components with `'use client'`.
+* **Validation Commands:**
+  ```bash
+  curl -s http://localhost:3000/ | grep -i "Minerals Solutions"
+  curl -s http://localhost:3000/ | grep -i "24AUSPP9555F1ZZ"
+  ```
+* **Acceptance Criteria:**
+  - [ ] Header, footer, and navigation render server-side in raw HTML.
+  - [ ] Mobile navigation opens and closes smoothly without layout shift.
+  - [ ] Footer contains verified GSTIN, UDYAM, and Zak GIDC address without typos.
+* **Definition of Done:** Shared layout operational across desktop and mobile screen sizes.
 
 ---
 
-## Gate 11: Production Verification & Merge to Main
+### Gate 6: Content & E-E-A-T Implementation (All 33 Canonical Routes)
 
-### Objective
-Final testing, local build execution, and safe promotion of code from `development` to `main`.
-
-### Execution Steps:
-1. **Execute Full Production Build:**
-   ```bash
-   npm run build
-   ```
-2. **Run Automated Audit Suite:**
-   ```bash
-   node scripts/audit-titles-descs.mjs
-   node scripts/audit-canonicals.mjs
-   node scripts/audit-schemas.mjs
-   node scripts/audit-no-rating-leak.mjs
-   node scripts/audit-links.mjs
-   ```
-3. **Launch Production Server Test on Port 3000:**
-   ```bash
-   npm run start
-   ```
-4. **Transparent Git Merge Command:**
-   ```powershell
-   git checkout main
-   git merge development --no-ff -m "feat(release): deploy complete Minerals Solutions website with 33 verified SEO routes, technical specs, and WebP media"
-   git status
-   ```
-
----
-
-## Gate 12: Launch, Google Search Console & GBP Setup
-
-### Objective
-Post-launch indexation and dominant local map pack ranking.
-
-### Execution Steps:
-1. **Google Search Console (GSC) Registration:**
-   * Verify domain ownership of `mineralssolution.in` via DNS TXT record.
-   * Submit XML sitemap: `https://mineralssolution.in/sitemap.xml`.
-2. **Instant Indexation via IndexNow API:**
-   * Ping IndexNow API for Bing, Yandex, and Naver with all 33 URLs for same-day crawl.
-3. **Google Business Profile (GBP) Optimization:**
-   * Name: Minerals Solutions
-   * Address: 10, Shyam Estate, Zak GIDC, Zak-Vahelal Road, Dahegam, Gujarat - 382330
-   * Categories: *Mining Equipment Manufacturer* (Primary), *Industrial Equipment Supplier*, *Sand & Gravel Supplier*.
-   * Add all 33 product categories to the GBP Products tab with direct deep links to spoke URLs.
-   * Upload all 89 authentic factory, team, and machine photos to GBP.
-4. **Off-Page & B2B Local Citations:**
-   * Synchronize NAP consistency across IndiaMART, TradeIndia, ExportersIndia, YellowPages India, and Gujarat GIDC industrial directories.
+* **Objective:** Author and render all 33 pages mapped in `keyword-map.md` and detailed in `content-requirements.md` with rich technical data, genuine photos, and cross-pillar links.
+* **Dependencies:** Gate 1, Gate 2, Gate 3, Gate 5.
+* **Files & Directories Involved:**
+  * `app/(site)/page.tsx` (Homepage)
+  * `app/(site)/about/page.tsx`, `app/(site)/contact/page.tsx`, `app/(site)/request-quote/page.tsx`
+  * `app/(site)/products/page.tsx` (Master Catalog)
+  * `app/(site)/products/rotary-dryers/` (Pillar 1 Hub + 10 Spokes)
+  * `app/(site)/products/mineral-processing/` (Pillar 2 Hub + 5 Spokes)
+  * `app/(site)/products/granulation-pellet-plants/` (Pillar 3 Hub + 5 Spokes)
+  * `app/(site)/products/conveyor-systems/` (Pillar 4 Hub + 6 Spokes)
+  * `app/(site)/minerals/industrial-sands/page.tsx`
+  * `app/(site)/privacy-policy/page.tsx`, `app/(site)/terms/page.tsx`
+* **Exact Implementation Tasks:**
+  1. Author the 4 Master Hub pages with comprehensive category overviews, engineering selection guides, and visual equipment grids.
+  2. Author the 21 Equipment Spoke pages following the proven 7-section B2B layout:
+     * Section 1: Hero with H1, breadcrumbs, high-res WebP photo, and instant RFQ CTAs.
+     * Section 2: Technical highlights (concentric drums, thermal efficiency, metallurgy).
+     * Section 3: High-density HTML specification table importing from `data/specifications.ts`.
+     * Section 4: Workshop fabrication & quality assurance proof gallery.
+     * Section 5: Turnkey plant integration (cross-pillar body links, e.g. Sand Washer -> Rotary Sand Dryer).
+     * Section 6: Direct inquiry & plant sizing module.
+     * Section 7: Technical buyer FAQ answering real engineering questions.
+  3. Author Company, Trust & Direct Minerals Supply pages.
+* **Content Integrity Rules:**
+  * Word count is not a ranking factor; prioritize density, technical precision, and original manufacturing documentation over fluff.
+  * Clearly label indicative prices as *Indicative Starting Price / Custom Quoted based on TPH & Metallurgy*.
+  * No duplicate copy across sibling spokes.
+* **Validation Commands:**
+  ```bash
+  # Check that all 33 route folders have a page.tsx
+  Get-ChildItem -Recurse app/\(site\) -Filter "page.tsx" | Measure-Object
+  ```
+* **Acceptance Criteria:**
+  - [ ] Exactly 33 `page.tsx` files exist and compile.
+  - [ ] Every page has exactly one `<h1>`.
+  - [ ] Every equipment page contains an HTML `<table>` of technical specs.
+  - [ ] Cross-pillar links exist as functional anchor tags within paragraph copy.
+* **Definition of Done:** All 33 routes fully populated with unique, technically accurate content.
 
 ---
 
-## Summary of Milestones & Deliverables
+### Gate 7: Complete SEO Implementation (Metadata, Schema, Robots & Sitemap)
 
-| Phase | Core Deliverable | Output Files | Verification Metric |
-| :--- | :--- | :--- | :--- |
-| **Gate 3** | WebP Asset Engine | `scripts/process_all_images.mjs`, `public/images/` | 267 WebP images generated (<100KB each) |
-| **Gate 4** | Next.js 16 Scaffold | `package.json`, `next.config.ts`, `tailwind.config.ts` | Clean dev server on port 3000, `trailingSlash: true` |
-| **Gate 5** | Route Shell & Layouts| `app/layout.tsx`, `app/(site)/layout.tsx`, `components/` | Two-layer shell, zero `loading.tsx` |
-| **Gate 6** | 33 Canonical Pages | `app/(site)/products/...` | 33 Server Component routes (~57,900 words) |
-| **Gate 7** | Schema Engine | `components/seo/JsonLd.tsx` | 100% valid schema, zero fake review stars |
-| **Gate 8** | Dynamic SEO Layer | `app/sitemap.ts`, `app/robots.ts`, `app/api/og/` | Dynamic 200 OK sitemap & fallback OG image |
-| **Gate 9** | CI Invariant Audits | `scripts/audit-*.mjs` | 5/5 green audit checks |
-| **Gate 10**| Core Web Vitals | Lighthouse audit report | Mobile score > 95, LCP < 1.5s, CLS = 0 |
-| **Gate 11**| Merge to Main | `git checkout main; git merge development` | Production-ready main branch |
-| **Gate 12**| Indexation & Launch | GSC, IndexNow, Google Business Profile | Google Page 1 ranking trajectory |
+* **Objective:** Implement the complete technical and semantic SEO layer across all 33 routes.
+* **Dependencies:** Gate 6.
+* **Files & Directories Involved:**
+  * `app/sitemap.ts` (Dynamic XML sitemap generator)
+  * `app/robots.ts` (Robots directives)
+  * `app/manifest.ts` (Web app manifest)
+  * `app/api/og/route.tsx` (Dynamic Edge OpenGraph image generator)
+  * `components/seo/JsonLd.tsx` (Structured data injection component)
+  * `lib/seo.ts` (Centralized metadata builder)
+* **Exact Implementation Tasks:**
+  1. Implement `app/sitemap.ts`:
+     * Automatically imports `routes` from `data/routes.ts`.
+     * Outputs all 33 canonical URLs with `changeFrequency`, `priority`, and trailing slashes.
+  2. Implement `app/robots.ts`:
+     * Allows all crawlers, disallows private paths, references `https://mineralssolution.in/sitemap.xml`.
+  3. Implement `lib/seo.ts` using the proven pattern from `AGENT.md`:
+     * Generates `title: { absolute: title }`, `description`, `canonical`, and OpenGraph tags.
+  4. Implement `components/seo/JsonLd.tsx`:
+     * Renders valid JSON-LD schemas: `Organization`, `LocalBusiness`, `Product`, `BreadcrumbList`, and `FAQPage` (where relevant for user queries and generative AI, with zero false promises of rich snippet guarantees).
+     * **Strict Invariant:** NO fake `AggregateRating`, NO simulated customer reviews.
+  5. Implement `app/api/og/route.tsx`:
+     * Edge runtime OpenGraph image generator with try/catch fallback to static SVG to prevent HTTP 500 errors.
+* **Validation Commands:**
+  ```bash
+  curl -s http://localhost:3000/sitemap.xml | grep "<loc>" | Measure-Object
+  curl -s http://localhost:3000/robots.txt
+  curl -s http://localhost:3000/api/og?title=Double%20Pass%20Dryer -I
+  ```
+* **Acceptance Criteria:**
+  - [ ] `sitemap.xml` contains exactly 33 URLs, all with trailing slashes.
+  - [ ] Google Rich Results Test passes with 0 errors on product and local schemas.
+  - [ ] OpenGraph endpoint returns HTTP 200 OK with `image/png`.
+* **Definition of Done:** Metadata, schemas, sitemap, robots, and OG images operational.
+
+---
+
+### Gate 8: Conversion Architecture & Analytics
+
+* **Objective:** Implement privacy-conscious B2B lead attribution and event tracking for telephone calls, WhatsApp conversations, and RFQ form submissions.
+* **Dependencies:** Gate 6.
+* **Files & Directories Involved:**
+  * `components/interactive/RfqModal.tsx`, `components/interactive/ContactForm.tsx`
+  * `lib/analytics.ts` (GA4 event dispatch helper)
+  * `app/layout.tsx` (Script injection)
+* **Exact Implementation Tasks:**
+  1. Configure Google Analytics 4 (GA4) via Next.js `<Script>` with `strategy="afterInteractive"`.
+  2. Instrument conversion events:
+     * `whatsapp_inquiry`: Triggered on clicking floating or in-page WhatsApp buttons (captures target machine model).
+     * `phone_call_click`: Triggered on telephone link clicks.
+     * `rfq_submission`: Triggered on valid submission of RFQ forms.
+     * `spec_sheet_download`: Triggered on PDF datasheet downloads.
+  3. Form Security & Anti-Spam:
+     * Implement honeypot anti-spam field and client-side rate limiting on RFQ forms.
+     * Implement strict input validation (email format, 10-digit mobile number, text sanitization).
+* **Validation Commands:**
+  * Trigger test events in browser dev tools; verify event payloads dispatch to GA4 debug view.
+* **Acceptance Criteria:**
+  - [ ] All phone links carry `href="tel:+916352453050"`.
+  - [ ] WhatsApp links carry pre-filled inquiry text identifying the current product page.
+  - [ ] Forms validate correctly and display clear submission confirmation states.
+* **Definition of Done:** Event tracking active and verified across all inquiry touchpoints.
+
+---
+
+### Gate 9: Automated Quality Assurance & Build Audits
+
+* **Objective:** Build and execute an automated CI QA script suite to prevent SEO regressions before code can be promoted.
+* **Dependencies:** Gates 1 through 8.
+* **Files & Directories Involved:**
+  * `scripts/audit-titles-descs.mjs`
+  * `scripts/audit-canonicals.mjs`
+  * `scripts/audit-schemas.mjs`
+  * `scripts/audit-no-rating-leak.mjs`
+  * `scripts/audit-links.mjs`
+  * `package.json` (npm audit scripts)
+* **Exact Implementation Tasks:**
+  1. Create `scripts/audit-titles-descs.mjs`:
+     * Asserts title tag length (guideline 50–60 chars) and meta description length (guideline 140–160 chars) across all 33 routes.
+     * Asserts zero duplicate titles or descriptions.
+  2. Create `scripts/audit-canonicals.mjs`:
+     * Asserts canonical URL parity and strict trailing slash formatting.
+  3. Create `scripts/audit-schemas.mjs`:
+     * Validates JSON-LD schema syntax and asserts required Schema.org properties.
+  4. Create `scripts/audit-no-rating-leak.mjs`:
+     * Greps production build output for `"AggregateRating"` and fails build if detected.
+  5. Create `scripts/audit-links.mjs`:
+     * Crawls static HTML output to verify every internal link returns HTTP 200 OK (zero 404s, zero 308 redirect hops).
+* **Validation Commands:**
+  ```bash
+  npm run audit:titles-descs
+  npm run audit:canonicals
+  npm run audit:schemas
+  npm run audit:no-rating-leak
+  npm run audit:links
+  ```
+* **Acceptance Criteria:**
+  - [ ] 5 out of 5 audit scripts exit with code `0`.
+  - [ ] Zero broken links across all 33 pages.
+* **Definition of Done:** Automated QA suite passes completely on production build output.
+
+---
+
+### Gate 10: Performance & Security Hardening
+
+* **Objective:** Ensure optimal Core Web Vitals (sub-500ms TTFB, LCP < 1.5s, CLS = 0.00) and strict HTTP security headers.
+* **Dependencies:** Gate 9.
+* **Files & Directories Involved:**
+  * `next.config.ts` (Security headers, CSP configuration)
+* **Exact Implementation Tasks:**
+  1. Configure HTTP Security Headers in `next.config.ts`:
+     * `X-Frame-Options: SAMEORIGIN` (prevents clickjacking)
+     * `X-Content-Type-Options: nosniff` (prevents MIME-type sniffing)
+     * `Referrer-Policy: strict-origin-when-cross-origin`
+     * Production Content Security Policy (CSP): restricts script execution to trusted origins, removes `unsafe-eval` in production mode.
+  2. Audit Core Web Vitals:
+     * LCP: Ensure hero image uses `priority={true}` with proper sizes.
+     * CLS: Ensure all visual assets have explicit width/height or aspect-ratio wrappers.
+     * INP: Minimize client-side JavaScript execution; ensure fast event handlers.
+* **Validation Commands:**
+  ```bash
+  # Run production build and measure bundle size
+  npm run build
+  ```
+* **Acceptance Criteria:**
+  - [ ] Static First Load JS < 85 KB shared across pages.
+  - [ ] Security headers confirmed via `curl -sI http://localhost:3000/`.
+* **Definition of Done:** Production build hardened with passing security headers.
+
+---
+
+### Gate 11: Staging & Production Verification
+
+* **Objective:** Final end-to-end verification of the built application on the `development` branch, followed by a clean, non-fast-forward merge into `main`.
+* **Dependencies:** Gates 1 through 10.
+* **Execution Steps:**
+  1. Execute production build and run full test suite:
+     ```bash
+     npm run build
+     npm run audit:all
+     ```
+  2. Start local production server and inspect on port 3000:
+     ```bash
+     npm run start
+     ```
+  3. Verify HTTP 200 status on all 33 routes and 404 status on invalid paths.
+  4. Perform non-fast-forward Git merge to `main`:
+     ```powershell
+     git checkout main
+     git merge development --no-ff -m "feat(release): deploy complete Minerals Solutions website with 33 verified SEO routes, technical specs, and WebP media"
+     git status
+     ```
+* **Acceptance Criteria:**
+  - [ ] Clean build and server start on port 3000.
+  - [ ] Merge to `main` completes cleanly without conflicts.
+* **Definition of Done:** `main` branch contains production-ready code with complete audit logs.
+
+---
+
+### Gate 12: Production Launch & Search Engine Setup
+
+* **Objective:** Deploy production application to target host, establish Google Search Console ownership, dispatch sitemaps, and sync Google Business Profile.
+* **Dependencies:** Gate 11.
+* **Execution Steps:**
+  1. Deploy to production environment (`https://mineralssolution.in/`).
+  2. Verify SSL/TLS certificate and canonical domain redirect (`www` -> non-`www`).
+  3. Google Search Console (GSC):
+     * Verify domain property via DNS TXT record.
+     * Submit XML sitemap: `https://mineralssolution.in/sitemap.xml`.
+     * Request indexing for the top 5 strategic landing pages.
+  4. Bing Webmaster Tools & IndexNow:
+     * Authenticate domain and dispatch IndexNow payload to notify Bing, Yandex, and Naver of all 33 URLs.
+  5. Google Business Profile (GBP) Verification:
+     * Claim listing at `10, Shyam Estate, Zak GIDC, Dahegam, Gandhinagar - 382330`.
+     * Primary category: *Mining equipment manufacturer* / *Industrial equipment supplier*.
+     * Link website to `https://mineralssolution.in/` and add direct phone lines.
+     * Upload all 89 authentic factory, office, and machinery photos.
+* **Acceptance Criteria:**
+  - [ ] Live site serves HTTP 200 OK over HTTPS with trailing slashes.
+  - [ ] GSC successfully reads `sitemap.xml` with zero errors.
+* **Definition of Done:** Website live, indexed, and connected to search engines.
+
+---
+
+### Gate 13: Post-Launch Monitoring & 90-Day Growth
+
+* **Objective:** Track organic rankings, crawl performance, and qualified RFQs through a structured 30/60/90-day optimization cadence.
+* **Dependencies:** Gate 12.
+* **Execution Framework:**
+  * **Days 1–30 (Indexation & Technical Baseline):**
+    * Monitor GSC daily for crawl errors or excluded pages.
+    * Track baseline rankings for brand queries (`minerals solutions dahegam`, `minerals solutions ahmedabad`).
+    * Verify phone and WhatsApp lead attribution in GA4.
+  * **Days 31–60 (Query Mining & Snippet Optimization):**
+    * Analyze GSC Search Performance reports to identify high-impression, low-CTR queries (positions 6–15).
+    * Refine title tags and meta descriptions to improve organic click-through rates.
+    * Expand internal links from high-authority pages to deeper machine models.
+    * Synchronize consistent NAP across regional B2B industrial directories (TradeIndia, ExportersIndia, YellowPages).
+  * **Days 61–90 (Authority Scaling & Conversion Rate Optimization):**
+    * Benchmark rankings against regional competitors (Vira Engineering, Convotech, Aksh Engineering).
+    * Add new factory commissionings, test runs, and customer delivery photos to E-E-A-T sections.
+    * Review RFQ form drop-off rates and refine form fields to maximize lead generation.
+* **Definition of Done:** Ongoing organic growth with measurable commercial inquiries logged monthly.
+
+---
+
+## 4. Supporting Technical Documentation
+
+The following specialized engineering documents have been created alongside this roadmap:
+1. [`seo-quality-gates.md`](file:///c:/Users/DELL/Desktop/SEO/Minerals%20Solutions%20SEO/seo-quality-gates.md) — The comprehensive QA checklist defining acceptance criteria and pass/fail conditions for crawlability, indexability, metadata, rendering, and security.
+2. [`content-requirements.md`](file:///c:/Users/DELL/Desktop/SEO/Minerals%20Solutions%20SEO/content-requirements.md) — The granular page-by-page content specification for all 33 routes, detailing target keywords, search intents, semantic entities, and verified vs client-confirmed data.
+3. [`launch-checklist.md`](file:///c:/Users/DELL/Desktop/SEO/Minerals%20Solutions%20SEO/launch-checklist.md) — The production cutover, search engine onboarding, conversion tracking, and 90-day growth protocol.
+
+---
+
+## 5. Execution Summary Table
+
+| Gate | Stage Name | Status | Primary Deliverable | Acceptance Metric |
+| :--- | :--- | :--- | :--- | :--- |
+| **G1** | Foundation & Business Intelligence | ✅ Done | `data/company.ts`, `data/specifications.ts` | 100% verified facts, 89 photos indexed |
+| **G2** | Keyword & Search Architecture | ✅ Done | `data/routes.ts`, `keyword-map.md` | 33 canonical routes, zero cannibalization |
+| **G3** | Asset Optimization & WebP Pipeline | ⏳ Next | `scripts/process_all_images.mjs`, `public/images/` | 267 WebP images (<100KB each) |
+| **G4** | Design System & Scaffolding | Planned | `package.json`, `next.config.ts`, Tailwind tokens | Clean dev server, `trailingSlash: true` |
+| **G5** | Layouts, Shells & Navigation | Planned | `app/layout.tsx`, `components/layout/` | Pure Server Components, zero `loading.tsx` |
+| **G6** | Content & E-E-A-T (33 Routes) | Planned | 33 `page.tsx` routes | Unique technical content, HTML spec tables |
+| **G7** | Complete SEO Implementation | Planned | `app/sitemap.ts`, `app/robots.ts`, Schema | 100% valid schema, zero fake ratings |
+| **G8** | Conversion Architecture & Analytics| Planned | `lib/analytics.ts`, RFQ tracking | WhatsApp, phone, and form events active |
+| **G9** | Automated QA & Build Audits | Planned | `scripts/audit-*.mjs` | 5/5 passing CI audit scripts |
+| **G10**| Performance & Security Hardening | Planned | Security headers, CSP, font optimization | Mobile LCP < 1.5s, CLS = 0.00 |
+| **G11**| Staging & Production Verification | Planned | Production build & non-ff merge to `main` | Zero errors on port 3000 test |
+| **G12**| Launch & Search Engine Setup | Planned | GSC, IndexNow, Google Business Profile | Live on HTTPS, XML sitemap indexed |
+| **G13**| Post-Launch Monitoring (90 Days) | Planned | Weekly GSC & GA4 reporting cadence | Continuous ranking & B2B lead growth |
