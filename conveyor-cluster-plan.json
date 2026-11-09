@@ -1,0 +1,224 @@
+{
+  "pillar": {
+    "title": "Industrial Conveyor Belt Systems & Material Handling Equipment",
+    "keyword": "industrial conveyor belt system manufacturer",
+    "volume": 2500,
+    "template": "ultimate-guide",
+    "wordCount": 3200,
+    "url": "/products/conveyor-systems/"
+  },
+  "clusters": [
+    {
+      "name": "Bulk Material Conveyors",
+      "color": "#1e3a5f",
+      "posts": [
+        {
+          "title": "Industrial Troughing Belt Conveyor System",
+          "keyword": "industrial belt conveyor manufacturer ahmedabad",
+          "volume": 1600,
+          "template": "landing-page",
+          "wordCount": 1800,
+          "url": "/products/conveyor-systems/belt-conveyors/",
+          "status": "planned"
+        },
+        {
+          "title": "Mineral & Ore Beneficiation Conveyors",
+          "keyword": "mineral ore belt conveyor system gujarat",
+          "volume": 850,
+          "template": "landing-page",
+          "wordCount": 1500,
+          "url": "/products/conveyor-systems/mining-conveyors/",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "name": "Conveyor Pulleys & Lagging",
+      "color": "#e15759",
+      "posts": [
+        {
+          "title": "Conveyor Head & Tail Drum Pulleys",
+          "keyword": "conveyor head and tail pulley manufacturer",
+          "volume": 950,
+          "template": "landing-page",
+          "wordCount": 1500,
+          "url": "/products/conveyor-systems/pulleys/",
+          "status": "planned"
+        },
+        {
+          "title": "Diamond Rubber Lagged Head Pulleys",
+          "keyword": "rubber lagged conveyor pulley manufacturer india",
+          "volume": 720,
+          "template": "landing-page",
+          "wordCount": 1400,
+          "url": "/products/conveyor-systems/rubber-lagged-pulleys/",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "name": "Idlers & Heavy Rubber Belting",
+      "color": "#59a14f",
+      "posts": [
+        {
+          "title": "Troughing & Return Idler Rollers",
+          "keyword": "conveyor idler roller manufacturer ahmedabad",
+          "volume": 1200,
+          "template": "landing-page",
+          "wordCount": 1500,
+          "url": "/products/conveyor-systems/idler-rollers/",
+          "status": "planned"
+        },
+        {
+          "title": "Nylon M24 Stone Crusher Rubber Belting",
+          "keyword": "m24 rubber conveyor belt manufacturer gujarat",
+          "volume": 980,
+          "template": "landing-page",
+          "wordCount": 1400,
+          "url": "/products/conveyor-systems/conveyor-belting/",
+          "status": "planned"
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "from": "cluster-0-post-0",
+      "to": "pillar",
+      "type": "mandatory",
+      "anchor": "industrial conveyor belt system manufacturer"
+    },
+    {
+      "from": "pillar",
+      "to": "cluster-0-post-0",
+      "type": "mandatory",
+      "anchor": "industrial belt conveyor manufacturer ahmedabad"
+    },
+    {
+      "from": "cluster-0-post-1",
+      "to": "pillar",
+      "type": "mandatory",
+      "anchor": "industrial conveyor belt system manufacturer"
+    },
+    {
+      "from": "pillar",
+      "to": "cluster-0-post-1",
+      "type": "mandatory",
+      "anchor": "mineral ore belt conveyor system gujarat"
+    },
+    {
+      "from": "cluster-1-post-0",
+      "to": "pillar",
+      "type": "mandatory",
+      "anchor": "industrial conveyor belt system manufacturer"
+    },
+    {
+      "from": "pillar",
+      "to": "cluster-1-post-0",
+      "type": "mandatory",
+      "anchor": "conveyor head and tail pulley manufacturer"
+    },
+    {
+      "from": "cluster-1-post-1",
+      "to": "pillar",
+      "type": "mandatory",
+      "anchor": "industrial conveyor belt system manufacturer"
+    },
+    {
+      "from": "pillar",
+      "to": "cluster-1-post-1",
+      "type": "mandatory",
+      "anchor": "rubber lagged conveyor pulley manufacturer india"
+    },
+    {
+      "from": "cluster-2-post-0",
+      "to": "pillar",
+      "type": "mandatory",
+      "anchor": "industrial conveyor belt system manufacturer"
+    },
+    {
+      "from": "pillar",
+      "to": "cluster-2-post-0",
+      "type": "mandatory",
+      "anchor": "conveyor idler roller manufacturer ahmedabad"
+    },
+    {
+      "from": "cluster-2-post-1",
+      "to": "pillar",
+      "type": "mandatory",
+      "anchor": "industrial conveyor belt system manufacturer"
+    },
+    {
+      "from": "pillar",
+      "to": "cluster-2-post-1",
+      "type": "mandatory",
+      "anchor": "m24 rubber conveyor belt manufacturer gujarat"
+    },
+    {
+      "from": "cluster-0-post-0",
+      "to": "cluster-0-post-1",
+      "type": "recommended",
+      "anchor": "mineral ore belt conveyor system gujarat"
+    },
+    {
+      "from": "cluster-0-post-1",
+      "to": "cluster-0-post-0",
+      "type": "recommended",
+      "anchor": "industrial belt conveyor manufacturer ahmedabad"
+    },
+    {
+      "from": "cluster-1-post-0",
+      "to": "cluster-1-post-1",
+      "type": "recommended",
+      "anchor": "rubber lagged conveyor pulley manufacturer india"
+    },
+    {
+      "from": "cluster-1-post-1",
+      "to": "cluster-1-post-0",
+      "type": "recommended",
+      "anchor": "conveyor head and tail pulley manufacturer"
+    },
+    {
+      "from": "cluster-2-post-0",
+      "to": "cluster-2-post-1",
+      "type": "recommended",
+      "anchor": "m24 rubber conveyor belt manufacturer gujarat"
+    },
+    {
+      "from": "cluster-2-post-1",
+      "to": "cluster-2-post-0",
+      "type": "recommended",
+      "anchor": "conveyor idler roller manufacturer ahmedabad"
+    },
+    {
+      "from": "cluster-0-post-0",
+      "to": "cluster-1-post-0",
+      "type": "recommended",
+      "anchor": "conveyor head and tail pulleys"
+    },
+    {
+      "from": "cluster-0-post-0",
+      "to": "cluster-2-post-0",
+      "type": "recommended",
+      "anchor": "troughing idler rollers"
+    },
+    {
+      "from": "cluster-1-post-0",
+      "to": "cluster-2-post-1",
+      "type": "recommended",
+      "anchor": "m24 rubber conveyor belt"
+    },
+    {
+      "from": "cluster-2-post-0",
+      "to": "cluster-2-post-1",
+      "type": "recommended",
+      "anchor": "heavy duty conveyor belting"
+    }
+  ],
+  "meta": {
+    "totalPosts": 7,
+    "totalClusters": 3,
+    "totalLinks": 22,
+    "estimatedWords": 12300
+  }
+}
