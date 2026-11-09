@@ -1,0 +1,389 @@
+{
+  "pillar": {
+    "title": "Industrial Rotary Dryer Manufacturer & Drying Systems",
+    "keyword": "rotary dryer manufacturer ahmedabad",
+    "volume": 2400,
+    "template": "ultimate-guide",
+    "wordCount": 3500,
+    "url": "/products/rotary-dryers/"
+  },
+  "clusters": [
+    {
+      "name": "Multi-Pass Dryers",
+      "color": "#1e3a5f",
+      "posts": [
+        {
+          "title": "Double Pass Rotary Dryer",
+          "keyword": "double pass dryer manufacturer",
+          "volume": 1200,
+          "template": "landing-page",
+          "wordCount": 1800,
+          "url": "/products/rotary-dryers/double-pass-dryer/",
+          "status": "planned"
+        },
+        {
+          "title": "Triple Pass Drum Dryer",
+          "keyword": "triple pass rotary dryer india",
+          "volume": 850,
+          "template": "landing-page",
+          "wordCount": 1500,
+          "url": "/products/rotary-dryers/triple-pass-dryer/",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "name": "Specialized & Chemical Dryers",
+      "color": "#e15759",
+      "posts": [
+        {
+          "title": "Roto Louvre Dryer",
+          "keyword": "roto louvre dryer manufacturer india",
+          "volume": 720,
+          "template": "explainer",
+          "wordCount": 1600,
+          "url": "/products/rotary-dryers/roto-louvre-dryer/",
+          "status": "planned"
+        },
+        {
+          "title": "Chemical Powder Dryer (Boric/Borax)",
+          "keyword": "boric powder dryer with heat exchanger",
+          "volume": 590,
+          "template": "how-to",
+          "wordCount": 1600,
+          "url": "/products/rotary-dryers/chemical-powder-dryer/",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "name": "Mineral & Sand Drying Plants",
+      "color": "#f28e2b",
+      "posts": [
+        {
+          "title": "Silica Sand Rotary Dryer Plant",
+          "keyword": "silica sand dryer manufacturer gujarat",
+          "volume": 1400,
+          "template": "landing-page",
+          "wordCount": 1800,
+          "url": "/products/rotary-dryers/sand-dryer/",
+          "status": "planned"
+        },
+        {
+          "title": "Chromite Foundry Sand Dryer",
+          "keyword": "chromite sand dryer with vibrating screen",
+          "volume": 480,
+          "template": "landing-page",
+          "wordCount": 1400,
+          "url": "/products/rotary-dryers/chromite-sand-dryer/",
+          "status": "planned"
+        },
+        {
+          "title": "Biomass & Sawdust Drum Dryer",
+          "keyword": "sawdust rotary dryer machine",
+          "volume": 920,
+          "template": "landing-page",
+          "wordCount": 1500,
+          "url": "/products/rotary-dryers/biomass-sawdust-dryer/",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "name": "Combustion & Hot Air Generators",
+      "color": "#76b7b2",
+      "posts": [
+        {
+          "title": "Industrial Hot Air Generator (Coal/Gas)",
+          "keyword": "hot air generator for rotary dryer",
+          "volume": 1100,
+          "template": "comparison",
+          "wordCount": 1500,
+          "url": "/products/rotary-dryers/hot-air-generators/",
+          "status": "planned"
+        },
+        {
+          "title": "Industrial Coal Burner",
+          "keyword": "pulverized coal burner for rotary kiln",
+          "volume": 650,
+          "template": "landing-page",
+          "wordCount": 1300,
+          "url": "/products/rotary-dryers/coal-burner/",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "name": "Kiln & Dryer Mechanical Spares",
+      "color": "#59a14f",
+      "posts": [
+        {
+          "title": "Trunnion Support Roller Assemblies",
+          "keyword": "rotary dryer trunnion roller manufacturer",
+          "volume": 880,
+          "template": "landing-page",
+          "wordCount": 1500,
+          "url": "/products/rotary-dryers/trunnion-support-rollers/",
+          "status": "planned"
+        },
+        {
+          "title": "Dryer Riding Rings & Girth Gears",
+          "keyword": "rotary kiln tyre riding ring girth gear",
+          "volume": 750,
+          "template": "landing-page",
+          "wordCount": 1400,
+          "url": "/products/rotary-dryers/riding-rings-girth-gears/",
+          "status": "planned"
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "from": "cluster-0-post-0",
+      "to": "pillar",
+      "type": "mandatory",
+      "anchor": "rotary dryer manufacturer ahmedabad"
+    },
+    {
+      "from": "pillar",
+      "to": "cluster-0-post-0",
+      "type": "mandatory",
+      "anchor": "double pass dryer manufacturer"
+    },
+    {
+      "from": "cluster-0-post-1",
+      "to": "pillar",
+      "type": "mandatory",
+      "anchor": "rotary dryer manufacturer ahmedabad"
+    },
+    {
+      "from": "pillar",
+      "to": "cluster-0-post-1",
+      "type": "mandatory",
+      "anchor": "triple pass rotary dryer india"
+    },
+    {
+      "from": "cluster-1-post-0",
+      "to": "pillar",
+      "type": "mandatory",
+      "anchor": "rotary dryer manufacturer ahmedabad"
+    },
+    {
+      "from": "pillar",
+      "to": "cluster-1-post-0",
+      "type": "mandatory",
+      "anchor": "roto louvre dryer manufacturer india"
+    },
+    {
+      "from": "cluster-1-post-1",
+      "to": "pillar",
+      "type": "mandatory",
+      "anchor": "rotary dryer manufacturer ahmedabad"
+    },
+    {
+      "from": "pillar",
+      "to": "cluster-1-post-1",
+      "type": "mandatory",
+      "anchor": "boric powder dryer with heat exchanger"
+    },
+    {
+      "from": "cluster-2-post-0",
+      "to": "pillar",
+      "type": "mandatory",
+      "anchor": "rotary dryer manufacturer ahmedabad"
+    },
+    {
+      "from": "pillar",
+      "to": "cluster-2-post-0",
+      "type": "mandatory",
+      "anchor": "silica sand dryer manufacturer gujarat"
+    },
+    {
+      "from": "cluster-2-post-1",
+      "to": "pillar",
+      "type": "mandatory",
+      "anchor": "rotary dryer manufacturer ahmedabad"
+    },
+    {
+      "from": "pillar",
+      "to": "cluster-2-post-1",
+      "type": "mandatory",
+      "anchor": "chromite sand dryer with vibrating screen"
+    },
+    {
+      "from": "cluster-2-post-2",
+      "to": "pillar",
+      "type": "mandatory",
+      "anchor": "rotary dryer manufacturer ahmedabad"
+    },
+    {
+      "from": "pillar",
+      "to": "cluster-2-post-2",
+      "type": "mandatory",
+      "anchor": "sawdust rotary dryer machine"
+    },
+    {
+      "from": "cluster-3-post-0",
+      "to": "pillar",
+      "type": "mandatory",
+      "anchor": "rotary dryer manufacturer ahmedabad"
+    },
+    {
+      "from": "pillar",
+      "to": "cluster-3-post-0",
+      "type": "mandatory",
+      "anchor": "hot air generator for rotary dryer"
+    },
+    {
+      "from": "cluster-3-post-1",
+      "to": "pillar",
+      "type": "mandatory",
+      "anchor": "rotary dryer manufacturer ahmedabad"
+    },
+    {
+      "from": "pillar",
+      "to": "cluster-3-post-1",
+      "type": "mandatory",
+      "anchor": "pulverized coal burner for rotary kiln"
+    },
+    {
+      "from": "cluster-4-post-0",
+      "to": "pillar",
+      "type": "mandatory",
+      "anchor": "rotary dryer manufacturer ahmedabad"
+    },
+    {
+      "from": "pillar",
+      "to": "cluster-4-post-0",
+      "type": "mandatory",
+      "anchor": "rotary dryer trunnion roller manufacturer"
+    },
+    {
+      "from": "cluster-4-post-1",
+      "to": "pillar",
+      "type": "mandatory",
+      "anchor": "rotary dryer manufacturer ahmedabad"
+    },
+    {
+      "from": "pillar",
+      "to": "cluster-4-post-1",
+      "type": "mandatory",
+      "anchor": "rotary kiln tyre riding ring girth gear"
+    },
+    {
+      "from": "cluster-0-post-0",
+      "to": "cluster-0-post-1",
+      "type": "recommended",
+      "anchor": "triple pass rotary dryer india"
+    },
+    {
+      "from": "cluster-0-post-1",
+      "to": "cluster-0-post-0",
+      "type": "recommended",
+      "anchor": "double pass dryer manufacturer"
+    },
+    {
+      "from": "cluster-1-post-0",
+      "to": "cluster-1-post-1",
+      "type": "recommended",
+      "anchor": "boric powder dryer with heat exchanger"
+    },
+    {
+      "from": "cluster-1-post-1",
+      "to": "cluster-1-post-0",
+      "type": "recommended",
+      "anchor": "roto louvre dryer manufacturer india"
+    },
+    {
+      "from": "cluster-2-post-0",
+      "to": "cluster-2-post-1",
+      "type": "recommended",
+      "anchor": "chromite sand dryer with vibrating screen"
+    },
+    {
+      "from": "cluster-2-post-1",
+      "to": "cluster-2-post-0",
+      "type": "recommended",
+      "anchor": "silica sand dryer manufacturer gujarat"
+    },
+    {
+      "from": "cluster-2-post-0",
+      "to": "cluster-2-post-2",
+      "type": "recommended",
+      "anchor": "sawdust rotary dryer machine"
+    },
+    {
+      "from": "cluster-2-post-2",
+      "to": "cluster-2-post-0",
+      "type": "recommended",
+      "anchor": "silica sand dryer manufacturer gujarat"
+    },
+    {
+      "from": "cluster-2-post-1",
+      "to": "cluster-2-post-2",
+      "type": "recommended",
+      "anchor": "sawdust rotary dryer machine"
+    },
+    {
+      "from": "cluster-2-post-2",
+      "to": "cluster-2-post-1",
+      "type": "recommended",
+      "anchor": "chromite sand dryer with vibrating screen"
+    },
+    {
+      "from": "cluster-3-post-0",
+      "to": "cluster-3-post-1",
+      "type": "recommended",
+      "anchor": "pulverized coal burner for rotary kiln"
+    },
+    {
+      "from": "cluster-3-post-1",
+      "to": "cluster-3-post-0",
+      "type": "recommended",
+      "anchor": "hot air generator for rotary dryer"
+    },
+    {
+      "from": "cluster-4-post-0",
+      "to": "cluster-4-post-1",
+      "type": "recommended",
+      "anchor": "rotary kiln tyre riding ring girth gear"
+    },
+    {
+      "from": "cluster-4-post-1",
+      "to": "cluster-4-post-0",
+      "type": "recommended",
+      "anchor": "rotary dryer trunnion roller manufacturer"
+    },
+    {
+      "from": "cluster-0-post-0",
+      "to": "cluster-3-post-0",
+      "type": "optional",
+      "anchor": "hot air generator for rotary dryer"
+    },
+    {
+      "from": "cluster-0-post-0",
+      "to": "cluster-4-post-0",
+      "type": "optional",
+      "anchor": "rotary dryer trunnion roller"
+    },
+    {
+      "from": "cluster-2-post-0",
+      "to": "cluster-3-post-0",
+      "type": "optional",
+      "anchor": "coal fired hot air generator"
+    },
+    {
+      "from": "cluster-1-post-1",
+      "to": "cluster-4-post-0",
+      "type": "optional",
+      "anchor": "dryer support roller assembly"
+    }
+  ],
+  "meta": {
+    "totalPosts": 12,
+    "totalClusters": 5,
+    "totalLinks": 40,
+    "estimatedWords": 20400
+  }
+}
