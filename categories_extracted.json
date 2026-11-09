@@ -1,0 +1,373 @@
+[
+  {
+    "name": null,
+    "id": null,
+    "count": 2,
+    "products": [
+      {
+        "display_id": 2859950937491,
+        "name": "Sand Dryer With Gas Burner",
+        "img125": "https://5.imimg.com/data5/WA_9696/Default/2026/10/650908785/VK/UQ/HI/225132248/image-250x250.jpeg",
+        "mcatId": 168992699,
+        "catId": 168992699
+      },
+      {
+        "display_id": 2859950108548,
+        "name": "Silica Sand Dryer",
+        "img125": "https://5.imimg.com/data5/SELLER/Default/2026/10/650943647/DL/WW/NK/225132248/image-250x250.jpeg",
+        "mcatId": 168992699,
+        "catId": 168992699
+      }
+    ]
+  },
+  {
+    "name": null,
+    "id": null,
+    "count": 1,
+    "products": [
+      {
+        "display_id": 2859960260862,
+        "name": "Conveyor Idler Roller",
+        "img125": "https://5.imimg.com/data5/SELLER/Default/2026/10/651957537/HP/CB/AA/225132248/conveyor-idler-roller-250x250.png",
+        "mcatId": 168996235,
+        "catId": 168996235
+      }
+    ]
+  },
+  {
+    "name": null,
+    "id": null,
+    "count": 1,
+    "products": [
+      {
+        "display_id": 2859950927573,
+        "name": "River Sand Washing Plant",
+        "img125": "https://5.imimg.com/data5/SELLER/Default/2026/10/650374891/VT/CA/DL/225132248/river-sand-washing-plant-250x250.jpg",
+        "mcatId": 168992968,
+        "catId": 168992968
+      }
+    ]
+  },
+  {
+    "name": null,
+    "id": null,
+    "count": 1,
+    "products": [
+      {
+        "display_id": 2859950933248,
+        "name": "Rotary Sand Dryer",
+        "img125": "https://5.imimg.com/data5/SELLER/Default/2026/10/650375196/WW/LG/IY/225132248/sand-dryer-with-manual-fired-hot-air-generator-250x250.jpg",
+        "mcatId": 169039294,
+        "catId": 169039294
+      }
+    ]
+  },
+  {
+    "name": null,
+    "id": null,
+    "count": 1,
+    "products": [
+      {
+        "display_id": 2859950935297,
+        "name": "Saw Dust Dryer",
+        "img125": "https://5.imimg.com/data5/SELLER/Default/2026/10/650375329/TW/SZ/WM/225132248/saw-dust-dryer-250x250.jpg",
+        "mcatId": 169039344,
+        "catId": 169039344
+      }
+    ]
+  },
+  {
+    "name": null,
+    "id": null,
+    "count": 1,
+    "products": [
+      {
+        "display_id": 2859960294312,
+        "name": "Crusher Machine",
+        "img125": "https://5.imimg.com/data5/SELLER/Default/2026/10/652432802/DX/RB/HQ/225132248/cone-crusher-machine-250x250.jpeg",
+        "mcatId": 168996158,
+        "catId": 168996158
+      }
+    ]
+  },
+  {
+    "name": null,
+    "id": null,
+    "count": 1,
+    "products": [
+      {
+        "display_id": 2859950108433,
+        "name": "Fertilizer Granulation Plant",
+        "img125": "https://5.imimg.com/data5/SELLER/Default/2026/10/652434313/RT/QK/UA/225132248/fertilizer-granulation-plant-machine-250x250.jpg",
+        "mcatId": 168996182,
+        "catId": 168996182
+      }
+    ]
+  },
+  {
+    "name": null,
+    "id": null,
+    "count": 1,
+    "products": [
+      {
+        "display_id": 2859960273797,
+        "name": "Pellet mill Roller assembly",
+        "img125": "https://5.imimg.com/data5/SELLER/Default/2026/10/652434653/EN/EU/ZQ/225132248/pellet-mill-roller-assembly-250x250.jpeg",
+        "mcatId": 168996197,
+        "catId": 168996197
+      }
+    ]
+  },
+  {
+    "name": null,
+    "id": null,
+    "count": 1,
+    "products": [
+      {
+        "display_id": 2859960269291,
+        "name": "Agro Waste Pellet Making Machine",
+        "img125": "https://5.imimg.com/data5/WA_9696/Default/2026/10/650909005/DO/MR/PW/225132248/image-250x250.jpeg",
+        "mcatId": 168996226,
+        "catId": 168996226
+      }
+    ]
+  },
+  {
+    "name": null,
+    "id": null,
+    "count": 1,
+    "products": [
+      {
+        "display_id": 2859960253191,
+        "name": "Conveyor Tail Drum Pulley",
+        "img125": "https://5.imimg.com/data5/SELLER/Default/2026/10/652435710/IY/GA/CT/225132248/conveyor-head-tail-pulley-250x250.jpg",
+        "mcatId": 168996232,
+        "catId": 168996232
+      }
+    ]
+  },
+  {
+    "name": null,
+    "id": null,
+    "count": 1,
+    "products": [
+      {
+        "display_id": 2859960249048,
+        "name": "Stainless Steel Disc Granulator",
+        "img125": "https://5.imimg.com/data5/SELLER/Default/2026/10/651951638/ZH/HW/QB/225132248/disc-granulator-250x250.jpeg",
+        "mcatId": 168996239,
+        "catId": 168996239
+      }
+    ]
+  },
+  {
+    "name": null,
+    "id": null,
+    "count": 1,
+    "products": [
+      {
+        "display_id": 2859960217091,
+        "name": "Pellet Mill Die",
+        "img125": "https://5.imimg.com/data5/SELLER/Default/2026/10/651946886/JE/UG/KA/225132248/pellet-mill-dies-250x250.jpeg",
+        "mcatId": 168996257,
+        "catId": 168996257
+      }
+    ]
+  },
+  {
+    "name": null,
+    "id": null,
+    "count": 1,
+    "products": [
+      {
+        "display_id": 2859949818412,
+        "name": "Double Pass Dryer",
+        "img125": "https://5.imimg.com/data5/WA_9696/Default/2026/10/650908876/RM/ZT/RN/225132248/image-250x250.jpeg",
+        "mcatId": 169023887,
+        "catId": 169023887
+      }
+    ]
+  },
+  {
+    "name": null,
+    "id": null,
+    "count": 1,
+    "products": [
+      {
+        "display_id": 2859960297862,
+        "name": "Dryer Support Roller",
+        "img125": "https://5.imimg.com/data5/WA_9696/Default/2026/10/650909019/WT/FB/IJ/225132248/image-250x250.jpeg",
+        "mcatId": 169039353,
+        "catId": 169039353
+      }
+    ]
+  },
+  {
+    "name": null,
+    "id": null,
+    "count": 1,
+    "products": [
+      {
+        "display_id": 2859960286397,
+        "name": "Belt Conveyor System",
+        "img125": "https://5.imimg.com/data5/SELLER/Default/2026/10/650957033/UQ/TC/ET/225132248/conveyor-belt-system-250x250.jpeg",
+        "mcatId": 169039453,
+        "catId": 169039453
+      }
+    ]
+  },
+  {
+    "name": null,
+    "id": null,
+    "count": 1,
+    "products": [
+      {
+        "display_id": 2859960291312,
+        "name": "Double Pass  Dryer",
+        "img125": "https://5.imimg.com/data5/WA_9696/Default/2026/10/650909020/JV/FZ/UC/225132248/image-250x250.jpeg",
+        "mcatId": 169039480,
+        "catId": 169039480
+      }
+    ]
+  },
+  {
+    "name": null,
+    "id": null,
+    "count": 1,
+    "products": [
+      {
+        "display_id": 2859949818673,
+        "name": "Rotary Dryer",
+        "img125": "https://5.imimg.com/data5/SELLER/Default/2026/10/652432107/LJ/VF/AU/225132248/2hp-rotary-dryer-250x250.jpg",
+        "mcatId": 168974249,
+        "catId": 168974249
+      }
+    ]
+  },
+  {
+    "name": null,
+    "id": null,
+    "count": 1,
+    "products": [
+      {
+        "display_id": 2859960176391,
+        "name": "Rubber Conveyor Belt",
+        "img125": "https://5.imimg.com/data5/SELLER/Default/2026/10/651967579/HU/WH/NF/225132248/rubber-conveyor-belt-250x250.png",
+        "mcatId": 169026413,
+        "catId": 169026413
+      }
+    ]
+  },
+  {
+    "name": null,
+    "id": null,
+    "count": 1,
+    "products": [
+      {
+        "display_id": 2859960211633,
+        "name": "Rotary Screen",
+        "img125": "https://5.imimg.com/data5/SELLER/Default/2026/10/650952958/SZ/UZ/JA/225132248/image-250x250.jpeg",
+        "mcatId": 169025779,
+        "catId": 169025779
+      }
+    ]
+  },
+  {
+    "name": null,
+    "id": null,
+    "count": 1,
+    "products": [
+      {
+        "display_id": 2859960156348,
+        "name": "Belt Conveyor",
+        "img125": "https://5.imimg.com/data5/SELLER/Default/2026/10/650949753/FS/KD/IE/225132248/image-250x250.jpeg",
+        "mcatId": 168992731,
+        "catId": 168992731
+      }
+    ]
+  },
+  {
+    "name": null,
+    "id": null,
+    "count": 1,
+    "products": [
+      {
+        "display_id": 2859960184330,
+        "name": "Bag Filter Systems",
+        "img125": "https://5.imimg.com/data5/SELLER/Default/2026/10/650951655/FU/PL/BM/225132248/bag-filter-unit-250x250.jpeg",
+        "mcatId": 169039584,
+        "catId": 169039584
+      }
+    ]
+  },
+  {
+    "name": null,
+    "id": null,
+    "count": 1,
+    "products": [
+      {
+        "display_id": 2859960170155,
+        "name": "Legging Head Drum Pulley",
+        "img125": "https://5.imimg.com/data5/WA_9696/Default/2026/10/650908947/BV/CU/ID/225132248/image-250x250.jpeg",
+        "mcatId": 169039620,
+        "catId": 169039620
+      }
+    ]
+  },
+  {
+    "name": null,
+    "id": null,
+    "count": 1,
+    "products": [
+      {
+        "display_id": 2859960164948,
+        "name": "Sand Dryer With Coal Fired Hot Air Generator",
+        "img125": "https://5.imimg.com/data5/WA_9696/Default/2026/10/650908892/NR/UY/CL/225132248/image-250x250.jpeg",
+        "mcatId": 169039636,
+        "catId": 169039636
+      }
+    ]
+  },
+  {
+    "name": null,
+    "id": null,
+    "count": 1,
+    "products": [
+      {
+        "display_id": 2859949818762,
+        "name": "Quartz Stone Sand Washers",
+        "img125": "https://5.imimg.com/data5/SELLER/Default/2026/10/652436491/ZB/VY/NB/225132248/quartz-stone-sand-washers-250x250.jpeg",
+        "mcatId": 169039649,
+        "catId": 169039649
+      }
+    ]
+  },
+  {
+    "name": null,
+    "id": null,
+    "count": 1,
+    "products": [
+      {
+        "display_id": 2859950931273,
+        "name": "Pan Disc Fertilizer Granulation Machine",
+        "img125": "https://5.imimg.com/data5/WA_9696/Default/2026/10/650908825/UC/QF/PZ/225132248/image-250x250.jpeg",
+        "mcatId": 169039700,
+        "catId": 169039700
+      }
+    ]
+  },
+  {
+    "name": null,
+    "id": null,
+    "count": 1,
+    "products": [
+      {
+        "display_id": 2859950920512,
+        "name": "Borax Powder Dryer with Heat Exchanger & Bag Filter",
+        "img125": "https://5.imimg.com/data5/SELLER/Default/2026/10/650373923/UU/BQ/XV/225132248/borex-powder-dryer-with-heat-exchanger-and-bag-filter-250x250.jpg",
+        "mcatId": 169039772,
+        "catId": 169039772
+      }
+    ]
+  }
+]
