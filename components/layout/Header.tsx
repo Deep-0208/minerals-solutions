@@ -22,7 +22,6 @@ import { company } from '@/data/company';
 interface SpokeItem {
   label: string;
   href: string;
-  tag?: string;
 }
 
 interface PillarItem {
@@ -35,7 +34,6 @@ interface PillarItem {
   spokes: SpokeItem[];
 }
 
-// Exactly matches official Minerals Solutions brochure and visiting card
 const productPillars: PillarItem[] = [
   {
     name: 'Rotary Dryers',
@@ -48,7 +46,6 @@ const productPillars: PillarItem[] = [
       {
         label: 'Single / Double / Triple Pass Dryer',
         href: '/products/industrial-rotary-dryers/#configurations',
-        tag: 'Brochure',
       },
       {
         label: 'Dryer with Hot Air Generator',
@@ -75,7 +72,6 @@ const productPillars: PillarItem[] = [
       {
         label: 'Fertilizers Granulation Plant',
         href: '/products/fertilizer-granulation-plants/#machinery',
-        tag: 'Turnkey',
       },
       {
         label: 'Fertilizers Plant (Pan / Disc System)',
@@ -98,7 +94,6 @@ const productPillars: PillarItem[] = [
       {
         label: 'Sand Washing & Screening Plant',
         href: '/products/sand-washing-plants/#machinery',
-        tag: 'Brochure',
       },
       {
         label: 'Mineral Processing Equipment',
@@ -121,7 +116,6 @@ const productPillars: PillarItem[] = [
       {
         label: 'Conveyor Systems and Accessories',
         href: '/products/industrial-conveyors-spares/#conveyors',
-        tag: 'Brochure',
       },
       {
         label: 'Road, Civil, Crusher Plants Spares',
@@ -272,26 +266,18 @@ export function Header() {
                             </p>
                           </Link>
 
-                          {/* Sub-Pillars / Spokes List */}
-                          <div className="pt-2 border-t border-neutral-100 space-y-1.5">
-                            <span className="text-[10px] font-bold uppercase tracking-wider text-neutral-400 block mb-1">
-                              Brochure Models
-                            </span>
+                          {/* Sub-Pillars / Spokes List (Clean without badges) */}
+                          <div className="pt-2 border-t border-neutral-100 space-y-1">
                             {pillar.spokes.map((spoke) => (
                               <Link
                                 key={spoke.label}
                                 href={spoke.href}
                                 onClick={() => setProductsMegaOpen(false)}
-                                className="group flex items-start justify-between py-1 px-1.5 rounded-md hover:bg-[#F5F5F7] transition-colors"
+                                className="group flex items-center py-1.5 px-2 rounded-md hover:bg-[#F5F5F7] transition-colors"
                               >
                                 <span className="text-xs text-neutral-700 group-hover:text-[#E10613] font-medium leading-snug">
                                   {spoke.label}
                                 </span>
-                                {spoke.tag && (
-                                  <span className="shrink-0 ml-1 px-1.5 py-0.2 rounded text-[9px] font-mono bg-red-50 text-[#E10613] font-semibold">
-                                    {spoke.tag}
-                                  </span>
-                                )}
                               </Link>
                             ))}
                           </div>
@@ -456,7 +442,7 @@ export function Header() {
               {/* Mobile 4-Pillars Accordion */}
               <div className="py-2 space-y-2">
                 <span className="text-[11px] font-bold uppercase tracking-wider text-neutral-400 block px-1">
-                  Brochure Machinery Divisions
+                  Machinery Divisions
                 </span>
                 {productPillars.map((pillar) => {
                   const isOpen = activeMobilePillar === pillar.name;
@@ -480,7 +466,7 @@ export function Header() {
                       </button>
 
                       {isOpen && (
-                        <div className="p-3 bg-white space-y-2 border-t border-neutral-100">
+                        <div className="p-3 bg-white space-y-1.5 border-t border-neutral-100">
                           <Link
                             href={pillar.href}
                             onClick={() => setMobileMenuOpen(false)}
@@ -488,7 +474,7 @@ export function Header() {
                           >
                             Explore {pillar.shortName} ({pillar.badge})
                           </Link>
-                          <div className="space-y-1.5 pt-1 pl-1">
+                          <div className="space-y-1 pt-1 pl-1">
                             {pillar.spokes.map((spoke) => (
                               <Link
                                 key={spoke.label}
