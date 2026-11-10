@@ -34,7 +34,7 @@ export function Logo({
   return (
     <Link
       href="/"
-      className={`inline-flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-[#E10613] rounded-sm transition-opacity hover:opacity-95 ${className}`}
+      className={`inline-flex items-center gap-3 group outline-none focus:outline-none focus:ring-0 ring-0 border-none transition-opacity hover:opacity-95 ${className}`}
       aria-label="Minerals Solutions - Home"
     >
       {/* Official MS Monogram Emblem */}
