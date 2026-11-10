@@ -188,7 +188,7 @@ export function Header() {
           : 'bg-white border-b border-[#E7E7EB]/70 h-[80px]'
       }`}
     >
-      <div className="max-w-[1360px] mx-auto px-4 sm:px-6 md:px-8 lg:px-10 h-full flex items-center justify-between">
+      <div className="max-w-[1360px] mx-auto px-4 sm:px-6 md:px-8 lg:px-10 h-full flex items-center justify-between relative">
         {/* Brand Logo */}
         <Logo size="md" />
 
@@ -207,7 +207,7 @@ export function Header() {
           </Link>
 
           {/* 4-Pillar Mega Menu Dropdown */}
-          <div className="relative" ref={dropdownRef}>
+          <div ref={dropdownRef}>
             <button
               type="button"
               onClick={() => setProductsMegaOpen(!productsMegaOpen)}
@@ -229,11 +229,11 @@ export function Header() {
               )}
             </button>
 
-            {/* 4-Pillar Mega Panel with Premium Bento Card Styling */}
+            {/* 4-Pillar Mega Panel with Centered Alignment & Zero Horizontal Overflow */}
             {productsMegaOpen && (
               <div
                 onMouseLeave={() => setProductsMegaOpen(false)}
-                className="absolute top-full -left-20 xl:-left-28 mt-2.5 w-[960px] xl:w-[1040px] max-w-[95vw] bg-white rounded-2xl border border-[#E7E7EB] shadow-[0_24px_60px_-12px_rgba(17,17,17,0.16)] p-5 z-50 animate-in fade-in slide-in-from-top-1 duration-150"
+                className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[940px] xl:w-[980px] max-w-[calc(100vw-32px)] bg-white rounded-2xl border border-[#E7E7EB] shadow-[0_24px_60px_-12px_rgba(17,17,17,0.16)] p-5 z-50 animate-in fade-in slide-in-from-top-1 duration-150 before:absolute before:-top-3 before:left-0 before:right-0 before:h-3"
               >
                 {/* 4 Pillar Cards in a Balanced Grid */}
                 <div className="grid grid-cols-4 gap-3.5">
