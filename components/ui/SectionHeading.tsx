@@ -5,6 +5,8 @@ interface SectionHeadingProps {
   title: string;
   subtitle?: string;
   centered?: boolean;
+  accentLine?: boolean;
+  dark?: boolean;
   className?: string;
 }
 
@@ -13,33 +15,51 @@ export function SectionHeading({
   title,
   subtitle,
   centered = false,
+  accentLine = false,
+  dark = false,
   className = '',
 }: SectionHeadingProps) {
   return (
     <div
-      className={`mb-10 md:mb-14 ${
-        centered ? 'text-center mx-auto max-w-3xl' : 'max-w-4xl'
+      className={`mb-12 md:mb-16 ${
+        centered ? 'text-center mx-auto max-w-3xl' : 'max-w-3xl'
       } ${className}`}
     >
       {badge && (
         <div
-          className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-red-50 text-[#DA020D] border border-red-200/60 mb-3.5 ${
+          className={`inline-block text-xs sm:text-sm font-bold uppercase tracking-wider text-[#E10613] mb-3 ${
             centered ? 'mx-auto' : ''
           }`}
         >
-          <span className="w-1.5 h-1.5 rounded-full bg-[#DA020D]" />
           {badge}
         </div>
       )}
-      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-slate-900 leading-tight">
+
+      {accentLine && !badge && (
+        <div
+          className={`w-12 h-1 bg-[#E10613] rounded-full mb-4 ${
+            centered ? 'mx-auto' : ''
+          }`}
+        />
+      )}
+
+      <h2
+        className={`text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight leading-tight font-display ${
+          dark ? 'text-white' : 'text-[#111111]'
+        }`}
+      >
         {title}
       </h2>
+
       {subtitle && (
-        <p className="mt-3.5 text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
+        <p
+          className={`mt-4 text-base sm:text-lg leading-relaxed ${
+            dark ? 'text-neutral-400' : 'text-[#737373]'
+          }`}
+        >
           {subtitle}
         </p>
       )}
     </div>
   );
 }
-

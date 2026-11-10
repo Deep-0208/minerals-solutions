@@ -1,12 +1,12 @@
 import React from 'react';
 
 interface ContainerProps extends React.HTMLAttributes<HTMLDivElement> {
-  size?: 'sm' | 'md' | 'lg' | 'xl' | 'full';
+  size?: 'sm' | 'md' | 'content' | 'hero' | 'full';
   children: React.ReactNode;
 }
 
 export function Container({
-  size = 'lg',
+  size = 'content',
   className = '',
   children,
   ...props
@@ -14,18 +14,17 @@ export function Container({
   const sizeStyles = {
     sm: 'max-w-3xl',
     md: 'max-w-5xl',
-    lg: 'max-w-7xl',
-    xl: 'max-w-[1400px]',
+    content: 'max-w-[1200px]',
+    hero: 'max-w-[1320px]',
     full: 'max-w-full',
   }[size];
 
   return (
     <div
-      className={`w-full mx-auto px-4 sm:px-6 lg:px-8 ${sizeStyles} ${className}`}
+      className={`w-full mx-auto px-5 sm:px-6 md:px-8 lg:px-12 ${sizeStyles} ${className}`}
       {...props}
     >
       {children}
     </div>
   );
 }
-

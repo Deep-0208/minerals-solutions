@@ -10,40 +10,43 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          primary: '#DA020D',          // Official Sharp Logo Crimson/Ruby Red
-          primaryHover: '#B3020B',     // Interactive Deepened Red
-          primaryLight: '#FEF2F2',     // Red 50 tint
-          secondary: '#181818',        // Official Sharp Logo Pure Graphite/Charcoal
-          secondaryHover: '#0F0F0F',   // Elevated Graphite
-          accent: '#DC2626',           // High-visibility Action Red
-          amber: '#D97706',            // Industrial Warning / Rating Amber
-          whatsapp: '#16A34A',         // Direct WhatsApp Emerald
-          slateDark: '#0F172A',        // Slate 900 Footer / High Contrast
-          slateNav: '#1E293B',         // Slate 800 Topbar
-          surface: '#F8FAFC',          // Slate 50 Technical Section Fill
-          border: '#E2E8F0',           // Slate 200 Hairline Borders
-          borderStrong: '#CBD5E1',     // Slate 300 Card Hover Strokes
-          textPrimary: '#0F172A',      // Slate 900 Headings
-          textSecondary: '#334155',    // Slate 800 Body Copy
-          textMuted: '#64748B',        // Slate 500 Metadata
+          red: '#E10613',              // Primary brand red from design.md
+          redHover: '#BC0711',         // Pressed / hover state
+          redSoft: '#FFF0F1',          // Soft highlight background
+          black: '#111111',            // Main dark surface / display text
+          charcoal: '#1B1B1D',         // Hero / footer dark charcoal surface
+          neutral900: '#171717',       // Primary body text
+          neutral700: '#454545',       // Secondary body text
+          neutral500: '#737373',       // Muted text, metadata
+          neutral300: '#D9D9DE',       // Borders, dividers
+          neutral100: '#F5F5F7',       // Section background
+          surface: '#FFFFFF',          // Cards & modal surfaces
+          border: '#E7E7EB',           // Subtle card border
+          success: '#16794B',
+          warning: '#946200',
+          error: '#B42318',
         },
       },
       fontFamily: {
-        sans: ['var(--font-sans)', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
-        display: ['var(--font-display)', 'system-ui', '-apple-system', 'sans-serif'],
-        mono: ['var(--font-mono)', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'monospace'],
+        sans: ['var(--font-inter)', 'Inter', 'Segoe UI', 'Arial', 'sans-serif'],
+        display: ['var(--font-poppins)', 'Poppins', 'Inter', 'sans-serif'],
+        mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'monospace'],
       },
       boxShadow: {
-        sm: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
-        card: '0 1px 3px 0 rgba(0, 0, 0, 0.06), 0 1px 2px -1px rgba(0, 0, 0, 0.04)',
-        cardHover: '0 8px 20px -4px rgba(15, 23, 42, 0.08), 0 4px 6px -2px rgba(15, 23, 42, 0.03)',
-        primaryGlow: '0 4px 14px 0 rgba(190, 35, 35, 0.25)',
+        card: '0 8px 28px rgba(17, 17, 17, 0.07)',
+        hover: '0 14px 36px rgba(17, 17, 17, 0.12)',
+        redGlow: '0 8px 30px rgba(225, 6, 19, 0.25)',
       },
       borderRadius: {
-        sm: '4px',
-        md: '6px',
-        lg: '8px',
-        xl: '12px',
+        sm: '8px',
+        md: '12px',
+        lg: '16px',
+        xl: '24px',
+        pill: '999px',
+      },
+      maxWidth: {
+        content: '1200px',
+        hero: '1320px',
       },
     },
   },
@@ -51,4 +54,3 @@ const config: Config = {
 };
 
 export default config;
-

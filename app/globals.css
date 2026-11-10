@@ -2,31 +2,34 @@
 @config "../tailwind.config.ts";
 
 :root {
-  --brand-primary: #DA020D;
-  --brand-primary-hover: #B3020B;
-  --brand-primary-light: #FEF2F2;
-  --brand-secondary: #181818;
-  --brand-secondary-hover: #0F0F0F;
-  --brand-accent: #DC2626;
-  --brand-amber: #D97706;
-  --brand-whatsapp: #16A34A;
-  
-  --bg-primary: #FFFFFF;
-  --bg-secondary: #F8FAFC;
-  --bg-surface: #FFFFFF;
-  --bg-dark: #0F172A;
-  
-  --text-primary: #0F172A;
-  --text-secondary: #334155;
-  --text-muted: #64748B;
-  --text-inverse: #FFFFFF;
-  
-  --border-subtle: #E2E8F0;
-  --border-strong: #CBD5E1;
+  color-scheme: light;
+  --color-red: #E10613;
+  --color-red-hover: #BC0711;
+  --color-red-soft: #FFF0F1;
+  --color-black: #111111;
+  --color-charcoal: #1B1B1D;
+  --color-text: #171717;
+  --color-text-muted: #737373;
+  --color-border: #E7E7EB;
+  --color-surface: #FFFFFF;
+  --color-surface-muted: #F5F5F7;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-pill: 999px;
+
+  --shadow-card: 0 8px 28px rgba(17, 17, 17, 0.07);
+  --shadow-hover: 0 14px 36px rgba(17, 17, 17, 0.12);
+
+  --container-width: 1200px;
+  --header-height: 80px;
+  --transition-fast: 180ms ease-out;
 }
 
 ::selection {
-  background-color: var(--brand-primary);
+  background-color: var(--color-red);
   color: #FFFFFF;
 }
 
@@ -49,13 +52,16 @@ html {
 }
 
 body {
-  background-color: var(--bg-primary);
-  color: var(--text-secondary);
-  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
 }
 
-/* Tabular figures for technical data tables */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-poppins), var(--font-inter), sans-serif;
+}
+
+/* Tabular figures for data */
 .tabular-nums {
   font-variant-numeric: tabular-nums;
 }
-

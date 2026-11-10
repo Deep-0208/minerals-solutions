@@ -1,17 +1,36 @@
 import type { Metadata, Viewport } from 'next';
+import { Inter, Poppins } from 'next/font/google';
 import './globals.css';
 import { company } from '@/data/company';
 import { JsonLd } from '@/components/seo/JsonLd';
 
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-inter',
+  display: 'swap',
+});
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['500', '600', '700', '800'],
+  variable: '--font-poppins',
+  display: 'swap',
+});
+
 export const metadata: Metadata = {
   metadataBase: new URL(company.siteUrl),
   title: {
-    default: 'Minerals Solutions | Industrial Rotary Dryers & Turnkey Mineral Plants',
-    template: '%s | Minerals Solutions',
+    default: 'MS | Innovative Ideas. Powerful Solutions.',
+    template: '%s | MS',
   },
   description:
-    'Minerals Solutions is a leading heavy industrial machinery manufacturer in Zak GIDC, Dahegam, Ahmedabad corridor, Gujarat. Specialized in industrial rotary dryers, sand washing plants, fertilizer granulators, and bulk conveyor systems.',
-  applicationName: 'Minerals Solutions',
+    'We build modern, scalable digital experiences that help businesses move forward. MS provides end-to-end engineering, web and mobile development, and turnkey solutions.',
+  applicationName: 'MS',
+  icons: {
+    icon: '/images/brand/logo-transparent-thumb.webp',
+    apple: '/images/brand/logo-md.webp',
+  },
   authors: [{ name: company.proprietor, url: company.siteUrl }],
   creator: company.legalName,
   publisher: company.legalName,
@@ -24,11 +43,11 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'Minerals Solutions | Heavy Industrial Plants & Rotary Dryers',
+    title: 'MS | Innovative Ideas. Powerful Solutions.',
     description:
-      'Engineered industrial rotary dryers, sand washing plants, fertilizer granulators, and heavy conveyor belt systems manufactured in Gujarat, India.',
+      'We build modern, scalable digital experiences that help businesses move forward.',
     url: company.siteUrl,
-    siteName: 'Minerals Solutions',
+    siteName: 'MS',
     locale: 'en_IN',
     type: 'website',
   },
@@ -46,7 +65,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: '#BE2323',
+  themeColor: '#E10613',
   width: 'device-width',
   initialScale: 1,
   maximumScale: 5,
@@ -61,7 +80,7 @@ export default function RootLayout({
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
     '@id': `${company.siteUrl}/#organization`,
-    name: company.legalName,
+    name: 'MS - Minerals Solutions',
     legalName: company.legalName,
     url: company.siteUrl,
     logo: `${company.siteUrl}/images/brand/logo.png`,
@@ -109,11 +128,13 @@ export default function RootLayout({
       <head>
         <JsonLd data={organizationSchema} />
       </head>
-      <body className="min-h-screen bg-white text-slate-800 antialiased selection:bg-[#BE2323] selection:text-white flex flex-col font-sans">
+      <body
+        className={`${inter.variable} ${poppins.variable} min-h-screen bg-white text-[#171717] antialiased selection:bg-[#E10613] selection:text-white flex flex-col font-sans`}
+      >
         {/* Accessible Skip Link */}
         <a
           href="#main-content"
-          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-[#BE2323] focus:text-white focus:font-bold focus:rounded-md focus:shadow-lg focus:outline-none"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-[#E10613] focus:text-white focus:font-bold focus:rounded-full focus:shadow-lg focus:outline-none"
         >
           Skip to main content
         </a>
@@ -123,4 +144,3 @@ export default function RootLayout({
     </html>
   );
 }
-
