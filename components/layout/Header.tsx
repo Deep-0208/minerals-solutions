@@ -34,14 +34,15 @@ interface PillarItem {
   spokes: SpokeItem[];
 }
 
+// Exactly matches official Minerals Solutions brochure and visiting card with 4 balanced items per division
 const productPillars: PillarItem[] = [
   {
-    name: 'Rotary Dryers',
+    name: 'Rotary Dryers & Thermal Systems',
     shortName: 'Rotary Dryers',
     href: '/products/industrial-rotary-dryers/',
     badge: '500 kg - 50 TPH',
     icon: Flame,
-    description: 'Industrial thermal drying systems with hot air generators and heat exchangers.',
+    description: 'Industrial thermal drum drying systems with hot air furnaces and exchangers.',
     spokes: [
       {
         label: 'Single / Double / Triple Pass Dryer',
@@ -56,18 +57,18 @@ const productPillars: PillarItem[] = [
         href: '/products/industrial-rotary-dryers/#configurations',
       },
       {
-        label: 'Rotary Drum Dryer',
+        label: 'Industrial Rotary Drum Dryer',
         href: '/products/industrial-rotary-dryers/#specifications',
       },
     ],
   },
   {
-    name: 'Fertilizers Plant',
+    name: 'Fertilizers Granulation Plants',
     shortName: 'Fertilizers Plant',
     href: '/products/fertilizer-granulation-plants/',
     badge: '1 - 20 TPH',
     icon: Sprout,
-    description: 'Turnkey chemical and bio-organic fertilizer granulation plants.',
+    description: 'Turnkey chemical NPK and bio-organic fertilizer granulation plants.',
     spokes: [
       {
         label: 'Fertilizers Granulation Plant',
@@ -78,18 +79,22 @@ const productPillars: PillarItem[] = [
         href: '/products/fertilizer-granulation-plants/#machinery',
       },
       {
-        label: 'Granulation Cooling & Coating',
+        label: 'Granulation Cooling & Coating Drums',
         href: '/products/fertilizer-granulation-plants/#process',
+      },
+      {
+        label: 'Turnkey Fertilizer Processing Lines',
+        href: '/products/fertilizer-granulation-plants/',
       },
     ],
   },
   {
-    name: 'Sand Washing & Screening',
+    name: 'Sand Washing & Screening Plants',
     shortName: 'Sand Washing & Screening',
     href: '/products/sand-washing-plants/',
     badge: '30 - 200 TPH',
     icon: Waves,
-    description: 'Sand washing, screening plants, and mineral processing machinery.',
+    description: 'Washing, desliming, and fine sand recovery down to 75 microns.',
     spokes: [
       {
         label: 'Sand Washing & Screening Plant',
@@ -100,13 +105,17 @@ const productPillars: PillarItem[] = [
         href: '/products/sand-washing-plants/#machinery',
       },
       {
+        label: 'Bucket Wheel & Hydrocyclone Washers',
+        href: '/products/sand-washing-plants/#machinery',
+      },
+      {
         label: 'Washed & Graded Silica Sand Systems',
         href: '/products/sand-washing-plants/#specifications',
       },
     ],
   },
   {
-    name: 'Conveyors & Plant Spares',
+    name: 'Conveyor Systems & Plant Spares',
     shortName: 'Conveyors & Spares',
     href: '/products/industrial-conveyors-spares/',
     badge: 'Custom Fabricated',
@@ -120,6 +129,10 @@ const productPillars: PillarItem[] = [
       {
         label: 'Road, Civil, Crusher Plants Spares',
         href: '/products/industrial-conveyors-spares/#trunnions',
+      },
+      {
+        label: 'Heavy Troughed Belt Conveyors',
+        href: '/products/industrial-conveyors-spares/#conveyors',
       },
       {
         label: 'Customized Fabrication Works',
@@ -171,13 +184,13 @@ export function Header() {
     <header
       className={`sticky top-0 z-50 transition-all duration-200 ${
         isScrolled
-          ? 'bg-white/95 backdrop-blur-md border-b border-[#E7E7EB] shadow-[0_4px_20px_rgba(17,17,17,0.06)] h-[76px]'
-          : 'bg-white border-b border-[#E7E7EB]/70 h-[84px]'
+          ? 'bg-white/95 backdrop-blur-md border-b border-[#E7E7EB] shadow-[0_4px_20px_rgba(17,17,17,0.06)] h-[74px]'
+          : 'bg-white border-b border-[#E7E7EB]/70 h-[80px]'
       }`}
     >
       <div className="max-w-[1360px] mx-auto px-4 sm:px-6 md:px-8 lg:px-10 h-full flex items-center justify-between">
         {/* Brand Logo */}
-        <Logo />
+        <Logo size="md" />
 
         {/* Desktop Navigation Links */}
         <nav className="hidden lg:flex items-center gap-6 xl:gap-7" aria-label="Main Navigation">
@@ -219,7 +232,7 @@ export function Header() {
             >
               <span>Products</span>
               <ChevronDown
-                className={`w-4 h-4 transition-transform duration-200 ${
+                className={`w-3.5 h-3.5 transition-transform duration-200 ${
                   productsMegaOpen ? 'rotate-180 text-[#E10613]' : 'text-neutral-500'
                 }`}
               />
@@ -228,70 +241,72 @@ export function Header() {
               )}
             </button>
 
-            {/* 4-Pillar Mega Panel */}
+            {/* 4-Pillar Mega Panel with Premium Bento Card Styling */}
             {productsMegaOpen && (
               <div
                 onMouseLeave={() => setProductsMegaOpen(false)}
-                className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[1040px] xl:w-[1140px] bg-white rounded-2xl border border-[#E7E7EB] shadow-[0_20px_50px_rgba(17,17,17,0.14)] p-6 z-50 animate-in fade-in slide-in-from-top-2 duration-150"
+                className="absolute top-full -left-20 xl:-left-28 mt-2.5 w-[960px] xl:w-[1040px] max-w-[95vw] bg-white rounded-2xl border border-[#E7E7EB] shadow-[0_24px_60px_-12px_rgba(17,17,17,0.16)] p-5 z-50 animate-in fade-in slide-in-from-top-1 duration-150"
               >
-                {/* 4 Pillar Columns */}
-                <div className="grid grid-cols-4 gap-6">
+                {/* 4 Pillar Cards in a Balanced Grid */}
+                <div className="grid grid-cols-4 gap-3.5">
                   {productPillars.map((pillar) => {
                     const Icon = pillar.icon;
                     return (
                       <div
                         key={pillar.name}
-                        className="flex flex-col justify-between border-r border-neutral-100 last:border-r-0 pr-4 last:pr-0"
+                        className="bg-[#FAFAFA] hover:bg-white rounded-xl p-3.5 border border-[#EBEBEF] hover:border-red-200 hover:shadow-sm transition-all duration-200 flex flex-col justify-between"
                       >
-                        {/* Pillar Header */}
+                        {/* Header Area */}
                         <div>
+                          <div className="flex items-center justify-between mb-2">
+                            <div className="w-8 h-8 rounded-lg bg-red-50 text-[#E10613] flex items-center justify-center shrink-0 border border-red-100">
+                              <Icon className="w-4 h-4" />
+                            </div>
+                            <span className="text-[10px] font-mono font-semibold px-2 py-0.5 rounded-full bg-white text-neutral-600 border border-neutral-200/80">
+                              {pillar.badge}
+                            </span>
+                          </div>
+
                           <Link
                             href={pillar.href}
                             onClick={() => setProductsMegaOpen(false)}
-                            className="group block mb-3"
+                            className="block group"
                           >
-                            <div className="flex items-center gap-2 mb-1.5">
-                              <div className="w-8 h-8 rounded-lg bg-red-50 text-[#E10613] flex items-center justify-center shrink-0 group-hover:bg-[#E10613] group-hover:text-white transition-colors">
-                                <Icon className="w-4 h-4" />
-                              </div>
-                              <span className="inline-block px-2 py-0.5 rounded text-[10px] font-mono bg-neutral-100 text-neutral-700 font-semibold">
-                                {pillar.badge}
-                              </span>
-                            </div>
-                            <h3 className="text-sm font-extrabold text-[#111111] group-hover:text-[#E10613] leading-snug transition-colors">
+                            <h3 className="text-[13px] font-bold text-[#111111] group-hover:text-[#E10613] leading-snug transition-colors">
                               {pillar.shortName}
                             </h3>
-                            <p className="text-[11px] text-[#737373] mt-1 line-clamp-2 leading-relaxed">
+                            <p className="text-[11px] text-[#737373] mt-0.5 line-clamp-2 leading-relaxed">
                               {pillar.description}
                             </p>
                           </Link>
 
-                          {/* Sub-Pillars / Spokes List (Clean without badges) */}
-                          <div className="pt-2 border-t border-neutral-100 space-y-1">
+                          {/* 4 Spokes List */}
+                          <div className="pt-2.5 mt-2.5 border-t border-neutral-200/60 space-y-0.5">
                             {pillar.spokes.map((spoke) => (
                               <Link
                                 key={spoke.label}
                                 href={spoke.href}
                                 onClick={() => setProductsMegaOpen(false)}
-                                className="group flex items-center py-1.5 px-2 rounded-md hover:bg-[#F5F5F7] transition-colors"
+                                className="group flex items-center justify-between py-1.5 px-2 rounded-md hover:bg-white hover:shadow-xs transition-all"
                               >
-                                <span className="text-xs text-neutral-700 group-hover:text-[#E10613] font-medium leading-snug">
+                                <span className="text-xs text-neutral-700 group-hover:text-[#E10613] font-medium leading-tight truncate">
                                   {spoke.label}
                                 </span>
+                                <ChevronRight className="w-3 h-3 text-neutral-300 group-hover:text-[#E10613] shrink-0 ml-1 transition-colors" />
                               </Link>
                             ))}
                           </div>
                         </div>
 
-                        {/* View Pillar Hub Link */}
-                        <div className="pt-3 mt-3 border-t border-neutral-100">
+                        {/* Pinned Bottom CTA */}
+                        <div className="pt-2.5 mt-3 border-t border-neutral-200/60">
                           <Link
                             href={pillar.href}
                             onClick={() => setProductsMegaOpen(false)}
-                            className="text-[11px] font-bold text-[#E10613] hover:underline inline-flex items-center gap-1"
+                            className="text-[11px] font-bold text-[#E10613] hover:text-[#BC0711] inline-flex items-center gap-1 group"
                           >
                             <span>Explore {pillar.shortName}</span>
-                            <ArrowRight className="w-3 h-3" />
+                            <ArrowRight className="w-3 h-3 transition-transform group-hover:translate-x-0.5" />
                           </Link>
                         </div>
                       </div>
@@ -299,30 +314,30 @@ export function Header() {
                   })}
                 </div>
 
-                {/* Bottom Bar: Processed Materials from Official Card */}
-                <div className="mt-5 pt-4 border-t border-neutral-200 flex flex-col sm:flex-row items-center justify-between gap-3 px-2 text-xs">
-                  <div className="flex flex-wrap items-center gap-2 text-neutral-600">
-                    <span className="font-bold text-[#111111]">Processed Minerals:</span>
-                    <span className="text-neutral-500">
-                      Resin Coated Sand • Washed &amp; Graded Silica Sand • Copper Slag • Quartz Sand
+                {/* Sleek Integrated Bottom Bar */}
+                <div className="mt-3.5 pt-3 border-t border-neutral-100 flex flex-col sm:flex-row items-center justify-between gap-2 px-1 text-xs">
+                  <div className="flex items-center gap-2 text-neutral-600 truncate">
+                    <span className="font-bold text-[#111111] shrink-0">Processed Minerals:</span>
+                    <span className="text-neutral-500 truncate text-[11px]">
+                      Resin Coated Sand • Washed Silica Sand • Copper Slag • Quartz Sand
                     </span>
                   </div>
 
-                  <div className="flex items-center gap-4 shrink-0">
+                  <div className="flex items-center gap-3 shrink-0">
                     <Link
                       href="/products/"
                       onClick={() => setProductsMegaOpen(false)}
-                      className="font-bold text-neutral-700 hover:text-[#111111] hover:underline"
+                      className="font-bold text-neutral-700 hover:text-[#111111] hover:underline text-xs"
                     >
                       All Machinery
                     </Link>
                     <Link
                       href="/request-quote/"
                       onClick={() => setProductsMegaOpen(false)}
-                      className="inline-flex items-center gap-1 font-bold text-[#E10613] hover:underline"
+                      className="inline-flex items-center gap-1 font-bold text-[#E10613] hover:underline text-xs"
                     >
                       <span>Request Quote</span>
-                      <ArrowRight className="w-3.5 h-3.5" />
+                      <ArrowRight className="w-3 h-3" />
                     </Link>
                   </div>
                 </div>
@@ -418,8 +433,8 @@ export function Header() {
 
       {/* Mobile Navigation Drawer */}
       {mobileMenuOpen && (
-        <div className="lg:hidden fixed inset-0 top-[76px] z-50 bg-black/60 backdrop-blur-sm animate-in fade-in duration-200">
-          <div className="bg-white border-b border-[#E7E7EB] p-5 max-h-[calc(100vh-76px)] overflow-y-auto space-y-4 shadow-2xl">
+        <div className="lg:hidden fixed inset-0 top-[74px] z-50 bg-black/60 backdrop-blur-sm animate-in fade-in duration-200">
+          <div className="bg-white border-b border-[#E7E7EB] p-5 max-h-[calc(100vh-74px)] overflow-y-auto space-y-4 shadow-2xl">
             <nav className="flex flex-col space-y-1 divide-y divide-neutral-100">
               <Link
                 href="/"
