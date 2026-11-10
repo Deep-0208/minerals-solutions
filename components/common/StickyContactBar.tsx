@@ -24,7 +24,7 @@ export function StickyContactBar() {
           className="flex flex-col items-center justify-center py-1.5 px-2 rounded-md bg-slate-100 hover:bg-slate-200 text-slate-800 text-[11px] font-semibold transition-colors"
           aria-label={`Call Minerals Solutions at ${primaryPhone}`}
         >
-          <Phone className="w-4 h-4 text-[#BE2323] mb-0.5" />
+          <Phone className="w-4 h-4 text-[#DA020D] mb-0.5" />
           <span>Call Factory</span>
         </a>
 
@@ -43,7 +43,7 @@ export function StickyContactBar() {
         {/* Request RFQ */}
         <Link
           href="/request-quote/"
-          className="flex flex-col items-center justify-center py-1.5 px-2 rounded-md bg-[#BE2323] hover:bg-[#9E1B1B] text-white text-[11px] font-semibold transition-colors shadow-sm"
+          className="flex flex-col items-center justify-center py-1.5 px-2 rounded-md bg-[#DA020D] hover:bg-[#B3020B] text-white text-[11px] font-semibold transition-colors shadow-sm"
         >
           <FileText className="w-4 h-4 mb-0.5" />
           <span>Get Quote</span>

@@ -3,7 +3,7 @@
 // Source: 89 Authentic Photographs (38 Client Raw + 51 IndiaMART High-Res)
 
 export interface ImageVariant {
-  size: 'lg' | 'md' | 'thumb';
+  size: 'lg' | 'md' | 'thumb' | 'transparent-md' | 'dark-md';
   width: number;
   height: number;
   path: string;
@@ -13,7 +13,7 @@ export interface ImageVariant {
 export interface ImageRegistryEntry {
   slug: string;
   originalFile: string;
-  source: 'raw' | 'indiamart';
+  source: 'raw' | 'indiamart' | 'brand-master';
   category: 'rotary-dryers' | 'thermal-combustion' | 'mineral-processing' | 'fertilizer-pellet' | 'conveyor-systems' | 'mechanical-spares' | 'facility' | 'brand' | 'brochures';
   altText: string;
   aspectRatio: number;
@@ -1537,30 +1537,51 @@ export const imageRegistry: ImageRegistryEntry[] = [
   },
   {
     "slug": "minerals-solutions-logo",
-    "originalFile": "minerals-solutions.jpg",
-    "source": "indiamart",
+    "originalFile": "Sharp MS Monogram Logo on White.png",
+    "source": "brand-master",
     "category": "brand",
-    "altText": "Minerals Solutions official emblem and industrial brand mark",
-    "aspectRatio": 1.103,
+    "altText": "Minerals Solutions official sharp MS Monogram emblem and brand mark",
+    "aspectRatio": 1.0,
     "originalDimensions": {
-      "width": 279,
-      "height": 253
+      "width": 1318,
+      "height": 1193
     },
-    "originalBytes": 4146,
+    "originalBytes": 593400,
     "variants": [
       {
         "size": "lg",
-        "width": 279,
-        "height": 253,
-        "path": "/images/brand/minerals-solutions-logo-lg.webp",
-        "bytes": 3890
+        "width": 512,
+        "height": 512,
+        "path": "/images/brand/logo-lg.webp",
+        "bytes": 16486
+      },
+      {
+        "size": "md",
+        "width": 256,
+        "height": 256,
+        "path": "/images/brand/logo-md.webp",
+        "bytes": 7782
       },
       {
         "size": "thumb",
-        "width": 150,
-        "height": 136,
-        "path": "/images/brand/minerals-solutions-logo-thumb.webp",
-        "bytes": 1762
+        "width": 128,
+        "height": 128,
+        "path": "/images/brand/logo-thumb.webp",
+        "bytes": 3686
+      },
+      {
+        "size": "transparent-md",
+        "width": 256,
+        "height": 256,
+        "path": "/images/brand/logo-transparent-md.webp",
+        "bytes": 21606
+      },
+      {
+        "size": "dark-md",
+        "width": 256,
+        "height": 256,
+        "path": "/images/brand/logo-dark-md.webp",
+        "bytes": 24371
       }
     ]
   },

@@ -103,7 +103,7 @@ export default function HomePage() {
         />
         {/* Subtle Brand Red Glow Accent */}
         <div
-          className="absolute -top-40 -right-40 w-96 h-96 bg-[#BE2323] rounded-full blur-[140px] opacity-25 pointer-events-none"
+          className="absolute -top-40 -right-40 w-96 h-96 bg-[#DA020D] rounded-full blur-[140px] opacity-25 pointer-events-none"
           aria-hidden="true"
         />
 
@@ -113,7 +113,7 @@ export default function HomePage() {
             <div className="lg:col-span-7 space-y-6">
               {/* Trust & Location Kicker */}
               <div className="inline-flex flex-wrap items-center gap-2 px-3 py-1.5 rounded-full bg-slate-800/90 border border-slate-700 text-xs font-semibold text-slate-300">
-                <span className="w-2 h-2 rounded-full bg-[#BE2323] animate-pulse" />
+                <span className="w-2 h-2 rounded-full bg-[#DA020D] animate-pulse" />
                 <span className="text-white">Zak GIDC, Dahegam</span>
                 <span className="text-slate-500">•</span>
                 <span>Ahmedabad Industrial Corridor</span>
@@ -123,7 +123,7 @@ export default function HomePage() {
 
               {/* Main H1 Title */}
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-[1.12]">
-                Heavy Industrial <span className="text-[#BE2323]">Rotary Dryers</span> &amp; Turnkey Mineral Plants
+                Heavy Industrial <span className="text-[#DA020D]">Rotary Dryers</span> &amp; Turnkey Mineral Plants
               </h1>
 
               {/* Descriptive Subtitle */}
@@ -136,19 +136,19 @@ export default function HomePage() {
               {/* Trust Checklist Badges */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-xs sm:text-sm text-slate-300 font-medium">
                 <div className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-[#BE2323] shrink-0" />
+                  <CheckCircle2 className="w-4 h-4 text-[#DA020D] shrink-0" />
                   <span>ISO-Compliant Heavy Plate Fabrication</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-[#BE2323] shrink-0" />
+                  <CheckCircle2 className="w-4 h-4 text-[#DA020D] shrink-0" />
                   <span>Turnkey Erection &amp; Commissioning</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-[#BE2323] shrink-0" />
+                  <CheckCircle2 className="w-4 h-4 text-[#DA020D] shrink-0" />
                   <span>Custom Engineering (1 to 50 TPH)</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-[#BE2323] shrink-0" />
+                  <CheckCircle2 className="w-4 h-4 text-[#DA020D] shrink-0" />
                   <span>IndiaMART Verified 4.8★ Manufacturer</span>
                 </div>
               </div>
@@ -168,7 +168,7 @@ export default function HomePage() {
                   variant="outline"
                   size="lg"
                   className="bg-slate-800 text-white border-slate-700 hover:bg-slate-700"
-                  icon={<Phone className="w-5 h-5 text-[#BE2323]" />}
+                  icon={<Phone className="w-5 h-5 text-[#DA020D]" />}
                 >
                   Call Works: {primaryPhone}
                 </Button>
@@ -188,7 +188,7 @@ export default function HomePage() {
                     sizes="(max-width: 768px) 100vw, 500px"
                     priority
                   />
-                  <div className="absolute top-3 left-3 bg-[#BE2323] text-white text-[11px] font-bold px-2.5 py-1 rounded shadow-sm uppercase tracking-wider">
+                  <div className="absolute top-3 left-3 bg-[#DA020D] text-white text-[11px] font-bold px-2.5 py-1 rounded shadow-sm uppercase tracking-wider">
                     Heavy Thermal Dryer
                   </div>
                 </div>
@@ -222,7 +222,7 @@ export default function HomePage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div className="space-y-1">
               <div className="text-2xl sm:text-3xl font-extrabold text-slate-900 font-mono">
-                1–50 <span className="text-[#BE2323] text-lg font-bold">TPH</span>
+                1–50 <span className="text-[#DA020D] text-lg font-bold">TPH</span>
               </div>
               <div className="text-xs text-slate-600 font-medium">Custom Thermal Capacity</div>
             </div>
@@ -283,10 +283,10 @@ export default function HomePage() {
                 {/* Content */}
                 <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between">
                   <div>
-                    <h3 className="text-xl sm:text-2xl font-bold text-slate-900 group-hover:text-[#BE2323] transition-colors">
+                    <h3 className="text-xl sm:text-2xl font-bold text-slate-900 group-hover:text-[#DA020D] transition-colors">
                       {eq.title}
                     </h3>
-                    <div className="text-xs font-semibold text-[#BE2323] uppercase tracking-wider mt-1">
+                    <div className="text-xs font-semibold text-[#DA020D] uppercase tracking-wider mt-1">
                       {eq.tagline}
                     </div>
                     <p className="mt-3 text-sm text-slate-600 leading-relaxed">
@@ -310,7 +310,7 @@ export default function HomePage() {
                   <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
                     <Link
                       href={eq.href}
-                      className="inline-flex items-center gap-1.5 text-sm font-bold text-[#BE2323] group-hover:text-[#9E1B1B]"
+                      className="inline-flex items-center gap-1.5 text-sm font-bold text-[#DA020D] group-hover:text-[#B3020B]"
                     >
                       <span>Explore Technical Specs</span>
                       <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -346,7 +346,7 @@ export default function HomePage() {
                 <h3 className="text-lg font-bold">Double Pass Rotary Drum Dryer Specifications</h3>
                 <span className="text-xs text-slate-400">Model: MS-DPD Series | Tested &amp; Commissioned in Gujarat</span>
               </div>
-              <span className="text-xs font-mono font-bold bg-[#BE2323] text-white px-3 py-1 rounded">
+              <span className="text-xs font-mono font-bold bg-[#DA020D] text-white px-3 py-1 rounded">
                 Throughput: 500 kg to 5,000 kg/hr
               </span>
             </div>
@@ -407,7 +407,7 @@ export default function HomePage() {
           ═══════════════════════════════════════════════ */}
       <section className="py-16 md:py-20 bg-slate-900 text-white relative overflow-hidden">
         <div
-          className="absolute -bottom-20 -left-20 w-80 h-80 bg-[#BE2323] rounded-full blur-[120px] opacity-20 pointer-events-none"
+          className="absolute -bottom-20 -left-20 w-80 h-80 bg-[#DA020D] rounded-full blur-[120px] opacity-20 pointer-events-none"
           aria-hidden="true"
         />
 

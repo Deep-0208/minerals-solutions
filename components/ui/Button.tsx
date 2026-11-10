@@ -30,9 +30,9 @@ export function Button({
 
   const variantStyles = {
     primary:
-      'bg-[#BE2323] hover:bg-[#9E1B1B] text-white focus:ring-[#BE2323] shadow-sm active:bg-[#851616]',
+      'bg-[#DA020D] hover:bg-[#B3020B] text-white focus:ring-[#DA020D] shadow-sm active:bg-[#940209]',
     secondary:
-      'bg-[#2A2C2D] hover:bg-[#1E2124] text-white focus:ring-[#2A2C2D] shadow-sm',
+      'bg-[#181818] hover:bg-[#000000] text-white focus:ring-[#181818] shadow-sm',
     outline:
       'border border-slate-300 hover:border-slate-400 bg-white hover:bg-slate-50 text-slate-800 focus:ring-slate-400',
     whatsapp:

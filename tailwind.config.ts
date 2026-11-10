@@ -10,11 +10,11 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          primary: '#BE2323',          // Official Logo Crimson Red
-          primaryHover: '#9E1B1B',     // Interactive Deepened Red
+          primary: '#DA020D',          // Official Sharp Logo Crimson/Ruby Red
+          primaryHover: '#B3020B',     // Interactive Deepened Red
           primaryLight: '#FEF2F2',     // Red 50 tint
-          secondary: '#2A2C2D',        // Official Logo Industrial Charcoal
-          secondaryHover: '#1E2124',   // Elevated Graphite
+          secondary: '#181818',        // Official Sharp Logo Pure Graphite/Charcoal
+          secondaryHover: '#0F0F0F',   // Elevated Graphite
           accent: '#DC2626',           // High-visibility Action Red
           amber: '#D97706',            // Industrial Warning / Rating Amber
           whatsapp: '#16A34A',         // Direct WhatsApp Emerald

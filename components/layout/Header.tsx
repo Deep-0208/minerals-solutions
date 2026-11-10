@@ -179,7 +179,7 @@ export function Header() {
           {/* Left: Verified Business Credentials */}
           <div className="flex flex-wrap items-center justify-center md:justify-start gap-x-4 gap-y-1 text-[11px] sm:text-xs">
             <span className="inline-flex items-center gap-1 text-slate-300">
-              <ShieldCheck className="w-3.5 h-3.5 text-[#BE2323]" />
+              <ShieldCheck className="w-3.5 h-3.5 text-[#DA020D]" />
               <strong className="text-white font-medium">GSTIN:</strong> {company.gstin}
             </span>
             <span className="hidden sm:inline text-slate-600">|</span>
@@ -200,7 +200,7 @@ export function Header() {
               href={`tel:${cleanPhone}`}
               className="inline-flex items-center gap-1.5 text-slate-200 hover:text-white transition-colors"
             >
-              <Phone className="w-3.5 h-3.5 text-[#BE2323]" />
+              <Phone className="w-3.5 h-3.5 text-[#DA020D]" />
               <span>Plant Hotlines: {primaryPhone}</span>
             </a>
             <span className="text-slate-600">|</span>
@@ -238,7 +238,7 @@ export function Header() {
                     href={item.href}
                     className={`inline-flex items-center gap-1 px-3 py-2 text-sm font-semibold rounded-md transition-colors ${
                       isActive
-                        ? 'text-[#BE2323] bg-red-50/60'
+                        ? 'text-[#DA020D] bg-red-50/60'
                         : 'text-slate-700 hover:text-slate-900 hover:bg-slate-100'
                     }`}
                   >
@@ -246,7 +246,7 @@ export function Header() {
                     {hasDropdown && (
                       <ChevronDown
                         className={`w-4 h-4 text-slate-400 transition-transform duration-200 ${
-                          activeDropdown === item.label ? 'rotate-180 text-[#BE2323]' : ''
+                          activeDropdown === item.label ? 'rotate-180 text-[#DA020D]' : ''
                         }`}
                       />
                     )}
@@ -262,7 +262,7 @@ export function Header() {
                             href={sub.href}
                             className="block p-2.5 rounded-md hover:bg-slate-50 transition-colors group/item"
                           >
-                            <div className="text-sm font-semibold text-slate-800 group-hover/item:text-[#BE2323]">
+                            <div className="text-sm font-semibold text-slate-800 group-hover/item:text-[#DA020D]">
                               {sub.label}
                             </div>
                             {sub.desc && (
@@ -284,7 +284,7 @@ export function Header() {
           <div className="hidden lg:flex items-center gap-3">
             <Link
               href="/request-quote/"
-              className="inline-flex items-center gap-2 bg-[#BE2323] hover:bg-[#9E1B1B] text-white text-sm font-bold px-5 py-2.5 rounded-md shadow-sm transition-all focus:outline-none focus:ring-2 focus:ring-[#BE2323] focus:ring-offset-2"
+              className="inline-flex items-center gap-2 bg-[#DA020D] hover:bg-[#B3020B] text-white text-sm font-bold px-5 py-2.5 rounded-md shadow-sm transition-all focus:outline-none focus:ring-2 focus:ring-[#DA020D] focus:ring-offset-2"
             >
               <FileText className="w-4 h-4" />
               <span>Request Quote</span>
@@ -295,14 +295,14 @@ export function Header() {
           <div className="flex items-center lg:hidden gap-2">
             <Link
               href="/request-quote/"
-              className="bg-[#BE2323] hover:bg-[#9E1B1B] text-white text-xs font-bold px-3 py-2 rounded-md shadow-sm"
+              className="bg-[#DA020D] hover:bg-[#B3020B] text-white text-xs font-bold px-3 py-2 rounded-md shadow-sm"
             >
               RFQ
             </Link>
             <button
               type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 rounded-md text-slate-700 hover:text-slate-900 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-[#BE2323]"
+              className="p-2 rounded-md text-slate-700 hover:text-slate-900 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-[#DA020D]"
               aria-label={mobileMenuOpen ? 'Close Menu' : 'Open Menu'}
               aria-expanded={mobileMenuOpen}
             >
@@ -335,7 +335,7 @@ export function Header() {
                   <div key={item.label} className="border-b border-slate-100 pb-2">
                     <Link
                       href={item.href}
-                      className="block py-2 text-base font-bold text-slate-800 hover:text-[#BE2323]"
+                      className="block py-2 text-base font-bold text-slate-800 hover:text-[#DA020D]"
                     >
                       {item.label}
                     </Link>
@@ -345,7 +345,7 @@ export function Header() {
                           <Link
                             key={sub.href}
                             href={sub.href}
-                            className="block text-xs font-medium text-slate-600 hover:text-[#BE2323] py-1"
+                            className="block text-xs font-medium text-slate-600 hover:text-[#DA020D] py-1"
                           >
                             {sub.label}
                           </Link>
@@ -371,12 +371,12 @@ export function Header() {
                 href={`tel:${cleanPhone}`}
                 className="w-full flex items-center justify-center gap-2 py-2.5 bg-slate-900 text-white text-xs font-semibold rounded-md"
               >
-                <Phone className="w-4 h-4 text-[#BE2323]" />
+                <Phone className="w-4 h-4 text-[#DA020D]" />
                 <span>Call Factory: {primaryPhone}</span>
               </a>
               <Link
                 href="/request-quote/"
-                className="w-full flex items-center justify-center gap-2 py-2.5 bg-[#BE2323] text-white text-xs font-bold rounded-md"
+                className="w-full flex items-center justify-center gap-2 py-2.5 bg-[#DA020D] text-white text-xs font-bold rounded-md"
               >
                 <FileText className="w-4 h-4" />
                 <span>Request Custom Quote</span>

@@ -2,11 +2,11 @@
 @config "../tailwind.config.ts";
 
 :root {
-  --brand-primary: #BE2323;
-  --brand-primary-hover: #9E1B1B;
+  --brand-primary: #DA020D;
+  --brand-primary-hover: #B3020B;
   --brand-primary-light: #FEF2F2;
-  --brand-secondary: #2A2C2D;
-  --brand-secondary-hover: #1E2124;
+  --brand-secondary: #181818;
+  --brand-secondary-hover: #0F0F0F;
   --brand-accent: #DC2626;
   --brand-amber: #D97706;
   --brand-whatsapp: #16A34A;

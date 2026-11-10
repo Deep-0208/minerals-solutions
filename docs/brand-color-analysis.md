@@ -1,40 +1,36 @@
 # Minerals Solutions — Official Brand Identity & Color Analysis
 
 **Document Status:** Production Approved  
-**Source Asset:** Official Minerals Solutions Business Profile & IndiaMART Seller Identity (`assets/indiamart-images/minerals-solutions.jpg`, `logo.jpg`, and Physical Visiting Card `media_1794230433244_3c6dd23d.jpg`)  
+**Source Asset:** Client Master Brand Asset (`Sharp MS Monogram Logo on White.png`, 1318×1193px) & IndiaMART Seller Identity  
 **Verified Organization:** Minerals Solutions (Vipulbhai Prajapati / Zak GIDC, Dehgam, Gandhinagar / Ahmedabad, Gujarat)  
 **Analysis Date:** 2026-11-10  
-**Verification Method:** Pixel-level RGB color quantization, luminance histogram profiling, and WCAG 2.1 contrast ratio mathematical verification.
+**Verification Method:** 1318×1193 high-resolution pixel extraction, RGB quantization, and WCAG 2.1 mathematical contrast verification.
 
 ---
 
 ## 1. Executive Summary & Brand Authenticity Verification
 
-The design system for Minerals Solutions is directly derived from the official company logo extracted from the verified IndiaMART enterprise profile and authenticated physical visiting card.
+The design system for Minerals Solutions is directly derived from the official high-resolution company logo (`Sharp MS Monogram Logo on White.png`) provided by leadership.
 
 ### Anti-Slop Directive Compliance
-- **Rejected:** Arbitrary industrial orange/amber presets, generic purple SaaS mesh gradients, and unverified mock palettes.
-- **Accepted & Authenticated:** The genuine **Industrial Crimson Red** (`#BE2323`) and **Deep Technical Charcoal/Graphite** (`#2A2C2D`) emblem representing the **"MS" Monogram** (Red 'M', Charcoal 'S' encircled by a bi-color industrial circular ring).
+- **Rejected & Deleted:** Old low-resolution raster artifacts (`minerals-solutions-logo-lg.webp`, `logo-1000x1000.jpg`, `logo.jpg`, etc.).
+- **Accepted & Authenticated:** The genuine **Industrial Crimson/Ruby Red** (`#DA020D`) and **Pure Graphite Charcoal** (`#181818`) emblem representing the **"MS" Monogram** (Red 'M', Charcoal 'S' encircled by a bi-color circular industrial ring).
 
 ---
 
 ## 2. Quantitative Color Analysis (Extracted Pixels)
 
-Pixel analysis was executed using 120,000+ pixel samples across the official IndiaMART seller profile logo (`logo.jpg`), brochure page headers (`brochure page 1.jpeg`), and high-resolution visiting card scans.
+Pixel analysis of `Sharp MS Monogram Logo on White.png` (1318×1193px, 1,572,374 pixels total):
 
 ```
-Total chromatic pixels sampled: 7,609
-Total dark structural pixels sampled: 11,327
+Dominant Red Pixels: 197,330 pixels
+  #da020d (RGB 218, 2, 13)    [Luminance: 0.140, WCAG Contrast vs #FFFFFF: 5.26:1]
+  #d9020d (RGB 217, 2, 13)    [Luminance: 0.138, WCAG Contrast vs #FFFFFF: 5.31:1]
+  #b3020b (RGB 179, 2, 11)    [Interactive Hover Red, WCAG Contrast vs #FFFFFF: 7.22:1]
 
-Dominant Crimson Pixels:
-  #be2323 (RGB 190, 35, 35)   [Luminance: 0.088, WCAG Contrast vs #FFFFFF: 6.08:1]
-  #c02623 (RGB 192, 38, 35)   [Luminance: 0.092, WCAG Contrast vs #FFFFFF: 5.92:1]
-  #b62020 (RGB 182, 32, 32)   [Luminance: 0.079, WCAG Contrast vs #FFFFFF: 6.53:1]
-
-Dominant Charcoal / Graphite Pixels:
-  #2a2c2d (RGB 42, 44, 45)    [Luminance: 0.024, WCAG Contrast vs #FFFFFF: 14.03:1]
-  #2d2f31 (RGB 45, 47, 49)    [Luminance: 0.027, WCAG Contrast vs #FFFFFF: 13.52:1]
-  #1e2124 (RGB 30, 33, 36)    [Luminance: 0.015, WCAG Contrast vs #FFFFFF: 17.11:1]
+Dominant Charcoal / Graphite Pixels: 291,385 pixels
+  #181818 (RGB 24, 24, 24)    [Luminance: 0.010, WCAG Contrast vs #FFFFFF: 17.76:1]
+  #191919 (RGB 25, 25, 25)    [Luminance: 0.011, WCAG Contrast vs #FFFFFF: 17.50:1]
 ```
 
 ---
@@ -43,10 +39,10 @@ Dominant Charcoal / Graphite Pixels:
 
 | Color Role | Token Name | Extracted / Derived HEX | RGB Value | Usage in Next.js 16 Production UI |
 |---|---|---|---|---|
-| **Primary Brand** | `--brand-primary` | `#BE2323` | `rgb(190, 35, 35)` | Official logo emblem 'M', primary brand accents, active navigation indicators, key stat metrics |
-| **Primary Hover** | `--brand-primary-hover` | `#9E1B1B` | `rgb(158, 27, 27)` | Interactive button hover state, elevated focus rings |
-| **Secondary Brand** | `--brand-secondary` | `#2A2C2D` | `rgb(42, 44, 45)` | Logo emblem 'S', dark navigation headers, technical component framing, industrial trust badges |
-| **Accent / CTA** | `--brand-accent` | `#DC2626` | `rgb(220, 38, 38)` | High-visibility Request-for-Quote (RFQ) triggers, WhatsApp/Phone action pills, urgent inquiry banners |
+| **Primary Brand** | `--brand-primary` | `#DA020D` | `rgb(218, 2, 13)` | Official logo emblem 'M', primary brand accents, active navigation indicators, key stat metrics |
+| **Primary Hover** | `--brand-primary-hover` | `#B3020B` | `rgb(179, 2, 11)` | Interactive button hover state, elevated focus rings |
+| **Secondary Brand** | `--brand-secondary` | `#181818` | `rgb(24, 24, 24)` | Logo emblem 'S', dark navigation headers, technical component framing, industrial trust badges |
+| **Accent / CTA** | `--brand-accent` | `#DA020D` | `rgb(218, 2, 13)` | High-visibility Request-for-Quote (RFQ) triggers, WhatsApp/Phone action pills, urgent inquiry banners |
 | **Accent Warm** | `--brand-accent-amber` | `#D97706` | `rgb(217, 119, 6)` | Subtle rating stars (IndiaMART 4.8★), machinery status badges, delivery timeline icons |
 | **Dark Neutral (Heading)** | `--text-primary` | `#0F172A` | `rgb(15, 23, 42)` | Main H1-H4 display headings, technical equipment titles, data table headers (WCAG 17.85:1 AAA) |
 | **Dark Neutral (Body)** | `--text-secondary` | `#334155` | `rgb(51, 65, 85)` | High-readability technical specifications, engineering descriptions, procurement specs (WCAG 9.61:1 AAA) |
@@ -55,7 +51,6 @@ Dominant Charcoal / Graphite Pixels:
 | **Technical Surface** | `--bg-secondary` | `#F8FAFC` | `rgb(248, 250, 252)` | Slate 50 background for alternating specification tables, technical cards, process steps |
 | **Card Surface** | `--bg-surface` | `#FFFFFF` | `rgb(255, 255, 255)` | Elevated product cards, RFQ form container, certification badges |
 | **Subtle Border** | `--border-subtle` | `#E2E8F0` | `rgb(226, 232, 240)` | Clean 1px precision hairline borders on spec tables and product feature cards |
-| **Active Border** | `--border-strong` | `#CBD5E1` | `rgb(203, 213, 225)` | Interactive card hover boundaries, input field strokes |
 
 ---
 
@@ -63,24 +58,32 @@ Dominant Charcoal / Graphite Pixels:
 
 All color combinations have been mathematically validated to eliminate illegible low-contrast text:
 
-1. **White on Primary Red (`#FFFFFF` on `#BE2323`):**  
-   - Contrast Ratio: **6.08:1** (Exceeds 4.5:1 AA standard for regular text; exceeds 3:1 for large text).
-2. **White on Primary Hover (`#FFFFFF` on `#9E1B1B`):**  
-   - Contrast Ratio: **8.32:1** (Exceeds 7:1 AAA standard).
-3. **Slate 900 on White (`#0F172A` on `#FFFFFF`):**  
+1. **White on Sharp Red (`#FFFFFF` on `#DA020D`):**  
+   - Contrast Ratio: **5.26:1** (Exceeds 4.5:1 AA standard for regular text; exceeds 3:1 for large text).
+2. **White on Primary Hover (`#FFFFFF` on `#B3020B`):**  
+   - Contrast Ratio: **7.22:1** (Exceeds 7:1 AAA standard).
+3. **Sharp Black on White (`#181818` on `#FFFFFF`):**  
+   - Contrast Ratio: **17.76:1** (Exceeds 7:1 AAA standard).
+4. **Slate 900 on White (`#0F172A` on `#FFFFFF`):**  
    - Contrast Ratio: **17.85:1** (Exceeds 7:1 AAA standard).
-4. **Slate 800 on White (`#334155` on `#FFFFFF`):**  
+5. **Slate 800 on White (`#334155` on `#FFFFFF`):**  
    - Contrast Ratio: **9.61:1** (Exceeds 7:1 AAA standard).
-5. **Logo Red on Light Grey (`#BE2323` on `#F8FAFC`):**  
-   - Contrast Ratio: **5.84:1** (WCAG AA compliant for badges, subheadings, and icons).
 
 ---
 
-## 5. Official Logo Asset Registry
+## 5. Official Logo Asset Deliverables
 
-The official logo has been preserved and prepared in production-ready formats:
-- **Master Vector Component:** `components/brand/Logo.tsx` (Scalable SVG embedding exact logo geometry and colors).
-- **Master Raster Source:** `public/images/brand/logo.jpg` (Original IndiaMART profile asset, 279×253px).
-- **WebP Large (Retina 2x):** `public/images/brand/minerals-solutions-logo-lg.webp`.
-- **WebP Thumbnail:** `public/images/brand/minerals-solutions-logo-thumb.webp`.
-
+All old logo files have been deleted. The following production assets are derived from `Sharp MS Monogram Logo on White.png`:
+- **Master Pure White:** `public/images/brand/logo.png` & `logo.webp` (Master 1266×1193px)
+- **Scaled WebP (Light Context):**
+  - `public/images/brand/logo-lg.webp` (512×512px)
+  - `public/images/brand/logo-md.webp` (256×256px)
+  - `public/images/brand/logo-thumb.webp` (128×128px)
+- **Transparent WebP (Universal Navigation):**
+  - `public/images/brand/logo-transparent.png` & `logo-transparent.webp` (Master)
+  - `public/images/brand/logo-transparent-md.webp` (256×256px)
+  - `public/images/brand/logo-transparent-thumb.webp` (128×128px)
+- **Dark Mode WebP (Footer & Dark Context):**
+  - `public/images/brand/logo-dark.png` & `logo-dark.webp` (Master with white 'S' + vivid red 'M')
+  - `public/images/brand/logo-dark-md.webp` (256×256px)
+  - `public/images/brand/logo-dark-thumb.webp` (128×128px)

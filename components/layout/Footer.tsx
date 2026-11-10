@@ -40,7 +40,7 @@ export function Footer() {
             {/* Legal Badges */}
             <div className="pt-2 space-y-2 text-xs border-t border-slate-800">
               <div className="flex items-center gap-2 text-slate-300">
-                <ShieldCheck className="w-4 h-4 text-[#BE2323] shrink-0" />
+                <ShieldCheck className="w-4 h-4 text-[#DA020D] shrink-0" />
                 <span>
                   <strong>GSTIN:</strong> {company.gstin}
                 </span>
@@ -60,7 +60,7 @@ export function Footer() {
 
           {/* Column 2: Flagship Machinery Lines */}
           <div className="space-y-4">
-            <h3 className="text-sm font-bold uppercase tracking-wider text-white border-l-2 border-[#BE2323] pl-2.5">
+            <h3 className="text-sm font-bold uppercase tracking-wider text-white border-l-2 border-[#DA020D] pl-2.5">
               Industrial Equipment
             </h3>
             <ul className="space-y-2.5 text-sm">
@@ -70,7 +70,7 @@ export function Footer() {
                   className="hover:text-white hover:underline transition-colors flex items-center justify-between group"
                 >
                   <span>Industrial Rotary Dryers</span>
-                  <ArrowRight className="w-3.5 h-3.5 text-slate-500 group-hover:text-[#BE2323] transition-colors" />
+                  <ArrowRight className="w-3.5 h-3.5 text-slate-500 group-hover:text-[#DA020D] transition-colors" />
                 </Link>
               </li>
               <li>
@@ -87,7 +87,7 @@ export function Footer() {
                   className="hover:text-white hover:underline transition-colors flex items-center justify-between group"
                 >
                   <span>Fertilizer Granulation Plants</span>
-                  <ArrowRight className="w-3.5 h-3.5 text-slate-500 group-hover:text-[#BE2323] transition-colors" />
+                  <ArrowRight className="w-3.5 h-3.5 text-slate-500 group-hover:text-[#DA020D] transition-colors" />
                 </Link>
               </li>
               <li>
@@ -104,7 +104,7 @@ export function Footer() {
                   className="hover:text-white hover:underline transition-colors flex items-center justify-between group"
                 >
                   <span>Sand Washing Plants</span>
-                  <ArrowRight className="w-3.5 h-3.5 text-slate-500 group-hover:text-[#BE2323] transition-colors" />
+                  <ArrowRight className="w-3.5 h-3.5 text-slate-500 group-hover:text-[#DA020D] transition-colors" />
                 </Link>
               </li>
               <li>
@@ -121,7 +121,7 @@ export function Footer() {
                   className="hover:text-white hover:underline transition-colors flex items-center justify-between group"
                 >
                   <span>Bulk Material Conveyor Systems</span>
-                  <ArrowRight className="w-3.5 h-3.5 text-slate-500 group-hover:text-[#BE2323] transition-colors" />
+                  <ArrowRight className="w-3.5 h-3.5 text-slate-500 group-hover:text-[#DA020D] transition-colors" />
                 </Link>
               </li>
             </ul>
@@ -129,7 +129,7 @@ export function Footer() {
 
           {/* Column 3: Trust & Plant Resources */}
           <div className="space-y-4">
-            <h3 className="text-sm font-bold uppercase tracking-wider text-white border-l-2 border-[#BE2323] pl-2.5">
+            <h3 className="text-sm font-bold uppercase tracking-wider text-white border-l-2 border-[#DA020D] pl-2.5">
               Company &amp; Facility
             </h3>
             <ul className="space-y-2.5 text-sm">
@@ -182,12 +182,12 @@ export function Footer() {
 
           {/* Column 4: Factory Plant & Contact Information */}
           <div className="space-y-4">
-            <h3 className="text-sm font-bold uppercase tracking-wider text-white border-l-2 border-[#BE2323] pl-2.5">
+            <h3 className="text-sm font-bold uppercase tracking-wider text-white border-l-2 border-[#DA020D] pl-2.5">
               Works &amp; Factory Office
             </h3>
             <div className="space-y-3 text-sm text-slate-400">
               <div className="flex items-start gap-2.5">
-                <MapPin className="w-4 h-4 text-[#BE2323] shrink-0 mt-1" />
+                <MapPin className="w-4 h-4 text-[#DA020D] shrink-0 mt-1" />
                 <address className="not-italic leading-relaxed text-slate-300">
                   {company.address.streetAddress},<br />
                   {company.address.locality},<br />
@@ -196,7 +196,7 @@ export function Footer() {
               </div>
 
               <div className="flex items-start gap-2.5">
-                <Phone className="w-4 h-4 text-[#BE2323] shrink-0 mt-1" />
+                <Phone className="w-4 h-4 text-[#DA020D] shrink-0 mt-1" />
                 <div className="space-y-0.5">
                   <a
                     href={`tel:${cleanPhone}`}

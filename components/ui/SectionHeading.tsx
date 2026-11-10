@@ -23,11 +23,11 @@ export function SectionHeading({
     >
       {badge && (
         <div
-          className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-red-50 text-[#BE2323] border border-red-200/60 mb-3.5 ${
+          className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-red-50 text-[#DA020D] border border-red-200/60 mb-3.5 ${
             centered ? 'mx-auto' : ''
           }`}
         >
-          <span className="w-1.5 h-1.5 rounded-full bg-[#BE2323]" />
+          <span className="w-1.5 h-1.5 rounded-full bg-[#DA020D]" />
           {badge}
         </div>
       )}
