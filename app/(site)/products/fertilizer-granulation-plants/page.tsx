@@ -159,7 +159,7 @@ export default function FertilizerPlantsPage() {
         </div>
 
         {/* Process Flow Timeline */}
-        <div className="bg-white rounded-3xl border border-[#E7E7EB] p-8 sm:p-10 mb-16 shadow-[0_4px_24px_rgba(17,17,17,0.04)] space-y-6">
+        <div className="bg-white rounded-3xl border border-[#E7E7EB] p-8 sm:p-10 mb-16 shadow-[0_4px_24px_rgba(17,17,17,0.04)] space-y-6" id="process">
           <div className="max-w-3xl space-y-2">
             <h2 className="text-2xl font-bold text-[#111111] tracking-tight">
               Turnkey Process Flow: From Raw Manure to Bagged Granules
@@ -190,7 +190,7 @@ export default function FertilizerPlantsPage() {
         </div>
 
         {/* Machinery Breakdown Grid */}
-        <div className="mb-16">
+        <div className="mb-16" id="machinery">
           <h2 className="text-2xl font-bold text-[#111111] tracking-tight mb-6">
             Core Equipment Units in Granulation Lines
           </h2>
@@ -223,7 +223,7 @@ export default function FertilizerPlantsPage() {
         </div>
 
         {/* Technical Specification Table */}
-        <div className="mb-16">
+        <div className="mb-16" id="specifications">
           <TechnicalSpecTable
             title="Pan / Disc Fertilizer Granulator Specifications"
             subtitle="Standard engineering parameters for MS-series adjustable disc granulators."

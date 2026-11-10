@@ -189,7 +189,7 @@ export default function SandWashingPlantsPage() {
         </div>
 
         {/* Machinery Units Grid */}
-        <div className="mb-16">
+        <div className="mb-16" id="machinery">
           <h2 className="text-2xl font-bold text-[#111111] tracking-tight mb-6">
             Available Sand Washing &amp; Separation Equipment
           </h2>
@@ -222,7 +222,7 @@ export default function SandWashingPlantsPage() {
         </div>
 
         {/* Technical Specification Table */}
-        <div className="mb-16">
+        <div className="mb-16" id="specifications">
           <TechnicalSpecTable
             title="Bucket Wheel &amp; Hydrocyclone Plant Specifications"
             subtitle="Engineering baseline for MS-series combined sand washing and dewatering plants."

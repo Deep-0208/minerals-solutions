@@ -191,7 +191,7 @@ export default function RotaryDryersPage() {
         </div>
 
         {/* Available Configurations Grid */}
-        <div className="mb-16">
+        <div className="mb-16" id="configurations">
           <h2 className="text-2xl font-bold text-[#111111] tracking-tight mb-6">
             Available Dryer Drum Configurations
           </h2>
@@ -224,7 +224,7 @@ export default function RotaryDryersPage() {
         </div>
 
         {/* Technical Specification Table */}
-        <div className="mb-16">
+        <div className="mb-16" id="specifications">
           <TechnicalSpecTable
             title="Double Pass Concentric Rotary Dryer Specifications"
             subtitle="Standard engineering parameters for double-pass concentric drum drying systems."

@@ -65,8 +65,48 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/rotary-dryer-manufacturer-ahmedabad/',
+        destination: '/products/industrial-rotary-dryers/',
+        permanent: true,
+      },
+      {
+        source: '/sand-dryer-with-hot-air-generator/',
+        destination: '/products/industrial-rotary-dryers/#configurations',
+        permanent: true,
+      },
+      {
+        source: '/saw-dust-dryer-machine/',
+        destination: '/products/industrial-rotary-dryers/#configurations',
+        permanent: true,
+      },
+      {
+        source: '/rotary-calciner-manufacturer/',
+        destination: '/products/industrial-rotary-dryers/#configurations',
+        permanent: true,
+      },
+      {
         source: '/products/granulation-pellet-plants/',
         destination: '/products/fertilizer-granulation-plants/',
+        permanent: true,
+      },
+      {
+        source: '/fertilizer-granulation-plant-manufacturer/',
+        destination: '/products/fertilizer-granulation-plants/',
+        permanent: true,
+      },
+      {
+        source: '/disc-pan-granulator-machine/',
+        destination: '/products/fertilizer-granulation-plants/#machinery',
+        permanent: true,
+      },
+      {
+        source: '/rotary-drum-granulator-plant/',
+        destination: '/products/fertilizer-granulation-plants/#machinery',
+        permanent: true,
+      },
+      {
+        source: '/organic-fertilizer-granulation-plant/',
+        destination: '/products/fertilizer-granulation-plants/#process',
         permanent: true,
       },
       {
@@ -75,8 +115,43 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/sand-washing-plant-manufacturer-gujarat/',
+        destination: '/products/sand-washing-plants/',
+        permanent: true,
+      },
+      {
+        source: '/hydrocyclone-sand-washing-plant/',
+        destination: '/products/sand-washing-plants/#machinery',
+        permanent: true,
+      },
+      {
+        source: '/bucket-wheel-sand-washer/',
+        destination: '/products/sand-washing-plants/#machinery',
+        permanent: true,
+      },
+      {
+        source: '/spiral-screw-sand-classifier/',
+        destination: '/products/sand-washing-plants/#machinery',
+        permanent: true,
+      },
+      {
         source: '/products/conveyor-systems/',
         destination: '/products/industrial-conveyors-spares/',
+        permanent: true,
+      },
+      {
+        source: '/industrial-conveyor-belt-system-manufacturer/',
+        destination: '/products/industrial-conveyors-spares/',
+        permanent: true,
+      },
+      {
+        source: '/conveyor-pulleys-head-tail-snub/',
+        destination: '/products/industrial-conveyors-spares/#conveyors',
+        permanent: true,
+      },
+      {
+        source: '/conveyor-rollers-idlers-manufacturer/',
+        destination: '/products/industrial-conveyors-spares/#conveyors',
         permanent: true,
       },
       {

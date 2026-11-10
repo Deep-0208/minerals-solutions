@@ -158,7 +158,7 @@ export default function ConveyorsSparesPage() {
         </div>
 
         {/* Product Cards Grid */}
-        <div className="mb-16">
+        <div className="mb-16" id="conveyors">
           <h2 className="text-2xl font-bold text-[#111111] tracking-tight mb-6">
             Conveyor Equipment &amp; Mechanical Replacement Spares
           </h2>
@@ -191,7 +191,7 @@ export default function ConveyorsSparesPage() {
         </div>
 
         {/* Technical Specification Table 1: Conveyors */}
-        <div className="mb-16">
+        <div className="mb-16" id="specifications">
           <TechnicalSpecTable
             title="Heavy-Duty Troughed Belt Conveyor Specifications"
             subtitle="Standard engineering parameters conforming to IS 11592 / IS 1891."
@@ -202,7 +202,7 @@ export default function ConveyorsSparesPage() {
         </div>
 
         {/* Technical Specification Table 2: Trunnion Rollers */}
-        <div className="mb-16">
+        <div className="mb-16" id="trunnions">
           <TechnicalSpecTable
             title="Forged Steel Trunnion Support Roller Specifications"
             subtitle="Mechanical running gear for rotary dryers, calciners, and coating drums."
