@@ -57,6 +57,35 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  async redirects() {
+    return [
+      {
+        source: '/products/rotary-dryers/',
+        destination: '/products/industrial-rotary-dryers/',
+        permanent: true,
+      },
+      {
+        source: '/products/granulation-pellet-plants/',
+        destination: '/products/fertilizer-granulation-plants/',
+        permanent: true,
+      },
+      {
+        source: '/products/mineral-processing/',
+        destination: '/products/sand-washing-plants/',
+        permanent: true,
+      },
+      {
+        source: '/products/conveyor-systems/',
+        destination: '/products/industrial-conveyors-spares/',
+        permanent: true,
+      },
+      {
+        source: '/manufacturing-facility/',
+        destination: '/manufacturing/',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

@@ -21,12 +21,12 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   metadataBase: new URL(company.siteUrl),
   title: {
-    default: 'MS | Innovative Ideas. Powerful Solutions.',
-    template: '%s | MS',
+    default: 'Minerals Solutions | Industrial Rotary Dryers & Heavy Machinery',
+    template: '%s | Minerals Solutions',
   },
   description:
-    'We build modern, scalable digital experiences that help businesses move forward. MS provides end-to-end engineering, web and mobile development, and turnkey solutions.',
-  applicationName: 'MS',
+    'Minerals Solutions designs and manufactures industrial rotary dryers, fertilizer granulation plants, sand washing equipment, and heavy conveyor systems in Gujarat, India.',
+  applicationName: 'Minerals Solutions',
   icons: {
     icon: '/images/brand/logo-transparent-thumb.webp',
     apple: '/images/brand/logo-md.webp',
@@ -43,11 +43,11 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'MS | Innovative Ideas. Powerful Solutions.',
+    title: 'Minerals Solutions | Industrial Rotary Dryers & Heavy Machinery',
     description:
-      'We build modern, scalable digital experiences that help businesses move forward.',
+      'Minerals Solutions designs and manufactures industrial drying systems, fertilizer granulation plants, sand washing equipment, and bulk material handling solutions tailored to your process requirements.',
     url: company.siteUrl,
-    siteName: 'MS',
+    siteName: 'Minerals Solutions',
     locale: 'en_IN',
     type: 'website',
   },
@@ -79,8 +79,9 @@ export default function RootLayout({
   const organizationSchema = {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
+    additionalType: 'https://schema.org/ManufacturingPlant',
     '@id': `${company.siteUrl}/#organization`,
-    name: 'MS - Minerals Solutions',
+    name: 'Minerals Solutions',
     legalName: company.legalName,
     url: company.siteUrl,
     logo: `${company.siteUrl}/images/brand/logo.png`,

@@ -18,11 +18,11 @@ export function StickyContactBar() {
       aria-label="Quick Contact Actions"
     >
       <div className="grid grid-cols-3 gap-2 max-w-md mx-auto">
-        {/* Call Now */}
+        {/* Call Works */}
         <a
           href={`tel:${cleanPhone}`}
           className="flex flex-col items-center justify-center py-2 px-2 rounded-xl bg-neutral-100 hover:bg-neutral-200 text-[#171717] text-[11px] font-semibold transition-colors"
-          aria-label={`Call MS at ${primaryPhone}`}
+          aria-label={`Call Minerals Solutions at ${primaryPhone}`}
         >
           <Phone className="w-4 h-4 text-[#E10613] mb-0.5" />
           <span>Call Works</span>
@@ -40,13 +40,13 @@ export function StickyContactBar() {
           <span>WhatsApp</span>
         </a>
 
-        {/* Contact CTA */}
+        {/* Get Quote */}
         <Link
-          href="#contact"
+          href="/request-quote"
           className="flex flex-col items-center justify-center py-2 px-2 rounded-xl bg-[#E10613] hover:bg-[#BC0711] text-white text-[11px] font-semibold transition-colors shadow-sm"
         >
           <FileText className="w-4 h-4 mb-0.5" />
-          <span>Get Started</span>
+          <span>Get Quote</span>
         </Link>
       </div>
     </div>

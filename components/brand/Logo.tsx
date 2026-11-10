@@ -20,9 +20,9 @@ export function Logo({
   const subtextColor = isDark ? 'text-neutral-400' : 'text-[#737373]';
 
   const dimensions = {
-    sm: { px: 40, textClass: 'text-lg', subtextClass: 'text-[10px]' },
-    md: { px: 48, textClass: 'text-xl sm:text-2xl', subtextClass: 'text-[11px] sm:text-xs' },
-    lg: { px: 64, textClass: 'text-2xl sm:text-3xl', subtextClass: 'text-xs sm:text-sm' },
+    sm: { px: 40, textClass: 'text-base sm:text-lg', subtextClass: 'text-[9px] sm:text-[10px]' },
+    md: { px: 48, textClass: 'text-lg sm:text-xl font-black', subtextClass: 'text-[10px] sm:text-[11px]' },
+    lg: { px: 64, textClass: 'text-2xl sm:text-3xl font-black', subtextClass: 'text-xs sm:text-sm' },
   }[size];
 
   // In dark mode: use logo-dark-md.webp (white 'S' + red 'M' on transparent)
@@ -35,13 +35,13 @@ export function Logo({
     <Link
       href="/"
       className={`inline-flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-[#E10613] rounded-sm transition-opacity hover:opacity-95 ${className}`}
-      aria-label="MS - Home"
+      aria-label="Minerals Solutions - Home"
     >
       {/* Official MS Monogram Emblem */}
       <div className="relative shrink-0 transition-transform duration-200 group-hover:scale-105">
         <Image
           src={logoSrc}
-          alt="MS logo"
+          alt="Minerals Solutions MS Logo"
           width={dimensions.px}
           height={dimensions.px}
           className="object-contain"
@@ -49,18 +49,18 @@ export function Logo({
         />
       </div>
 
-      {/* Typography: MS Wordmark */}
-      <div className="flex flex-col justify-center leading-none">
+      {/* Typography: MS Minerals Solutions Wordmark */}
+      <div className="flex flex-col justify-center leading-tight">
         <span
-          className={`${dimensions.textClass} font-extrabold tracking-tight uppercase ${textColor} font-display`}
+          className={`${dimensions.textClass} font-black tracking-tight uppercase ${textColor} font-display`}
         >
-          MS <span className="text-[#E10613]">Solutions</span>
+          MINERALS <span className="text-[#E10613]">SOLUTIONS</span>
         </span>
         {showTagline && (
           <span
-            className={`${dimensions.subtextClass} font-medium tracking-wider uppercase mt-1 ${subtextColor}`}
+            className={`${dimensions.subtextClass} font-semibold tracking-wider uppercase ${subtextColor}`}
           >
-            Engineering &amp; Technology
+            Industrial Machinery &amp; Plants
           </span>
         )}
       </div>

@@ -16,3 +16,4 @@ try:
         print("Has MS Logo:", "MS logo" in html)
 except Exception as e:
     print("Error:", e)
+

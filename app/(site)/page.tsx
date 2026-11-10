@@ -2,20 +2,23 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import {
-  Zap,
-  ShieldCheck,
-  Headphones,
-  Maximize2,
-  Code2,
-  Smartphone,
-  Layout,
-  Cpu,
+  Flame,
+  Sprout,
+  Waves,
+  Boxes,
   ArrowRight,
-  ArrowUpRight,
-  CheckCircle2,
-  Mail,
   Phone,
+  CheckCircle2,
+  ShieldCheck,
+  Award,
+  ExternalLink,
+  ChevronRight,
+  Settings2,
+  Cpu,
   Layers,
+  Wrench,
+  Gauge,
+  Factory,
 } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { Button } from '@/components/ui/Button';
@@ -25,536 +28,602 @@ import { company } from '@/data/company';
 export default function HomePage() {
   const primaryPhone = company.telephones[0] || '+91 63524 53050';
   const cleanPhone = primaryPhone.replace(/\s+/g, '');
+  const secondaryPhone = company.telephones[1] || '+91 91061 63058';
 
-  const benefits = [
+  // 4 Core Machinery Divisions
+  const divisions = [
     {
-      icon: <Zap className="w-6 h-6 text-[#E10613]" />,
-      title: 'Fast Performance',
-      desc: 'Engineered for high throughput, optimized velocity, and responsive execution across workloads.',
-    },
-    {
-      icon: <ShieldCheck className="w-6 h-6 text-[#E10613]" />,
-      title: 'Secure by Design',
-      desc: 'Built with rigorous industrial safety protocols, verified metallurgy, and strict quality gates.',
-    },
-    {
-      icon: <Headphones className="w-6 h-6 text-[#E10613]" />,
-      title: 'Reliable Support',
-      desc: 'Direct consultation with principal engineers, transparent communication, and rapid turnaround.',
-    },
-    {
-      icon: <Maximize2 className="w-6 h-6 text-[#E10613]" />,
-      title: 'Built to Scale',
-      desc: 'Modular system architecture crafted to expand seamlessly as operational requirements grow.',
-    },
-  ];
-
-  const services = [
-    {
-      icon: <Code2 className="w-7 h-7 text-[#E10613]" />,
-      title: 'Web Development',
-      desc: 'Custom high-performance web applications, fast APIs, and scalable cloud architectures built for modern enterprise demand.',
-      href: '#contact',
-    },
-    {
-      icon: <Smartphone className="w-7 h-7 text-[#E10613]" />,
-      title: 'Mobile Applications',
-      desc: 'Cross-platform mobile applications offering intuitive user journeys, offline readiness, and fluid native performance.',
-      href: '#contact',
-    },
-    {
-      icon: <Layout className="w-7 h-7 text-[#E10613]" />,
-      title: 'UI/UX Design',
-      desc: 'Clean, conversion-focused design systems, accessible design tokens, and refined interfaces that elevate brand authority.',
-      href: '#contact',
-    },
-    {
-      icon: <Cpu className="w-7 h-7 text-[#E10613]" />,
-      title: 'Turnkey Industrial Systems',
-      desc: 'High-efficiency thermal rotary dryers, turnkey fertilizer granulation plants, and heavy bulk material handling solutions.',
-      href: '#contact',
-    },
-  ];
-
-  const featuredWork = [
-    {
-      title: 'Industrial Rotary Thermal Dryer',
-      category: 'Thermal Processing',
-      desc: 'Heavy-duty double pass rotary drying system with automatic thermal draft regulation and dual cyclone dust recovery.',
+      id: 'rotary-dryers',
+      title: 'Industrial Rotary Dryers & Thermal Systems',
+      description:
+        'Single-pass, double-pass concentric drum, and triple-pass dryers engineered for silica sand, minerals, sawdust, and chemicals with custom hot air furnaces.',
+      capacity: '500 kg/hr - 50 TPH',
       image: '/images/products/rotary-dryers/double-pass-rotary-dryer-primary-md.webp',
-      outcome: 'Reduced operational moisture from 18% to under 0.5% at continuous 5 TPH capacity.',
+      alt: 'Minerals Solutions double pass concentric rotary dryer showing outer shell and blue drive frame at Dahegam workshop',
+      href: '/products/industrial-rotary-dryers',
+      features: ['Concentric Nested Shells', '300°C Inlet Draft', 'IS 2062 Carbon Steel'],
+      icon: Flame,
     },
     {
-      title: 'Fertilizer Granulation Plant Line',
-      category: 'Turnkey Plant',
-      desc: 'Complete automated pan granulator, rotary cooling cylinder, and screening line for organic and chemical fertilizers.',
-      image: '/images/products/fertilizer-pellet/fertilizer-granulation-plant-line-md.webp',
-      outcome: 'Delivered 92%+ uniform granule sphericity with integrated dust mitigation.',
+      id: 'fertilizer-plants',
+      title: 'Fertilizer Granulation & Pellet Plants',
+      description:
+        'Turnkey organic compost and chemical NPK fertilizer pelletizing systems featuring heavy pan granulators with 35°-55° stepless angle adjustment.',
+      capacity: '1 - 20 TPH',
+      image: '/images/products/fertilizer-pellet/fertilizer-granulation-plant-primary-md.webp',
+      alt: 'Minerals Solutions complete fertilizer granulation plant installation showing granulator pan and conveyor feed',
+      href: '/products/fertilizer-granulation-plants',
+      features: ['Stepless Angle Tilt', '≥92% Sphericity', 'Tungsten Carbide Scrapers'],
+      icon: Sprout,
     },
     {
-      title: 'Aggregate Sand Washing Setup',
-      category: 'Mineral Recovery',
-      desc: 'Bucket wheel sand classifier and hydrocyclone dewatering plant for high-purity construction and foundry sand.',
+      id: 'sand-washing',
+      title: 'Sand Washing & Mineral Recovery Plants',
+      description:
+        'Bucket wheel sand washing units, hydrocyclone deslimers, and spiral screw classifiers recovering fines down to 75 microns (200 mesh) with low moisture discharge.',
+      capacity: '30 - 200 TPH',
       image: '/images/products/mineral-processing/river-sand-washing-plant-md.webp',
-      outcome: 'Recovers fine sand particles down to 75 microns while removing 95%+ silt and clay.',
+      alt: 'Minerals Solutions heavy bucket wheel sand washing plant at aggregate processing site',
+      href: '/products/sand-washing-plants',
+      features: ['75 Micron Recovery', 'Hydrocyclone Desliming', 'Low Water Footprint'],
+      icon: Waves,
+    },
+    {
+      id: 'conveyors-spares',
+      title: 'Industrial Conveyors & Heavy Mechanical Spares',
+      description:
+        'Heavy-duty trough belt conveyor assemblies (400 mm to 1600 mm width), motorized pulleys with vulcanized diamond lagging, forged trunnions, and girth gears.',
+      capacity: '400 - 1600 mm Width',
+      image: '/images/products/conveyor-systems/conveyor-belt-system-truss-md.webp',
+      alt: 'Heavy industrial conveyor belt system lattice truss structure fabricated at Minerals Solutions workshop',
+      href: '/products/industrial-conveyors-spares',
+      features: ['Diamond Lagged Pulleys', 'EN-8/EN-9 Forged Trunnions', 'Machined Girth Gears'],
+      icon: Boxes,
     },
   ];
 
-  const differentiators = [
+  // 8 Engineering Capabilities
+  const capabilities = [
     {
-      title: 'Authenticated Manufacturing Credentials',
-      desc: 'Registered with GSTIN 24AUSPP9555F1ZZ and UDYAM-GJ-09-0021428, operating an active heavy plate workshop in Zak GIDC.',
+      title: 'Heavy Plate Rolling & Bending',
+      desc: 'Precision 3-roll and 4-roll bending for steel plate shells up to 25 mm+ thickness with uniform roundness.',
+      icon: Layers,
     },
     {
-      title: 'Engineering Precision & Quality Gates',
-      desc: 'Every system undergoes ultrasound weld inspections, dynamic balancing, and rigorous pre-dispatch testing.',
+      title: 'Submerged Arc Structural Welding',
+      desc: 'Automatic submerged arc longitudinal and circumferential welds for high pressure and thermal cycling.',
+      icon: Flame,
     },
     {
-      title: 'Complete Turnkey Delivery',
-      desc: 'From initial design calculations and layout drawings to on-site installation, testing, and operational handover.',
+      title: 'Rotating Drum Dynamic Balancing',
+      desc: 'Electronic dynamic balance verification to eliminate operational vibration and preserve bearing longevity.',
+      icon: Gauge,
     },
     {
-      title: 'Transparent Direct Communication',
-      desc: 'Clients communicate directly with our engineering team - no intermediary sales layers or inflated promises.',
+      title: 'Heavy Lathe Shaft Machining',
+      desc: 'Precision turning of trunnion roller shafts, head pulleys, and drive pinions within tight micrometer tolerances.',
+      icon: Settings2,
     },
+    {
+      title: 'Refractory Lining & Thermal Insulation',
+      desc: 'Engineered high-alumina brick and castable refractory lining for hot air furnaces and combustion chambers.',
+      icon: ShieldCheck,
+    },
+    {
+      title: 'Girth Gear & Trunnion Alignment',
+      desc: 'Optical and laser alignment of forged riding tyres, support rollers, and cast iron drive girth gears.',
+      icon: Wrench,
+    },
+    {
+      title: 'Factory Pre-Assembly & Dry Testing',
+      desc: 'Complete trial assembly and no-load drive spin testing in our Zak GIDC workshop prior to logistics dispatch.',
+      icon: Factory,
+    },
+    {
+      title: 'Turnkey Site Erection & Commissioning',
+      desc: 'Mechanical positioning, drive anchoring, electrical integration, and initial material trial heating runs on-site.',
+      icon: Cpu,
+    },
+  ];
+
+  // 4 Core Value Pillars
+  const valuePillars = [
+    {
+      title: 'Application-Specific Engineering',
+      desc: 'Every machine is customized around your feed material moisture, bulk density, abrasive qualities, and site footprint constraints.',
+    },
+    {
+      title: 'Direct Manufacturing Access',
+      desc: 'Direct consultation with our chief fabrication engineers at Zak GIDC with zero middleman or trading house markups.',
+    },
+    {
+      title: 'Turnkey Plant Execution',
+      desc: 'Comprehensive execution covering plant layout design, equipment sizing, civil coordination, and hot commissioning.',
+    },
+    {
+      title: 'In-Stock Replacement Spares',
+      desc: 'Direct factory availability of replacement trunnion rollers, lagged pulleys, conveyor belting, and heat-resistant lifters.',
+    },
+  ];
+
+  // 8 Industries Served
+  const industries = [
+    { name: 'Silica Sand & Foundry', desc: 'Drying and classification of high-purity glass and casting sands.' },
+    { name: 'Fertilizer & Bio-Compost', desc: 'NPK compounding and organic manure pelletizing granulation.' },
+    { name: 'Chemicals & Industrial Salts', desc: 'Continuous moisture removal for boric acid, soda ash, and salts.' },
+    { name: 'Biomass & Wood Pelletizing', desc: 'Thermal drying of sawdust and agro-waste for biofuel production.' },
+    { name: 'River Sand & Aggregate Washing', desc: 'Desliming and fine sand recovery for construction aggregate.' },
+    { name: 'Fly Ash & Slag Processing', desc: 'Rotary drying and handling of thermal power and steel mill byproducts.' },
+    { name: 'Mineral Beneficiation & Clays', desc: 'Calcining, drying, and washing of bentonite, quartz, and bauxite.' },
+    { name: 'Bulk Material Handling', desc: 'Heavy overland conveyors and truck loading systems for mines and ports.' },
+  ];
+
+  // 8 Process Steps
+  const processSteps = [
+    { step: '01', title: 'Process Assessment', desc: 'Analysis of material feed moisture, target output, and capacity requirements.' },
+    { step: '02', title: 'Thermal & Machine Sizing', desc: 'Thermodynamic heat balance, air velocity calculations, and drum dimensioning.' },
+    { step: '03', title: 'CAD Engineering Layout', desc: 'General arrangement mechanical drawings and foundation load coordination.' },
+    { step: '04', title: 'In-House Steel Fabrication', desc: 'Plate cutting, rolling, submerged arc welding, and lathe machining at Zak GIDC.' },
+    { step: '05', title: 'Workshop Trial Assembly', desc: 'Pre-assembly, drive alignment, and dynamic balancing checks before dispatch.' },
+    { step: '06', title: 'Logistics Coordination', desc: 'Heavy transport logistics handling oversized drum shells to customer sites.' },
+    { step: '07', title: 'Site Erection & Rigging', desc: 'Mechanical placement on trunnions, drive motor coupling, and burner firing.' },
+    { step: '08', title: 'Spares & Ongoing Support', desc: 'Continuous provision of wear parts, trunnions, and scheduled preventive maintenance.' },
   ];
 
   return (
-    <div className="flex flex-col">
-      {/* ═══════════════════════════════════════════════
-          SECTION B: HERO SECTION (Split Layout on Dark Charcoal)
-          ═══════════════════════════════════════════════ */}
-      <section className="relative bg-[#1B1B1D] text-white overflow-hidden pt-16 pb-20 md:pt-24 md:pb-28">
-        {/* Subtle Swoosh Arcs & Ambient Glow inspired by MS logo */}
-        <div
-          className="absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full bg-[#E10613]/15 blur-[120px] pointer-events-none"
-          aria-hidden="true"
-        />
-        <div
-          className="absolute -bottom-40 -left-40 w-[450px] h-[450px] rounded-full bg-[#111111] border border-white/5 pointer-events-none"
-          aria-hidden="true"
-        />
+    <div className="bg-white">
+      {/* SECTION 1: HERO SECTION */}
+      <section className="relative bg-[#111111] text-white overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28">
+        {/* Subtle Background Glow & Radial Accents */}
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-red-600/10 rounded-full blur-[140px] pointer-events-none" />
+        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-neutral-800/20 rounded-full blur-[100px] pointer-events-none" />
 
-        <Container size="hero" className="relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-            {/* Left Column: Headline & CTAs (7 cols) */}
+        <Container className="relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+            {/* Left Content Column (7 cols) */}
             <div className="lg:col-span-7 space-y-6">
-              {/* Eyebrow Label */}
-              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-semibold tracking-wider uppercase text-neutral-300">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#E10613]" />
-                <span>Built For What's Next</span>
+              {/* Badge */}
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-600/15 border border-red-500/30 text-xs font-bold uppercase tracking-wider text-[#E10613]">
+                <Flame className="w-3.5 h-3.5" />
+                <span>Heavy Industrial Machinery &amp; Plant Engineering</span>
               </div>
 
               {/* Main Headline */}
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.08] font-display">
-                Innovative Ideas. <br />
-                <span className="text-[#E10613]">Powerful Solutions.</span>
+              <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-[1.08] font-display">
+                Engineered for Performance. <br className="hidden sm:inline" />
+                <span className="text-[#E10613]">Built for Industry.</span>
               </h1>
 
               {/* Supporting Copy */}
-              <p className="text-lg sm:text-xl text-neutral-300 leading-relaxed font-normal max-w-xl">
-                We build modern, scalable digital experiences that help businesses move forward.
+              <p className="text-base sm:text-lg text-neutral-300 max-w-2xl leading-relaxed">
+                Minerals Solutions designs and manufactures industrial drying systems, fertilizer
+                granulation plants, sand washing equipment, and bulk material handling solutions tailored
+                to your process requirements.
               </p>
 
-              {/* Action Buttons */}
-              <div className="flex flex-wrap items-center gap-4 pt-3">
-                <Button href="#services" variant="primary" size="lg">
-                  Explore Services
+              {/* Primary, Secondary, and Hotline Actions */}
+              <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5">
+                <Button href="/products" variant="primary" size="lg" icon={<ArrowRight className="w-4 h-4" />}>
+                  Explore Our Machinery
                 </Button>
-                <Button href="#contact" variant="secondary-dark" size="lg">
-                  Contact Us
+                <Button href="/request-quote" variant="secondary-dark" size="lg">
+                  Request a Quote
                 </Button>
               </div>
 
-              {/* Trust Indicators */}
-              <div className="pt-4 flex flex-wrap items-center gap-6 text-xs text-neutral-400 border-t border-white/10">
-                <span className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-[#E10613]" />
-                  Verified Facility: Zak GIDC, Dahegam
-                </span>
-                <span className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-[#E10613]" />
-                  GSTIN: {company.gstin}
-                </span>
+              {/* Direct Engineering Hotline Link */}
+              <div className="pt-1 flex items-center gap-3 text-xs text-neutral-400">
+                <span>Direct Engineering Desk:</span>
+                <a
+                  href={`tel:${cleanPhone}`}
+                  className="font-mono font-bold text-white hover:text-[#E10613] transition-colors flex items-center gap-1.5"
+                >
+                  <Phone className="w-3.5 h-3.5 text-[#E10613]" />
+                  <span>{primaryPhone}</span>
+                </a>
               </div>
-            </div>
 
-            {/* Right Column: Prominent MS Visual (5 cols) */}
-            <div className="lg:col-span-5 flex justify-center">
-              <div className="relative w-full max-w-md aspect-square rounded-2xl bg-gradient-to-br from-[#111111] to-[#1B1B1D] border border-white/10 p-8 flex flex-col justify-between shadow-[0_20px_50px_rgba(0,0,0,0.5)] overflow-hidden group">
-                {/* Circular Swoosh Graphic */}
-                <div
-                  className="absolute inset-0 opacity-20 bg-[radial-gradient(#E10613_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none"
-                  aria-hidden="true"
-                />
-                <div
-                  className="absolute -right-20 -top-20 w-64 h-64 rounded-full border-2 border-[#E10613]/30 pointer-events-none group-hover:scale-110 transition-transform duration-500"
-                  aria-hidden="true"
-                />
-
-                {/* Top Badge */}
-                <div className="flex items-center justify-between z-10">
-                  <span className="text-[11px] font-bold uppercase tracking-wider text-neutral-400 font-mono">
-                    MS Identity System
-                  </span>
-                  <span className="w-2.5 h-2.5 rounded-full bg-[#E10613] animate-pulse" />
-                </div>
-
-                {/* Center Sharp Logo Display */}
-                <div className="my-auto text-center py-6 z-10 flex flex-col items-center">
-                  <div className="relative w-36 h-36 transition-transform duration-300 group-hover:scale-105">
-                    <Image
-                      src="/images/brand/logo-dark.png"
-                      alt="MS logo"
-                      width={144}
-                      height={144}
-                      className="object-contain"
-                      priority
-                    />
-                  </div>
-                  <div className="mt-4 text-xl font-bold font-display uppercase tracking-wider">
-                    Minerals <span className="text-[#E10613]">Solutions</span>
-                  </div>
-                  <div className="text-xs text-neutral-400 uppercase tracking-widest mt-1">
-                    Engineering &amp; Technology
-                  </div>
-                </div>
-
-                {/* Bottom Metric Pill */}
-                <div className="z-10 p-3 rounded-xl bg-white/5 border border-white/10 flex items-center justify-between text-xs text-neutral-300">
-                  <span>Industrial Quality Standard</span>
-                  <span className="text-white font-semibold font-mono">ISO &bull; NDT Audited</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </Container>
-      </section>
-
-      {/* ═══════════════════════════════════════════════
-          SECTION C: BENEFITS SECTION (4 Concise Columns)
-          ═══════════════════════════════════════════════ */}
-      <section className="py-16 md:py-20 bg-[#F5F5F7] border-b border-[#E7E7EB]">
-        <Container size="content">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {benefits.map((item) => (
-              <div
-                key={item.title}
-                className="p-6 rounded-2xl bg-white border border-[#E7E7EB] shadow-[0_8px_28px_rgba(17,17,17,0.05)] transition-all duration-200 hover:-translate-y-1 hover:shadow-[0_14px_36px_rgba(17,17,17,0.1)] flex flex-col justify-between"
-              >
+              {/* Trust Metric Strip */}
+              <div className="pt-6 border-t border-neutral-800 grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs">
                 <div>
-                  <div className="w-12 h-12 rounded-xl bg-[#FFF0F1] flex items-center justify-center mb-4">
-                    {item.icon}
-                  </div>
-                  <h3 className="text-lg font-bold text-[#111111] font-display">
-                    {item.title}
-                  </h3>
-                  <p className="mt-2 text-sm text-[#737373] leading-relaxed">
-                    {item.desc}
-                  </p>
+                  <div className="font-mono font-bold text-lg text-white">500 kg - 50 TPH</div>
+                  <div className="text-neutral-400 mt-0.5">Dryer Capacities</div>
                 </div>
-              </div>
-            ))}
-          </div>
-        </Container>
-      </section>
-
-      {/* ═══════════════════════════════════════════════
-          SECTION D: ABOUT SECTION (Two-Column Layout)
-          ═══════════════════════════════════════════════ */}
-      <section id="about" className="py-20 md:py-28 bg-white border-b border-[#E7E7EB]">
-        <Container size="content">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-            {/* Left Copy Column (6 cols) */}
-            <div className="lg:col-span-6 space-y-6">
-              <div className="w-12 h-1 bg-[#E10613] rounded-full" />
-              <div className="text-xs font-bold uppercase tracking-wider text-[#E10613]">
-                About MS
-              </div>
-              <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-[#111111] leading-tight font-display">
-                Driving Progress Through Precision Engineering &amp; Modern Systems
-              </h2>
-              <p className="text-base text-[#454545] leading-relaxed">
-                Minerals Solutions (MS) is a technology-driven engineering firm based in Zak GIDC, Dahegam,
-                in the Ahmedabad industrial corridor. We combine heavy plate fabrication excellence with
-                modern digital architecture, delivering robust, high-efficiency equipment and scalable
-                technical solutions.
-              </p>
-              <p className="text-base text-[#737373] leading-relaxed">
-                Whether deploying continuous 50 TPH thermal rotary dryers, turnkey fertilizer granulation
-                lines, or high-performance digital platforms, we engineer with purpose and deliver with
-                uncompromising reliability.
-              </p>
-              <div className="pt-2">
-                <Button href="#contact" variant="primary" size="md">
-                  Learn More
-                </Button>
+                <div>
+                  <div className="font-mono font-bold text-lg text-white">Zak GIDC</div>
+                  <div className="text-neutral-400 mt-0.5">Fabrication Works</div>
+                </div>
+                <div>
+                  <div className="font-mono font-bold text-lg text-[#E10613]">4.8 / 5.0 ★</div>
+                  <div className="text-neutral-400 mt-0.5">IndiaMART Rating</div>
+                </div>
+                <div>
+                  <div className="font-mono font-bold text-lg text-emerald-400">UDYAM MSME</div>
+                  <div className="text-neutral-400 mt-0.5">Registered Enterprise</div>
+                </div>
               </div>
             </div>
 
-            {/* Right Media Column (6 cols) */}
-            <div className="lg:col-span-6">
-              <div className="relative rounded-2xl overflow-hidden border border-[#E7E7EB] shadow-[0_14px_36px_rgba(17,17,17,0.08)] bg-neutral-100">
+            {/* Right Media Column (5 cols) */}
+            <div className="lg:col-span-5">
+              <div className="relative rounded-2xl overflow-hidden border border-neutral-800 bg-neutral-900 shadow-2xl group">
                 <div className="relative aspect-[4/3] w-full">
                   <Image
-                    src="/images/products/rotary-dryers/double-pass-rotary-dryer-primary-md.webp"
-                    alt="MS manufacturing workshop in Zak GIDC, Dahegam"
+                    src="/images/products/rotary-dryers/double-pass-rotary-dryer-primary-lg.webp"
+                    alt="Minerals Solutions double pass concentric rotary dryer showing outer shell and heavy drive frame"
                     fill
-                    className="object-cover"
-                    sizes="(max-width: 1024px) 100vw, 600px"
+                    priority
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
                 </div>
-                <div className="p-5 bg-white border-t border-[#E7E7EB] flex items-center justify-between text-xs text-[#737373]">
+
+                <div className="p-5 bg-[#1B1B1D] border-t border-neutral-800 flex items-center justify-between">
                   <div>
-                    <strong className="text-[#111111] block">Dahegam Manufacturing Works</strong>
-                    <span>Zak GIDC, Gandhinagar / Ahmedabad</span>
+                    <span className="text-[10px] font-mono font-semibold uppercase tracking-wider text-[#E10613]">
+                      Featured Fabrication
+                    </span>
+                    <h3 className="text-sm font-bold text-white">
+                      Double Pass Concentric Rotary Dryer
+                    </h3>
                   </div>
-                  <span className="text-[#E10613] font-bold font-mono">Est. 2023</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </Container>
-      </section>
-
-      {/* ═══════════════════════════════════════════════
-          SECTION E: SERVICES SECTION (4 Elegant Cards)
-          ═══════════════════════════════════════════════ */}
-      <section id="services" className="py-20 md:py-28 bg-[#F5F5F7] border-b border-[#E7E7EB]">
-        <Container size="content">
-          <SectionHeading
-            badge="Our Capabilities"
-            title="Comprehensive Services Tailored for Growth"
-            subtitle="Explore our specialized services spanning digital platform engineering, intuitive UI architecture, and full turnkey industrial manufacturing."
-            centered
-          />
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {services.map((svc) => (
-              <div
-                key={svc.title}
-                className="p-7 rounded-2xl bg-white border border-[#E7E7EB] shadow-[0_8px_28px_rgba(17,17,17,0.05)] hover:shadow-[0_14px_36px_rgba(17,17,17,0.1)] transition-all duration-200 flex flex-col justify-between group hover:-translate-y-1"
-              >
-                <div>
-                  <div className="w-14 h-14 rounded-xl bg-[#FFF0F1] flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
-                    {svc.icon}
-                  </div>
-                  <h3 className="text-xl font-bold text-[#111111] group-hover:text-[#E10613] transition-colors font-display">
-                    {svc.title}
-                  </h3>
-                  <p className="mt-3 text-sm text-[#737373] leading-relaxed">
-                    {svc.desc}
-                  </p>
-                </div>
-
-                <div className="mt-6 pt-4 border-t border-[#E7E7EB]">
                   <Link
-                    href={svc.href}
-                    className="inline-flex items-center gap-1.5 text-xs font-bold text-[#E10613] group-hover:text-[#BC0711] transition-colors"
+                    href="/products/industrial-rotary-dryers"
+                    className="text-xs font-semibold text-neutral-300 hover:text-white flex items-center gap-1"
                   >
-                    <span>Request Details</span>
-                    <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                    <span>View Specs</span>
+                    <ChevronRight className="w-3.5 h-3.5 text-[#E10613]" />
                   </Link>
                 </div>
               </div>
-            ))}
+            </div>
           </div>
         </Container>
       </section>
 
-      {/* ═══════════════════════════════════════════════
-          SECTION F: PORTFOLIO & FEATURED WORK
-          ═══════════════════════════════════════════════ */}
-      <section id="portfolio" className="py-20 md:py-28 bg-white border-b border-[#E7E7EB]">
-        <Container size="content">
-          <SectionHeading
-            badge="Featured Projects"
-            title="Proven Work Built for High Demand"
-            subtitle="A curated showcase of our engineering systems fabricated and successfully commissioned for heavy industrial and mineral operations."
-            centered
-          />
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {featuredWork.map((project) => (
-              <div
-                key={project.title}
-                className="flex flex-col rounded-2xl border border-[#E7E7EB] bg-white overflow-hidden shadow-[0_8px_28px_rgba(17,17,17,0.06)] hover:shadow-[0_14px_36px_rgba(17,17,17,0.12)] transition-all duration-200 hover:-translate-y-1 group"
-              >
-                {/* 16:10 Ratio Photo Container */}
-                <div className="relative aspect-[16/10] w-full bg-neutral-100 overflow-hidden">
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
-                    sizes="(max-width: 768px) 100vw, 400px"
-                  />
-                </div>
-
-                {/* Project Details */}
-                <div className="p-6 flex-1 flex flex-col justify-between">
-                  <div>
-                    <span className="text-xs font-bold uppercase tracking-wider text-[#E10613] block mb-1">
-                      {project.category}
-                    </span>
-                    <h3 className="text-lg font-bold text-[#111111] group-hover:text-[#E10613] transition-colors font-display">
-                      {project.title}
-                    </h3>
-                    <p className="mt-2 text-sm text-[#737373] leading-relaxed">
-                      {project.desc}
-                    </p>
-                    <div className="mt-4 p-3 rounded-xl bg-[#F5F5F7] border border-[#E7E7EB] text-xs text-[#454545] font-medium">
-                      <strong>Outcome:</strong> {project.outcome}
-                    </div>
-                  </div>
-
-                  <div className="mt-5 pt-3 border-t border-[#E7E7EB]">
-                    <Link
-                      href="#contact"
-                      className="inline-flex items-center gap-1.5 text-xs font-bold text-[#171717] hover:text-[#E10613] transition-colors"
-                    >
-                      <span>Consult on This Project</span>
-                      <ArrowUpRight className="w-3.5 h-3.5" />
-                    </Link>
-                  </div>
-                </div>
+      {/* SECTION 2: PRODUCT CATEGORY NAVIGATION */}
+      <section className="py-20 bg-[#F5F5F7]" id="products">
+        <Container>
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12">
+            <div>
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-100 text-[#E10613] text-xs font-bold uppercase tracking-wider mb-2">
+                <Boxes className="w-3.5 h-3.5" />
+                <span>Manufacturing Divisions</span>
               </div>
-            ))}
-          </div>
-        </Container>
-      </section>
-
-      {/* ═══════════════════════════════════════════════
-          SECTION G: WHY CHOOSE MS
-          ═══════════════════════════════════════════════ */}
-      <section id="why-us" className="py-20 md:py-28 bg-[#F5F5F7] border-b border-[#E7E7EB]">
-        <Container size="content">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-            {/* Left Content (6 cols) */}
-            <div className="lg:col-span-6 space-y-6">
-              <div className="text-xs font-bold uppercase tracking-wider text-[#E10613]">
-                Why Choose MS
-              </div>
-              <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-[#111111] leading-tight font-display">
-                Engineered for Integrity, Built for Long-Term Value
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-[#111111] tracking-tight">
+                Industrial Machinery Divisions
               </h2>
-              <p className="text-base text-[#737373] leading-relaxed">
-                We differentiate through technical depth, honest manufacturing commitments, and direct
-                accessibility to engineering leadership.
+              <p className="mt-2 text-base text-[#737373] max-w-2xl">
+                Explore our core machinery lines designed for thermal moisture elimination, continuous
+                fertilizer granulation, mineral recovery, and heavy material transit.
               </p>
+            </div>
+            <div className="mt-4 md:mt-0">
+              <Button href="/products" variant="outline" size="md" icon={<ArrowRight className="w-4 h-4" />}>
+                View Complete Catalog
+              </Button>
+            </div>
+          </div>
 
-              <div className="space-y-4 pt-2">
-                {differentiators.map((diff) => (
-                  <div
-                    key={diff.title}
-                    className="p-4 rounded-xl bg-white border border-[#E7E7EB] shadow-sm flex items-start gap-3.5"
-                  >
-                    <div className="w-6 h-6 rounded-full bg-[#FFF0F1] flex items-center justify-center shrink-0 mt-0.5">
-                      <span className="w-2 h-2 rounded-full bg-[#E10613]" />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {divisions.map((item) => {
+              const Icon = item.icon;
+              return (
+                <div
+                  key={item.id}
+                  className="bg-white rounded-2xl border border-[#E7E7EB] overflow-hidden shadow-[0_4px_24px_rgba(17,17,17,0.04)] hover:shadow-[0_12px_36px_rgba(17,17,17,0.08)] transition-all flex flex-col group"
+                >
+                  <div className="relative aspect-[16/10] w-full overflow-hidden bg-neutral-100">
+                    <Image
+                      src={item.image}
+                      alt={item.alt}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute top-4 right-4 bg-black/75 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs font-mono font-semibold">
+                      {item.capacity}
                     </div>
-                    <div>
-                      <h3 className="text-sm font-bold text-[#111111] font-display">
-                        {diff.title}
+                  </div>
+
+                  <div className="p-6 sm:p-8 flex-1 flex flex-col justify-between space-y-4">
+                    <div className="space-y-2">
+                      <div className="w-10 h-10 rounded-xl bg-red-50 text-[#E10613] flex items-center justify-center">
+                        <Icon className="w-5 h-5" />
+                      </div>
+                      <h3 className="text-xl font-bold text-[#111111] group-hover:text-[#E10613] transition-colors">
+                        {item.title}
                       </h3>
-                      <p className="text-xs text-[#737373] mt-1 leading-relaxed">
-                        {diff.desc}
+                      <p className="text-sm text-[#737373] leading-relaxed">
+                        {item.description}
                       </p>
                     </div>
+
+                    <div className="pt-2 border-t border-neutral-100 space-y-3">
+                      <div className="flex flex-wrap gap-1.5">
+                        {item.features.map((feat) => (
+                          <span
+                            key={feat}
+                            className="px-2.5 py-0.5 rounded-md bg-[#F5F5F7] text-[#111111] text-xs font-medium"
+                          >
+                            {feat}
+                          </span>
+                        ))}
+                      </div>
+
+                      <div className="flex items-center justify-between pt-1">
+                        <Link
+                          href={item.href}
+                          className="font-bold text-sm text-[#E10613] hover:underline inline-flex items-center gap-1"
+                        >
+                          <span>Explore Specifications</span>
+                          <ArrowRight className="w-4 h-4" />
+                        </Link>
+                        <Button href="/request-quote" variant="ghost" size="sm">
+                          Quote
+                        </Button>
+                      </div>
+                    </div>
                   </div>
-                ))}
+                </div>
+              );
+            })}
+          </div>
+        </Container>
+      </section>
+
+      {/* SECTION 3: ENGINEERING CAPABILITIES */}
+      <section className="py-20 bg-white" id="manufacturing">
+        <Container>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-16">
+            <div className="lg:col-span-6 space-y-4">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-100 text-[#E10613] text-xs font-bold uppercase tracking-wider">
+                <Wrench className="w-3.5 h-3.5" />
+                <span>Zak GIDC Heavy Fabrication</span>
+              </div>
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-[#111111] tracking-tight">
+                In-House Manufacturing &amp; Fabrication Capabilities
+              </h2>
+              <p className="text-base text-[#737373] leading-relaxed">
+                Operating from our manufacturing facility in Dahegam, Gandhinagar, Minerals Solutions
+                maintains complete in-house control over heavy steel rolling, automatic submerged arc welding,
+                rotary drum dynamic balancing, and trial mechanical assembly.
+              </p>
+              <div className="pt-2">
+                <Button href="/manufacturing" variant="primary" size="md">
+                  Explore Manufacturing Tour
+                </Button>
               </div>
             </div>
 
-            {/* Right Card (6 cols) */}
-            <div className="lg:col-span-6">
-              <div className="p-8 sm:p-10 rounded-2xl bg-[#111111] text-white border border-neutral-800 shadow-[0_20px_50px_rgba(0,0,0,0.3)] relative overflow-hidden">
-                <div
-                  className="absolute -right-20 -bottom-20 w-64 h-64 rounded-full bg-[#E10613]/20 blur-[100px] pointer-events-none"
-                  aria-hidden="true"
+            <div className="lg:col-span-6 grid grid-cols-2 gap-4">
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-[#E7E7EB] shadow-md">
+                <Image
+                  src="/images/facility/manufacturing-unit-lg.webp"
+                  alt="Heavy fabrication workshop floor showing rotary drum rolling, turning lathes, and structural welding bays"
+                  fill
+                  className="object-cover"
                 />
-                <div className="relative z-10 space-y-6">
-                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-xs font-semibold uppercase tracking-wider text-neutral-300">
-                    Zak GIDC Facility
-                  </div>
-                  <h3 className="text-2xl sm:text-3xl font-bold text-white leading-tight font-display">
-                    Direct Access to Leadership &amp; Engineering
-                  </h3>
-                  <p className="text-sm text-neutral-300 leading-relaxed">
-                    Work directly with Mr. Vipulbhai Prajapati and our engineering team at our Dahegam
-                    facility. We welcome clients for plant inspections, material trial runs, and custom
-                    technical reviews.
-                  </p>
-
-                  <div className="pt-2 space-y-3 text-xs text-neutral-300 border-t border-neutral-800">
-                    <div className="flex items-center gap-2">
-                      <Phone className="w-4 h-4 text-[#E10613]" />
-                      <span>Direct Hotline: {primaryPhone}</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Mail className="w-4 h-4 text-neutral-400" />
-                      <span>{company.email}</span>
-                    </div>
-                  </div>
-
-                  <div className="pt-4">
-                    <Button href="#contact" variant="primary" size="md">
-                      Schedule a Factory Visit
-                    </Button>
-                  </div>
-                </div>
               </div>
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-[#E7E7EB] shadow-md mt-6">
+                <Image
+                  src="/images/facility/working-team-md.webp"
+                  alt="Mechanical fabrication and plant engineering working team at Minerals Solutions Dahegam facility"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {capabilities.map((cap) => {
+              const Icon = cap.icon;
+              return (
+                <div
+                  key={cap.title}
+                  className="p-6 rounded-2xl border border-[#E7E7EB] bg-[#FAFAFA] hover:bg-white hover:border-[#E10613] hover:shadow-md transition-all space-y-3"
+                >
+                  <div className="w-9 h-9 rounded-lg bg-red-50 text-[#E10613] flex items-center justify-center">
+                    <Icon className="w-4 h-4" />
+                  </div>
+                  <h3 className="text-base font-bold text-[#111111]">
+                    {cap.title}
+                  </h3>
+                  <p className="text-xs text-[#737373] leading-relaxed">
+                    {cap.desc}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+        </Container>
+      </section>
+
+      {/* SECTION 4: WHY MINERALS SOLUTIONS */}
+      <section className="py-20 bg-[#111111] text-white">
+        <Container>
+          <div className="text-center max-w-2xl mx-auto mb-16 space-y-3">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-600/20 text-[#E10613] text-xs font-bold uppercase tracking-wider">
+              <ShieldCheck className="w-3.5 h-3.5" />
+              <span>The Minerals Solutions Advantage</span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+              Why Process Operators Choose MS
+            </h2>
+            <p className="text-sm sm:text-base text-neutral-400">
+              We combine heavy manufacturing precision with process engineering to supply machines that
+              reliably endure abrasive, continuous, high-temperature industrial duty.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {valuePillars.map((pillar, idx) => (
+              <div
+                key={pillar.title}
+                className="p-6 rounded-2xl bg-[#1B1B1D] border border-neutral-800 hover:border-red-500/50 transition-all space-y-3"
+              >
+                <div className="text-xs font-mono font-bold text-[#E10613]">
+                  0{idx + 1}
+                </div>
+                <h3 className="text-lg font-bold text-white">
+                  {pillar.title}
+                </h3>
+                <p className="text-xs sm:text-sm text-neutral-400 leading-relaxed">
+                  {pillar.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      {/* SECTION 5: INDUSTRIES SERVED */}
+      <section className="py-20 bg-[#F5F5F7]" id="industries">
+        <Container>
+          <div className="text-center max-w-2xl mx-auto mb-16 space-y-3">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-100 text-[#E10613] text-xs font-bold uppercase tracking-wider">
+              <Factory className="w-3.5 h-3.5" />
+              <span>Broad Industrial Applications</span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#111111] tracking-tight">
+              Industries Served Across India
+            </h2>
+            <p className="text-sm sm:text-base text-[#737373]">
+              Supplying dedicated plant equipment engineered for diverse bulk mineral processing,
+              agricultural fertilizer lines, and heavy material handling.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {industries.map((ind) => (
+              <div
+                key={ind.name}
+                className="p-6 rounded-2xl bg-white border border-[#E7E7EB] hover:shadow-md transition-shadow space-y-2"
+              >
+                <div className="w-2 h-2 rounded-full bg-[#E10613]" />
+                <h3 className="text-base font-bold text-[#111111]">
+                  {ind.name}
+                </h3>
+                <p className="text-xs text-[#737373] leading-relaxed">
+                  {ind.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-12 text-center">
+            <Button href="/industries" variant="outline" size="md">
+              Learn More About Sector Applications
+            </Button>
+          </div>
+        </Container>
+      </section>
+
+      {/* SECTION 6: PROCESS & PROJECT EXECUTION */}
+      <section className="py-20 bg-white">
+        <Container>
+          <div className="text-center max-w-2xl mx-auto mb-16 space-y-3">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-100 text-[#E10613] text-xs font-bold uppercase tracking-wider">
+              <Cpu className="w-3.5 h-3.5" />
+              <span>Turnkey Execution Workflow</span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#111111] tracking-tight">
+              From Raw Material Assessment to Commissioning
+            </h2>
+            <p className="text-sm sm:text-base text-[#737373]">
+              Our systematic 8-stage engineering process ensures equipment is designed for your specific
+              bulk density, moisture profile, and installation layout.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {processSteps.map((step) => (
+              <div
+                key={step.step}
+                className="p-6 rounded-2xl border border-[#E7E7EB] bg-[#FAFAFA] relative overflow-hidden space-y-2"
+              >
+                <span className="text-3xl font-black font-mono text-neutral-200 absolute top-4 right-4">
+                  {step.step}
+                </span>
+                <h3 className="text-base font-bold text-[#111111] pt-2">
+                  {step.title}
+                </h3>
+                <p className="text-xs text-[#737373] leading-relaxed">
+                  {step.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      {/* SECTION 7: TRUST & CREDENTIALS BANNER */}
+      <section className="py-16 bg-[#1B1B1D] text-white border-y border-neutral-800">
+        <Container>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div className="lg:col-span-8 space-y-2">
+              <span className="text-xs font-mono uppercase tracking-wider text-[#E10613] font-bold">
+                Commercial &amp; Compliance Transparency
+              </span>
+              <h3 className="text-2xl sm:text-3xl font-bold text-white">
+                Verified Indian Manufacturing Enterprise
+              </h3>
+              <p className="text-xs sm:text-sm text-neutral-400 max-w-2xl leading-relaxed">
+                Registered under the Ministry of Micro, Small and Medium Enterprises (UDYAM-GJ-09-0021428)
+                with active GST compliance (24AUSPP9555F1ZZ) and verified 4.8/5.0 seller reputation on IndiaMART.
+              </p>
+            </div>
+            <div className="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-3 justify-end">
+              <a
+                href="https://www.indiamart.com/mineralssolutions-ahmedabad/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-neutral-900 border border-neutral-700 hover:border-[#E10613] text-xs font-bold text-white transition-colors"
+              >
+                <span>Verify on IndiaMART</span>
+                <ExternalLink className="w-3.5 h-3.5 text-[#E10613]" />
+              </a>
+              <Button href="/about" variant="secondary-dark" size="md">
+                About Our Leadership &amp; Works
+              </Button>
             </div>
           </div>
         </Container>
       </section>
 
-      {/* ═══════════════════════════════════════════════
-          SECTION H: FINAL CTA BAND (Closing on Charcoal)
-          ═══════════════════════════════════════════════ */}
-      <section
-        id="contact"
-        className="py-20 md:py-24 bg-[#1B1B1D] text-white relative overflow-hidden border-t border-neutral-800"
-      >
-        <div
-          className="absolute -bottom-32 -left-32 w-96 h-96 rounded-full bg-[#E10613]/20 blur-[130px] pointer-events-none"
-          aria-hidden="true"
-        />
+      {/* SECTION 8: FINAL HOMEPAGE CTA */}
+      <section className="py-20 bg-gradient-to-b from-[#111111] to-[#1B1B1D] text-white">
+        <Container>
+          <div className="max-w-3xl mx-auto text-center space-y-6">
+            <div className="w-12 h-12 rounded-2xl bg-red-600/20 text-[#E10613] flex items-center justify-center mx-auto">
+              <Flame className="w-6 h-6" />
+            </div>
 
-        <Container size="sm" className="relative z-10 text-center space-y-6">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 text-xs font-semibold uppercase tracking-wider text-neutral-300">
-            Start a Conversation
-          </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white font-display">
-            Ready to Bring Your Next Project to Life?
-          </h2>
-          <p className="text-base sm:text-lg text-neutral-300 max-w-xl mx-auto leading-relaxed">
-            Send us your specifications or technical requirements. Our engineering team will review your
-            scope and provide a formal proposal within 24 hours.
-          </p>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight">
+              Planning Your Next Industrial Project?
+            </h2>
 
-          <div className="flex flex-wrap items-center justify-center gap-4 pt-3">
-            <Button
-              href={`tel:${cleanPhone}`}
-              variant="primary"
-              size="lg"
-              icon={<Phone className="w-4 h-4" />}
-            >
-              Call Works: {primaryPhone}
-            </Button>
-            <Button
-              href={`https://wa.me/${company.whatsapp.number.replace('+', '')}?text=${encodeURIComponent(
-                company.whatsapp.prefill
-              )}`}
-              external
-              variant="secondary-dark"
-              size="lg"
-            >
-              WhatsApp Consultation
-            </Button>
-          </div>
+            <p className="text-base sm:text-lg text-neutral-300 leading-relaxed max-w-xl mx-auto">
+              Share your material, capacity, and process requirements with our team. We'll help identify
+              a suitable machinery or plant solution.
+            </p>
 
-          <div className="pt-4 text-xs text-neutral-400">
-            Plant: 10, Shyam Estate, Zak GIDC, Zak-Vahelal Road, Dahegam, Gandhinagar - 382330, Gujarat
+            <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">
+              <Button href="/request-quote" variant="primary" size="lg" icon={<ArrowRight className="w-4 h-4" />}>
+                Request a Quote
+              </Button>
+              <a
+                href={`tel:${cleanPhone}`}
+                className="inline-flex items-center justify-center gap-2 px-8 py-3.5 min-h-[52px] rounded-full border border-neutral-600 hover:border-white text-white font-semibold text-base transition-colors"
+              >
+                <Phone className="w-4 h-4 text-[#E10613]" />
+                <span>Call Our Team: {primaryPhone}</span>
+              </a>
+            </div>
+
+            <p className="text-xs text-neutral-500 pt-2">
+              Works Facility: Plot No. 10, Shed No. 3, Shyam Estate, Zak GIDC, Dahegam, Gandhinagar, Gujarat.
+            </p>
           </div>
         </Container>
       </section>
