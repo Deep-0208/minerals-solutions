@@ -173,29 +173,29 @@ export default function HomePage() {
   return (
     <div className="bg-white">
       {/* SECTION 1: HERO SECTION */}
-      <section className="relative bg-[#111111] text-white overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28">
+      <section className="relative bg-gradient-to-b from-neutral-50 via-white to-white border-b border-[#E7E7EB] overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-24">
         {/* Subtle Background Glow & Radial Accents */}
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-red-600/10 rounded-full blur-[140px] pointer-events-none" />
-        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-neutral-800/20 rounded-full blur-[100px] pointer-events-none" />
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-red-500/5 rounded-full blur-[120px] pointer-events-none" />
+        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-neutral-200/40 rounded-full blur-[100px] pointer-events-none" />
 
         <Container className="relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
             {/* Left Content Column (7 cols) */}
             <div className="lg:col-span-7 space-y-6">
               {/* Badge */}
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-600/15 border border-red-500/30 text-xs font-bold uppercase tracking-wider text-[#E10613]">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-50 border border-red-100 text-xs font-bold uppercase tracking-wider text-[#E10613] shadow-xs">
                 <Flame className="w-3.5 h-3.5" />
                 <span>Heavy Industrial Machinery &amp; Plant Engineering</span>
               </div>
 
               {/* Main Headline */}
-              <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-[1.08] font-display">
+              <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-[#111111] leading-[1.08] font-display">
                 Engineered for Performance. <br className="hidden sm:inline" />
                 <span className="text-[#E10613]">Built for Industry.</span>
               </h1>
 
               {/* Supporting Copy */}
-              <p className="text-base sm:text-lg text-neutral-300 max-w-2xl leading-relaxed">
+              <p className="text-base sm:text-lg text-[#737373] max-w-2xl leading-relaxed">
                 Minerals Solutions designs and manufactures industrial drying systems, fertilizer
                 granulation plants, sand washing equipment, and bulk material handling solutions tailored
                 to your process requirements.
@@ -206,17 +206,17 @@ export default function HomePage() {
                 <Button href="/products/" variant="primary" size="lg" icon={<ArrowRight className="w-4 h-4" />}>
                   Explore Our Machinery
                 </Button>
-                <Button href="/request-quote/" variant="secondary-dark" size="lg">
+                <Button href="/request-quote/" variant="outline" size="lg">
                   Request a Quote
                 </Button>
               </div>
 
               {/* Direct Engineering Hotline Link */}
-              <div className="pt-1 flex items-center gap-3 text-xs text-neutral-400">
+              <div className="pt-1 flex items-center gap-3 text-xs text-neutral-500">
                 <span>Direct Engineering Desk:</span>
                 <a
                   href={`tel:${cleanPhone}`}
-                  className="font-mono font-bold text-white hover:text-[#E10613] transition-colors flex items-center gap-1.5"
+                  className="font-mono font-bold text-[#111111] hover:text-[#E10613] transition-colors flex items-center gap-1.5"
                 >
                   <Phone className="w-3.5 h-3.5 text-[#E10613]" />
                   <span>{primaryPhone}</span>
@@ -224,30 +224,30 @@ export default function HomePage() {
               </div>
 
               {/* Trust Metric Strip */}
-              <div className="pt-6 border-t border-neutral-800 grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs">
+              <div className="pt-6 border-t border-[#E7E7EB] grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs">
                 <div>
-                  <div className="font-mono font-bold text-lg text-white">500 kg - 50 TPH</div>
-                  <div className="text-neutral-400 mt-0.5">Dryer Capacities</div>
+                  <div className="font-mono font-bold text-lg text-[#111111]">500 kg - 50 TPH</div>
+                  <div className="text-neutral-500 mt-0.5">Dryer Capacities</div>
                 </div>
                 <div>
-                  <div className="font-mono font-bold text-lg text-white">Zak GIDC</div>
-                  <div className="text-neutral-400 mt-0.5">Fabrication Works</div>
+                  <div className="font-mono font-bold text-lg text-[#111111]">Zak GIDC</div>
+                  <div className="text-neutral-500 mt-0.5">Fabrication Works</div>
                 </div>
                 <div>
                   <div className="font-mono font-bold text-lg text-[#E10613]">4.8 / 5.0 ★</div>
-                  <div className="text-neutral-400 mt-0.5">IndiaMART Rating</div>
+                  <div className="text-neutral-500 mt-0.5">IndiaMART Rating</div>
                 </div>
                 <div>
-                  <div className="font-mono font-bold text-lg text-emerald-400">UDYAM MSME</div>
-                  <div className="text-neutral-400 mt-0.5">Registered Enterprise</div>
+                  <div className="font-mono font-bold text-lg text-[#111111]">UDYAM MSME</div>
+                  <div className="text-neutral-500 mt-0.5">Registered Enterprise</div>
                 </div>
               </div>
             </div>
 
             {/* Right Media Column (5 cols) */}
             <div className="lg:col-span-5">
-              <div className="relative rounded-2xl overflow-hidden border border-neutral-800 bg-neutral-900 shadow-2xl group">
-                <div className="relative aspect-[4/3] w-full">
+              <div className="relative rounded-3xl overflow-hidden border border-[#E7E7EB] bg-white shadow-[0_20px_48px_rgba(17,17,17,0.08)] group">
+                <div className="relative aspect-[4/3] w-full overflow-hidden bg-neutral-100">
                   <Image
                     src="/images/products/rotary-dryers/double-pass-rotary-dryer-primary-lg.webp"
                     alt="Minerals Solutions double pass concentric rotary dryer showing outer shell and heavy drive frame"
@@ -255,23 +255,25 @@ export default function HomePage() {
                     priority
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+                  <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-mono font-semibold text-[#111111] border border-[#E7E7EB] shadow-xs">
+                    Zak GIDC Fabrication Bay
+                  </div>
                 </div>
 
-                <div className="p-5 bg-[#1B1B1D] border-t border-neutral-800 flex items-center justify-between">
+                <div className="p-5 bg-white border-t border-[#E7E7EB] flex items-center justify-between">
                   <div>
-                    <span className="text-[10px] font-mono font-semibold uppercase tracking-wider text-[#E10613]">
-                      Featured Fabrication
+                    <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-[#E10613] block">
+                      Featured Industrial Equipment
                     </span>
-                    <h3 className="text-sm font-bold text-white">
+                    <h3 className="text-sm font-bold text-[#111111] group-hover:text-[#E10613] transition-colors">
                       Double Pass Concentric Rotary Dryer
                     </h3>
                   </div>
                   <Link
                     href="/products/industrial-rotary-dryers/"
-                    className="text-xs font-semibold text-neutral-300 hover:text-white flex items-center gap-1"
+                    className="text-xs font-bold text-[#111111] hover:text-[#E10613] flex items-center gap-1 transition-colors"
                   >
-                    <span>View Specs</span>
+                    <span>View Specifications</span>
                     <ChevronRight className="w-3.5 h-3.5 text-[#E10613]" />
                   </Link>
                 </div>
