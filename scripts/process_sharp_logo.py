@@ -126,3 +126,4 @@ for f in sorted(os.listdir(brand_dir)):
     p = os.path.join(brand_dir, f)
     size_kb = os.path.getsize(p) / 1024
     print(f"  {f} ({size_kb:.1f} KB)")
+

@@ -5,23 +5,15 @@ import {
   ShieldCheck,
   Award,
   Factory,
-  Flame,
-  Layers,
-  Waves,
-  Cpu,
-  ArrowRight,
+  ChevronRight,
   Phone,
   FileText,
   CheckCircle2,
-  Clock,
-  Sparkles,
-  ChevronRight,
 } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { Button } from '@/components/ui/Button';
 import { SectionHeading } from '@/components/ui/SectionHeading';
 import { company } from '@/data/company';
-import { specifications } from '@/data/specifications';
 
 export default function HomePage() {
   const primaryPhone = company.telephones[0] || '+91 63524 53050';
@@ -31,10 +23,10 @@ export default function HomePage() {
     {
       id: 'dryers',
       title: 'Industrial Rotary Dryers',
-      tagline: 'High-Efficiency Thermal Drying Systems (1 to 50 TPH)',
-      desc: 'Single, double, and triple-pass rotary dryers with direct or indirect hot air generators for sand, sawdust, slag, gypsum, and chemical crystals.',
+      category: 'Thermal Processing',
+      tagline: 'High-Efficiency Rotary Dryers (1 to 50 TPH)',
+      desc: 'Single, double, and triple-pass rotary drum dryers with direct or indirect hot air generators for sand, sawdust, slag, and minerals.',
       image: '/images/products/rotary-dryers/double-pass-rotary-dryer-primary-md.webp',
-      badge: 'Core Flagship',
       specs: [
         { label: 'Thermal Capacity', val: '500 kg to 50 TPH' },
         { label: 'Operating Temp', val: 'Up to 300°C' },
@@ -46,44 +38,44 @@ export default function HomePage() {
     {
       id: 'fertilizer',
       title: 'Fertilizer Granulation Plants',
+      category: 'Pelletizing Systems',
       tagline: 'Turnkey NPK & Organic Fertilizer Lines',
-      desc: 'Complete pan/disc granulators, rotary drum granulators, rotary coolers, and rotary coating drums for uniform round fertilizer pellets.',
+      desc: 'Complete pan granulators, rotary drum granulators, rotary coolers, and coating drums for uniform round fertilizer pellets.',
       image: '/images/products/fertilizer-pellet/fertilizer-granulation-plant-line-md.webp',
-      badge: 'Turnkey Plants',
       specs: [
         { label: 'Plant Throughput', val: '1 to 20 TPH' },
-        { label: 'Pellet Sphericity', val: '≥ 92% uniform granules' },
+        { label: 'Pellet Sphericity', val: '92% uniform granules' },
         { label: 'Drive Rating', val: '5 HP to 45 HP Geared' },
-        { label: 'Material Handling', val: 'Organic manure & chemical NPK' },
+        { label: 'Material Handling', val: 'Manure, compost & chemical NPK' },
       ],
       href: '/fertilizer-granulation-plant-manufacturer/',
     },
     {
       id: 'sand-washing',
-      title: 'Sand Washing & Recovery Plants',
-      tagline: 'High-Purity Sand Desliming & Dewatering (Up to 200 TPH)',
-      desc: 'Bucket wheel sand washers, hydrocyclone desliming separators, and spiral screw classifiers for concrete sand, plaster sand, and silica washing.',
+      title: 'Sand Washing Plants',
+      category: 'Mineral Recovery',
+      tagline: 'High-Purity Sand Desliming (Up to 200 TPH)',
+      desc: 'Bucket wheel sand washers, hydrocyclone desliming separators, and spiral screw classifiers for concrete sand, plaster sand, and silica.',
       image: '/images/products/mineral-processing/river-sand-washing-plant-md.webp',
-      badge: 'Water Recycling',
       specs: [
         { label: 'Washing Capacity', val: '30 to 200 TPH' },
-        { label: 'Fine Sand Recovery', val: 'Down to 75 Microns (200 Mesh)' },
-        { label: 'Silt Removal', val: 'Clay & slime wash out ≥ 95%' },
-        { label: 'Dewatering Moisture', val: 'Discharge moisture 12–15%' },
+        { label: 'Fine Sand Recovery', val: 'Down to 75 Microns' },
+        { label: 'Silt Removal', val: 'Clay wash out 95%+' },
+        { label: 'Dewatering Moisture', val: 'Discharge moisture 12-15%' },
       ],
       href: '/sand-washing-plant-manufacturer-gujarat/',
     },
     {
       id: 'conveyors',
       title: 'Industrial Conveyor Systems',
-      tagline: 'Heavy-Duty Bulk Material Handling (400mm to 1600mm)',
-      desc: 'Troughing belt conveyors, overland conveyors, dynamic head & tail pulleys with diamond rubber lagging, and heavy-duty bearing idler sets.',
+      category: 'Bulk Handling',
+      tagline: 'Heavy-Duty Belt Handling (400mm to 1600mm)',
+      desc: 'Troughing belt conveyors, overland conveyors, dynamic head and tail pulleys with vulcanized rubber lagging, and precision idlers.',
       image: '/images/products/conveyor-systems/conveyor-belt-system-wide-md.webp',
-      badge: 'Material Logistics',
       specs: [
         { label: 'Belt Widths', val: '400 mm to 1600 mm' },
         { label: 'Handling Capacity', val: '50 to 800 TPH' },
-        { label: 'Pulley Lagging', val: '10–12mm Vulcanized Diamond' },
+        { label: 'Pulley Lagging', val: '10-12mm Vulcanized Diamond' },
         { label: 'Bearing Type', val: 'Spherical Roller Bearings' },
       ],
       href: '/industrial-conveyor-belt-system-manufacturer/',
@@ -93,68 +85,38 @@ export default function HomePage() {
   return (
     <div className="flex flex-col">
       {/* ═══════════════════════════════════════════════
-          1. HERO SECTION (High-Contrast Industrial Authority)
+          1. HERO SECTION (Disciplined 4-Element Stack, Under 20 Words Subtext)
           ═══════════════════════════════════════════════ */}
-      <section className="relative bg-slate-900 text-white overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28">
-        {/* Subtle Engineering Grid Background */}
+      <section className="relative bg-slate-900 text-white overflow-hidden pt-12 pb-16 lg:pt-16 lg:pb-20">
         <div
           className="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none"
           aria-hidden="true"
         />
-        {/* Subtle Brand Red Glow Accent */}
-        <div
-          className="absolute -top-40 -right-40 w-96 h-96 bg-[#DA020D] rounded-full blur-[140px] opacity-25 pointer-events-none"
-          aria-hidden="true"
-        />
 
         <Container size="lg" className="relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
             {/* Left Content Column (7 cols) */}
-            <div className="lg:col-span-7 space-y-6">
-              {/* Trust & Location Kicker */}
-              <div className="inline-flex flex-wrap items-center gap-2 px-3 py-1.5 rounded-full bg-slate-800/90 border border-slate-700 text-xs font-semibold text-slate-300">
-                <span className="w-2 h-2 rounded-full bg-[#DA020D] animate-pulse" />
+            <div className="lg:col-span-7 space-y-5">
+              {/* Element 1: Eyebrow / Facility Badge (Only 1 eyebrow on page) */}
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800 border border-slate-700 text-xs font-semibold text-slate-300">
                 <span className="text-white">Zak GIDC, Dahegam</span>
-                <span className="text-slate-500">•</span>
-                <span>Ahmedabad Industrial Corridor</span>
                 <span className="text-slate-500">•</span>
                 <span className="text-amber-400 font-bold">GSTIN: {company.gstin}</span>
               </div>
 
-              {/* Main H1 Title */}
+              {/* Element 2: Primary H1 Headline (Max 2 lines) */}
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-[1.12]">
                 Heavy Industrial <span className="text-[#DA020D]">Rotary Dryers</span> &amp; Turnkey Mineral Plants
               </h1>
 
-              {/* Descriptive Subtitle */}
+              {/* Element 3: Subtext (Max 20 words) */}
               <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-normal max-w-2xl">
-                Minerals Solutions engineers custom thermal rotary dryers, turnkey fertilizer granulation
-                lines, sand washing systems, and heavy conveyor belt handling plants designed for heavy-duty,
-                continuous 24/7 industrial operations across India.
+                Custom thermal rotary dryers, turnkey fertilizer granulation lines, and sand washing plants engineered for
+                continuous 24/7 heavy industrial operation.
               </p>
 
-              {/* Trust Checklist Badges */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-xs sm:text-sm text-slate-300 font-medium">
-                <div className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-[#DA020D] shrink-0" />
-                  <span>ISO-Compliant Heavy Plate Fabrication</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-[#DA020D] shrink-0" />
-                  <span>Turnkey Erection &amp; Commissioning</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-[#DA020D] shrink-0" />
-                  <span>Custom Engineering (1 to 50 TPH)</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-[#DA020D] shrink-0" />
-                  <span>IndiaMART Verified 4.8★ Manufacturer</span>
-                </div>
-              </div>
-
-              {/* Action Buttons */}
-              <div className="flex flex-wrap items-center gap-4 pt-4">
+              {/* Element 4: Action CTAs (Single-line labels) */}
+              <div className="flex flex-wrap items-center gap-3.5 pt-2">
                 <Button
                   href="/request-quote/"
                   variant="primary"
@@ -175,37 +137,27 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Right Media Card Column (5 cols) */}
+            {/* Right Media Card Column (5 cols, clean photography with no floating overlays) */}
             <div className="lg:col-span-5">
-              <div className="relative rounded-lg overflow-hidden border border-slate-700 bg-slate-800/80 shadow-2xl">
-                {/* Image Container */}
+              <div className="rounded-lg overflow-hidden border border-slate-700 bg-slate-800 shadow-xl">
                 <div className="relative aspect-[4/3] w-full bg-slate-950">
                   <Image
                     src="/images/products/rotary-dryers/double-pass-rotary-dryer-primary-md.webp"
-                    alt="Minerals Solutions Double Pass Rotary Dryer fabricated at Zak GIDC workshop"
+                    alt="Double Pass Rotary Dryer fabricated at Minerals Solutions workshop"
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 500px"
                     priority
                   />
-                  <div className="absolute top-3 left-3 bg-[#DA020D] text-white text-[11px] font-bold px-2.5 py-1 rounded shadow-sm uppercase tracking-wider">
-                    Heavy Thermal Dryer
-                  </div>
                 </div>
-
-                {/* Card Specs Footer */}
-                <div className="p-4 bg-slate-900 border-t border-slate-700 text-xs text-slate-300 space-y-2">
+                <div className="p-4 bg-slate-900 border-t border-slate-700 text-xs text-slate-300 space-y-1.5">
                   <div className="flex justify-between items-center">
-                    <span className="font-semibold text-white">Fabrication Workshop:</span>
+                    <span className="font-semibold text-white">Fabrication Plant:</span>
                     <span className="font-mono text-slate-300">Zak GIDC, Dahegam</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="font-semibold text-white">Shell Metallurgy:</span>
-                    <span className="font-mono text-slate-300">IS 2062 Heavy Carbon Steel</span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="font-semibold text-white">Application:</span>
-                    <span className="text-slate-300">Sand, Minerals, Biomass &amp; Fertilizers</span>
+                    <span className="font-mono text-slate-300">IS 2062 Heavy Plate</span>
                   </div>
                 </div>
               </div>
@@ -215,14 +167,14 @@ export default function HomePage() {
       </section>
 
       {/* ═══════════════════════════════════════════════
-          2. CREDENTIALS & TRUST BAR
+          2. CREDENTIALS & TRUST SECTION (Moved under Hero)
           ═══════════════════════════════════════════════ */}
-      <section className="bg-slate-100 border-b border-slate-200 py-6">
+      <section className="bg-slate-50 border-b border-slate-200 py-6">
         <Container size="lg">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
             <div className="space-y-1">
               <div className="text-2xl sm:text-3xl font-extrabold text-slate-900 font-mono">
-                1–50 <span className="text-[#DA020D] text-lg font-bold">TPH</span>
+                1-50 <span className="text-[#DA020D] text-lg font-bold">TPH</span>
               </div>
               <div className="text-xs text-slate-600 font-medium">Custom Thermal Capacity</div>
             </div>
@@ -249,24 +201,23 @@ export default function HomePage() {
       </section>
 
       {/* ═══════════════════════════════════════════════
-          3. FOUR FLAGSHIP MACHINERY LINES (Primary Gate 4 Showcase)
+          3. FOUR FLAGSHIP MACHINERY DIVISIONS
           ═══════════════════════════════════════════════ */}
-      <section className="py-16 md:py-24 bg-white">
+      <section className="py-16 md:py-20 bg-white">
         <Container size="lg">
           <SectionHeading
-            badge="Engineering Solutions"
             title="Four Specialized Industrial Machinery Divisions"
-            subtitle="Explore our comprehensive manufacturing capabilities spanning thermal drying, high-tonnage fertilizer granulation, aggregate sand washing, and heavy conveyor logistics."
+            subtitle="Explore our manufacturing capabilities across thermal drying, high-tonnage fertilizer granulation, aggregate sand washing, and heavy conveyor logistics."
             centered
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {equipmentLines.map((eq) => (
               <div
                 key={eq.id}
-                className="flex flex-col rounded-lg border border-slate-200 bg-white hover:border-slate-300 hover:shadow-lg transition-all duration-200 overflow-hidden group"
+                className="flex flex-col rounded-lg border border-slate-200 bg-white hover:border-slate-300 hover:shadow-md transition-all duration-200 overflow-hidden group"
               >
-                {/* Image Frame */}
+                {/* Image without overlays */}
                 <div className="relative aspect-[16/9] w-full bg-slate-100 overflow-hidden">
                   <Image
                     src={eq.image}
@@ -275,26 +226,26 @@ export default function HomePage() {
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                     sizes="(max-width: 768px) 100vw, 600px"
                   />
-                  <div className="absolute top-3 right-3 bg-slate-900/80 backdrop-blur-sm text-white text-xs font-semibold px-2.5 py-1 rounded">
-                    {eq.badge}
-                  </div>
                 </div>
 
                 {/* Content */}
                 <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between">
                   <div>
+                    <div className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-1">
+                      {eq.category}
+                    </div>
                     <h3 className="text-xl sm:text-2xl font-bold text-slate-900 group-hover:text-[#DA020D] transition-colors">
                       {eq.title}
                     </h3>
-                    <div className="text-xs font-semibold text-[#DA020D] uppercase tracking-wider mt-1">
+                    <div className="text-xs font-semibold text-[#DA020D] mt-1">
                       {eq.tagline}
                     </div>
                     <p className="mt-3 text-sm text-slate-600 leading-relaxed">
                       {eq.desc}
                     </p>
 
-                    {/* Technical Specifications Grid */}
-                    <div className="mt-5 p-3.5 rounded-md bg-slate-50 border border-slate-100 grid grid-cols-2 gap-2.5 text-xs">
+                    {/* Specification Data */}
+                    <div className="mt-5 p-3.5 rounded-md bg-slate-50 border border-slate-100 grid grid-cols-2 gap-2 text-xs">
                       {eq.specs.map((sp) => (
                         <div key={sp.label} className="space-y-0.5">
                           <span className="text-slate-500 font-medium">{sp.label}:</span>
@@ -306,7 +257,7 @@ export default function HomePage() {
                     </div>
                   </div>
 
-                  {/* Card Action Link */}
+                  {/* Actions */}
                   <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
                     <Link
                       href={eq.href}
@@ -330,21 +281,20 @@ export default function HomePage() {
       </section>
 
       {/* ═══════════════════════════════════════════════
-          4. TECHNICAL SPECIFICATION DATASHEET SNAPSHOT
+          4. TECHNICAL SPECIFICATION DATASHEET
           ═══════════════════════════════════════════════ */}
       <section className="py-16 bg-slate-50 border-y border-slate-200">
         <Container size="lg">
           <SectionHeading
-            badge="Engineering Data"
-            title="Verified Equipment Specifications &amp; Build Standards"
-            subtitle="Every machine is fabricated at our Zak GIDC plant following strict ASME/IS weld standards, precision dynamic balancing, and thorough thermal flow testing."
+            title="Verified Equipment Specifications and Build Standards"
+            subtitle="Every machine is fabricated at our Zak GIDC plant following strict ASME and IS weld standards, precision dynamic balancing, and thorough thermal flow testing."
           />
 
           <div className="bg-white rounded-lg border border-slate-200 shadow-sm overflow-hidden">
             <div className="p-4 sm:p-6 border-b border-slate-200 bg-slate-900 text-white flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
               <div>
                 <h3 className="text-lg font-bold">Double Pass Rotary Drum Dryer Specifications</h3>
-                <span className="text-xs text-slate-400">Model: MS-DPD Series | Tested &amp; Commissioned in Gujarat</span>
+                <span className="text-xs text-slate-400">Model: MS-DPD Series | Tested and Commissioned in Gujarat</span>
               </div>
               <span className="text-xs font-mono font-bold bg-[#DA020D] text-white px-3 py-1 rounded">
                 Throughput: 500 kg to 5,000 kg/hr
@@ -374,12 +324,12 @@ export default function HomePage() {
                   <tr>
                     <td className="py-3.5 px-4 font-semibold text-slate-800">Shell Metallurgy</td>
                     <td className="py-3.5 px-4 font-mono text-slate-700">Heavy IS 2062 Carbon Steel / Optional SS304</td>
-                    <td className="py-3.5 px-4 text-xs text-slate-600">High abrasion &amp; thermal expansion resistance</td>
+                    <td className="py-3.5 px-4 text-xs text-slate-600">High abrasion and thermal expansion resistance</td>
                   </tr>
                   <tr>
                     <td className="py-3.5 px-4 font-semibold text-slate-800">Drive Transmission</td>
                     <td className="py-3.5 px-4 font-mono text-slate-700">15 HP to 45 HP Geared Motor with Girth Gear</td>
-                    <td className="py-3.5 px-4 text-xs text-slate-600">Machined girth gear &amp; forged pinion for vibration-free drive</td>
+                    <td className="py-3.5 px-4 text-xs text-slate-600">Machined girth gear and forged pinion for smooth drive</td>
                   </tr>
                   <tr>
                     <td className="py-3.5 px-4 font-semibold text-slate-800">Dust Separation</td>
@@ -406,24 +356,16 @@ export default function HomePage() {
           5. CALL TO ACTION & WORKS CONSULTATION
           ═══════════════════════════════════════════════ */}
       <section className="py-16 md:py-20 bg-slate-900 text-white relative overflow-hidden">
-        <div
-          className="absolute -bottom-20 -left-20 w-80 h-80 bg-[#DA020D] rounded-full blur-[120px] opacity-20 pointer-events-none"
-          aria-hidden="true"
-        />
-
-        <Container size="md" className="relative z-10 text-center space-y-6">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-950/80 border border-red-700/50 text-red-300 text-xs font-bold uppercase tracking-wider">
-            Direct Manufacturer Pricing
-          </div>
+        <Container size="md" className="relative z-10 text-center space-y-5">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight">
             Consult Directly with Our Works Engineering Team
           </h2>
           <p className="text-base text-slate-300 max-w-2xl mx-auto leading-relaxed">
-            Send us your moisture parameters, target throughput (TPH), and raw material feed properties.
-            We will provide a custom GA drawing, thermal calculation sheet, and commercial quotation within 24 hours.
+            Send us your moisture parameters, target throughput, and material feed properties.
+            We will provide a custom GA drawing and formal quotation within 24 hours.
           </p>
 
-          <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
+          <div className="flex flex-wrap items-center justify-center gap-3.5 pt-2">
             <Button
               href="/request-quote/"
               variant="primary"
@@ -444,7 +386,7 @@ export default function HomePage() {
             </Button>
           </div>
 
-          <div className="pt-4 text-xs text-slate-400">
+          <div className="pt-3 text-xs text-slate-400">
             Factory: 10, Shyam Estate, Zak GIDC, Zak-Vahelal Road, Dahegam, Gandhinagar - 382330, Gujarat
           </div>
         </Container>
@@ -452,4 +394,3 @@ export default function HomePage() {
     </div>
   );
 }
-

@@ -115,7 +115,7 @@ const navigationItems: NavItem[] = [
       {
         label: 'Conveyor Belt Systems (Hub)',
         href: '/industrial-conveyor-belt-system-manufacturer/',
-        desc: 'Heavy-duty bulk material handling conveyors (400–1600mm)',
+        desc: 'Heavy-duty bulk material handling conveyors (400-1600mm)',
       },
       {
         label: 'Conveyor Head & Tail Pulleys',
