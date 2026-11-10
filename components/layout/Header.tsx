@@ -195,18 +195,6 @@ export function Header() {
         {/* Desktop Navigation Links */}
         <nav className="hidden lg:flex items-center gap-6 xl:gap-7" aria-label="Main Navigation">
           <Link
-            href="/"
-            className={`text-sm font-semibold transition-colors duration-180 relative py-1 hover:text-[#E10613] ${
-              pathname === '/' ? 'text-[#E10613]' : 'text-[#171717]'
-            }`}
-          >
-            Home
-            {pathname === '/' && (
-              <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#E10613] rounded-full" />
-            )}
-          </Link>
-
-          <Link
             href="/about/"
             className={`text-sm font-semibold transition-colors duration-180 relative py-1 hover:text-[#E10613] ${
               pathname.startsWith('/about') ? 'text-[#E10613]' : 'text-[#171717]'
@@ -436,15 +424,6 @@ export function Header() {
         <div className="lg:hidden fixed inset-0 top-[74px] z-50 bg-black/60 backdrop-blur-sm animate-in fade-in duration-200">
           <div className="bg-white border-b border-[#E7E7EB] p-5 max-h-[calc(100vh-74px)] overflow-y-auto space-y-4 shadow-2xl">
             <nav className="flex flex-col space-y-1 divide-y divide-neutral-100">
-              <Link
-                href="/"
-                onClick={() => setMobileMenuOpen(false)}
-                className="py-3 text-sm font-semibold text-[#171717] hover:text-[#E10613] flex items-center justify-between"
-              >
-                <span>Home</span>
-                <ChevronRight className="w-4 h-4 text-neutral-400" />
-              </Link>
-
               <Link
                 href="/about/"
                 onClick={() => setMobileMenuOpen(false)}
