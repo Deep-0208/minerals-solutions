@@ -14,7 +14,6 @@ import {
   Sprout,
   Waves,
   Boxes,
-  FileText,
 } from 'lucide-react';
 import { Logo } from '@/components/brand/Logo';
 import { Button } from '@/components/ui/Button';
@@ -36,149 +35,101 @@ interface PillarItem {
   spokes: SpokeItem[];
 }
 
+// Exactly matches official Minerals Solutions brochure and visiting card
 const productPillars: PillarItem[] = [
   {
-    name: 'Industrial Rotary Dryers & Thermal Systems',
+    name: 'Rotary Dryers',
     shortName: 'Rotary Dryers',
     href: '/products/industrial-rotary-dryers/',
     badge: '500 kg - 50 TPH',
     icon: Flame,
-    description: 'Continuous thermal drying systems for minerals, sand, and chemicals.',
+    description: 'Industrial thermal drying systems with hot air generators and heat exchangers.',
     spokes: [
       {
-        label: 'Industrial Rotary Dryers (Hub)',
-        href: '/products/industrial-rotary-dryers/',
-        tag: 'Pillar Hub',
-      },
-      {
-        label: 'Double Pass Concentric Dryer',
+        label: 'Single / Double / Triple Pass Dryer',
         href: '/products/industrial-rotary-dryers/#configurations',
-        tag: 'Space Saving',
+        tag: 'Brochure',
       },
       {
-        label: 'Sand Dryer with Hot Air Generator',
+        label: 'Dryer with Hot Air Generator',
         href: '/products/industrial-rotary-dryers/#configurations',
       },
       {
-        label: 'Sawdust & Biomass Drum Dryer',
+        label: 'Dryer with Heat Exchanger Unit',
         href: '/products/industrial-rotary-dryers/#configurations',
       },
       {
-        label: 'Rotary Calciner & High Temp Kiln',
-        href: '/products/industrial-rotary-dryers/#configurations',
-      },
-      {
-        label: 'Coal, Gas & Biomass Hot Air Burners',
+        label: 'Rotary Drum Dryer',
         href: '/products/industrial-rotary-dryers/#specifications',
       },
     ],
   },
   {
-    name: 'Fertilizer Granulation & Pellet Plants',
-    shortName: 'Fertilizer Plants',
+    name: 'Fertilizers Plant',
+    shortName: 'Fertilizers Plant',
     href: '/products/fertilizer-granulation-plants/',
     badge: '1 - 20 TPH',
     icon: Sprout,
-    description: 'Turnkey NPK & bio-organic compost pelletizing lines.',
+    description: 'Turnkey chemical and bio-organic fertilizer granulation plants.',
     spokes: [
       {
-        label: 'Fertilizer Granulation Plants (Hub)',
-        href: '/products/fertilizer-granulation-plants/',
-        tag: 'Pillar Hub',
-      },
-      {
-        label: 'Pan / Disc Granulator Machine',
+        label: 'Fertilizers Granulation Plant',
         href: '/products/fertilizer-granulation-plants/#machinery',
-        tag: '35°-55° Tilt',
+        tag: 'Turnkey',
       },
       {
-        label: 'Rotary Drum Granulator Unit',
+        label: 'Fertilizers Plant (Pan / Disc System)',
         href: '/products/fertilizer-granulation-plants/#machinery',
       },
       {
-        label: 'Organic Bio-Compost Granulation Line',
+        label: 'Granulation Cooling & Coating',
         href: '/products/fertilizer-granulation-plants/#process',
-      },
-      {
-        label: 'Rotary Fertilizer Coolers & Dryers',
-        href: '/products/fertilizer-granulation-plants/#machinery',
-      },
-      {
-        label: 'Anti-Caking Chemical Coating Drums',
-        href: '/products/fertilizer-granulation-plants/#machinery',
       },
     ],
   },
   {
-    name: 'Sand Washing & Mineral Recovery Plants',
-    shortName: 'Sand Washing',
+    name: 'Sand Washing & Screening',
+    shortName: 'Sand Washing & Screening',
     href: '/products/sand-washing-plants/',
     badge: '30 - 200 TPH',
     icon: Waves,
-    description: 'Desliming & fine sand recovery plants down to 75 microns.',
+    description: 'Sand washing, screening plants, and mineral processing machinery.',
     spokes: [
       {
-        label: 'Sand Washing Plants (Hub)',
-        href: '/products/sand-washing-plants/',
-        tag: 'Pillar Hub',
+        label: 'Sand Washing & Screening Plant',
+        href: '/products/sand-washing-plants/#machinery',
+        tag: 'Brochure',
       },
       {
-        label: 'Bucket Wheel Sand Washing Machine',
+        label: 'Mineral Processing Equipment',
         href: '/products/sand-washing-plants/#machinery',
       },
       {
-        label: 'Hydrocyclone Desliming Unit',
-        href: '/products/sand-washing-plants/#machinery',
-        tag: '75 Micron',
-      },
-      {
-        label: 'Spiral Screw Sand Classifier',
-        href: '/products/sand-washing-plants/#machinery',
-      },
-      {
-        label: 'Quartz Stone & Aggregate Log Washer',
-        href: '/products/sand-washing-plants/#machinery',
-      },
-      {
-        label: 'Linear Dewatering Screen & Cyclones',
+        label: 'Washed & Graded Silica Sand Systems',
         href: '/products/sand-washing-plants/#specifications',
       },
     ],
   },
   {
-    name: 'Industrial Conveyors & Mechanical Spares',
-    shortName: 'Conveyor Systems',
+    name: 'Conveyors & Plant Spares',
+    shortName: 'Conveyors & Spares',
     href: '/products/industrial-conveyors-spares/',
-    badge: '400 - 1600 mm',
+    badge: 'Custom Fabricated',
     icon: Boxes,
-    description: 'Heavy bulk material transit conveyors and replacement spares.',
+    description: 'Bulk material handling conveyors, crusher spares, and fabrication.',
     spokes: [
       {
-        label: 'Conveyor Systems & Spares (Hub)',
-        href: '/products/industrial-conveyors-spares/',
-        tag: 'Pillar Hub',
-      },
-      {
-        label: 'Heavy Troughed Belt Conveyor System',
+        label: 'Conveyor Systems and Accessories',
         href: '/products/industrial-conveyors-spares/#conveyors',
-        tag: 'IS 11592',
+        tag: 'Brochure',
       },
       {
-        label: 'Rubber Lagged Head & Tail Pulleys',
-        href: '/products/industrial-conveyors-spares/#conveyors',
-      },
-      {
-        label: 'Conveyor Idlers & Troughing Rollers',
-        href: '/products/industrial-conveyors-spares/#conveyors',
-      },
-      {
-        label: 'Forged EN-8 / EN-9 Trunnion Rollers',
+        label: 'Road, Civil, Crusher Plants Spares',
         href: '/products/industrial-conveyors-spares/#trunnions',
-        tag: 'Induction Hardened',
       },
       {
-        label: 'Machined Cast Iron Girth Gears & Pinions',
-        href: '/products/industrial-conveyors-spares/#conveyors',
+        label: 'Customized Fabrication Works',
+        href: '/products/industrial-conveyors-spares/#specifications',
       },
     ],
   },
@@ -272,7 +223,7 @@ export function Header() {
               aria-expanded={productsMegaOpen}
               aria-haspopup="true"
             >
-              <span>Products &amp; Plants</span>
+              <span>Products</span>
               <ChevronDown
                 className={`w-4 h-4 transition-transform duration-200 ${
                   productsMegaOpen ? 'rotate-180 text-[#E10613]' : 'text-neutral-500'
@@ -287,7 +238,7 @@ export function Header() {
             {productsMegaOpen && (
               <div
                 onMouseLeave={() => setProductsMegaOpen(false)}
-                className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[1100px] xl:w-[1200px] bg-white rounded-2xl border border-[#E7E7EB] shadow-[0_20px_50px_rgba(17,17,17,0.14)] p-6 z-50 animate-in fade-in slide-in-from-top-2 duration-150"
+                className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[1040px] xl:w-[1140px] bg-white rounded-2xl border border-[#E7E7EB] shadow-[0_20px_50px_rgba(17,17,17,0.14)] p-6 z-50 animate-in fade-in slide-in-from-top-2 duration-150"
               >
                 {/* 4 Pillar Columns */}
                 <div className="grid grid-cols-4 gap-6">
@@ -324,7 +275,7 @@ export function Header() {
                           {/* Sub-Pillars / Spokes List */}
                           <div className="pt-2 border-t border-neutral-100 space-y-1.5">
                             <span className="text-[10px] font-bold uppercase tracking-wider text-neutral-400 block mb-1">
-                              Machinery &amp; Spares
+                              Brochure Models
                             </span>
                             {pillar.spokes.map((spoke) => (
                               <Link
@@ -353,7 +304,7 @@ export function Header() {
                             onClick={() => setProductsMegaOpen(false)}
                             className="text-[11px] font-bold text-[#E10613] hover:underline inline-flex items-center gap-1"
                           >
-                            <span>Explore {pillar.shortName} Hub</span>
+                            <span>Explore {pillar.shortName}</span>
                             <ArrowRight className="w-3 h-3" />
                           </Link>
                         </div>
@@ -362,27 +313,29 @@ export function Header() {
                   })}
                 </div>
 
-                {/* Bottom Bar */}
-                <div className="mt-5 pt-4 border-t border-neutral-200 flex items-center justify-between px-2 text-xs">
-                  <div className="flex items-center gap-2 text-neutral-600">
-                    <span className="font-bold text-[#111111]">Turnkey Plant Projects:</span>
-                    <span>Complete engineering, fabrication, and on-site commissioning from Zak GIDC.</span>
+                {/* Bottom Bar: Processed Materials from Official Card */}
+                <div className="mt-5 pt-4 border-t border-neutral-200 flex flex-col sm:flex-row items-center justify-between gap-3 px-2 text-xs">
+                  <div className="flex flex-wrap items-center gap-2 text-neutral-600">
+                    <span className="font-bold text-[#111111]">Processed Minerals:</span>
+                    <span className="text-neutral-500">
+                      Resin Coated Sand • Washed &amp; Graded Silica Sand • Copper Slag • Quartz Sand
+                    </span>
                   </div>
 
-                  <div className="flex items-center gap-4">
+                  <div className="flex items-center gap-4 shrink-0">
                     <Link
                       href="/products/"
                       onClick={() => setProductsMegaOpen(false)}
                       className="font-bold text-neutral-700 hover:text-[#111111] hover:underline"
                     >
-                      View All Machinery Catalog
+                      All Machinery
                     </Link>
                     <Link
                       href="/request-quote/"
                       onClick={() => setProductsMegaOpen(false)}
                       className="inline-flex items-center gap-1 font-bold text-[#E10613] hover:underline"
                     >
-                      <span>Request Custom Machinery Quote</span>
+                      <span>Request Quote</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </Link>
                   </div>
@@ -503,7 +456,7 @@ export function Header() {
               {/* Mobile 4-Pillars Accordion */}
               <div className="py-2 space-y-2">
                 <span className="text-[11px] font-bold uppercase tracking-wider text-neutral-400 block px-1">
-                  4 Core Machinery Pillars &amp; Spokes
+                  Brochure Machinery Divisions
                 </span>
                 {productPillars.map((pillar) => {
                   const isOpen = activeMobilePillar === pillar.name;
@@ -533,7 +486,7 @@ export function Header() {
                             onClick={() => setMobileMenuOpen(false)}
                             className="block text-xs font-bold text-[#E10613] hover:underline pb-1 border-b border-neutral-100"
                           >
-                            Explore {pillar.shortName} Hub ({pillar.badge})
+                            Explore {pillar.shortName} ({pillar.badge})
                           </Link>
                           <div className="space-y-1.5 pt-1 pl-1">
                             {pillar.spokes.map((spoke) => (
