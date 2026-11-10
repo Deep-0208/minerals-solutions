@@ -36,28 +36,28 @@ export default function FertilizerPlantsPage() {
 
   const equipmentList = [
     {
-      name: 'Pan / Disc Fertilizer Granulator',
+      name: 'Fertilizers Granulation Plant',
+      badge: 'Turnkey Continuous Lines',
+      desc: 'Complete industrial bio-organic compost and chemical fertilizer granulation lines engineered with integrated feeding, agglomeration, moisture reduction, and grading.',
+      capacity: '1 - 20 TPH continuous',
+    },
+    {
+      name: 'Fertilizers Plant (Pan / Disc System)',
       badge: '35° - 55° Stepless Tilt',
-      desc: 'Heavy circular disc featuring worm-gear stepless angle adjustment, automatic tungsten carbide scrapers, and liquid binder spray nozzles for dense, spherical granules.',
+      desc: 'Heavy circular disc granulator featuring worm-gear stepless angle adjustment, automatic tungsten carbide scrapers, and liquid binder spray nozzles for dense, spherical granules.',
       capacity: '100 kg/hr - 5 TPH per pan',
     },
     {
-      name: 'Rotary Drum Granulator',
-      badge: 'Continuous High Volume',
-      desc: 'Heavy rotating cylinder with special UHMW-PE or rubber internal lining to prevent material sticking during continuous large-scale chemical NPK or bio-fertilizer agglomeration.',
-      capacity: '3 - 20 TPH continuous',
-    },
-    {
-      name: 'Rotary Fertilizer Dryer & Cooler',
-      badge: 'Moisture & Hardening Control',
-      desc: 'Sequential thermal drum drying followed by counter-current ambient air rotary cooling to ensure granules achieve proper hardness before bagging without caking.',
-      capacity: 'Matched to plant capacity',
-    },
-    {
-      name: 'Rotary Coating & Polishing Drum',
-      badge: 'Anti-Caking Finish',
-      desc: 'Rotary drum unit applying liquid coating oils and powder talc or conditioners to ensure granules remain free-flowing during long-term storage and bag stacking.',
+      name: 'Granulation Cooling & Coating Drums',
+      badge: 'Anti-Caking Hardening',
+      desc: 'Rotary cooling drum hardening granules via ambient air draft, paired with rotary coating drum applying micronized conditioning oils and neem/talc anti-caking powders.',
       capacity: '1 - 20 TPH',
+    },
+    {
+      name: 'Turnkey Fertilizer Processing Lines',
+      badge: 'End-to-End Plant Integration',
+      desc: 'Comprehensive engineering scope including raw compost crushers, twin-shaft mixers, belt conveyors, bucket elevators, rotary dryers, vibrating screens, and automatic bagging.',
+      capacity: 'Matched to plant capacity',
     },
   ];
 
@@ -91,7 +91,7 @@ export default function FertilizerPlantsPage() {
         <nav className="flex items-center gap-2 text-xs text-neutral-500 mb-4" aria-label="Breadcrumb">
           <Link href="/" className="hover:text-[#E10613]">Home</Link>
           <span>/</span>
-          <Link href="/products" className="hover:text-[#E10613]">Products</Link>
+          <Link href="/products/" className="hover:text-[#E10613]">Products</Link>
           <span>/</span>
           <span className="text-[#111111] font-semibold">Fertilizer Granulation Plants</span>
         </nav>
@@ -99,7 +99,7 @@ export default function FertilizerPlantsPage() {
         {/* Hero Section */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center mb-16">
           <div className="lg:col-span-7 space-y-4">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-100 text-[#E10613] text-xs font-bold uppercase tracking-wider">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-red-50 text-[#E10613] text-xs font-bold uppercase tracking-wider border border-red-100 mb-3">
               <Sprout className="w-3.5 h-3.5" />
               <span>Granulation &amp; Pellet Machinery</span>
             </div>
@@ -113,7 +113,7 @@ export default function FertilizerPlantsPage() {
             </p>
 
             <div className="pt-2 flex flex-wrap gap-3">
-              <Button href="/request-quote" variant="primary" size="md">
+              <Button href="/request-quote/" variant="primary" size="md">
                 Request Granulator Quote
               </Button>
               <a
@@ -172,17 +172,17 @@ export default function FertilizerPlantsPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-2">
             {processStages.map((stg) => (
-              <div key={stg.stage} className="p-4 rounded-2xl bg-[#F5F5F7] border border-[#E7E7EB] space-y-1">
+              <div key={stg.stage} className="p-4 rounded-2xl bg-[#F5F5F7] border border-[#E7E7EB] hover:border-red-200 transition-all space-y-1">
                 <span className="text-xs font-bold text-[#E10613] block">{stg.stage}</span>
                 <p className="text-xs text-neutral-600 leading-relaxed">{stg.desc}</p>
               </div>
             ))}
           </div>
 
-          <div className="p-4 rounded-xl bg-amber-50/70 border border-amber-200 text-xs text-amber-900 flex items-start gap-2.5">
-            <Info className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />
+          <div className="p-4 rounded-xl bg-neutral-50 border border-[#E7E7EB] text-xs text-neutral-700 flex items-start gap-2.5">
+            <Info className="w-4 h-4 text-[#E10613] shrink-0 mt-0.5" />
             <span>
-              <strong>Note on Granulation Yields:</strong> Actual granule sphericity and yield percentages depend
+              <strong className="text-[#111111]">Note on Granulation Yields:</strong> Actual granule sphericity and yield percentages depend
               on raw material fineness, binder characteristics, and moisture balancing. Equipment is fine-tuned
               during trial commissioning.
             </span>
@@ -198,16 +198,18 @@ export default function FertilizerPlantsPage() {
             {equipmentList.map((eq) => (
               <div
                 key={eq.name}
-                className="bg-white rounded-2xl border border-[#E7E7EB] p-6 sm:p-7 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between space-y-4"
+                className="bg-white rounded-2xl border border-[#E7E7EB] p-6 sm:p-7 shadow-[0_4px_24px_rgba(17,17,17,0.04)] hover:shadow-[0_12px_32px_rgba(17,17,17,0.08)] hover:border-red-200 transition-all flex flex-col justify-between space-y-4 group"
               >
                 <div className="space-y-2">
                   <div className="flex items-center justify-between">
-                    <span className="text-xs font-mono font-bold text-[#E10613] uppercase tracking-wider">
+                    <span className="inline-flex items-center px-2.5 py-0.5 rounded-full bg-red-50 text-[#E10613] text-xs font-mono font-bold uppercase tracking-wider border border-red-100">
                       {eq.badge}
                     </span>
-                    <Sprout className="w-4 h-4 text-neutral-400" />
+                    <div className="w-8 h-8 rounded-lg bg-red-50 text-[#E10613] flex items-center justify-center border border-red-100">
+                      <Sprout className="w-4 h-4" />
+                    </div>
                   </div>
-                  <h3 className="text-lg font-bold text-[#111111]">
+                  <h3 className="text-lg font-bold text-[#111111] group-hover:text-[#E10613] transition-colors">
                     {eq.name}
                   </h3>
                   <p className="text-xs sm:text-sm text-[#737373] leading-relaxed">
@@ -215,7 +217,7 @@ export default function FertilizerPlantsPage() {
                   </p>
                 </div>
                 <div className="pt-3 border-t border-neutral-100 text-xs text-neutral-600 font-mono">
-                  <strong>Standard Rating:</strong> {eq.capacity}
+                  <strong className="text-[#111111]">Standard Rating:</strong> {eq.capacity}
                 </div>
               </div>
             ))}
@@ -234,7 +236,7 @@ export default function FertilizerPlantsPage() {
         </div>
 
         {/* Call to Action */}
-        <div className="bg-[#111111] text-white rounded-3xl p-8 sm:p-12 border border-neutral-800 flex flex-col md:flex-row items-center justify-between gap-8">
+        <div className="bg-[#111111] text-white rounded-3xl p-8 sm:p-12 border border-neutral-800 shadow-xl flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="space-y-2 max-w-xl text-center md:text-left">
             <span className="text-xs font-mono uppercase tracking-wider text-[#E10613] font-bold">
               Plant Engineering Inquiry
@@ -249,14 +251,15 @@ export default function FertilizerPlantsPage() {
           </div>
 
           <div className="flex flex-col sm:flex-row items-center gap-3 shrink-0">
-            <Button href="/request-quote" variant="primary" size="lg">
+            <Button href="/request-quote/" variant="primary" size="lg">
               Request Plant Proposal
             </Button>
             <a
               href={`tel:${cleanPhone}`}
-              className="px-6 py-3.5 rounded-full border border-neutral-700 hover:border-white text-xs font-bold text-white transition-colors"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full border border-neutral-700 hover:border-white text-xs font-bold text-white transition-colors"
             >
-              Call Works: {primaryPhone}
+              <Phone className="w-3.5 h-3.5 text-[#E10613]" />
+              <span>Call Works: {primaryPhone}</span>
             </a>
           </div>
         </div>

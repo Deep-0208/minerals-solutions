@@ -2,7 +2,7 @@
 
 **Target Canonical Domain:** `https://mineralssolution.in/`  
 **Client Entity:** Minerals Solutions (Proprietorship, Established 2023)  
-**Registered Facility:** 10, Shyam Estate, Zak GIDC, Zak-Vahelal Road, Ta. Dahegam, Dist. Gandhinagar – 382330, Gujarat, India  
+**Registered Facility:** 10, Shyam Estate, Zak GIDC, Zak-Vahelal Road, Ta. Dahegam, Dist. Gandhinagar - 382330, Gujarat, India  
 **Engineering Stack:** Next.js 16 (App Router) | React 19 | TypeScript 5 | Tailwind CSS v4 | Sharp WebP Engine  
 **Branching Model:** Isolated `development` branch -> Automated Verification Suite -> Non-Fast-Forward Merge to `main`  
 **Document Purpose:** The definitive, execution-ready engineering blueprint governing the entire lifecycle from current intelligence baselines to a fully audited, #1 Google-ranking production deployment.
@@ -61,7 +61,7 @@ flowchart TD
     * Total Canonical Routes: 33 unique routes
     * Zero Duplicate Primary Keywords across pages
     * Trailing Slash Invariant: 100% of routes end with `/`
-    * Calibrated Snippet Targets: Titles 50–60 chars, descriptions 140–160 chars.
+    * Calibrated Snippet Targets: Titles 50-60 chars, descriptions 140-160 chars.
 * **Definition of Done:** Every URL mapped to exact search intent, target audience, and primary commercial keyword.
 
 ---
@@ -86,9 +86,9 @@ flowchart TD
      * Scan all 89 source files from `assets/raw-images/` and `assets/indiamart-images/`.
      * Standardize filenames into lowercase hyphenated slugs (e.g. `double-pass-rotary-dryer.webp`).
      * Generate 3 responsive breakpoints per asset:
-       * **Hero View:** `1200x800` (80% quality WebP, ~70–90 KB)
-       * **Product Card / Grid:** `600x400` (80% quality WebP, ~25–35 KB)
-       * **Thumbnail / Nav:** `150x100` (75% quality WebP, ~5–8 KB)
+       * **Hero View:** `1200x800` (80% quality WebP, ~70-90 KB)
+       * **Product Card / Grid:** `600x400` (80% quality WebP, ~25-35 KB)
+       * **Thumbnail / Nav:** `150x100` (75% quality WebP, ~5-8 KB)
      * Total asset generation = 89 * 3 sizes = 267 optimized WebP files.
   3. Create `data/images.ts` exporting an image registry containing `{ slug, width, height, aspectRatio, altText }` mapped to each equipment model.
   4. Perform visual spot-check to ensure no blurriness, distortion, or artifacting occurred during conversion.
@@ -102,9 +102,9 @@ flowchart TD
   Get-ChildItem -Recurse public/images/*.webp | Measure-Object
   ```
 * **Acceptance Criteria:**
-  - [ ] 267 WebP files generated in `public/images/`.
-  - [ ] Max hero image size < 100 KB; card images < 40 KB.
-  - [ ] `data/images.ts` compiles without TypeScript errors.
+ - [ ] 267 WebP files generated in `public/images/`.
+ - [ ] Max hero image size < 100 KB; card images < 40 KB.
+ - [ ] `data/images.ts` compiles without TypeScript errors.
 * **Definition of Done:** All images present in `public/images/`, verified visually, and mapped in `data/images.ts`.
 * **Potential Risks:** Corrupted raw JPEG headers; mitigated by Sharp's automatic format detection and fallback processing.
 * **Rollback Plan:** Re-run script with adjusted compression quality (e.g. 85% instead of 80%).
@@ -149,9 +149,9 @@ flowchart TD
   npm run dev
   ```
 * **Acceptance Criteria:**
-  - [ ] Development server starts cleanly on port 3000.
-  - [ ] `trailingSlash: true` is verified via test request (`/about` 308 redirects to `/about/`).
-  - [ ] Tailwind tokens correctly applied to test page.
+ - [ ] Development server starts cleanly on port 3000.
+ - [ ] `trailingSlash: true` is verified via test request (`/about` 308 redirects to `/about/`).
+ - [ ] Tailwind tokens correctly applied to test page.
 * **Definition of Done:** Next.js 16 scaffold compiles, runs locally, and adheres to design tokens.
 * **Rollback Plan:** Git stash or revert to baseline commit on `development`.
 
@@ -184,9 +184,9 @@ flowchart TD
   curl -s http://localhost:3000/ | grep -i "24AUSPP9555F1ZZ"
   ```
 * **Acceptance Criteria:**
-  - [ ] Header, footer, and navigation render server-side in raw HTML.
-  - [ ] Mobile navigation opens and closes smoothly without layout shift.
-  - [ ] Footer contains verified GSTIN, UDYAM, and Zak GIDC address without typos.
+ - [ ] Header, footer, and navigation render server-side in raw HTML.
+ - [ ] Mobile navigation opens and closes smoothly without layout shift.
+ - [ ] Footer contains verified GSTIN, UDYAM, and Zak GIDC address without typos.
 * **Definition of Done:** Shared layout operational across desktop and mobile screen sizes.
 
 ---
@@ -226,10 +226,10 @@ flowchart TD
   Get-ChildItem -Recurse app/\(site\) -Filter "page.tsx" | Measure-Object
   ```
 * **Acceptance Criteria:**
-  - [ ] Exactly 33 `page.tsx` files exist and compile.
-  - [ ] Every page has exactly one `<h1>`.
-  - [ ] Every equipment page contains an HTML `<table>` of technical specs.
-  - [ ] Cross-pillar links exist as functional anchor tags within paragraph copy.
+ - [ ] Exactly 33 `page.tsx` files exist and compile.
+ - [ ] Every page has exactly one `<h1>`.
+ - [ ] Every equipment page contains an HTML `<table>` of technical specs.
+ - [ ] Cross-pillar links exist as functional anchor tags within paragraph copy.
 * **Definition of Done:** All 33 routes fully populated with unique, technically accurate content.
 
 ---
@@ -265,9 +265,9 @@ flowchart TD
   curl -s http://localhost:3000/api/og?title=Double%20Pass%20Dryer -I
   ```
 * **Acceptance Criteria:**
-  - [ ] `sitemap.xml` contains exactly 33 URLs, all with trailing slashes.
-  - [ ] Google Rich Results Test passes with 0 errors on product and local schemas.
-  - [ ] OpenGraph endpoint returns HTTP 200 OK with `image/png`.
+ - [ ] `sitemap.xml` contains exactly 33 URLs, all with trailing slashes.
+ - [ ] Google Rich Results Test passes with 0 errors on product and local schemas.
+ - [ ] OpenGraph endpoint returns HTTP 200 OK with `image/png`.
 * **Definition of Done:** Metadata, schemas, sitemap, robots, and OG images operational.
 
 ---
@@ -293,9 +293,9 @@ flowchart TD
 * **Validation Commands:**
   * Trigger test events in browser dev tools; verify event payloads dispatch to GA4 debug view.
 * **Acceptance Criteria:**
-  - [ ] All phone links carry `href="tel:+916352453050"`.
-  - [ ] WhatsApp links carry pre-filled inquiry text identifying the current product page.
-  - [ ] Forms validate correctly and display clear submission confirmation states.
+ - [ ] All phone links carry `href="tel:+916352453050"`.
+ - [ ] WhatsApp links carry pre-filled inquiry text identifying the current product page.
+ - [ ] Forms validate correctly and display clear submission confirmation states.
 * **Definition of Done:** Event tracking active and verified across all inquiry touchpoints.
 
 ---
@@ -313,7 +313,7 @@ flowchart TD
   * `package.json` (npm audit scripts)
 * **Exact Implementation Tasks:**
   1. Create `scripts/audit-titles-descs.mjs`:
-     * Asserts title tag length (guideline 50–60 chars) and meta description length (guideline 140–160 chars) across all 33 routes.
+     * Asserts title tag length (guideline 50-60 chars) and meta description length (guideline 140-160 chars) across all 33 routes.
      * Asserts zero duplicate titles or descriptions.
   2. Create `scripts/audit-canonicals.mjs`:
      * Asserts canonical URL parity and strict trailing slash formatting.
@@ -332,8 +332,8 @@ flowchart TD
   npm run audit:links
   ```
 * **Acceptance Criteria:**
-  - [ ] 5 out of 5 audit scripts exit with code `0`.
-  - [ ] Zero broken links across all 33 pages.
+ - [ ] 5 out of 5 audit scripts exit with code `0`.
+ - [ ] Zero broken links across all 33 pages.
 * **Definition of Done:** Automated QA suite passes completely on production build output.
 
 ---
@@ -360,8 +360,8 @@ flowchart TD
   npm run build
   ```
 * **Acceptance Criteria:**
-  - [ ] Static First Load JS < 85 KB shared across pages.
-  - [ ] Security headers confirmed via `curl -sI http://localhost:3000/`.
+ - [ ] Static First Load JS < 85 KB shared across pages.
+ - [ ] Security headers confirmed via `curl -sI http://localhost:3000/`.
 * **Definition of Done:** Production build hardened with passing security headers.
 
 ---
@@ -388,8 +388,8 @@ flowchart TD
      git status
      ```
 * **Acceptance Criteria:**
-  - [ ] Clean build and server start on port 3000.
-  - [ ] Merge to `main` completes cleanly without conflicts.
+ - [ ] Clean build and server start on port 3000.
+ - [ ] Merge to `main` completes cleanly without conflicts.
 * **Definition of Done:** `main` branch contains production-ready code with complete audit logs.
 
 ---
@@ -413,8 +413,8 @@ flowchart TD
      * Link website to `https://mineralssolution.in/` and add direct phone lines.
      * Upload all 89 authentic factory, office, and machinery photos.
 * **Acceptance Criteria:**
-  - [ ] Live site serves HTTP 200 OK over HTTPS with trailing slashes.
-  - [ ] GSC successfully reads `sitemap.xml` with zero errors.
+ - [ ] Live site serves HTTP 200 OK over HTTPS with trailing slashes.
+ - [ ] GSC successfully reads `sitemap.xml` with zero errors.
 * **Definition of Done:** Website live, indexed, and connected to search engines.
 
 ---
@@ -424,16 +424,16 @@ flowchart TD
 * **Objective:** Track organic rankings, crawl performance, and qualified RFQs through a structured 30/60/90-day optimization cadence.
 * **Dependencies:** Gate 12.
 * **Execution Framework:**
-  * **Days 1–30 (Indexation & Technical Baseline):**
+  * **Days 1-30 (Indexation & Technical Baseline):**
     * Monitor GSC daily for crawl errors or excluded pages.
     * Track baseline rankings for brand queries (`minerals solutions dahegam`, `minerals solutions ahmedabad`).
     * Verify phone and WhatsApp lead attribution in GA4.
-  * **Days 31–60 (Query Mining & Snippet Optimization):**
-    * Analyze GSC Search Performance reports to identify high-impression, low-CTR queries (positions 6–15).
+  * **Days 31-60 (Query Mining & Snippet Optimization):**
+    * Analyze GSC Search Performance reports to identify high-impression, low-CTR queries (positions 6-15).
     * Refine title tags and meta descriptions to improve organic click-through rates.
     * Expand internal links from high-authority pages to deeper machine models.
     * Synchronize consistent NAP across regional B2B industrial directories (TradeIndia, ExportersIndia, YellowPages).
-  * **Days 61–90 (Authority Scaling & Conversion Rate Optimization):**
+  * **Days 61-90 (Authority Scaling & Conversion Rate Optimization):**
     * Benchmark rankings against regional competitors (Vira Engineering, Convotech, Aksh Engineering).
     * Add new factory commissionings, test runs, and customer delivery photos to E-E-A-T sections.
     * Review RFQ form drop-off rates and refine form fields to maximize lead generation.
@@ -444,9 +444,9 @@ flowchart TD
 ## 4. Supporting Technical Documentation
 
 The following specialized engineering documents have been created alongside this roadmap:
-1. [`seo-quality-gates.md`](file:///c:/Users/DELL/Desktop/SEO/Minerals%20Solutions%20SEO/seo-quality-gates.md) — The comprehensive QA checklist defining acceptance criteria and pass/fail conditions for crawlability, indexability, metadata, rendering, and security.
-2. [`content-requirements.md`](file:///c:/Users/DELL/Desktop/SEO/Minerals%20Solutions%20SEO/content-requirements.md) — The granular page-by-page content specification for all 33 routes, detailing target keywords, search intents, semantic entities, and verified vs client-confirmed data.
-3. [`launch-checklist.md`](file:///c:/Users/DELL/Desktop/SEO/Minerals%20Solutions%20SEO/launch-checklist.md) — The production cutover, search engine onboarding, conversion tracking, and 90-day growth protocol.
+1. [`seo-quality-gates.md`](file:///c:/Users/DELL/Desktop/SEO/Minerals%20Solutions%20SEO/seo-quality-gates.md) -  The comprehensive QA checklist defining acceptance criteria and pass/fail conditions for crawlability, indexability, metadata, rendering, and security.
+2. [`content-requirements.md`](file:///c:/Users/DELL/Desktop/SEO/Minerals%20Solutions%20SEO/content-requirements.md) -  The granular page-by-page content specification for all 33 routes, detailing target keywords, search intents, semantic entities, and verified vs client-confirmed data.
+3. [`launch-checklist.md`](file:///c:/Users/DELL/Desktop/SEO/Minerals%20Solutions%20SEO/launch-checklist.md) -  The production cutover, search engine onboarding, conversion tracking, and 90-day growth protocol.
 
 ---
 

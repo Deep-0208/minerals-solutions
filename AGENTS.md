@@ -1,4 +1,4 @@
-# AGENTS.md — Master Engineering, SEO & Operating Guide
+# AGENTS.md -  Master Engineering, SEO & Operating Guide
 ## Project: Minerals Solutions (`mineralssolution.in`)
 
 > **PRIMARY OPERATIONAL DIRECTIVE:**
@@ -15,14 +15,14 @@
 - **Brand Name:** Minerals Solutions
 - **Proprietor / Key Contact:** Vipulbhai A. Prajapati
 - **Mobile Numbers:**
-  - Primary / Sales Hotline: `+91 6352453050`
-  - Technical / Direct Line: `+91 9106163058`
+ - Primary / Sales Hotline: `+91 6352453050`
+ - Technical / Direct Line: `+91 9106163058`
 - **Primary Business & RFQ Email:** `sales@mineralssolution.in`
 - **Backup Operational Email:** `mineralssolutions76@gmail.com`
 - **Production Canonical Domain:** `https://mineralssolution.in/`
 - **Facility Location (NAP):**  
   10, Shyam Estate, Zak GIDC, Zak-Vahelal Road,  
-  Taluka: Dahegam, District: Gandhinagar, Gujarat – 382330, India.
+  Taluka: Dahegam, District: Gandhinagar, Gujarat - 382330, India.
 - **Tech Stack:** Next.js (App Router, latest stable), TypeScript (`strict: true`), Tailwind CSS, React Server Components (RSC) by default.
 
 ---
@@ -107,18 +107,18 @@ graph TD
 Before merging or deploying any changes:
 1. `npm run typecheck && npm run lint && npm run build` must be green.
 2. Run automated validation scripts:
-   - `node scripts/audit-metadata.mjs` (Title 50–60 chars, description 150–160 chars, canonical valid)
-   - `node scripts/audit-schema.mjs` (Valid JSON-LD, zero AggregateRating, clean breadcrumbs)
-   - `node scripts/audit-links.mjs` (Zero 404s, zero orphan pages, trailing slashes on all links)
-   - `node scripts/audit-googlebot-crawlability.mjs` (Googlebot renders full static HTML with immediate H1)
+ - `node scripts/audit-metadata.mjs` (Title 50-60 chars, description 150-160 chars, canonical valid)
+ - `node scripts/audit-schema.mjs` (Valid JSON-LD, zero AggregateRating, clean breadcrumbs)
+ - `node scripts/audit-links.mjs` (Zero 404s, zero orphan pages, trailing slashes on all links)
+ - `node scripts/audit-googlebot-crawlability.mjs` (Googlebot renders full static HTML with immediate H1)
 
 
 <!-- BEGIN:nextjs-agent-rules -->
 
 # This is NOT the Next.js you know
 
-This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
+This version has breaking changes -  APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
 
-This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
+This block is written and re-added by `next dev` -  verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
 
 <!-- END:nextjs-agent-rules -->

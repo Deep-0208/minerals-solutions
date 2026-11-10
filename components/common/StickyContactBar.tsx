@@ -42,7 +42,7 @@ export function StickyContactBar() {
 
         {/* Get Quote */}
         <Link
-          href="/request-quote"
+          href="/request-quote/"
           className="flex flex-col items-center justify-center py-2 px-2 rounded-xl bg-[#E10613] hover:bg-[#BC0711] text-white text-[11px] font-semibold transition-colors shadow-sm"
         >
           <FileText className="w-4 h-4 mb-0.5" />

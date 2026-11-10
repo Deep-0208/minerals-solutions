@@ -107,7 +107,7 @@ export default function ContactPage() {
 
         {/* Hero Section */}
         <div className="max-w-3xl mb-12 space-y-4">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-100 text-[#E10613] text-xs font-bold uppercase tracking-wider">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-red-50 text-[#E10613] text-xs font-bold uppercase tracking-wider border border-red-100 mb-3">
             <Factory className="w-3.5 h-3.5" />
             <span>Works Desk &amp; Engineering Contacts</span>
           </div>
@@ -124,7 +124,7 @@ export default function ContactPage() {
           {/* Contact Details & Factory Info (5 cols) */}
           <div className="lg:col-span-5 space-y-6">
             {/* Direct Calling Hotlines */}
-            <div className="bg-[#111111] text-white rounded-3xl p-6 sm:p-8 border border-neutral-800 space-y-4">
+            <div className="bg-[#111111] text-white rounded-3xl p-6 sm:p-8 border border-neutral-800 shadow-xl space-y-4">
               <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#E10613]">
                 Factory Hotlines
               </span>
@@ -166,7 +166,7 @@ export default function ContactPage() {
             </div>
 
             {/* Plant Address Card */}
-            <div className="bg-white rounded-3xl p-6 sm:p-8 border border-[#E7E7EB] shadow-sm space-y-4">
+            <div className="bg-white rounded-3xl p-6 sm:p-8 border border-[#E7E7EB] shadow-[0_4px_24px_rgba(17,17,17,0.04)] space-y-4">
               <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#111111]">
                 <MapPin className="w-4 h-4 text-[#E10613]" />
                 <span>Works &amp; Fabrication Facility</span>
@@ -218,7 +218,7 @@ export default function ContactPage() {
           </div>
 
           {/* Interactive Contact Form (7 cols) */}
-          <div className="lg:col-span-7 bg-white rounded-3xl border border-[#E7E7EB] p-6 sm:p-10 shadow-[0_4px_24px_rgba(17,17,17,0.05)]">
+          <div className="lg:col-span-7 bg-white rounded-3xl border border-[#E7E7EB] p-6 sm:p-10 shadow-[0_4px_24px_rgba(17,17,17,0.04)]">
             <h2 className="text-2xl font-bold text-[#111111] tracking-tight mb-2">
               Send an Enquiry to Our Engineering Desk
             </h2>

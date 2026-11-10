@@ -23,32 +23,32 @@ export function Footer() {
   const productLinks = [
     {
       label: 'Industrial Rotary Dryers',
-      href: '/products/industrial-rotary-dryers',
+      href: '/products/industrial-rotary-dryers/',
     },
     {
       label: 'Fertilizer Granulation Plants',
-      href: '/products/fertilizer-granulation-plants',
+      href: '/products/fertilizer-granulation-plants/',
     },
     {
       label: 'Sand Washing & Recovery Plants',
-      href: '/products/sand-washing-plants',
+      href: '/products/sand-washing-plants/',
     },
     {
       label: 'Industrial Conveyor Systems',
-      href: '/products/industrial-conveyors-spares',
+      href: '/products/industrial-conveyors-spares/',
     },
     {
       label: 'View All Machinery',
-      href: '/products',
+      href: '/products/',
     },
   ];
 
   const quickLinks = [
-    { label: 'About Minerals Solutions', href: '/about' },
-    { label: 'Manufacturing Facility', href: '/manufacturing' },
-    { label: 'Industries Served', href: '/industries' },
-    { label: 'Request a Quote', href: '/request-quote' },
-    { label: 'Contact Works', href: '/contact' },
+    { label: 'About Minerals Solutions', href: '/about/' },
+    { label: 'Manufacturing Facility', href: '/manufacturing/' },
+    { label: 'Industries Served', href: '/industries/' },
+    { label: 'Request a Quote', href: '/request-quote/' },
+    { label: 'Contact Works', href: '/contact/' },
   ];
 
   return (

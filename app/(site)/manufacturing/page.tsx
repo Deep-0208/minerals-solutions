@@ -113,7 +113,7 @@ export default function ManufacturingPage() {
         {/* Hero Section */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center mb-16">
           <div className="lg:col-span-7 space-y-4">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-100 text-[#E10613] text-xs font-bold uppercase tracking-wider">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-red-50 text-[#E10613] text-xs font-bold uppercase tracking-wider border border-red-100 mb-3">
               <Factory className="w-3.5 h-3.5" />
               <span>Zak GIDC Heavy Engineering Facility</span>
             </div>
@@ -127,7 +127,7 @@ export default function ManufacturingPage() {
             </p>
 
             <div className="pt-2 flex flex-wrap gap-3">
-              <Button href="/contact" variant="primary" size="md">
+              <Button href="/contact/" variant="primary" size="md">
                 Schedule a Factory Inspection
               </Button>
               <a
@@ -174,11 +174,11 @@ export default function ManufacturingPage() {
               return (
                 <div
                   key={cap.num}
-                  className="bg-white rounded-2xl border border-[#E7E7EB] p-6 sm:p-7 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between space-y-4"
+                  className="bg-white rounded-2xl border border-[#E7E7EB] p-6 sm:p-7 shadow-[0_4px_24px_rgba(17,17,17,0.04)] hover:shadow-[0_12px_32px_rgba(17,17,17,0.08)] hover:border-red-200 transition-all flex flex-col justify-between space-y-4 group"
                 >
                   <div className="space-y-3">
                     <div className="flex items-center justify-between">
-                      <div className="w-10 h-10 rounded-xl bg-red-50 text-[#E10613] flex items-center justify-center">
+                      <div className="w-10 h-10 rounded-xl bg-red-50 text-[#E10613] flex items-center justify-center border border-red-100">
                         <Icon className="w-5 h-5" />
                       </div>
                       <span className="text-xs font-mono font-bold text-neutral-400">
@@ -186,7 +186,7 @@ export default function ManufacturingPage() {
                       </span>
                     </div>
 
-                    <h3 className="text-lg font-bold text-[#111111]">
+                    <h3 className="text-lg font-bold text-[#111111] group-hover:text-[#E10613] transition-colors">
                       {cap.title}
                     </h3>
 
@@ -208,7 +208,7 @@ export default function ManufacturingPage() {
         {/* Quality Standards & Testing Section */}
         <div className="bg-white rounded-3xl border border-[#E7E7EB] p-8 sm:p-10 mb-16 shadow-[0_4px_24px_rgba(17,17,17,0.04)] space-y-6">
           <div className="max-w-3xl space-y-2">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wider">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-red-50 text-[#E10613] text-xs font-bold uppercase tracking-wider border border-red-100 mb-2">
               <ShieldCheck className="w-3.5 h-3.5" />
               <span>Inspection Rigor</span>
             </div>
@@ -223,8 +223,8 @@ export default function ManufacturingPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-2">
             {qualityChecks.map((qc) => (
-              <div key={qc.title} className="p-4 rounded-2xl bg-[#F5F5F7] border border-[#E7E7EB] space-y-2">
-                <CheckCircle2 className="w-4 h-4 text-emerald-600" />
+              <div key={qc.title} className="p-4 rounded-2xl bg-[#F5F5F7] border border-[#E7E7EB] hover:border-red-200 transition-all space-y-2">
+                <CheckCircle2 className="w-4 h-4 text-[#E10613]" />
                 <h3 className="text-xs font-bold text-[#111111]">{qc.title}</h3>
                 <p className="text-xs text-neutral-600 leading-relaxed">{qc.desc}</p>
               </div>
@@ -233,7 +233,7 @@ export default function ManufacturingPage() {
         </div>
 
         {/* Factory Visit Invitation */}
-        <div className="bg-[#111111] text-white rounded-3xl p-8 sm:p-12 border border-neutral-800 flex flex-col md:flex-row items-center justify-between gap-8">
+        <div className="bg-[#111111] text-white rounded-3xl p-8 sm:p-12 border border-neutral-800 shadow-xl flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="space-y-3 max-w-xl text-center md:text-left">
             <span className="text-xs font-mono uppercase tracking-wider text-[#E10613] font-bold">
               Open Factory Policy
@@ -252,14 +252,15 @@ export default function ManufacturingPage() {
           </div>
 
           <div className="flex flex-col sm:flex-row items-center gap-3 shrink-0">
-            <Button href="/contact" variant="primary" size="lg">
+            <Button href="/contact/" variant="primary" size="lg">
               Book Factory Visit
             </Button>
             <a
               href={`tel:${cleanPhone}`}
-              className="px-6 py-3.5 rounded-full border border-neutral-700 hover:border-white text-xs font-bold text-white transition-colors"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full border border-neutral-700 hover:border-white text-xs font-bold text-white transition-colors"
             >
-              Call Works: {primaryPhone}
+              <Phone className="w-3.5 h-3.5 text-[#E10613]" />
+              <span>Call Works: {primaryPhone}</span>
             </a>
           </div>
         </div>

@@ -35,12 +35,12 @@ Every single page on `mineralssolution.in` must fulfill the following content an
 
 ### 1. Title Tag Engineering
 * **Pattern:** `[Primary Target Keyword] | Minerals Solutions` (Spokes) or `[Category] | Minerals Solutions Gujarat` (Hubs).
-* **Display Target:** Calibrated for typical SERP pixel widths (~580px desktop, ~540px mobile). Aim for 50–60 characters as a practical guideline to prevent truncation while ensuring complete keyword coverage.
+* **Display Target:** Calibrated for typical SERP pixel widths (~580px desktop, ~540px mobile). Aim for 50-60 characters as a practical guideline to prevent truncation while ensuring complete keyword coverage.
 * **Uniqueness:** 100% unique across all 33 routes. Zero duplicate title tags.
 
 ### 2. Meta Description Engineering
 * **Pattern:** Active voice, technical value proposition, mentioning key parameters (e.g. *inlet temperature*, *capacity*, *GIDC Dahegam workshop*), ending with a clear B2B call to action.
-* **Display Target:** 140–160 characters as a practical guideline to fill standard Google desktop and mobile snippet real estate without truncation.
+* **Display Target:** 140-160 characters as a practical guideline to fill standard Google desktop and mobile snippet real estate without truncation.
 * **Zero Fabrication:** Never claim unverified certifications, exaggerated production capacity, or fake pricing.
 
 ### 3. Heading Hierarchy (H1, H2, H3)
@@ -93,7 +93,7 @@ Search is rapidly shifting toward generative engines (Google AI Overviews, Perpl
 * Use consistent Wikidata and Schema.org entity references where appropriate (`knowsAbout`: *Rotary dryer*, *Fluidized bed dryer*, *Mineral processing*, *Granulation*).
 
 ### 2. High-Citability Fact Formatting
-* Use clear definition paragraphs at the top of each section answering core queries directly (e.g. *"What is a Double Pass Rotary Dryer?"* followed by a 2–3 sentence concise, factual answer).
+* Use clear definition paragraphs at the top of each section answering core queries directly (e.g. *"What is a Double Pass Rotary Dryer?"* followed by a 2-3 sentence concise, factual answer).
 * Structure data in clean HTML tables (`<table>`, `<th>`, `<td>`) rather than image-based text. Generative engines parse HTML tables with significantly higher reliability than image OCR.
 
 ### 3. Technical Question Coverage

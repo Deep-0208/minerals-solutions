@@ -77,7 +77,7 @@ To uphold E-E-A-T and technical accuracy, all content across the website is cate
 
 ---
 
-### Section C: Pillar 1 – Rotary Dryers & Industrial Furnaces (11 Pages)
+### Section C: Pillar 1 - Rotary Dryers & Industrial Furnaces (11 Pages)
 
 #### 6. Rotary Dryers Master Hub (`/products/rotary-dryers/`)
 * **Primary Keyword:** `rotary dryer manufacturer ahmedabad` (Vol: 2,400)
@@ -135,7 +135,7 @@ To uphold E-E-A-T and technical accuracy, all content across the website is cate
 * **Secondary Keywords:** `biomass flash drum dryer`, `wood chip drying machine`, `coir pith rotary dryer`
 * **Search Intent:** Commercial B2B
 * **Target Audience:** Biomass briquette plants, poultry bedding producers, coir pith exporters.
-* **Technical Coverage:** Fire safety baffling, spark arrestors, high-volume pneumatic conveyance, moisture reduction down to 10–12%.
+* **Technical Coverage:** Fire safety baffling, spark arrestors, high-volume pneumatic conveyance, moisture reduction down to 10-12%.
 * **Interlinking:** Links to *Biomass Pellet Mill* (`/products/granulation-pellet-plants/biomass-pellet-mill/`).
 
 #### 14. Industrial Hot Air Generators (`/products/rotary-dryers/hot-air-generators/`)
@@ -157,7 +157,7 @@ To uphold E-E-A-T and technical accuracy, all content across the website is cate
 * **Secondary Keywords:** `dryer support roller assembly`, `kiln trunnion bearing blocks`, `forged steel dryer rollers`
 * **Search Intent:** Aftermarket Spares / Replacement Parts
 * **Target Audience:** Maintenance managers and plant mechanics needing precision running gear replacements.
-* **Technical Coverage:** EN-8/EN-9 forged steel metallurgy, induction surface hardening (280–320 BHN), heavy split plummer blocks with spherical roller bearings.
+* **Technical Coverage:** EN-8/EN-9 forged steel metallurgy, induction surface hardening (280-320 BHN), heavy split plummer blocks with spherical roller bearings.
 
 #### 17. Riding Rings & Girth Gears (`/products/rotary-dryers/riding-rings-girth-gears/`)
 * **Primary Keyword:** `rotary kiln tyre riding ring girth gear` (Vol: 750)
@@ -168,7 +168,7 @@ To uphold E-E-A-T and technical accuracy, all content across the website is cate
 
 ---
 
-### Section D: Pillar 2 – Sand Washing & Mineral Processing (5 Pages)
+### Section D: Pillar 2 - Sand Washing & Mineral Processing (5 Pages)
 
 #### 18. Mineral Processing Hub (`/products/mineral-processing/`)
 * **Primary Keyword:** `sand washing plant manufacturer gujarat` (Vol: 2,200)
@@ -214,7 +214,7 @@ To uphold E-E-A-T and technical accuracy, all content across the website is cate
 
 ---
 
-### Section E: Pillar 3 – Fertilizer Granulation & Biomass Pellet Machinery (5 Pages)
+### Section E: Pillar 3 - Fertilizer Granulation & Biomass Pellet Machinery (5 Pages)
 
 #### 24. Granulation & Pellet Plants Hub (`/products/granulation-pellet-plants/`)
 * **Primary Keyword:** `fertilizer granulation plant manufacturer` (Vol: 2,100)
@@ -228,7 +228,7 @@ To uphold E-E-A-T and technical accuracy, all content across the website is cate
 * **Secondary Keywords:** `fertilizer pan pelletizer`, `disc granulator 5hp`, `organic manure granulator`
 * **Search Intent:** Transactional B2B (Targeting client's ₹3.75 Lakh flagship unit)
 * **Target Audience:** Organic fertilizer units, bentonite cat litter processors, chemical powder agglomerators.
-* **Technical Coverage:** 2,200 mm disc diameter, 35°–55° stepless angle adjustment, high-torque reduction gear drive, tungsten-carbide rim scrapers.
+* **Technical Coverage:** 2,200 mm disc diameter, 35°-55° stepless angle adjustment, high-torque reduction gear drive, tungsten-carbide rim scrapers.
 
 #### 26. Turnkey Fertilizer Plant (`/products/granulation-pellet-plants/fertilizer-plant/`)
 * **Primary Keyword:** `npk organic fertilizer granulation plant india` (Vol: 850)
@@ -260,7 +260,7 @@ To uphold E-E-A-T and technical accuracy, all content across the website is cate
 
 ---
 
-### Section F: Pillar 4 – Industrial Conveyor Systems & Spares (6 Pages)
+### Section F: Pillar 4 - Industrial Conveyor Systems & Spares (6 Pages)
 
 #### 30. Conveyor Systems Hub (`/products/conveyor-systems/`)
 * **Primary Keyword:** `industrial conveyor belt system manufacturer` (Vol: 2,500)
@@ -274,7 +274,7 @@ To uphold E-E-A-T and technical accuracy, all content across the website is cate
 * **Secondary Keywords:** `troughed belt conveyor system`, `bulk material conveyor`, `heavy duty plant conveyor`
 * **Search Intent:** Transactional Machinery Purchase (Targeting client's ₹1.5 Lakh unit)
 * **Target Audience:** Industrial plants requiring continuous bulk conveyance.
-* **Technical Coverage:** 30m standard modular truss span, ISMC channel construction, 300–800mm belt widths, 50 kg/m linear load capacity.
+* **Technical Coverage:** 30m standard modular truss span, ISMC channel construction, 300-800mm belt widths, 50 kg/m linear load capacity.
 
 #### 32. Mining & Beneficiation Conveyors (`/products/conveyor-systems/mining-conveyors/`)
 * **Primary Keyword:** `mineral ore belt conveyor system gujarat` (Vol: 850)

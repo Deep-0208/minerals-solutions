@@ -1,7 +1,7 @@
 # Master Keyword Map & Cannibalization Shield
 **Client:** Minerals Solutions (`mineralssolution.in`)  
 **Facility Location:** 10, Shyam Estate, Zak GIDC, Dahegam, Gandhinagar / Ahmedabad Industrial Corridor, Gujarat  
-**Version:** 1.0 (Consolidated from Pillars 1–4 Semantic Clusters)  
+**Version:** 1.0 (Consolidated from Pillars 1-4 Semantic Clusters)  
 **Total Canonical Routes:** 33 Routes (1 Homepage + 4 Company/Trust + 1 Catalog Hub + 4 Pillar Hubs + 21 Dedicated Spokes + 1 Mineral Supply Hub + 2 Legal)  
 **Total Target Content Volume:** ~51,000 Words  
 **Last Updated:** November 2026 (Development Branch)
@@ -11,17 +11,17 @@
 ## 1. Architectural Principles & Cannibalization Defense
 
 1. **One URL per Search Intent:**
-   - Keywords sharing 7+ identical URLs in Google’s top 10 organic search results are mapped to the **same page**.
-   - Keywords with distinct buyer personas (e.g. Turnkey Plant Buyer vs Aftermarket Trunnion Spares Buyer) are granted separate dedicated routes.
+ - Keywords sharing 7+ identical URLs in Google’s top 10 organic search results are mapped to the **same page**.
+ - Keywords with distinct buyer personas (e.g. Turnkey Plant Buyer vs Aftermarket Trunnion Spares Buyer) are granted separate dedicated routes.
 2. **Strict Trailing Slash Enforcement:**
-   - Every route in this map ends with a trailing slash (`/`).
-   - Sitemaps, canonical tags, internal links, and Next.js routing match this exact string to eliminate 308 redirect overhead and canonical URL splits.
+ - Every route in this map ends with a trailing slash (`/`).
+ - Sitemaps, canonical tags, internal links, and Next.js routing match this exact string to eliminate 308 redirect overhead and canonical URL splits.
 3. **Zero Orphan Pages & Deep Link Interlocking:**
-   - Every spoke page has a mandatory bi-directional link to its parent pillar.
-   - Cross-pillar authority bridges link complementary machinery lines (e.g., *Sand Washing Plant* $\rightarrow$ *Rotary Sand Dryer* $\rightarrow$ *Conveyor Systems*).
+ - Every spoke page has a mandatory bi-directional link to its parent pillar.
+ - Cross-pillar authority bridges link complementary machinery lines (e.g., *Sand Washing Plant* $\rightarrow$ *Rotary Sand Dryer* $\rightarrow$ *Conveyor Systems*).
 4. **Honest Schema & E-E-A-T Anchoring:**
-   - Zero fabricated ratings or fake review stars.
-   - Statutory data (GSTIN: `24AUSPP9555F1ZZ`, MSME UDYAM, Axis Bank) anchored directly into `Organization` and `LocalBusiness` schemas.
+ - Zero fabricated ratings or fake review stars.
+ - Statutory data (GSTIN: `24AUSPP9555F1ZZ`, MSME UDYAM, Axis Bank) anchored directly into `Organization` and `LocalBusiness` schemas.
 
 ---
 
@@ -38,7 +38,7 @@
 
 ---
 
-### Cluster B: Pillar 1 – Industrial Rotary Dryers & Furnaces (12 Pages)
+### Cluster B: Pillar 1 - Industrial Rotary Dryers & Furnaces (12 Pages)
 
 * **Parent Pillar URL:** `/products/rotary-dryers/` (3,500 words)  
 * **Pillar Keyword:** `rotary dryer manufacturer ahmedabad` (Vol: 2,400)  
@@ -60,7 +60,7 @@
 
 ---
 
-### Cluster C: Pillar 2 – Sand Washing & Mineral Processing (6 Pages)
+### Cluster C: Pillar 2 - Sand Washing & Mineral Processing (6 Pages)
 
 * **Parent Pillar URL:** `/products/mineral-processing/` (3,200 words)  
 * **Pillar Keyword:** `sand washing plant manufacturer gujarat` (Vol: 2,200)  
@@ -76,7 +76,7 @@
 
 ---
 
-### Cluster D: Pillar 3 – Fertilizer Granulation & Biomass Pellet Machinery (6 Pages)
+### Cluster D: Pillar 3 - Fertilizer Granulation & Biomass Pellet Machinery (6 Pages)
 
 * **Parent Pillar URL:** `/products/granulation-pellet-plants/` (3,400 words)  
 * **Pillar Keyword:** `fertilizer granulation plant manufacturer` (Vol: 2,100)  
@@ -92,7 +92,7 @@
 
 ---
 
-### Cluster E: Pillar 4 – Industrial Conveyor Systems & Material Handling (7 Pages)
+### Cluster E: Pillar 4 - Industrial Conveyor Systems & Material Handling (7 Pages)
 
 * **Parent Pillar URL:** `/products/conveyor-systems/` (3,200 words)  
 * **Pillar Keyword:** `industrial conveyor belt system manufacturer` (Vol: 2,500)  

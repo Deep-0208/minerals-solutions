@@ -40,7 +40,7 @@ export default function HomePage() {
       capacity: '500 kg/hr - 50 TPH',
       image: '/images/products/rotary-dryers/double-pass-rotary-dryer-primary-md.webp',
       alt: 'Minerals Solutions double pass concentric rotary dryer showing outer shell and blue drive frame at Dahegam workshop',
-      href: '/products/industrial-rotary-dryers',
+      href: '/products/industrial-rotary-dryers/',
       features: ['Concentric Nested Shells', '300°C Inlet Draft', 'IS 2062 Carbon Steel'],
       icon: Flame,
     },
@@ -52,7 +52,7 @@ export default function HomePage() {
       capacity: '1 - 20 TPH',
       image: '/images/products/fertilizer-pellet/fertilizer-granulation-plant-primary-md.webp',
       alt: 'Minerals Solutions complete fertilizer granulation plant installation showing granulator pan and conveyor feed',
-      href: '/products/fertilizer-granulation-plants',
+      href: '/products/fertilizer-granulation-plants/',
       features: ['Stepless Angle Tilt', '≥92% Sphericity', 'Tungsten Carbide Scrapers'],
       icon: Sprout,
     },
@@ -64,7 +64,7 @@ export default function HomePage() {
       capacity: '30 - 200 TPH',
       image: '/images/products/mineral-processing/river-sand-washing-plant-md.webp',
       alt: 'Minerals Solutions heavy bucket wheel sand washing plant at aggregate processing site',
-      href: '/products/sand-washing-plants',
+      href: '/products/sand-washing-plants/',
       features: ['75 Micron Recovery', 'Hydrocyclone Desliming', 'Low Water Footprint'],
       icon: Waves,
     },
@@ -76,7 +76,7 @@ export default function HomePage() {
       capacity: '400 - 1600 mm Width',
       image: '/images/products/conveyor-systems/conveyor-belt-system-truss-md.webp',
       alt: 'Heavy industrial conveyor belt system lattice truss structure fabricated at Minerals Solutions workshop',
-      href: '/products/industrial-conveyors-spares',
+      href: '/products/industrial-conveyors-spares/',
       features: ['Diamond Lagged Pulleys', 'EN-8/EN-9 Forged Trunnions', 'Machined Girth Gears'],
       icon: Boxes,
     },
@@ -203,10 +203,10 @@ export default function HomePage() {
 
               {/* Primary, Secondary, and Hotline Actions */}
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5">
-                <Button href="/products" variant="primary" size="lg" icon={<ArrowRight className="w-4 h-4" />}>
+                <Button href="/products/" variant="primary" size="lg" icon={<ArrowRight className="w-4 h-4" />}>
                   Explore Our Machinery
                 </Button>
-                <Button href="/request-quote" variant="secondary-dark" size="lg">
+                <Button href="/request-quote/" variant="secondary-dark" size="lg">
                   Request a Quote
                 </Button>
               </div>
@@ -268,7 +268,7 @@ export default function HomePage() {
                     </h3>
                   </div>
                   <Link
-                    href="/products/industrial-rotary-dryers"
+                    href="/products/industrial-rotary-dryers/"
                     className="text-xs font-semibold text-neutral-300 hover:text-white flex items-center gap-1"
                   >
                     <span>View Specs</span>
@@ -286,7 +286,7 @@ export default function HomePage() {
         <Container>
           <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12">
             <div>
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-100 text-[#E10613] text-xs font-bold uppercase tracking-wider mb-2">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-red-50 text-[#E10613] text-xs font-bold uppercase tracking-wider border border-red-100 mb-3">
                 <Boxes className="w-3.5 h-3.5" />
                 <span>Manufacturing Divisions</span>
               </div>
@@ -299,7 +299,7 @@ export default function HomePage() {
               </p>
             </div>
             <div className="mt-4 md:mt-0">
-              <Button href="/products" variant="outline" size="md" icon={<ArrowRight className="w-4 h-4" />}>
+              <Button href="/products/" variant="outline" size="md" icon={<ArrowRight className="w-4 h-4" />}>
                 View Complete Catalog
               </Button>
             </div>
@@ -311,7 +311,7 @@ export default function HomePage() {
               return (
                 <div
                   key={item.id}
-                  className="bg-white rounded-2xl border border-[#E7E7EB] overflow-hidden shadow-[0_4px_24px_rgba(17,17,17,0.04)] hover:shadow-[0_12px_36px_rgba(17,17,17,0.08)] transition-all flex flex-col group"
+                  className="bg-white rounded-2xl border border-[#E7E7EB] overflow-hidden shadow-[0_4px_24px_rgba(17,17,17,0.04)] hover:shadow-[0_12px_36px_rgba(17,17,17,0.08)] hover:border-red-200 transition-all flex flex-col group"
                 >
                   <div className="relative aspect-[16/10] w-full overflow-hidden bg-neutral-100">
                     <Image
@@ -327,7 +327,7 @@ export default function HomePage() {
 
                   <div className="p-6 sm:p-8 flex-1 flex flex-col justify-between space-y-4">
                     <div className="space-y-2">
-                      <div className="w-10 h-10 rounded-xl bg-red-50 text-[#E10613] flex items-center justify-center">
+                      <div className="w-10 h-10 rounded-xl bg-red-50 text-[#E10613] flex items-center justify-center border border-red-100">
                         <Icon className="w-5 h-5" />
                       </div>
                       <h3 className="text-xl font-bold text-[#111111] group-hover:text-[#E10613] transition-colors">
@@ -343,7 +343,7 @@ export default function HomePage() {
                         {item.features.map((feat) => (
                           <span
                             key={feat}
-                            className="px-2.5 py-0.5 rounded-md bg-[#F5F5F7] text-[#111111] text-xs font-medium"
+                            className="px-2.5 py-0.5 rounded-md bg-[#F5F5F7] text-[#111111] text-xs font-medium border border-neutral-200"
                           >
                             {feat}
                           </span>
@@ -358,7 +358,7 @@ export default function HomePage() {
                           <span>Explore Specifications</span>
                           <ArrowRight className="w-4 h-4" />
                         </Link>
-                        <Button href="/request-quote" variant="ghost" size="sm">
+                        <Button href="/request-quote/" variant="ghost" size="sm">
                           Quote
                         </Button>
                       </div>
@@ -376,7 +376,7 @@ export default function HomePage() {
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-16">
             <div className="lg:col-span-6 space-y-4">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-100 text-[#E10613] text-xs font-bold uppercase tracking-wider">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-red-50 text-[#E10613] text-xs font-bold uppercase tracking-wider border border-red-100 mb-3">
                 <Wrench className="w-3.5 h-3.5" />
                 <span>Zak GIDC Heavy Fabrication</span>
               </div>
@@ -389,7 +389,7 @@ export default function HomePage() {
                 rotary drum dynamic balancing, and trial mechanical assembly.
               </p>
               <div className="pt-2">
-                <Button href="/manufacturing" variant="primary" size="md">
+                <Button href="/manufacturing/" variant="primary" size="md">
                   Explore Manufacturing Tour
                 </Button>
               </div>
@@ -481,7 +481,7 @@ export default function HomePage() {
       <section className="py-20 bg-[#F5F5F7]" id="industries">
         <Container>
           <div className="text-center max-w-2xl mx-auto mb-16 space-y-3">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-100 text-[#E10613] text-xs font-bold uppercase tracking-wider">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-red-50 text-[#E10613] text-xs font-bold uppercase tracking-wider border border-red-100 mb-2">
               <Factory className="w-3.5 h-3.5" />
               <span>Broad Industrial Applications</span>
             </div>
@@ -498,10 +498,10 @@ export default function HomePage() {
             {industries.map((ind) => (
               <div
                 key={ind.name}
-                className="p-6 rounded-2xl bg-white border border-[#E7E7EB] hover:shadow-md transition-shadow space-y-2"
+                className="p-6 rounded-2xl bg-white border border-[#E7E7EB] hover:shadow-[0_12px_32px_rgba(17,17,17,0.08)] hover:border-red-200 transition-all space-y-2 group"
               >
                 <div className="w-2 h-2 rounded-full bg-[#E10613]" />
-                <h3 className="text-base font-bold text-[#111111]">
+                <h3 className="text-base font-bold text-[#111111] group-hover:text-[#E10613] transition-colors">
                   {ind.name}
                 </h3>
                 <p className="text-xs text-[#737373] leading-relaxed">
@@ -512,7 +512,7 @@ export default function HomePage() {
           </div>
 
           <div className="mt-12 text-center">
-            <Button href="/industries" variant="outline" size="md">
+            <Button href="/industries/" variant="outline" size="md">
               Learn More About Sector Applications
             </Button>
           </div>
@@ -523,7 +523,7 @@ export default function HomePage() {
       <section className="py-20 bg-white">
         <Container>
           <div className="text-center max-w-2xl mx-auto mb-16 space-y-3">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-100 text-[#E10613] text-xs font-bold uppercase tracking-wider">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-red-50 text-[#E10613] text-xs font-bold uppercase tracking-wider border border-red-100 mb-2">
               <Cpu className="w-3.5 h-3.5" />
               <span>Turnkey Execution Workflow</span>
             </div>
@@ -540,12 +540,12 @@ export default function HomePage() {
             {processSteps.map((step) => (
               <div
                 key={step.step}
-                className="p-6 rounded-2xl border border-[#E7E7EB] bg-[#FAFAFA] relative overflow-hidden space-y-2"
+                className="p-6 rounded-2xl border border-[#E7E7EB] bg-[#FAFAFA] hover:bg-white hover:border-red-200 hover:shadow-md transition-all relative overflow-hidden space-y-2 group"
               >
-                <span className="text-3xl font-black font-mono text-neutral-200 absolute top-4 right-4">
+                <span className="text-3xl font-black font-mono text-neutral-200 group-hover:text-red-100 transition-colors absolute top-4 right-4">
                   {step.step}
                 </span>
-                <h3 className="text-base font-bold text-[#111111] pt-2">
+                <h3 className="text-base font-bold text-[#111111] pt-2 group-hover:text-[#E10613] transition-colors">
                   {step.title}
                 </h3>
                 <p className="text-xs text-[#737373] leading-relaxed">
@@ -583,7 +583,7 @@ export default function HomePage() {
                 <span>Verify on IndiaMART</span>
                 <ExternalLink className="w-3.5 h-3.5 text-[#E10613]" />
               </a>
-              <Button href="/about" variant="secondary-dark" size="md">
+              <Button href="/about/" variant="secondary-dark" size="md">
                 About Our Leadership &amp; Works
               </Button>
             </div>
@@ -595,7 +595,7 @@ export default function HomePage() {
       <section className="py-20 bg-gradient-to-b from-[#111111] to-[#1B1B1D] text-white">
         <Container>
           <div className="max-w-3xl mx-auto text-center space-y-6">
-            <div className="w-12 h-12 rounded-2xl bg-red-600/20 text-[#E10613] flex items-center justify-center mx-auto">
+            <div className="w-12 h-12 rounded-2xl bg-red-600/20 text-[#E10613] flex items-center justify-center mx-auto border border-red-500/30">
               <Flame className="w-6 h-6" />
             </div>
 
@@ -609,7 +609,7 @@ export default function HomePage() {
             </p>
 
             <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Button href="/request-quote" variant="primary" size="lg" icon={<ArrowRight className="w-4 h-4" />}>
+              <Button href="/request-quote/" variant="primary" size="lg" icon={<ArrowRight className="w-4 h-4" />}>
                 Request a Quote
               </Button>
               <a
@@ -622,7 +622,7 @@ export default function HomePage() {
             </div>
 
             <p className="text-xs text-neutral-500 pt-2">
-              Works Facility: Plot No. 10, Shed No. 3, Shyam Estate, Zak GIDC, Dahegam, Gandhinagar, Gujarat.
+              Works Facility: Plot No. 10, Shed No. 3, Shyam Estate, Zak GIDC, Zak-Vahelal Road, Ta. Dahegam, Gandhinagar - 382330, Gujarat.
             </p>
           </div>
         </Container>

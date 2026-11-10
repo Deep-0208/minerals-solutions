@@ -66,7 +66,7 @@ export default function AboutPage() {
         {/* Hero Section */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center mb-16">
           <div className="lg:col-span-7 space-y-4">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-100 text-[#E10613] text-xs font-bold uppercase tracking-wider">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-red-50 text-[#E10613] text-xs font-bold uppercase tracking-wider border border-red-100 mb-3">
               <Factory className="w-3.5 h-3.5" />
               <span>Company Profile &amp; Leadership</span>
             </div>
@@ -80,10 +80,10 @@ export default function AboutPage() {
             </p>
 
             <div className="pt-2 flex flex-wrap gap-3">
-              <Button href="/request-quote" variant="primary" size="md">
+              <Button href="/request-quote/" variant="primary" size="md">
                 Request Engineering Quote
               </Button>
-              <Button href="/manufacturing" variant="outline" size="md">
+              <Button href="/manufacturing/" variant="outline" size="md">
                 Tour Manufacturing Facility
               </Button>
             </div>
@@ -109,9 +109,9 @@ export default function AboutPage() {
         {/* Company Leadership & Credentials Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           {/* Leadership Card */}
-          <div className="bg-white rounded-3xl border border-[#E7E7EB] p-8 shadow-[0_4px_24px_rgba(17,17,17,0.04)] space-y-6">
+          <div className="bg-white rounded-3xl border border-[#E7E7EB] p-8 shadow-[0_4px_24px_rgba(17,17,17,0.04)] hover:shadow-[0_12px_32px_rgba(17,17,17,0.08)] hover:border-red-200 transition-all space-y-6">
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-2xl bg-red-50 text-[#E10613] flex items-center justify-center">
+              <div className="w-12 h-12 rounded-2xl bg-red-50 text-[#E10613] flex items-center justify-center border border-red-100">
                 <Users className="w-6 h-6" />
               </div>
               <div>
@@ -130,7 +130,7 @@ export default function AboutPage() {
             </p>
 
             <div className="space-y-4 pt-2">
-              <div className="p-4 rounded-2xl bg-[#F5F5F7] border border-[#E7E7EB]">
+              <div className="p-4 rounded-2xl bg-[#F5F5F7] border border-[#E7E7EB] hover:border-red-200 transition-all">
                 <h3 className="text-base font-bold text-[#111111]">
                   Mr. Vipulbhai A. Prajapati
                 </h3>
@@ -143,7 +143,7 @@ export default function AboutPage() {
                 </p>
               </div>
 
-              <div className="p-4 rounded-2xl bg-[#F5F5F7] border border-[#E7E7EB]">
+              <div className="p-4 rounded-2xl bg-[#F5F5F7] border border-[#E7E7EB] hover:border-red-200 transition-all">
                 <h3 className="text-base font-bold text-[#111111]">
                   Mr. P Amrutlal
                 </h3>
@@ -159,13 +159,13 @@ export default function AboutPage() {
           </div>
 
           {/* Verified Business Credentials */}
-          <div className="bg-white rounded-3xl border border-[#E7E7EB] p-8 shadow-[0_4px_24px_rgba(17,17,17,0.04)] space-y-6">
+          <div className="bg-white rounded-3xl border border-[#E7E7EB] p-8 shadow-[0_4px_24px_rgba(17,17,17,0.04)] hover:shadow-[0_12px_32px_rgba(17,17,17,0.08)] hover:border-red-200 transition-all space-y-6">
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center">
+              <div className="w-12 h-12 rounded-2xl bg-red-50 text-[#E10613] flex items-center justify-center border border-red-100">
                 <ShieldCheck className="w-6 h-6" />
               </div>
               <div>
-                <span className="text-xs font-mono uppercase tracking-wider text-emerald-700 font-bold">
+                <span className="text-xs font-mono uppercase tracking-wider text-[#E10613] font-bold">
                   Statutory Registrations
                 </span>
                 <h2 className="text-2xl font-bold text-[#111111]">
@@ -198,7 +198,7 @@ export default function AboutPage() {
               </div>
               <div className="p-3.5 rounded-xl bg-[#F5F5F7] border border-[#E7E7EB] flex items-center justify-between">
                 <span className="text-neutral-500 font-medium">IndiaMART Verified Rating</span>
-                <span className="font-mono font-bold text-amber-600">4.8 / 5.0 Star Seller</span>
+                <span className="font-mono font-bold text-[#111111]">4.8 / 5.0 Star Seller</span>
               </div>
             </div>
 
@@ -231,10 +231,10 @@ export default function AboutPage() {
             {principles.map((pr) => (
               <div
                 key={pr.title}
-                className="bg-white rounded-2xl border border-[#E7E7EB] p-6 shadow-sm space-y-2"
+                className="bg-white rounded-2xl border border-[#E7E7EB] p-6 shadow-[0_4px_24px_rgba(17,17,17,0.04)] hover:shadow-[0_12px_32px_rgba(17,17,17,0.08)] hover:border-red-200 transition-all space-y-2 group"
               >
                 <div className="w-2 h-2 rounded-full bg-[#E10613]" />
-                <h3 className="text-base font-bold text-[#111111]">
+                <h3 className="text-base font-bold text-[#111111] group-hover:text-[#E10613] transition-colors">
                   {pr.title}
                 </h3>
                 <p className="text-xs text-[#737373] leading-relaxed">
@@ -246,7 +246,7 @@ export default function AboutPage() {
         </div>
 
         {/* Factory Location & Visit Coordination */}
-        <div className="bg-[#111111] text-white rounded-3xl p-8 sm:p-12 border border-neutral-800 flex flex-col md:flex-row items-center justify-between gap-8">
+        <div className="bg-[#111111] text-white rounded-3xl p-8 sm:p-12 border border-neutral-800 shadow-xl flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="space-y-3 max-w-xl text-center md:text-left">
             <span className="text-xs font-mono uppercase tracking-wider text-[#E10613] font-bold">
               Factory Visit Coordination
@@ -265,14 +265,15 @@ export default function AboutPage() {
           </div>
 
           <div className="flex flex-col sm:flex-row items-center gap-3 shrink-0">
-            <Button href="/contact" variant="primary" size="lg">
+            <Button href="/contact/" variant="primary" size="lg">
               Schedule Workshop Visit
             </Button>
             <a
               href={`tel:${cleanPhone}`}
-              className="px-6 py-3.5 rounded-full border border-neutral-700 hover:border-white text-xs font-bold text-white transition-colors"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full border border-neutral-700 hover:border-white text-xs font-bold text-white transition-colors"
             >
-              Call Works: {primaryPhone}
+              <Phone className="w-3.5 h-3.5 text-[#E10613]" />
+              <span>Call Works: {primaryPhone}</span>
             </a>
           </div>
         </div>

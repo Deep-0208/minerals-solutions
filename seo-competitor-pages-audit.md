@@ -48,7 +48,7 @@ graph TD
 | Technical Parameter | Double Pass Rotary Dryer (Minerals Solutions) | Triple Pass Rotary Dryer (Industry Standard) | Single Pass Drum Dryer |
 | :--- | :---: | :---: | :---: |
 | **Footprint Requirement** | **Compact (40% less than single pass)** | Ultra-compact (50% less) | High (long drum layout) |
-| **Thermal Efficiency** | **75% – 85%** | 80% – 88% | 55% – 65% |
+| **Thermal Efficiency** | **75% - 85%** | 80% - 88% | 55% - 65% |
 | **Moisture Handling Range** | **High (Up to 35% feed moisture)** | Moderate (Up to 25% moisture) | High (Wide tolerance) |
 | **Cleaning & Internal Flight Maintenance** | **Easy access between inner & outer shell** | Complex (Difficult to inspect middle drum) | Very easy |
 | **Clogging Risk (Sticky Minerals/Clays)** | **Low to Moderate** | High (Inner passes prone to choke) | Very Low |
@@ -95,7 +95,7 @@ graph TD
 #### Technical Specifications Breakdown
 | Engineering Parameter | Forged Alloy Steel Roller (EN19 / 42CrMo4) | High-Grade Cast Steel Roller (280-520W / ZG35CrMo) |
 | :--- | :---: | :---: |
-| **Tensile Strength** | 850 – 1000 MPa | 600 – 750 MPa |
+| **Tensile Strength** | 850 - 1000 MPa | 600 - 750 MPa |
 | **Internal Porosity / Defect Risk** | Zero (dense forged grain structure) | Requires 100% Ultrasonic Testing (UT) |
 | **Wear & Pitting Resistance** | Exceptional (Uniform surface induction hardening) | Good (Prone to localized spalling under shock) |
 | **Dynamic Load Capacity** | Up to 120 Tons per trunnion | Up to 60 Tons per trunnion |
@@ -117,23 +117,23 @@ graph TD
 To maximize conversion from incoming search traffic, every comparison page must follow this 7-step layout:
 
 1. **Above-the-Fold Instant Verdict (Hero Section):**
-   - High-contrast H1 (e.g., `Double Pass vs Triple Pass Rotary Dryers: Which Delivers Better ROI for Sand Processing?`).
-   - Quick 2-sentence executive summary.
-   - Dual CTA: `[Download Engineering Comparison PDF]` & `[Request Technical Sizing Quote]`.
+ - High-contrast H1 (e.g., `Double Pass vs Triple Pass Rotary Dryers: Which Delivers Better ROI for Sand Processing?`).
+ - Quick 2-sentence executive summary.
+ - Dual CTA: `[Download Engineering Comparison PDF]` & `[Request Technical Sizing Quote]`.
 2. **Interactive / Scannable Comparison Matrix:**
-   - Visual comparison table featuring green checkmarks, amber warnings, and exact operational parameters (TPH, Thermal %, Footprint).
+ - Visual comparison table featuring green checkmarks, amber warnings, and exact operational parameters (TPH, Thermal %, Footprint).
 3. **Deep-Dive Engineering Analysis:**
-   - 3–4 sections evaluating: Operating Cost (OPEX), Maintenance Downtime, Abrasive Wear Tolerance, and Fuel Options (Gas / Diesel / Biomass).
+ - 3-4 sections evaluating: Operating Cost (OPEX), Maintenance Downtime, Abrasive Wear Tolerance, and Fuel Options (Gas / Diesel / Biomass).
 4. **Interactive Equipment Sizing Calculator / Quote Widget:**
-   - Simple form: Select Material (Silica Sand / Biomass / Slag) → Input Feed Moisture % → Input Required Output TPH → Click `[Get Custom Machine Drawing & Quotation]`.
+ - Simple form: Select Material (Silica Sand / Biomass / Slag) → Input Feed Moisture % → Input Required Output TPH → Click `[Get Custom Machine Drawing & Quotation]`.
 5. **Direct Manufacturer Trust Signals:**
-   - Facility photo at Zak GIDC, Dahegam.
-   - Direct consultation callout with **Vipul A. Prajapati (`+91 9106163058`)**.
-   - Official RFQ dispatch to **`sales@mineralssolution.in`**.
+ - Facility photo at Zak GIDC, Dahegam.
+ - Direct consultation callout with **Vipul A. Prajapati (`+91 9106163058`)**.
+ - Official RFQ dispatch to **`sales@mineralssolution.in`**.
 6. **Transparent Fairness Disclaimer:**
-   - Stated objective evaluation criteria complying with advertising standards.
+ - Stated objective evaluation criteria complying with advertising standards.
 7. **Contextual Internal Linking:**
-   - Links to `/products/rotary-dryers/double-pass-dryer/`, `/products/dryer-support-rollers/`, and `/contact/`.
+ - Links to `/products/rotary-dryers/double-pass-dryer/`, `/products/dryer-support-rollers/`, and `/contact/`.
 
 ---
 

@@ -126,7 +126,7 @@ export default function RequestQuotePage() {
             <span>/</span>
             <span className="text-[#111111] font-semibold">Request a Quote</span>
           </nav>
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-100/70 text-[#E10613] text-xs font-bold uppercase tracking-wider mb-3">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-red-50 text-[#E10613] text-xs font-bold uppercase tracking-wider border border-red-100 mb-3">
             <FileText className="w-3.5 h-3.5" />
             <span>Direct Works Quotation</span>
           </div>
@@ -141,7 +141,7 @@ export default function RequestQuotePage() {
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           {/* Main RFQ Form (8 cols) */}
-          <div className="lg:col-span-8 bg-white rounded-2xl border border-[#E7E7EB] p-6 sm:p-8 lg:p-10 shadow-[0_4px_24px_rgba(17,17,17,0.05)]">
+          <div className="lg:col-span-8 bg-white rounded-3xl border border-[#E7E7EB] p-6 sm:p-8 lg:p-10 shadow-[0_4px_24px_rgba(17,17,17,0.04)]">
             {status.type === 'success' ? (
               <div className="py-12 px-4 text-center space-y-4">
                 <div className="w-16 h-16 bg-emerald-50 text-emerald-600 rounded-full flex items-center justify-center mx-auto">
@@ -560,8 +560,8 @@ export default function RequestQuotePage() {
           {/* Sidebar / Factory Contacts (4 cols) */}
           <div className="lg:col-span-4 space-y-6">
             {/* Direct Works Phone Card */}
-            <div className="bg-[#111111] text-white rounded-2xl p-6 sm:p-7 border border-neutral-800 space-y-4">
-              <div className="w-10 h-10 rounded-xl bg-red-600/20 text-[#E10613] flex items-center justify-center">
+            <div className="bg-[#111111] text-white rounded-3xl p-6 sm:p-8 border border-neutral-800 shadow-xl space-y-4">
+              <div className="w-10 h-10 rounded-xl bg-red-50 text-[#E10613] flex items-center justify-center border border-red-100">
                 <Phone className="w-5 h-5" />
               </div>
               <div>
@@ -600,12 +600,12 @@ export default function RequestQuotePage() {
             </div>
 
             {/* Works Location Card */}
-            <div className="bg-white rounded-2xl p-6 border border-[#E7E7EB] space-y-3">
+            <div className="bg-white rounded-3xl p-6 sm:p-7 border border-[#E7E7EB] shadow-[0_4px_24px_rgba(17,17,17,0.04)] space-y-3">
               <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#111111]">
                 <MapPin className="w-4 h-4 text-[#E10613]" />
                 <span>Manufacturing Works</span>
               </div>
-              <address className="not-italic text-xs text-neutral-600 leading-relaxed">
+              <address className="not-italic text-xs text-neutral-600 leading-relaxed font-medium">
                 Plot No. 10, Shed No. 3, Shyam Estate, Zak GIDC, Zak-Vahelal Road, Ta. Dahegam,
                 District Gandhinagar - 382330, Gujarat, India.
               </address>
@@ -617,9 +617,9 @@ export default function RequestQuotePage() {
             </div>
 
             {/* Turnkey Assurance */}
-            <div className="bg-white rounded-2xl p-6 border border-[#E7E7EB] space-y-2">
-              <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-emerald-700">
-                <CheckCircle2 className="w-4 h-4 text-emerald-600" />
+            <div className="bg-white rounded-3xl p-6 sm:p-7 border border-[#E7E7EB] shadow-[0_4px_24px_rgba(17,17,17,0.04)] space-y-2">
+              <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#111111]">
+                <CheckCircle2 className="w-4 h-4 text-[#E10613]" />
                 <span>What Happens Next?</span>
               </div>
               <ul className="text-xs text-neutral-600 space-y-2 pt-1">

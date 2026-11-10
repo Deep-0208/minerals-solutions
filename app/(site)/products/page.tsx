@@ -35,7 +35,7 @@ export default function ProductsPage() {
     {
       id: 'industrial-rotary-dryers',
       title: 'Industrial Rotary Dryers & Thermal Systems',
-      slug: '/products/industrial-rotary-dryers',
+      slug: '/products/industrial-rotary-dryers/',
       capacity: '500 kg/hr - 50 TPH',
       summary:
         'Continuous industrial drum drying systems engineered for high moisture reduction across silica sand, minerals, sawdust, gypsum, slag, and chemical salts.',
@@ -43,18 +43,17 @@ export default function ProductsPage() {
       alt: 'Minerals Solutions double pass concentric rotary dryer showing outer shell and heavy drive frame',
       icon: Flame,
       keyModels: [
-        'Single Pass Rotary Drum Dryers',
-        'Double Pass Concentric Rotary Dryers (Space-Saving)',
-        'Triple Pass Biomass & Aggregate Dryers',
-        'Rotary Calciners & Thermal Dehydrators',
-        'Coal, Biomass & Gas-Fired Hot Air Generators',
+        'Single / Double / Triple Pass Dryer',
+        'Dryer with Hot Air Generator',
+        'Dryer with Heat Exchanger Unit',
+        'Industrial Rotary Drum Dryer',
       ],
       materials: 'Silica sand, river sand, sawdust, biomass, slag, gypsum, fly ash, chemical salts',
     },
     {
       id: 'fertilizer-granulation-plants',
       title: 'Fertilizer Granulation & Pellet Plants',
-      slug: '/products/fertilizer-granulation-plants',
+      slug: '/products/fertilizer-granulation-plants/',
       capacity: '1 - 20 TPH',
       summary:
         'Turnkey chemical and organic fertilizer pelletizing lines designed for uniform particle sizing, high granulation yields, and continuous operation.',
@@ -62,18 +61,17 @@ export default function ProductsPage() {
       alt: 'Minerals Solutions complete fertilizer granulation plant installation showing granulator pan and conveyor feed',
       icon: Sprout,
       keyModels: [
-        'Pan / Disc Fertilizer Granulators (35°-55° Tilt)',
-        'Rotary Drum Granulators',
-        'Rotary Fertilizer Coolers & Dryers',
-        'Rotary Anti-Caking Coating Drums',
-        'Turnkey Bio-Compost Granulation Lines',
+        'Fertilizers Granulation Plant',
+        'Fertilizers Plant (Pan / Disc System)',
+        'Granulation Cooling & Coating Drums',
+        'Turnkey Fertilizer Processing Lines',
       ],
       materials: 'Organic compost, cow dung manure, NPK chemical fertilizers, bentonite clay balls',
     },
     {
       id: 'sand-washing-plants',
       title: 'Sand Washing & Mineral Recovery Plants',
-      slug: '/products/sand-washing-plants',
+      slug: '/products/sand-washing-plants/',
       capacity: '30 - 200 TPH',
       summary:
         'High-recovery washing and desliming plants designed to eliminate clay, silt, and mica while recovering valuable fine sand down to 75 microns (200 mesh).',
@@ -81,18 +79,17 @@ export default function ProductsPage() {
       alt: 'Minerals Solutions heavy bucket wheel sand washing plant at aggregate processing site',
       icon: Waves,
       keyModels: [
-        'Bucket Wheel Sand Washing Machines',
-        'Hydrocyclone Desliming & Dewatering Units',
-        'Spiral Screw Classifiers',
-        'Log Washers for Aggregates & Quartz',
-        'Rotary Trommel Washing Screens',
+        'Sand Washing & Screening Plant',
+        'Mineral Processing Equipment',
+        'Bucket Wheel & Hydrocyclone Washers',
+        'Washed & Graded Silica Sand Systems',
       ],
       materials: 'River sand, silica sand, crushed stone aggregate, quartz stone, mineral ores',
     },
     {
       id: 'industrial-conveyors-spares',
       title: 'Industrial Conveyors & Heavy Mechanical Spares',
-      slug: '/products/industrial-conveyors-spares',
+      slug: '/products/industrial-conveyors-spares/',
       capacity: '400 - 1600 mm Belt Width',
       summary:
         'Heavy material transit solutions and precision mechanical replacement components engineered for long service life in harsh, abrasive environments.',
@@ -100,11 +97,10 @@ export default function ProductsPage() {
       alt: 'Heavy industrial conveyor belt system lattice truss structure fabricated at Minerals Solutions workshop',
       icon: Boxes,
       keyModels: [
-        'Heavy-Duty Troughed Belt Conveyors',
-        'Motorized Drive & Tail Pulleys',
-        'Vulcanized Diamond-Pattern Rubber Lagging',
-        'Forged EN-8 / EN-9 Trunnion Rollers',
-        'Machined Cast Iron Girth Gears & Pinions',
+        'Conveyor Systems and Accessories',
+        'Road, Civil, Crusher Plants Spares',
+        'Heavy Troughed Belt Conveyors',
+        'Customized Fabrication Works',
       ],
       materials: 'Bulk mineral transfer, quarry aggregate, dryer feed and discharge logistics',
     },
@@ -120,7 +116,7 @@ export default function ProductsPage() {
             <span>/</span>
             <span className="text-[#111111] font-semibold">Products</span>
           </nav>
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-100 text-[#E10613] text-xs font-bold uppercase tracking-wider mb-3">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-50 text-[#E10613] text-xs font-bold uppercase tracking-wider border border-red-100 mb-3">
             <Boxes className="w-3.5 h-3.5" />
             <span>Heavy Equipment Portfolio</span>
           </div>
@@ -134,7 +130,7 @@ export default function ProductsPage() {
         </div>
 
         {/* 4 Divisions Detailed Showcase */}
-        <div className="space-y-12">
+        <div className="space-y-10">
           {categories.map((cat, idx) => {
             const Icon = cat.icon;
             const isEven = idx % 2 === 1;
@@ -143,7 +139,7 @@ export default function ProductsPage() {
               <div
                 key={cat.id}
                 id={cat.id}
-                className="bg-white rounded-3xl border border-[#E7E7EB] overflow-hidden shadow-[0_4px_24px_rgba(17,17,17,0.05)] grid grid-cols-1 lg:grid-cols-12 gap-0"
+                className="bg-white rounded-3xl border border-[#E7E7EB] overflow-hidden shadow-[0_4px_24px_rgba(17,17,17,0.04)] hover:shadow-[0_16px_40px_rgba(17,17,17,0.08)] hover:border-red-200 transition-all duration-300 grid grid-cols-1 lg:grid-cols-12 gap-0 group"
               >
                 {/* Media Side (5 cols) */}
                 <div
@@ -155,7 +151,7 @@ export default function ProductsPage() {
                     src={cat.image}
                     alt={cat.alt}
                     fill
-                    className="object-cover"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute top-4 left-4 bg-black/80 backdrop-blur-sm text-white px-3.5 py-1 rounded-full text-xs font-mono font-semibold">
                     Capacity: {cat.capacity}
@@ -167,11 +163,16 @@ export default function ProductsPage() {
                   isEven ? 'lg:order-1' : ''
                 }`}>
                   <div className="space-y-4">
-                    <div className="w-12 h-12 rounded-2xl bg-red-50 text-[#E10613] flex items-center justify-center">
-                      <Icon className="w-6 h-6" />
+                    <div className="flex items-center justify-between">
+                      <div className="w-12 h-12 rounded-2xl bg-red-50 text-[#E10613] flex items-center justify-center border border-red-100">
+                        <Icon className="w-6 h-6" />
+                      </div>
+                      <span className="text-xs font-mono font-bold text-neutral-400">
+                        Division 0{idx + 1}
+                      </span>
                     </div>
 
-                    <h2 className="text-2xl sm:text-3xl font-extrabold text-[#111111] tracking-tight">
+                    <h2 className="text-2xl sm:text-3xl font-extrabold text-[#111111] group-hover:text-[#E10613] tracking-tight transition-colors">
                       {cat.title}
                     </h2>
 
@@ -180,7 +181,7 @@ export default function ProductsPage() {
                     </p>
 
                     <div className="pt-2">
-                      <h3 className="text-xs font-bold uppercase tracking-wider text-[#111111] mb-2">
+                      <h3 className="text-xs font-bold uppercase tracking-wider text-[#111111] mb-2.5">
                         Key Equipment Models &amp; Configurations
                       </h3>
                       <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-neutral-700">
@@ -202,7 +203,7 @@ export default function ProductsPage() {
                     <Button href={cat.slug} variant="primary" size="md" icon={<ArrowRight className="w-4 h-4" />}>
                       Explore Specifications
                     </Button>
-                    <Button href="/request-quote" variant="outline" size="md">
+                    <Button href="/request-quote/" variant="outline" size="md">
                       Request Quotation
                     </Button>
                   </div>
@@ -213,7 +214,7 @@ export default function ProductsPage() {
         </div>
 
         {/* Technical Consultation CTA Banner */}
-        <div className="mt-16 bg-[#111111] text-white rounded-3xl p-8 sm:p-12 border border-neutral-800 flex flex-col md:flex-row items-center justify-between gap-8">
+        <div className="mt-16 bg-[#111111] text-white rounded-3xl p-8 sm:p-12 border border-neutral-800 shadow-xl flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="space-y-2 max-w-xl text-center md:text-left">
             <span className="text-xs font-mono uppercase tracking-wider text-[#E10613] font-bold">
               Engineering Consultation
@@ -228,7 +229,7 @@ export default function ProductsPage() {
           </div>
 
           <div className="flex flex-col sm:flex-row items-center gap-3 shrink-0">
-            <Button href="/request-quote" variant="primary" size="lg">
+            <Button href="/request-quote/" variant="primary" size="lg">
               Submit Plant Requirements
             </Button>
             <a
@@ -243,4 +244,3 @@ export default function ProductsPage() {
     </div>
   );
 }
-

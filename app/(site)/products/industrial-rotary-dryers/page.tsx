@@ -36,28 +36,28 @@ export default function RotaryDryersPage() {
 
   const dryerTypes = [
     {
-      name: 'Double Pass Concentric Rotary Dryer',
-      badge: 'Up to 40% Smaller Footprint',
-      desc: 'Features two nested concentric cylinders where wet feed travels through the inner cylinder and returns via the annular outer jacket, capturing heat from both surfaces.',
+      name: 'Single / Double / Triple Pass Dryer',
+      badge: 'Concentric Thermal Shells',
+      desc: 'Engineered nested concentric cylinders or single continuous rotating drums with internal cascading lifters, capturing maximum thermal efficiency with minimal factory bay footprint.',
       applications: 'Silica sand, foundry sands, organic fertilizer granules, and mineral aggregates.',
     },
     {
-      name: 'Single Pass Industrial Rotary Dryer',
-      badge: 'High Throughput Heavy Duty',
-      desc: 'Robust cylindrical drum inclined at 3-5 degrees, equipped with internal flight curtains that cascade material through co-current or counter-current hot air draft.',
+      name: 'Dryer with Hot Air Generator',
+      badge: 'Integrated Thermal Draft',
+      desc: 'Complete thermal assembly paired with high-efficiency refractory-lined hot air generator furnace fired by coal, biomass briquettes, agro-waste, or natural gas.',
       applications: 'River sand, limestone, crushed slag, bauxite, and coarse mineral ores.',
     },
     {
-      name: 'Triple Pass Drum Dryer',
-      badge: 'Optimal Thermal Efficiency',
-      desc: 'Three concentric passes designed for low-density or heat-sensitive materials requiring extended residence time without requiring excessive factory bay length.',
-      applications: 'Biomass sawdust, wood chips, agro-waste, and light chemical powders.',
+      name: 'Dryer with Heat Exchanger Unit',
+      badge: 'Indirect Clean Air Heating',
+      desc: 'Indirect shell-and-tube or plate heat exchanger unit ensuring flue gases never contact the material, preventing contamination and soot discoloration of sensitive minerals.',
+      applications: 'High-purity quartz sand, chemical salts, calcined minerals, and food-grade gypsum.',
     },
     {
-      name: 'Rotary Calciners & Dehydrators',
-      badge: 'High Temperature Treatment',
-      desc: 'Refractory-lined or indirect-heated rotating kilns operating up to 800°C for chemical transformation, crystal water dehydration, and mineral calcining.',
-      applications: 'Boric acid crystals, chemical salts, bentonite, and catalyst beads.',
+      name: 'Industrial Rotary Drum Dryer',
+      badge: 'High Tonnage Continuous Duty',
+      desc: 'Heavy-duty single cylinder rotary drum inclined at 3 to 5 degrees with heavy IS 2062 steel shell, girth gear drive, and forged EN-8/EN-9 support trunnion rollers.',
+      applications: 'Industrial silica sand, gypsum board slurry, biomass sawdust, and bulk ores.',
     },
   ];
 
@@ -81,7 +81,7 @@ export default function RotaryDryersPage() {
         <nav className="flex items-center gap-2 text-xs text-neutral-500 mb-4" aria-label="Breadcrumb">
           <Link href="/" className="hover:text-[#E10613]">Home</Link>
           <span>/</span>
-          <Link href="/products" className="hover:text-[#E10613]">Products</Link>
+          <Link href="/products/" className="hover:text-[#E10613]">Products</Link>
           <span>/</span>
           <span className="text-[#111111] font-semibold">Industrial Rotary Dryers</span>
         </nav>
@@ -89,7 +89,7 @@ export default function RotaryDryersPage() {
         {/* Hero Section */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center mb-16">
           <div className="lg:col-span-7 space-y-4">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-100 text-[#E10613] text-xs font-bold uppercase tracking-wider">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-red-50 text-[#E10613] text-xs font-bold uppercase tracking-wider border border-red-100 mb-3">
               <Flame className="w-3.5 h-3.5" />
               <span>Thermal Drying Systems</span>
             </div>
@@ -103,7 +103,7 @@ export default function RotaryDryersPage() {
             </p>
 
             <div className="pt-2 flex flex-wrap gap-3">
-              <Button href="/request-quote" variant="primary" size="md">
+              <Button href="/request-quote/" variant="primary" size="md">
                 Request Dryer Quote
               </Button>
               <a
@@ -162,28 +162,28 @@ export default function RotaryDryersPage() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-2">
-            <div className="p-4 rounded-2xl bg-[#F5F5F7] border border-[#E7E7EB] space-y-1">
+            <div className="p-4 rounded-2xl bg-[#F5F5F7] border border-[#E7E7EB] hover:border-red-200 transition-all space-y-1">
               <span className="text-xs font-bold text-[#111111] block">1. Feed &amp; Target Moisture</span>
               <p className="text-xs text-neutral-600">Initial moisture percentage vs required discharge dryness (e.g. 18% down to &lt; 0.5%).</p>
             </div>
-            <div className="p-4 rounded-2xl bg-[#F5F5F7] border border-[#E7E7EB] space-y-1">
+            <div className="p-4 rounded-2xl bg-[#F5F5F7] border border-[#E7E7EB] hover:border-red-200 transition-all space-y-1">
               <span className="text-xs font-bold text-[#111111] block">2. Bulk Density &amp; Particle Size</span>
               <p className="text-xs text-neutral-600">Material density, stickiness, angle of repose, and risk of airborne fine entrainment.</p>
             </div>
-            <div className="p-4 rounded-2xl bg-[#F5F5F7] border border-[#E7E7EB] space-y-1">
+            <div className="p-4 rounded-2xl bg-[#F5F5F7] border border-[#E7E7EB] hover:border-red-200 transition-all space-y-1">
               <span className="text-xs font-bold text-[#111111] block">3. Available Fuel Source</span>
               <p className="text-xs text-neutral-600">Solid fuel (coal/briquette), natural gas, or oil determine combustion chamber sizing.</p>
             </div>
-            <div className="p-4 rounded-2xl bg-[#F5F5F7] border border-[#E7E7EB] space-y-1">
+            <div className="p-4 rounded-2xl bg-[#F5F5F7] border border-[#E7E7EB] hover:border-red-200 transition-all space-y-1">
               <span className="text-xs font-bold text-[#111111] block">4. Footprint Constraints</span>
               <p className="text-xs text-neutral-600">Double pass concentric shells provide space savings where factory bay length is limited.</p>
             </div>
           </div>
 
-          <div className="p-4 rounded-xl bg-amber-50/70 border border-amber-200 text-xs text-amber-900 flex items-start gap-2.5">
-            <Info className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />
+          <div className="p-4 rounded-xl bg-neutral-50 border border-[#E7E7EB] text-xs text-neutral-700 flex items-start gap-2.5">
+            <Info className="w-4 h-4 text-[#E10613] shrink-0 mt-0.5" />
             <span>
-              <strong>Technical Note:</strong> Thermal efficiency and moisture reduction figures depend on operating
+              <strong className="text-[#111111]">Technical Note:</strong> Thermal efficiency and moisture reduction figures depend on operating
               conditions, ambient air temperature, and material feed consistency. Our team evaluates raw material
               samples before validating guaranteed performance curves.
             </span>
@@ -199,16 +199,18 @@ export default function RotaryDryersPage() {
             {dryerTypes.map((type) => (
               <div
                 key={type.name}
-                className="bg-white rounded-2xl border border-[#E7E7EB] p-6 sm:p-7 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between space-y-4"
+                className="bg-white rounded-2xl border border-[#E7E7EB] p-6 sm:p-7 shadow-[0_4px_24px_rgba(17,17,17,0.04)] hover:shadow-[0_12px_32px_rgba(17,17,17,0.08)] hover:border-red-200 transition-all flex flex-col justify-between space-y-4 group"
               >
                 <div className="space-y-2">
                   <div className="flex items-center justify-between">
-                    <span className="text-xs font-mono font-bold text-[#E10613] uppercase tracking-wider">
+                    <span className="inline-flex items-center px-2.5 py-0.5 rounded-full bg-red-50 text-[#E10613] text-xs font-mono font-bold uppercase tracking-wider border border-red-100">
                       {type.badge}
                     </span>
-                    <Flame className="w-4 h-4 text-neutral-400" />
+                    <div className="w-8 h-8 rounded-lg bg-red-50 text-[#E10613] flex items-center justify-center border border-red-100">
+                      <Flame className="w-4 h-4" />
+                    </div>
                   </div>
-                  <h3 className="text-lg font-bold text-[#111111]">
+                  <h3 className="text-lg font-bold text-[#111111] group-hover:text-[#E10613] transition-colors">
                     {type.name}
                   </h3>
                   <p className="text-xs sm:text-sm text-[#737373] leading-relaxed">
@@ -216,7 +218,7 @@ export default function RotaryDryersPage() {
                   </p>
                 </div>
                 <div className="pt-3 border-t border-neutral-100 text-xs text-neutral-600">
-                  <strong>Typical Materials:</strong> {type.applications}
+                  <strong className="text-[#111111]">Typical Materials:</strong> {type.applications}
                 </div>
               </div>
             ))}
@@ -235,7 +237,7 @@ export default function RotaryDryersPage() {
         </div>
 
         {/* Inquiry Call to Action */}
-        <div className="bg-[#111111] text-white rounded-3xl p-8 sm:p-12 border border-neutral-800 flex flex-col md:flex-row items-center justify-between gap-8">
+        <div className="bg-[#111111] text-white rounded-3xl p-8 sm:p-12 border border-neutral-800 shadow-xl flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="space-y-2 max-w-xl text-center md:text-left">
             <span className="text-xs font-mono uppercase tracking-wider text-[#E10613] font-bold">
               Custom Engineering Quote
@@ -250,14 +252,15 @@ export default function RotaryDryersPage() {
           </div>
 
           <div className="flex flex-col sm:flex-row items-center gap-3 shrink-0">
-            <Button href="/request-quote" variant="primary" size="lg">
+            <Button href="/request-quote/" variant="primary" size="lg">
               Request Dryer Quote
             </Button>
             <a
               href={`tel:${cleanPhone}`}
-              className="px-6 py-3.5 rounded-full border border-neutral-700 hover:border-white text-xs font-bold text-white transition-colors"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full border border-neutral-700 hover:border-white text-xs font-bold text-white transition-colors"
             >
-              Call Works: {primaryPhone}
+              <Phone className="w-3.5 h-3.5 text-[#E10613]" />
+              <span>Call Works: {primaryPhone}</span>
             </a>
           </div>
         </div>

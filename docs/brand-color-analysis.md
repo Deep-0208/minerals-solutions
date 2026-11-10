@@ -1,4 +1,4 @@
-# Minerals Solutions — Official Brand Identity & Color Analysis
+# Minerals Solutions -  Official Brand Identity & Color Analysis
 
 **Document Status:** Production Approved  
 **Source Asset:** Client Master Brand Asset (`Sharp MS Monogram Logo on White.png`, 1318×1193px) & IndiaMART Seller Identity  
@@ -59,15 +59,15 @@ Dominant Charcoal / Graphite Pixels: 291,385 pixels
 All color combinations have been mathematically validated to eliminate illegible low-contrast text:
 
 1. **White on Sharp Red (`#FFFFFF` on `#DA020D`):**  
-   - Contrast Ratio: **5.26:1** (Exceeds 4.5:1 AA standard for regular text; exceeds 3:1 for large text).
+ - Contrast Ratio: **5.26:1** (Exceeds 4.5:1 AA standard for regular text; exceeds 3:1 for large text).
 2. **White on Primary Hover (`#FFFFFF` on `#B3020B`):**  
-   - Contrast Ratio: **7.22:1** (Exceeds 7:1 AAA standard).
+ - Contrast Ratio: **7.22:1** (Exceeds 7:1 AAA standard).
 3. **Sharp Black on White (`#181818` on `#FFFFFF`):**  
-   - Contrast Ratio: **17.76:1** (Exceeds 7:1 AAA standard).
+ - Contrast Ratio: **17.76:1** (Exceeds 7:1 AAA standard).
 4. **Slate 900 on White (`#0F172A` on `#FFFFFF`):**  
-   - Contrast Ratio: **17.85:1** (Exceeds 7:1 AAA standard).
+ - Contrast Ratio: **17.85:1** (Exceeds 7:1 AAA standard).
 5. **Slate 800 on White (`#334155` on `#FFFFFF`):**  
-   - Contrast Ratio: **9.61:1** (Exceeds 7:1 AAA standard).
+ - Contrast Ratio: **9.61:1** (Exceeds 7:1 AAA standard).
 
 ---
 
@@ -76,14 +76,14 @@ All color combinations have been mathematically validated to eliminate illegible
 All old logo files have been deleted. The following production assets are derived from `Sharp MS Monogram Logo on White.png`:
 - **Master Pure White:** `public/images/brand/logo.png` & `logo.webp` (Master 1266×1193px)
 - **Scaled WebP (Light Context):**
-  - `public/images/brand/logo-lg.webp` (512×512px)
-  - `public/images/brand/logo-md.webp` (256×256px)
-  - `public/images/brand/logo-thumb.webp` (128×128px)
+ - `public/images/brand/logo-lg.webp` (512×512px)
+ - `public/images/brand/logo-md.webp` (256×256px)
+ - `public/images/brand/logo-thumb.webp` (128×128px)
 - **Transparent WebP (Universal Navigation):**
-  - `public/images/brand/logo-transparent.png` & `logo-transparent.webp` (Master)
-  - `public/images/brand/logo-transparent-md.webp` (256×256px)
-  - `public/images/brand/logo-transparent-thumb.webp` (128×128px)
+ - `public/images/brand/logo-transparent.png` & `logo-transparent.webp` (Master)
+ - `public/images/brand/logo-transparent-md.webp` (256×256px)
+ - `public/images/brand/logo-transparent-thumb.webp` (128×128px)
 - **Dark Mode WebP (Footer & Dark Context):**
-  - `public/images/brand/logo-dark.png` & `logo-dark.webp` (Master with white 'S' + vivid red 'M')
-  - `public/images/brand/logo-dark-md.webp` (256×256px)
-  - `public/images/brand/logo-dark-thumb.webp` (128×128px)
+ - `public/images/brand/logo-dark.png` & `logo-dark.webp` (Master with white 'S' + vivid red 'M')
+ - `public/images/brand/logo-dark-md.webp` (256×256px)
+ - `public/images/brand/logo-dark-thumb.webp` (128×128px)

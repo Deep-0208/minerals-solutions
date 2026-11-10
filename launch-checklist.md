@@ -16,20 +16,20 @@ Before domain DNS points to production, the staging environment must pass 100% o
 - [ ] **Trailing Slash Parity:** Requests to `https://mineralssolution.in/products` 308 redirect directly to `https://mineralssolution.in/products/`.
 - [ ] **Custom 404 Page:** Custom error page renders with HTTP 404 status (no soft 404s), maintaining site navigation and search links.
 - [ ] **Security Headers:**
-  - `X-Frame-Options: SAMEORIGIN`
-  - `X-Content-Type-Options: nosniff`
-  - `Referrer-Policy: strict-origin-when-cross-origin`
-  - Production Content Security Policy (CSP) active with zero `unsafe-eval`.
+ - `X-Frame-Options: SAMEORIGIN`
+ - `X-Content-Type-Options: nosniff`
+ - `Referrer-Policy: strict-origin-when-cross-origin`
+ - Production Content Security Policy (CSP) active with zero `unsafe-eval`.
 
 ### B. Search Engine Crawlability & Metadata
 - [ ] **Robots.txt Active:** Located at `/robots.txt` with HTTP 200 OK, linking to `https://mineralssolution.in/sitemap.xml`.
 - [ ] **XML Sitemap Active:** Located at `/sitemap.xml` with HTTP 200 OK. Contains all 33 canonical routes with trailing slashes. Zero 404 or redirect URLs inside sitemap.
 - [ ] **Meta Robots Directives:** Staging environment has `noindex` removed prior to production cutover; all production pages serve `<meta name="robots" content="index, follow">`.
-- [ ] **Metadata Display Validation:** All 33 routes have unique title tags (calibrated ~50–60 characters) and unique meta descriptions (~140–160 characters).
+- [ ] **Metadata Display Validation:** All 33 routes have unique title tags (calibrated ~50-60 characters) and unique meta descriptions (~140-160 characters).
 - [ ] **Structured Data Validation:** Tested via Google Rich Results Test and Schema.org Validator:
-  - Homepage: Valid `Organization`, `WebSite`, `LocalBusiness`.
-  - Spoke Pages: Valid `Product`, `BreadcrumbList`.
-  - Zero fake ratings or `AggregateRating` leaks.
+ - Homepage: Valid `Organization`, `WebSite`, `LocalBusiness`.
+ - Spoke Pages: Valid `Product`, `BreadcrumbList`.
+ - Zero fake ratings or `AggregateRating` leaks.
 
 ### C. Asset & Performance Verification
 - [ ] **WebP Responsive Imagery:** All 89 photos load as compressed `.webp` files with explicit `width` and `height` attributes to prevent CLS.
@@ -85,7 +85,7 @@ Execute in sequence during production cutover:
 * **Conversion Funnel Test:** Verify real WhatsApp and phone leads are reaching Mr. Vipulbhai A. Prajapati and being logged in GA4.
 
 ### Days 31 to 60: Search Query Mining & CTR Optimization
-* **GSC Search Performance Audit:** Identify impressions with high search volume but low CTR (positions 5–15).
+* **GSC Search Performance Audit:** Identify impressions with high search volume but low CTR (positions 5-15).
 * **Snippet Refinement:** Tweak title tags and meta descriptions on spoke pages to match exact queries users are searching for in Gujarat and pan-India.
 * **Internal Link Optimization:** Add contextual body links from newly indexing pages to deeper machine spokes based on user navigation paths.
 * **B2B Directory Citation Expansion:** Ensure consistent NAP across TradeIndia, ExportersIndia, YellowPages India, and regional GIDC business directories.

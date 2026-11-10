@@ -102,7 +102,7 @@ export default function IndustriesPage() {
 
         {/* Hero Section */}
         <div className="max-w-3xl mb-16 space-y-4">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-100 text-[#E10613] text-xs font-bold uppercase tracking-wider">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-red-50 text-[#E10613] text-xs font-bold uppercase tracking-wider border border-red-100 mb-3">
             <Factory className="w-3.5 h-3.5" />
             <span>Industrial Sector Solutions</span>
           </div>
@@ -122,14 +122,14 @@ export default function IndustriesPage() {
             return (
               <div
                 key={sec.title}
-                className="bg-white rounded-3xl border border-[#E7E7EB] p-6 sm:p-8 shadow-[0_4px_24px_rgba(17,17,17,0.04)] flex flex-col justify-between space-y-6"
+                className="bg-white rounded-3xl border border-[#E7E7EB] p-6 sm:p-8 shadow-[0_4px_24px_rgba(17,17,17,0.04)] hover:shadow-[0_12px_32px_rgba(17,17,17,0.08)] hover:border-red-200 transition-all flex flex-col justify-between space-y-6 group"
               >
                 <div className="space-y-4">
-                  <div className="w-12 h-12 rounded-2xl bg-red-50 text-[#E10613] flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-2xl bg-red-50 text-[#E10613] flex items-center justify-center border border-red-100">
                     <Icon className="w-6 h-6" />
                   </div>
 
-                  <h2 className="text-xl sm:text-2xl font-bold text-[#111111]">
+                  <h2 className="text-xl sm:text-2xl font-bold text-[#111111] group-hover:text-[#E10613] transition-colors">
                     {sec.title}
                   </h2>
 
@@ -154,14 +154,14 @@ export default function IndustriesPage() {
                     {sec.machinery.map((m) => (
                       <span
                         key={m}
-                        className="px-2.5 py-1 rounded-md bg-[#F5F5F7] text-[#111111] text-xs font-medium"
+                        className="px-2.5 py-1 rounded-md bg-[#F5F5F7] text-[#111111] text-xs font-medium border border-neutral-200"
                       >
                         {m}
                       </span>
                     ))}
                   </div>
 
-                  <Button href="/request-quote" variant="outline" size="sm" className="w-full">
+                  <Button href="/request-quote/" variant="outline" size="sm" className="w-full">
                     Discuss Sector Requirements
                   </Button>
                 </div>
@@ -171,7 +171,7 @@ export default function IndustriesPage() {
         </div>
 
         {/* Call to Action */}
-        <div className="bg-[#111111] text-white rounded-3xl p-8 sm:p-12 border border-neutral-800 flex flex-col md:flex-row items-center justify-between gap-8">
+        <div className="bg-[#111111] text-white rounded-3xl p-8 sm:p-12 border border-neutral-800 shadow-xl flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="space-y-2 max-w-xl text-center md:text-left">
             <span className="text-xs font-mono uppercase tracking-wider text-[#E10613] font-bold">
               Material Feasibility Testing
@@ -186,14 +186,15 @@ export default function IndustriesPage() {
           </div>
 
           <div className="flex flex-col sm:flex-row items-center gap-3 shrink-0">
-            <Button href="/request-quote" variant="primary" size="lg">
+            <Button href="/request-quote/" variant="primary" size="lg">
               Request Technical Consultation
             </Button>
             <a
               href={`tel:${cleanPhone}`}
-              className="px-6 py-3.5 rounded-full border border-neutral-700 hover:border-white text-xs font-bold text-white transition-colors"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full border border-neutral-700 hover:border-white text-xs font-bold text-white transition-colors"
             >
-              Call Works: {primaryPhone}
+              <Phone className="w-3.5 h-3.5 text-[#E10613]" />
+              <span>Call Works: {primaryPhone}</span>
             </a>
           </div>
         </div>

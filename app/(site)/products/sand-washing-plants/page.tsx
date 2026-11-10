@@ -36,28 +36,28 @@ export default function SandWashingPlantsPage() {
 
   const equipmentList = [
     {
-      name: 'Bucket Wheel Sand Washing Machine',
-      badge: 'High Recovery Silt Removal',
-      desc: 'Slow-rotating wheel with perforated dewatering buckets scooping washed sand out of the settling pool, ensuring minimal fine loss and low maintenance power consumption.',
-      capacity: '30 - 150 TPH',
+      name: 'Sand Washing & Screening Plant',
+      badge: 'Integrated Washing Circuit',
+      desc: 'Complete turnkey aggregate and sand washing systems combining multi-deck wet vibrating screens, feed hoppers, slurry pumps, and dewatering units.',
+      capacity: '30 - 200 TPH',
     },
     {
-      name: 'Hydrocyclone Desliming & Dewatering Unit',
+      name: 'Mineral Processing Equipment',
+      badge: 'High-Attrition Beneficiation',
+      desc: 'Heavy industrial scrubbers, log washers, spiral screw classifiers, and trommel washing screens designed to liberate tough adhering clay and silts from ores and quartz.',
+      capacity: '20 - 150 TPH',
+    },
+    {
+      name: 'Bucket Wheel & Hydrocyclone Washers',
       badge: 'Down to 75 Micron Recovery',
-      desc: 'Polyurethane-lined hydrocyclone cluster driven by heavy slurry pump, capturing 0.075 mm fine sand from wash water and discharging onto high-frequency linear dewatering screen.',
-      capacity: '50 - 200 TPH',
+      desc: 'High-recovery bucket wheel scooper paired with polyurethane-lined hydrocyclones and high-frequency dewatering screens, minimizing fine sand loss to settling ponds.',
+      capacity: '30 - 200 TPH',
     },
     {
-      name: 'Spiral Screw Sand Classifier',
-      badge: 'Continuous Coarse & Fine Separation',
-      desc: 'Continuous Archimedean screw flights with wear-resistant replaceable shoe liners that convey settled solids upward while overflow weir discharges suspended silts.',
-      capacity: '20 - 100 TPH',
-    },
-    {
-      name: 'Quartz Stone & Aggregate Log Washer',
-      badge: 'Aggressive Clay Scrubbing',
-      desc: 'Contra-rotating twin shafts with manganese steel paddle blades providing intense mechanical attrition to scour stubborn plastic clays and loam from gravel and quartz.',
-      capacity: '30 - 120 TPH',
+      name: 'Washed & Graded Silica Sand Systems',
+      badge: 'Precision Sieve Classification',
+      desc: 'Specialized wet processing trains producing ultra-clean silica sand for foundries, glass plants, construction chemicals, and epoxy flooring formulations.',
+      capacity: 'Custom Engineered',
     },
   ];
 
@@ -80,7 +80,7 @@ export default function SandWashingPlantsPage() {
         <nav className="flex items-center gap-2 text-xs text-neutral-500 mb-4" aria-label="Breadcrumb">
           <Link href="/" className="hover:text-[#E10613]">Home</Link>
           <span>/</span>
-          <Link href="/products" className="hover:text-[#E10613]">Products</Link>
+          <Link href="/products/" className="hover:text-[#E10613]">Products</Link>
           <span>/</span>
           <span className="text-[#111111] font-semibold">Sand Washing Plants</span>
         </nav>
@@ -88,7 +88,7 @@ export default function SandWashingPlantsPage() {
         {/* Hero Section */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center mb-16">
           <div className="lg:col-span-7 space-y-4">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-100 text-[#E10613] text-xs font-bold uppercase tracking-wider">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-red-50 text-[#E10613] text-xs font-bold uppercase tracking-wider border border-red-100 mb-3">
               <Waves className="w-3.5 h-3.5" />
               <span>Mineral Recovery &amp; Desliming</span>
             </div>
@@ -102,7 +102,7 @@ export default function SandWashingPlantsPage() {
             </p>
 
             <div className="pt-2 flex flex-wrap gap-3">
-              <Button href="/request-quote" variant="primary" size="md">
+              <Button href="/request-quote/" variant="primary" size="md">
                 Request Washing Plant Quote
               </Button>
               <a
@@ -160,28 +160,28 @@ export default function SandWashingPlantsPage() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-2">
-            <div className="p-4 rounded-2xl bg-[#F5F5F7] border border-[#E7E7EB] space-y-1">
+            <div className="p-4 rounded-2xl bg-[#F5F5F7] border border-[#E7E7EB] hover:border-red-200 transition-all space-y-1">
               <span className="text-xs font-bold text-[#111111] block">1. Silt &amp; Clay Content</span>
               <p className="text-xs text-neutral-600">Feed washing requirement depends on whether clay is free silt or plastic adherent coatings.</p>
             </div>
-            <div className="p-4 rounded-2xl bg-[#F5F5F7] border border-[#E7E7EB] space-y-1">
+            <div className="p-4 rounded-2xl bg-[#F5F5F7] border border-[#E7E7EB] hover:border-red-200 transition-all space-y-1">
               <span className="text-xs font-bold text-[#111111] block">2. Particle Size Sieve Grading</span>
               <p className="text-xs text-neutral-600">Target zone classification (e.g. Zone II plaster sand vs glass-grade silica sand).</p>
             </div>
-            <div className="p-4 rounded-2xl bg-[#F5F5F7] border border-[#E7E7EB] space-y-1">
+            <div className="p-4 rounded-2xl bg-[#F5F5F7] border border-[#E7E7EB] hover:border-red-200 transition-all space-y-1">
               <span className="text-xs font-bold text-[#111111] block">3. Water Availability &amp; Recycling</span>
               <p className="text-xs text-neutral-600">Thickener tank and filter press integration allows up to 90% closed-loop water recovery.</p>
             </div>
-            <div className="p-4 rounded-2xl bg-[#F5F5F7] border border-[#E7E7EB] space-y-1">
+            <div className="p-4 rounded-2xl bg-[#F5F5F7] border border-[#E7E7EB] hover:border-red-200 transition-all space-y-1">
               <span className="text-xs font-bold text-[#111111] block">4. Stockpile Dewatering</span>
               <p className="text-xs text-neutral-600">High frequency dewatering screen removes excess water, allowing immediate loading on trucks.</p>
             </div>
           </div>
 
-          <div className="p-4 rounded-xl bg-amber-50/70 border border-amber-200 text-xs text-amber-900 flex items-start gap-2.5">
-            <Info className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />
+          <div className="p-4 rounded-xl bg-neutral-50 border border-[#E7E7EB] text-xs text-neutral-700 flex items-start gap-2.5">
+            <Info className="w-4 h-4 text-[#E10613] shrink-0 mt-0.5" />
             <span>
-              <strong>Validation Note:</strong> Recovery down to 75 microns and discharged moisture under 15%
+              <strong className="text-[#111111]">Validation Note:</strong> Recovery down to 75 microns and discharged moisture under 15%
               require proper cyclone operating pressure and suitable feed sieve curves. Sieve analysis of raw
               feed is recommended prior to final plant sign-off.
             </span>
@@ -197,16 +197,18 @@ export default function SandWashingPlantsPage() {
             {equipmentList.map((eq) => (
               <div
                 key={eq.name}
-                className="bg-white rounded-2xl border border-[#E7E7EB] p-6 sm:p-7 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between space-y-4"
+                className="bg-white rounded-2xl border border-[#E7E7EB] p-6 sm:p-7 shadow-[0_4px_24px_rgba(17,17,17,0.04)] hover:shadow-[0_12px_32px_rgba(17,17,17,0.08)] hover:border-red-200 transition-all flex flex-col justify-between space-y-4 group"
               >
                 <div className="space-y-2">
                   <div className="flex items-center justify-between">
-                    <span className="text-xs font-mono font-bold text-[#E10613] uppercase tracking-wider">
+                    <span className="inline-flex items-center px-2.5 py-0.5 rounded-full bg-red-50 text-[#E10613] text-xs font-mono font-bold uppercase tracking-wider border border-red-100">
                       {eq.badge}
                     </span>
-                    <Waves className="w-4 h-4 text-neutral-400" />
+                    <div className="w-8 h-8 rounded-lg bg-red-50 text-[#E10613] flex items-center justify-center border border-red-100">
+                      <Waves className="w-4 h-4" />
+                    </div>
                   </div>
-                  <h3 className="text-lg font-bold text-[#111111]">
+                  <h3 className="text-lg font-bold text-[#111111] group-hover:text-[#E10613] transition-colors">
                     {eq.name}
                   </h3>
                   <p className="text-xs sm:text-sm text-[#737373] leading-relaxed">
@@ -214,7 +216,7 @@ export default function SandWashingPlantsPage() {
                   </p>
                 </div>
                 <div className="pt-3 border-t border-neutral-100 text-xs text-neutral-600 font-mono">
-                  <strong>Operating Capacity:</strong> {eq.capacity}
+                  <strong className="text-[#111111]">Operating Capacity:</strong> {eq.capacity}
                 </div>
               </div>
             ))}
@@ -233,7 +235,7 @@ export default function SandWashingPlantsPage() {
         </div>
 
         {/* Call to Action */}
-        <div className="bg-[#111111] text-white rounded-3xl p-8 sm:p-12 border border-neutral-800 flex flex-col md:flex-row items-center justify-between gap-8">
+        <div className="bg-[#111111] text-white rounded-3xl p-8 sm:p-12 border border-neutral-800 shadow-xl flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="space-y-2 max-w-xl text-center md:text-left">
             <span className="text-xs font-mono uppercase tracking-wider text-[#E10613] font-bold">
               Quarry &amp; Sand Plant Consultation
@@ -248,14 +250,15 @@ export default function SandWashingPlantsPage() {
           </div>
 
           <div className="flex flex-col sm:flex-row items-center gap-3 shrink-0">
-            <Button href="/request-quote" variant="primary" size="lg">
+            <Button href="/request-quote/" variant="primary" size="lg">
               Request Washing Plant Quote
             </Button>
             <a
               href={`tel:${cleanPhone}`}
-              className="px-6 py-3.5 rounded-full border border-neutral-700 hover:border-white text-xs font-bold text-white transition-colors"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full border border-neutral-700 hover:border-white text-xs font-bold text-white transition-colors"
             >
-              Call Works: {primaryPhone}
+              <Phone className="w-3.5 h-3.5 text-[#E10613]" />
+              <span>Call Works: {primaryPhone}</span>
             </a>
           </div>
         </div>
