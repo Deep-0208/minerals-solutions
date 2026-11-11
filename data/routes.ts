@@ -660,7 +660,27 @@ export const routes: CanonicalRoute[] = [
     },
   },
 
-  // 7. Pillar 4: Industrial Conveyor Systems & Material Handling
+  // 7. Pillar 4: Industrial Conveyors & Spares
+  {
+    path: '/products/industrial-conveyors-spares/bucket-elevators/',
+    label: 'Bucket Elevators',
+    priority: 0.85,
+    changeFreq: 'weekly',
+    navGroup: 'conveyors',
+    pillarPath: '/products/industrial-conveyors-spares/',
+    breadcrumbTrail: [
+      { label: 'Home', href: '/' },
+      { label: 'Products', href: '/products/' },
+      { label: 'Industrial Conveyors & Spares', href: '/products/industrial-conveyors-spares/' },
+      { label: 'Bucket Elevators', href: '/products/industrial-conveyors-spares/bucket-elevators/' },
+    ],
+    seo: {
+      title: 'Bucket Elevator Manufacturers | Minerals Solutions',
+      description: 'Heavy duty industrial bucket elevators (5 to 100 TPH, up to 45m height). Centrifugal & continuous chain/belt drives. Zak GIDC, Dahegam, Gujarat.',
+      keywords: ['bucket elevator manufacturers', 'bucket elevator manufacturer in ahmedabad', 'continuous bucket elevator gujarat', 'centrifugal discharge elevator', 'heavy chain bucket elevator'],
+      canonical: `${SITE_URL}/products/industrial-conveyors-spares/bucket-elevators/`,
+    },
+  },
   {
     path: '/products/conveyor-systems/',
     label: 'Conveyor Systems',

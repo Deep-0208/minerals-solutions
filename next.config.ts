@@ -245,6 +245,26 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/bucket-elevator/',
+        destination: '/products/industrial-conveyors-spares/bucket-elevators/',
+        permanent: true,
+      },
+      {
+        source: '/bucket-elevator-manufacturer/',
+        destination: '/products/industrial-conveyors-spares/bucket-elevators/',
+        permanent: true,
+      },
+      {
+        source: '/industrial-bucket-elevator/',
+        destination: '/products/industrial-conveyors-spares/bucket-elevators/',
+        permanent: true,
+      },
+      {
+        source: '/products/conveyor-systems/bucket-elevators/',
+        destination: '/products/industrial-conveyors-spares/bucket-elevators/',
+        permanent: true,
+      },
+      {
         source: '/industrial-conveyor-belt-system-manufacturer/',
         destination: '/products/industrial-conveyors-spares/',
         permanent: true,

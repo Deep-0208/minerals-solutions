@@ -24,6 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/products/fertilizer-granulation-plants/rotary-drum-granulator/', priority: 0.85, changeFrequency: 'weekly' as const },
     { path: '/products/fertilizer-granulation-plants/fertilizer-cooling-coating-drum/', priority: 0.85, changeFrequency: 'weekly' as const },
     { path: '/products/industrial-conveyors-spares/', priority: 0.9, changeFrequency: 'weekly' as const },
+    { path: '/products/industrial-conveyors-spares/bucket-elevators/', priority: 0.85, changeFrequency: 'weekly' as const },
     { path: '/industries/', priority: 0.85, changeFrequency: 'monthly' as const },
     { path: '/manufacturing/', priority: 0.85, changeFrequency: 'monthly' as const },
     { path: '/about/', priority: 0.8, changeFrequency: 'monthly' as const },
