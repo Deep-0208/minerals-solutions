@@ -544,6 +544,26 @@ export const routes: CanonicalRoute[] = [
     },
   },
   {
+    path: '/products/fertilizer-granulation-plants/rotary-drum-granulator/',
+    label: 'Rotary Drum Granulator',
+    priority: 0.85,
+    changeFreq: 'weekly',
+    navGroup: 'fertilizer',
+    pillarPath: '/products/fertilizer-granulation-plants/',
+    breadcrumbTrail: [
+      { label: 'Home', href: '/' },
+      { label: 'Products', href: '/products/' },
+      { label: 'Fertilizer Granulation Plants', href: '/products/fertilizer-granulation-plants/' },
+      { label: 'Rotary Drum Granulator', href: '/products/fertilizer-granulation-plants/rotary-drum-granulator/' },
+    ],
+    seo: {
+      title: 'Rotary Drum Granulator Machine | Minerals Solutions',
+      description: 'High capacity rotary drum fertilizer granulators (3 to 20 TPH). Internal steam injection & UHMWPE non-stick lining. Zak GIDC, Dahegam, Gujarat.',
+      keywords: ['rotary drum granulator', 'compound fertilizer drum granulator', 'npk rotary granulator machine', 'rotary granulator manufacturer gujarat'],
+      canonical: `${SITE_URL}/products/fertilizer-granulation-plants/rotary-drum-granulator/`,
+    },
+  },
+  {
     path: '/products/granulation-pellet-plants/fertilizer-plant/',
     label: 'Turnkey Fertilizer Plant',
     priority: 0.85,

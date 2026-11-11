@@ -141,7 +141,17 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/rotary-drum-granulator-plant/',
-        destination: '/products/fertilizer-granulation-plants/#machinery',
+        destination: '/products/fertilizer-granulation-plants/rotary-drum-granulator/',
+        permanent: true,
+      },
+      {
+        source: '/rotary-drum-granulator/',
+        destination: '/products/fertilizer-granulation-plants/rotary-drum-granulator/',
+        permanent: true,
+      },
+      {
+        source: '/products/granulation-pellet-plants/rotary-drum-granulator/',
+        destination: '/products/fertilizer-granulation-plants/rotary-drum-granulator/',
         permanent: true,
       },
       {
