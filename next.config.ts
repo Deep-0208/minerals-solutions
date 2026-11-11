@@ -175,6 +175,21 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/products/mineral-processing/quartz-stone-washer/',
+        destination: '/products/sand-washing-plants/mineral-log-washer/',
+        permanent: true,
+      },
+      {
+        source: '/products/sand-washing-plants/quartz-stone-washer/',
+        destination: '/products/sand-washing-plants/mineral-log-washer/',
+        permanent: true,
+      },
+      {
+        source: '/quartz-stone-washer-machine/',
+        destination: '/products/sand-washing-plants/mineral-log-washer/',
+        permanent: true,
+      },
+      {
         source: '/products/conveyor-systems/',
         destination: '/products/industrial-conveyors-spares/',
         permanent: true,
