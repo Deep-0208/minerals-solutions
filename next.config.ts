@@ -80,6 +80,11 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/products/rotary-dryers/biomass-sawdust-dryer/',
+        destination: '/products/industrial-rotary-dryers/biomass-sawdust-dryer/',
+        permanent: true,
+      },
+      {
         source: '/rotary-dryer-manufacturer-ahmedabad/',
         destination: '/products/industrial-rotary-dryers/',
         permanent: true,
@@ -91,7 +96,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/saw-dust-dryer-machine/',
-        destination: '/products/industrial-rotary-dryers/#configurations',
+        destination: '/products/industrial-rotary-dryers/biomass-sawdust-dryer/',
         permanent: true,
       },
       {
