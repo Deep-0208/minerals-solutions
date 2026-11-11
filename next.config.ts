@@ -116,7 +116,17 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/disc-pan-granulator-machine/',
-        destination: '/products/fertilizer-granulation-plants/#machinery',
+        destination: '/products/fertilizer-granulation-plants/disc-granulator/',
+        permanent: true,
+      },
+      {
+        source: '/pan-disc-granulator-machine/',
+        destination: '/products/fertilizer-granulation-plants/disc-granulator/',
+        permanent: true,
+      },
+      {
+        source: '/products/granulation-pellet-plants/disc-granulator/',
+        destination: '/products/fertilizer-granulation-plants/disc-granulator/',
         permanent: true,
       },
       {
