@@ -19,20 +19,78 @@ import {
 } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { Button } from '@/components/ui/Button';
+import { JsonLd } from '@/components/seo/JsonLd';
 import { company } from '@/data/company';
 
 export const metadata: Metadata = {
-  title: 'Manufacturing Facility & Heavy Fabrication Capabilities | Zak GIDC Dahegam',
+  title: {
+    absolute: 'Manufacturing Facility & Heavy Fabrication Works | Zak GIDC',
+  },
   description:
-    'Tour Minerals Solutions manufacturing facility in Zak GIDC, Dahegam, Gujarat. Heavy plate rolling (up to 25mm+), submerged arc welding, dynamic balancing, and lathe machining.',
+    'Tour Minerals Solutions heavy fabrication facility in Zak GIDC, Dahegam. Plate rolling to 25mm+, submerged arc welding, and lathe machining.',
   alternates: {
     canonical: '/manufacturing/',
+  },
+  openGraph: {
+    title: 'Manufacturing Facility & Heavy Fabrication Works | Zak GIDC',
+    description:
+      'In-house heavy engineering facility in Zak GIDC, Dahegam, Gujarat: plate bending, submerged arc welding, dynamic drum balancing, and lathe turning.',
+    url: `${company.siteUrl}/manufacturing/`,
+    siteName: 'Minerals Solutions',
+    locale: 'en_IN',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Manufacturing Facility & Heavy Fabrication Works | Zak GIDC',
+    description:
+      'In-house heavy equipment fabrication infrastructure at Zak GIDC, Dahegam, Gujarat.',
   },
 };
 
 export default function ManufacturingPage() {
   const primaryPhone = company.telephones[0] || '+91 63524 53050';
   const cleanPhone = primaryPhone.replace(/\s+/g, '');
+
+  const manufacturingSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': `${company.siteUrl}/manufacturing/#webpage`,
+    url: `${company.siteUrl}/manufacturing/`,
+    name: 'Manufacturing Facility & Heavy Fabrication Works | Zak GIDC',
+    description:
+      'Heavy fabrication, machining, and dynamic testing infrastructure of Minerals Solutions in Zak GIDC, Dahegam, Gujarat.',
+    mainEntity: {
+      '@type': 'LocalBusiness',
+      '@id': `${company.siteUrl}/#organization`,
+      name: company.legalName,
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: company.address.streetAddress,
+        addressLocality: company.address.locality,
+        addressRegion: company.address.regionName,
+        postalCode: company.address.postalCode,
+        addressCountry: company.address.country,
+      },
+    },
+    breadcrumb: {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Home',
+          item: `${company.siteUrl}/`,
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: 'Manufacturing Infrastructure',
+          item: `${company.siteUrl}/manufacturing/`,
+        },
+      ],
+    },
+  };
 
   const capabilities = [
     {
@@ -101,8 +159,10 @@ export default function ManufacturingPage() {
   ];
 
   return (
-    <div className="bg-[#F5F5F7] min-h-screen py-10 lg:py-16">
-      <Container>
+    <>
+      <JsonLd data={manufacturingSchema} />
+      <div className="bg-[#F5F5F7] min-h-screen py-10 lg:py-16">
+        <Container>
         {/* Breadcrumb Navigation */}
         <nav className="flex items-center gap-2 text-xs text-neutral-500 mb-4" aria-label="Breadcrumb">
           <Link href="/" className="hover:text-[#E10613]">Home</Link>
@@ -266,6 +326,7 @@ export default function ManufacturingPage() {
         </div>
       </Container>
     </div>
+    </>
   );
 }
 

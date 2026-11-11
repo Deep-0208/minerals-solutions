@@ -1,6 +1,33 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: {
+    absolute: 'Minerals Solutions | Industrial Rotary Dryers & Plants Gujarat',
+  },
+  description:
+    'Gujarat manufacturer of high-efficiency industrial rotary dryers, sand washing plants, fertilizer granulators, and heavy conveyor systems at Zak GIDC, Dahegam.',
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: 'Minerals Solutions | Industrial Rotary Dryers & Plants Gujarat',
+    description:
+      'Engineered heavy machinery: rotary drum dryers, bucket wheel sand washers, fertilizer granulators, and bulk material handling conveyors from Zak GIDC, Gujarat.',
+    url: 'https://mineralssolution.in/',
+    siteName: 'Minerals Solutions',
+    locale: 'en_IN',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Minerals Solutions | Industrial Rotary Dryers & Plants Gujarat',
+    description:
+      'Direct manufacturer of rotary drum dryers, sand washing plants, and fertilizer granulators in Gujarat.',
+  },
+};
 import {
   Flame,
   Sprout,
@@ -190,9 +217,14 @@ export default function HomePage() {
 
               {/* Main Headline */}
               <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-[#111111] leading-[1.08] font-display">
-                Engineered for Performance. <br className="hidden sm:inline" />
-                <span className="text-[#E10613]">Built for Industry.</span>
+                Industrial Rotary Dryers, Sand Washing &amp;{' '}
+                <span className="text-[#E10613]">Fertilizer Granulation Plants</span>
               </h1>
+
+              {/* Supporting Marketing Message */}
+              <p className="text-sm sm:text-base font-bold uppercase tracking-wider text-[#111111] mt-2">
+                Engineered for Performance. <span className="text-[#E10613]">Built for Industry.</span>
+              </p>
 
               {/* Supporting Copy */}
               <p className="text-base sm:text-lg text-[#737373] max-w-2xl leading-relaxed">

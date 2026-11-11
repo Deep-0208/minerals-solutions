@@ -3,6 +3,7 @@ import { Inter, Poppins } from 'next/font/google';
 import './globals.css';
 import { company } from '@/data/company';
 import { JsonLd } from '@/components/seo/JsonLd';
+import { AgentationClient } from '@/components/common/AgentationClient';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -76,58 +77,73 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const organizationSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
-    additionalType: 'https://schema.org/ManufacturingPlant',
-    '@id': `${company.siteUrl}/#organization`,
-    name: 'Minerals Solutions',
-    legalName: company.legalName,
-    url: company.siteUrl,
-    logo: `${company.siteUrl}/images/brand/logo.png`,
-    image: `${company.siteUrl}/images/brand/logo.png`,
-    telephone: company.telephones[0],
-    email: company.email,
-    taxID: company.gstin,
-    founder: {
-      '@type': 'Person',
-      name: company.proprietor,
-    },
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: company.address.streetAddress,
-      addressLocality: company.address.locality,
-      addressRegion: company.address.regionName,
-      postalCode: company.address.postalCode,
-      addressCountry: company.address.country,
-    },
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude: company.geo.lat,
-      longitude: company.geo.lng,
-    },
-    openingHoursSpecification: [
-      {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: [
-          'Monday',
-          'Tuesday',
-          'Wednesday',
-          'Thursday',
-          'Friday',
-          'Saturday',
-        ],
-        opens: '09:00',
-        closes: '19:00',
+  const rootSchema = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'LocalBusiness',
+      additionalType: 'https://schema.org/ManufacturingPlant',
+      '@id': `${company.siteUrl}/#organization`,
+      name: 'Minerals Solutions',
+      legalName: company.legalName,
+      url: company.siteUrl,
+      logo: `${company.siteUrl}/images/brand/logo.png`,
+      image: `${company.siteUrl}/images/brand/logo.png`,
+      telephone: company.telephones[0],
+      email: company.email,
+      taxID: company.gstin,
+      founder: {
+        '@type': 'Person',
+        name: company.proprietor,
       },
-    ],
-    sameAs: company.sameAs,
-  };
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: company.address.streetAddress,
+        addressLocality: company.address.locality,
+        addressRegion: company.address.regionName,
+        postalCode: company.address.postalCode,
+        addressCountry: company.address.country,
+      },
+      geo: {
+        '@type': 'GeoCoordinates',
+        latitude: company.geo.lat,
+        longitude: company.geo.lng,
+      },
+      openingHoursSpecification: [
+        {
+          '@type': 'OpeningHoursSpecification',
+          dayOfWeek: [
+            'Monday',
+            'Tuesday',
+            'Wednesday',
+            'Thursday',
+            'Friday',
+            'Saturday',
+          ],
+          opens: '09:00',
+          closes: '19:00',
+        },
+      ],
+      sameAs: company.sameAs,
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      '@id': `${company.siteUrl}/#website`,
+      url: company.siteUrl,
+      name: 'Minerals Solutions',
+      description:
+        'Gujarat manufacturer of industrial rotary drum dryers, sand washing plants, fertilizer granulators, and heavy material handling conveyors.',
+      publisher: {
+        '@id': `${company.siteUrl}/#organization`,
+      },
+      inLanguage: 'en-IN',
+    },
+  ];
 
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        <JsonLd data={organizationSchema} />
+        <JsonLd data={rootSchema} />
       </head>
       <body
         className={`${inter.variable} ${poppins.variable} min-h-screen bg-white text-[#171717] antialiased selection:bg-[#E10613] selection:text-white flex flex-col font-sans`}
@@ -141,6 +157,7 @@ export default function RootLayout({
         </a>
 
         {children}
+        <AgentationClient />
       </body>
     </html>
   );

@@ -18,14 +18,32 @@ import {
 } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { Button } from '@/components/ui/Button';
+import { JsonLd } from '@/components/seo/JsonLd';
 import { company } from '@/data/company';
 
 export const metadata: Metadata = {
-  title: 'About Minerals Solutions | Heavy Machinery Manufacturer in Gujarat',
+  title: {
+    absolute: 'About Minerals Solutions | Heavy Machinery Gujarat Works',
+  },
   description:
-    'Discover Minerals Solutions: Gujarat-based manufacturer of industrial rotary drum dryers, fertilizer granulation plants, and sand washing equipment at Zak GIDC, Dahegam.',
+    'Discover Minerals Solutions: Gujarat manufacturer of industrial rotary dryers, fertilizer granulation plants, and sand washers at Zak GIDC, Dahegam.',
   alternates: {
     canonical: '/about/',
+  },
+  openGraph: {
+    title: 'About Minerals Solutions | Heavy Machinery Gujarat Works',
+    description:
+      'Learn about our manufacturing credentials, leadership, and fabrication workshop in Zak GIDC, Dahegam, Gujarat.',
+    url: `${company.siteUrl}/about/`,
+    siteName: 'Minerals Solutions',
+    locale: 'en_IN',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About Minerals Solutions | Heavy Machinery Gujarat Works',
+    description:
+      'Gujarat manufacturer of industrial rotary dryers, fertilizer granulation plants, and sand washers at Zak GIDC.',
   },
 };
 
@@ -33,6 +51,42 @@ export default function AboutPage() {
   const primaryPhone = company.telephones[0] || '+91 63524 53050';
   const cleanPhone = primaryPhone.replace(/\s+/g, '');
   const secondaryPhone = company.telephones[1] || '+91 91061 63058';
+
+  const aboutSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'AboutPage',
+    '@id': `${company.siteUrl}/about/#webpage`,
+    url: `${company.siteUrl}/about/`,
+    name: 'About Minerals Solutions | Heavy Machinery Gujarat Works',
+    description:
+      'Company leadership, statutory credentials, and manufacturing principles of Minerals Solutions in Zak GIDC, Dahegam.',
+    mainEntity: {
+      '@type': 'LocalBusiness',
+      '@id': `${company.siteUrl}/#organization`,
+      name: company.legalName,
+      founder: {
+        '@type': 'Person',
+        name: company.proprietor,
+      },
+    },
+    breadcrumb: {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Home',
+          item: `${company.siteUrl}/`,
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: 'About Us',
+          item: `${company.siteUrl}/about/`,
+        },
+      ],
+    },
+  };
 
   const principles = [
     {
@@ -54,8 +108,10 @@ export default function AboutPage() {
   ];
 
   return (
-    <div className="bg-[#F5F5F7] min-h-screen py-10 lg:py-16">
-      <Container>
+    <>
+      <JsonLd data={aboutSchema} />
+      <div className="bg-[#F5F5F7] min-h-screen py-10 lg:py-16">
+        <Container>
         {/* Breadcrumb Navigation */}
         <nav className="flex items-center gap-2 text-xs text-neutral-500 mb-4" aria-label="Breadcrumb">
           <Link href="/" className="hover:text-[#E10613]">Home</Link>
@@ -279,6 +335,7 @@ export default function AboutPage() {
         </div>
       </Container>
     </div>
+    </>
   );
 }
 

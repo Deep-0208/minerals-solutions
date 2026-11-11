@@ -16,20 +16,65 @@ import {
 } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { Button } from '@/components/ui/Button';
+import { JsonLd } from '@/components/seo/JsonLd';
 import { company } from '@/data/company';
 
 export const metadata: Metadata = {
-  title: 'Industries Served | Mineral Processing, Fertilizer, Sand Washing & Chemicals',
+  title: {
+    absolute: 'Industries Served | Mineral, Fertilizer & Sand Processing',
+  },
   description:
-    'Discover industrial equipment applications by Minerals Solutions: rotary dryers, fertilizer granulators, sand washers, and conveyor systems across 8 core heavy industry sectors.',
+    'Industrial machinery applications by Minerals Solutions: rotary dryers, sand washers, and granulators across silica sand, foundry, and fertilizer sectors.',
   alternates: {
     canonical: '/industries/',
+  },
+  openGraph: {
+    title: 'Industries Served | Mineral, Fertilizer & Sand Processing',
+    description:
+      'Engineered process equipment across silica sand drying, mineral washing, bio-fertilizer pelletizing, and heavy quarry material conveyance.',
+    url: `${company.siteUrl}/industries/`,
+    siteName: 'Minerals Solutions',
+    locale: 'en_IN',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Industries Served | Minerals Solutions Gujarat',
+    description:
+      'Process solutions for foundry sand, NPK fertilizer, mining aggregate, and chemical dehydration across India.',
   },
 };
 
 export default function IndustriesPage() {
   const primaryPhone = company.telephones[0] || '+91 63524 53050';
   const cleanPhone = primaryPhone.replace(/\s+/g, '');
+
+  const industriesSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': `${company.siteUrl}/industries/#webpage`,
+    url: `${company.siteUrl}/industries/`,
+    name: 'Industries Served | Mineral, Fertilizer & Sand Processing',
+    description:
+      'Heavy process equipment applications by Minerals Solutions across core industries in India.',
+    breadcrumb: {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Home',
+          item: `${company.siteUrl}/`,
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: 'Industries Served',
+          item: `${company.siteUrl}/industries/`,
+        },
+      ],
+    },
+  };
 
   const sectors = [
     {
@@ -38,6 +83,8 @@ export default function IndustriesPage() {
       challenge: 'High initial moisture in washed silica sand causing sand bonding failure in foundries and glass furnaces.',
       solution: 'Single & double pass rotary sand dryers with high-efficiency cyclones reducing moisture from 15% to below 0.5%.',
       machinery: ['Double Pass Rotary Dryer', 'Fluidized Bed Cooler', 'Vibrating Sizing Screen'],
+      productLink: '/products/industrial-rotary-dryers/',
+      productLabel: 'Explore Industrial Rotary Dryers',
     },
     {
       title: 'NPK & Organic Bio-Fertilizer Plants',
@@ -45,6 +92,8 @@ export default function IndustriesPage() {
       challenge: 'Uneven granule sizes, poor spherical strength, and high recycle rates during compost agglomeration.',
       solution: 'Pan/disc granulators with stepless 35°-55° tilt adjustment paired with rotary coolers and anti-caking coating drums.',
       machinery: ['Disc Granulator MS-PG-2200', 'Rotary Fertilizer Dryer', 'Cooling & Coating Drum'],
+      productLink: '/products/fertilizer-granulation-plants/',
+      productLabel: 'Explore Fertilizer Granulation Plants',
     },
     {
       title: 'River Sand & Aggregate Washing',
@@ -52,6 +101,8 @@ export default function IndustriesPage() {
       challenge: 'Excessive loss of marketable fine sand (down to 75 microns) into quarry slimes and high residual water content.',
       solution: 'Integrated bucket wheel washers with polyurethane hydrocyclones and linear dewatering screens.',
       machinery: ['Bucket Wheel Sand Washer', 'Hydrocyclone Separator', 'High-Frequency Dewatering Screen'],
+      productLink: '/products/sand-washing-plants/',
+      productLabel: 'Explore Sand Washing Plants',
     },
     {
       title: 'Chemical Salts & Inorganic Crystals',
@@ -59,6 +110,8 @@ export default function IndustriesPage() {
       challenge: 'Thermal degradation of heat-sensitive chemical crystals and corrosive vapor damage to dryer drum shells.',
       solution: 'Stainless steel contact parts (SS304/SS316), indirect hot air heating, and pulse-jet baghouse dust collection.',
       machinery: ['Indirect Rotary Calciner', 'Stainless Steel Rotary Dryer', 'Bag Filter Exhaust'],
+      productLink: '/products/industrial-rotary-dryers/',
+      productLabel: 'Explore Chemical Rotary Dryers',
     },
     {
       title: 'Biomass & Sawdust Pelletizing',
@@ -66,6 +119,8 @@ export default function IndustriesPage() {
       challenge: 'High moisture variability in raw agro-waste and saw dust causing pellet mill die plugging and low calorific value.',
       solution: 'Triple pass rotary drum dryers with spark arrestors and uniform hot air draft for safe, continuous drying.',
       machinery: ['Triple Pass Biomass Dryer', 'Biomass Hammer Mill', 'Heavy Pellet Mill'],
+      productLink: '/products/fertilizer-granulation-plants/',
+      productLabel: 'Explore Biomass Pellet Machinery',
     },
     {
       title: 'Fly Ash, Slag & Gypsum Processing',
@@ -73,6 +128,8 @@ export default function IndustriesPage() {
       challenge: 'Extremely abrasive sticky slurry and high cake moisture from flue-gas desulfurization (FGD) systems.',
       solution: 'Heavy-duty rotary kilns and dryers with specialized flight lifters and abrasion-resistant steel plate shells.',
       machinery: ['Heavy Slag Dryer', 'Troughed Belt Conveyor', 'Support Trunnion Running Gear'],
+      productLink: '/products/industrial-rotary-dryers/',
+      productLabel: 'Explore Thermal Kilns & Dryers',
     },
     {
       title: 'Quartz Stone & Mineral Beneficiation',
@@ -80,6 +137,8 @@ export default function IndustriesPage() {
       challenge: 'Tenacious plastic clay coatings adhering to quartz lumps and gravel preventing pure optical separation.',
       solution: 'Twin-shaft paddle log washers applying high-intensity mechanical scouring to release adhering clays.',
       machinery: ['Quartz Stone Log Washer', 'Rotary Trommel Screen', 'Slurry Slime Sump'],
+      productLink: '/products/sand-washing-plants/',
+      productLabel: 'Explore Quartz & Sand Washers',
     },
     {
       title: 'Bulk Material Handling & Quarry Logistics',
@@ -87,12 +146,16 @@ export default function IndustriesPage() {
       challenge: 'Material rollback, belt slippage, and high idler failure rates under severe outdoor quarry dust loads.',
       solution: 'IS 11592 compliant troughed belt conveyors with hot vulcanized diamond rubber lagged drive pulleys.',
       machinery: ['Heavy Troughed Belt Conveyor', 'Diamond Lagged Head Pulley', 'Labyrinth Sealed Idlers'],
+      productLink: '/products/industrial-conveyors-spares/',
+      productLabel: 'Explore Bulk Conveyors & Spares',
     },
   ];
 
   return (
-    <div className="bg-[#F5F5F7] min-h-screen py-10 lg:py-16">
-      <Container>
+    <>
+      <JsonLd data={industriesSchema} />
+      <div className="bg-[#F5F5F7] min-h-screen py-10 lg:py-16">
+        <Container>
         {/* Breadcrumb Navigation */}
         <nav className="flex items-center gap-2 text-xs text-neutral-500 mb-4" aria-label="Breadcrumb">
           <Link href="/" className="hover:text-[#E10613]">Home</Link>
@@ -150,7 +213,7 @@ export default function IndustriesPage() {
                   <span className="text-xs font-bold uppercase tracking-wider text-neutral-500 block mb-2">
                     Recommended Equipment:
                   </span>
-                  <div className="flex flex-wrap gap-1.5 mb-4">
+                  <div className="flex flex-wrap gap-1.5 mb-3">
                     {sec.machinery.map((m) => (
                       <span
                         key={m}
@@ -160,6 +223,16 @@ export default function IndustriesPage() {
                       </span>
                     ))}
                   </div>
+
+                  {sec.productLink && (
+                    <Link
+                      href={sec.productLink}
+                      className="inline-flex items-center gap-1 text-xs font-bold text-[#E10613] hover:underline mb-3"
+                    >
+                      <span>{sec.productLabel}</span>
+                      <ArrowRight className="w-3.5 h-3.5" />
+                    </Link>
+                  )}
 
                   <Button href="/request-quote/" variant="outline" size="sm" className="w-full">
                     Discuss Sector Requirements
@@ -200,6 +273,7 @@ export default function IndustriesPage() {
         </div>
       </Container>
     </div>
+    </>
   );
 }
 

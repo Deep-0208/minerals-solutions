@@ -16,20 +16,94 @@ import {
 } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { Button } from '@/components/ui/Button';
+import { JsonLd } from '@/components/seo/JsonLd';
 import { company } from '@/data/company';
 
 export const metadata: Metadata = {
-  title: 'Machinery & Equipment Catalog | Industrial Dryers, Granulators & Washers',
+  title: {
+    absolute: 'Industrial Machinery Catalog | Dryers, Washers & Plants',
+  },
   description:
-    'Explore Minerals Solutions complete machinery catalog: industrial rotary drum dryers, fertilizer granulation plants, bucket wheel sand washers, and heavy conveyor systems manufactured in Gujarat.',
+    'Explore Minerals Solutions catalog: rotary drum dryers, bucket wheel sand washers, fertilizer granulators, and trough belt conveyors manufactured in Gujarat.',
   alternates: {
     canonical: '/products/',
+  },
+  openGraph: {
+    title: 'Industrial Machinery Catalog | Dryers, Washers & Plants',
+    description:
+      'Complete manufacturing catalog of industrial rotary drum dryers, sand washing lines, pan granulators, and conveyor systems at Zak GIDC, Gujarat.',
+    url: `${company.siteUrl}/products/`,
+    siteName: 'Minerals Solutions',
+    locale: 'en_IN',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Industrial Machinery Catalog | Minerals Solutions Gujarat',
+    description:
+      'Explore heavy equipment divisions: thermal dryers, sand recovery plants, fertilizer granulators, and bulk conveyors.',
   },
 };
 
 export default function ProductsPage() {
   const primaryPhone = company.telephones[0] || '+91 63524 53050';
   const cleanPhone = primaryPhone.replace(/\s+/g, '');
+
+  const catalogSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    '@id': `${company.siteUrl}/products/#webpage`,
+    url: `${company.siteUrl}/products/`,
+    name: 'Industrial Machinery Catalog | Dryers, Washers & Plants',
+    description:
+      'Manufacturing catalog of industrial rotary drum dryers, sand washing plants, fertilizer granulators, and conveyor systems manufactured in Gujarat.',
+    mainEntity: {
+      '@type': 'ItemList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Industrial Rotary Dryers & Thermal Systems',
+          url: `${company.siteUrl}/products/industrial-rotary-dryers/`,
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: 'Sand Washing & Mineral Recovery Plants',
+          url: `${company.siteUrl}/products/sand-washing-plants/`,
+        },
+        {
+          '@type': 'ListItem',
+          position: 3,
+          name: 'Fertilizer Granulation & Bio-Pellet Plants',
+          url: `${company.siteUrl}/products/fertilizer-granulation-plants/`,
+        },
+        {
+          '@type': 'ListItem',
+          position: 4,
+          name: 'Industrial Conveyor Systems & Heavy Spares',
+          url: `${company.siteUrl}/products/industrial-conveyors-spares/`,
+        },
+      ],
+    },
+    breadcrumb: {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Home',
+          item: `${company.siteUrl}/`,
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: 'Products',
+          item: `${company.siteUrl}/products/`,
+        },
+      ],
+    },
+  };
 
   const categories = [
     {
@@ -107,8 +181,10 @@ export default function ProductsPage() {
   ];
 
   return (
-    <div className="bg-[#F5F5F7] min-h-screen py-10 lg:py-16">
-      <Container>
+    <>
+      <JsonLd data={catalogSchema} />
+      <div className="bg-[#F5F5F7] min-h-screen py-10 lg:py-16">
+        <Container>
         {/* Header Breadcrumb & Title */}
         <div className="mb-12 max-w-3xl">
           <nav className="flex items-center gap-2 text-xs text-neutral-500 mb-3" aria-label="Breadcrumb">
@@ -242,5 +318,6 @@ export default function ProductsPage() {
         </div>
       </Container>
     </div>
+    </>
   );
 }
