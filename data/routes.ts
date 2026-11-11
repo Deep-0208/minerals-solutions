@@ -682,6 +682,26 @@ export const routes: CanonicalRoute[] = [
     },
   },
   {
+    path: '/products/industrial-conveyors-spares/screw-conveyors/',
+    label: 'Screw Conveyors',
+    priority: 0.85,
+    changeFreq: 'weekly',
+    navGroup: 'conveyors',
+    pillarPath: '/products/industrial-conveyors-spares/',
+    breadcrumbTrail: [
+      { label: 'Home', href: '/' },
+      { label: 'Products', href: '/products/' },
+      { label: 'Industrial Conveyors & Spares', href: '/products/industrial-conveyors-spares/' },
+      { label: 'Screw Conveyors', href: '/products/industrial-conveyors-spares/screw-conveyors/' },
+    ],
+    seo: {
+      title: 'Screw Conveyor Manufacturers | Minerals Solutions',
+      description: 'Heavy duty industrial screw conveyors: U-trough & tubular pipe feeders (100mm to 600mm dia). Dust-tight carbon & SS304/SS316. Zak GIDC, Dahegam.',
+      keywords: ['screw conveyor manufacturers', 'screw conveyor manufacturer near me', 'u trough screw conveyor gujarat', 'tubular screw feeder ahmedabad', 'stainless steel screw conveyor'],
+      canonical: `${SITE_URL}/products/industrial-conveyors-spares/screw-conveyors/`,
+    },
+  },
+  {
     path: '/products/conveyor-systems/',
     label: 'Conveyor Systems',
     priority: 0.95,

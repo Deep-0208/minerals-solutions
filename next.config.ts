@@ -265,6 +265,36 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/screw-conveyor/',
+        destination: '/products/industrial-conveyors-spares/screw-conveyors/',
+        permanent: true,
+      },
+      {
+        source: '/screw-conveyor-manufacturer/',
+        destination: '/products/industrial-conveyors-spares/screw-conveyors/',
+        permanent: true,
+      },
+      {
+        source: '/industrial-screw-conveyor/',
+        destination: '/products/industrial-conveyors-spares/screw-conveyors/',
+        permanent: true,
+      },
+      {
+        source: '/u-trough-screw-conveyor/',
+        destination: '/products/industrial-conveyors-spares/screw-conveyors/',
+        permanent: true,
+      },
+      {
+        source: '/tubular-screw-conveyor/',
+        destination: '/products/industrial-conveyors-spares/screw-conveyors/',
+        permanent: true,
+      },
+      {
+        source: '/products/conveyor-systems/screw-conveyors/',
+        destination: '/products/industrial-conveyors-spares/screw-conveyors/',
+        permanent: true,
+      },
+      {
         source: '/industrial-conveyor-belt-system-manufacturer/',
         destination: '/products/industrial-conveyors-spares/',
         permanent: true,
