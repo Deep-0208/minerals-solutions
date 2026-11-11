@@ -15,31 +15,51 @@
 ## Core Equipment Catalog
 
 ### 1. Industrial Rotary Dryers & Thermal Systems
-- Canonical URL: https://mineralssolution.in/products/industrial-rotary-dryers/
+- Parent Hub: https://mineralssolution.in/products/industrial-rotary-dryers/
 - Configurations: Single-pass direct heat, concentric double-pass return drum, and triple-pass high-efficiency dryers.
 - Throughput Capacity: 500 kg/hr to 50 TPH continuous duty.
 - Metallurgy & Standards: Certified IS 2062 Grade B structural carbon steel (12mm to 25mm plate shell), optional SS 304 / SS 316 corrosive liners, Hardox 400 wear plates.
 - Drive & Mechanics: Forged EN-8 / EN-9 alloy steel trunnion rollers induction hardened to 280-320 BHN, 42CrMo4 girth gear, Siemens/ABB IE3 energy-efficient motors.
 - Applications: Silica sand, foundry sand, bauxite, river sand, bentonite, coal, sawdust, biomass, and chemical powders.
+- Dedicated Spoke Lines:
+  - Triple Pass Rotary Drum Dryer: https://mineralssolution.in/products/industrial-rotary-dryers/triple-pass-dryer/ (Model MS-TPD-1500 / MS-TPD-3000, 3 to 30 TPH, 30% to 40% thermal fuel savings)
+  - Industrial Rotary Sand Dryer: https://mineralssolution.in/products/industrial-rotary-dryers/sand-dryer/ (Model MS-RSD-1200 / MS-RSD-2400, 5 to 45 TPH, discharge moisture below 0.5%)
+  - Stainless Chemical Powder Dryer: https://mineralssolution.in/products/industrial-rotary-dryers/chemical-powder-dryer/ (Model MS-CPD-1000 / MS-CPD-2000, SS 304/SS 316 contact parts, zero cross-contamination)
+  - Biomass & Sawdust Rotary Dryer: https://mineralssolution.in/products/industrial-rotary-dryers/biomass-sawdust-dryer/ (Model MS-BSD-1500 / MS-BSD-2800, 1 to 12 TPH, spark arrestor and explosion relief vents)
 
 ### 2. Sand Washing Plants & Hydrocyclone Separators
-- Canonical URL: https://mineralssolution.in/products/sand-washing-plants/
+- Parent Hub: https://mineralssolution.in/products/sand-washing-plants/
 - Configurations: Bucket wheel sand washers, high-pressure hydrocyclone desliming circuits, spiral screw sand classifiers, and high-frequency dewatering screens.
 - Throughput Capacity: 30 TPH to 200 TPH.
-- Silt Separation: Fines recovery down to 75 microns (200 mesh) with <12-15% moisture discharge.
+- Silt Separation: Fines recovery down to 75 microns (200 mesh) with 12% to 15% moisture discharge.
 - Resource Conservation: Integrated thickener and water recirculation delivering 75% to 80% water recovery.
+- Dedicated Spoke Lines:
+  - Silica Sand Washing Plant: https://mineralssolution.in/products/sand-washing-plants/silica-sand-washing-plant/ (Model MS-SWP-50 / MS-SWP-200, 30 to 200 TPH, silt content reduction below 0.5%)
+  - Bucket Wheel Sand Washing Machine: https://mineralssolution.in/products/sand-washing-plants/bucket-wheel-sand-washer/ (Model MS-BWW-2600 / MS-BWW-3600, 40 to 180 TPH, wear-resistant polyurethane screen panels)
+  - Hydrocyclone Fine Sand Recovery Unit: https://mineralssolution.in/products/sand-washing-plants/hydrocyclone-sand-separator/ (Model MS-FSR-60 / MS-FSR-120, 60 to 120 m³/hr slurry, 95%+ recovery of 75-150 micron fines)
+  - Heavy Mineral Log Washer: https://mineralssolution.in/products/sand-washing-plants/mineral-log-washer/ (Model MS-LW-1000 / MS-LW-2000, 30 to 150 TPH, twin-shaft Hi-Cr paddles for tough plastic clay scrubbing)
 
 ### 3. Fertilizer Granulation & Pellet Plants
-- Canonical URL: https://mineralssolution.in/products/fertilizer-granulation-plants/
+- Parent Hub: https://mineralssolution.in/products/fertilizer-granulation-plants/
 - Configurations: Disc pan granulators with stepless tilt angle (40° to 55°), rotary drum granulators, rotary coolers, and rotary anti-caking coating drums.
 - Throughput Capacity: 1 TPH to 20 TPH turnkey lines.
-- Yield & Sizing: 2.0 mm to 4.5 mm spherical granule yield >92%.
+- Yield & Sizing: 2.0 mm to 4.5 mm spherical granule yield above 92%.
 - Applications: Bio-organic compost, vermicompost, NPK chemical fertilizers, DAP compounds, and city compost.
+- Dedicated Spoke Lines:
+  - Industrial Pan Disc Fertilizer Granulator: https://mineralssolution.in/products/fertilizer-granulation-plants/disc-granulator/ (Model MS-PG-2200 / MS-PG-3600, 1 to 8 TPH, 40° to 55° adjustable angle, 93%+ round pellets)
+  - Double Roller Compaction Granulator: https://mineralssolution.in/products/fertilizer-granulation-plants/double-roller-granulator/ (Model MS-DRG-1000 / MS-DRG-3000, 1 to 5 TPH, room-temperature dry granulation, zero fuel)
+  - Industrial Rotary Drum Granulator: https://mineralssolution.in/products/fertilizer-granulation-plants/rotary-drum-granulator/ (Model MS-RDG-1500 / MS-RDG-2500, 3 to 20 TPH, continuous tumbling agglomeration, UHMWPE liner)
+  - Fertilizer Cooling & Anti-Caking Coating Drum: https://mineralssolution.in/products/fertilizer-granulation-plants/fertilizer-cooling-coating-drum/ (Model MS-CCD-1200 / MS-CCD-2200, dual-stage cooling and micronized oil coating)
 
 ### 4. Industrial Conveyors & Heavy Mechanical Spares
-- Canonical URL: https://mineralssolution.in/products/industrial-conveyors-spares/
+- Parent Hub: https://mineralssolution.in/products/industrial-conveyors-spares/
 - Equipment: Heavy trough belt conveyors, chevron steep-incline conveyors, diamond/herringbone rubber-lagged drive pulleys, CEMA-C/D labyrinth-sealed idlers.
 - Spares & Metallurgy: Replacement forged EN-8/EN-9 trunnion tyre assemblies, custom spur/helical girth gears, pillow block spherical roller bearings (SKF/FAG).
+- Dedicated Spoke Lines:
+  - Heavy Duty Industrial Bucket Elevator Systems: https://mineralssolution.in/products/industrial-conveyors-spares/bucket-elevators/ (Model MS-BEL-Centrifugal & MS-BEL-Continuous, 5 to 150 TPH, up to 45m vertical lift)
+  - Industrial U-Trough & Tubular Screw Conveyor: https://mineralssolution.in/products/industrial-conveyors-spares/screw-conveyors/ (Model MS-SC-200 / MS-SC-500, 3 to 50 TPH, dust-tight enclosed powder transfer)
+  - Forged Steel Rotary Dryer Support Rollers & Tyres: https://mineralssolution.in/products/industrial-conveyors-spares/forged-trunnion-rollers/ (Model MS-TR-400 / MS-TR-1000, forged 42CrMo4/EN-9, 280-320 BHN, ultrasonic tested)
+  - Industrial Troughed Belt Conveyor Systems: https://mineralssolution.in/products/industrial-conveyors-spares/belt-conveyors/ (Model MS-BC-500 / MS-BC-1200, 20 to 500 TPH, IS 11592 compliance, CEMA-C/D idlers)
 
 ## Key Website & Conversion Endpoints
 - Homepage: https://mineralssolution.in/
@@ -49,4 +69,3 @@
 - Direct Machinery Quotation: https://mineralssolution.in/request-quote/
 - Works Contact & Visiting Desk: https://mineralssolution.in/contact/
 - XML Sitemap: https://mineralssolution.in/sitemap.xml
-
