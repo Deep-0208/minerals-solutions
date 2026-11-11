@@ -24,10 +24,11 @@ import { Button } from '@/components/ui/Button';
 import { TechnicalSpecTable } from '@/components/ui/TechnicalSpecTable';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { company } from '@/data/company';
+import { defaultOgImage, defaultTwitterImage } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'Fertilizer Granulation & Pellet Plants | Pan & Drum Systems',
+    absolute: 'Fertilizer Granulation & Pellet Plants | Gujarat Works',
   },
   description:
     'Turnkey bio-organic and NPK chemical fertilizer granulation plants (1 to 20 TPH). Pan granulators, cooling drums, and pellet mills manufactured in Gujarat.',
@@ -35,19 +36,21 @@ export const metadata: Metadata = {
     canonical: '/products/fertilizer-granulation-plants/',
   },
   openGraph: {
-    title: 'Fertilizer Granulation & Pellet Plants | Pan & Drum Systems',
+    title: 'Fertilizer Granulation & Pellet Plants | Gujarat Works',
     description:
       'Turnkey organic compost and chemical fertilizer granulation systems engineered with pan granulators, rotary coolers, and coating drums at Zak GIDC.',
     url: `${company.siteUrl}/products/fertilizer-granulation-plants/`,
     siteName: 'Minerals Solutions',
     locale: 'en_IN',
     type: 'website',
+    images: [defaultOgImage],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Fertilizer Granulation Plants | Minerals Solutions Gujarat',
     description:
       'Turnkey NPK and bio-organic granulation machinery with stepless angle pan granulators and rotary dryers.',
+    images: [defaultTwitterImage],
   },
 };
 
@@ -195,6 +198,19 @@ export default function FertilizerPlantsPage() {
           value: '2.0 mm to 4.75 mm (≥90% yield)',
         },
       ],
+      offers: {
+        '@type': 'AggregateOffer',
+        priceCurrency: 'INR',
+        lowPrice: '500000',
+        highPrice: '5500000',
+        offerCount: '10',
+        priceValidUntil: '2027-12-31',
+        itemCondition: 'https://schema.org/NewCondition',
+        availability: 'https://schema.org/InStock',
+        seller: {
+          '@id': `${company.siteUrl}/#organization`,
+        },
+      },
     },
     {
       '@context': 'https://schema.org',

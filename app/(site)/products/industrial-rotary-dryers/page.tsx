@@ -23,10 +23,11 @@ import { Button } from '@/components/ui/Button';
 import { TechnicalSpecTable } from '@/components/ui/TechnicalSpecTable';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { company } from '@/data/company';
+import { defaultOgImage, defaultTwitterImage } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'Industrial Rotary Dryers Manufacturer | Single & Double Pass',
+    absolute: 'Industrial Rotary Dryers Manufacturer | Minerals Solutions',
   },
   description:
     'Heavy industrial rotary drum dryers (500 kg/hr to 50 TPH) for silica sand, minerals, sawdust, and chemicals. Fabricated in Zak GIDC, Dahegam, Gujarat.',
@@ -41,12 +42,14 @@ export const metadata: Metadata = {
     siteName: 'Minerals Solutions',
     locale: 'en_IN',
     type: 'website',
+    images: [defaultOgImage],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Industrial Rotary Dryers Manufacturer | Minerals Solutions Gujarat',
     description:
       'Thermal drying systems engineered for silica sand, minerals, and chemicals from 500 kg/hr to 50 TPH.',
+    images: [defaultTwitterImage],
   },
 };
 
@@ -195,6 +198,19 @@ export default function RotaryDryersPage() {
           value: 'Forged EN-8 / EN-9 Alloy Steel',
         },
       ],
+      offers: {
+        '@type': 'AggregateOffer',
+        priceCurrency: 'INR',
+        lowPrice: '250000',
+        highPrice: '3500000',
+        offerCount: '12',
+        priceValidUntil: '2027-12-31',
+        itemCondition: 'https://schema.org/NewCondition',
+        availability: 'https://schema.org/InStock',
+        seller: {
+          '@id': `${company.siteUrl}/#organization`,
+        },
+      },
     },
     {
       '@context': 'https://schema.org',

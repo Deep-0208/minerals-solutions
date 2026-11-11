@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { ContactClient } from '@/components/contact/ContactClient';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { company } from '@/data/company';
+import { defaultOgImage, defaultTwitterImage } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: {
@@ -21,12 +22,14 @@ export const metadata: Metadata = {
     siteName: 'Minerals Solutions',
     locale: 'en_IN',
     type: 'website',
+    images: [defaultOgImage],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Contact Minerals Solutions | Zak GIDC Dahegam Factory',
     description:
       'Connect with Minerals Solutions engineering team for rotary dryers, sand washing plants, and granulator quotations.',
+    images: [defaultTwitterImage],
   },
 };
 

@@ -21,10 +21,11 @@ import { Container } from '@/components/ui/Container';
 import { Button } from '@/components/ui/Button';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { company } from '@/data/company';
+import { defaultOgImage, defaultTwitterImage } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'Manufacturing Facility & Heavy Fabrication Works | Zak GIDC',
+    absolute: 'Heavy Fabrication Works & Facility | Minerals Solutions',
   },
   description:
     'Tour Minerals Solutions heavy fabrication facility in Zak GIDC, Dahegam. Plate rolling to 25mm+, submerged arc welding, and lathe machining.',
@@ -32,19 +33,21 @@ export const metadata: Metadata = {
     canonical: '/manufacturing/',
   },
   openGraph: {
-    title: 'Manufacturing Facility & Heavy Fabrication Works | Zak GIDC',
+    title: 'Heavy Fabrication Works & Facility | Minerals Solutions',
     description:
       'In-house heavy engineering facility in Zak GIDC, Dahegam, Gujarat: plate bending, submerged arc welding, dynamic drum balancing, and lathe turning.',
     url: `${company.siteUrl}/manufacturing/`,
     siteName: 'Minerals Solutions',
     locale: 'en_IN',
     type: 'website',
+    images: [defaultOgImage],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Manufacturing Facility & Heavy Fabrication Works | Zak GIDC',
     description:
       'In-house heavy equipment fabrication infrastructure at Zak GIDC, Dahegam, Gujarat.',
+    images: [defaultTwitterImage],
   },
 };
 

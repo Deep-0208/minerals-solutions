@@ -18,6 +18,7 @@ import { Container } from '@/components/ui/Container';
 import { Button } from '@/components/ui/Button';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { company } from '@/data/company';
+import { defaultOgImage, defaultTwitterImage } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: {
@@ -36,12 +37,14 @@ export const metadata: Metadata = {
     siteName: 'Minerals Solutions',
     locale: 'en_IN',
     type: 'website',
+    images: [defaultOgImage],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Industrial Machinery Catalog | Minerals Solutions Gujarat',
     description:
       'Explore heavy equipment divisions: thermal dryers, sand recovery plants, fertilizer granulators, and bulk conveyors.',
+    images: [defaultTwitterImage],
   },
 };
 

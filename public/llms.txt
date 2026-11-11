@@ -1,0 +1,52 @@
+# Minerals Solutions
+
+> High-efficiency industrial rotary drum dryers, sand washing plants, fertilizer granulation plants, and material handling conveyor systems manufactured in Gujarat, India.
+
+## Company Credentials & Grounding
+- Legal Entity: Minerals Solutions (Established 2023)
+- Proprietor: Mr. Vipulbhai A. Prajapati | CEO: Mr. P Amrutlal
+- Heavy Fabrication Works: 10, Shyam Estate, Zak GIDC, Zak-Vahelal Road, Ta. Dahegam, Dist. Gandhinagar - 382330, Gujarat, India
+- Geographic Coordinates: 23.1672° N, 72.8125° E (Ahmedabad Industrial Corridor)
+- GSTIN: 24AUSPP9555F1ZZ | MSME UDYAM: UDYAM-GJ-09-0021428
+- Direct Hotlines: +91 63524 53050, +91 91061 63058
+- Official Inboxes: sales@mineralssolution.in, mineralssolutions76@gmail.com
+- Canonical Website: https://mineralssolution.in/
+
+## Core Equipment Catalog
+
+### 1. Industrial Rotary Dryers & Thermal Systems
+- Canonical URL: https://mineralssolution.in/products/industrial-rotary-dryers/
+- Configurations: Single-pass direct heat, concentric double-pass return drum, and triple-pass high-efficiency dryers.
+- Throughput Capacity: 500 kg/hr to 50 TPH continuous duty.
+- Metallurgy & Standards: Certified IS 2062 Grade B structural carbon steel (12mm to 25mm plate shell), optional SS 304 / SS 316 corrosive liners, Hardox 400 wear plates.
+- Drive & Mechanics: Forged EN-8 / EN-9 alloy steel trunnion rollers induction hardened to 280-320 BHN, 42CrMo4 girth gear, Siemens/ABB IE3 energy-efficient motors.
+- Applications: Silica sand, foundry sand, bauxite, river sand, bentonite, coal, sawdust, biomass, and chemical powders.
+
+### 2. Sand Washing Plants & Hydrocyclone Separators
+- Canonical URL: https://mineralssolution.in/products/sand-washing-plants/
+- Configurations: Bucket wheel sand washers, high-pressure hydrocyclone desliming circuits, spiral screw sand classifiers, and high-frequency dewatering screens.
+- Throughput Capacity: 30 TPH to 200 TPH.
+- Silt Separation: Fines recovery down to 75 microns (200 mesh) with <12-15% moisture discharge.
+- Resource Conservation: Integrated thickener and water recirculation delivering 75% to 80% water recovery.
+
+### 3. Fertilizer Granulation & Pellet Plants
+- Canonical URL: https://mineralssolution.in/products/fertilizer-granulation-plants/
+- Configurations: Disc pan granulators with stepless tilt angle (40° to 55°), rotary drum granulators, rotary coolers, and rotary anti-caking coating drums.
+- Throughput Capacity: 1 TPH to 20 TPH turnkey lines.
+- Yield & Sizing: 2.0 mm to 4.5 mm spherical granule yield >92%.
+- Applications: Bio-organic compost, vermicompost, NPK chemical fertilizers, DAP compounds, and city compost.
+
+### 4. Industrial Conveyors & Heavy Mechanical Spares
+- Canonical URL: https://mineralssolution.in/products/industrial-conveyors-spares/
+- Equipment: Heavy trough belt conveyors, chevron steep-incline conveyors, diamond/herringbone rubber-lagged drive pulleys, CEMA-C/D labyrinth-sealed idlers.
+- Spares & Metallurgy: Replacement forged EN-8/EN-9 trunnion tyre assemblies, custom spur/helical girth gears, pillow block spherical roller bearings (SKF/FAG).
+
+## Key Website & Conversion Endpoints
+- Homepage: https://mineralssolution.in/
+- Manufacturing Facility & Machinery Proof: https://mineralssolution.in/manufacturing/
+- Industries Served: https://mineralssolution.in/industries/
+- About Company: https://mineralssolution.in/about/
+- Direct Machinery Quotation: https://mineralssolution.in/request-quote/
+- Works Contact & Visiting Desk: https://mineralssolution.in/contact/
+- XML Sitemap: https://mineralssolution.in/sitemap.xml
+

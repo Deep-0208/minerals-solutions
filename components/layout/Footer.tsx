@@ -130,10 +130,25 @@ export function Footer() {
             <div className="space-y-3 text-sm text-neutral-400">
               <div className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-[#E10613] shrink-0 mt-1" />
-                <address className="not-italic text-xs leading-relaxed text-neutral-300">
-                  Plot No. 10, Shed No. 3, Shyam Estate, Zak GIDC, Zak-Vahelal Road, Ta. Dahegam,
-                  District Gandhinagar - 382330, Gujarat, India.
-                </address>
+                <div className="space-y-1">
+                  <address className="not-italic text-xs leading-relaxed text-neutral-300">
+                    Plot No. 10, Shed No. 3, Shyam Estate, Zak GIDC, Zak-Vahelal Road, Ta. Dahegam,
+                    District Gandhinagar - 382330, Gujarat, India.
+                  </address>
+                  <a
+                    href={`https://maps.google.com/?q=${company.geo.lat},${company.geo.lng}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-[11px] text-[#E10613] hover:underline font-semibold"
+                  >
+                    <ExternalLink className="w-3 h-3" />
+                    <span>View Works on Google Maps (Zak GIDC)</span>
+                  </a>
+                </div>
+              </div>
+
+              <div className="text-xs text-neutral-400 pl-6">
+                <span className="text-neutral-500 font-medium">Facility Hours:</span> Mon–Sat: 09:00 – 19:00 IST
               </div>
 
               <div className="flex items-center gap-2.5">

@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { RequestQuoteClient } from '@/components/quote/RequestQuoteClient';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { company } from '@/data/company';
+import { defaultOgImage, defaultTwitterImage } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: {
@@ -21,12 +22,14 @@ export const metadata: Metadata = {
     siteName: 'Minerals Solutions',
     locale: 'en_IN',
     type: 'website',
+    images: [defaultOgImage],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Request Machinery Quotation | Minerals Solutions Gujarat',
     description:
       'Submit your process parameters for rapid engineering pricing and GA drawings from Minerals Solutions fabrication works.',
+    images: [defaultTwitterImage],
   },
 };
 

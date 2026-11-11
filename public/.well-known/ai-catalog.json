@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "name": "Minerals Solutions Heavy Machinery Catalog",
+  "description": "Industrial rotary dryers, sand washing plants, fertilizer granulation lines, and conveyor systems.",
+  "provider": {
+    "name": "Minerals Solutions",
+    "legalName": "Minerals Solutions",
+    "url": "https://mineralssolution.in",
+    "contact": "sales@mineralssolution.in",
+    "telephone": "+916352453050",
+    "location": "Zak GIDC, Dahegam, Gandhinagar, Gujarat - 382330, India",
+    "geo": {
+      "latitude": 23.1672,
+      "longitude": 72.8125
+    }
+  },
+  "capabilities": [
+    "industrial-rotary-dryers",
+    "sand-washing-plants",
+    "fertilizer-granulation-plants",
+    "industrial-conveyor-systems"
+  ],
+  "endpoints": {
+    "catalog": "https://mineralssolution.in/products/",
+    "rfq": "https://mineralssolution.in/request-quote/",
+    "contact": "https://mineralssolution.in/contact/",
+    "llms_txt": "https://mineralssolution.in/llms.txt",
+    "sitemap": "https://mineralssolution.in/sitemap.xml"
+  }
+}
+

@@ -18,10 +18,11 @@ import { Container } from '@/components/ui/Container';
 import { Button } from '@/components/ui/Button';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { company } from '@/data/company';
+import { defaultOgImage, defaultTwitterImage } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'Industries Served | Mineral, Fertilizer & Sand Processing',
+    absolute: 'Industries Served | Minerals Solutions Gujarat Works',
   },
   description:
     'Industrial machinery applications by Minerals Solutions: rotary dryers, sand washers, and granulators across silica sand, foundry, and fertilizer sectors.',
@@ -29,19 +30,21 @@ export const metadata: Metadata = {
     canonical: '/industries/',
   },
   openGraph: {
-    title: 'Industries Served | Mineral, Fertilizer & Sand Processing',
+    title: 'Industries Served | Minerals Solutions Gujarat Works',
     description:
       'Engineered process equipment across silica sand drying, mineral washing, bio-fertilizer pelletizing, and heavy quarry material conveyance.',
     url: `${company.siteUrl}/industries/`,
     siteName: 'Minerals Solutions',
     locale: 'en_IN',
     type: 'website',
+    images: [defaultOgImage],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Industries Served | Minerals Solutions Gujarat',
     description:
       'Process solutions for foundry sand, NPK fertilizer, mining aggregate, and chemical dehydration across India.',
+    images: [defaultTwitterImage],
   },
 };
 

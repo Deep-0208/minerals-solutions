@@ -23,10 +23,11 @@ import { Button } from '@/components/ui/Button';
 import { TechnicalSpecTable } from '@/components/ui/TechnicalSpecTable';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { company } from '@/data/company';
+import { defaultOgImage, defaultTwitterImage } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'Sand Washing Plants & Hydrocyclone Separators | 30-200 TPH',
+    absolute: 'Sand Washing Plants & Hydrocyclones | Minerals Solutions',
   },
   description:
     'Industrial bucket wheel sand washing plants, hydrocyclones, and log washers (30 to 200 TPH). Recovering fine sand to 75 microns with low moisture discharge.',
@@ -34,19 +35,21 @@ export const metadata: Metadata = {
     canonical: '/products/sand-washing-plants/',
   },
   openGraph: {
-    title: 'Sand Washing Plants & Hydrocyclone Separators | 30-200 TPH',
+    title: 'Sand Washing Plants & Hydrocyclones | Minerals Solutions',
     description:
       'Turnkey aggregate, silica sand, and M-sand washing plants from 30 to 200 TPH fabricated at Zak GIDC, Dahegam, Gujarat.',
     url: `${company.siteUrl}/products/sand-washing-plants/`,
     siteName: 'Minerals Solutions',
     locale: 'en_IN',
     type: 'website',
+    images: [defaultOgImage],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Sand Washing Plants & Hydrocyclones | Minerals Solutions Gujarat',
     description:
       'Bucket wheel sand washers and hydrocyclone desliming circuits engineered for maximum fine sand recovery down to 75 microns.',
+    images: [defaultTwitterImage],
   },
 };
 
@@ -183,6 +186,19 @@ export default function SandWashingPlantsPage() {
           value: '12% to 15%',
         },
       ],
+      offers: {
+        '@type': 'AggregateOffer',
+        priceCurrency: 'INR',
+        lowPrice: '350000',
+        highPrice: '4500000',
+        offerCount: '8',
+        priceValidUntil: '2027-12-31',
+        itemCondition: 'https://schema.org/NewCondition',
+        availability: 'https://schema.org/InStock',
+        seller: {
+          '@id': `${company.siteUrl}/#organization`,
+        },
+      },
     },
     {
       '@context': 'https://schema.org',

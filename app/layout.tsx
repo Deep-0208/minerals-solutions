@@ -4,6 +4,7 @@ import './globals.css';
 import { company } from '@/data/company';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { AgentationClient } from '@/components/common/AgentationClient';
+import { defaultOgImage, defaultTwitterImage } from '@/lib/seo';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -51,6 +52,14 @@ export const metadata: Metadata = {
     siteName: 'Minerals Solutions',
     locale: 'en_IN',
     type: 'website',
+    images: [defaultOgImage],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Minerals Solutions | Industrial Rotary Dryers & Heavy Machinery',
+    description:
+      'Minerals Solutions designs and manufactures industrial drying systems, fertilizer granulation plants, sand washing equipment, and bulk material handling solutions tailored to your process requirements.',
+    images: [defaultTwitterImage],
   },
   robots: {
     index: true,
@@ -124,6 +133,54 @@ export default function RootLayout({
         },
       ],
       sameAs: company.sameAs,
+      areaServed: [
+        { '@type': 'Country', name: 'India' },
+        { '@type': 'AdministrativeArea', name: 'Gujarat' },
+        { '@type': 'AdministrativeArea', name: 'Rajasthan' },
+        { '@type': 'AdministrativeArea', name: 'Maharashtra' },
+      ],
+      contactPoint: [
+        {
+          '@type': 'ContactPoint',
+          telephone: company.telephones[0],
+          contactType: 'sales',
+          areaServed: 'IN',
+          availableLanguage: ['English', 'Hindi', 'Gujarati'],
+        },
+        {
+          '@type': 'ContactPoint',
+          telephone: company.telephones[1],
+          contactType: 'technical support',
+          areaServed: 'IN',
+          availableLanguage: ['English', 'Hindi', 'Gujarati'],
+        },
+      ],
+      hasOfferCatalog: {
+        '@type': 'OfferCatalog',
+        name: 'Industrial Machinery & Processing Equipment',
+        itemListElement: [
+          {
+            '@type': 'OfferCatalog',
+            name: 'Industrial Rotary Dryers',
+            url: `${company.siteUrl}/products/industrial-rotary-dryers/`,
+          },
+          {
+            '@type': 'OfferCatalog',
+            name: 'Sand Washing Plants',
+            url: `${company.siteUrl}/products/sand-washing-plants/`,
+          },
+          {
+            '@type': 'OfferCatalog',
+            name: 'Fertilizer Granulation Plants',
+            url: `${company.siteUrl}/products/fertilizer-granulation-plants/`,
+          },
+          {
+            '@type': 'OfferCatalog',
+            name: 'Industrial Conveyors & Spares',
+            url: `${company.siteUrl}/products/industrial-conveyors-spares/`,
+          },
+        ],
+      },
     },
     {
       '@context': 'https://schema.org',
@@ -137,6 +194,11 @@ export default function RootLayout({
         '@id': `${company.siteUrl}/#organization`,
       },
       inLanguage: 'en-IN',
+      potentialAction: {
+        '@type': 'SearchAction',
+        target: `${company.siteUrl}/products/?q={search_term_string}`,
+        'query-input': 'required name=search_term_string',
+      },
     },
   ];
 

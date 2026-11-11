@@ -24,10 +24,11 @@ import { Button } from '@/components/ui/Button';
 import { TechnicalSpecTable } from '@/components/ui/TechnicalSpecTable';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { company } from '@/data/company';
+import { defaultOgImage, defaultTwitterImage } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'Industrial Belt Conveyors & Heavy Mechanical Spares Gujarat',
+    absolute: 'Industrial Belt Conveyors & Spares | Minerals Solutions',
   },
   description:
     'Heavy trough belt conveyors, diamond lagged pulleys, idlers, forged EN-8/EN-9 trunnion rollers, and girth gears engineered at Zak GIDC, Dahegam.',
@@ -35,19 +36,21 @@ export const metadata: Metadata = {
     canonical: '/products/industrial-conveyors-spares/',
   },
   openGraph: {
-    title: 'Industrial Belt Conveyors & Heavy Mechanical Spares Gujarat',
+    title: 'Industrial Belt Conveyors & Spares | Minerals Solutions',
     description:
       'Heavy bulk material handling conveyors and precision mechanical spares: forged trunnion rollers, diamond lagged pulleys, idlers, and girth gears from Zak GIDC.',
     url: `${company.siteUrl}/products/industrial-conveyors-spares/`,
     siteName: 'Minerals Solutions',
     locale: 'en_IN',
     type: 'website',
+    images: [defaultOgImage],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Industrial Conveyors & Heavy Spares | Minerals Solutions Gujarat',
     description:
       'Bulk material handling systems and forged alloy steel replacement spares manufactured in Dahegam.',
+    images: [defaultTwitterImage],
   },
 };
 
@@ -194,6 +197,19 @@ export default function ConveyorsSparesPage() {
           value: 'IS 11592 / IS 1891',
         },
       ],
+      offers: {
+        '@type': 'AggregateOffer',
+        priceCurrency: 'INR',
+        lowPrice: '75000',
+        highPrice: '2800000',
+        offerCount: '15',
+        priceValidUntil: '2027-12-31',
+        itemCondition: 'https://schema.org/NewCondition',
+        availability: 'https://schema.org/InStock',
+        seller: {
+          '@id': `${company.siteUrl}/#organization`,
+        },
+      },
     },
     {
       '@context': 'https://schema.org',

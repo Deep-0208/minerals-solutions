@@ -2,10 +2,11 @@ import React from 'react';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import { defaultOgImage, defaultTwitterImage } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'Minerals Solutions | Industrial Rotary Dryers & Plants Gujarat',
+    absolute: 'Industrial Rotary Dryers & Plants | Minerals Solutions',
   },
   description:
     'Gujarat manufacturer of high-efficiency industrial rotary dryers, sand washing plants, fertilizer granulators, and heavy conveyor systems at Zak GIDC, Dahegam.',
@@ -13,19 +14,21 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'Minerals Solutions | Industrial Rotary Dryers & Plants Gujarat',
+    title: 'Industrial Rotary Dryers & Plants | Minerals Solutions',
     description:
       'Engineered heavy machinery: rotary drum dryers, bucket wheel sand washers, fertilizer granulators, and bulk material handling conveyors from Zak GIDC, Gujarat.',
     url: 'https://mineralssolution.in/',
     siteName: 'Minerals Solutions',
     locale: 'en_IN',
     type: 'website',
+    images: [defaultOgImage],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Minerals Solutions | Industrial Rotary Dryers & Plants Gujarat',
     description:
       'Direct manufacturer of rotary drum dryers, sand washing plants, and fertilizer granulators in Gujarat.',
+    images: [defaultTwitterImage],
   },
 };
 import {

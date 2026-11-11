@@ -20,6 +20,7 @@ import { Container } from '@/components/ui/Container';
 import { Button } from '@/components/ui/Button';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { company } from '@/data/company';
+import { defaultOgImage, defaultTwitterImage } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: {
@@ -38,12 +39,14 @@ export const metadata: Metadata = {
     siteName: 'Minerals Solutions',
     locale: 'en_IN',
     type: 'website',
+    images: [defaultOgImage],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'About Minerals Solutions | Heavy Machinery Gujarat Works',
     description:
       'Gujarat manufacturer of industrial rotary dryers, fertilizer granulation plants, and sand washers at Zak GIDC.',
+    images: [defaultTwitterImage],
   },
 };
 
