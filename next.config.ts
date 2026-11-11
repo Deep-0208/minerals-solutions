@@ -135,6 +135,11 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/products/mineral-processing/sand-washing-plant/',
+        destination: '/products/sand-washing-plants/silica-sand-washing-plant/',
+        permanent: true,
+      },
+      {
         source: '/sand-washing-plant-manufacturer-gujarat/',
         destination: '/products/sand-washing-plants/',
         permanent: true,
