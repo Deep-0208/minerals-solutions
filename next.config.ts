@@ -151,7 +151,12 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/bucket-wheel-sand-washer/',
-        destination: '/products/sand-washing-plants/#machinery',
+        destination: '/products/sand-washing-plants/bucket-wheel-sand-washer/',
+        permanent: true,
+      },
+      {
+        source: '/products/mineral-processing/bucket-wheel-sand-washer/',
+        destination: '/products/sand-washing-plants/bucket-wheel-sand-washer/',
         permanent: true,
       },
       {

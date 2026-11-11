@@ -366,6 +366,26 @@ export const routes: CanonicalRoute[] = [
     },
   },
   {
+    path: '/products/sand-washing-plants/bucket-wheel-sand-washer/',
+    label: 'Bucket Wheel Sand Washer',
+    priority: 0.85,
+    changeFreq: 'weekly',
+    navGroup: 'washing',
+    pillarPath: '/products/sand-washing-plants/',
+    breadcrumbTrail: [
+      { label: 'Home', href: '/' },
+      { label: 'Products', href: '/products/' },
+      { label: 'Sand Washing Plants', href: '/products/sand-washing-plants/' },
+      { label: 'Bucket Wheel Sand Washer', href: '/products/sand-washing-plants/bucket-wheel-sand-washer/' },
+    ],
+    seo: {
+      title: 'Bucket Wheel Sand Washer Manufacturer | Minerals Solutions',
+      description: 'Heavy duty bucket wheel sand washing machines (30 to 120 TPH) for M-Sand and river gravel. Low power, high recovery. Zak GIDC, Dahegam, Gujarat.',
+      keywords: ['bucket wheel sand washer manufacturer', 'wheel sand washing machine gujarat', 'm sand washing plant dahegam', 'aggregate bucket washer ahmedabad'],
+      canonical: `${SITE_URL}/products/sand-washing-plants/bucket-wheel-sand-washer/`,
+    },
+  },
+  {
     path: '/products/mineral-processing/quartz-stone-washer/',
     label: 'Quartz Stone Washer',
     priority: 0.85,
