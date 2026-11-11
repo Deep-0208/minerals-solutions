@@ -524,6 +524,26 @@ export const routes: CanonicalRoute[] = [
     },
   },
   {
+    path: '/products/fertilizer-granulation-plants/double-roller-granulator/',
+    label: 'Double Roller Granulator',
+    priority: 0.85,
+    changeFreq: 'weekly',
+    navGroup: 'fertilizer',
+    pillarPath: '/products/fertilizer-granulation-plants/',
+    breadcrumbTrail: [
+      { label: 'Home', href: '/' },
+      { label: 'Products', href: '/products/' },
+      { label: 'Fertilizer Granulation Plants', href: '/products/fertilizer-granulation-plants/' },
+      { label: 'Double Roller Granulator', href: '/products/fertilizer-granulation-plants/double-roller-granulator/' },
+    ],
+    seo: {
+      title: 'Double Roller Granulator Machine | Minerals Solutions',
+      description: 'Double roller dry compaction fertilizer granulators (1 to 5 TPH). Room-temperature granulation with zero drying required. Zak GIDC, Gujarat.',
+      keywords: ['double roller granulator machine', 'roller press granulator price', 'dry compaction fertilizer machine gujarat', 'npk roller granulator ahmedabad'],
+      canonical: `${SITE_URL}/products/fertilizer-granulation-plants/double-roller-granulator/`,
+    },
+  },
+  {
     path: '/products/granulation-pellet-plants/fertilizer-plant/',
     label: 'Turnkey Fertilizer Plant',
     priority: 0.85,

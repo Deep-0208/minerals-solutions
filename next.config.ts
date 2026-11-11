@@ -130,6 +130,16 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/double-roller-granulator/',
+        destination: '/products/fertilizer-granulation-plants/double-roller-granulator/',
+        permanent: true,
+      },
+      {
+        source: '/products/granulation-pellet-plants/double-roller-granulator/',
+        destination: '/products/fertilizer-granulation-plants/double-roller-granulator/',
+        permanent: true,
+      },
+      {
         source: '/rotary-drum-granulator-plant/',
         destination: '/products/fertilizer-granulation-plants/#machinery',
         permanent: true,
