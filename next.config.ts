@@ -65,6 +65,11 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/products/rotary-dryers/triple-pass-dryer/',
+        destination: '/products/industrial-rotary-dryers/triple-pass-dryer/',
+        permanent: true,
+      },
+      {
         source: '/rotary-dryer-manufacturer-ahmedabad/',
         destination: '/products/industrial-rotary-dryers/',
         permanent: true,
