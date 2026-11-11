@@ -42,13 +42,12 @@ export const metadata: Metadata = {
   title: {
     absolute: 'Biomass & Sawdust Rotary Dryer Manufacturer | Minerals Solutions',
   },
-  description:
-    'Industrial biomass and sawdust rotary dryers (500 to 5,000 kg/hr). Anti-clogging flights & spark arrestors. Fabricated in Zak GIDC, Dahegam.',
+  description: 'Fabricate industrial biomass and sawdust rotary dryers (500 to 5,000 kg/hr) with anti-clogging flights & spark arrestors. Built at Zak GIDC, Dahegam works.',
   alternates: {
-    canonical: '/products/industrial-rotary-dryers/biomass-sawdust-dryer/',
+    canonical: 'https://mineralssolution.in/products/industrial-rotary-dryers/biomass-sawdust-dryer/',
   },
   openGraph: {
-    title: 'Biomass & Sawdust Rotary Dryer Manufacturer | Minerals Solutions',
+    title: 'Biomass & Sawdust Rotary Dryer Line | Minerals Solutions',
     description:
       'Industrial biomass and sawdust rotary dryers (500 to 5,000 kg/hr). Anti-clogging flights & spark arrestors. Fabricated in Zak GIDC, Dahegam.',
     url: `${company.siteUrl}/products/industrial-rotary-dryers/biomass-sawdust-dryer/`,
@@ -489,8 +488,7 @@ export default function BiomassSawdustDryerPage() {
                   <div className="relative aspect-[4/3] w-full bg-slate-900">
                     <Image
                       src="/images/products/rotary-dryers/saw-dust-biomass-dryer-lg.webp"
-                      alt="Industrial Biomass and Sawdust Rotary Dryer manufactured at Minerals Solutions Zak GIDC Dahegam facility"
-                      fill
+                      alt="Industrial Biomass and Sawdust Rotary Dryer manufactured at Minerals Solutions Zak GIDC Dahegam facility" width={800} height={600}
                       priority
                       className="object-cover"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 45vw, 550px"
@@ -531,17 +529,17 @@ export default function BiomassSawdustDryerPage() {
           </Container>
         </section>
 
-        {/* AI Citability Definition Passage (Top 30% Citability Passage) */}
+        {/* Top-30% Citability Definition Block (Targeted for AI Overviews & Answer Engines) */}
         <section className="py-8 bg-slate-50 border-b border-slate-200">
           <Container>
             <div className="p-6 rounded-xl bg-white border-l-4 border-l-[#DA020D] border border-slate-200 shadow-sm">
-              <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
-                <Info className="w-4 h-4 text-[#DA020D]" />
-                Engineering Definition: Low-Density Biomass Rotary Drying
+              <div className="flex items-start gap-4">
+                <Info className="h-6 w-6 text-[#DA020D] shrink-0 mt-0.5" />
+                <div className="text-slate-800 text-sm sm:text-base leading-relaxed">
+                  <strong className="text-slate-950 font-semibold">What is an industrial biomass and sawdust rotary dryer? </strong>
+                  An industrial biomass and sawdust rotary dryer is a continuous convective thermal drying drum specifically engineered to dehydrate wet wood shavings, sawdust, sugarcane bagasse, agricultural stalks, and rice husk prior to briquetting and pelletizing. Fabricated in Zak GIDC, Dahegam from heavy-gauge IS 2062 carbon steel, the cylinder is fitted with anti-clogging multi-zone lifting flights that maintain continuous dispersion of low-bulk-density organic particulates without bridging or balling. Operating at throughput capacities from 500 kg/hr to 5,000 kg/hr, hot flue gases (250°C to 400°C inlet) evaporate high green moisture from 45%-55% down to an optimal 10%-12% required for ring-die pellet mills. Integrated safety engineering includes heavy-duty spark arrestor cyclones, explosion relief rupture discs compliant with NFPA guidelines, and automated deluge water quenching nozzles to eliminate biomass smolder hazards during continuous high-tonnage factory production.
+                </div>
               </div>
-              <p className="text-slate-800 text-sm sm:text-base leading-relaxed">
-                An <strong>industrial biomass and sawdust rotary dryer</strong> is a continuous convective thermal drying drum specifically engineered for low-density fibrous organic residues such as wood shavings, coconut coir pith, groundnut shells, and agricultural stalks. Because fine dry biomass fibers present high deflagration risks, the system operates under controlled air velocity (1.8 to 2.4 m/s) with an inline refractory spark arrestor and automatic thermal dilution dampers, preventing charring or fire hazards. Internal staggered serrated flights continuously lift and shower the fibrous bed through 160°C–220°C hot air, reducing raw moisture from 50% down to the 10%–12% threshold required for commercial ring-die pellet mills and briquetting presses. Minerals Solutions manufactures custom MS-BMD biomass rotary dryers from 500 kg/hr to 5,000 kg/hr at Zak GIDC, Dahegam, Gandhinagar.
-              </p>
             </div>
           </Container>
         </section>
@@ -847,83 +845,91 @@ export default function BiomassSawdustDryerPage() {
           </Container>
         </section>
 
-        {/* Downstream & Upstream Machinery Integration */}
-        <section className="py-14 lg:py-20 border-b border-slate-200 bg-slate-50/60">
+        {/* Internal Linking Triangle: Parent Hub, 2 Sibling Spokes, 1 Cross-Pillar Machine */}
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-slate-50/70">
           <Container>
-            <div className="max-w-3xl mb-12">
-              <div className="text-xs font-bold uppercase tracking-widest text-[#DA020D] mb-2 flex items-center gap-1.5">
-                <Boxes className="w-4 h-4" />
-                Interlinked Production Systems
+            <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+              <div>
+                <div className="text-xs font-bold uppercase tracking-widest text-[#DA020D] mb-2 flex items-center gap-1.5 font-mono">
+                  <Layers className="w-4 h-4" />
+                  Engineered Plant Integration & Sibling Equipment
+                </div>
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-950 tracking-tight">
+                  Turnkey Plant Integration & Complementary Systems
+                </h2>
+                <p className="text-slate-600 mt-2 text-sm sm:text-base max-w-2xl">
+                  Connect this unit into a continuous, high-efficiency manufacturing line with matched upstream and downstream equipment.
+                </p>
               </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-950 tracking-tight">
-                Turnkey Biomass Plant Equipment Bridges
-              </h2>
-              <p className="text-slate-600 mt-3 text-base">
-                Connect your biomass rotary dryer directly to upstream feed conveyors and downstream pellet mill extruders.
-              </p>
+              <Link
+                href="/products/industrial-rotary-dryers/"
+                className="inline-flex items-center gap-2 text-sm font-bold text-slate-800 hover:text-[#DA020D] transition-colors shrink-0"
+              >
+                Explore Full Rotary Dryers & Thermal Systems Hub <ChevronRight className="w-4 h-4 text-[#DA020D]" />
+              </Link>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {/* Conveyor Feeder Link */}
-              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-slate-300 transition-colors flex flex-col justify-between">
+              {/* Sibling Spoke 1 */}
+              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-[#DA020D]/40 transition-all flex flex-col justify-between">
                 <div>
-                  <div className="text-xs font-bold text-blue-700 uppercase tracking-wider mb-2 flex items-center gap-1">
-                    <Boxes className="w-3.5 h-3.5" /> Enclosed Feeder
+                  <div className="text-xs font-mono font-semibold text-emerald-700 uppercase tracking-wider mb-2">
+                    Sibling Dryer Line
                   </div>
                   <h3 className="text-lg font-bold text-slate-950 mb-2">
-                    Industrial Screw Conveyors
+                    Triple Pass Rotary Drum Dryer Line
                   </h3>
                   <p className="text-slate-600 text-sm leading-relaxed mb-4">
-                    Enclosed U-trough and tubular screw conveyors prevent airborne sawdust dust spillage while providing metered variable-speed feeding into the dryer.
+                    Concentric three-cylinder drum saving factory floor length and drying fuel.
                   </p>
                 </div>
                 <Link
-                  href="/products/industrial-conveyors-spares/"
+                  href="/products/industrial-rotary-dryers/triple-pass-dryer/"
                   className="font-bold text-[#DA020D] hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
                 >
-                  Explore Screw Conveyors <ChevronRight className="w-4 h-4" />
+                  View Machine Specifications <ChevronRight className="w-4 h-4" />
                 </Link>
               </div>
 
-              {/* Pellet Plant Link */}
-              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-slate-300 transition-colors flex flex-col justify-between">
+              {/* Sibling Spoke 2 */}
+              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-[#DA020D]/40 transition-all flex flex-col justify-between">
                 <div>
-                  <div className="text-xs font-bold text-emerald-700 uppercase tracking-wider mb-2 flex items-center gap-1">
-                    <Sprout className="w-3.5 h-3.5" /> Downstream Processing
+                  <div className="text-xs font-mono font-semibold text-blue-700 uppercase tracking-wider mb-2">
+                    Sibling Dryer Line
                   </div>
                   <h3 className="text-lg font-bold text-slate-950 mb-2">
-                    Fertilizer Granulation & Pelleting Plants
+                    Industrial Rotary Sand Dryer Unit
                   </h3>
                   <p className="text-slate-600 text-sm leading-relaxed mb-4">
-                    Pair your dried biomass with organic manure, bentonite binders, and pan pelletizers for bio-organic compound fertilizer manufacturing.
-                  </p>
-                </div>
-                <Link
-                  href="/products/fertilizer-granulation-plants/"
-                  className="font-bold text-[#DA020D] hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
-                >
-                  View Pelleting Lines <ChevronRight className="w-4 h-4" />
-                </Link>
-              </div>
-
-              {/* Sibling Sand Dryer Link */}
-              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-slate-300 transition-colors flex flex-col justify-between">
-                <div>
-                  <div className="text-xs font-bold text-[#DA020D] uppercase tracking-wider mb-2 flex items-center gap-1">
-                    <Flame className="w-3.5 h-3.5" /> Mineral Drying System
-                  </div>
-                  <h3 className="text-lg font-bold text-slate-950 mb-2">
-                    Industrial Rotary Sand Dryers
-                  </h3>
-                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
-                    Handling dense mineral aggregates, silica sand, or foundry sands? Review our heavy-duty rotary sand dryers engineered for high thermal loads.
+                    High-tonnage heavy mineral dryer handling continuous moisture reduction below 0.5%.
                   </p>
                 </div>
                 <Link
                   href="/products/industrial-rotary-dryers/sand-dryer/"
                   className="font-bold text-[#DA020D] hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
                 >
-                  View Rotary Sand Dryer <ChevronRight className="w-4 h-4" />
+                  View Machine Specifications <ChevronRight className="w-4 h-4" />
+                </Link>
+              </div>
+
+              {/* Cross-Pillar Machine */}
+              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-[#DA020D]/40 transition-all flex flex-col justify-between">
+                <div>
+                  <div className="text-xs font-mono font-semibold text-purple-700 uppercase tracking-wider mb-2">
+                    Complementary Pelletizing Line
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-950 mb-2">
+                    Industrial Pan Disc Granulator
+                  </h3>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                    Downstream rotary pelletizing disc turning dried sawdust into bio-fertilizer compost pellets.
+                  </p>
+                </div>
+                <Link
+                  href="/products/fertilizer-granulation-plants/disc-granulator/"
+                  className="font-bold text-[#DA020D] hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
+                >
+                  Explore Complementary Machine <ChevronRight className="w-4 h-4" />
                 </Link>
               </div>
             </div>
@@ -972,7 +978,7 @@ export default function BiomassSawdustDryerPage() {
             <div className="max-w-4xl mx-auto text-center">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-950/80 border border-red-800 text-red-300 text-xs font-bold uppercase tracking-wider mb-4">
                 <Sprout className="w-3.5 h-3.5 text-emerald-400" />
-                Direct Manufacturer Procurement — Zak GIDC Dahegam Works
+                Direct Manufacturer Procurement ,  Zak GIDC Dahegam Works
               </div>
 
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight mb-6">

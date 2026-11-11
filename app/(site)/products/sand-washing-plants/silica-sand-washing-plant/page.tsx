@@ -42,13 +42,12 @@ export const metadata: Metadata = {
   title: {
     absolute: 'Silica Sand Washing Plant Manufacturer | Minerals Solutions',
   },
-  description:
-    'Complete silica sand washing plants (20 to 150 TPH). Log washing, hydrocyclone desliming & dewatering for glass & ceramic sand. Zak GIDC, Dahegam.',
+  description: 'Engineer complete silica sand washing plants (20 to 150 TPH) with log washing, hydrocyclones & dewatering for glass and foundry sand. Zak GIDC, Dahegam.',
   alternates: {
-    canonical: '/products/sand-washing-plants/silica-sand-washing-plant/',
+    canonical: 'https://mineralssolution.in/products/sand-washing-plants/silica-sand-washing-plant/',
   },
   openGraph: {
-    title: 'Silica Sand Washing Plant Manufacturer | Minerals Solutions',
+    title: 'Silica Sand Washing Plant System | Minerals Solutions',
     description:
       'Complete silica sand washing plants (20 to 150 TPH). Log washing, hydrocyclone desliming & dewatering for glass & ceramic sand. Zak GIDC, Dahegam.',
     url: `${company.siteUrl}/products/sand-washing-plants/silica-sand-washing-plant/`,
@@ -450,8 +449,7 @@ export default function SilicaSandWashingPlantPage() {
                   <div className="relative aspect-[4/3] w-full bg-slate-900">
                     <Image
                       src="/images/products/mineral-processing/river-sand-washing-plant-lg.webp"
-                      alt="Turnkey Silica Sand Washing & Beneficiation Plant manufactured by Minerals Solutions in Zak GIDC Gujarat"
-                      fill
+                      alt="Turnkey Silica Sand Washing & Beneficiation Plant manufactured by Minerals Solutions in Zak GIDC Gujarat" width={800} height={600}
                       priority
                       className="object-cover"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 45vw, 550px"
@@ -492,17 +490,17 @@ export default function SilicaSandWashingPlantPage() {
           </Container>
         </section>
 
-        {/* AI Citability Definition Passage (Top 30% Citability Passage) */}
+        {/* Top-30% Citability Definition Block (Targeted for AI Overviews & Answer Engines) */}
         <section className="py-8 bg-slate-50 border-b border-slate-200">
           <Container>
-            <div className="p-6 rounded-xl bg-white border-l-4 border-l-cyan-600 border border-slate-200 shadow-sm">
-              <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
-                <Info className="w-4 h-4 text-cyan-700" />
-                Process Engineering Definition: Silica Sand Washing & Desliming
+            <div className="p-6 rounded-xl bg-white border-l-4 border-l-[#DA020D] border border-slate-200 shadow-sm">
+              <div className="flex items-start gap-4">
+                <Info className="h-6 w-6 text-[#DA020D] shrink-0 mt-0.5" />
+                <div className="text-slate-800 text-sm sm:text-base leading-relaxed">
+                  <strong className="text-slate-950 font-semibold">What is a turnkey silica sand washing plant? </strong>
+                  A silica sand washing plant is a turnkey mineral wet-processing circuit engineered to eliminate clay slimes, refractory silt, and surface iron staining from raw silica rock and glass sand deposits. Fabricated at Minerals Solutions works in Zak GIDC, Dahegam, the modular plant integrates an attrition scrubbing cell, twin-shaft log washer, high-pressure hydrocyclone desliming tower, and high-frequency polyurethane dewatering screen. Processing feed rates from 20 to 150 TPH, the circuit scrubs away stubborn plastic clay coatings, separates detrimental -75 micron fines, and recovers 95%+ of saleable 100 to 600 micron silica sand. Discharging clean industrial aggregate at 12% to 14% residual moisture with silt contents below 0.5%, the plant reliably delivers high-purity SiO2 grades (exceeding 99.2%) conforming to strict IS 488 standards for container glass, solar photovoltaics, and automotive foundry casting operations.
+                </div>
               </div>
-              <p className="text-slate-800 text-sm sm:text-base leading-relaxed">
-                A <strong>silica sand washing plant</strong> is a multi-stage mineral beneficiation processing circuit engineered to remove clay films, silt slimes, and iron oxide (Fe2O3) contamination from raw mined quartz sands. The process combines coarse screen scalping with intensive high-shear attrition scrubbing in a twin-shaft log washer to physically shear away adherent red hematite clay skins from quartz crystals. Slurry is subsequently accelerated into polyurethane hydrocyclones under 1.5 bar centrifugal pressure to reject minus-75 micron clay slimes into the overflow, while purified +75 micron quartz discharges onto a high-frequency linear dewatering screen. This yields purified silica sand with SiO2 purity exceeding 99.2% and Fe2O3 reduced below 0.035%, suitable for Morbi vitrified ceramics and container glass manufacturing. Minerals Solutions manufactures complete MS-SWP turnkey washing plants from 20 to 150 TPH at Zak GIDC, Dahegam, Gujarat.
-              </p>
             </div>
           </Container>
         </section>
@@ -807,83 +805,91 @@ export default function SilicaSandWashingPlantPage() {
           </Container>
         </section>
 
-        {/* Downstream & Upstream Integration */}
-        <section className="py-14 lg:py-20 border-b border-slate-200 bg-slate-50/60">
+        {/* Internal Linking Triangle: Parent Hub, 2 Sibling Spokes, 1 Cross-Pillar Machine */}
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-slate-50/70">
           <Container>
-            <div className="max-w-3xl mb-12">
-              <div className="text-xs font-bold uppercase tracking-widest text-cyan-800 mb-2 flex items-center gap-1.5">
-                <RotateCw className="w-4 h-4 text-cyan-700" />
-                Downstream Equipment Connections
+            <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+              <div>
+                <div className="text-xs font-bold uppercase tracking-widest text-[#DA020D] mb-2 flex items-center gap-1.5 font-mono">
+                  <Layers className="w-4 h-4" />
+                  Engineered Plant Integration & Sibling Equipment
+                </div>
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-950 tracking-tight">
+                  Turnkey Plant Integration & Complementary Systems
+                </h2>
+                <p className="text-slate-600 mt-2 text-sm sm:text-base max-w-2xl">
+                  Connect this unit into a continuous, high-efficiency manufacturing line with matched upstream and downstream equipment.
+                </p>
               </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-950 tracking-tight">
-                Turnkey Mineral Plant Integration
-              </h2>
-              <p className="text-slate-600 mt-3 text-base">
-                Connect your silica sand washing line directly to downstream thermal drying and material handling conveyors.
-              </p>
+              <Link
+                href="/products/sand-washing-plants/"
+                className="inline-flex items-center gap-2 text-sm font-bold text-slate-800 hover:text-[#DA020D] transition-colors shrink-0"
+              >
+                Explore Full Sand Washing & Mineral Processing Hub <ChevronRight className="w-4 h-4 text-[#DA020D]" />
+              </Link>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {/* Downstream Rotary Sand Dryer */}
-              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-slate-300 transition-colors flex flex-col justify-between">
+              {/* Sibling Spoke 1 */}
+              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-[#DA020D]/40 transition-all flex flex-col justify-between">
                 <div>
-                  <div className="text-xs font-bold text-[#DA020D] uppercase tracking-wider mb-2 flex items-center gap-1">
-                    <Flame className="w-3.5 h-3.5" /> Downstream Thermal Drying
+                  <div className="text-xs font-mono font-semibold text-emerald-700 uppercase tracking-wider mb-2">
+                    Sibling Washing Line
                   </div>
                   <h3 className="text-lg font-bold text-slate-950 mb-2">
-                    Industrial Rotary Sand Dryers
+                    Bucket Wheel Sand Washer System
                   </h3>
                   <p className="text-slate-600 text-sm leading-relaxed mb-4">
-                    Transfer 12% moisture washed silica sand directly via belt conveyor into our rotary sand dryers, reducing moisture to &lt;0.5% for dry-mix mortar and glassmaking.
+                    Low-power solid-liquid classification machine for M-Sand and gravel desilting.
+                  </p>
+                </div>
+                <Link
+                  href="/products/sand-washing-plants/bucket-wheel-sand-washer/"
+                  className="font-bold text-[#DA020D] hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
+                >
+                  View Machine Specifications <ChevronRight className="w-4 h-4" />
+                </Link>
+              </div>
+
+              {/* Sibling Spoke 2 */}
+              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-[#DA020D]/40 transition-all flex flex-col justify-between">
+                <div>
+                  <div className="text-xs font-mono font-semibold text-blue-700 uppercase tracking-wider mb-2">
+                    Sibling Washing Line
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-950 mb-2">
+                    Hydrocyclone Fine Sand Recovery Unit
+                  </h3>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                    Centrifugal fines recovery skid capturing 95%+ of 75-150 micron fine plaster sand.
+                  </p>
+                </div>
+                <Link
+                  href="/products/sand-washing-plants/hydrocyclone-sand-separator/"
+                  className="font-bold text-[#DA020D] hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
+                >
+                  View Machine Specifications <ChevronRight className="w-4 h-4" />
+                </Link>
+              </div>
+
+              {/* Cross-Pillar Machine */}
+              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-[#DA020D]/40 transition-all flex flex-col justify-between">
+                <div>
+                  <div className="text-xs font-mono font-semibold text-purple-700 uppercase tracking-wider mb-2">
+                    Complementary Thermal System
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-950 mb-2">
+                    Industrial Rotary Sand Dryer Unit
+                  </h3>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                    Downstream thermal processing drum to convert washed sand into bone-dry foundry and glass sand.
                   </p>
                 </div>
                 <Link
                   href="/products/industrial-rotary-dryers/sand-dryer/"
                   className="font-bold text-[#DA020D] hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
                 >
-                  View Rotary Sand Dryer <ChevronRight className="w-4 h-4" />
-                </Link>
-              </div>
-
-              {/* Sibling Log Washer Link */}
-              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-slate-300 transition-colors flex flex-col justify-between">
-                <div>
-                  <div className="text-xs font-bold text-cyan-700 uppercase tracking-wider mb-2 flex items-center gap-1">
-                    <Waves className="w-3.5 h-3.5" /> Heavy Ore Scrubber
-                  </div>
-                  <h3 className="text-lg font-bold text-slate-950 mb-2">
-                    Heavy Mineral Log Washers
-                  </h3>
-                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
-                    Need severe attrition scrubbing for quartz rock lumps containing tough plastic clay? Explore our standalone heavy-duty mineral log washers.
-                  </p>
-                </div>
-                <Link
-                  href="/products/sand-washing-plants/"
-                  className="font-bold text-cyan-800 hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
-                >
-                  View Log Washer Lines <ChevronRight className="w-4 h-4" />
-                </Link>
-              </div>
-
-              {/* Master Hub Link */}
-              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-slate-300 transition-colors flex flex-col justify-between">
-                <div>
-                  <div className="text-xs font-bold text-blue-700 uppercase tracking-wider mb-2 flex items-center gap-1">
-                    <Layers className="w-3.5 h-3.5" /> Complete Machinery Catalog
-                  </div>
-                  <h3 className="text-lg font-bold text-slate-950 mb-2">
-                    Sand Washing Plants Master Hub
-                  </h3>
-                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
-                    Explore bucket wheel washers, hydrocyclones, vibrating screens, and primary jaw crushers manufactured at our Zak GIDC workshops.
-                  </p>
-                </div>
-                <Link
-                  href="/products/sand-washing-plants/"
-                  className="font-bold text-cyan-800 hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
-                >
-                  View All Washing Plants <ChevronRight className="w-4 h-4" />
+                  Explore Complementary Machine <ChevronRight className="w-4 h-4" />
                 </Link>
               </div>
             </div>
@@ -932,7 +938,7 @@ export default function SilicaSandWashingPlantPage() {
             <div className="max-w-4xl mx-auto text-center">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/80 border border-cyan-800 text-cyan-300 text-xs font-bold uppercase tracking-wider mb-4">
                 <Waves className="w-3.5 h-3.5 text-cyan-400" />
-                Direct Manufacturer Procurement — Zak GIDC Dahegam Works
+                Direct Manufacturer Procurement ,  Zak GIDC Dahegam Works
               </div>
 
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight mb-6">

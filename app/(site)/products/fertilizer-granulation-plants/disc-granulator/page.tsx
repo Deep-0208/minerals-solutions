@@ -43,13 +43,12 @@ export const metadata: Metadata = {
   title: {
     absolute: 'Pan Disc Fertilizer Granulator | Minerals Solutions',
   },
-  description:
-    'Industrial pan disc granulators (2.2m diameter, 1 to 3 TPH). Stepless tilt adjustment (35°-55°) for organic & NPK fertilizer. Zak GIDC, Gujarat.',
+  description: 'Procure heavy duty industrial pan disc granulators (1 to 8 TPH) for NPK, bentonite, and compost pellets. 40° to 55° tilt angle, built in Zak GIDC, Dahegam.',
   alternates: {
-    canonical: '/products/fertilizer-granulation-plants/disc-granulator/',
+    canonical: 'https://mineralssolution.in/products/fertilizer-granulation-plants/disc-granulator/',
   },
   openGraph: {
-    title: 'Pan Disc Fertilizer Granulator | Minerals Solutions',
+    title: 'Industrial Pan Disc Granulators | Minerals Solutions',
     description:
       'Industrial pan disc granulators (2.2m diameter, 1 to 3 TPH). Stepless tilt adjustment (35°-55°) for organic & NPK fertilizer. Zak GIDC, Gujarat.',
     url: `${company.siteUrl}/products/fertilizer-granulation-plants/disc-granulator/`,
@@ -442,8 +441,7 @@ export default function PanDiscGranulatorPage() {
                   <div className="relative aspect-[4/3] w-full">
                     <Image
                       src="/images/products/fertilizer-pellet/fertilizer-pan-granulator-unit-lg.webp"
-                      alt="Industrial Pan Disc Fertilizer Granulator Fabricated by Minerals Solutions in Dahegam Gujarat"
-                      fill
+                      alt="Industrial Pan Disc Fertilizer Granulator Fabricated by Minerals Solutions in Dahegam Gujarat" width={800} height={600}
                       priority
                       className="object-cover object-center"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 45vw, 540px"
@@ -467,19 +465,12 @@ export default function PanDiscGranulatorPage() {
         {/* Top-30% Citability Definition Block (Targeted for AI Overviews & Answer Engines) */}
         <section className="py-8 bg-slate-50 border-b border-slate-200">
           <Container>
-            <div className="p-6 rounded-xl bg-white border-l-4 border-l-amber-600 border border-slate-200 shadow-sm">
+            <div className="p-6 rounded-xl bg-white border-l-4 border-l-[#DA020D] border border-slate-200 shadow-sm">
               <div className="flex items-start gap-4">
-                <Info className="h-6 w-6 text-amber-600 shrink-0 mt-0.5" />
+                <Info className="h-6 w-6 text-[#DA020D] shrink-0 mt-0.5" />
                 <div className="text-slate-800 text-sm sm:text-base leading-relaxed">
                   <strong className="text-slate-950 font-semibold">What is an industrial pan disc fertilizer granulator? </strong>
-                  An industrial pan disc fertilizer granulator is an inclined, rotational agglomeration machine designed to
-                  convert fine, cohesive powders—such as organic compost, animal manure, NPK chemical compounds, and bentonite
-                  clay—into dense, spherical granules. Raw powder is continuously fed onto a heavy circular disc rotating at
-                  14 to 22 RPM while atomized liquid binders are sprayed from overhead manifolds. Centrifugal motion carries the
-                  wetted powder upward until gravity causes it to tumble downward in a continuous rolling snowball cascade.
-                  Capillary liquid bridges bind particles into concentric layers; once granules reach the calibrated target
-                  diameter (2 mm to 4 mm), their mass causes them to naturally spill over the pan rim with over 93% granulation
-                  efficiency, completely eliminating the need for internal screening.
+                  An industrial pan disc fertilizer granulator is a continuous rotary agglomeration machine engineered to transform fine powdered compost, vermicompost, NPK compounds, bentonite clay, and dolomite into uniform, dense spherical pellets. Manufactured in Zak GIDC, Dahegam, the machine consists of a heavy circular pan (1,800mm to 3,600mm diameter) lined with polypropylene or stainless steel to prevent sticking, mounted on a rigid structural base with stepless tilt adjustment from 40 to 55 degrees. Powered by high-torque IE3 motors (7.5 to 30 kW), the inclined disc rotates at 12 to 24 RPM while atomized liquid binder sprays over tumbling powder. Centrifugal classification automatically stratifies growing granules, discharging 93%+ on-size spherical pellets (2.0mm to 4.5mm) over the outer rim at continuous production capacities from 1 to 8 TPH for high-efficiency commercial packaging and bulk agricultural distribution.
                 </div>
               </div>
             </div>
@@ -741,87 +732,92 @@ export default function PanDiscGranulatorPage() {
           </Container>
         </section>
 
-        {/* Section 6: Upstream, Sibling & Cross-Pillar Integration */}
-        <section className="py-14 lg:py-20 border-b border-slate-200 bg-slate-50/60">
+        {/* Internal Linking Triangle: Parent Hub, 2 Sibling Spokes, 1 Cross-Pillar Machine */}
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-slate-50/70">
           <Container>
-            <div className="max-w-3xl mb-12">
-              <span className="text-amber-700 font-semibold text-sm uppercase tracking-wider block mb-2">
-                Turnkey Fertilizer Plant Lines
-              </span>
-              <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-950 font-display">
-                Upstream & Downstream Integration Across Minerals Solutions Machinery
-              </h2>
-              <p className="mt-4 text-slate-700 leading-relaxed">
-                Connect your pan disc granulator with our complete line of material handling, thermal drying, and coating
-                machinery fabricated in Dahegam.
-              </p>
+            <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+              <div>
+                <div className="text-xs font-bold uppercase tracking-widest text-[#DA020D] mb-2 flex items-center gap-1.5 font-mono">
+                  <Layers className="w-4 h-4" />
+                  Engineered Plant Integration & Sibling Equipment
+                </div>
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-950 tracking-tight">
+                  Turnkey Plant Integration & Complementary Systems
+                </h2>
+                <p className="text-slate-600 mt-2 text-sm sm:text-base max-w-2xl">
+                  Connect this unit into a continuous, high-efficiency manufacturing line with matched upstream and downstream equipment.
+                </p>
+              </div>
+              <Link
+                href="/products/fertilizer-granulation-plants/"
+                className="inline-flex items-center gap-2 text-sm font-bold text-slate-800 hover:text-[#DA020D] transition-colors shrink-0"
+              >
+                Explore Full Fertilizer Granulation & Pellet Plants Hub <ChevronRight className="w-4 h-4 text-[#DA020D]" />
+              </Link>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {/* Card 1: Screw Conveyors */}
-              <div className="p-6 rounded-xl bg-white border border-slate-200 shadow-xs flex flex-col justify-between">
+              {/* Sibling Spoke 1 */}
+              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-[#DA020D]/40 transition-all flex flex-col justify-between">
                 <div>
-                  <span className="text-xs font-bold uppercase tracking-wider text-amber-700 block mb-2">
-                    Upstream Feeding
-                  </span>
-                  <h3 className="text-lg font-bold text-slate-950 mb-2">Industrial Screw Conveyors</h3>
-                  <p className="text-sm text-slate-600 leading-relaxed">
-                    Provide continuous, metered volumetric powder feeding into the pan disc granulator without dust puffing
-                    using our enclosed U-trough and tubular screw conveyors.
+                  <div className="text-xs font-mono font-semibold text-emerald-700 uppercase tracking-wider mb-2">
+                    Sibling Pellet Line
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-950 mb-2">
+                    Double Roller Compactor Granulator
+                  </h3>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                    Dry compaction extrusion granulator requiring zero moisture addition or drying fuel.
                   </p>
                 </div>
-                <div className="mt-6 pt-4 border-t border-slate-100">
-                  <Link
-                    href="/products/industrial-conveyors-spares/screw-conveyors/"
-                    className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 hover:text-amber-900 transition-colors"
-                  >
-                    View Screw Conveyors <ChevronRight className="h-3.5 w-3.5" />
-                  </Link>
-                </div>
+                <Link
+                  href="/products/fertilizer-granulation-plants/double-roller-granulator/"
+                  className="font-bold text-[#DA020D] hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
+                >
+                  View Machine Specifications <ChevronRight className="w-4 h-4" />
+                </Link>
               </div>
 
-              {/* Card 2: Triple Pass Dryer Cross-Pillar */}
-              <div className="p-6 rounded-xl bg-white border border-slate-200 shadow-xs flex flex-col justify-between">
+              {/* Sibling Spoke 2 */}
+              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-[#DA020D]/40 transition-all flex flex-col justify-between">
                 <div>
-                  <span className="text-xs font-bold uppercase tracking-wider text-amber-700 block mb-2">
-                    Thermal Moisture Removal
-                  </span>
-                  <h3 className="text-lg font-bold text-slate-950 mb-2">Triple Pass Rotary Drum Dryers</h3>
-                  <p className="text-sm text-slate-600 leading-relaxed">
-                    Dry moist green granules (28% moisture) down to &lt;8% without thermal degradation in our compact,
-                    high-efficiency 3-pass concentric rotary drum dryers.
+                  <div className="text-xs font-mono font-semibold text-blue-700 uppercase tracking-wider mb-2">
+                    Sibling Pellet Line
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-950 mb-2">
+                    Rotary Drum Granulator Machines
+                  </h3>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                    High-tonnage continuous tumbling agglomeration drum for NPK and DAP fertilizer lines.
                   </p>
                 </div>
-                <div className="mt-6 pt-4 border-t border-slate-100">
-                  <Link
-                    href="/products/industrial-rotary-dryers/triple-pass-dryer/"
-                    className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 hover:text-amber-900 transition-colors"
-                  >
-                    View Triple Pass Dryers <ChevronRight className="h-3.5 w-3.5" />
-                  </Link>
-                </div>
+                <Link
+                  href="/products/fertilizer-granulation-plants/rotary-drum-granulator/"
+                  className="font-bold text-[#DA020D] hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
+                >
+                  View Machine Specifications <ChevronRight className="w-4 h-4" />
+                </Link>
               </div>
 
-              {/* Card 3: Fertilizer Coating & Cooling Drum Sibling */}
-              <div className="p-6 rounded-xl bg-white border border-slate-200 shadow-xs flex flex-col justify-between">
+              {/* Cross-Pillar Machine */}
+              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-[#DA020D]/40 transition-all flex flex-col justify-between">
                 <div>
-                  <span className="text-xs font-bold uppercase tracking-wider text-amber-700 block mb-2">
-                    Finishing & Anti-Caking
-                  </span>
-                  <h3 className="text-lg font-bold text-slate-950 mb-2">Fertilizer Cooling & Coating Drums</h3>
-                  <p className="text-sm text-slate-600 leading-relaxed">
-                    Cool dried granules to ambient temperature and apply anti-caking oil and neem coatings before final 50kg
-                    bagging and warehouse palletizing.
+                  <div className="text-xs font-mono font-semibold text-purple-700 uppercase tracking-wider mb-2">
+                    Complementary Thermal System
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-950 mb-2">
+                    Triple Pass Rotary Drum Dryer Line
+                  </h3>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                    Downstream thermal rotary dryer reducing wet green compost pellets to hard storage moisture.
                   </p>
                 </div>
-                <div className="mt-6 pt-4 border-t border-slate-100">
-                  <Link
-                    href="/products/fertilizer-granulation-plants/fertilizer-cooling-coating-drum/"
-                    className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 hover:text-amber-900 transition-colors"
-                  >
-                    View Coating Drums <ChevronRight className="h-3.5 w-3.5" />
-                  </Link>
-                </div>
+                <Link
+                  href="/products/industrial-rotary-dryers/triple-pass-dryer/"
+                  className="font-bold text-[#DA020D] hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
+                >
+                  Explore Complementary Machine <ChevronRight className="w-4 h-4" />
+                </Link>
               </div>
             </div>
           </Container>

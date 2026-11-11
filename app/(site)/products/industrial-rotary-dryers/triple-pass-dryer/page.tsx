@@ -37,13 +37,12 @@ export const metadata: Metadata = {
   title: {
     absolute: 'Triple Pass Rotary Drum Dryer Manufacturer | Minerals Solutions',
   },
-  description:
-    'High-efficiency triple pass rotary drum dryers (500 kg to 15 TPH). Concentric 3-cylinder design saving 40% space. Fabricated in Zak GIDC, Dahegam.',
+  description: 'Procure high-efficiency triple pass rotary drum dryers (500 kg to 15 TPH). Concentric 3-cylinder design saving fuel, fabricated in Zak GIDC, Dahegam.',
   alternates: {
-    canonical: '/products/industrial-rotary-dryers/triple-pass-dryer/',
+    canonical: 'https://mineralssolution.in/products/industrial-rotary-dryers/triple-pass-dryer/',
   },
   openGraph: {
-    title: 'Triple Pass Rotary Drum Dryer Manufacturer | Minerals Solutions',
+    title: 'Triple Pass Rotary Drum Dryer Line | Minerals Solutions',
     description:
       'High-efficiency triple pass rotary drum dryers (500 kg to 15 TPH). Concentric 3-cylinder design saving 40% space. Fabricated in Zak GIDC, Dahegam.',
     url: `${company.siteUrl}/products/industrial-rotary-dryers/triple-pass-dryer/`,
@@ -491,8 +490,7 @@ export default function TriplePassDryerPage() {
                   <div className="relative aspect-[4/3] w-full bg-slate-900">
                     <Image
                       src="/images/products/rotary-dryers/continuous-type-rotary-dryer-lg.webp"
-                      alt="Triple Pass Concentric Rotary Drum Dryer manufacturing assembly at Zak GIDC Dahegam works"
-                      fill
+                      alt="Triple Pass Concentric Rotary Drum Dryer manufacturing assembly at Zak GIDC Dahegam works" width={800} height={600}
                       priority
                       className="object-cover"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 45vw, 550px"
@@ -533,17 +531,17 @@ export default function TriplePassDryerPage() {
           </Container>
         </section>
 
-        {/* AI Citability Definition Block (Top 30% Citability Passage) */}
+        {/* Top-30% Citability Definition Block (Targeted for AI Overviews & Answer Engines) */}
         <section className="py-8 bg-slate-50 border-b border-slate-200">
           <Container>
             <div className="p-6 rounded-xl bg-white border-l-4 border-l-[#DA020D] border border-slate-200 shadow-sm">
-              <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
-                <Info className="w-4 h-4 text-[#DA020D]" />
-                Technical Engineering Definition & Operating Principle
+              <div className="flex items-start gap-4">
+                <Info className="h-6 w-6 text-[#DA020D] shrink-0 mt-0.5" />
+                <div className="text-slate-800 text-sm sm:text-base leading-relaxed">
+                  <strong className="text-slate-950 font-semibold">What is a triple pass rotary drum dryer? </strong>
+                  A triple pass rotary drum dryer is an advanced continuous industrial thermal processing system constructed from three nested concentric rotating cylinders engineered to maximize heat transfer efficiency in compact factory layouts. Manufactured in Zak GIDC, Dahegam from certified IS 2062 Grade B carbon steel (with optional SS 304 or SS 316 inner contact passes), wet granular minerals or crystalline powders travel through an inner co-current cylinder, reverse 180 degrees into a middle counter-cascading annular cylinder, and discharge through an outer low-temperature cylinder. This nested geometry triples thermal retention time while occupying approximately 40% to 50% less linear bay length than equivalent single-pass drums. Operating with evaporative capacities from 500 kg/hr to 15 TPH, thermal efficiency ranges from 80% to 88%, dropping mineral feed moisture from 16% down to below 0.5% at exit shell skin temperatures under 50°C for optimal fuel economy.
+                </div>
               </div>
-              <p className="text-slate-800 text-sm sm:text-base leading-relaxed">
-                A <strong>triple pass rotary drum dryer</strong> is an advanced continuous industrial thermal processing system constructed from three nested, concentric cylindrical shells rotating simultaneously along a common drive axis. Wet granular mineral feed and high-velocity thermal flue gases enter the innermost cylinder (Pass 1) under intense co-current flash conditions, reverse 180 degrees into the middle annular cylinder (Pass 2) via counter-cascading lifting vees, and transition through the outermost cylinder (Pass 3) before cyclonic dust discharge. Because radiant heat escaping from the central core is immediately absorbed by incoming mineral beds in the surrounding annular drums, external skin temperatures remain below 50°C, thermal efficiencies reach 80% to 88%, and factory floor space is reduced by 40% compared to conventional single-pass rotary dryers. Minerals Solutions manufactures heavy-duty MS-TPD triple pass dryers from 500 kg/hr to 15 TPH at Zak GIDC, Dahegam, Gujarat.
-              </p>
             </div>
           </Container>
         </section>
@@ -881,8 +879,7 @@ export default function TriplePassDryerPage() {
                 <div className="relative rounded-2xl overflow-hidden border border-slate-200 bg-slate-900 aspect-[4/3] shadow-lg">
                   <Image
                     src="/images/products/rotary-dryers/double-pass-rotary-dryer-assembly-lg.webp"
-                    alt="Precision lathe turning and plate rolling of rotary drum shells at Minerals Solutions Dahegam facility"
-                    fill
+                    alt="Precision lathe turning and plate rolling of rotary drum shells at Minerals Solutions Dahegam facility" width={800} height={600}
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 550px"
                   />
@@ -901,83 +898,91 @@ export default function TriplePassDryerPage() {
           </Container>
         </section>
 
-        {/* Downstream & Upstream Machinery Integration (Cross-Pillar Links) */}
-        <section className="py-14 lg:py-20 border-b border-slate-200 bg-slate-50/60">
+        {/* Internal Linking Triangle: Parent Hub, 2 Sibling Spokes, 1 Cross-Pillar Machine */}
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-slate-50/70">
           <Container>
-            <div className="max-w-3xl mb-12">
-              <div className="text-xs font-bold uppercase tracking-widest text-[#DA020D] mb-2 flex items-center gap-1.5">
-                <RotateCw className="w-4 h-4" />
-                Turnkey Plant Engineering
+            <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+              <div>
+                <div className="text-xs font-bold uppercase tracking-widest text-[#DA020D] mb-2 flex items-center gap-1.5 font-mono">
+                  <Layers className="w-4 h-4" />
+                  Engineered Plant Integration & Sibling Equipment
+                </div>
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-950 tracking-tight">
+                  Turnkey Plant Integration & Complementary Systems
+                </h2>
+                <p className="text-slate-600 mt-2 text-sm sm:text-base max-w-2xl">
+                  Connect this unit into a continuous, high-efficiency manufacturing line with matched upstream and downstream equipment.
+                </p>
               </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-950 tracking-tight">
-                Turnkey Integration: Feed Preparation & Discharge Handling
-              </h2>
-              <p className="text-slate-600 mt-3 text-base">
-                A high-efficiency rotary dryer requires seamless integration with upstream washing and downstream conveying systems to prevent material bottlenecks.
-              </p>
+              <Link
+                href="/products/industrial-rotary-dryers/"
+                className="inline-flex items-center gap-2 text-sm font-bold text-slate-800 hover:text-[#DA020D] transition-colors shrink-0"
+              >
+                Explore Full Rotary Dryers & Thermal Systems Hub <ChevronRight className="w-4 h-4 text-[#DA020D]" />
+              </Link>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {/* Upstream Washing Link */}
-              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-slate-300 transition-colors flex flex-col justify-between">
+              {/* Sibling Spoke 1 */}
+              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-[#DA020D]/40 transition-all flex flex-col justify-between">
                 <div>
-                  <div className="text-xs font-bold text-emerald-700 uppercase tracking-wider mb-2 flex items-center gap-1">
-                    <Waves className="w-3.5 h-3.5" /> Upstream Feed Source
+                  <div className="text-xs font-mono font-semibold text-emerald-700 uppercase tracking-wider mb-2">
+                    Sibling Dryer Line
                   </div>
                   <h3 className="text-lg font-bold text-slate-950 mb-2">
-                    Sand Washing Plants & Hydrocyclones
+                    Industrial Rotary Sand Dryer
                   </h3>
                   <p className="text-slate-600 text-sm leading-relaxed mb-4">
-                    Natural river sand and crushed quartz washed in our bucket wheel sand washers exit at 12–15% moisture, feeding directly into the triple-pass dryer for a complete Wash-and-Dry production line.
+                    Heavy single-pass rotary sand drying drum for high-tonnage river sand and aggregate processing.
                   </p>
                 </div>
                 <Link
-                  href="/products/sand-washing-plants/"
+                  href="/products/industrial-rotary-dryers/sand-dryer/"
                   className="font-bold text-[#DA020D] hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
                 >
-                  Explore Sand Washing Lines <ChevronRight className="w-4 h-4" />
+                  View Machine Specifications <ChevronRight className="w-4 h-4" />
                 </Link>
               </div>
 
-              {/* Downstream Conveyors Link */}
-              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-slate-300 transition-colors flex flex-col justify-between">
+              {/* Sibling Spoke 2 */}
+              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-[#DA020D]/40 transition-all flex flex-col justify-between">
                 <div>
-                  <div className="text-xs font-bold text-blue-700 uppercase tracking-wider mb-2 flex items-center gap-1">
-                    <Boxes className="w-3.5 h-3.5" /> Discharge Handling
+                  <div className="text-xs font-mono font-semibold text-blue-700 uppercase tracking-wider mb-2">
+                    Sibling Dryer Line
                   </div>
                   <h3 className="text-lg font-bold text-slate-950 mb-2">
-                    Industrial Conveyors & Bucket Elevators
+                    Stainless Chemical Powder Dryer
                   </h3>
                   <p className="text-slate-600 text-sm leading-relaxed mb-4">
-                    Bone-dry sand and mineral crystals discharging from the outer cylinder pass through rotary airlocks onto our M24 rubber troughed belt conveyors and heavy vertical bucket elevators for silo storage.
+                    Sanitary SS304/SS316 indirect thermal processing drum for active chemical powders and minerals.
                   </p>
                 </div>
                 <Link
-                  href="/products/industrial-conveyors-spares/"
+                  href="/products/industrial-rotary-dryers/chemical-powder-dryer/"
                   className="font-bold text-[#DA020D] hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
                 >
-                  Explore Conveyor Systems <ChevronRight className="w-4 h-4" />
+                  View Machine Specifications <ChevronRight className="w-4 h-4" />
                 </Link>
               </div>
 
-              {/* Sibling Drying System */}
-              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-slate-300 transition-colors flex flex-col justify-between">
+              {/* Cross-Pillar Machine */}
+              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-[#DA020D]/40 transition-all flex flex-col justify-between">
                 <div>
-                  <div className="text-xs font-bold text-[#DA020D] uppercase tracking-wider mb-2 flex items-center gap-1">
-                    <Flame className="w-3.5 h-3.5" /> Alternative Configuration
+                  <div className="text-xs font-mono font-semibold text-purple-700 uppercase tracking-wider mb-2">
+                    Complementary Wet Circuit
                   </div>
                   <h3 className="text-lg font-bold text-slate-950 mb-2">
-                    Single Pass Rotary Sand Dryers
+                    Silica Sand Washing Plant System
                   </h3>
                   <p className="text-slate-600 text-sm leading-relaxed mb-4">
-                    Handling large bauxite rocks, sticky river gravel, or heavy minerals &gt;15mm? Review our single-pass industrial rotary dryers engineered for maximum particle size tolerance and simple maintenance.
+                    Upstream wet scrubbing and desliming circuit delivering washed sand directly to the dryer feed hopper.
                   </p>
                 </div>
                 <Link
-                  href="/products/industrial-rotary-dryers/"
+                  href="/products/sand-washing-plants/silica-sand-washing-plant/"
                   className="font-bold text-[#DA020D] hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
                 >
-                  View Master Dryer Hub <ChevronRight className="w-4 h-4" />
+                  Explore Complementary Machine <ChevronRight className="w-4 h-4" />
                 </Link>
               </div>
             </div>
@@ -1026,7 +1031,7 @@ export default function TriplePassDryerPage() {
             <div className="max-w-4xl mx-auto text-center">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-950/80 border border-red-800 text-red-300 text-xs font-bold uppercase tracking-wider mb-4">
                 <Flame className="w-3.5 h-3.5 text-[#DA020D]" />
-                Direct Manufacturer Procurement — Zak GIDC Dahegam Works
+                Direct Manufacturer Procurement ,  Zak GIDC Dahegam Works
               </div>
 
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight mb-6">

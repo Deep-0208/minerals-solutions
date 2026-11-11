@@ -43,13 +43,12 @@ export const metadata: Metadata = {
   title: {
     absolute: 'Quartz Stone & Mineral Log Washer | Minerals Solutions',
   },
-  description:
-    'Heavy duty twin shaft log washers (10 to 50 TPH) for quartz and mineral ores. Scrub sticky clay from coarse rocks up to 75mm. Zak GIDC, Dahegam.',
+  description: 'Scrub tough clay from quartz stone and ore up to 75mm with heavy twin-shaft mineral log washers (30 to 150 TPH). Fabricated at Zak GIDC, Dahegam workshop.',
   alternates: {
-    canonical: '/products/sand-washing-plants/mineral-log-washer/',
+    canonical: 'https://mineralssolution.in/products/sand-washing-plants/mineral-log-washer/',
   },
   openGraph: {
-    title: 'Quartz Stone & Mineral Log Washer | Minerals Solutions',
+    title: 'Heavy Duty Mineral Log Washer Line | Minerals Solutions',
     description:
       'Heavy duty twin shaft log washers (10 to 50 TPH) for quartz and mineral ores. Scrub sticky clay from coarse rocks up to 75mm. Zak GIDC, Dahegam.',
     url: `${company.siteUrl}/products/sand-washing-plants/mineral-log-washer/`,
@@ -405,8 +404,7 @@ export default function MineralLogWasherPage() {
                   <div className="relative aspect-[4/3] w-full">
                     <Image
                       src="/images/products/mineral-processing/quartz-stone-washer-lg.webp"
-                      alt="Heavy Duty Quartz Stone and Mineral Log Washer Fabricated by Minerals Solutions in Dahegam Gujarat"
-                      fill
+                      alt="Heavy Duty Quartz Stone and Mineral Log Washer Fabricated by Minerals Solutions in Dahegam Gujarat" width={800} height={600}
                       priority
                       className="object-cover object-center"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 45vw, 540px"
@@ -430,19 +428,12 @@ export default function MineralLogWasherPage() {
         {/* Top-30% Citability Definition Block (Targeted for AI Overviews & Answer Engines) */}
         <section className="py-8 bg-slate-50 border-b border-slate-200">
           <Container>
-            <div className="p-6 rounded-xl bg-white border-l-4 border-l-amber-600 border border-slate-200 shadow-sm">
+            <div className="p-6 rounded-xl bg-white border-l-4 border-l-[#DA020D] border border-slate-200 shadow-sm">
               <div className="flex items-start gap-4">
-                <Info className="h-6 w-6 text-amber-600 shrink-0 mt-0.5" />
+                <Info className="h-6 w-6 text-[#DA020D] shrink-0 mt-0.5" />
                 <div className="text-slate-800 text-sm sm:text-base leading-relaxed">
-                  <strong className="text-slate-950 font-semibold">What is an industrial mineral log washer? </strong>
-                  An industrial mineral log washer is an extra-heavy-duty continuous wet scrubbing machine engineered with
-                  twin contra-rotating tubular shafts mounted in an inclined (6° to 10°) structural steel tub. Heavy manganese
-                  steel paddles (Mn13 Hadfield alloy) are arranged in an intermeshing helical pattern along both shafts, rotating
-                  at 20 to 35 RPM. As coarse rocks and mineral ores up to 75 mm are fed into the submerged lower chamber, the
-                  paddles force rock particles into continuous, high-pressure rock-on-rock attrition. High-pressure wash water
-                  flushes counter-currently from the discharge end, breaking down tough plastic clays, soil lumps, and surface
-                  films with over 98% de-sliming efficiency, discharging clean, scrubbed coarse rock at the top while slurry
-                  overflows the lower weir.
+                  <strong className="text-slate-950 font-semibold">What is a heavy duty mineral log washer? </strong>
+                  A heavy duty mineral log washer is an intensive high-torque attrition scrubber engineered to break down and wash away stubborn plastic clays, soft mudstone, and conglomerate binders from coarse quartz, manganese ore, silica rock, and limestone. Manufactured at Zak GIDC, Dahegam, the machine features twin counter-rotating steel shafts (up to 7.5m length) housed in a welded IS 2062 steel trough inclined at 6 to 10 degrees. Staggered high-chromium alloy steel (600+ BHN) or Hardox 500 paddle blades continuously intermesh at 25 to 35 RPM, subjecting wet mineral rock up to 75mm to severe rock-on-rock attrition and hydraulic shear. Processing capacities range from 30 to 150 TPH with water consumption of 1.5 to 2.5 m³ per ton, discharging pristine de-slimed gravel while suspended clay colloids overflow a rear adjustable weir for continuous plant operation.
                 </div>
               </div>
             </div>
@@ -714,87 +705,92 @@ export default function MineralLogWasherPage() {
           </Container>
         </section>
 
-        {/* Section 6: Upstream, Sibling & Cross-Pillar Integration */}
-        <section className="py-14 lg:py-20 border-b border-slate-200 bg-slate-50/60">
+        {/* Internal Linking Triangle: Parent Hub, 2 Sibling Spokes, 1 Cross-Pillar Machine */}
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-slate-50/70">
           <Container>
-            <div className="max-w-3xl mb-12">
-              <span className="text-amber-700 font-semibold text-sm uppercase tracking-wider block mb-2">
-                Turnkey Beneficiation Circuits
-              </span>
-              <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-950 font-display">
-                Upstream & Downstream Integration Across Minerals Solutions Machinery
-              </h2>
-              <p className="mt-4 text-slate-700 leading-relaxed">
-                The mineral log washer acts as the primary de-sliming engine. Connect it with our crushing, screening,
-                and hydrocyclone equipment for a fully automated, high-recovery washing flowsheet.
-              </p>
+            <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+              <div>
+                <div className="text-xs font-bold uppercase tracking-widest text-[#DA020D] mb-2 flex items-center gap-1.5 font-mono">
+                  <Layers className="w-4 h-4" />
+                  Engineered Plant Integration & Sibling Equipment
+                </div>
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-950 tracking-tight">
+                  Turnkey Plant Integration & Complementary Systems
+                </h2>
+                <p className="text-slate-600 mt-2 text-sm sm:text-base max-w-2xl">
+                  Connect this unit into a continuous, high-efficiency manufacturing line with matched upstream and downstream equipment.
+                </p>
+              </div>
+              <Link
+                href="/products/sand-washing-plants/"
+                className="inline-flex items-center gap-2 text-sm font-bold text-slate-800 hover:text-[#DA020D] transition-colors shrink-0"
+              >
+                Explore Full Sand Washing & Mineral Processing Hub <ChevronRight className="w-4 h-4 text-[#DA020D]" />
+              </Link>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {/* Card 1: Heavy Rock Feed Conveyors */}
-              <div className="p-6 rounded-xl bg-white border border-slate-200 shadow-xs flex flex-col justify-between">
+              {/* Sibling Spoke 1 */}
+              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-[#DA020D]/40 transition-all flex flex-col justify-between">
                 <div>
-                  <span className="text-xs font-bold uppercase tracking-wider text-amber-700 block mb-2">
-                    Material Handling
-                  </span>
-                  <h3 className="text-lg font-bold text-slate-950 mb-2">Heavy Troughed Belt Conveyors</h3>
-                  <p className="text-sm text-slate-600 leading-relaxed">
-                    Feed coarse 75mm blasted quarry rock smoothly into the log washer using our 800 mm to 1,200 mm reinforced
-                    troughed belt conveyors with impact idler cradles.
+                  <div className="text-xs font-mono font-semibold text-emerald-700 uppercase tracking-wider mb-2">
+                    Sibling Washing Line
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-950 mb-2">
+                    Silica Sand Washing Plant System
+                  </h3>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                    Turnkey washing and classification line for glass sand and high-purity quartz rock.
                   </p>
                 </div>
-                <div className="mt-6 pt-4 border-t border-slate-100">
-                  <Link
-                    href="/products/industrial-conveyors-spares/belt-conveyors/"
-                    className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 hover:text-amber-900 transition-colors"
-                  >
-                    View Troughed Conveyors <ChevronRight className="h-3.5 w-3.5" />
-                  </Link>
-                </div>
+                <Link
+                  href="/products/sand-washing-plants/silica-sand-washing-plant/"
+                  className="font-bold text-[#DA020D] hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
+                >
+                  View Machine Specifications <ChevronRight className="w-4 h-4" />
+                </Link>
               </div>
 
-              {/* Card 2: Hydrocyclone Fines Recovery */}
-              <div className="p-6 rounded-xl bg-white border border-slate-200 shadow-xs flex flex-col justify-between">
+              {/* Sibling Spoke 2 */}
+              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-[#DA020D]/40 transition-all flex flex-col justify-between">
                 <div>
-                  <span className="text-xs font-bold uppercase tracking-wider text-amber-700 block mb-2">
-                    Slurry Fines Recovery
-                  </span>
-                  <h3 className="text-lg font-bold text-slate-950 mb-2">Hydrocyclone Sand Separators</h3>
-                  <p className="text-sm text-slate-600 leading-relaxed">
-                    Capture liberated +75 micron quartz sand escaping through the log washer overflow weir to produce
-                    saleable plaster sand and reduce settling pond silt buildup.
+                  <div className="text-xs font-mono font-semibold text-blue-700 uppercase tracking-wider mb-2">
+                    Sibling Washing Line
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-950 mb-2">
+                    Bucket Wheel Sand Washer System
+                  </h3>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                    High-volume sand washing wheel separating clays from washed gravel and M-Sand.
                   </p>
                 </div>
-                <div className="mt-6 pt-4 border-t border-slate-100">
-                  <Link
-                    href="/products/sand-washing-plants/hydrocyclone-sand-separator/"
-                    className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 hover:text-amber-900 transition-colors"
-                  >
-                    View Hydrocyclone Separators <ChevronRight className="h-3.5 w-3.5" />
-                  </Link>
-                </div>
+                <Link
+                  href="/products/sand-washing-plants/bucket-wheel-sand-washer/"
+                  className="font-bold text-[#DA020D] hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
+                >
+                  View Machine Specifications <ChevronRight className="w-4 h-4" />
+                </Link>
               </div>
 
-              {/* Card 3: Downstream Thermal Sand Dryer */}
-              <div className="p-6 rounded-xl bg-white border border-slate-200 shadow-xs flex flex-col justify-between">
+              {/* Cross-Pillar Machine */}
+              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-[#DA020D]/40 transition-all flex flex-col justify-between">
                 <div>
-                  <span className="text-xs font-bold uppercase tracking-wider text-amber-700 block mb-2">
-                    Thermal Processing
-                  </span>
-                  <h3 className="text-lg font-bold text-slate-950 mb-2">Industrial Rotary Sand Dryers</h3>
-                  <p className="text-sm text-slate-600 leading-relaxed">
-                    For high-purity glass sand, dry-mix mortars, and foundry quartz, dry crushed scrubbed rock from 12% moisture
-                    down to &lt;0.5% with our heavy rotary drum dryers.
+                  <div className="text-xs font-mono font-semibold text-purple-700 uppercase tracking-wider mb-2">
+                    Complementary Thermal System
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-950 mb-2">
+                    Industrial Rotary Sand Dryer Unit
+                  </h3>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                    Downstream heavy rotary drum dryer removing moisture from washed quartz and mineral rocks.
                   </p>
                 </div>
-                <div className="mt-6 pt-4 border-t border-slate-100">
-                  <Link
-                    href="/products/industrial-rotary-dryers/sand-dryer/"
-                    className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 hover:text-amber-900 transition-colors"
-                  >
-                    View Rotary Sand Dryers <ChevronRight className="h-3.5 w-3.5" />
-                  </Link>
-                </div>
+                <Link
+                  href="/products/industrial-rotary-dryers/sand-dryer/"
+                  className="font-bold text-[#DA020D] hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
+                >
+                  Explore Complementary Machine <ChevronRight className="w-4 h-4" />
+                </Link>
               </div>
             </div>
           </Container>

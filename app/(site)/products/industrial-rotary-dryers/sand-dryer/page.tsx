@@ -39,13 +39,12 @@ export const metadata: Metadata = {
   title: {
     absolute: 'Industrial Rotary Sand Dryer Manufacturer | Minerals Solutions',
   },
-  description:
-    'Heavy duty industrial rotary sand dryers (300 kg/hr to 15 TPH). Moisture reduction from 16% to <1%. Built in Zak GIDC, Dahegam, Gujarat.',
+  description: 'Source heavy duty industrial rotary sand dryers (300 kg/hr to 15 TPH) from Minerals Solutions. Moisture drop below 1%, custom built in Zak GIDC, Dahegam.',
   alternates: {
-    canonical: '/products/industrial-rotary-dryers/sand-dryer/',
+    canonical: 'https://mineralssolution.in/products/industrial-rotary-dryers/sand-dryer/',
   },
   openGraph: {
-    title: 'Industrial Rotary Sand Dryer Manufacturer | Minerals Solutions',
+    title: 'Industrial Rotary Sand Dryer Unit | Minerals Solutions',
     description:
       'Heavy duty industrial rotary sand dryers (300 kg/hr to 15 TPH). Moisture reduction from 16% to <1%. Built in Zak GIDC, Dahegam, Gujarat.',
     url: `${company.siteUrl}/products/industrial-rotary-dryers/sand-dryer/`,
@@ -482,8 +481,7 @@ export default function RotarySandDryerPage() {
                   <div className="relative aspect-[4/3] w-full bg-slate-900">
                     <Image
                       src="/images/products/rotary-dryers/sand-dryer-coal-fired-hag-lg.webp"
-                      alt="Industrial Rotary Sand Dryer with coal-fired hot air generator manufactured by Minerals Solutions in Zak GIDC Gujarat"
-                      fill
+                      alt="Industrial Rotary Sand Dryer with coal-fired hot air generator manufactured by Minerals Solutions in Zak GIDC Gujarat" width={800} height={600}
                       priority
                       className="object-cover"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 45vw, 550px"
@@ -524,17 +522,17 @@ export default function RotarySandDryerPage() {
           </Container>
         </section>
 
-        {/* AI Citability Definition Passage (Top 30% Citability Passage) */}
+        {/* Top-30% Citability Definition Block (Targeted for AI Overviews & Answer Engines) */}
         <section className="py-8 bg-slate-50 border-b border-slate-200">
           <Container>
             <div className="p-6 rounded-xl bg-white border-l-4 border-l-[#DA020D] border border-slate-200 shadow-sm">
-              <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
-                <Info className="w-4 h-4 text-[#DA020D]" />
-                Industrial Process Definition: Rotary Sand Drying Mechanics
+              <div className="flex items-start gap-4">
+                <Info className="h-6 w-6 text-[#DA020D] shrink-0 mt-0.5" />
+                <div className="text-slate-800 text-sm sm:text-base leading-relaxed">
+                  <strong className="text-slate-950 font-semibold">What is an industrial rotary sand dryer? </strong>
+                  An industrial rotary sand dryer is a heavy-duty continuous thermal drum engineered to remove surface and capillary moisture from natural river sand, manufactured sand (M-Sand), silica sand, and foundry aggregates. Built at Minerals Solutions in Zak GIDC, Dahegam, the unit features an IS 2062 Grade B structural carbon steel cylindrical shell (12mm to 20mm plate thickness) inclined at 3 to 5 degrees and rotated at 3 to 8 RPM on forged alloy steel trunnion rollers induction-hardened to 280-320 BHN. Internal radial lifting and curtain cascading flighting showers the wet sand bed continuously through high-temperature burner flue gases (600°C to 800°C inlet). Designed for throughputs from 300 kg/hr to 15 TPH, it achieves high thermal heat transfer, reducing raw aggregate moisture from 12%-18% down to bone-dry levels under 0.5% with specific coal consumption as low as 18 to 24 kg per ton of dried aggregate.
+                </div>
               </div>
-              <p className="text-slate-800 text-sm sm:text-base leading-relaxed">
-                An <strong>industrial rotary sand dryer</strong> is a heavy continuous thermal drying drum inclined at 3 to 5 degrees, engineered to evaporate free surface moisture from silica sand, river aggregate, and quartz mineral grains. Wet feed entering at 14% to 18% moisture is propelled forward by internal spiral flights, then repeatedly lifted and showered by radial cascading vees into a high-temperature convective draft (250°C–350°C) produced by coal, biomass, or natural gas furnaces. This continuous cascade exposure maximizes heat transfer surface area, vaporizing water at thermal consumption rates of approximately 24 to 28 kg of coal per dried ton to discharge bone-dry sand below 0.5% moisture. Minerals Solutions manufactures heavy-duty MS-RSD series rotary sand dryers from 300 kg/hr to 15 TPH capacity at Zak GIDC, Dahegam, Gandhinagar.
-              </p>
             </div>
           </Container>
         </section>
@@ -844,83 +842,91 @@ export default function RotarySandDryerPage() {
           </Container>
         </section>
 
-        {/* Downstream & Upstream Machinery Integration */}
-        <section className="py-14 lg:py-20 border-b border-slate-200 bg-slate-50/60">
+        {/* Internal Linking Triangle: Parent Hub, 2 Sibling Spokes, 1 Cross-Pillar Machine */}
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-slate-50/70">
           <Container>
-            <div className="max-w-3xl mb-12">
-              <div className="text-xs font-bold uppercase tracking-widest text-[#DA020D] mb-2 flex items-center gap-1.5">
-                <Boxes className="w-4 h-4" />
-                Complete Mineral Process Integration
+            <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+              <div>
+                <div className="text-xs font-bold uppercase tracking-widest text-[#DA020D] mb-2 flex items-center gap-1.5 font-mono">
+                  <Layers className="w-4 h-4" />
+                  Engineered Plant Integration & Sibling Equipment
+                </div>
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-950 tracking-tight">
+                  Turnkey Plant Integration & Complementary Systems
+                </h2>
+                <p className="text-slate-600 mt-2 text-sm sm:text-base max-w-2xl">
+                  Connect this unit into a continuous, high-efficiency manufacturing line with matched upstream and downstream equipment.
+                </p>
               </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-950 tracking-tight">
-                Turnkey Plant Integration: Upstream Washing & Downstream Spares
-              </h2>
-              <p className="text-slate-600 mt-3 text-base">
-                Connect your rotary sand dryer directly to upstream mineral washers and heavy-duty conveyor material handling equipment.
-              </p>
+              <Link
+                href="/products/industrial-rotary-dryers/"
+                className="inline-flex items-center gap-2 text-sm font-bold text-slate-800 hover:text-[#DA020D] transition-colors shrink-0"
+              >
+                Explore Full Rotary Dryers & Thermal Systems Hub <ChevronRight className="w-4 h-4 text-[#DA020D]" />
+              </Link>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {/* Upstream Washing Link */}
-              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-slate-300 transition-colors flex flex-col justify-between">
+              {/* Sibling Spoke 1 */}
+              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-[#DA020D]/40 transition-all flex flex-col justify-between">
                 <div>
-                  <div className="text-xs font-bold text-emerald-700 uppercase tracking-wider mb-2 flex items-center gap-1">
-                    <Waves className="w-3.5 h-3.5" /> Upstream Sand Feed
+                  <div className="text-xs font-mono font-semibold text-emerald-700 uppercase tracking-wider mb-2">
+                    Sibling Dryer Line
                   </div>
                   <h3 className="text-lg font-bold text-slate-950 mb-2">
-                    Silica Sand Washing Plants
+                    Triple Pass Rotary Drum Dryer Line
                   </h3>
                   <p className="text-slate-600 text-sm leading-relaxed mb-4">
-                    Pair your rotary dryer with our hydrocyclone sand washing plants and bucket wheel washers to deslime raw silica sand down to 75 microns before thermal drying.
-                  </p>
-                </div>
-                <Link
-                  href="/products/sand-washing-plants/"
-                  className="font-bold text-[#DA020D] hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
-                >
-                  Explore Sand Washing Equipment <ChevronRight className="w-4 h-4" />
-                </Link>
-              </div>
-
-              {/* Sibling Triple Pass Link */}
-              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-slate-300 transition-colors flex flex-col justify-between">
-                <div>
-                  <div className="text-xs font-bold text-[#DA020D] uppercase tracking-wider mb-2 flex items-center gap-1">
-                    <Flame className="w-3.5 h-3.5" /> High-Efficiency Option
-                  </div>
-                  <h3 className="text-lg font-bold text-slate-950 mb-2">
-                    Triple Pass Concentric Dryers
-                  </h3>
-                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
-                    Have limited factory bay length? Explore our triple pass concentric drum dryers, cutting floor space by 40% with &gt;80% thermal heat recovery.
+                    Concentric 3-pass high-efficiency drum providing 40% fuel savings in compact plant spaces.
                   </p>
                 </div>
                 <Link
                   href="/products/industrial-rotary-dryers/triple-pass-dryer/"
                   className="font-bold text-[#DA020D] hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
                 >
-                  View Triple Pass Drum Dryer <ChevronRight className="w-4 h-4" />
+                  View Machine Specifications <ChevronRight className="w-4 h-4" />
                 </Link>
               </div>
 
-              {/* Downstream Conveyors Link */}
-              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-slate-300 transition-colors flex flex-col justify-between">
+              {/* Sibling Spoke 2 */}
+              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-[#DA020D]/40 transition-all flex flex-col justify-between">
                 <div>
-                  <div className="text-xs font-bold text-blue-700 uppercase tracking-wider mb-2 flex items-center gap-1">
-                    <Boxes className="w-3.5 h-3.5" /> Running Gear Spares
+                  <div className="text-xs font-mono font-semibold text-blue-700 uppercase tracking-wider mb-2">
+                    Sibling Dryer Line
                   </div>
                   <h3 className="text-lg font-bold text-slate-950 mb-2">
-                    Forged Trunnion Rollers & Girth Gears
+                    Biomass & Sawdust Rotary Dryer Line
                   </h3>
                   <p className="text-slate-600 text-sm leading-relaxed mb-4">
-                    Keep your dryer running 24/7 with authentic replacement forged EN-8/EN-9 support rollers, spherical plummer blocks, and cast steel girth drive gears.
+                    Continuous organic material drying cylinder with spark arrestor and explosion protection.
                   </p>
                 </div>
                 <Link
-                  href="/products/industrial-conveyors-spares/"
+                  href="/products/industrial-rotary-dryers/biomass-sawdust-dryer/"
                   className="font-bold text-[#DA020D] hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
                 >
-                  View Mechanical Spares <ChevronRight className="w-4 h-4" />
+                  View Machine Specifications <ChevronRight className="w-4 h-4" />
+                </Link>
+              </div>
+
+              {/* Cross-Pillar Machine */}
+              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-[#DA020D]/40 transition-all flex flex-col justify-between">
+                <div>
+                  <div className="text-xs font-mono font-semibold text-purple-700 uppercase tracking-wider mb-2">
+                    Complementary Wet Circuit
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-950 mb-2">
+                    Silica Sand Washing Plant System
+                  </h3>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                    Upstream wet scrubbing and desliming circuit delivering washed sand directly to the dryer feed hopper.
+                  </p>
+                </div>
+                <Link
+                  href="/products/sand-washing-plants/silica-sand-washing-plant/"
+                  className="font-bold text-[#DA020D] hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
+                >
+                  Explore Complementary Machine <ChevronRight className="w-4 h-4" />
                 </Link>
               </div>
             </div>
@@ -969,7 +975,7 @@ export default function RotarySandDryerPage() {
             <div className="max-w-4xl mx-auto text-center">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-950/80 border border-red-800 text-red-300 text-xs font-bold uppercase tracking-wider mb-4">
                 <Flame className="w-3.5 h-3.5 text-[#DA020D]" />
-                Direct Manufacturer Procurement — Zak GIDC Dahegam Works
+                Direct Manufacturer Procurement ,  Zak GIDC Dahegam Works
               </div>
 
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight mb-6">

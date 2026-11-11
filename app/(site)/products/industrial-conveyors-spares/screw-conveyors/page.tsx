@@ -47,13 +47,12 @@ export const metadata: Metadata = {
   title: {
     absolute: 'Screw Conveyor Manufacturers | Minerals Solutions',
   },
-  description:
-    'Heavy duty industrial screw conveyors: U-trough & tubular pipe feeders (100mm to 600mm dia). Dust-tight carbon & SS304/SS316. Zak GIDC, Dahegam.',
+  description: 'Procure industrial screw conveyors: U-trough & tubular pipe feeders (100mm to 600mm dia). Dust-tight carbon & stainless steel, built in Zak GIDC, Dahegam.',
   alternates: {
-    canonical: '/products/industrial-conveyors-spares/screw-conveyors/',
+    canonical: 'https://mineralssolution.in/products/industrial-conveyors-spares/screw-conveyors/',
   },
   openGraph: {
-    title: 'Screw Conveyor Manufacturers | Minerals Solutions',
+    title: 'Industrial Screw Conveyor Systems | Minerals Solutions',
     description:
       'Heavy duty industrial screw conveyors: U-trough & tubular pipe feeders (100mm to 600mm dia). Dust-tight carbon & SS304/SS316. Zak GIDC, Dahegam.',
     url: `${company.siteUrl}/products/industrial-conveyors-spares/screw-conveyors/`,
@@ -379,8 +378,7 @@ export default function ScrewConveyorPage() {
                   <div className="relative aspect-[4/3] w-full">
                     <Image
                       src="/images/products/conveyor-systems/belt-conveyor-system-variant-1-lg.webp"
-                      alt="Minerals Solutions Industrial Screw Conveyor Systems Workshop Assembly at Zak GIDC Dahegam"
-                      fill
+                      alt="Minerals Solutions Industrial Screw Conveyor Systems Workshop Assembly at Zak GIDC Dahegam" width={800} height={600}
                       priority
                       className="object-cover"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
@@ -404,31 +402,17 @@ export default function ScrewConveyorPage() {
           </Container>
         </section>
 
-        {/* AI Citability Definition Block (Top 30%) */}
-        <section className="py-12 bg-slate-950/60 border-b border-slate-800">
+        {/* Top-30% Citability Definition Block (Targeted for AI Overviews & Answer Engines) */}
+        <section className="py-8 bg-slate-50 border-b border-slate-200">
           <Container>
-            <div className="max-w-4xl mx-auto p-6 sm:p-8 rounded-2xl bg-slate-900/90 border border-red-500/30 shadow-lg">
-              <div className="flex items-center gap-3 mb-3">
-                <div className="p-2 rounded-lg bg-red-500/10 text-red-400">
-                  <Info className="w-5 h-5" />
+            <div className="p-6 rounded-xl bg-white border-l-4 border-l-[#DA020D] border border-slate-200 shadow-sm">
+              <div className="flex items-start gap-4">
+                <Info className="h-6 w-6 text-[#DA020D] shrink-0 mt-0.5" />
+                <div className="text-slate-800 text-sm sm:text-base leading-relaxed">
+                  <strong className="text-slate-950 font-semibold">What is an industrial screw conveyor? </strong>
+                  An industrial screw conveyor (also known as an auger conveyor or spiral feeder) is a positive-displacement bulk material handling machine that transports powders, slurries, and granular solids along horizontal or inclined paths up to 30 degrees. Fabricated in Zak GIDC, Dahegam in heavy U-trough or tubular pipe configurations, the conveyor incorporates continuous helical flighting (100mm to 600mm diameter) welded to a heavy-gauge central torque shaft. Driven by high-efficiency IE3 geared motors with spherical roller hanger bearings, the unit handles abrasive materials like silica sand, fly ash, cement, and hot fertilizer salts at 3 to 50 TPH. Completely sealed dust-tight bolted covers with silicone gaskets and gland-packing shaft seals eliminate fugitive dust emissions and external product contamination in rigorous continuous manufacturing plant operations across mineral and chemical industrial facilities in India.
                 </div>
-                <h3 className="text-sm font-semibold text-red-300 uppercase tracking-wider font-mono">
-                  Engineered Process Definition for Plant Specifiers &amp; Procurement
-                </h3>
               </div>
-              <p className="text-slate-200 text-sm sm:text-base leading-relaxed">
-                An <strong>industrial screw conveyor</strong> (also known as an auger conveyor or spiral
-                feeder) is a positive-displacement bulk material handling machine that transports powders,
-                slurries, and granular solids along a stationary trough or enclosed pipe via a rotating
-                helical flight mounted on a central drive pipe. As the screw rotates, the material is
-                inhibited from rotating with the flight by frictional drag against the trough walls and its
-                own bulk gravity, forcing it to advance axially in a smooth, continuous stream. Operating
-                across trough cross-sectional loading efficiencies calibrated from 15% (for abrasive quartz
-                and clinker) to 45% (for free-flowing non-abrasive powders), screw conveyors provide
-                exceptional volumetric metering accuracy, 100% dust containment via gasketed covers and
-                split-gland packing seals, and the ability to convey materials horizontally or up steep
-                inclines up to 45°.
-              </p>
             </div>
           </Container>
         </section>
@@ -901,8 +885,7 @@ export default function ScrewConveyorPage() {
                 <div className="relative aspect-[16/9] rounded-xl overflow-hidden border border-slate-700/80 shadow-lg">
                   <Image
                     src="/images/products/conveyor-systems/mild-steel-conveyor-idler-roller-lg.webp"
-                    alt="Machined steel shafts and mechanical components precision manufactured at Minerals Solutions Zak GIDC Dahegam workshop"
-                    fill
+                    alt="Machined steel shafts and mechanical components precision manufactured at Minerals Solutions Zak GIDC Dahegam workshop" width={800} height={600}
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 50vw"
                   />
@@ -916,8 +899,7 @@ export default function ScrewConveyorPage() {
                   <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-slate-700/80 shadow-lg">
                     <Image
                       src="/images/products/rotary-dryers/continuous-type-rotary-dryer-lg.webp"
-                      alt="Heavy industrial rotary machinery and screw discharge casing assembly at Dahegam"
-                      fill
+                      alt="Heavy industrial rotary machinery and screw discharge casing assembly at Dahegam" width={800} height={600}
                       className="object-cover"
                       sizes="(max-width: 768px) 50vw, 25vw"
                     />
@@ -930,8 +912,7 @@ export default function ScrewConveyorPage() {
                   <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-slate-700/80 shadow-lg">
                     <Image
                       src="/images/products/conveyor-systems/conveyor-belt-system-truss-lg.webp"
-                      alt="Structural steel conveyor casings and support frames fabricated at Zak GIDC"
-                      fill
+                      alt="Structural steel conveyor casings and support frames fabricated at Zak GIDC" width={800} height={600}
                       className="object-cover"
                       sizes="(max-width: 768px) 50vw, 25vw"
                     />
@@ -946,78 +927,93 @@ export default function ScrewConveyorPage() {
           </Container>
         </section>
 
-        {/* Section 7: Turnkey Plant Integration & Cross-Pillar Flow */}
-        <section className="py-16 sm:py-20 border-b border-slate-800 bg-slate-900">
+        {/* Internal Linking Triangle: Parent Hub, 2 Sibling Spokes, 1 Cross-Pillar Machine */}
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-slate-50/70">
           <Container>
-            <div className="max-w-3xl mb-12">
-              <div className="text-red-400 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
-                Upstream &amp; Downstream Plant Connectivity
+            <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+              <div>
+                <div className="text-xs font-bold uppercase tracking-widest text-[#DA020D] mb-2 flex items-center gap-1.5 font-mono">
+                  <Layers className="w-4 h-4" />
+                  Engineered Plant Integration & Sibling Equipment
+                </div>
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-950 tracking-tight">
+                  Turnkey Plant Integration & Complementary Systems
+                </h2>
+                <p className="text-slate-600 mt-2 text-sm sm:text-base max-w-2xl">
+                  Connect this unit into a continuous, high-efficiency manufacturing line with matched upstream and downstream equipment.
+                </p>
               </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">
-                Turnkey Bulk Material Handling Flowsheet Integration
-              </h2>
-              <p className="text-slate-300 text-base mt-4 leading-relaxed">
-                Screw conveyors provide critical transfer, metering, and feeding links connecting thermal dryers,
-                washing cyclones, granulators, and vertical bucket elevators across chemical and mining plants.
-              </p>
+              <Link
+                href="/products/industrial-conveyors-spares/"
+                className="inline-flex items-center gap-2 text-sm font-bold text-slate-800 hover:text-[#DA020D] transition-colors shrink-0"
+              >
+                Explore Full Industrial Conveyors & Mechanical Spares Hub <ChevronRight className="w-4 h-4 text-[#DA020D]" />
+              </Link>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              <Link
-                href="/products/industrial-rotary-dryers/"
-                className="group p-5 rounded-xl bg-slate-950 border border-slate-800 hover:border-red-500/50 transition-all space-y-3"
-              >
-                <div className="text-xs font-mono text-red-400 uppercase">Thermal Upstream</div>
-                <h4 className="text-white font-bold text-base group-hover:text-red-300 transition-colors flex items-center justify-between">
-                  <span>Industrial Rotary Dryers</span>
-                  <ChevronRight className="w-4 h-4 text-slate-500 group-hover:text-red-400 transition-transform group-hover:translate-x-1" />
-                </h4>
-                <p className="text-slate-400 text-xs leading-relaxed">
-                  Receives hot dried sand or chemical powder directly from dryer discharge hoods without air leakage.
-                </p>
-              </Link>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {/* Sibling Spoke 1 */}
+              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-[#DA020D]/40 transition-all flex flex-col justify-between">
+                <div>
+                  <div className="text-xs font-mono font-semibold text-emerald-700 uppercase tracking-wider mb-2">
+                    Sibling Conveyor Line
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-950 mb-2">
+                    Industrial Bucket Elevator Systems
+                  </h3>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                    Continuous vertical bucket elevator systems lifting materials up to 45 meters height.
+                  </p>
+                </div>
+                <Link
+                  href="/products/industrial-conveyors-spares/bucket-elevators/"
+                  className="font-bold text-[#DA020D] hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
+                >
+                  View Machine Specifications <ChevronRight className="w-4 h-4" />
+                </Link>
+              </div>
 
-              <Link
-                href="/products/industrial-conveyors-spares/bucket-elevators/"
-                className="group p-5 rounded-xl bg-slate-950 border border-slate-800 hover:border-red-500/50 transition-all space-y-3"
-              >
-                <div className="text-xs font-mono text-red-400 uppercase">Vertical Elevation</div>
-                <h4 className="text-white font-bold text-base group-hover:text-red-300 transition-colors flex items-center justify-between">
-                  <span>Bucket Elevators</span>
-                  <ChevronRight className="w-4 h-4 text-slate-500 group-hover:text-red-400 transition-transform group-hover:translate-x-1" />
-                </h4>
-                <p className="text-slate-400 text-xs leading-relaxed">
-                  Transfers metered bulk solids from hoppers into the boot intake chute of vertical bucket elevators.
-                </p>
-              </Link>
+              {/* Sibling Spoke 2 */}
+              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-[#DA020D]/40 transition-all flex flex-col justify-between">
+                <div>
+                  <div className="text-xs font-mono font-semibold text-blue-700 uppercase tracking-wider mb-2">
+                    Sibling Conveyor Line
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-950 mb-2">
+                    Industrial Belt Conveyor Systems
+                  </h3>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                    Three-roll troughed belt conveyors for bulk minerals, sand, and bagged goods.
+                  </p>
+                </div>
+                <Link
+                  href="/products/industrial-conveyors-spares/belt-conveyors/"
+                  className="font-bold text-[#DA020D] hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
+                >
+                  View Machine Specifications <ChevronRight className="w-4 h-4" />
+                </Link>
+              </div>
 
-              <Link
-                href="/products/fertilizer-granulation-plants/"
-                className="group p-5 rounded-xl bg-slate-950 border border-slate-800 hover:border-red-500/50 transition-all space-y-3"
-              >
-                <div className="text-xs font-mono text-red-400 uppercase">Agglomeration Line</div>
-                <h4 className="text-white font-bold text-base group-hover:text-red-300 transition-colors flex items-center justify-between">
-                  <span>Fertilizer Plants</span>
-                  <ChevronRight className="w-4 h-4 text-slate-500 group-hover:text-red-400 transition-transform group-hover:translate-x-1" />
-                </h4>
-                <p className="text-slate-400 text-xs leading-relaxed">
-                  Meters raw powder formulations and bentonite binders into pan disc and drum granulators.
-                </p>
-              </Link>
-
-              <Link
-                href="/products/sand-washing-plants/"
-                className="group p-5 rounded-xl bg-slate-950 border border-slate-800 hover:border-red-500/50 transition-all space-y-3"
-              >
-                <div className="text-xs font-mono text-red-400 uppercase">Wet Beneficiation</div>
-                <h4 className="text-white font-bold text-base group-hover:text-red-300 transition-colors flex items-center justify-between">
-                  <span>Sand Washing Plants</span>
-                  <ChevronRight className="w-4 h-4 text-slate-500 group-hover:text-red-400 transition-transform group-hover:translate-x-1" />
-                </h4>
-                <p className="text-slate-400 text-xs leading-relaxed">
-                  Conveys damp classified fine sand from hydrocyclone dewatering screens to stockpile bins.
-                </p>
-              </Link>
+              {/* Cross-Pillar Machine */}
+              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-[#DA020D]/40 transition-all flex flex-col justify-between">
+                <div>
+                  <div className="text-xs font-mono font-semibold text-purple-700 uppercase tracking-wider mb-2">
+                    Complementary Pelletizing Line
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-950 mb-2">
+                    Industrial Pan Disc Granulator
+                  </h3>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                    Feed preparation pan granulator receiving metered dry powders from the screw conveyor.
+                  </p>
+                </div>
+                <Link
+                  href="/products/fertilizer-granulation-plants/disc-granulator/"
+                  className="font-bold text-[#DA020D] hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
+                >
+                  Explore Complementary Machine <ChevronRight className="w-4 h-4" />
+                </Link>
+              </div>
             </div>
           </Container>
         </section>

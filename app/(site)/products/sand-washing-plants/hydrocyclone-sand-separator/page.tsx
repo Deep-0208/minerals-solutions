@@ -43,10 +43,9 @@ export const metadata: Metadata = {
   title: {
     absolute: 'Hydrocyclone Fine Sand Recovery Unit | Minerals Solutions',
   },
-  description:
-    'High efficiency hydrocyclone fine sand recovery plants (30 to 150 m3/hr slurry). Recover 95% of 75-micron fines. Zak GIDC, Dahegam, Gujarat.',
+  description: 'Recover 95%+ fine sand down to 75 microns with high-pressure hydrocyclone sand separators (60 to 120 m³/hr). Built by Minerals Solutions in Zak GIDC.',
   alternates: {
-    canonical: '/products/sand-washing-plants/hydrocyclone-sand-separator/',
+    canonical: 'https://mineralssolution.in/products/sand-washing-plants/hydrocyclone-sand-separator/',
   },
   openGraph: {
     title: 'Hydrocyclone Fine Sand Recovery Unit | Minerals Solutions',
@@ -403,8 +402,7 @@ export default function HydrocycloneFineSandRecoveryPage() {
                   <div className="relative aspect-[4/3] w-full">
                     <Image
                       src="/images/products/mineral-processing/river-sand-washing-plant-variant-lg.webp"
-                      alt="Hydrocyclone Fine Sand Recovery and Dewatering Plant Fabricated by Minerals Solutions in Dahegam Gujarat"
-                      fill
+                      alt="Hydrocyclone Fine Sand Recovery and Dewatering Plant Fabricated by Minerals Solutions in Dahegam Gujarat" width={800} height={600}
                       priority
                       className="object-cover object-center"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 45vw, 540px"
@@ -428,18 +426,12 @@ export default function HydrocycloneFineSandRecoveryPage() {
         {/* Top-30% Citability Definition Block (Targeted for AI Overviews & Answer Engines) */}
         <section className="py-8 bg-slate-50 border-b border-slate-200">
           <Container>
-            <div className="p-6 rounded-xl bg-white border-l-4 border-l-cyan-600 border border-slate-200 shadow-sm">
+            <div className="p-6 rounded-xl bg-white border-l-4 border-l-[#DA020D] border border-slate-200 shadow-sm">
               <div className="flex items-start gap-4">
-                <Info className="h-6 w-6 text-cyan-600 shrink-0 mt-0.5" />
+                <Info className="h-6 w-6 text-[#DA020D] shrink-0 mt-0.5" />
                 <div className="text-slate-800 text-sm sm:text-base leading-relaxed">
                   <strong className="text-slate-950 font-semibold">What is a hydrocyclone fine sand recovery unit? </strong>
-                  A hydrocyclone fine sand recovery unit is a specialized mineral processing system designed to capture
-                  0.075 mm to 0.8 mm (75 to 800 micron) sand particles from sand washing overflow slurry before they enter settling
-                  ponds. Slurry is pumped tangentially into a conical hydrocyclone at 0.15 to 0.25 MPa pressure, generating
-                  centrifugal acceleration exceeding 50G. Heavy quartz particles migrate outward and discharge through an
-                  adjustable apex nozzle at over 70% solid concentration directly onto a high-frequency linear vibrating
-                  dewatering screen. The dewatering screen uses 4G–5.5G vibratory forces and 0.3–0.8 mm slotted polyurethane panels
-                  to reduce moisture down to 12%–15%, converting former pond waste into profitable commercial plaster sand.
+                  A hydrocyclone fine sand recovery unit is a specialized centrifugal slurry separation machine engineered to capture and dewater saleable 75 to 150 micron (100–200 mesh) fine sand from quarry wash-plant effluent streams. Fabricated at Minerals Solutions in Zak GIDC, Dahegam, the compact skid comprises a heavy-duty slurry pump, high-shear vortex hydrocyclone lined with 95% high-alumina ceramic or 25mm cast polyurethane, and a high-frequency linear vibrating dewatering screen. Processing slurry flows from 60 to 120 m³/hr with 20% to 30% solids, incoming pulp enters tangentially at 0.15 to 0.25 MPa. Centrifugal forces exceeding 500 Gs separate dense fine silica downward into an underflow spigot while water and ultra-fine silt (under 40 microns) exit through the overflow vortex finder, recovering over 95% of saleable plaster sand at 12% to 14% stackable moisture for commercial sale.
                 </div>
               </div>
             </div>
@@ -668,7 +660,7 @@ export default function HydrocycloneFineSandRecoveryPage() {
                 Economic ROI: Eliminating Slurry Settling Pond Dredging Costs
               </h2>
               <p className="mt-4 text-slate-700 leading-relaxed">
-                Investing in a hydrocyclone recovery unit is not an equipment expense—it is a self-liquidating capital
+                Investing in a hydrocyclone recovery unit is not an equipment expense, it is a self-liquidating capital
                 asset that typically achieves full payback in 4 to 6 months of quarry operation.
               </p>
             </div>
@@ -735,87 +727,92 @@ export default function HydrocycloneFineSandRecoveryPage() {
           </Container>
         </section>
 
-        {/* Section 6: Upstream, Sibling & Cross-Pillar Integration */}
-        <section className="py-14 lg:py-20 border-b border-slate-200 bg-slate-50/60">
+        {/* Internal Linking Triangle: Parent Hub, 2 Sibling Spokes, 1 Cross-Pillar Machine */}
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-slate-50/70">
           <Container>
-            <div className="max-w-3xl mb-12">
-              <span className="text-cyan-700 font-semibold text-sm uppercase tracking-wider block mb-2">
-                Integrated Flowsheet
-              </span>
-              <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-950 font-display">
-                Upstream & Downstream Integration Across Minerals Solutions Machinery
-              </h2>
-              <p className="mt-4 text-slate-700 leading-relaxed">
-                Connect the hydrocyclone recovery unit directly with our primary washing lines and downstream thermal dryers
-                to build an automated, zero-waste mineral processing facility.
-              </p>
+            <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+              <div>
+                <div className="text-xs font-bold uppercase tracking-widest text-[#DA020D] mb-2 flex items-center gap-1.5 font-mono">
+                  <Layers className="w-4 h-4" />
+                  Engineered Plant Integration & Sibling Equipment
+                </div>
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-950 tracking-tight">
+                  Turnkey Plant Integration & Complementary Systems
+                </h2>
+                <p className="text-slate-600 mt-2 text-sm sm:text-base max-w-2xl">
+                  Connect this unit into a continuous, high-efficiency manufacturing line with matched upstream and downstream equipment.
+                </p>
+              </div>
+              <Link
+                href="/products/sand-washing-plants/"
+                className="inline-flex items-center gap-2 text-sm font-bold text-slate-800 hover:text-[#DA020D] transition-colors shrink-0"
+              >
+                Explore Full Sand Washing & Mineral Processing Hub <ChevronRight className="w-4 h-4 text-[#DA020D]" />
+              </Link>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {/* Card 1: Bucket Wheel Sibling */}
-              <div className="p-6 rounded-xl bg-white border border-slate-200 shadow-xs flex flex-col justify-between">
+              {/* Sibling Spoke 1 */}
+              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-[#DA020D]/40 transition-all flex flex-col justify-between">
                 <div>
-                  <span className="text-xs font-bold uppercase tracking-wider text-cyan-700 block mb-2">
-                    Primary Washing Sibling
-                  </span>
-                  <h3 className="text-lg font-bold text-slate-950 mb-2">Bucket Wheel Sand Washers</h3>
-                  <p className="text-sm text-slate-600 leading-relaxed">
-                    Direct the overflow launder of your bucket wheel washer directly into our hydrocyclone sump to capture
-                    all fines escaping the mechanical dredging wheel.
+                  <div className="text-xs font-mono font-semibold text-emerald-700 uppercase tracking-wider mb-2">
+                    Sibling Washing Line
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-950 mb-2">
+                    Silica Sand Washing Plant System
+                  </h3>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                    Turnkey wet-processing line for high-purity glass, foundry, and construction sand.
                   </p>
                 </div>
-                <div className="mt-6 pt-4 border-t border-slate-100">
-                  <Link
-                    href="/products/sand-washing-plants/bucket-wheel-sand-washer/"
-                    className="inline-flex items-center gap-1.5 text-xs font-bold text-cyan-700 hover:text-cyan-900 transition-colors"
-                  >
-                    View Bucket Wheel Washers <ChevronRight className="h-3.5 w-3.5" />
-                  </Link>
-                </div>
+                <Link
+                  href="/products/sand-washing-plants/silica-sand-washing-plant/"
+                  className="font-bold text-[#DA020D] hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
+                >
+                  View Machine Specifications <ChevronRight className="w-4 h-4" />
+                </Link>
               </div>
 
-              {/* Card 2: Silica Sand Washing Plant Sibling */}
-              <div className="p-6 rounded-xl bg-white border border-slate-200 shadow-xs flex flex-col justify-between">
+              {/* Sibling Spoke 2 */}
+              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-[#DA020D]/40 transition-all flex flex-col justify-between">
                 <div>
-                  <span className="text-xs font-bold uppercase tracking-wider text-cyan-700 block mb-2">
-                    Turnkey Silica Beneficiation
-                  </span>
-                  <h3 className="text-lg font-bold text-slate-950 mb-2">Silica Sand Washing Plants</h3>
-                  <p className="text-sm text-slate-600 leading-relaxed">
-                    Integrated as the secondary desliming stage in high-grade glass sand washing plants to eliminate clay
-                    slimes while preserving critical +100 mesh optical silica fractions.
+                  <div className="text-xs font-mono font-semibold text-blue-700 uppercase tracking-wider mb-2">
+                    Sibling Washing Line
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-950 mb-2">
+                    Bucket Wheel Sand Washer System
+                  </h3>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                    High-volume sand washing wheel separating clays from washed gravel and M-Sand.
                   </p>
                 </div>
-                <div className="mt-6 pt-4 border-t border-slate-100">
-                  <Link
-                    href="/products/sand-washing-plants/silica-sand-washing-plant/"
-                    className="inline-flex items-center gap-1.5 text-xs font-bold text-cyan-700 hover:text-cyan-900 transition-colors"
-                  >
-                    View Silica Sand Plants <ChevronRight className="h-3.5 w-3.5" />
-                  </Link>
-                </div>
+                <Link
+                  href="/products/sand-washing-plants/bucket-wheel-sand-washer/"
+                  className="font-bold text-[#DA020D] hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
+                >
+                  View Machine Specifications <ChevronRight className="w-4 h-4" />
+                </Link>
               </div>
 
-              {/* Card 3: Downstream Thermal Sand Dryer */}
-              <div className="p-6 rounded-xl bg-white border border-slate-200 shadow-xs flex flex-col justify-between">
+              {/* Cross-Pillar Machine */}
+              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-[#DA020D]/40 transition-all flex flex-col justify-between">
                 <div>
-                  <span className="text-xs font-bold uppercase tracking-wider text-cyan-700 block mb-2">
-                    Thermal Value Addition
-                  </span>
-                  <h3 className="text-lg font-bold text-slate-950 mb-2">Industrial Rotary Sand Dryers</h3>
-                  <p className="text-sm text-slate-600 leading-relaxed">
-                    Take dewatered plaster sand (12% moisture) and dry it down to &lt;0.5% in our rotary drum dryers to
-                    manufacture high-margin dry-mix mortar and tile adhesives.
+                  <div className="text-xs font-mono font-semibold text-purple-700 uppercase tracking-wider mb-2">
+                    Complementary Material Handling
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-950 mb-2">
+                    Industrial Belt Conveyor Systems
+                  </h3>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                    Downstream troughed conveyor elevating dewatered fine sand to stockyard piles.
                   </p>
                 </div>
-                <div className="mt-6 pt-4 border-t border-slate-100">
-                  <Link
-                    href="/products/industrial-rotary-dryers/sand-dryer/"
-                    className="inline-flex items-center gap-1.5 text-xs font-bold text-cyan-700 hover:text-cyan-900 transition-colors"
-                  >
-                    View Rotary Sand Dryers <ChevronRight className="h-3.5 w-3.5" />
-                  </Link>
-                </div>
+                <Link
+                  href="/products/industrial-conveyors-spares/belt-conveyors/"
+                  className="font-bold text-[#DA020D] hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
+                >
+                  Explore Complementary Machine <ChevronRight className="w-4 h-4" />
+                </Link>
               </div>
             </div>
           </Container>

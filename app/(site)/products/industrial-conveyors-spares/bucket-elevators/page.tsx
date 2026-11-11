@@ -46,13 +46,12 @@ export const metadata: Metadata = {
   title: {
     absolute: 'Bucket Elevator Manufacturers | Minerals Solutions',
   },
-  description:
-    'Heavy duty industrial bucket elevators (5 to 100 TPH, up to 45m height). Centrifugal & continuous chain/belt drives. Zak GIDC, Dahegam, Gujarat.',
+  description: 'Source heavy duty industrial bucket elevators (5 to 100 TPH, up to 45m height) with centrifugal and continuous chain/belt drives from Zak GIDC, Dahegam.',
   alternates: {
-    canonical: '/products/industrial-conveyors-spares/bucket-elevators/',
+    canonical: 'https://mineralssolution.in/products/industrial-conveyors-spares/bucket-elevators/',
   },
   openGraph: {
-    title: 'Bucket Elevator Manufacturers | Minerals Solutions',
+    title: 'Industrial Bucket Elevator Systems | Minerals Solutions',
     description:
       'Heavy duty industrial bucket elevators (5 to 100 TPH, up to 45m height). Centrifugal & continuous chain/belt drives. Zak GIDC, Dahegam, Gujarat.',
     url: `${company.siteUrl}/products/industrial-conveyors-spares/bucket-elevators/`,
@@ -367,8 +366,7 @@ export default function BucketElevatorPage() {
                   <div className="relative aspect-[4/3] w-full">
                     <Image
                       src="/images/products/conveyor-systems/belt-conveyor-mineral-ore-beneficiation-lg.webp"
-                      alt="Minerals Solutions Industrial Vertical Bulk Material Handling and Bucket Elevator Systems at Zak GIDC Dahegam"
-                      fill
+                      alt="Minerals Solutions Industrial Vertical Bulk Material Handling and Bucket Elevator Systems at Zak GIDC Dahegam" width={800} height={600}
                       priority
                       className="object-cover"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
@@ -392,31 +390,17 @@ export default function BucketElevatorPage() {
           </Container>
         </section>
 
-        {/* AI Citability Definition Block (Top 30%) */}
-        <section className="py-12 bg-slate-950/60 border-b border-slate-800">
+        {/* Top-30% Citability Definition Block (Targeted for AI Overviews & Answer Engines) */}
+        <section className="py-8 bg-slate-50 border-b border-slate-200">
           <Container>
-            <div className="max-w-4xl mx-auto p-6 sm:p-8 rounded-2xl bg-slate-900/90 border border-amber-500/30 shadow-lg">
-              <div className="flex items-center gap-3 mb-3">
-                <div className="p-2 rounded-lg bg-amber-500/10 text-amber-400">
-                  <Info className="w-5 h-5" />
+            <div className="p-6 rounded-xl bg-white border-l-4 border-l-[#DA020D] border border-slate-200 shadow-sm">
+              <div className="flex items-start gap-4">
+                <Info className="h-6 w-6 text-[#DA020D] shrink-0 mt-0.5" />
+                <div className="text-slate-800 text-sm sm:text-base leading-relaxed">
+                  <strong className="text-slate-950 font-semibold">What is an industrial bucket elevator? </strong>
+                  An industrial bucket elevator is a heavy-duty vertical bulk material handling system engineered to elevate free-flowing or sluggish powders, minerals, and granular solids through vertical heights up to 45 meters. Fabricated in Zak GIDC, Dahegam in strict compliance with IS 7198 standards, the system features a self-supporting dust-tight carbon steel casing (3mm to 6mm plate), high-tensile multi-ply rubber belt or alloy steel traction chain, and pressed steel or ductile cast iron buckets. Operating in either centrifugal discharge mode (1.2 to 2.5 m/s) for dry aggregates or continuous gravity discharge mode (0.5 to 1.0 m/s) for fragile pellets, throughputs range from 5 to 150 TPH. Standard safety equipment includes an integrated backstop sprag clutch, zero-speed shaft monitor, and explosion relief vent panels for combustible materials in demanding heavy industrial plant environments.
                 </div>
-                <h3 className="text-sm font-semibold text-amber-300 uppercase tracking-wider font-mono">
-                  Engineered Technical Definition for Plant Engineers &amp; Specifiers
-                </h3>
               </div>
-              <p className="text-slate-200 text-sm sm:text-base leading-relaxed">
-                An <strong>industrial bucket elevator</strong> is a heavy-duty vertical bulk material
-                handling system engineered to elevate free-flowing or sluggish powders, minerals, and
-                granular solids through vertical heights up to 45 meters within a dust-tight, self-supporting
-                steel casing. Continuously spaced or overlapping deep-drawn steel or polymer buckets are
-                rigidly bolted to high-tensile multi-ply rubber belting or forged alloy round-link chains.
-                As the traction media rotates over a crowned head pulley or toothed sprocket, the buckets
-                discharge their payload via centrifugal throwing action at high linear velocities (1.2 to 2.0
-                m/s) or gentle continuous gravity transfer over the preceding bucket back (0.5 to 0.8 m/s).
-                Equipped with automatic gravity or screw boot take-up tensioners and integrated mechanical
-                cam-clutch anti-rollback backstops, bucket elevators deliver compact vertical footprint
-                efficiency unmatched by inclined conveyor systems.
-              </p>
             </div>
           </Container>
         </section>
@@ -990,8 +974,7 @@ export default function BucketElevatorPage() {
                 <div className="relative aspect-[16/9] rounded-xl overflow-hidden border border-slate-700/80 shadow-lg">
                   <Image
                     src="/images/products/conveyor-systems/conveyor-head-tail-pulleys-lg.webp"
-                    alt="Precision crowned and rubber lagged elevator head pulleys undergoing dynamic balancing at Minerals Solutions Zak GIDC Dahegam workshop"
-                    fill
+                    alt="Precision crowned and rubber lagged elevator head pulleys undergoing dynamic balancing at Minerals Solutions Zak GIDC Dahegam workshop" width={800} height={600}
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 50vw"
                   />
@@ -1005,8 +988,7 @@ export default function BucketElevatorPage() {
                   <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-slate-700/80 shadow-lg">
                     <Image
                       src="/images/products/conveyor-systems/head-pulley-rubber-lagging-lg.webp"
-                      alt="Diamond pattern vulcanized rubber lagging on conveyor drive pulley preventing belt slippage"
-                      fill
+                      alt="Diamond pattern vulcanized rubber lagging on conveyor drive pulley preventing belt slippage" width={800} height={600}
                       className="object-cover"
                       sizes="(max-width: 768px) 50vw, 25vw"
                     />
@@ -1019,8 +1001,7 @@ export default function BucketElevatorPage() {
                   <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-slate-700/80 shadow-lg">
                     <Image
                       src="/images/products/conveyor-systems/conveyor-belt-system-truss-lg.webp"
-                      alt="Heavy structural steel trunking and conveyor support trusses assembled at Zak GIDC"
-                      fill
+                      alt="Heavy structural steel trunking and conveyor support trusses assembled at Zak GIDC" width={800} height={600}
                       className="object-cover"
                       sizes="(max-width: 768px) 50vw, 25vw"
                     />
@@ -1035,78 +1016,93 @@ export default function BucketElevatorPage() {
           </Container>
         </section>
 
-        {/* Section 8: Turnkey Plant Integration & Cross-Pillar Flow */}
-        <section className="py-16 sm:py-20 border-b border-slate-800 bg-slate-950">
+        {/* Internal Linking Triangle: Parent Hub, 2 Sibling Spokes, 1 Cross-Pillar Machine */}
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-slate-50/70">
           <Container>
-            <div className="max-w-3xl mb-12">
-              <div className="text-amber-400 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
-                Upstream &amp; Downstream Plant Connectivity
+            <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+              <div>
+                <div className="text-xs font-bold uppercase tracking-widest text-[#DA020D] mb-2 flex items-center gap-1.5 font-mono">
+                  <Layers className="w-4 h-4" />
+                  Engineered Plant Integration & Sibling Equipment
+                </div>
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-950 tracking-tight">
+                  Turnkey Plant Integration & Complementary Systems
+                </h2>
+                <p className="text-slate-600 mt-2 text-sm sm:text-base max-w-2xl">
+                  Connect this unit into a continuous, high-efficiency manufacturing line with matched upstream and downstream equipment.
+                </p>
               </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">
-                Turnkey Bulk Material Handling Flowsheet Integration
-              </h2>
-              <p className="text-slate-300 text-base mt-4 leading-relaxed">
-                Bucket elevators are the vertical conduits linking horizontal conveyors, dryers, screens,
-                and storage silos across every minerals processing and fertilizer granulation plant.
-              </p>
+              <Link
+                href="/products/industrial-conveyors-spares/"
+                className="inline-flex items-center gap-2 text-sm font-bold text-slate-800 hover:text-[#DA020D] transition-colors shrink-0"
+              >
+                Explore Full Industrial Conveyors & Mechanical Spares Hub <ChevronRight className="w-4 h-4 text-[#DA020D]" />
+              </Link>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              <Link
-                href="/products/industrial-rotary-dryers/"
-                className="group p-5 rounded-xl bg-slate-900 border border-slate-800 hover:border-amber-500/50 transition-all space-y-3"
-              >
-                <div className="text-xs font-mono text-amber-400 uppercase">Thermal Upstream</div>
-                <h4 className="text-white font-bold text-base group-hover:text-amber-300 transition-colors flex items-center justify-between">
-                  <span>Industrial Rotary Dryers</span>
-                  <ChevronRight className="w-4 h-4 text-slate-500 group-hover:text-amber-400 transition-transform group-hover:translate-x-1" />
-                </h4>
-                <p className="text-slate-400 text-xs leading-relaxed">
-                  Elevates wet silica sand, minerals, or coal directly into rotary dryer inlet feed chutes.
-                </p>
-              </Link>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {/* Sibling Spoke 1 */}
+              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-[#DA020D]/40 transition-all flex flex-col justify-between">
+                <div>
+                  <div className="text-xs font-mono font-semibold text-emerald-700 uppercase tracking-wider mb-2">
+                    Sibling Conveyor Line
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-950 mb-2">
+                    Industrial Screw Conveyor Systems
+                  </h3>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                    Dust-tight horizontal and inclined screw augers for enclosed powder and ash transport.
+                  </p>
+                </div>
+                <Link
+                  href="/products/industrial-conveyors-spares/screw-conveyors/"
+                  className="font-bold text-[#DA020D] hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
+                >
+                  View Machine Specifications <ChevronRight className="w-4 h-4" />
+                </Link>
+              </div>
 
-              <Link
-                href="/products/sand-washing-plants/"
-                className="group p-5 rounded-xl bg-slate-900 border border-slate-800 hover:border-amber-500/50 transition-all space-y-3"
-              >
-                <div className="text-xs font-mono text-amber-400 uppercase">Wet Beneficiation</div>
-                <h4 className="text-white font-bold text-base group-hover:text-amber-300 transition-colors flex items-center justify-between">
-                  <span>Sand Washing Plants</span>
-                  <ChevronRight className="w-4 h-4 text-slate-500 group-hover:text-amber-400 transition-transform group-hover:translate-x-1" />
-                </h4>
-                <p className="text-slate-400 text-xs leading-relaxed">
-                  Lifts dewatered washed sand from hydrocyclones into dry storage silos and classification screens.
-                </p>
-              </Link>
+              {/* Sibling Spoke 2 */}
+              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-[#DA020D]/40 transition-all flex flex-col justify-between">
+                <div>
+                  <div className="text-xs font-mono font-semibold text-blue-700 uppercase tracking-wider mb-2">
+                    Sibling Conveyor Line
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-950 mb-2">
+                    Industrial Belt Conveyor Systems
+                  </h3>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                    High-tonnage troughed belt conveyors for overland mineral and aggregate transport.
+                  </p>
+                </div>
+                <Link
+                  href="/products/industrial-conveyors-spares/belt-conveyors/"
+                  className="font-bold text-[#DA020D] hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
+                >
+                  View Machine Specifications <ChevronRight className="w-4 h-4" />
+                </Link>
+              </div>
 
-              <Link
-                href="/products/fertilizer-granulation-plants/"
-                className="group p-5 rounded-xl bg-slate-900 border border-slate-800 hover:border-amber-500/50 transition-all space-y-3"
-              >
-                <div className="text-xs font-mono text-amber-400 uppercase">Agglomeration Line</div>
-                <h4 className="text-white font-bold text-base group-hover:text-amber-300 transition-colors flex items-center justify-between">
-                  <span>Fertilizer Plants</span>
-                  <ChevronRight className="w-4 h-4 text-slate-500 group-hover:text-amber-400 transition-transform group-hover:translate-x-1" />
-                </h4>
-                <p className="text-slate-400 text-xs leading-relaxed">
-                  Vertical transfer of granules from disc/drum granulators to rotary cooling drums and screens.
-                </p>
-              </Link>
-
-              <Link
-                href="/products/industrial-conveyors-spares/belt-conveyors/"
-                className="group p-5 rounded-xl bg-slate-900 border border-slate-800 hover:border-amber-500/50 transition-all space-y-3"
-              >
-                <div className="text-xs font-mono text-amber-400 uppercase">Horizontal Transfer</div>
-                <h4 className="text-white font-bold text-base group-hover:text-amber-300 transition-colors flex items-center justify-between">
-                  <span>Troughed Belt Conveyors</span>
-                  <ChevronRight className="w-4 h-4 text-slate-500 group-hover:text-amber-400 transition-transform group-hover:translate-x-1" />
-                </h4>
-                <p className="text-slate-400 text-xs leading-relaxed">
-                  Receives elevated bulk solids from elevator discharge heads for overland silo distribution.
-                </p>
-              </Link>
+              {/* Cross-Pillar Machine */}
+              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-[#DA020D]/40 transition-all flex flex-col justify-between">
+                <div>
+                  <div className="text-xs font-mono font-semibold text-purple-700 uppercase tracking-wider mb-2">
+                    Complementary Thermal System
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-950 mb-2">
+                    Industrial Rotary Sand Dryer Unit
+                  </h3>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                    Upstream or downstream thermal drum handling high-capacity mineral moisture reduction.
+                  </p>
+                </div>
+                <Link
+                  href="/products/industrial-rotary-dryers/sand-dryer/"
+                  className="font-bold text-[#DA020D] hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
+                >
+                  Explore Complementary Machine <ChevronRight className="w-4 h-4" />
+                </Link>
+              </div>
             </div>
           </Container>
         </section>

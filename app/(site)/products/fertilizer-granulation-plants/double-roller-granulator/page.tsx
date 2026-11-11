@@ -44,13 +44,12 @@ export const metadata: Metadata = {
   title: {
     absolute: 'Double Roller Granulator Machine | Minerals Solutions',
   },
-  description:
-    'Double roller dry compaction fertilizer granulators (1 to 5 TPH). Room-temperature granulation with zero drying required. Zak GIDC, Gujarat.',
+  description: 'Fabricate double roller dry compaction granulators (1 to 5 TPH) for chemical and NPK fertilizers. Zero heat drying required, manufactured in Zak GIDC.',
   alternates: {
-    canonical: '/products/fertilizer-granulation-plants/double-roller-granulator/',
+    canonical: 'https://mineralssolution.in/products/fertilizer-granulation-plants/double-roller-granulator/',
   },
   openGraph: {
-    title: 'Double Roller Granulator Machine | Minerals Solutions',
+    title: 'Double Roller Compactor Granulator | Minerals Solutions',
     description:
       'Double roller dry compaction fertilizer granulators (1 to 5 TPH). Room-temperature granulation with zero drying required. Zak GIDC, Gujarat.',
     url: `${company.siteUrl}/products/fertilizer-granulation-plants/double-roller-granulator/`,
@@ -435,8 +434,7 @@ export default function DoubleRollerGranulatorPage() {
                   <div className="relative aspect-[4/3] w-full">
                     <Image
                       src="/images/products/fertilizer-pellet/fertilizer-granulation-plant-primary-lg.webp"
-                      alt="Double Roller Compaction Fertilizer Granulation Plant Manufactured by Minerals Solutions in Dahegam Gujarat"
-                      fill
+                      alt="Double Roller Compaction Fertilizer Granulation Plant Manufactured by Minerals Solutions in Dahegam Gujarat" width={800} height={600}
                       priority
                       className="object-cover object-center"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 45vw, 540px"
@@ -460,19 +458,12 @@ export default function DoubleRollerGranulatorPage() {
         {/* Top-30% Citability Definition Block (Targeted for AI Overviews & Answer Engines) */}
         <section className="py-8 bg-slate-50 border-b border-slate-200">
           <Container>
-            <div className="p-6 rounded-xl bg-white border-l-4 border-l-emerald-600 border border-slate-200 shadow-sm">
+            <div className="p-6 rounded-xl bg-white border-l-4 border-l-[#DA020D] border border-slate-200 shadow-sm">
               <div className="flex items-start gap-4">
-                <Info className="h-6 w-6 text-emerald-600 shrink-0 mt-0.5" />
+                <Info className="h-6 w-6 text-[#DA020D] shrink-0 mt-0.5" />
                 <div className="text-slate-800 text-sm sm:text-base leading-relaxed">
-                  <strong className="text-slate-950 font-semibold">What is a double roller compaction fertilizer granulator? </strong>
-                  A double roller compaction granulator is an industrial dry-process pelletizing press that agglomerates fine
-                  chemical powders—such as ammonium sulphate, potassium chloride (MOP), bentonite clay, and NPK blends—into
-                  high-density granules at room temperature without adding water, steam, or binders. A variable-speed vertical
-                  auger de-aerates and forces dry feed (1.5% to 5% moisture) into the nip of two synchronized counter-rotating
-                  alloy rollers pressurized by hydraulic cylinders at 30 to 70 MPa. This intense linear pressure induces
-                  molecular reorientation and plastic deformation, compressing powder into a rigid cake or pillow briquette.
-                  A downstream flaker breaker and screening sieve classify the product into 2.5 mm to 5.0 mm granules with
-                  crush strength exceeding 30 N, eliminating rotary drying and slashing thermal fuel costs by up to 80%.
+                  <strong className="text-slate-950 font-semibold">What is a double roller compaction granulator? </strong>
+                  A double roller compaction fertilizer granulator is a heavy mechanical dry extrusion machine engineered to agglomerate chemical fertilizer salts, ammonium sulphate, potassium chloride, and mineral powders into dense granules at room temperature without boiler steam or drying fuel. Built in Zak GIDC, Dahegam, the unit features two synchronized counter-rotating rollers forged from 9Cr2Mo / 38CrMoAl alloy steel, induction-hardened to 55-58 HRC. Driven by a cycloidal pinwheel reducer and pressurized by a dual-cylinder hydraulic accumulator (10 to 25 MPa), raw powder entering the nip area is subjected to immense mechanical linear force (30 to 60 kN/cm), compacting it into dense sheets that are crushed and classified into 2.5mm to 5.0mm angular pellets. Operating at 1 to 5 TPH throughput, energy consumption is only 12 to 18 kWh per ton of finished high-density granules.
                 </div>
               </div>
             </div>
@@ -761,87 +752,92 @@ export default function DoubleRollerGranulatorPage() {
           </Container>
         </section>
 
-        {/* Section 6: Upstream, Sibling & Cross-Pillar Integration */}
-        <section className="py-14 lg:py-20 border-b border-slate-200 bg-slate-50/60">
+        {/* Internal Linking Triangle: Parent Hub, 2 Sibling Spokes, 1 Cross-Pillar Machine */}
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-slate-50/70">
           <Container>
-            <div className="max-w-3xl mb-12">
-              <span className="text-emerald-700 font-semibold text-sm uppercase tracking-wider block mb-2">
-                Turnkey Fertilizer Machinery
-              </span>
-              <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-950 font-display">
-                Upstream & Downstream Integration Across Minerals Solutions Machinery
-              </h2>
-              <p className="mt-4 text-slate-700 leading-relaxed">
-                Connect your roller compaction plant with our heavy bucket elevators, screw conveyors, and coating drums
-                for a fully automated production line.
-              </p>
+            <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+              <div>
+                <div className="text-xs font-bold uppercase tracking-widest text-[#DA020D] mb-2 flex items-center gap-1.5 font-mono">
+                  <Layers className="w-4 h-4" />
+                  Engineered Plant Integration & Sibling Equipment
+                </div>
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-950 tracking-tight">
+                  Turnkey Plant Integration & Complementary Systems
+                </h2>
+                <p className="text-slate-600 mt-2 text-sm sm:text-base max-w-2xl">
+                  Connect this unit into a continuous, high-efficiency manufacturing line with matched upstream and downstream equipment.
+                </p>
+              </div>
+              <Link
+                href="/products/fertilizer-granulation-plants/"
+                className="inline-flex items-center gap-2 text-sm font-bold text-slate-800 hover:text-[#DA020D] transition-colors shrink-0"
+              >
+                Explore Full Fertilizer Granulation & Pellet Plants Hub <ChevronRight className="w-4 h-4 text-[#DA020D]" />
+              </Link>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {/* Card 1: Bucket Elevators */}
-              <div className="p-6 rounded-xl bg-white border border-slate-200 shadow-xs flex flex-col justify-between">
+              {/* Sibling Spoke 1 */}
+              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-[#DA020D]/40 transition-all flex flex-col justify-between">
                 <div>
-                  <span className="text-xs font-bold uppercase tracking-wider text-emerald-700 block mb-2">
-                    Recirculation Circuit
-                  </span>
-                  <h3 className="text-lg font-bold text-slate-950 mb-2">Heavy Duty Bucket Elevators</h3>
-                  <p className="text-sm text-slate-600 leading-relaxed">
-                    Continuously recirculate screen undersize fines back into the pre-feed hopper with our dust-tight,
-                    centrifugal discharge bucket elevators.
+                  <div className="text-xs font-mono font-semibold text-emerald-700 uppercase tracking-wider mb-2">
+                    Sibling Pellet Line
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-950 mb-2">
+                    Industrial Pan Disc Granulator
+                  </h3>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                    Adjustable tilt angle agglomeration pan producing round bio-organic fertilizer pellets.
                   </p>
                 </div>
-                <div className="mt-6 pt-4 border-t border-slate-100">
-                  <Link
-                    href="/products/industrial-conveyors-spares/bucket-elevators/"
-                    className="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-700 hover:text-emerald-900 transition-colors"
-                  >
-                    View Bucket Elevators <ChevronRight className="h-3.5 w-3.5" />
-                  </Link>
-                </div>
+                <Link
+                  href="/products/fertilizer-granulation-plants/disc-granulator/"
+                  className="font-bold text-[#DA020D] hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
+                >
+                  View Machine Specifications <ChevronRight className="w-4 h-4" />
+                </Link>
               </div>
 
-              {/* Card 2: Pan Disc Granulator Sibling */}
-              <div className="p-6 rounded-xl bg-white border border-slate-200 shadow-xs flex flex-col justify-between">
+              {/* Sibling Spoke 2 */}
+              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-[#DA020D]/40 transition-all flex flex-col justify-between">
                 <div>
-                  <span className="text-xs font-bold uppercase tracking-wider text-emerald-700 block mb-2">
-                    Wet Agglomeration Sibling
-                  </span>
-                  <h3 className="text-lg font-bold text-slate-950 mb-2">Pan Disc Fertilizer Granulators</h3>
-                  <p className="text-sm text-slate-600 leading-relaxed">
-                    For compost and bio-organic formulations requiring wet rolling agglomeration, deploy our 2.2m pan disc
-                    granulators with 35°–55° tilt adjustment.
+                  <div className="text-xs font-mono font-semibold text-blue-700 uppercase tracking-wider mb-2">
+                    Sibling Pellet Line
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-950 mb-2">
+                    Rotary Drum Granulator Machines
+                  </h3>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                    Continuous rotary drum for large-scale industrial compound fertilizer manufacturing.
                   </p>
                 </div>
-                <div className="mt-6 pt-4 border-t border-slate-100">
-                  <Link
-                    href="/products/fertilizer-granulation-plants/disc-granulator/"
-                    className="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-700 hover:text-emerald-900 transition-colors"
-                  >
-                    View Pan Granulators <ChevronRight className="h-3.5 w-3.5" />
-                  </Link>
-                </div>
+                <Link
+                  href="/products/fertilizer-granulation-plants/rotary-drum-granulator/"
+                  className="font-bold text-[#DA020D] hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
+                >
+                  View Machine Specifications <ChevronRight className="w-4 h-4" />
+                </Link>
               </div>
 
-              {/* Card 3: Fertilizer Coating Drum */}
-              <div className="p-6 rounded-xl bg-white border border-slate-200 shadow-xs flex flex-col justify-between">
+              {/* Cross-Pillar Machine */}
+              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-[#DA020D]/40 transition-all flex flex-col justify-between">
                 <div>
-                  <span className="text-xs font-bold uppercase tracking-wider text-emerald-700 block mb-2">
-                    Anti-Caking Finishing
-                  </span>
-                  <h3 className="text-lg font-bold text-slate-950 mb-2">Fertilizer Coating Drums</h3>
-                  <p className="text-sm text-slate-600 leading-relaxed">
-                    Apply anti-caking wax, neem oil, or polymer colour coatings onto compacted granules to prevent moisture
-                    absorption during seasonal monsoon storage.
+                  <div className="text-xs font-mono font-semibold text-purple-700 uppercase tracking-wider mb-2">
+                    Complementary Material Handling
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-950 mb-2">
+                    Industrial Bucket Elevator Systems
+                  </h3>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                    Vertical continuous elevator transporting raw chemical powder to the compactor feed hopper.
                   </p>
                 </div>
-                <div className="mt-6 pt-4 border-t border-slate-100">
-                  <Link
-                    href="/products/fertilizer-granulation-plants/fertilizer-cooling-coating-drum/"
-                    className="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-700 hover:text-emerald-900 transition-colors"
-                  >
-                    View Coating Drums <ChevronRight className="h-3.5 w-3.5" />
-                  </Link>
-                </div>
+                <Link
+                  href="/products/industrial-conveyors-spares/bucket-elevators/"
+                  className="font-bold text-[#DA020D] hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
+                >
+                  Explore Complementary Machine <ChevronRight className="w-4 h-4" />
+                </Link>
               </div>
             </div>
           </Container>

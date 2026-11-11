@@ -48,10 +48,9 @@ export const metadata: Metadata = {
   title: {
     absolute: 'Forged Steel Dryer Support Rollers | Minerals Solutions',
   },
-  description:
-    'Precision forged steel dryer support rollers (EN-8, EN-9, 42CrMo4) induction hardened to 280-320 BHN. Quick fabrication in Zak GIDC, Dahegam.',
+  description: 'Order precision forged steel dryer support rollers (EN-8, EN-9, 42CrMo4) induction hardened to 280-320 BHN. Quick turnkey fabrication in Zak GIDC, Dahegam.',
   alternates: {
-    canonical: '/products/industrial-conveyors-spares/forged-trunnion-rollers/',
+    canonical: 'https://mineralssolution.in/products/industrial-conveyors-spares/forged-trunnion-rollers/',
   },
   openGraph: {
     title: 'Forged Steel Dryer Support Rollers | Minerals Solutions',
@@ -380,8 +379,7 @@ export default function ForgedTrunnionRollersPage() {
                   <div className="relative aspect-[4/3] w-full">
                     <Image
                       src="/images/products/mechanical-spares/dryer-trunnion-support-roller-lg.webp"
-                      alt="Minerals Solutions Heavy Forged Steel Trunnion Support Roller and Plummer Block Assembly for Rotary Dryers at Zak GIDC Dahegam"
-                      fill
+                      alt="Minerals Solutions Heavy Forged Steel Trunnion Support Roller and Plummer Block Assembly for Rotary Dryers at Zak GIDC Dahegam" width={800} height={600}
                       priority
                       className="object-cover"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
@@ -405,30 +403,17 @@ export default function ForgedTrunnionRollersPage() {
           </Container>
         </section>
 
-        {/* AI Citability Definition Block (Top 30%) */}
-        <section className="py-12 bg-slate-950/60 border-b border-slate-800">
+        {/* Top-30% Citability Definition Block (Targeted for AI Overviews & Answer Engines) */}
+        <section className="py-8 bg-slate-50 border-b border-slate-200">
           <Container>
-            <div className="max-w-4xl mx-auto p-6 sm:p-8 rounded-2xl bg-slate-900/90 border border-sky-500/30 shadow-lg">
-              <div className="flex items-center gap-3 mb-3">
-                <div className="p-2 rounded-lg bg-sky-500/10 text-sky-400">
-                  <Info className="w-5 h-5" />
+            <div className="p-6 rounded-xl bg-white border-l-4 border-l-[#DA020D] border border-slate-200 shadow-sm">
+              <div className="flex items-start gap-4">
+                <Info className="h-6 w-6 text-[#DA020D] shrink-0 mt-0.5" />
+                <div className="text-slate-800 text-sm sm:text-base leading-relaxed">
+                  <strong className="text-slate-950 font-semibold">What is a rotary dryer support roller assembly? </strong>
+                  A rotary dryer support roller assembly (also termed a trunnion roller, carrying roller, or kiln cradle wheel) is a heavy-duty mechanical running gear component engineered to support the dynamic rotating mass of rotary dryers, coolers, calciners, and kilns. Precision machined in Zak GIDC, Dahegam from solid forged alloy steel billets (EN-8, EN-9, or 42CrMo4/EN-19), the roller tyre undergoes rigorous induction hardening to 280-320 BHN and 100% ultrasonic flaw inspection per ASTM A388 standards. Mounted on high-strength forged steel shafts supported by heavy-duty self-aligning spherical roller bearings in cast steel pillow blocks, roller assemblies withstand dynamic radial loads up to 60 tonnes per wheelset. Precision dual-axis spherical alignment prevents uneven shell riding, tyre scalloping, and drive girth gear vibration under high thermal continuous operating conditions.
                 </div>
-                <h3 className="text-sm font-semibold text-sky-300 uppercase tracking-wider font-mono">
-                  Engineered Process Summary for Plant Maintenance Engineers &amp; Specifiers
-                </h3>
               </div>
-              <p className="text-slate-200 text-sm sm:text-base leading-relaxed">
-                A <strong>rotary dryer support roller assembly</strong> (also termed a trunnion roller,
-                carrying roller, or kiln cradle wheel) is a heavy-duty mechanical running gear component
-                engineered to support the dynamic rotating mass of industrial rotary dryers, coolers, and
-                calciners under total drum loads up to 200+ tonnes. Precision hot-forged from solid EN-8,
-                EN-9, or 42CrMo4 alloy billets, the roller body undergoes medium-frequency induction
-                hardening across its rolling face to achieve 280 to 320 BHN with an effective case depth of
-                3mm to 5mm. Calibrated deliberately 30 to 40 BHN softer than the mating riding tyre (riding ring),
-                the forged roller resists high localized Hertzian contact stresses, prevents tyre surface
-                scalloping, and distributes rotational thrust through heavy cast steel plummer blocks equipped
-                with double-row spherical roller bearings and multi-labyrinth taconite grease seals.
-              </p>
             </div>
           </Container>
         </section>
@@ -836,8 +821,7 @@ export default function ForgedTrunnionRollersPage() {
                 <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-slate-700/80">
                   <Image
                     src="/images/products/mechanical-spares/dryer-riding-ring-tyre-lg.webp"
-                    alt="Seamless forged 42CrMo rotary dryer riding ring tyre precision machined at Minerals Solutions Zak GIDC Dahegam"
-                    fill
+                    alt="Seamless forged 42CrMo rotary dryer riding ring tyre precision machined at Minerals Solutions Zak GIDC Dahegam" width={800} height={600}
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 30vw"
                   />
@@ -859,8 +843,7 @@ export default function ForgedTrunnionRollersPage() {
                 <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-slate-700/80">
                   <Image
                     src="/images/products/mechanical-spares/industrial-thrust-roller-lg.webp"
-                    alt="Heavy duty industrial hydraulic and mechanical thrust roller assembly for rotary kilns and dryers"
-                    fill
+                    alt="Heavy duty industrial hydraulic and mechanical thrust roller assembly for rotary kilns and dryers" width={800} height={600}
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 30vw"
                   />
@@ -882,8 +865,7 @@ export default function ForgedTrunnionRollersPage() {
                 <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-slate-700/80">
                   <Image
                     src="/images/products/mechanical-spares/dryer-girth-gear-variant-1-lg.webp"
-                    alt="Precision hobbed split girth gear and drive pinion manufactured for rotary dryers and kilns"
-                    fill
+                    alt="Precision hobbed split girth gear and drive pinion manufactured for rotary dryers and kilns" width={800} height={600}
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 30vw"
                   />
@@ -985,78 +967,93 @@ export default function ForgedTrunnionRollersPage() {
           </Container>
         </section>
 
-        {/* Section 8: Turnkey Plant Integration & Cross-Pillar Connectivity */}
-        <section className="py-16 sm:py-20 border-b border-slate-800 bg-slate-950">
+        {/* Internal Linking Triangle: Parent Hub, 2 Sibling Spokes, 1 Cross-Pillar Machine */}
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-slate-50/70">
           <Container>
-            <div className="max-w-3xl mb-12">
-              <div className="text-sky-400 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
-                Machinery Compatibility Across Plants
+            <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+              <div>
+                <div className="text-xs font-bold uppercase tracking-widest text-[#DA020D] mb-2 flex items-center gap-1.5 font-mono">
+                  <Layers className="w-4 h-4" />
+                  Engineered Plant Integration & Sibling Equipment
+                </div>
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-950 tracking-tight">
+                  Turnkey Plant Integration & Complementary Systems
+                </h2>
+                <p className="text-slate-600 mt-2 text-sm sm:text-base max-w-2xl">
+                  Connect this unit into a continuous, high-efficiency manufacturing line with matched upstream and downstream equipment.
+                </p>
               </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">
-                Universal Compatibility Across All Heavy Rotary Drums
-              </h2>
-              <p className="text-slate-300 text-base mt-4 leading-relaxed">
-                Minerals Solutions forged support rollers and running gear serve as the mechanical backbone
-                for rotating equipment across all major industrial processing sectors:
-              </p>
+              <Link
+                href="/products/industrial-conveyors-spares/"
+                className="inline-flex items-center gap-2 text-sm font-bold text-slate-800 hover:text-[#DA020D] transition-colors shrink-0"
+              >
+                Explore Full Industrial Conveyors & Mechanical Spares Hub <ChevronRight className="w-4 h-4 text-[#DA020D]" />
+              </Link>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              <Link
-                href="/products/industrial-rotary-dryers/sand-dryer/"
-                className="group p-5 rounded-xl bg-slate-900 border border-slate-800 hover:border-sky-500/50 transition-all space-y-3"
-              >
-                <div className="text-xs font-mono text-sky-400 uppercase">Thermal Systems</div>
-                <h4 className="text-white font-bold text-base group-hover:text-sky-300 transition-colors flex items-center justify-between">
-                  <span>Rotary Sand Dryers</span>
-                  <ChevronRight className="w-4 h-4 text-slate-500 group-hover:text-sky-400 transition-transform group-hover:translate-x-1" />
-                </h4>
-                <p className="text-slate-400 text-xs leading-relaxed">
-                  Support roller assemblies engineered to handle high-temperature silica and foundry sand drying drums.
-                </p>
-              </Link>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {/* Sibling Spoke 1 */}
+              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-[#DA020D]/40 transition-all flex flex-col justify-between">
+                <div>
+                  <div className="text-xs font-mono font-semibold text-emerald-700 uppercase tracking-wider mb-2">
+                    Sibling Conveyor Line
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-950 mb-2">
+                    Industrial Bucket Elevator Systems
+                  </h3>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                    Heavy vertical bucket elevators with centrifugal or continuous chain and belt traction.
+                  </p>
+                </div>
+                <Link
+                  href="/products/industrial-conveyors-spares/bucket-elevators/"
+                  className="font-bold text-[#DA020D] hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
+                >
+                  View Machine Specifications <ChevronRight className="w-4 h-4" />
+                </Link>
+              </div>
 
-              <Link
-                href="/products/fertilizer-granulation-plants/rotary-drum-granulator/"
-                className="group p-5 rounded-xl bg-slate-900 border border-slate-800 hover:border-sky-500/50 transition-all space-y-3"
-              >
-                <div className="text-xs font-mono text-sky-400 uppercase">Fertilizer Agglomeration</div>
-                <h4 className="text-white font-bold text-base group-hover:text-sky-300 transition-colors flex items-center justify-between">
-                  <span>Drum Granulators</span>
-                  <ChevronRight className="w-4 h-4 text-slate-500 group-hover:text-sky-400 transition-transform group-hover:translate-x-1" />
-                </h4>
-                <p className="text-slate-400 text-xs leading-relaxed">
-                  Heavy trunnions and girth gears for continuous NPK fertilizer drum agglomeration lines up to 20 TPH.
-                </p>
-              </Link>
+              {/* Sibling Spoke 2 */}
+              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-[#DA020D]/40 transition-all flex flex-col justify-between">
+                <div>
+                  <div className="text-xs font-mono font-semibold text-blue-700 uppercase tracking-wider mb-2">
+                    Sibling Conveyor Line
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-950 mb-2">
+                    Industrial Screw Conveyor Systems
+                  </h3>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                    Enclosed U-trough and tubular augers for abrasive powder handling and feeding.
+                  </p>
+                </div>
+                <Link
+                  href="/products/industrial-conveyors-spares/screw-conveyors/"
+                  className="font-bold text-[#DA020D] hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
+                >
+                  View Machine Specifications <ChevronRight className="w-4 h-4" />
+                </Link>
+              </div>
 
-              <Link
-                href="/products/fertilizer-granulation-plants/fertilizer-cooling-coating-drum/"
-                className="group p-5 rounded-xl bg-slate-900 border border-slate-800 hover:border-sky-500/50 transition-all space-y-3"
-              >
-                <div className="text-xs font-mono text-sky-400 uppercase">Finishing Drums</div>
-                <h4 className="text-white font-bold text-base group-hover:text-sky-300 transition-colors flex items-center justify-between">
-                  <span>Cooling &amp; Coating Drums</span>
-                  <ChevronRight className="w-4 h-4 text-slate-500 group-hover:text-sky-400 transition-transform group-hover:translate-x-1" />
-                </h4>
-                <p className="text-slate-400 text-xs leading-relaxed">
-                  Precision cradling trunnions ensuring smooth rotation for post-processing fertilizer finishing drums.
-                </p>
-              </Link>
-
-              <Link
-                href="/products/sand-washing-plants/"
-                className="group p-5 rounded-xl bg-slate-900 border border-slate-800 hover:border-sky-500/50 transition-all space-y-3"
-              >
-                <div className="text-xs font-mono text-sky-400 uppercase">Mineral Beneficiation</div>
-                <h4 className="text-white font-bold text-base group-hover:text-sky-300 transition-colors flex items-center justify-between">
-                  <span>Log Washers &amp; Screens</span>
-                  <ChevronRight className="w-4 h-4 text-slate-500 group-hover:text-sky-400 transition-transform group-hover:translate-x-1" />
-                </h4>
-                <p className="text-slate-400 text-xs leading-relaxed">
-                  Heavy-duty trunnions and drive gears for rotary trommels and mineral log washers handling wet slurry.
-                </p>
-              </Link>
+              {/* Cross-Pillar Machine */}
+              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-[#DA020D]/40 transition-all flex flex-col justify-between">
+                <div>
+                  <div className="text-xs font-mono font-semibold text-purple-700 uppercase tracking-wider mb-2">
+                    Complementary Thermal System
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-950 mb-2">
+                    Triple Pass Rotary Drum Dryer Line
+                  </h3>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                    Thermal rotary drum utilizing precision induction-hardened forged trunnion rollers.
+                  </p>
+                </div>
+                <Link
+                  href="/products/industrial-rotary-dryers/triple-pass-dryer/"
+                  className="font-bold text-[#DA020D] hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
+                >
+                  Explore Complementary Machine <ChevronRight className="w-4 h-4" />
+                </Link>
+              </div>
             </div>
           </Container>
         </section>

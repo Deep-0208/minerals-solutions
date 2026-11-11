@@ -41,10 +41,9 @@ export const metadata: Metadata = {
   title: {
     absolute: 'Stainless Steel Chemical Powder Dryer | Minerals Solutions',
   },
-  description:
-    'Indirect stainless steel chemical powder dryers (SS304/SS316) with heat exchangers & bag filters. Fabricated in Zak GIDC for contamination-free drying.',
+  description: 'Order sanitary stainless chemical powder dryers (SS304/SS316) with heat exchangers & bag filters. Fabricated in Zak GIDC for contamination-free drying.',
   alternates: {
-    canonical: '/products/industrial-rotary-dryers/chemical-powder-dryer/',
+    canonical: 'https://mineralssolution.in/products/industrial-rotary-dryers/chemical-powder-dryer/',
   },
   openGraph: {
     title: 'Stainless Steel Chemical Powder Dryer | Minerals Solutions',
@@ -480,8 +479,7 @@ export default function ChemicalPowderDryerPage() {
                   <div className="relative aspect-[4/3] w-full bg-slate-900">
                     <Image
                       src="/images/products/rotary-dryers/borax-dryer-heat-exchanger-bag-filter-lg.webp"
-                      alt="Stainless Steel Chemical Powder Dryer with Shell-and-Tube Heat Exchanger and Pulse-Jet Bag Filter manufactured at Minerals Solutions Zak GIDC Dahegam facility"
-                      fill
+                      alt="Stainless Steel Chemical Powder Dryer with Shell-and-Tube Heat Exchanger and Pulse-Jet Bag Filter manufactured at Minerals Solutions Zak GIDC Dahegam facility" width={800} height={600}
                       priority
                       className="object-cover"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 45vw, 550px"
@@ -522,17 +520,17 @@ export default function ChemicalPowderDryerPage() {
           </Container>
         </section>
 
-        {/* AI Citability Definition Passage (Top 30% Citability Passage) */}
+        {/* Top-30% Citability Definition Block (Targeted for AI Overviews & Answer Engines) */}
         <section className="py-8 bg-slate-50 border-b border-slate-200">
           <Container>
             <div className="p-6 rounded-xl bg-white border-l-4 border-l-[#DA020D] border border-slate-200 shadow-sm">
-              <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
-                <Info className="w-4 h-4 text-[#DA020D]" />
-                Process Engineering Definition: Indirect Chemical Powder Drying
+              <div className="flex items-start gap-4">
+                <Info className="h-6 w-6 text-[#DA020D] shrink-0 mt-0.5" />
+                <div className="text-slate-800 text-sm sm:text-base leading-relaxed">
+                  <strong className="text-slate-950 font-semibold">What is a stainless steel chemical powder dryer? </strong>
+                  A stainless steel chemical powder rotary dryer is an indirect continuous thermal processing unit engineered for sanitary, contamination-free moisture extraction from active pharmaceutical ingredients, fine specialty chemicals, catalysts, and food-grade mineral powders. Fabricated at Zak GIDC, Dahegam utilizing polished AISI SS 304 or SS 316 contact surfaces (mirror finish Ra below 0.4 µm), the drum isolates sensitive materials from combustion byproducts by transferring heat through an external thermal jacket, steam tube bundle, or indirect flue heat exchanger. Operating under continuous negative pressure with Teflon or mechanical face seals, it prevents fugitive dust emissions while processing 200 kg/hr to 8 TPH. Evaporation proceeds gently at controlled product temperatures between 60°C and 180°C, lowering powder moisture from 25% down to under 0.1% with complete recovery of volatile vapors via an integrated reverse-pulse stainless baghouse filtration system.
+                </div>
               </div>
-              <p className="text-slate-800 text-sm sm:text-base leading-relaxed">
-                A <strong>stainless steel chemical powder rotary dryer</strong> is an indirect continuous thermal processing unit engineered for moisture extraction from heat-sensitive crystals, salts, and chemical intermediates without flue-gas contamination. Raw feed is charged into an AISI 304 or 316 rotating drum where convective heat is supplied exclusively by sterile ambient air heated through an external shell-and-tube heat exchanger. Flue gases from solid fuel or gas burners never contact the product, ensuring zero soot deposition or chemical oxidation. Exhaust gases pass through high-efficiency stainless cyclones and an automated pulse-jet reverse-air baghouse filter, recovering over 99.8% of fine powder down to 2 microns while maintaining emission levels below 10 mg/Nm³. Minerals Solutions fabricates custom MS-CPD rotary chemical dryers from 300 kg/hr to 10 TPH at Zak GIDC, Dahegam, Gandhinagar.
-              </p>
             </div>
           </Container>
         </section>
@@ -827,83 +825,91 @@ export default function ChemicalPowderDryerPage() {
           </Container>
         </section>
 
-        {/* Downstream & Upstream Integration */}
-        <section className="py-14 lg:py-20 border-b border-slate-200 bg-slate-50/60">
+        {/* Internal Linking Triangle: Parent Hub, 2 Sibling Spokes, 1 Cross-Pillar Machine */}
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-slate-50/70">
           <Container>
-            <div className="max-w-3xl mb-12">
-              <div className="text-xs font-bold uppercase tracking-widest text-[#DA020D] mb-2 flex items-center gap-1.5">
-                <RotateCw className="w-4 h-4" />
-                Interlinked Equipment Systems
+            <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+              <div>
+                <div className="text-xs font-bold uppercase tracking-widest text-[#DA020D] mb-2 flex items-center gap-1.5 font-mono">
+                  <Layers className="w-4 h-4" />
+                  Engineered Plant Integration & Sibling Equipment
+                </div>
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-950 tracking-tight">
+                  Turnkey Plant Integration & Complementary Systems
+                </h2>
+                <p className="text-slate-600 mt-2 text-sm sm:text-base max-w-2xl">
+                  Connect this unit into a continuous, high-efficiency manufacturing line with matched upstream and downstream equipment.
+                </p>
               </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-950 tracking-tight">
-                Turnkey Chemical Plant Integration
-              </h2>
-              <p className="text-slate-600 mt-3 text-base">
-                Connecting indirect rotary dryers to upstream pan pelletizers and downstream stainless conveying lines.
-              </p>
+              <Link
+                href="/products/industrial-rotary-dryers/"
+                className="inline-flex items-center gap-2 text-sm font-bold text-slate-800 hover:text-[#DA020D] transition-colors shrink-0"
+              >
+                Explore Full Rotary Dryers & Thermal Systems Hub <ChevronRight className="w-4 h-4 text-[#DA020D]" />
+              </Link>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {/* Granulation Link */}
-              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-slate-300 transition-colors flex flex-col justify-between">
+              {/* Sibling Spoke 1 */}
+              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-[#DA020D]/40 transition-all flex flex-col justify-between">
                 <div>
-                  <div className="text-xs font-bold text-emerald-700 uppercase tracking-wider mb-2 flex items-center gap-1">
-                    <Boxes className="w-3.5 h-3.5" /> Upstream Granulation
+                  <div className="text-xs font-mono font-semibold text-emerald-700 uppercase tracking-wider mb-2">
+                    Sibling Dryer Line
                   </div>
                   <h3 className="text-lg font-bold text-slate-950 mb-2">
-                    Stainless Pan Disc Granulators
+                    Triple Pass Rotary Drum Dryer Line
                   </h3>
                   <p className="text-slate-600 text-sm leading-relaxed mb-4">
-                    Agglomerate chemical powders and catalyst fines in our SS304-lined pan disc granulators before continuous moisture reduction in the rotary dryer.
-                  </p>
-                </div>
-                <Link
-                  href="/products/fertilizer-granulation-plants/"
-                  className="font-bold text-[#DA020D] hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
-                >
-                  Explore Granulation Equipment <ChevronRight className="w-4 h-4" />
-                </Link>
-              </div>
-
-              {/* Sibling Triple Pass Link */}
-              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-slate-300 transition-colors flex flex-col justify-between">
-                <div>
-                  <div className="text-xs font-bold text-[#DA020D] uppercase tracking-wider mb-2 flex items-center gap-1">
-                    <Flame className="w-3.5 h-3.5" /> High-Efficiency Option
-                  </div>
-                  <h3 className="text-lg font-bold text-slate-950 mb-2">
-                    Triple Pass Concentric Dryers
-                  </h3>
-                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
-                    Drying inorganic minerals or non-reactive sands with restricted bay space? Review our triple-pass concentric dryers achieving &gt;80% thermal efficiency.
+                    Compact high-efficiency concentric drum for mineral powders and granular crystals.
                   </p>
                 </div>
                 <Link
                   href="/products/industrial-rotary-dryers/triple-pass-dryer/"
                   className="font-bold text-[#DA020D] hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
                 >
-                  View Triple Pass Drum Dryer <ChevronRight className="w-4 h-4" />
+                  View Machine Specifications <ChevronRight className="w-4 h-4" />
                 </Link>
               </div>
 
-              {/* Master Hub Link */}
-              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-slate-300 transition-colors flex flex-col justify-between">
+              {/* Sibling Spoke 2 */}
+              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-[#DA020D]/40 transition-all flex flex-col justify-between">
                 <div>
-                  <div className="text-xs font-bold text-blue-700 uppercase tracking-wider mb-2 flex items-center gap-1">
-                    <Layers className="w-3.5 h-3.5" /> Full Machinery Catalog
+                  <div className="text-xs font-mono font-semibold text-blue-700 uppercase tracking-wider mb-2">
+                    Sibling Dryer Line
                   </div>
                   <h3 className="text-lg font-bold text-slate-950 mb-2">
-                    Thermal Drying Systems Master Hub
+                    Industrial Rotary Sand Dryer Unit
                   </h3>
                   <p className="text-slate-600 text-sm leading-relaxed mb-4">
-                    Explore our complete range of direct, double-pass, roto-louvre, and calcining drums engineered for heavy industry across Gujarat.
+                    Direct-fired heavy rotary drum for continuous drying of high-tonnage mineral aggregates.
                   </p>
                 </div>
                 <Link
-                  href="/products/industrial-rotary-dryers/"
+                  href="/products/industrial-rotary-dryers/sand-dryer/"
                   className="font-bold text-[#DA020D] hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
                 >
-                  View All Rotary Dryers <ChevronRight className="w-4 h-4" />
+                  View Machine Specifications <ChevronRight className="w-4 h-4" />
+                </Link>
+              </div>
+
+              {/* Cross-Pillar Machine */}
+              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-[#DA020D]/40 transition-all flex flex-col justify-between">
+                <div>
+                  <div className="text-xs font-mono font-semibold text-purple-700 uppercase tracking-wider mb-2">
+                    Complementary Material Handling
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-950 mb-2">
+                    Industrial Screw Conveyor Systems
+                  </h3>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                    Dust-tight enclosed powder transfer auger for contamination-free dried powder conveyance.
+                  </p>
+                </div>
+                <Link
+                  href="/products/industrial-conveyors-spares/screw-conveyors/"
+                  className="font-bold text-[#DA020D] hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
+                >
+                  Explore Complementary Machine <ChevronRight className="w-4 h-4" />
                 </Link>
               </div>
             </div>
@@ -952,7 +958,7 @@ export default function ChemicalPowderDryerPage() {
             <div className="max-w-4xl mx-auto text-center">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-950/80 border border-red-800 text-red-300 text-xs font-bold uppercase tracking-wider mb-4">
                 <FlaskConical className="w-3.5 h-3.5 text-[#DA020D]" />
-                Direct Manufacturer Procurement — Zak GIDC Dahegam Works
+                Direct Manufacturer Procurement ,  Zak GIDC Dahegam Works
               </div>
 
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight mb-6">

@@ -48,13 +48,12 @@ export const metadata: Metadata = {
   title: {
     absolute: 'Belt Conveyor Manufacturer | Minerals Solutions',
   },
-  description:
-    'Heavy duty industrial troughed belt conveyors (300mm to 1400mm width). M24 rubber belts, diamond lagged pulleys & idlers. Zak GIDC, Dahegam.',
+  description: 'Install heavy duty industrial troughed belt conveyors (300mm to 1400mm width) with M24 rubber belting & lagged pulleys. Heavy built in Zak GIDC, Dahegam.',
   alternates: {
-    canonical: '/products/industrial-conveyors-spares/belt-conveyors/',
+    canonical: 'https://mineralssolution.in/products/industrial-conveyors-spares/belt-conveyors/',
   },
   openGraph: {
-    title: 'Belt Conveyor Manufacturer | Minerals Solutions',
+    title: 'Industrial Belt Conveyor Systems | Minerals Solutions',
     description:
       'Heavy duty industrial troughed belt conveyors (300mm to 1400mm width). M24 rubber belts, diamond lagged pulleys & idlers. Zak GIDC, Dahegam.',
     url: `${company.siteUrl}/products/industrial-conveyors-spares/belt-conveyors/`,
@@ -379,8 +378,7 @@ export default function BeltConveyorPage() {
                   <div className="relative aspect-[4/3] w-full">
                     <Image
                       src="/images/products/conveyor-systems/belt-conveyor-mineral-ore-beneficiation-lg.webp"
-                      alt="Minerals Solutions Heavy Troughed Belt Conveyor System for Mineral Processing and Quarry Aggregates at Zak GIDC Dahegam"
-                      fill
+                      alt="Minerals Solutions Heavy Troughed Belt Conveyor System for Mineral Processing and Quarry Aggregates at Zak GIDC Dahegam" width={800} height={600}
                       priority
                       className="object-cover"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
@@ -404,30 +402,17 @@ export default function BeltConveyorPage() {
           </Container>
         </section>
 
-        {/* AI Citability Definition Block (Top 30%) */}
-        <section className="py-12 bg-slate-950/60 border-b border-slate-800">
+        {/* Top-30% Citability Definition Block (Targeted for AI Overviews & Answer Engines) */}
+        <section className="py-8 bg-slate-50 border-b border-slate-200">
           <Container>
-            <div className="max-w-4xl mx-auto p-6 sm:p-8 rounded-2xl bg-slate-900/90 border border-red-500/30 shadow-lg">
-              <div className="flex items-center gap-3 mb-3">
-                <div className="p-2 rounded-lg bg-red-500/10 text-red-400">
-                  <Info className="w-5 h-5" />
+            <div className="p-6 rounded-xl bg-white border-l-4 border-l-[#DA020D] border border-slate-200 shadow-sm">
+              <div className="flex items-start gap-4">
+                <Info className="h-6 w-6 text-[#DA020D] shrink-0 mt-0.5" />
+                <div className="text-slate-800 text-sm sm:text-base leading-relaxed">
+                  <strong className="text-slate-950 font-semibold">What is an industrial troughed belt conveyor system? </strong>
+                  An industrial troughed belt conveyor system is a continuous bulk material handling installation designed in strict accordance with Bureau of Indian Standards (IS 11592) to convey crushed stone, silica sand, minerals, ores, and fertilizer pellets across horizontal and inclined paths up to 18 degrees. Fabricated in Zak GIDC, Dahegam from heavy structural IS 2062 channel stringers or welded lattice truss sections, the conveyor incorporates multi-ply nylon-nylon (NN) or polyester-polyamide (EP) rubber belting with Grade M24 wear covers. Heavy-duty three-roll troughing idlers (20°, 35°, or 45° angle) fitted with triple labyrinth dust seals and sealed-for-life deep-groove ball bearings ensure ultra-low rolling friction. Handling throughputs from 20 to 500 TPH at belt speeds between 0.8 and 2.5 m/s, systems feature diamond-groove rubber lagged drive drums for reliable slip-free power transmission.
                 </div>
-                <h3 className="text-sm font-semibold text-red-300 uppercase tracking-wider font-mono">
-                  Engineered Process Summary for Plant Specifiers &amp; Procurement
-                </h3>
               </div>
-              <p className="text-slate-200 text-sm sm:text-base leading-relaxed">
-                An <strong>industrial troughed belt conveyor system</strong> is a continuous bulk material
-                handling installation designed in strict accordance with Bureau of Indian Standards (IS 11592)
-                to convey crushed stone, silica sand, minerals, ores, and fertilizer chemicals across horizontal
-                and inclined paths up to 22°. The moving endless belt—manufactured with high-tensile multi-ply
-                EP (polyester-nylon) rubber carcass meeting IS 1891 Grade M24 specifications—is supported on
-                its carrying run by equal-length three-roller troughing idler sets inclined at 20°, 30°, or 35°.
-                This concave troughing geometry deepens the material cross-section, maximizing volumetric
-                carrying capacity by up to 28% without edge spillage. Driven by a shaft-mounted helical gearmotor
-                coupled to a hot-vulcanized diamond rubber-lagged crowned head pulley, the conveyor delivers
-                continuous high-throughput capacities from 15 to 350+ metric tonnes per hour.
-              </p>
             </div>
           </Container>
         </section>
@@ -719,8 +704,7 @@ export default function BeltConveyorPage() {
                 <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl">
                   <Image
                     src="/images/products/conveyor-systems/rubber-conveyor-belting-roll-lg.webp"
-                    alt="Heavy duty multi-ply M24 grade rubber conveyor belting rolls stocked at Minerals Solutions Zak GIDC Dahegam workshop"
-                    fill
+                    alt="Heavy duty multi-ply M24 grade rubber conveyor belting rolls stocked at Minerals Solutions Zak GIDC Dahegam workshop" width={800} height={600}
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 50vw"
                   />
@@ -762,8 +746,7 @@ export default function BeltConveyorPage() {
                 <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-slate-700">
                   <Image
                     src="/images/products/conveyor-systems/head-pulley-rubber-lagging-lg.webp"
-                    alt="Hot vulcanized diamond grooved rubber lagging on conveyor drive head pulley"
-                    fill
+                    alt="Hot vulcanized diamond grooved rubber lagging on conveyor drive head pulley" width={800} height={600}
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 30vw"
                   />
@@ -781,8 +764,7 @@ export default function BeltConveyorPage() {
                 <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-slate-700">
                   <Image
                     src="/images/products/conveyor-systems/conveyor-head-tail-pulleys-lg.webp"
-                    alt="Heavy duty crowned conveyor head and tail drum pulleys precision machined at Zak GIDC"
-                    fill
+                    alt="Heavy duty crowned conveyor head and tail drum pulleys precision machined at Zak GIDC" width={800} height={600}
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 30vw"
                   />
@@ -800,8 +782,7 @@ export default function BeltConveyorPage() {
                 <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-slate-700">
                   <Image
                     src="/images/products/conveyor-systems/conveyor-troughing-idler-roller-lg.webp"
-                    alt="Precision troughing idler rollers with deep multi-labyrinth seals and heavy steel tubing"
-                    fill
+                    alt="Precision troughing idler rollers with deep multi-labyrinth seals and heavy steel tubing" width={800} height={600}
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 30vw"
                   />
@@ -966,78 +947,93 @@ export default function BeltConveyorPage() {
           </Container>
         </section>
 
-        {/* Section 7: Turnkey Plant Integration & Cross-Pillar Connectivity */}
-        <section className="py-16 sm:py-20 border-b border-slate-800 bg-slate-900">
+        {/* Internal Linking Triangle: Parent Hub, 2 Sibling Spokes, 1 Cross-Pillar Machine */}
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-slate-50/70">
           <Container>
-            <div className="max-w-3xl mb-12">
-              <div className="text-red-400 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
-                Total Plant Mechanical Backbone
+            <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+              <div>
+                <div className="text-xs font-bold uppercase tracking-widest text-[#DA020D] mb-2 flex items-center gap-1.5 font-mono">
+                  <Layers className="w-4 h-4" />
+                  Engineered Plant Integration & Sibling Equipment
+                </div>
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-950 tracking-tight">
+                  Turnkey Plant Integration & Complementary Systems
+                </h2>
+                <p className="text-slate-600 mt-2 text-sm sm:text-base max-w-2xl">
+                  Connect this unit into a continuous, high-efficiency manufacturing line with matched upstream and downstream equipment.
+                </p>
               </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">
-                Turnkey Bulk Material Handling Flowsheet Integration
-              </h2>
-              <p className="text-slate-300 text-base mt-4 leading-relaxed">
-                Belt conveyors are the horizontal arteries of modern industrial mineral processing. Explore how
-                our belt conveyors integrate seamlessly across all 4 Minerals Solutions manufacturing pillars:
-              </p>
+              <Link
+                href="/products/industrial-conveyors-spares/"
+                className="inline-flex items-center gap-2 text-sm font-bold text-slate-800 hover:text-[#DA020D] transition-colors shrink-0"
+              >
+                Explore Full Industrial Conveyors & Mechanical Spares Hub <ChevronRight className="w-4 h-4 text-[#DA020D]" />
+              </Link>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              <Link
-                href="/products/sand-washing-plants/"
-                className="group p-5 rounded-xl bg-slate-950 border border-slate-800 hover:border-red-500/50 transition-all space-y-3"
-              >
-                <div className="text-xs font-mono text-red-400 uppercase">Wet Beneficiation</div>
-                <h4 className="text-white font-bold text-base group-hover:text-red-300 transition-colors flex items-center justify-between">
-                  <span>Sand Washing Plants</span>
-                  <ChevronRight className="w-4 h-4 text-slate-500 group-hover:text-red-400 transition-transform group-hover:translate-x-1" />
-                </h4>
-                <p className="text-slate-400 text-xs leading-relaxed">
-                  Discharges washed silica sand from bucket wheel washers and hydrocyclones to open stockpiles.
-                </p>
-              </Link>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {/* Sibling Spoke 1 */}
+              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-[#DA020D]/40 transition-all flex flex-col justify-between">
+                <div>
+                  <div className="text-xs font-mono font-semibold text-emerald-700 uppercase tracking-wider mb-2">
+                    Sibling Conveyor Line
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-950 mb-2">
+                    Industrial Bucket Elevator Systems
+                  </h3>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                    Vertical bulk material elevating systems lifting aggregates and pellets up to 45m.
+                  </p>
+                </div>
+                <Link
+                  href="/products/industrial-conveyors-spares/bucket-elevators/"
+                  className="font-bold text-[#DA020D] hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
+                >
+                  View Machine Specifications <ChevronRight className="w-4 h-4" />
+                </Link>
+              </div>
 
-              <Link
-                href="/products/industrial-rotary-dryers/"
-                className="group p-5 rounded-xl bg-slate-950 border border-slate-800 hover:border-red-500/50 transition-all space-y-3"
-              >
-                <div className="text-xs font-mono text-red-400 uppercase">Thermal Upstream</div>
-                <h4 className="text-white font-bold text-base group-hover:text-red-300 transition-colors flex items-center justify-between">
-                  <span>Industrial Rotary Dryers</span>
-                  <ChevronRight className="w-4 h-4 text-slate-500 group-hover:text-red-400 transition-transform group-hover:translate-x-1" />
-                </h4>
-                <p className="text-slate-400 text-xs leading-relaxed">
-                  Equipped with Grade HR heat-resistant belting to convey 120°C hot dried sand to vibrating screens.
-                </p>
-              </Link>
+              {/* Sibling Spoke 2 */}
+              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-[#DA020D]/40 transition-all flex flex-col justify-between">
+                <div>
+                  <div className="text-xs font-mono font-semibold text-blue-700 uppercase tracking-wider mb-2">
+                    Sibling Conveyor Line
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-950 mb-2">
+                    Industrial Screw Conveyor Systems
+                  </h3>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                    Dust-tight tubular and U-trough augers transporting powders and slurry cakes.
+                  </p>
+                </div>
+                <Link
+                  href="/products/industrial-conveyors-spares/screw-conveyors/"
+                  className="font-bold text-[#DA020D] hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
+                >
+                  View Machine Specifications <ChevronRight className="w-4 h-4" />
+                </Link>
+              </div>
 
-              <Link
-                href="/products/fertilizer-granulation-plants/"
-                className="group p-5 rounded-xl bg-slate-950 border border-slate-800 hover:border-red-500/50 transition-all space-y-3"
-              >
-                <div className="text-xs font-mono text-red-400 uppercase">Agglomeration Line</div>
-                <h4 className="text-white font-bold text-base group-hover:text-red-300 transition-colors flex items-center justify-between">
-                  <span>Fertilizer Plants</span>
-                  <ChevronRight className="w-4 h-4 text-slate-500 group-hover:text-red-400 transition-transform group-hover:translate-x-1" />
-                </h4>
-                <p className="text-slate-400 text-xs leading-relaxed">
-                  Smooth horizontal transfer of NPK granules between coolers, coating drums, and bagging stations.
-                </p>
-              </Link>
-
-              <Link
-                href="/products/industrial-conveyors-spares/bucket-elevators/"
-                className="group p-5 rounded-xl bg-slate-950 border border-slate-800 hover:border-red-500/50 transition-all space-y-3"
-              >
-                <div className="text-xs font-mono text-red-400 uppercase">Vertical Elevation</div>
-                <h4 className="text-white font-bold text-base group-hover:text-red-300 transition-colors flex items-center justify-between">
-                  <span>Bucket Elevators</span>
-                  <ChevronRight className="w-4 h-4 text-slate-500 group-hover:text-red-400 transition-transform group-hover:translate-x-1" />
-                </h4>
-                <p className="text-slate-400 text-xs leading-relaxed">
-                  Feeds bulk materials directly into vertical elevator boot chutes for storage silo elevation.
-                </p>
-              </Link>
+              {/* Cross-Pillar Machine */}
+              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-[#DA020D]/40 transition-all flex flex-col justify-between">
+                <div>
+                  <div className="text-xs font-mono font-semibold text-purple-700 uppercase tracking-wider mb-2">
+                    Complementary Wet Circuit
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-950 mb-2">
+                    Silica Sand Washing Plant System
+                  </h3>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                    Upstream wet scrubbing plant using troughed belt conveyors to transfer raw sand and feed.
+                  </p>
+                </div>
+                <Link
+                  href="/products/sand-washing-plants/silica-sand-washing-plant/"
+                  className="font-bold text-[#DA020D] hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
+                >
+                  Explore Complementary Machine <ChevronRight className="w-4 h-4" />
+                </Link>
+              </div>
             </div>
           </Container>
         </section>

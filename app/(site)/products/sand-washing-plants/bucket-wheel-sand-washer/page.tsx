@@ -42,13 +42,12 @@ export const metadata: Metadata = {
   title: {
     absolute: 'Bucket Wheel Sand Washer Manufacturer | Minerals Solutions',
   },
-  description:
-    'Heavy duty bucket wheel sand washing machines (30 to 120 TPH) for M-Sand and river gravel. Low power, high recovery. Zak GIDC, Dahegam, Gujarat.',
+  description: 'Install heavy duty bucket wheel sand washing machines (30 to 120 TPH) for M-Sand and river gravel. Low power, high fines recovery, built in Zak GIDC.',
   alternates: {
-    canonical: '/products/sand-washing-plants/bucket-wheel-sand-washer/',
+    canonical: 'https://mineralssolution.in/products/sand-washing-plants/bucket-wheel-sand-washer/',
   },
   openGraph: {
-    title: 'Bucket Wheel Sand Washer Manufacturer | Minerals Solutions',
+    title: 'Bucket Wheel Sand Washer System | Minerals Solutions',
     description:
       'Heavy duty bucket wheel sand washing machines (30 to 120 TPH) for M-Sand and river gravel. Low power, high recovery. Zak GIDC, Dahegam, Gujarat.',
     url: `${company.siteUrl}/products/sand-washing-plants/bucket-wheel-sand-washer/`,
@@ -449,8 +448,7 @@ export default function BucketWheelSandWasherPage() {
                   <div className="relative aspect-[4/3] w-full">
                     <Image
                       src="/images/products/mineral-processing/river-sand-washing-plant-lg.webp"
-                      alt="Industrial Bucket Wheel Sand Washing Machine Manufactured by Minerals Solutions in Dahegam Gujarat"
-                      fill
+                      alt="Industrial Bucket Wheel Sand Washing Machine Manufactured by Minerals Solutions in Dahegam Gujarat" width={800} height={600}
                       priority
                       className="object-cover object-center"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 45vw, 540px"
@@ -474,19 +472,12 @@ export default function BucketWheelSandWasherPage() {
         {/* Top-30% Citability Definition Block (Targeted for AI Overviews & Answer Engines) */}
         <section className="py-8 bg-slate-50 border-b border-slate-200">
           <Container>
-            <div className="p-6 rounded-xl bg-white border-l-4 border-l-amber-600 border border-slate-200 shadow-sm">
+            <div className="p-6 rounded-xl bg-white border-l-4 border-l-[#DA020D] border border-slate-200 shadow-sm">
               <div className="flex items-start gap-4">
-                <Info className="h-6 w-6 text-amber-600 shrink-0 mt-0.5" />
+                <Info className="h-6 w-6 text-[#DA020D] shrink-0 mt-0.5" />
                 <div className="text-slate-800 text-sm sm:text-base leading-relaxed">
                   <strong className="text-slate-950 font-semibold">What is an industrial bucket wheel sand washer? </strong>
-                  An industrial bucket wheel sand washing machine is a heavy mechanical solid-liquid classifier engineered to
-                  scrub, desilt, and dewater natural river gravel and manufactured sand (M-Sand). Material enters an integrated
-                  water sedimentation basin where slowly rotating dredging wheels (1.2 to 2.5 RPM) equipped with perforated
-                  polyurethane screen buckets dredge settled sand from the bottom. Free wash water and suspended clays drain
-                  by gravity through calibrated perimeter perforations as the bucket ascends above the slurry line, while fine
-                  silt and excess clay colloids overflow an adjustable peripheral weir. The resulting washed sand discharges at
-                  12% to 15% moisture, meeting Indian Standard IS 383 Zone II grading requirements with power consumption of
-                  only ~0.25 kWh per ton.
+                  An industrial bucket wheel sand washing machine is a heavy mechanical solid-liquid classifier engineered to scrub, desilt, and dewater natural river gravel and manufactured sand (M-Sand). Fabricated in Zak GIDC, Dahegam, material enters an integrated water sedimentation basin where slowly rotating dredging wheels (1.2 to 2.5 RPM) equipped with perforated polyurethane screen buckets dredge settled aggregate from the bottom. Free wash water and suspended clays drain by gravity through calibrated perimeter perforations as the bucket ascends above the slurry line, while fine silt and excess clay colloids overflow an adjustable peripheral weir. Built for capacities from 30 to 180 TPH, washed sand discharges at 12% to 15% moisture, meeting Indian Standard IS 383 Zone II grading requirements with low operating power consumption of only ~0.25 kWh per ton of washed sand aggregate.
                 </div>
               </div>
             </div>
@@ -829,87 +820,92 @@ export default function BucketWheelSandWasherPage() {
           </Container>
         </section>
 
-        {/* Section 6: Plant Layout Integration & Cross-Pillar Synergies */}
-        <section className="py-14 lg:py-20 border-b border-slate-200 bg-slate-50/60">
+        {/* Internal Linking Triangle: Parent Hub, 2 Sibling Spokes, 1 Cross-Pillar Machine */}
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-slate-50/70">
           <Container>
-            <div className="max-w-3xl mb-12">
-              <span className="text-amber-700 font-semibold text-sm uppercase tracking-wider block mb-2">
-                Turnkey Plant Integration
-              </span>
-              <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-950 font-display">
-                Upstream & Downstream Integration Across Minerals Solutions Machinery
-              </h2>
-              <p className="mt-4 text-slate-700 leading-relaxed">
-                The bucket wheel sand washer operates as the central desilting anchor within complete wet processing plants.
-                Connect it seamlessly with our material handling and drying equipment manufactured in Dahegam.
-              </p>
+            <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+              <div>
+                <div className="text-xs font-bold uppercase tracking-widest text-[#DA020D] mb-2 flex items-center gap-1.5 font-mono">
+                  <Layers className="w-4 h-4" />
+                  Engineered Plant Integration & Sibling Equipment
+                </div>
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-950 tracking-tight">
+                  Turnkey Plant Integration & Complementary Systems
+                </h2>
+                <p className="text-slate-600 mt-2 text-sm sm:text-base max-w-2xl">
+                  Connect this unit into a continuous, high-efficiency manufacturing line with matched upstream and downstream equipment.
+                </p>
+              </div>
+              <Link
+                href="/products/sand-washing-plants/"
+                className="inline-flex items-center gap-2 text-sm font-bold text-slate-800 hover:text-[#DA020D] transition-colors shrink-0"
+              >
+                Explore Full Sand Washing & Mineral Processing Hub <ChevronRight className="w-4 h-4 text-[#DA020D]" />
+              </Link>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {/* Card 1: Fine Sand Recovery Sibling Link */}
-              <div className="p-6 rounded-xl bg-white border border-slate-200 shadow-xs flex flex-col justify-between">
+              {/* Sibling Spoke 1 */}
+              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-[#DA020D]/40 transition-all flex flex-col justify-between">
                 <div>
-                  <span className="text-xs font-bold uppercase tracking-wider text-amber-700 block mb-2">
-                    Sibling Equipment
-                  </span>
-                  <h3 className="text-lg font-bold text-slate-950 mb-2">Fine Sand Hydrocyclone Recovery</h3>
-                  <p className="text-sm text-slate-600 leading-relaxed">
-                    Capture +75 micron fine sand overflowing from the bucket wheel settling weir with our polyurethane
-                    hydrocyclone and high-frequency dewatering screen unit.
+                  <div className="text-xs font-mono font-semibold text-emerald-700 uppercase tracking-wider mb-2">
+                    Sibling Washing Line
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-950 mb-2">
+                    Silica Sand Washing Plant System
+                  </h3>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                    Turnkey multi-stage silica and foundry sand scrubbing, desliming, and classification line.
                   </p>
                 </div>
-                <div className="mt-6 pt-4 border-t border-slate-100">
-                  <Link
-                    href="/products/sand-washing-plants/hydrocyclone-sand-separator/"
-                    className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 hover:text-amber-900 transition-colors"
-                  >
-                    View Hydrocyclone Unit <ChevronRight className="h-3.5 w-3.5" />
-                  </Link>
-                </div>
+                <Link
+                  href="/products/sand-washing-plants/silica-sand-washing-plant/"
+                  className="font-bold text-[#DA020D] hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
+                >
+                  View Machine Specifications <ChevronRight className="w-4 h-4" />
+                </Link>
               </div>
 
-              {/* Card 2: Stockpile Belt Conveyors Cross-Pillar Link */}
-              <div className="p-6 rounded-xl bg-white border border-slate-200 shadow-xs flex flex-col justify-between">
+              {/* Sibling Spoke 2 */}
+              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-[#DA020D]/40 transition-all flex flex-col justify-between">
                 <div>
-                  <span className="text-xs font-bold uppercase tracking-wider text-amber-700 block mb-2">
-                    Cross-Pillar Material Handling
-                  </span>
-                  <h3 className="text-lg font-bold text-slate-950 mb-2">Troughed Stockpile Conveyors</h3>
-                  <p className="text-sm text-slate-600 leading-relaxed">
-                    Discharge dewatered M-Sand directly onto our 650 mm to 1,000 mm heavy troughed belt conveyors for radial
-                    kidney stockpiling and front-end wheel loader loading.
+                  <div className="text-xs font-mono font-semibold text-blue-700 uppercase tracking-wider mb-2">
+                    Sibling Washing Line
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-950 mb-2">
+                    Hydrocyclone Fine Sand Recovery Unit
+                  </h3>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                    Centrifugal desliming unit recovering fine sand down to 75 microns from wheel wash effluent.
                   </p>
                 </div>
-                <div className="mt-6 pt-4 border-t border-slate-100">
-                  <Link
-                    href="/products/industrial-conveyors-spares/belt-conveyors/"
-                    className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 hover:text-amber-900 transition-colors"
-                  >
-                    View Troughed Conveyors <ChevronRight className="h-3.5 w-3.5" />
-                  </Link>
-                </div>
+                <Link
+                  href="/products/sand-washing-plants/hydrocyclone-sand-separator/"
+                  className="font-bold text-[#DA020D] hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
+                >
+                  View Machine Specifications <ChevronRight className="w-4 h-4" />
+                </Link>
               </div>
 
-              {/* Card 3: Downstream Thermal Sand Dryer Cross-Pillar Link */}
-              <div className="p-6 rounded-xl bg-white border border-slate-200 shadow-xs flex flex-col justify-between">
+              {/* Cross-Pillar Machine */}
+              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-[#DA020D]/40 transition-all flex flex-col justify-between">
                 <div>
-                  <span className="text-xs font-bold uppercase tracking-wider text-amber-700 block mb-2">
-                    Thermal Processing
-                  </span>
-                  <h3 className="text-lg font-bold text-slate-950 mb-2">Industrial Rotary Sand Dryers</h3>
-                  <p className="text-sm text-slate-600 leading-relaxed">
-                    For dry-mix mortar, ready-mix tile adhesives, and foundry core sand, dry washed M-Sand from 14% down to
-                    &lt;0.5% moisture with our rotary sand drum dryers.
+                  <div className="text-xs font-mono font-semibold text-purple-700 uppercase tracking-wider mb-2">
+                    Complementary Thermal System
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-950 mb-2">
+                    Industrial Rotary Sand Dryer Unit
+                  </h3>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                    Downstream heavy rotary dryer reducing washed aggregate moisture from 14% to under 0.5%.
                   </p>
                 </div>
-                <div className="mt-6 pt-4 border-t border-slate-100">
-                  <Link
-                    href="/products/industrial-rotary-dryers/sand-dryer/"
-                    className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 hover:text-amber-900 transition-colors"
-                  >
-                    View Rotary Sand Dryers <ChevronRight className="h-3.5 w-3.5" />
-                  </Link>
-                </div>
+                <Link
+                  href="/products/industrial-rotary-dryers/sand-dryer/"
+                  className="font-bold text-[#DA020D] hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
+                >
+                  Explore Complementary Machine <ChevronRight className="w-4 h-4" />
+                </Link>
               </div>
             </div>
           </Container>
