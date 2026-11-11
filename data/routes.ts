@@ -386,6 +386,26 @@ export const routes: CanonicalRoute[] = [
     },
   },
   {
+    path: '/products/sand-washing-plants/hydrocyclone-sand-separator/',
+    label: 'Hydrocyclone Sand Separator',
+    priority: 0.85,
+    changeFreq: 'weekly',
+    navGroup: 'washing',
+    pillarPath: '/products/sand-washing-plants/',
+    breadcrumbTrail: [
+      { label: 'Home', href: '/' },
+      { label: 'Products', href: '/products/' },
+      { label: 'Sand Washing Plants', href: '/products/sand-washing-plants/' },
+      { label: 'Hydrocyclone Sand Separator', href: '/products/sand-washing-plants/hydrocyclone-sand-separator/' },
+    ],
+    seo: {
+      title: 'Hydrocyclone Fine Sand Recovery Unit | Minerals Solutions',
+      description: 'High efficiency hydrocyclone fine sand recovery plants (30 to 150 m3/hr slurry). Recover 95% of 75-micron fines. Zak GIDC, Dahegam, Gujarat.',
+      keywords: ['hydrocyclone sand washing', 'fine sand recovery plant gujarat', 'hydrocyclone dewatering screen ahmedabad', 'm sand fines recovery unit'],
+      canonical: `${SITE_URL}/products/sand-washing-plants/hydrocyclone-sand-separator/`,
+    },
+  },
+  {
     path: '/products/mineral-processing/quartz-stone-washer/',
     label: 'Quartz Stone Washer',
     priority: 0.85,

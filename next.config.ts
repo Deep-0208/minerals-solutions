@@ -146,7 +146,17 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/hydrocyclone-sand-washing-plant/',
-        destination: '/products/sand-washing-plants/#machinery',
+        destination: '/products/sand-washing-plants/hydrocyclone-sand-separator/',
+        permanent: true,
+      },
+      {
+        source: '/products/sand-washing-plants/hydrocyclone-sand-washing-plant/',
+        destination: '/products/sand-washing-plants/hydrocyclone-sand-separator/',
+        permanent: true,
+      },
+      {
+        source: '/products/mineral-processing/hydrocyclone-sand-separator/',
+        destination: '/products/sand-washing-plants/hydrocyclone-sand-separator/',
         permanent: true,
       },
       {
