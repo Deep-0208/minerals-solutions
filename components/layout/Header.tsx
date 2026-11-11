@@ -34,109 +34,109 @@ interface PillarItem {
   spokes: SpokeItem[];
 }
 
-// Exactly matches official Minerals Solutions brochure and visiting card with 4 balanced items per division
+// Exactly matches official Minerals Solutions manufacturing lines with 4 dedicated spoke pages per division
 const productPillars: PillarItem[] = [
   {
-    name: 'Rotary Dryers & Thermal Systems',
+    name: 'Industrial Rotary Dryers & Thermal Systems',
     shortName: 'Rotary Dryers',
     href: '/products/industrial-rotary-dryers/',
     badge: '500 kg - 50 TPH',
     icon: Flame,
-    description: 'Industrial thermal drum drying systems with hot air furnaces and exchangers.',
+    description: 'High-efficiency single, double, and triple-pass continuous industrial drying drums.',
     spokes: [
       {
-        label: 'Single / Double / Triple Pass Dryer',
-        href: '/products/industrial-rotary-dryers/#configurations',
+        label: 'Triple Pass Drum Dryer',
+        href: '/products/industrial-rotary-dryers/triple-pass-dryer/',
       },
       {
-        label: 'Dryer with Hot Air Generator',
-        href: '/products/industrial-rotary-dryers/#configurations',
+        label: 'Industrial Rotary Sand Dryer',
+        href: '/products/industrial-rotary-dryers/sand-dryer/',
       },
       {
-        label: 'Dryer with Heat Exchanger Unit',
-        href: '/products/industrial-rotary-dryers/#configurations',
+        label: 'Stainless Chemical Powder Dryer',
+        href: '/products/industrial-rotary-dryers/chemical-powder-dryer/',
       },
       {
-        label: 'Industrial Rotary Drum Dryer',
-        href: '/products/industrial-rotary-dryers/#specifications',
+        label: 'Biomass & Sawdust Rotary Dryer',
+        href: '/products/industrial-rotary-dryers/biomass-sawdust-dryer/',
       },
     ],
   },
   {
-    name: 'Fertilizers Granulation Plants',
+    name: 'Sand Washing & Mineral Processing Plants',
+    shortName: 'Sand Washing',
+    href: '/products/sand-washing-plants/',
+    badge: '30 - 200 TPH',
+    icon: Waves,
+    description: 'Washing, desliming, attrition scrubbing, and fine sand recovery down to 75 microns.',
+    spokes: [
+      {
+        label: 'Silica Sand Washing Plant',
+        href: '/products/sand-washing-plants/silica-sand-washing-plant/',
+      },
+      {
+        label: 'Bucket Wheel Sand Washer',
+        href: '/products/sand-washing-plants/bucket-wheel-sand-washer/',
+      },
+      {
+        label: 'Hydrocyclone Sand Separator',
+        href: '/products/sand-washing-plants/hydrocyclone-sand-separator/',
+      },
+      {
+        label: 'Heavy Duty Mineral Log Washer',
+        href: '/products/sand-washing-plants/mineral-log-washer/',
+      },
+    ],
+  },
+  {
+    name: 'Fertilizer Granulation & Pellet Plants',
     shortName: 'Fertilizers Plant',
     href: '/products/fertilizer-granulation-plants/',
     badge: '1 - 20 TPH',
     icon: Sprout,
-    description: 'Turnkey chemical NPK and bio-organic fertilizer granulation plants.',
+    description: 'Turnkey chemical NPK, DAP, compost, and bio-organic fertilizer pelletizing systems.',
     spokes: [
       {
-        label: 'Fertilizers Granulation Plant',
-        href: '/products/fertilizer-granulation-plants/#machinery',
+        label: 'Industrial Pan Disc Granulator',
+        href: '/products/fertilizer-granulation-plants/disc-granulator/',
       },
       {
-        label: 'Fertilizers Plant (Pan / Disc System)',
-        href: '/products/fertilizer-granulation-plants/#machinery',
+        label: 'Double Roller Compactor',
+        href: '/products/fertilizer-granulation-plants/double-roller-granulator/',
       },
       {
-        label: 'Granulation Cooling & Coating Drums',
-        href: '/products/fertilizer-granulation-plants/#process',
+        label: 'Rotary Drum Granulator',
+        href: '/products/fertilizer-granulation-plants/rotary-drum-granulator/',
       },
       {
-        label: 'Turnkey Fertilizer Processing Lines',
-        href: '/products/fertilizer-granulation-plants/',
+        label: 'Fertilizer Cooling & Coating Drum',
+        href: '/products/fertilizer-granulation-plants/fertilizer-cooling-coating-drum/',
       },
     ],
   },
   {
-    name: 'Sand Washing & Screening Plants',
-    shortName: 'Sand Washing & Screening',
-    href: '/products/sand-washing-plants/',
-    badge: '30 - 200 TPH',
-    icon: Waves,
-    description: 'Washing, desliming, and fine sand recovery down to 75 microns.',
-    spokes: [
-      {
-        label: 'Sand Washing & Screening Plant',
-        href: '/products/sand-washing-plants/#machinery',
-      },
-      {
-        label: 'Mineral Processing Equipment',
-        href: '/products/sand-washing-plants/#machinery',
-      },
-      {
-        label: 'Bucket Wheel & Hydrocyclone Washers',
-        href: '/products/sand-washing-plants/#machinery',
-      },
-      {
-        label: 'Washed & Graded Silica Sand Systems',
-        href: '/products/sand-washing-plants/#specifications',
-      },
-    ],
-  },
-  {
-    name: 'Conveyor Systems & Plant Spares',
+    name: 'Industrial Conveyors & Heavy Mechanical Spares',
     shortName: 'Conveyors & Spares',
     href: '/products/industrial-conveyors-spares/',
-    badge: 'Custom Fabricated',
+    badge: 'IS 11592 / CEMA',
     icon: Boxes,
-    description: 'Bulk material handling conveyors, crusher spares, and fabrication.',
+    description: 'Bulk material handling conveyors, bucket elevators, trunnion rollers, and spares.',
     spokes: [
       {
-        label: 'Conveyor Systems and Accessories',
-        href: '/products/industrial-conveyors-spares/#conveyors',
+        label: 'Heavy Duty Bucket Elevators',
+        href: '/products/industrial-conveyors-spares/bucket-elevators/',
       },
       {
-        label: 'Road, Civil, Crusher Plants Spares',
-        href: '/products/industrial-conveyors-spares/#trunnions',
+        label: 'Industrial Screw Conveyors',
+        href: '/products/industrial-conveyors-spares/screw-conveyors/',
       },
       {
-        label: 'Heavy Troughed Belt Conveyors',
-        href: '/products/industrial-conveyors-spares/#conveyors',
+        label: 'Forged Trunnion Support Rollers',
+        href: '/products/industrial-conveyors-spares/forged-trunnion-rollers/',
       },
       {
-        label: 'Customized Fabrication Works',
-        href: '/products/industrial-conveyors-spares/#specifications',
+        label: 'Troughed Belt Conveyor Systems',
+        href: '/products/industrial-conveyors-spares/belt-conveyors/',
       },
     ],
   },
@@ -229,12 +229,15 @@ export function Header() {
               )}
             </button>
 
-            {/* 4-Pillar Mega Panel with Centered Alignment & Zero Horizontal Overflow */}
-            {productsMegaOpen && (
-              <div
-                onMouseLeave={() => setProductsMegaOpen(false)}
-                className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[940px] xl:w-[980px] max-w-[calc(100vw-32px)] bg-white rounded-2xl border border-[#E7E7EB] shadow-[0_24px_60px_-12px_rgba(17,17,17,0.16)] p-5 z-50 animate-in fade-in slide-in-from-top-1 duration-150 before:absolute before:-top-3 before:left-0 before:right-0 before:h-3"
-              >
+            {/* 4-Pillar Mega Panel with Centered Alignment & Zero Horizontal Overflow (Always in DOM for SEO Discovery) */}
+            <div
+              onMouseLeave={() => setProductsMegaOpen(false)}
+              className={`absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[940px] xl:w-[980px] max-w-[calc(100vw-32px)] bg-white rounded-2xl border border-[#E7E7EB] shadow-[0_24px_60px_-12px_rgba(17,17,17,0.16)] p-5 z-50 transition-all duration-150 before:absolute before:-top-3 before:left-0 before:right-0 before:h-3 ${
+                productsMegaOpen
+                  ? 'opacity-100 translate-y-0 visible pointer-events-auto'
+                  : 'opacity-0 -translate-y-1 invisible pointer-events-none'
+              }`}
+            >
                 {/* 4 Pillar Cards in a Balanced Grid */}
                 <div className="grid grid-cols-4 gap-3.5">
                   {productPillars.map((pillar) => {
@@ -268,21 +271,40 @@ export function Header() {
                             </p>
                           </Link>
 
-                          {/* 4 Spokes List */}
+                          {/* 4 Dedicated Spoke Pages */}
                           <div className="pt-2.5 mt-2.5 border-t border-neutral-200/60 space-y-0.5">
-                            {pillar.spokes.map((spoke) => (
-                              <Link
-                                key={spoke.label}
-                                href={spoke.href}
-                                onClick={() => setProductsMegaOpen(false)}
-                                className="group flex items-center justify-between py-1.5 px-2 rounded-md hover:bg-white hover:shadow-xs transition-all"
-                              >
-                                <span className="text-xs text-neutral-700 group-hover:text-[#E10613] font-medium leading-tight truncate">
-                                  {spoke.label}
-                                </span>
-                                <ChevronRight className="w-3 h-3 text-neutral-300 group-hover:text-[#E10613] shrink-0 ml-1 transition-colors" />
-                              </Link>
-                            ))}
+                            {pillar.spokes.map((spoke) => {
+                              const isActive = pathname === spoke.href;
+                              return (
+                                <Link
+                                  key={spoke.label}
+                                  href={spoke.href}
+                                  onClick={() => setProductsMegaOpen(false)}
+                                  className={`group flex items-center justify-between py-1.5 px-2 rounded-md transition-all ${
+                                    isActive
+                                      ? 'bg-red-50 text-[#E10613] font-semibold shadow-xs'
+                                      : 'hover:bg-white hover:shadow-xs text-neutral-700'
+                                  }`}
+                                >
+                                  <span
+                                    className={`text-xs leading-tight truncate ${
+                                      isActive
+                                        ? 'text-[#E10613] font-semibold'
+                                        : 'group-hover:text-[#E10613] font-medium'
+                                    }`}
+                                  >
+                                    {spoke.label}
+                                  </span>
+                                  <ChevronRight
+                                    className={`w-3 h-3 shrink-0 ml-1 transition-colors ${
+                                      isActive
+                                        ? 'text-[#E10613]'
+                                        : 'text-neutral-300 group-hover:text-[#E10613]'
+                                    }`}
+                                  />
+                                </Link>
+                              );
+                            })}
                           </div>
                         </div>
 
@@ -305,9 +327,9 @@ export function Header() {
                 {/* Sleek Integrated Bottom Bar */}
                 <div className="mt-3.5 pt-3 border-t border-neutral-100 flex flex-col sm:flex-row items-center justify-between gap-2 px-1 text-xs">
                   <div className="flex items-center gap-2 text-neutral-600 truncate">
-                    <span className="font-bold text-[#111111] shrink-0">Processed Minerals:</span>
+                    <span className="font-bold text-[#111111] shrink-0 font-mono text-[11px] uppercase tracking-wider text-[#E10613]">16 Spoke Equipment Lines:</span>
                     <span className="text-neutral-500 truncate text-[11px]">
-                      Resin Coated Sand • Washed Silica Sand • Copper Slag • Quartz Sand
+                      Single / Multi-Pass Dryers • Wet Classifiers • Fertilizer Granulators • IS 11592 Conveyors
                     </span>
                   </div>
 
@@ -317,20 +339,19 @@ export function Header() {
                       onClick={() => setProductsMegaOpen(false)}
                       className="font-bold text-neutral-700 hover:text-[#111111] hover:underline text-xs"
                     >
-                      All Machinery
+                      All 16 Equipment Models
                     </Link>
                     <Link
                       href="/request-quote/"
                       onClick={() => setProductsMegaOpen(false)}
                       className="inline-flex items-center gap-1 font-bold text-[#E10613] hover:underline text-xs"
                     >
-                      <span>Request Quote</span>
+                      <span>Instant Quotation</span>
                       <ArrowRight className="w-3 h-3" />
                     </Link>
                   </div>
                 </div>
               </div>
-            )}
           </div>
 
           <Link
@@ -469,16 +490,23 @@ export function Header() {
                             Explore {pillar.shortName} ({pillar.badge})
                           </Link>
                           <div className="space-y-1 pt-1 pl-1">
-                            {pillar.spokes.map((spoke) => (
-                              <Link
-                                key={spoke.label}
-                                href={spoke.href}
-                                onClick={() => setMobileMenuOpen(false)}
-                                className="block text-xs text-neutral-600 hover:text-[#E10613] py-0.5"
-                              >
-                                {spoke.label}
-                              </Link>
-                            ))}
+                            {pillar.spokes.map((spoke) => {
+                              const isActive = pathname === spoke.href;
+                              return (
+                                <Link
+                                  key={spoke.label}
+                                  href={spoke.href}
+                                  onClick={() => setMobileMenuOpen(false)}
+                                  className={`block text-xs py-1.5 px-2 rounded transition-colors ${
+                                    isActive
+                                      ? 'text-[#E10613] font-bold bg-red-50'
+                                      : 'text-neutral-600 hover:text-[#E10613]'
+                                  }`}
+                                >
+                                  {spoke.label}
+                                </Link>
+                              );
+                            })}
                           </div>
                         </div>
                       )}
