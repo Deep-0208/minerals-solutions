@@ -722,6 +722,26 @@ export const routes: CanonicalRoute[] = [
     },
   },
   {
+    path: '/products/industrial-conveyors-spares/belt-conveyors/',
+    label: 'Belt Conveyors',
+    priority: 0.85,
+    changeFreq: 'weekly',
+    navGroup: 'conveyors',
+    pillarPath: '/products/industrial-conveyors-spares/',
+    breadcrumbTrail: [
+      { label: 'Home', href: '/' },
+      { label: 'Products', href: '/products/' },
+      { label: 'Industrial Conveyors & Spares', href: '/products/industrial-conveyors-spares/' },
+      { label: 'Belt Conveyors', href: '/products/industrial-conveyors-spares/belt-conveyors/' },
+    ],
+    seo: {
+      title: 'Belt Conveyor Manufacturer | Minerals Solutions',
+      description: 'Heavy duty industrial troughed belt conveyors (300mm to 1400mm width). M24 rubber belts, diamond lagged pulleys & idlers. Zak GIDC, Dahegam.',
+      keywords: ['belt conveyor manufacturer', 'industrial conveyor belt manufacturer ahmedabad', 'conveyor belt suppliers gujarat', 'troughed belt conveyor system', 'nylon rubber conveyor belt M24'],
+      canonical: `${SITE_URL}/products/industrial-conveyors-spares/belt-conveyors/`,
+    },
+  },
+  {
     path: '/products/conveyor-systems/',
     label: 'Conveyor Systems',
     priority: 0.95,

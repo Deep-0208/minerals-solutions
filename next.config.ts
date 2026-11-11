@@ -320,8 +320,28 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/belt-conveyor/',
+        destination: '/products/industrial-conveyors-spares/belt-conveyors/',
+        permanent: true,
+      },
+      {
+        source: '/belt-conveyors/',
+        destination: '/products/industrial-conveyors-spares/belt-conveyors/',
+        permanent: true,
+      },
+      {
+        source: '/troughed-belt-conveyor/',
+        destination: '/products/industrial-conveyors-spares/belt-conveyors/',
+        permanent: true,
+      },
+      {
+        source: '/products/conveyor-systems/belt-conveyors/',
+        destination: '/products/industrial-conveyors-spares/belt-conveyors/',
+        permanent: true,
+      },
+      {
         source: '/industrial-conveyor-belt-system-manufacturer/',
-        destination: '/products/industrial-conveyors-spares/',
+        destination: '/products/industrial-conveyors-spares/belt-conveyors/',
         permanent: true,
       },
       {
