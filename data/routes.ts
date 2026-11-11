@@ -702,6 +702,26 @@ export const routes: CanonicalRoute[] = [
     },
   },
   {
+    path: '/products/industrial-conveyors-spares/forged-trunnion-rollers/',
+    label: 'Forged Trunnion Rollers',
+    priority: 0.85,
+    changeFreq: 'weekly',
+    navGroup: 'conveyors',
+    pillarPath: '/products/industrial-conveyors-spares/',
+    breadcrumbTrail: [
+      { label: 'Home', href: '/' },
+      { label: 'Products', href: '/products/' },
+      { label: 'Industrial Conveyors & Spares', href: '/products/industrial-conveyors-spares/' },
+      { label: 'Forged Trunnion Rollers', href: '/products/industrial-conveyors-spares/forged-trunnion-rollers/' },
+    ],
+    seo: {
+      title: 'Forged Steel Dryer Support Rollers | Minerals Solutions',
+      description: 'Precision forged steel dryer support rollers (EN-8, EN-9, 42CrMo4) induction hardened to 280-320 BHN. Quick fabrication in Zak GIDC, Dahegam.',
+      keywords: ['forged steel dryer support rollers', 'rotary kiln trunnion roller manufacturer', 'EN8 forged roller assembly ahmedabad', 'dryer trunnion replacement spares gujarat', 'girth gear for rotary dryer'],
+      canonical: `${SITE_URL}/products/industrial-conveyors-spares/forged-trunnion-rollers/`,
+    },
+  },
+  {
     path: '/products/conveyor-systems/',
     label: 'Conveyor Systems',
     priority: 0.95,

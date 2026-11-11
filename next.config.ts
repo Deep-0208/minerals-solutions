@@ -295,6 +295,31 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/forged-trunnion-rollers/',
+        destination: '/products/industrial-conveyors-spares/forged-trunnion-rollers/',
+        permanent: true,
+      },
+      {
+        source: '/dryer-support-rollers/',
+        destination: '/products/industrial-conveyors-spares/forged-trunnion-rollers/',
+        permanent: true,
+      },
+      {
+        source: '/rotary-dryer-trunnion-rollers/',
+        destination: '/products/industrial-conveyors-spares/forged-trunnion-rollers/',
+        permanent: true,
+      },
+      {
+        source: '/rotary-kiln-support-rollers/',
+        destination: '/products/industrial-conveyors-spares/forged-trunnion-rollers/',
+        permanent: true,
+      },
+      {
+        source: '/products/conveyor-systems/forged-trunnion-rollers/',
+        destination: '/products/industrial-conveyors-spares/forged-trunnion-rollers/',
+        permanent: true,
+      },
+      {
         source: '/industrial-conveyor-belt-system-manufacturer/',
         destination: '/products/industrial-conveyors-spares/',
         permanent: true,
