@@ -10,6 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/products/', priority: 0.95, changeFrequency: 'weekly' as const },
     { path: '/products/industrial-rotary-dryers/', priority: 0.9, changeFrequency: 'weekly' as const },
     { path: '/products/industrial-rotary-dryers/triple-pass-dryer/', priority: 0.85, changeFrequency: 'weekly' as const },
+    { path: '/products/industrial-rotary-dryers/sand-dryer/', priority: 0.85, changeFrequency: 'weekly' as const },
     { path: '/products/sand-washing-plants/', priority: 0.9, changeFrequency: 'weekly' as const },
     { path: '/products/fertilizer-granulation-plants/', priority: 0.9, changeFrequency: 'weekly' as const },
     { path: '/products/industrial-conveyors-spares/', priority: 0.9, changeFrequency: 'weekly' as const },

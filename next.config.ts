@@ -70,13 +70,18 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/products/rotary-dryers/sand-dryer/',
+        destination: '/products/industrial-rotary-dryers/sand-dryer/',
+        permanent: true,
+      },
+      {
         source: '/rotary-dryer-manufacturer-ahmedabad/',
         destination: '/products/industrial-rotary-dryers/',
         permanent: true,
       },
       {
         source: '/sand-dryer-with-hot-air-generator/',
-        destination: '/products/industrial-rotary-dryers/#configurations',
+        destination: '/products/industrial-rotary-dryers/sand-dryer/',
         permanent: true,
       },
       {
