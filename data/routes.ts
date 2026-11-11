@@ -564,6 +564,26 @@ export const routes: CanonicalRoute[] = [
     },
   },
   {
+    path: '/products/fertilizer-granulation-plants/fertilizer-cooling-coating-drum/',
+    label: 'Fertilizer Cooling & Coating Drum',
+    priority: 0.85,
+    changeFreq: 'weekly',
+    navGroup: 'fertilizer',
+    pillarPath: '/products/fertilizer-granulation-plants/',
+    breadcrumbTrail: [
+      { label: 'Home', href: '/' },
+      { label: 'Products', href: '/products/' },
+      { label: 'Fertilizer Granulation Plants', href: '/products/fertilizer-granulation-plants/' },
+      { label: 'Fertilizer Cooling & Coating Drum', href: '/products/fertilizer-granulation-plants/fertilizer-cooling-coating-drum/' },
+    ],
+    seo: {
+      title: 'Fertilizer Coating & Cooling Drum | Minerals Solutions',
+      description: 'Rotary cooling and anti-caking coating drums for fertilizer pellets (2 to 15 TPH). Stop bag caking & moisture reabsorption. Zak GIDC, Dahegam.',
+      keywords: ['fertilizer coating drum manufacturer', 'rotary cooler for fertilizer pellets', 'neem oil coating drum gujarat', 'anti caking fertilizer drum ahmedabad', 'fertilizer pellet cooler machine'],
+      canonical: `${SITE_URL}/products/fertilizer-granulation-plants/fertilizer-cooling-coating-drum/`,
+    },
+  },
+  {
     path: '/products/granulation-pellet-plants/fertilizer-plant/',
     label: 'Turnkey Fertilizer Plant',
     priority: 0.85,

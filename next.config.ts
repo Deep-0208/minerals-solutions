@@ -155,6 +155,26 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/fertilizer-cooling-coating-drum/',
+        destination: '/products/fertilizer-granulation-plants/fertilizer-cooling-coating-drum/',
+        permanent: true,
+      },
+      {
+        source: '/fertilizer-coating-drum/',
+        destination: '/products/fertilizer-granulation-plants/fertilizer-cooling-coating-drum/',
+        permanent: true,
+      },
+      {
+        source: '/rotary-fertilizer-cooler/',
+        destination: '/products/fertilizer-granulation-plants/fertilizer-cooling-coating-drum/',
+        permanent: true,
+      },
+      {
+        source: '/products/granulation-pellet-plants/fertilizer-cooling-coating-drum/',
+        destination: '/products/fertilizer-granulation-plants/fertilizer-cooling-coating-drum/',
+        permanent: true,
+      },
+      {
         source: '/organic-fertilizer-granulation-plant/',
         destination: '/products/fertilizer-granulation-plants/#process',
         permanent: true,
