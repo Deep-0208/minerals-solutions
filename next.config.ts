@@ -75,6 +75,11 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/products/rotary-dryers/chemical-powder-dryer/',
+        destination: '/products/industrial-rotary-dryers/chemical-powder-dryer/',
+        permanent: true,
+      },
+      {
         source: '/rotary-dryer-manufacturer-ahmedabad/',
         destination: '/products/industrial-rotary-dryers/',
         permanent: true,
