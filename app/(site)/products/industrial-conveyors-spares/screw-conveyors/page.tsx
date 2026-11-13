@@ -257,12 +257,11 @@ export default function ScrewConveyorPage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqSchema} />
 
-      <main className="min-h-screen bg-slate-900 text-slate-100">
+      <main className="min-h-screen bg-white text-slate-900">
         {/* Breadcrumb Navigation Bar */}
-        <div className="border-b border-slate-800 bg-slate-950/70 backdrop-blur-md">
+        <section className="bg-slate-50 border-b border-slate-200 py-3">
           <Container>
-            <div className="py-3">
-              <Breadcrumbs
+            <Breadcrumbs
                 items={[
                   { label: 'Home', href: '/' },
                   { label: 'Products', href: '/products/' },
@@ -276,13 +275,11 @@ export default function ScrewConveyorPage() {
                   },
                 ]}
               />
-            </div>
-          </Container>
-        </div>
+            </Container>
+          </section>
 
         {/* Hero Section */}
-        <section className="relative overflow-hidden pt-12 pb-20 lg:pt-16 lg:pb-28 border-b border-slate-800 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-900">
-          <div className="absolute inset-0 bg-[radial-gradient(#e10613_1px,transparent_1px)] [background-size:24px_24px] opacity-10 pointer-events-none" />
+        <section className="relative pt-8 pb-14 lg:pt-12 lg:pb-20 border-b border-slate-200 overflow-hidden bg-gradient-to-b from-amber-50/40 via-white to-white">
 
           <Container>
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -293,14 +290,14 @@ export default function ScrewConveyorPage() {
                   100% Dust-Tight Enclosure | Precision Volumetric Metering
                 </div>
 
-                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-slate-950 font-display">
                   Industrial U-Trough &amp;{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-amber-400 to-yellow-300">
                     Tubular Screw Conveyors
                   </span>
                 </h1>
 
-                <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-normal">
+                <p className="text-base sm:text-lg text-slate-700 leading-relaxed font-normal">
                   Continuous enclosed mechanical conveying from 1 to 60 TPH for dry silica sand, fly ash,
                   fertilizer minerals, borax powder, and abrasive crushed ores. Engineered with heavy-wall
                   carbon steel or SS304/SS316 troughs, split gland stuffing box seals, and hardfaced
@@ -309,44 +306,44 @@ export default function ScrewConveyorPage() {
 
                 {/* Key Metric Chips */}
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
-                  <div className="p-3.5 rounded-lg bg-slate-800/80 border border-slate-700/80 shadow-sm">
-                    <div className="text-xs text-slate-400 font-mono uppercase tracking-wider">
+                  <div className="p-3 sm:p-3.5 rounded-lg bg-white border border-slate-200 shadow-xs">
+                    <div className="text-xs text-slate-500 font-mono uppercase tracking-wider">
                       Diameter Range
                     </div>
                     <div className="text-xl sm:text-2xl font-black text-red-400 mt-1">
                       100 - 600mm
                     </div>
-                    <div className="text-[11px] text-slate-400">4&quot; to 24&quot; Casing</div>
+                    <div className="text-[11px] text-slate-500">4&quot; to 24&quot; Casing</div>
                   </div>
 
-                  <div className="p-3.5 rounded-lg bg-slate-800/80 border border-slate-700/80 shadow-sm">
-                    <div className="text-xs text-slate-400 font-mono uppercase tracking-wider">
+                  <div className="p-3 sm:p-3.5 rounded-lg bg-white border border-slate-200 shadow-xs">
+                    <div className="text-xs text-slate-500 font-mono uppercase tracking-wider">
                       Throughput
                     </div>
-                    <div className="text-xl sm:text-2xl font-black text-amber-400 mt-1">
+                    <div className="text-xl sm:text-2xl font-bold text-slate-900-400 mt-1">
                       1 - 60 TPH
                     </div>
-                    <div className="text-[11px] text-slate-400">Volumetric Feed</div>
+                    <div className="text-[11px] text-slate-500">Volumetric Feed</div>
                   </div>
 
-                  <div className="p-3.5 rounded-lg bg-slate-800/80 border border-slate-700/80 shadow-sm">
-                    <div className="text-xs text-slate-400 font-mono uppercase tracking-wider">
+                  <div className="p-3 sm:p-3.5 rounded-lg bg-white border border-slate-200 shadow-xs">
+                    <div className="text-xs text-slate-500 font-mono uppercase tracking-wider">
                       Incline Angle
                     </div>
-                    <div className="text-xl sm:text-2xl font-black text-white mt-1">
+                    <div className="text-xl sm:text-2xl font-bold text-slate-900 mt-1">
                       0° - 45°
                     </div>
-                    <div className="text-[11px] text-slate-400">Horizontal to Steep</div>
+                    <div className="text-[11px] text-slate-500">Horizontal to Steep</div>
                   </div>
 
-                  <div className="p-3.5 rounded-lg bg-slate-800/80 border border-slate-700/80 shadow-sm">
-                    <div className="text-xs text-slate-400 font-mono uppercase tracking-wider">
+                  <div className="p-3 sm:p-3.5 rounded-lg bg-white border border-slate-200 shadow-xs">
+                    <div className="text-xs text-slate-500 font-mono uppercase tracking-wider">
                       Dust Containment
                     </div>
                     <div className="text-xl sm:text-2xl font-black text-emerald-400 mt-1">
                       100% Sealed
                     </div>
-                    <div className="text-[11px] text-slate-400">Gland Packed</div>
+                    <div className="text-[11px] text-slate-500">Gland Packed</div>
                   </div>
                 </div>
 
@@ -374,7 +371,7 @@ export default function ScrewConveyorPage() {
 
               {/* Right Column: Visual Frame */}
               <div className="lg:col-span-5 relative">
-                <div className="relative rounded-2xl overflow-hidden border border-slate-700/80 bg-slate-950 shadow-2xl">
+                <div className="relative rounded-2xl overflow-hidden border border-slate-300/80 bg-slate-900 shadow-xl">
                   <div className="relative aspect-[4/3] w-full">
                     <Image
                       src="/images/products/conveyor-systems/belt-conveyor-system-variant-1-lg.webp"
@@ -383,10 +380,10 @@ export default function ScrewConveyorPage() {
                       className="object-cover"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
+                    
                   </div>
 
-                  <div className="p-5 border-t border-slate-800 bg-slate-900/90 space-y-2">
+                  <div className="p-4 bg-slate-950/90 border-t border-slate-800 text-white flex items-center justify-between">
                     <div className="flex items-center justify-between text-xs text-slate-400 font-mono">
                       <span>SERIES: MS-SC-300</span>
                       <span className="text-red-400 font-bold">18 TPH DISCHARGE FEEDER</span>
@@ -418,16 +415,16 @@ export default function ScrewConveyorPage() {
         </section>
 
         {/* Section 1: Enclosed Dust-Tight Powder & Granular Material Transport */}
-        <section className="py-16 sm:py-20 border-b border-slate-800 bg-slate-900">
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-white">
           <Container>
             <div className="max-w-3xl mb-12">
               <div className="text-red-400 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
                 Containment &amp; Metering Physics
               </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-950 tracking-tight font-display">
                 Enclosed Dust-Tight Powder &amp; Granular Material Transport
               </h2>
-              <p className="text-slate-300 text-base mt-4 leading-relaxed">
+              <p className="text-slate-700 text-base mt-4 leading-relaxed">
                 Open belt conveyors create hazardous airborne fugitive dust when handling fine powders,
                 fly ash, and toxic minerals. Minerals Solutions screw conveyors seal bulk materials inside
                 continuous gasketed housings, protecting workforce health and eliminating raw material shrinkage.
@@ -435,36 +432,36 @@ export default function ScrewConveyorPage() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="p-6 rounded-xl bg-slate-800/80 border border-slate-700/80 space-y-4">
+              <div className="p-6 rounded-xl bg-slate-50 border border-slate-200 space-y-4">
                 <div className="w-12 h-12 rounded-lg bg-red-500/10 text-red-400 flex items-center justify-center">
                   <ShieldCheck className="w-6 h-6" />
                 </div>
-                <h3 className="text-lg font-bold text-white">Zero Fugitive Dust Emissions</h3>
-                <p className="text-slate-300 text-sm leading-relaxed">
+                <h3 className="text-lg font-bold text-slate-950">Zero Fugitive Dust Emissions</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">
                   Continuous rubber or ceramic-fiber gasketing between trough flanges and removable cover
                   plates ensures 100% airborne containment, complying with PCB workplace air quality limits
                   for cement, silica, and hazardous chemical plants.
                 </p>
               </div>
 
-              <div className="p-6 rounded-xl bg-slate-800/80 border border-slate-700/80 space-y-4">
-                <div className="w-12 h-12 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center">
+              <div className="p-6 rounded-xl bg-slate-50 border border-slate-200 space-y-4">
+                <div className="w-12 h-12 rounded-lg bg-amber-100 text-amber-800 flex items-center justify-center">
                   <Gauge className="w-6 h-6" />
                 </div>
-                <h3 className="text-lg font-bold text-white">Precision Volumetric Dosing</h3>
-                <p className="text-slate-300 text-sm leading-relaxed">
+                <h3 className="text-lg font-bold text-slate-950">Precision Volumetric Dosing</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">
                   Unlike gravity slides, screw rotation delivers a constant linear volumetric displacement
                   per revolution. Coupled with variable frequency inverter drives (VFD), the conveyor doubles
                   as a precise continuous feeder with ±2% batching repeatability.
                 </p>
               </div>
 
-              <div className="p-6 rounded-xl bg-slate-800/80 border border-slate-700/80 space-y-4">
-                <div className="w-12 h-12 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center">
+              <div className="p-6 rounded-xl bg-slate-50 border border-slate-200 space-y-4">
+                <div className="w-12 h-12 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center">
                   <Zap className="w-6 h-6" />
                 </div>
-                <h3 className="text-lg font-bold text-white">Compact Mechanical Footprint</h3>
-                <p className="text-slate-300 text-sm leading-relaxed">
+                <h3 className="text-lg font-bold text-slate-950">Compact Mechanical Footprint</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">
                   Requires zero return belt run, tensioning towers, or idler frames. The self-contained
                   trough installs directly beneath hoppers, bag filters, cyclone discharges, and rotary dryers
                   where overhead clearance is severely restricted.
@@ -475,16 +472,16 @@ export default function ScrewConveyorPage() {
         </section>
 
         {/* Section 2: Helical Flight Geometries */}
-        <section className="py-16 sm:py-20 border-b border-slate-800 bg-slate-950/70">
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-slate-50/60">
           <Container>
             <div className="max-w-3xl mb-12">
-              <div className="text-amber-400 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
+              <div className="text-amber-700 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
                 Custom Blade Metallurgy &amp; Pitch Profiles
               </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-950 tracking-tight font-display">
                 Helical Flight Geometries (Continuous, Ribbon, Paddle &amp; Hardfaced)
               </h2>
-              <p className="text-slate-300 text-base mt-4 leading-relaxed">
+              <p className="text-slate-700 text-base mt-4 leading-relaxed">
                 Standard sectional flights fail rapidly when handling sticky cakes or abrasive minerals.
                 Minerals Solutions presses custom flight geometries engineered specifically for your
                 material’s bulk rheology and abrasiveness index.
@@ -493,12 +490,12 @@ export default function ScrewConveyorPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {/* Flight 1 */}
-              <div className="p-6 rounded-2xl bg-slate-900 border border-slate-800 space-y-4">
+              <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-4">
                 <div className="w-10 h-10 rounded-xl bg-red-500/20 text-red-400 flex items-center justify-center font-mono font-extrabold text-base">
                   01
                 </div>
-                <h3 className="text-lg font-bold text-white">Continuous Full-Pitch Flights</h3>
-                <p className="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                <h3 className="text-lg font-bold text-slate-950">Continuous Full-Pitch Flights</h3>
+                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
                   Cold-rolled continuous helicoid or sectional flights where pitch equals screw diameter.
                   The standard high-efficiency configuration for free-flowing sand, grain, fertilizer prills,
                   and non-cohesive dry chemicals.
@@ -507,12 +504,12 @@ export default function ScrewConveyorPage() {
               </div>
 
               {/* Flight 2 */}
-              <div className="p-6 rounded-2xl bg-slate-900 border border-slate-800 space-y-4">
-                <div className="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center font-mono font-extrabold text-base">
+              <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-4">
+                <div className="w-10 h-10 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-mono font-extrabold text-base">
                   02
                 </div>
-                <h3 className="text-lg font-bold text-white">Variable / Stepped Pitch Flights</h3>
-                <p className="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                <h3 className="text-lg font-bold text-slate-950">Variable / Stepped Pitch Flights</h3>
+                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
                   Short-pitch flights beneath hopper inlet throats transition into standard pitch downstream.
                   Draws material evenly along the entire length of the feed opening, preventing bridging,
                   rat-holing, and feed flooding.
@@ -521,12 +518,12 @@ export default function ScrewConveyorPage() {
               </div>
 
               {/* Flight 3 */}
-              <div className="p-6 rounded-2xl bg-slate-900 border border-slate-800 space-y-4">
-                <div className="w-10 h-10 rounded-xl bg-yellow-500/20 text-yellow-400 flex items-center justify-center font-mono font-extrabold text-base">
+              <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-4">
+                <div className="w-10 h-10 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-mono font-extrabold text-base">
                   03
                 </div>
-                <h3 className="text-lg font-bold text-white">Open-Center Ribbon Flights</h3>
-                <p className="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                <h3 className="text-lg font-bold text-slate-950">Open-Center Ribbon Flights</h3>
+                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
                   Continuous steel ribbon attached to the center pipe by radial supporting spokes. The open
                   annular space prevents sticky pastes, compost, filter cake, and wet clay from wrapping
                   around the center shaft.
@@ -535,12 +532,12 @@ export default function ScrewConveyorPage() {
               </div>
 
               {/* Flight 4 */}
-              <div className="p-6 rounded-2xl bg-slate-900 border border-slate-800 space-y-4">
-                <div className="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-mono font-extrabold text-base">
+              <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-4">
+                <div className="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center font-mono font-extrabold text-base">
                   04
                 </div>
-                <h3 className="text-lg font-bold text-white">Hardfaced Stellite / Hardox Lips</h3>
-                <p className="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                <h3 className="text-lg font-bold text-slate-950">Hardfaced Stellite / Hardox Lips</h3>
+                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
                   Sectional flights with 55–60 HRC chromium carbide weld overlay or plasma-cut Hardox 400
                   outer wear edges. Multiplies service life by 400% against highly abrasive quartz fines,
                   granite dust, and clinker.
@@ -552,16 +549,16 @@ export default function ScrewConveyorPage() {
         </section>
 
         {/* Section 3: Technical Specifications & Sizing Matrix */}
-        <section className="py-16 sm:py-20 border-b border-slate-800 bg-slate-900">
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-white">
           <Container>
             <div className="max-w-3xl mb-12">
               <div className="text-red-400 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
                 Standard Engineering Parameters
               </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-950 tracking-tight font-display">
                 Technical Specifications &amp; TPH Sizing Matrix (MS-SC Series)
               </h2>
-              <p className="text-slate-300 text-base mt-4 leading-relaxed">
+              <p className="text-slate-700 text-base mt-4 leading-relaxed">
                 Fabricated to heavy-duty industrial standards at our Zak GIDC, Dahegam facility.
                 Available in mild steel (IS 2062 Grade B), wear-resistant Hardox, and chemical/sanitary
                 stainless steel grades (SS304, SS316, SS316L).
@@ -569,11 +566,11 @@ export default function ScrewConveyorPage() {
             </div>
 
             {/* Responsive Table Container */}
-            <div className="overflow-x-auto rounded-xl border border-slate-700/80 shadow-2xl bg-slate-950">
-              <table className="w-full text-left text-xs sm:text-sm text-slate-300">
-                <thead className="bg-slate-800/90 text-slate-100 font-mono text-xs uppercase tracking-wider border-b border-slate-700">
+            <div className="overflow-x-auto rounded-xl border border-slate-200 shadow-xs bg-white">
+              <table className="w-full text-left text-xs sm:text-sm text-slate-700">
+                <thead className="bg-slate-100 text-slate-800 font-mono text-xs uppercase tracking-wider border-b border-slate-200">
                   <tr>
-                    <th className="py-4 px-4 font-bold text-white">Model</th>
+                    <th className="py-4 px-4 font-bold text-slate-950">Model</th>
                     <th className="py-4 px-4 font-bold text-red-400">Capacity (TPH)</th>
                     <th className="py-4 px-4">Screw Dia</th>
                     <th className="py-4 px-4">Max Pitch</th>
@@ -583,31 +580,31 @@ export default function ScrewConveyorPage() {
                     <th className="py-4 px-4">Drive Power</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-slate-800 font-mono">
+                <tbody className="divide-y divide-slate-200 font-mono">
                   {scSpecs.map((spec, idx) => (
                     <tr
                       key={spec.model}
                       className={
                         idx % 2 === 0
-                          ? 'bg-slate-950/60 hover:bg-slate-800/50 transition-colors'
-                          : 'bg-slate-900/60 hover:bg-slate-800/50 transition-colors'
+                          ? 'bg-white hover:bg-slate-50 transition-colors'
+                          : 'bg-slate-50/60 hover:bg-slate-100/70 transition-colors'
                       }
                     >
-                      <td className="py-4 px-4 font-bold text-white">{spec.model}</td>
+                      <td className="py-4 px-4 font-bold text-slate-950">{spec.model}</td>
                       <td className="py-4 px-4 font-bold text-red-400">{spec.capacity}</td>
                       <td className="py-4 px-4">{spec.screwDia}</td>
                       <td className="py-4 px-4">{spec.maxPitch}</td>
-                      <td className="py-4 px-4 text-slate-400">{spec.maxSpeed}</td>
+                      <td className="py-4 px-4 text-slate-600">{spec.maxSpeed}</td>
                       <td className="py-4 px-4 text-amber-300">{spec.troughThickness}</td>
                       <td className="py-4 px-4 text-emerald-400">{spec.maxIncline}</td>
-                      <td className="py-4 px-4 text-slate-300">{spec.motorRange}</td>
+                      <td className="py-4 px-4 text-slate-600">{spec.motorRange}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
 
-            <div className="mt-4 flex flex-wrap items-center justify-between gap-4 text-xs text-slate-400 font-mono">
+            <div className="mt-4 flex flex-wrap items-center justify-between gap-4 text-xs text-slate-500 font-mono">
               <div>* Custom lengths up to 30 meters, water-cooled jacketed troughs, and food-grade sanitary finishes available on request.</div>
               <div className="text-red-400">Certified IS 2062 / SS304 / SS316 Fabrication</div>
             </div>
@@ -615,16 +612,16 @@ export default function ScrewConveyorPage() {
         </section>
 
         {/* Section 4: U-Trough vs Tubular Pipe Configurations */}
-        <section className="py-16 sm:py-20 border-b border-slate-800 bg-slate-950">
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-slate-50/60">
           <Container>
             <div className="max-w-3xl mb-12">
-              <div className="text-amber-400 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
+              <div className="text-amber-700 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
                 Structural Casing Selection
               </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-950 tracking-tight font-display">
                 U-Trough vs Tubular Pipe Configurations (Horizontal &amp; Inclined)
               </h2>
-              <p className="text-slate-300 text-base mt-4 leading-relaxed">
+              <p className="text-slate-700 text-base mt-4 leading-relaxed">
                 The mechanical casing profile governs material containment, steep incline capabilities,
                 and maintenance accessibility. Compare our two core body formats:
               </p>
@@ -632,29 +629,29 @@ export default function ScrewConveyorPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* U-Trough Format */}
-              <div className="p-8 rounded-2xl bg-slate-900 border border-slate-800 space-y-5">
-                <div className="flex items-center justify-between border-b border-slate-800 pb-4">
+              <div className="p-8 rounded-2xl bg-slate-50 border border-slate-200 space-y-5">
+                <div className="flex items-center justify-between border-b border-slate-200 pb-4">
                   <div className="flex items-center gap-3">
                     <div className="p-2.5 rounded-xl bg-red-500/10 text-red-400 font-mono font-bold">
                       FORMAT A
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-white">Modular U-Trough Conveyors</h3>
+                      <h3 className="text-xl font-bold text-slate-950">Modular U-Trough Conveyors</h3>
                       <div className="text-xs text-red-400 font-mono">Horizontal to 15° Incline</div>
                     </div>
                   </div>
-                  <span className="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300 font-mono">
+                  <span className="text-xs px-2.5 py-1 rounded bg-slate-100 text-slate-700 font-mono font-semibold">
                     Removable Covers
                   </span>
                 </div>
 
-                <p className="text-slate-300 text-sm leading-relaxed">
+                <p className="text-slate-600 text-sm leading-relaxed">
                   Formed semi-cylindrical bottom trough with vertical top side plates. Bolted or clamp-action
                   dust covers along the full length provide instant visual access for millwright inspection,
                   washdown sanitation, and replacement of internal intermediate hanger bearings.
                 </p>
 
-                <ul className="space-y-2.5 text-xs sm:text-sm text-slate-300 pt-2 border-t border-slate-800">
+                <ul className="space-y-2.5 text-xs sm:text-sm text-slate-300 pt-2 border-t border-slate-200">
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-red-400 shrink-0 mt-0.5" />
                     <span><strong>Full-Length Access:</strong> Complete inspection without dismantling drive or end plates.</span>
@@ -671,29 +668,29 @@ export default function ScrewConveyorPage() {
               </div>
 
               {/* Tubular Pipe Format */}
-              <div className="p-8 rounded-2xl bg-slate-900 border border-slate-800 space-y-5">
-                <div className="flex items-center justify-between border-b border-slate-800 pb-4">
+              <div className="p-8 rounded-2xl bg-slate-50 border border-slate-200 space-y-5">
+                <div className="flex items-center justify-between border-b border-slate-200 pb-4">
                   <div className="flex items-center gap-3">
-                    <div className="p-2.5 rounded-xl bg-amber-500/10 text-amber-400 font-mono font-bold">
+                    <div className="p-2.5 rounded-xl bg-amber-100 text-amber-800 font-mono font-bold">
                       FORMAT B
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-white">Tubular Pipe Screw Feeders</h3>
+                      <h3 className="text-xl font-bold text-slate-950">Tubular Pipe Screw Feeders</h3>
                       <div className="text-xs text-amber-400 font-mono">Steep Incline 15° to 45°</div>
                     </div>
                   </div>
-                  <span className="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300 font-mono">
+                  <span className="text-xs px-2.5 py-1 rounded bg-slate-100 text-slate-700 font-mono font-semibold">
                     100% Sealed Pipe
                   </span>
                 </div>
 
-                <p className="text-slate-300 text-sm leading-relaxed">
+                <p className="text-slate-600 text-sm leading-relaxed">
                   Seamless heavy-wall structural steel pipe enclosing the flight with tight radial clearance.
                   Prevents material from tumbling backward over flight edges during steep inclined conveying,
                   allowing continuous vertical elevation up to 45° with full volumetric efficiency.
                 </p>
 
-                <ul className="space-y-2.5 text-xs sm:text-sm text-slate-300 pt-2 border-t border-slate-800">
+                <ul className="space-y-2.5 text-xs sm:text-sm text-slate-300 pt-2 border-t border-slate-200">
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
                     <span><strong>Steep Incline Angles:</strong> Transports bulk solids up to 45° without material back-sliding.</span>
@@ -713,52 +710,52 @@ export default function ScrewConveyorPage() {
         </section>
 
         {/* Section 5: Hanger Bearings, Split Gland Shaft Seals & Geared Drives */}
-        <section className="py-16 sm:py-20 border-b border-slate-800 bg-slate-900">
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-white">
           <Container>
             <div className="max-w-3xl mb-12">
               <div className="text-red-400 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
                 Mechanical Sub-Assemblies &amp; Reliability
               </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-950 tracking-tight font-display">
                 Hanger Bearings, Split Gland Shaft Seals &amp; Geared Drives
               </h2>
-              <p className="text-slate-300 text-base mt-4 leading-relaxed">
+              <p className="text-slate-700 text-base mt-4 leading-relaxed">
                 Bearing failure and shaft seal leakage cause 90% of screw conveyor plant shutdowns.
                 Minerals Solutions eliminates these failure modes with industrial-grade mechanical components:
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="p-6 rounded-xl bg-slate-800/80 border border-slate-700/80 space-y-4">
+              <div className="p-6 rounded-xl bg-slate-50 border border-slate-200 space-y-4">
                 <div className="w-12 h-12 rounded-lg bg-red-500/10 text-red-400 flex items-center justify-center">
                   <Cog className="w-6 h-6" />
                 </div>
-                <h3 className="text-lg font-bold text-white">Split-Gland Stuffing Boxes</h3>
-                <p className="text-slate-300 text-sm leading-relaxed">
+                <h3 className="text-lg font-bold text-slate-950">Split-Gland Stuffing Boxes</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">
                   Two-piece cast iron or stainless split gland followers allow repacking without removing
                   the drive shaft or motor. Braided PTFE / graphite packing rings seal fine powders against
                   shaft rotation with adjustable gland bolts.
                 </p>
               </div>
 
-              <div className="p-6 rounded-xl bg-slate-800/80 border border-slate-700/80 space-y-4">
-                <div className="w-12 h-12 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center">
+              <div className="p-6 rounded-xl bg-slate-50 border border-slate-200 space-y-4">
+                <div className="w-12 h-12 rounded-lg bg-amber-100 text-amber-800 flex items-center justify-center">
                   <Maximize2 className="w-6 h-6" />
                 </div>
-                <h3 className="text-lg font-bold text-white">Outboard Standoff Bearings</h3>
-                <p className="text-slate-300 text-sm leading-relaxed">
+                <h3 className="text-lg font-bold text-slate-950">Outboard Standoff Bearings</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">
                   Drive and tail flanged bearings are physically offset 75mm from trough end plates via
                   machined standoff brackets. Abrasive powders discharging past a worn seal fall to the floor
                   rather than contaminating bearing grease cavities.
                 </p>
               </div>
 
-              <div className="p-6 rounded-xl bg-slate-800/80 border border-slate-700/80 space-y-4">
-                <div className="w-12 h-12 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center">
+              <div className="p-6 rounded-xl bg-slate-50 border border-slate-200 space-y-4">
+                <div className="w-12 h-12 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center">
                   <Settings className="w-6 h-6" />
                 </div>
-                <h3 className="text-lg font-bold text-white">Self-Lubricating Hanger Bearings</h3>
-                <p className="text-slate-300 text-sm leading-relaxed">
+                <h3 className="text-lg font-bold text-slate-950">Self-Lubricating Hanger Bearings</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">
                   For conveyors over 4 meters, intermediate pipe couplings are supported by bronze,
                   oil-impregnated sintered iron, or Hardox split hanger bushings with hardened journal
                   sleeves, minimizing friction without grease contamination.
@@ -769,16 +766,16 @@ export default function ScrewConveyorPage() {
         </section>
 
         {/* Section 5B: CEMA Sizing Formulas & Wear Liner Engineering */}
-        <section className="py-16 sm:py-20 border-b border-slate-800 bg-slate-950">
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-slate-50/60">
           <Container>
             <div className="max-w-3xl mb-12">
-              <div className="text-amber-400 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
+              <div className="text-amber-700 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
                 CEMA Calculation &amp; Metallurgy
               </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-950 tracking-tight font-display">
                 CEMA Volumetric Sizing Principles &amp; Replaceable Wear Liners
               </h2>
-              <p className="text-slate-300 text-base mt-4 leading-relaxed">
+              <p className="text-slate-700 text-base mt-4 leading-relaxed">
                 Proper mechanical sizing prevents motor stall under choked conditions while maximizing
                 flight life. Minerals Solutions adheres strictly to CEMA (Conveyor Equipment Manufacturers
                 Association) design formulas and offers replaceable wear liners for aggressive bulk handling:
@@ -786,12 +783,12 @@ export default function ScrewConveyorPage() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="p-6 rounded-2xl bg-slate-900 border border-slate-800 space-y-4">
+              <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-4">
                 <div className="w-10 h-10 rounded-xl bg-red-500/10 text-red-400 flex items-center justify-center font-mono font-bold">
                   01
                 </div>
-                <h3 className="text-lg font-bold text-white">CEMA Volumetric Capacity</h3>
-                <p className="text-slate-300 text-sm leading-relaxed">
+                <h3 className="text-lg font-bold text-slate-950">CEMA Volumetric Capacity</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">
                   Volumetric displacement is calculated as cross-sectional screw area multiplied by pitch,
                   rotational speed, and the material loading factor (Class A 45%, Class B 30%, Class C 15%).
                   Restricting flight tip speeds below 0.6 m/s prevents particle degradation and abrasive scouring.
@@ -799,12 +796,12 @@ export default function ScrewConveyorPage() {
                 <div className="pt-2 text-xs font-mono text-red-400">Class C Loading: 15% Maximum</div>
               </div>
 
-              <div className="p-6 rounded-2xl bg-slate-900 border border-slate-800 space-y-4">
-                <div className="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center font-mono font-bold">
+              <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-4">
+                <div className="w-10 h-10 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-mono font-bold">
                   02
                 </div>
-                <h3 className="text-lg font-bold text-white">UHMWPE Low-Friction Liners</h3>
-                <p className="text-slate-300 text-sm leading-relaxed">
+                <h3 className="text-lg font-bold text-slate-950">UHMWPE Low-Friction Liners</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">
                   For cohesive chemicals, wet filter cake, and bio-fertilizer compost, bolt-in 8mm to 12mm
                   UHMWPE polymer trough liners provide a near-zero friction surface (coefficient of friction
                   &lt;0.12). Eliminates material sticking and reduces motor drive kilowatt requirements by up to 25%.
@@ -812,12 +809,12 @@ export default function ScrewConveyorPage() {
                 <div className="pt-2 text-xs font-mono text-amber-400">Surface Friction: &lt;0.12 Coefficient</div>
               </div>
 
-              <div className="p-6 rounded-2xl bg-slate-900 border border-slate-800 space-y-4">
-                <div className="w-10 h-10 rounded-xl bg-yellow-500/10 text-yellow-400 flex items-center justify-center font-mono font-bold">
+              <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-4">
+                <div className="w-10 h-10 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-mono font-bold">
                   03
                 </div>
-                <h3 className="text-lg font-bold text-white">Hardox 400 / 500 Bolt-In Plates</h3>
-                <p className="text-slate-300 text-sm leading-relaxed">
+                <h3 className="text-lg font-bold text-slate-950">Hardox 400 / 500 Bolt-In Plates</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">
                   For high-abrasion silica sand, quartz rocks, and foundry sand, troughs are fitted with
                   segmented 6mm Hardox wear liners secured with countersunk plow bolts. Worn trough sections
                   can be replaced in under 2 hours without replacing the entire structural steel casing.
@@ -829,50 +826,50 @@ export default function ScrewConveyorPage() {
         </section>
 
         {/* Section 6: Workshop Quality Control & Manufacturing Proof */}
-        <section className="py-16 sm:py-20 border-b border-slate-800 bg-slate-950/70">
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-white">
           <Container>
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
               <div className="lg:col-span-6 space-y-6">
                 <div className="text-red-400 font-mono text-xs uppercase tracking-wider font-semibold">
                   Workshop Engineering Precision
                 </div>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-950 tracking-tight font-display">
                   True-Formed Flight Pressing &amp; Heavy Pipe Center Shafts
                 </h2>
-                <p className="text-slate-300 text-base leading-relaxed">
+                <p className="text-slate-700 text-base leading-relaxed">
                   Fabricated in precision hydraulic flight-forming fixtures at our Zak GIDC, Dahegam facility.
                   Our heavy center pipe shafts eliminate rotational whip and center sag, guaranteeing smooth
                   clearance and whisper-quiet rotation across 24/7 continuous industrial duty.
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-                  <div className="p-4 rounded-xl bg-slate-900 border border-slate-800 space-y-2">
+                  <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
                     <div className="text-red-400 font-bold text-sm">Schedule 80 Center Pipe</div>
-                    <p className="text-slate-400 text-xs leading-relaxed">
+                    <p className="text-slate-600 text-xs leading-relaxed">
                       Heavy-wall seamless pipe center shafts minimize beam deflection (&lt;3mm over 4m),
                       preventing flight rubbing against the trough bottom.
                     </p>
                   </div>
 
-                  <div className="p-4 rounded-xl bg-slate-900 border border-slate-800 space-y-2">
+                  <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
                     <div className="text-red-400 font-bold text-sm">Submerged Arc Seam Welds</div>
-                    <p className="text-slate-400 text-xs leading-relaxed">
+                    <p className="text-slate-600 text-xs leading-relaxed">
                       Continuous robotic or semi-automatic penetration welds along both sides of the
                       flight root prevent flight detachment under high torque starting loads.
                     </p>
                   </div>
 
-                  <div className="p-4 rounded-xl bg-slate-900 border border-slate-800 space-y-2">
+                  <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
                     <div className="text-red-400 font-bold text-sm">Precision Flanged Joints</div>
-                    <p className="text-slate-400 text-xs leading-relaxed">
+                    <p className="text-slate-600 text-xs leading-relaxed">
                       Trough sections are CNC-machined with mating angle flanges and alignment dowels
                       to ensure continuous straightness across 30-meter assemblies.
                     </p>
                   </div>
 
-                  <div className="p-4 rounded-xl bg-slate-900 border border-slate-800 space-y-2">
+                  <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
                     <div className="text-red-400 font-bold text-sm">Chemical Sanitary Polish</div>
-                    <p className="text-slate-400 text-xs leading-relaxed">
+                    <p className="text-slate-600 text-xs leading-relaxed">
                       SS304/SS316 food and chemical augers are glass-bead blasted or mirror-polished
                       (Ra &lt;0.8 µm) to eliminate crevices and chemical cross-contamination.
                     </p>
@@ -882,7 +879,7 @@ export default function ScrewConveyorPage() {
 
               {/* Workshop Images Gallery */}
               <div className="lg:col-span-6 space-y-4">
-                <div className="relative aspect-[16/9] rounded-xl overflow-hidden border border-slate-700/80 shadow-lg">
+                <div className="relative aspect-[16/9] rounded-xl overflow-hidden border border-slate-200 shadow-md">
                   <Image
                     src="/images/products/conveyor-systems/mild-steel-conveyor-idler-roller-lg.webp"
                     alt="Machined steel shafts and mechanical components precision manufactured at Minerals Solutions Zak GIDC Dahegam workshop" width={800} height={600}
@@ -896,7 +893,7 @@ export default function ScrewConveyorPage() {
                 </div>
 
                 <div className="grid grid-cols-2 gap-4">
-                  <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-slate-700/80 shadow-lg">
+                  <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-slate-200 shadow-md">
                     <Image
                       src="/images/products/rotary-dryers/continuous-type-rotary-dryer-lg.webp"
                       alt="Heavy industrial rotary machinery and screw discharge casing assembly at Dahegam" width={800} height={600}
@@ -909,7 +906,7 @@ export default function ScrewConveyorPage() {
                     </div>
                   </div>
 
-                  <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-slate-700/80 shadow-lg">
+                  <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-slate-200 shadow-md">
                     <Image
                       src="/images/products/conveyor-systems/conveyor-belt-system-truss-lg.webp"
                       alt="Structural steel conveyor casings and support frames fabricated at Zak GIDC" width={800} height={600}
@@ -1019,7 +1016,7 @@ export default function ScrewConveyorPage() {
         </section>
 
         {/* Section 8: Engineering Sizing & RFQ Form */}
-        <section className="py-16 sm:py-20 border-b border-slate-800 bg-slate-950">
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-slate-50/60">
           <Container>
             <div className="max-w-4xl mx-auto p-8 sm:p-12 rounded-3xl bg-slate-900 border border-red-500/40 shadow-2xl relative overflow-hidden">
               <div className="absolute top-0 right-0 w-80 h-80 bg-red-500/10 rounded-full blur-3xl pointer-events-none" />
@@ -1059,7 +1056,7 @@ export default function ScrewConveyorPage() {
                   </Button>
                 </div>
 
-                <div className="pt-6 border-t border-slate-800/80 text-xs text-slate-400 font-mono flex flex-wrap justify-center gap-6">
+                <div className="pt-6 border-t border-slate-200/80 text-xs text-slate-400 font-mono flex flex-wrap justify-center gap-6">
                   <span>GSTIN: 24AUSPP9555F1ZZ</span>
                   <span>•</span>
                   <span>Factory: Zak GIDC, Dahegam, Gandhinagar</span>
@@ -1072,16 +1069,16 @@ export default function ScrewConveyorPage() {
         </section>
 
         {/* Section 9: Frequently Asked Questions */}
-        <section className="py-16 sm:py-20 bg-slate-900">
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-white">
           <Container>
             <div className="max-w-3xl mx-auto text-center mb-12">
               <div className="text-red-400 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
                 Technical Knowledge Base
               </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-950 tracking-tight font-display">
                 Frequently Asked Questions on Industrial Screw Conveyors
               </h2>
-              <p className="text-slate-400 text-sm sm:text-base mt-3">
+              <p className="text-slate-600 text-sm sm:text-base mt-3">
                 Expert technical answers on casing selection, CEMA loading limits, outboard bearing isolation,
                 and handling sticky materials.
               </p>
@@ -1091,13 +1088,13 @@ export default function ScrewConveyorPage() {
               {faqs.map((faq, idx) => (
                 <div
                   key={idx}
-                  className="p-6 rounded-2xl bg-slate-950 border border-slate-800 space-y-3"
+                  className="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-3"
                 >
-                  <h3 className="text-base sm:text-lg font-bold text-white flex items-start gap-3">
+                  <h3 className="text-base sm:text-lg font-bold text-slate-950 flex items-start gap-3">
                     <span className="text-red-400 font-mono text-sm mt-0.5">0{idx + 1}.</span>
                     <span>{faq.q}</span>
                   </h3>
-                  <p className="text-slate-300 text-sm sm:text-base leading-relaxed pl-7">
+                  <p className="text-slate-600 text-sm sm:text-base leading-relaxed pl-7">
                     {faq.a}
                   </p>
                 </div>

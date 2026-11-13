@@ -252,12 +252,11 @@ export default function BeltConveyorPage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqSchema} />
 
-      <main className="min-h-screen bg-slate-900 text-slate-100">
+      <main className="min-h-screen bg-white text-slate-900">
         {/* Breadcrumb Navigation Bar */}
-        <div className="border-b border-slate-800 bg-slate-950/70 backdrop-blur-md">
+        <section className="bg-slate-50 border-b border-slate-200 py-3">
           <Container>
-            <div className="py-3">
-              <Breadcrumbs
+            <Breadcrumbs
                 items={[
                   { label: 'Home', href: '/' },
                   { label: 'Products', href: '/products/' },
@@ -271,13 +270,11 @@ export default function BeltConveyorPage() {
                   },
                 ]}
               />
-            </div>
-          </Container>
-        </div>
+            </Container>
+          </section>
 
         {/* Hero Section */}
-        <section className="relative overflow-hidden pt-12 pb-20 lg:pt-16 lg:pb-28 border-b border-slate-800 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-900">
-          <div className="absolute inset-0 bg-[radial-gradient(#e10613_1px,transparent_1px)] [background-size:24px_24px] opacity-10 pointer-events-none" />
+        <section className="relative pt-8 pb-14 lg:pt-12 lg:pb-20 border-b border-slate-200 overflow-hidden bg-gradient-to-b from-amber-50/40 via-white to-white">
 
           <Container>
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -293,14 +290,14 @@ export default function BeltConveyorPage() {
                   </div>
                 </div>
 
-                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-slate-950 font-display">
                   Industrial Troughed{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-amber-400 to-yellow-300">
                     Belt Conveyor Systems
                   </span>
                 </h1>
 
-                <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-normal">
+                <p className="text-base sm:text-lg text-slate-700 leading-relaxed font-normal">
                   Continuous high-volume bulk material handling engineered for silica sand, quarry aggregates,
                   crushed minerals, fertilizer pellets, and coal. Fabricated with heavy ISMC channel or
                   deep lattice truss frames, hot-vulcanized diamond rubber-lagged drive drums, and precision
@@ -309,44 +306,44 @@ export default function BeltConveyorPage() {
 
                 {/* Key Metric Chips */}
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
-                  <div className="p-3.5 rounded-lg bg-slate-800/80 border border-slate-700/80 shadow-sm">
-                    <div className="text-xs text-slate-400 font-mono uppercase tracking-wider">
+                  <div className="p-3 sm:p-3.5 rounded-lg bg-white border border-slate-200 shadow-xs">
+                    <div className="text-xs text-slate-500 font-mono uppercase tracking-wider">
                       Belt Widths
                     </div>
                     <div className="text-xl sm:text-2xl font-black text-red-400 mt-1">
                       300 - 1,400mm
                     </div>
-                    <div className="text-[11px] text-slate-400">12&quot; to 56&quot; Carcass</div>
+                    <div className="text-[11px] text-slate-500">12&quot; to 56&quot; Carcass</div>
                   </div>
 
-                  <div className="p-3.5 rounded-lg bg-slate-800/80 border border-slate-700/80 shadow-sm">
-                    <div className="text-xs text-slate-400 font-mono uppercase tracking-wider">
+                  <div className="p-3 sm:p-3.5 rounded-lg bg-white border border-slate-200 shadow-xs">
+                    <div className="text-xs text-slate-500 font-mono uppercase tracking-wider">
                       Capacity Rating
                     </div>
-                    <div className="text-xl sm:text-2xl font-black text-amber-400 mt-1">
+                    <div className="text-xl sm:text-2xl font-bold text-slate-900-400 mt-1">
                       15 - 350+ TPH
                     </div>
-                    <div className="text-[11px] text-slate-400">Continuous Duty</div>
+                    <div className="text-[11px] text-slate-500">Continuous Duty</div>
                   </div>
 
-                  <div className="p-3.5 rounded-lg bg-slate-800/80 border border-slate-700/80 shadow-sm">
-                    <div className="text-xs text-slate-400 font-mono uppercase tracking-wider">
+                  <div className="p-3 sm:p-3.5 rounded-lg bg-white border border-slate-200 shadow-xs">
+                    <div className="text-xs text-slate-500 font-mono uppercase tracking-wider">
                       Conveyor Length
                     </div>
-                    <div className="text-xl sm:text-2xl font-black text-white mt-1">
+                    <div className="text-xl sm:text-2xl font-bold text-slate-900 mt-1">
                       5m - 120m+
                     </div>
-                    <div className="text-[11px] text-slate-400">Overland &amp; Incline</div>
+                    <div className="text-[11px] text-slate-500">Overland &amp; Incline</div>
                   </div>
 
-                  <div className="p-3.5 rounded-lg bg-slate-800/80 border border-slate-700/80 shadow-sm">
-                    <div className="text-xs text-slate-400 font-mono uppercase tracking-wider">
+                  <div className="p-3 sm:p-3.5 rounded-lg bg-white border border-slate-200 shadow-xs">
+                    <div className="text-xs text-slate-500 font-mono uppercase tracking-wider">
                       Belting Standard
                     </div>
                     <div className="text-xl sm:text-2xl font-black text-emerald-400 mt-1">
                       IS 1891 M24
                     </div>
-                    <div className="text-[11px] text-slate-400">High Tear Strength</div>
+                    <div className="text-[11px] text-slate-500">High Tear Strength</div>
                   </div>
                 </div>
 
@@ -374,7 +371,7 @@ export default function BeltConveyorPage() {
 
               {/* Right Column: Visual Frame */}
               <div className="lg:col-span-5 relative">
-                <div className="relative rounded-2xl overflow-hidden border border-slate-700/80 bg-slate-950 shadow-2xl">
+                <div className="relative rounded-2xl overflow-hidden border border-slate-300/80 bg-slate-900 shadow-xl">
                   <div className="relative aspect-[4/3] w-full">
                     <Image
                       src="/images/products/conveyor-systems/belt-conveyor-mineral-ore-beneficiation-lg.webp"
@@ -383,10 +380,10 @@ export default function BeltConveyorPage() {
                       className="object-cover"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
+                    
                   </div>
 
-                  <div className="p-5 border-t border-slate-800 bg-slate-900/90 space-y-2">
+                  <div className="p-4 bg-slate-950/90 border-t border-slate-800 text-white flex items-center justify-between">
                     <div className="flex items-center justify-between text-xs text-slate-400 font-mono">
                       <span>SERIES: MS-BC-800</span>
                       <span className="text-red-400 font-bold">220 TPH OVERLAND STACKER</span>
@@ -418,16 +415,16 @@ export default function BeltConveyorPage() {
         </section>
 
         {/* Section 1: Bulk Material Handling Engineering (IS 11592 Standards) */}
-        <section className="py-16 sm:py-20 border-b border-slate-800 bg-slate-900">
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-white">
           <Container>
             <div className="max-w-3xl mb-12">
               <div className="text-red-400 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
                 Structural Rigidity &amp; Indian Standards
               </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-950 tracking-tight font-display">
                 Bulk Material Handling Engineering (IS 11592 Standards)
               </h2>
-              <p className="text-slate-300 text-base mt-4 leading-relaxed">
+              <p className="text-slate-700 text-base mt-4 leading-relaxed">
                 Flimsy structural framing causes belt mistracking, premature edge fraying, and structural sagging
                 under heavy stone loads. Minerals Solutions engineers every conveyor frame in strict compliance
                 with IS 11592 code of practice for design and installation of troughed belt conveyors:
@@ -435,36 +432,36 @@ export default function BeltConveyorPage() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="p-6 rounded-xl bg-slate-800/80 border border-slate-700/80 space-y-4">
+              <div className="p-6 rounded-xl bg-slate-50 border border-slate-200 space-y-4">
                 <div className="w-12 h-12 rounded-lg bg-red-500/10 text-red-400 flex items-center justify-center">
                   <Layers className="w-6 h-6" />
                 </div>
-                <h3 className="text-lg font-bold text-white">Rigid ISMC Channel &amp; Truss Frames</h3>
-                <p className="text-slate-300 text-sm leading-relaxed">
+                <h3 className="text-lg font-bold text-slate-950">Rigid ISMC Channel &amp; Truss Frames</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">
                   Conveyors up to 30m utilize heavy ISMC 100 to 150 structural steel channel stringers.
                   For spans exceeding 30m, we fabricate deep Warren or Pratt lattice trusses in angle and
                   tubular steel, allowing clear unsupported spans up to 24 meters between support bents.
                 </p>
               </div>
 
-              <div className="p-6 rounded-xl bg-slate-800/80 border border-slate-700/80 space-y-4">
-                <div className="w-12 h-12 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center">
+              <div className="p-6 rounded-xl bg-slate-50 border border-slate-200 space-y-4">
+                <div className="w-12 h-12 rounded-lg bg-amber-100 text-amber-800 flex items-center justify-center">
                   <Activity className="w-6 h-6" />
                 </div>
-                <h3 className="text-lg font-bold text-white">Controlled Dynamic Deflection</h3>
-                <p className="text-slate-300 text-sm leading-relaxed">
+                <h3 className="text-lg font-bold text-slate-950">Controlled Dynamic Deflection</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">
                   Structural frame deflection under full static plus dynamic 120% surge load is strictly
                   restricted to less than L/500 of the span. This rigid baseline prevents stringer twist
                   and ensures that idler rollers remain permanently perpendicular to the belt travel vector.
                 </p>
               </div>
 
-              <div className="p-6 rounded-xl bg-slate-800/80 border border-slate-700/80 space-y-4">
-                <div className="w-12 h-12 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center">
+              <div className="p-6 rounded-xl bg-slate-50 border border-slate-200 space-y-4">
+                <div className="w-12 h-12 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center">
                   <ShieldCheck className="w-6 h-6" />
                 </div>
-                <h3 className="text-lg font-bold text-white">Complete Integrated Safety Suite</h3>
-                <p className="text-slate-300 text-sm leading-relaxed">
+                <h3 className="text-lg font-bold text-slate-950">Complete Integrated Safety Suite</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">
                   Every conveyor is equipped with bi-directional emergency pull-cord switches along both
                   walkways, mechanical belt sway limit switches at head and tail sections, and an internal
                   mechanical cam-clutch backstop preventing backward runaway on inclined runs.
@@ -475,16 +472,16 @@ export default function BeltConveyorPage() {
         </section>
 
         {/* Section 2: 3-Roller Troughing Idler Sets: 20°, 30° & 35° Geometry */}
-        <section className="py-16 sm:py-20 border-b border-slate-800 bg-slate-950/70">
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-slate-50/60">
           <Container>
             <div className="max-w-3xl mb-12">
-              <div className="text-amber-400 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
+              <div className="text-amber-700 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
                 Idler Kinematics &amp; Volumetric Geometry
               </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-950 tracking-tight font-display">
                 3-Roller Troughing Idler Sets: 20°, 30° &amp; 35° Geometry
               </h2>
-              <p className="text-slate-300 text-base mt-4 leading-relaxed">
+              <p className="text-slate-700 text-base mt-4 leading-relaxed">
                 The troughing angle formed by equal-length three-roll carrying idlers determines the cross-sectional
                 capacity of bulk material and controls spillage across varying surcharge angles:
               </p>
@@ -492,76 +489,76 @@ export default function BeltConveyorPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Angle 1 */}
-              <div className="p-8 rounded-2xl bg-slate-900 border border-slate-800 space-y-5">
-                <div className="flex items-center justify-between border-b border-slate-800 pb-4">
+              <div className="p-8 rounded-2xl bg-slate-50 border border-slate-200 space-y-5">
+                <div className="flex items-center justify-between border-b border-slate-200 pb-4">
                   <div className="flex items-center gap-3">
-                    <div className="p-2.5 rounded-xl bg-slate-800 text-slate-300 font-mono font-bold">
+                    <div className="p-2.5 rounded-xl bg-slate-100 text-slate-800 font-mono font-bold">
                       20°
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-white">20° Trough Angle</h3>
+                      <h3 className="text-xl font-bold text-slate-950">20° Trough Angle</h3>
                       <div className="text-xs text-slate-400 font-mono">Standard Baseline Capacity</div>
                     </div>
                   </div>
                 </div>
 
-                <p className="text-slate-300 text-sm leading-relaxed">
+                <p className="text-slate-600 text-sm leading-relaxed">
                   Best suited for thick, stiff conveyor belting carcasses with low transverse flexibility
                   (such as heavy 5-ply belts) or lightweight materials with flat surcharge angles (grains,
                   dry bio-pellets, and packaged bag transfer).
                 </p>
 
-                <div className="pt-2 text-xs font-mono text-slate-400 border-t border-slate-800">
+                <div className="pt-2 text-xs font-mono text-slate-400 border-t border-slate-200">
                   Relative Volume: 100% Baseline | Surcharge: 10° - 15°
                 </div>
               </div>
 
               {/* Angle 2 */}
-              <div className="p-8 rounded-2xl bg-slate-900 border border-slate-800 space-y-5">
-                <div className="flex items-center justify-between border-b border-slate-800 pb-4">
+              <div className="p-8 rounded-2xl bg-slate-50 border border-slate-200 space-y-5">
+                <div className="flex items-center justify-between border-b border-slate-200 pb-4">
                   <div className="flex items-center gap-3">
-                    <div className="p-2.5 rounded-xl bg-amber-500/10 text-amber-400 font-mono font-bold">
+                    <div className="p-2.5 rounded-xl bg-amber-100 text-amber-800 font-mono font-bold">
                       30°
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-white">30° Trough Angle</h3>
+                      <h3 className="text-xl font-bold text-slate-950">30° Trough Angle</h3>
                       <div className="text-xs text-amber-400 font-mono">+18% Carrying Capacity</div>
                     </div>
                   </div>
                 </div>
 
-                <p className="text-slate-300 text-sm leading-relaxed">
+                <p className="text-slate-600 text-sm leading-relaxed">
                   The universal workhorse standard across Indian stone crushing and sand washing plants.
                   Offers an optimal balance between volumetric payload and belt flex fatigue, preventing
                   center-line belt creasing while conveying sand, gravel, and coal.
                 </p>
 
-                <div className="pt-2 text-xs font-mono text-amber-400 border-t border-slate-800">
+                <div className="pt-2 text-xs font-mono text-amber-400 border-t border-slate-200">
                   Relative Volume: 118% | Universal Quarry Standard
                 </div>
               </div>
 
               {/* Angle 3 */}
-              <div className="p-8 rounded-2xl bg-slate-900 border border-slate-800 space-y-5">
-                <div className="flex items-center justify-between border-b border-slate-800 pb-4">
+              <div className="p-8 rounded-2xl bg-slate-50 border border-slate-200 space-y-5">
+                <div className="flex items-center justify-between border-b border-slate-200 pb-4">
                   <div className="flex items-center gap-3">
                     <div className="p-2.5 rounded-xl bg-red-500/10 text-red-400 font-mono font-bold">
                       35°
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-white">35° Deep Trough Angle</h3>
+                      <h3 className="text-xl font-bold text-slate-950">35° Deep Trough Angle</h3>
                       <div className="text-xs text-red-400 font-mono">+28% Carrying Capacity</div>
                     </div>
                   </div>
                 </div>
 
-                <p className="text-slate-300 text-sm leading-relaxed">
+                <p className="text-slate-600 text-sm leading-relaxed">
                   Deep troughing configuration engineered for high-tonnage bulk materials like wet silica sand,
                   fine mineral slurry filter cake, and fertilizer prills. Maximizes cross-sectional payload
                   and allows narrower belts to move higher tonnages without edge spillage.
                 </p>
 
-                <div className="pt-2 text-xs font-mono text-red-400 border-t border-slate-800">
+                <div className="pt-2 text-xs font-mono text-red-400 border-t border-slate-200">
                   Relative Volume: 128% | Zero Edge Spillage
                 </div>
               </div>
@@ -570,27 +567,27 @@ export default function BeltConveyorPage() {
         </section>
 
         {/* Section 3: Technical Specifications & Linear Capacity */}
-        <section className="py-16 sm:py-20 border-b border-slate-800 bg-slate-900">
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-white">
           <Container>
             <div className="max-w-3xl mb-12">
               <div className="text-red-400 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
                 Engineering Sizing &amp; Parameters
               </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-950 tracking-tight font-display">
                 Technical Specifications &amp; Linear Capacity (MS-BC Series)
               </h2>
-              <p className="text-slate-300 text-base mt-4 leading-relaxed">
+              <p className="text-slate-700 text-base mt-4 leading-relaxed">
                 Standard technical specifications for Minerals Solutions industrial troughed belt conveyors
                 fabricated at our Zak GIDC, Dahegam facility. Available in channel stringer or lattice truss frames:
               </p>
             </div>
 
             {/* Responsive Table Container */}
-            <div className="overflow-x-auto rounded-xl border border-slate-700/80 shadow-2xl bg-slate-950">
-              <table className="w-full text-left text-xs sm:text-sm text-slate-300">
-                <thead className="bg-slate-800/90 text-slate-100 font-mono text-xs uppercase tracking-wider border-b border-slate-700">
+            <div className="overflow-x-auto rounded-xl border border-slate-200 shadow-xs bg-white">
+              <table className="w-full text-left text-xs sm:text-sm text-slate-700">
+                <thead className="bg-slate-100 text-slate-800 font-mono text-xs uppercase tracking-wider border-b border-slate-200">
                   <tr>
-                    <th className="py-4 px-4 font-bold text-white">Model</th>
+                    <th className="py-4 px-4 font-bold text-slate-950">Model</th>
                     <th className="py-4 px-4 font-bold text-red-400">Belt Width</th>
                     <th className="py-4 px-4 font-bold text-amber-400">Capacity (TPH)</th>
                     <th className="py-4 px-4">Max Length</th>
@@ -600,31 +597,31 @@ export default function BeltConveyorPage() {
                     <th className="py-4 px-4">Belting Grade</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-slate-800 font-mono">
+                <tbody className="divide-y divide-slate-200 font-mono">
                   {bcSpecs.map((spec, idx) => (
                     <tr
                       key={spec.model}
                       className={
                         idx % 2 === 0
-                          ? 'bg-slate-950/60 hover:bg-slate-800/50 transition-colors'
-                          : 'bg-slate-900/60 hover:bg-slate-800/50 transition-colors'
+                          ? 'bg-white hover:bg-slate-50 transition-colors'
+                          : 'bg-slate-50/60 hover:bg-slate-100/70 transition-colors'
                       }
                     >
-                      <td className="py-4 px-4 font-bold text-white">{spec.model}</td>
+                      <td className="py-4 px-4 font-bold text-slate-950">{spec.model}</td>
                       <td className="py-4 px-4 font-bold text-red-400">{spec.beltWidth}</td>
                       <td className="py-4 px-4 font-bold text-amber-400">{spec.capacity}</td>
                       <td className="py-4 px-4">{spec.maxLength}</td>
-                      <td className="py-4 px-4 text-slate-400">{spec.beltSpeed}</td>
-                      <td className="py-4 px-4 text-slate-300">{spec.frameSection}</td>
+                      <td className="py-4 px-4 text-slate-600">{spec.beltSpeed}</td>
+                      <td className="py-4 px-4 text-slate-600">{spec.frameSection}</td>
                       <td className="py-4 px-4 text-emerald-400">{spec.motorPower}</td>
-                      <td className="py-4 px-4 text-slate-400">IS 1891 M24</td>
+                      <td className="py-4 px-4 text-slate-600">IS 1891 M24</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
 
-            <div className="mt-4 flex flex-wrap items-center justify-between gap-4 text-xs text-slate-400 font-mono">
+            <div className="mt-4 flex flex-wrap items-center justify-between gap-4 text-xs text-slate-500 font-mono">
               <div>* Capacities calculated based on aggregate density of 1.6 t/m³ at 30° trough angle. Custom widths up to 1,600mm available.</div>
               <div className="text-red-400">Designed per IS 11592 Standards | Verified IS 1891 Belting</div>
             </div>
@@ -632,17 +629,17 @@ export default function BeltConveyorPage() {
         </section>
 
         {/* Section 4: Rubber Belting Metallurgy: M24 & Heat Resistant Grades */}
-        <section className="py-16 sm:py-20 border-b border-slate-800 bg-slate-950">
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-slate-50/60">
           <Container>
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
               <div className="lg:col-span-6 space-y-6">
-                <div className="text-amber-400 font-mono text-xs uppercase tracking-wider font-semibold">
+                <div className="text-amber-700 font-mono text-xs uppercase tracking-wider font-semibold">
                   Tensile Carcass &amp; Cover Compounds
                 </div>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-950 tracking-tight font-display">
                   Rubber Belting Metallurgy: M24 &amp; Heat Resistant Grades (IS 1891)
                 </h2>
-                <p className="text-slate-300 text-base leading-relaxed">
+                <p className="text-slate-700 text-base leading-relaxed">
                   Cheap recycled rubber belting cracks, delaminates, and rips under sharp stone impact.
                   Minerals Solutions supplies heavy-duty multi-ply EP (polyester warp / nylon weft) belting
                   strictly adhering to IS 1891 standards with virgin rubber cover compounds:
@@ -654,10 +651,10 @@ export default function BeltConveyorPage() {
                       <Check className="w-4 h-4" />
                     </div>
                     <div>
-                      <h4 className="text-white font-semibold text-sm">
+                      <h4 className="text-slate-950 font-semibold text-sm">
                         Grade M24 Heavy Abrasion &amp; Gouge Resistance
                       </h4>
-                      <p className="text-slate-400 text-xs sm:text-sm mt-0.5">
+                      <p className="text-slate-600 text-xs sm:text-sm mt-0.5">
                         Tensile strength &gt;24 MPa, elongation at break &gt;450%, and abrasion loss &lt;150 mm³.
                         Reinforced top and bottom rubber covers (4mm top / 2mm bottom or 5mm top / 3mm bottom)
                         resist cut and gouge from sharp crushed granite, basalt, and silica rocks.
@@ -670,10 +667,10 @@ export default function BeltConveyorPage() {
                       <Check className="w-4 h-4" />
                     </div>
                     <div>
-                      <h4 className="text-white font-semibold text-sm">
+                      <h4 className="text-slate-950 font-semibold text-sm">
                         Multi-Ply EP Tensile Carcass (EP315 to EP1000)
                       </h4>
-                      <p className="text-slate-400 text-xs sm:text-sm mt-0.5">
+                      <p className="text-slate-600 text-xs sm:text-sm mt-0.5">
                         High-modulus polyester warp yarns deliver exceptionally low elastic elongation (&lt;1.5%),
                         minimizing take-up travel distance, while nylon weft yarns provide superior transverse
                         troughability and high fastener retention strength.
@@ -686,10 +683,10 @@ export default function BeltConveyorPage() {
                       <Check className="w-4 h-4" />
                     </div>
                     <div>
-                      <h4 className="text-white font-semibold text-sm">
+                      <h4 className="text-slate-950 font-semibold text-sm">
                         Grade HR / SHR High Temperature Formulations
                       </h4>
-                      <p className="text-slate-400 text-xs sm:text-sm mt-0.5">
+                      <p className="text-slate-600 text-xs sm:text-sm mt-0.5">
                         Specialized EPDM / butyl rubber compounds engineered to convey hot materials up to 150°C
                         continuous (HR) or 180°C peak (SHR), eliminating belt hardening, surface cracking, and
                         carcass delamination downstream of industrial rotary sand dryers.
@@ -708,10 +705,10 @@ export default function BeltConveyorPage() {
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 50vw"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
+                  
                   <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-slate-900/90 border border-slate-800">
                     <div className="flex items-center justify-between text-xs font-mono">
-                      <span className="text-white font-bold">IS 1891 GRADE M24 / HR BELTING</span>
+                      <span className="text-slate-950 font-bold">IS 1891 GRADE M24 / HR BELTING</span>
                       <span className="text-emerald-400 font-bold">IN STOCK AT DAHEGAM</span>
                     </div>
                     <p className="text-xs text-slate-300 mt-1">
@@ -725,16 +722,16 @@ export default function BeltConveyorPage() {
         </section>
 
         {/* Section 5: Drive & Tail Pulleys: Hot Vulcanized Diamond Rubber Lagging */}
-        <section className="py-16 sm:py-20 border-b border-slate-800 bg-slate-900">
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-white">
           <Container>
             <div className="max-w-3xl mb-12">
               <div className="text-red-400 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
                 Pulley Engineering &amp; Traction Grip
               </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-950 tracking-tight font-display">
                 Drive &amp; Tail Pulleys: Hot Vulcanized Diamond Rubber Lagging
               </h2>
-              <p className="text-slate-300 text-base mt-4 leading-relaxed">
+              <p className="text-slate-700 text-base mt-4 leading-relaxed">
                 Belt slippage burns belting and stalls plant production. Minerals Solutions manufactures
                 crowned, statically and dynamically balanced conveyor pulleys with heavy hot-vulcanized lagging:
               </p>
@@ -742,7 +739,7 @@ export default function BeltConveyorPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Pulley 1 */}
-              <div className="p-6 rounded-2xl bg-slate-800/80 border border-slate-700/80 space-y-4">
+              <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-4">
                 <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-slate-700">
                   <Image
                     src="/images/products/conveyor-systems/head-pulley-rubber-lagging-lg.webp"
@@ -751,8 +748,8 @@ export default function BeltConveyorPage() {
                     sizes="(max-width: 768px) 100vw, 30vw"
                   />
                 </div>
-                <h3 className="text-lg font-bold text-white">Diamond Grooved Rubber Lagging</h3>
-                <p className="text-slate-300 text-sm leading-relaxed">
+                <h3 className="text-lg font-bold text-slate-950">Diamond Grooved Rubber Lagging</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">
                   10mm to 12mm thick natural rubber hot-vulcanized onto crowned steel drums under hydraulic
                   curing presses. Molded diamond grooves shed water, clay, and slurry, raising the friction
                   coefficient above 0.38 to eliminate wet weather belt slip.
@@ -760,7 +757,7 @@ export default function BeltConveyorPage() {
               </div>
 
               {/* Pulley 2 */}
-              <div className="p-6 rounded-2xl bg-slate-800/80 border border-slate-700/80 space-y-4">
+              <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-4">
                 <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-slate-700">
                   <Image
                     src="/images/products/conveyor-systems/conveyor-head-tail-pulleys-lg.webp"
@@ -769,8 +766,8 @@ export default function BeltConveyorPage() {
                     sizes="(max-width: 768px) 100vw, 30vw"
                   />
                 </div>
-                <h3 className="text-lg font-bold text-white">Machined Crowned Shells</h3>
-                <p className="text-slate-300 text-sm leading-relaxed">
+                <h3 className="text-lg font-bold text-slate-950">Machined Crowned Shells</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">
                   Heavy-wall steel pipes (8mm to 16mm thick) are precision machined with a 1:100 taper crown
                   toward the center. The crown continuously steers the conveyor belt into central alignment,
                   preventing edge drift and structural rubbing.
@@ -778,7 +775,7 @@ export default function BeltConveyorPage() {
               </div>
 
               {/* Pulley 3 */}
-              <div className="p-6 rounded-2xl bg-slate-800/80 border border-slate-700/80 space-y-4">
+              <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-4">
                 <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-slate-700">
                   <Image
                     src="/images/products/conveyor-systems/conveyor-troughing-idler-roller-lg.webp"
@@ -787,8 +784,8 @@ export default function BeltConveyorPage() {
                     sizes="(max-width: 768px) 100vw, 30vw"
                   />
                 </div>
-                <h3 className="text-lg font-bold text-white">Labyrinth-Sealed Idler Rollers</h3>
-                <p className="text-slate-300 text-sm leading-relaxed">
+                <h3 className="text-lg font-bold text-slate-950">Labyrinth-Sealed Idler Rollers</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">
                   Carrying and return idlers fabricated from ERW steel tubes with pressed steel bearing
                   housings. Equipped with deep-groove 6204/6205 bearings and multi-lip labyrinth seals
                   purged with lithium grease, providing &gt;30,000 hours of maintenance-free rotation.
@@ -799,16 +796,16 @@ export default function BeltConveyorPage() {
         </section>
 
         {/* Section 5B: Tensioning Towers, Impact Beds & Dual Scraper Engineering */}
-        <section className="py-16 sm:py-20 border-b border-slate-800 bg-slate-950">
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-slate-50/60">
           <Container>
             <div className="max-w-3xl mb-12">
-              <div className="text-amber-400 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
+              <div className="text-amber-700 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
                 Belt Protection &amp; Clean Running
               </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-950 tracking-tight font-display">
                 Belt Tensioning, Impact Beds &amp; Dual Scraper Engineering
               </h2>
-              <p className="text-slate-300 text-base mt-4 leading-relaxed">
+              <p className="text-slate-700 text-base mt-4 leading-relaxed">
                 Excessive carryback spillage and puncture damage at feed loading chutes account for 80% of
                 quarry conveyor maintenance expenses. Minerals Solutions integrates three critical protection
                 sub-assemblies into every heavy conveyor line:
@@ -816,12 +813,12 @@ export default function BeltConveyorPage() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="p-6 rounded-2xl bg-slate-900 border border-slate-800 space-y-4">
+              <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-4">
                 <div className="w-10 h-10 rounded-xl bg-red-500/10 text-red-400 flex items-center justify-center font-mono font-bold">
                   01
                 </div>
-                <h3 className="text-lg font-bold text-white">Automatic Gravity Take-Up Towers</h3>
-                <p className="text-slate-300 text-sm leading-relaxed">
+                <h3 className="text-lg font-bold text-slate-950">Automatic Gravity Take-Up Towers</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">
                   For conveyors exceeding 40 meters, manual screw take-ups fail to accommodate dynamic belt
                   elasticity during motor starting surges. Vertical gravity take-up towers with sliding counterweight
                   carriages continuously maintain exact T2 slack-side tension, completely eliminating drive pulley
@@ -830,12 +827,12 @@ export default function BeltConveyorPage() {
                 <div className="pt-2 text-xs font-mono text-red-400">Tension Control: 100% Dynamic</div>
               </div>
 
-              <div className="p-6 rounded-2xl bg-slate-900 border border-slate-800 space-y-4">
-                <div className="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center font-mono font-bold">
+              <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-4">
+                <div className="w-10 h-10 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-mono font-bold">
                   02
                 </div>
-                <h3 className="text-lg font-bold text-white">UHMWPE Slide Impact Cradle Beds</h3>
-                <p className="text-slate-300 text-sm leading-relaxed">
+                <h3 className="text-lg font-bold text-slate-950">UHMWPE Slide Impact Cradle Beds</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">
                   Conventional rubber impact rollers bend and seize under heavy rock drops. Our heavy fabricated
                   steel impact cradles feature 25mm thick ultra-low-friction UHMWPE top slider bars bonded to
                   high-durometer elastomeric shock absorbers, forming a continuous supporting bed that prevents
@@ -844,12 +841,12 @@ export default function BeltConveyorPage() {
                 <div className="pt-2 text-xs font-mono text-amber-400">Impact Absorption: Extreme Quarry Grade</div>
               </div>
 
-              <div className="p-6 rounded-2xl bg-slate-900 border border-slate-800 space-y-4">
-                <div className="w-10 h-10 rounded-xl bg-yellow-500/10 text-yellow-400 flex items-center justify-center font-mono font-bold">
+              <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-4">
+                <div className="w-10 h-10 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-mono font-bold">
                   03
                 </div>
-                <h3 className="text-lg font-bold text-white">Dual-Stage Scraper &amp; V-Plow Cleaners</h3>
-                <p className="text-slate-300 text-sm leading-relaxed">
+                <h3 className="text-lg font-bold text-slate-950">Dual-Stage Scraper &amp; V-Plow Cleaners</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">
                   A primary spring-tensioned polyurethane pre-cleaner strips 90% of bulk material at the head
                   drum discharge trajectory. Downstream, secondary segmented tungsten carbide blades scrape off
                   fines, while an internal return V-plow protects tail drums from rocks falling onto the return belt run.
@@ -861,17 +858,17 @@ export default function BeltConveyorPage() {
         </section>
 
         {/* Section 6: Mobile Truck Loading Conveyor Adaptation */}
-        <section className="py-16 sm:py-20 border-b border-slate-800 bg-slate-950">
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-white">
           <Container>
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
               <div className="lg:col-span-6 space-y-6">
                 <div className="text-red-400 font-mono text-xs uppercase tracking-wider font-semibold">
                   Flexible Plant Logistics
                 </div>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-950 tracking-tight font-display">
                   Mobile Truck Loading &amp; Radial Stacker Conveyors
                 </h2>
-                <p className="text-slate-300 text-base leading-relaxed">
+                <p className="text-slate-700 text-base leading-relaxed">
                   For quarry stockpiling and bulk dumper dispatch, Minerals Solutions manufactures mobile
                   wheel-mounted radial stackers and truck-loading belt conveyors. Designed for fast site
                   repositioning and continuous high-tonnage loading:
@@ -899,44 +896,44 @@ export default function BeltConveyorPage() {
 
               {/* Logistics Feature Box */}
               <div className="lg:col-span-6">
-                <div className="p-8 rounded-2xl bg-slate-900 border border-slate-800 space-y-6">
-                  <div className="flex items-center gap-3 border-b border-slate-800 pb-4">
+                <div className="p-8 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-6">
+                  <div className="flex items-center gap-3 border-b border-slate-200 pb-4">
                     <div className="p-2.5 rounded-xl bg-red-500/10 text-red-400 font-mono font-bold">
                       <Truck className="w-6 h-6" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-bold text-white">Mobile Loading Performance Metrics</h3>
+                      <h3 className="text-lg font-bold text-slate-950">Mobile Loading Performance Metrics</h3>
                       <div className="text-xs text-red-400 font-mono">Truck &amp; Dumper Dispatch</div>
                     </div>
                   </div>
 
                   <div className="space-y-4 text-xs sm:text-sm">
-                    <div className="p-3.5 rounded-lg bg-slate-950 border border-slate-800">
-                      <div className="font-bold text-white flex justify-between">
+                    <div className="p-3.5 rounded-lg bg-slate-50 border border-slate-200">
+                      <div className="font-bold text-slate-950 flex justify-between">
                         <span>30-Tonne Dumper Loading Time</span>
                         <span className="text-emerald-400 font-mono">&lt;18 Minutes</span>
                       </div>
-                      <p className="text-slate-400 mt-1">
+                      <p className="text-slate-600 mt-1">
                         Continuous 150 TPH belt loading eliminates loader turnaround congestion at weighbridges.
                       </p>
                     </div>
 
-                    <div className="p-3.5 rounded-lg bg-slate-950 border border-slate-800">
-                      <div className="font-bold text-white flex justify-between">
+                    <div className="p-3.5 rounded-lg bg-slate-50 border border-slate-200">
+                      <div className="font-bold text-slate-950 flex justify-between">
                         <span>Radial Stockpile Height</span>
                         <span className="text-amber-400 font-mono">Up to 8.5 Meters</span>
                       </div>
-                      <p className="text-slate-400 mt-1">
+                      <p className="text-slate-600 mt-1">
                         Creates expansive kidney-shaped aggregate storage piles without requiring secondary earthmovers.
                       </p>
                     </div>
 
-                    <div className="p-3.5 rounded-lg bg-slate-950 border border-slate-800">
-                      <div className="font-bold text-white flex justify-between">
+                    <div className="p-3.5 rounded-lg bg-slate-50 border border-slate-200">
+                      <div className="font-bold text-slate-950 flex justify-between">
                         <span>Power Options</span>
                         <span className="text-sky-400 font-mono">Electric / Diesel Genset</span>
                       </div>
-                      <p className="text-slate-400 mt-1">
+                      <p className="text-slate-600 mt-1">
                         Operates via standard 415V 3-phase grid power or integrated portable diesel generator.
                       </p>
                     </div>
@@ -1039,7 +1036,7 @@ export default function BeltConveyorPage() {
         </section>
 
         {/* Section 8: Sizing Proposal & RFQ Consultation Form */}
-        <section className="py-16 sm:py-20 border-b border-slate-800 bg-slate-950">
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-slate-50/60">
           <Container>
             <div className="max-w-4xl mx-auto p-8 sm:p-12 rounded-3xl bg-slate-900 border border-red-500/40 shadow-2xl relative overflow-hidden">
               <div className="absolute top-0 right-0 w-80 h-80 bg-red-500/10 rounded-full blur-3xl pointer-events-none" />
@@ -1080,7 +1077,7 @@ export default function BeltConveyorPage() {
                   </Button>
                 </div>
 
-                <div className="pt-6 border-t border-slate-800/80 text-xs text-slate-400 font-mono flex flex-wrap justify-center gap-6">
+                <div className="pt-6 border-t border-slate-200/80 text-xs text-slate-400 font-mono flex flex-wrap justify-center gap-6">
                   <span>GSTIN: 24AUSPP9555F1ZZ</span>
                   <span>•</span>
                   <span>Works: 10, Shyam Estate, Zak GIDC, Dahegam</span>
@@ -1093,16 +1090,16 @@ export default function BeltConveyorPage() {
         </section>
 
         {/* Section 9: Frequently Asked Questions */}
-        <section className="py-16 sm:py-20 bg-slate-900">
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-white">
           <Container>
             <div className="max-w-3xl mx-auto text-center mb-12">
               <div className="text-red-400 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
                 Knowledge Base &amp; Technical FAQs
               </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-950 tracking-tight font-display">
                 Frequently Asked Questions on Industrial Belt Conveyors
               </h2>
-              <p className="text-slate-400 text-sm sm:text-base mt-3">
+              <p className="text-slate-600 text-sm sm:text-base mt-3">
                 Expert technical answers on troughing angle capacity, M24 belting standards, diamond rubber
                 lagging, and mobile truck loading.
               </p>
@@ -1112,13 +1109,13 @@ export default function BeltConveyorPage() {
               {faqs.map((faq, idx) => (
                 <div
                   key={idx}
-                  className="p-6 rounded-2xl bg-slate-950 border border-slate-800 space-y-3"
+                  className="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-3"
                 >
-                  <h3 className="text-base sm:text-lg font-bold text-white flex items-start gap-3">
+                  <h3 className="text-base sm:text-lg font-bold text-slate-950 flex items-start gap-3">
                     <span className="text-red-400 font-mono text-sm mt-0.5">0{idx + 1}.</span>
                     <span>{faq.q}</span>
                   </h3>
-                  <p className="text-slate-300 text-sm sm:text-base leading-relaxed pl-7">
+                  <p className="text-slate-600 text-sm sm:text-base leading-relaxed pl-7">
                     {faq.a}
                   </p>
                 </div>

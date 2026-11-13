@@ -253,50 +253,47 @@ export default function FertilizerCoolingCoatingDrumPage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqSchema} />
 
-      <main className="min-h-screen bg-slate-900 text-slate-100">
+      <main className="min-h-screen bg-white text-slate-900">
         {/* Breadcrumb Navigation Bar */}
-        <div className="border-b border-slate-800 bg-slate-950/70 backdrop-blur-md">
+        <section className="bg-slate-50 border-b border-slate-200 py-3">
           <Container>
-            <div className="py-3">
-              <Breadcrumbs
-                items={[
-                  { label: 'Home', href: '/' },
-                  { label: 'Products', href: '/products/' },
-                  {
-                    label: 'Fertilizer Granulation Plants',
-                    href: '/products/fertilizer-granulation-plants/',
-                  },
-                  {
-                    label: 'Fertilizer Cooling & Coating Drum',
-                    href: '/products/fertilizer-granulation-plants/fertilizer-cooling-coating-drum/',
-                  },
-                ]}
-              />
-            </div>
+            <Breadcrumbs
+              items={[
+                { label: 'Home', href: '/' },
+                { label: 'Products', href: '/products/' },
+                {
+                  label: 'Fertilizer Granulation Plants',
+                  href: '/products/fertilizer-granulation-plants/',
+                },
+                {
+                  label: 'Fertilizer Cooling & Coating Drum',
+                  href: '/products/fertilizer-granulation-plants/fertilizer-cooling-coating-drum/',
+                },
+              ]}
+            />
           </Container>
-        </div>
+        </section>
 
         {/* Hero Section */}
-        <section className="relative overflow-hidden pt-12 pb-20 lg:pt-16 lg:pb-28 border-b border-slate-800 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-900">
-          <div className="absolute inset-0 bg-[radial-gradient(#14b8a6_1px,transparent_1px)] [background-size:24px_24px] opacity-10 pointer-events-none" />
+        <section className="relative pt-8 pb-14 lg:pt-12 lg:pb-20 border-b border-slate-200 overflow-hidden bg-gradient-to-b from-teal-50/40 via-white to-white">
 
           <Container>
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
               {/* Left Column: Copy & CTAs */}
               <div className="lg:col-span-7 space-y-6">
-                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-teal-500/10 border border-teal-500/30 text-teal-400 text-xs font-semibold uppercase tracking-wider">
+                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-teal-100/80 border border-teal-300 text-teal-950 text-xs font-semibold uppercase tracking-wider">
                   <PackageCheck className="w-3.5 h-3.5" />
                   Bag-Ready Storage Quality | Anti-Caking Surface Passivation
                 </div>
 
-                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-slate-950 font-display">
                   Fertilizer Rotary Cooling &{' '}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-amber-300 to-yellow-400">
+                  <span className="text-teal-700">
                     Anti-Caking Coating Drums
                   </span>
                 </h1>
 
-                <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-normal">
+                <p className="text-base sm:text-lg text-slate-700 leading-relaxed font-normal">
                   Continuous ambient counter-current convective cooling from 80°C down to below 40°C
                   combined with high-pressure atomized liquid neem oil, wax emulsions, and talc powder
                   conditioning. Engineered by Minerals Solutions to eliminate bag hardening, moisture
@@ -305,44 +302,44 @@ export default function FertilizerCoolingCoatingDrumPage() {
 
                 {/* Key Metric Chips */}
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
-                  <div className="p-3.5 rounded-lg bg-slate-800/80 border border-slate-700/80 shadow-sm">
-                    <div className="text-xs text-slate-400 font-mono uppercase tracking-wider">
+                  <div className="p-3 sm:p-3.5 rounded-lg bg-white border border-slate-200 shadow-xs">
+                    <div className="text-xs text-slate-500 font-mono uppercase tracking-wider">
                       Thermal Drop
                     </div>
-                    <div className="text-xl sm:text-2xl font-black text-teal-400 mt-1">
+                    <div className="text-xl sm:text-2xl font-bold text-slate-900-400 mt-1">
                       80°C &rarr; &lt;40°C
                     </div>
-                    <div className="text-[11px] text-slate-400">Packaging Safe</div>
+                    <div className="text-[11px] text-slate-500">Packaging Safe</div>
                   </div>
 
-                  <div className="p-3.5 rounded-lg bg-slate-800/80 border border-slate-700/80 shadow-sm">
-                    <div className="text-xs text-slate-400 font-mono uppercase tracking-wider">
+                  <div className="p-3 sm:p-3.5 rounded-lg bg-white border border-slate-200 shadow-xs">
+                    <div className="text-xs text-slate-500 font-mono uppercase tracking-wider">
                       Coating Coverage
                     </div>
-                    <div className="text-xl sm:text-2xl font-black text-amber-400 mt-1">
+                    <div className="text-xl sm:text-2xl font-bold text-slate-900-400 mt-1">
                       99.4%
                     </div>
-                    <div className="text-[11px] text-slate-400">Uniform 360° Shield</div>
+                    <div className="text-[11px] text-slate-500">Uniform 360° Shield</div>
                   </div>
 
-                  <div className="p-3.5 rounded-lg bg-slate-800/80 border border-slate-700/80 shadow-sm">
-                    <div className="text-xs text-slate-400 font-mono uppercase tracking-wider">
+                  <div className="p-3 sm:p-3.5 rounded-lg bg-white border border-slate-200 shadow-xs">
+                    <div className="text-xs text-slate-500 font-mono uppercase tracking-wider">
                       Plant Throughput
                     </div>
-                    <div className="text-xl sm:text-2xl font-black text-white mt-1">
+                    <div className="text-xl sm:text-2xl font-bold text-slate-900 mt-1">
                       2 - 15 TPH
                     </div>
-                    <div className="text-[11px] text-slate-400">Continuous Duty</div>
+                    <div className="text-[11px] text-slate-500">Continuous Duty</div>
                   </div>
 
-                  <div className="p-3.5 rounded-lg bg-slate-800/80 border border-slate-700/80 shadow-sm">
-                    <div className="text-xs text-slate-400 font-mono uppercase tracking-wider">
+                  <div className="p-3 sm:p-3.5 rounded-lg bg-white border border-slate-200 shadow-xs">
+                    <div className="text-xs text-slate-500 font-mono uppercase tracking-wider">
                       Shelf Stability
                     </div>
                     <div className="text-xl sm:text-2xl font-black text-emerald-400 mt-1">
                       12 Months
                     </div>
-                    <div className="text-[11px] text-slate-400">Zero Bag Clumping</div>
+                    <div className="text-[11px] text-slate-500">Zero Bag Clumping</div>
                   </div>
                 </div>
 
@@ -370,7 +367,7 @@ export default function FertilizerCoolingCoatingDrumPage() {
 
               {/* Right Column: Visual Frame */}
               <div className="lg:col-span-5 relative">
-                <div className="relative rounded-2xl overflow-hidden border border-slate-700/80 bg-slate-950 shadow-2xl">
+                <div className="relative rounded-2xl overflow-hidden border border-slate-300/80 bg-slate-900 shadow-xl">
                   <div className="relative aspect-[4/3] w-full">
                     <Image
                       src="/images/products/fertilizer-pellet/fertilizer-granulation-plant-variant-lg.webp"
@@ -379,13 +376,13 @@ export default function FertilizerCoolingCoatingDrumPage() {
                       className="object-cover"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
+                    
                   </div>
 
-                  <div className="p-5 border-t border-slate-800 bg-slate-900/90 space-y-2">
+                  <div className="p-4 bg-slate-950/90 border-t border-slate-800 text-white flex items-center justify-between">
                     <div className="flex items-center justify-between text-xs text-slate-400 font-mono">
                       <span>MODEL: MS-CCD-1800</span>
-                      <span className="text-teal-400 font-bold">10 TPH FINISHING SECTION</span>
+                      <span className="text-teal-700 font-bold">10 TPH FINISHING SECTION</span>
                     </div>
                     <p className="text-xs text-slate-300 leading-relaxed">
                       Factory view: Dual-zone conditioning drum showing counter-current cooling hood,
@@ -414,16 +411,16 @@ export default function FertilizerCoolingCoatingDrumPage() {
         </section>
 
         {/* Section 1: Thermodynamic Counter-Current Air Cooling */}
-        <section className="py-16 sm:py-20 border-b border-slate-800 bg-slate-900">
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-white">
           <Container>
             <div className="max-w-3xl mb-12">
-              <div className="text-teal-400 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
+              <div className="text-teal-700 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
                 Convective Heat Exchange Architecture
               </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-950 tracking-tight font-display">
                 Ambient Counter-Current Air Cooling: 80°C Down to &lt;40°C
               </h2>
-              <p className="text-slate-300 text-base mt-4 leading-relaxed">
+              <p className="text-slate-700 text-base mt-4 leading-relaxed">
                 Direct bagging of hot fertilizer granules is the primary root cause of warehouse
                 caking disputes. Minerals Solutions rotary cooling drums utilize high-volume
                 counter-current convective airflow to strip residual sensible heat before moisture can
@@ -432,12 +429,12 @@ export default function FertilizerCoolingCoatingDrumPage() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="p-6 rounded-xl bg-slate-800/80 border border-slate-700/80 space-y-4">
-                <div className="w-12 h-12 rounded-lg bg-teal-500/10 text-teal-400 flex items-center justify-center">
+              <div className="p-6 rounded-xl bg-slate-50 border border-slate-200 space-y-4">
+                <div className="w-12 h-12 rounded-lg bg-teal-100 text-teal-800 flex items-center justify-center">
                   <ThermometerSnowflake className="w-6 h-6" />
                 </div>
-                <h3 className="text-lg font-bold text-white">Eliminating Bag Condensation</h3>
-                <p className="text-slate-300 text-sm leading-relaxed">
+                <h3 className="text-lg font-bold text-slate-950">Eliminating Bag Condensation</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">
                   When granules enter 50kg poly-woven sacks above 45°C, the temperature differential
                   between the warm bag core and cool warehouse ambient air drives moisture migration to
                   the bag inner wall. Droplets dissolve local fertilizer salts, recrystallizing into rock-hard
@@ -445,12 +442,12 @@ export default function FertilizerCoolingCoatingDrumPage() {
                 </p>
               </div>
 
-              <div className="p-6 rounded-xl bg-slate-800/80 border border-slate-700/80 space-y-4">
-                <div className="w-12 h-12 rounded-lg bg-teal-500/10 text-teal-400 flex items-center justify-center">
+              <div className="p-6 rounded-xl bg-slate-50 border border-slate-200 space-y-4">
+                <div className="w-12 h-12 rounded-lg bg-teal-100 text-teal-800 flex items-center justify-center">
                   <Wind className="w-6 h-6" />
                 </div>
-                <h3 className="text-lg font-bold text-white">Counter-Current Flow Dynamics</h3>
-                <p className="text-slate-300 text-sm leading-relaxed">
+                <h3 className="text-lg font-bold text-slate-950">Counter-Current Flow Dynamics</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">
                   Filtered ambient air enters at the discharge hood where the coolest pellets exit,
                   maximizing the temperature delta across the entire cylinder length. Induced draft fans
                   pull the warmed air toward the feed end at controlled non-turbulent velocities under 1.8
@@ -458,12 +455,12 @@ export default function FertilizerCoolingCoatingDrumPage() {
                 </p>
               </div>
 
-              <div className="p-6 rounded-xl bg-slate-800/80 border border-slate-700/80 space-y-4">
-                <div className="w-12 h-12 rounded-lg bg-teal-500/10 text-teal-400 flex items-center justify-center">
+              <div className="p-6 rounded-xl bg-slate-50 border border-slate-200 space-y-4">
+                <div className="w-12 h-12 rounded-lg bg-teal-100 text-teal-800 flex items-center justify-center">
                   <Layers className="w-6 h-6" />
                 </div>
-                <h3 className="text-lg font-bold text-white">Gentle Non-Attrition Cascading Flights</h3>
-                <p className="text-slate-300 text-sm leading-relaxed">
+                <h3 className="text-lg font-bold text-slate-950">Gentle Non-Attrition Cascading Flights</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">
                   Standard drying flights create violent drops that smash fragile pellets into fine dust.
                   Our cooling drum incorporates proprietary curved spiral cascading flights that gently lift
                   and shower granules through the air stream in a continuous dense curtain, achieving
@@ -475,17 +472,17 @@ export default function FertilizerCoolingCoatingDrumPage() {
         </section>
 
         {/* Section 2: Micronized Liquid Coating Manifold */}
-        <section className="py-16 sm:py-20 border-b border-slate-800 bg-slate-950/70">
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-slate-50/60">
           <Container>
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
               <div className="lg:col-span-6 space-y-6">
-                <div className="text-amber-400 font-mono text-xs uppercase tracking-wider font-semibold">
+                <div className="text-teal-700 font-mono text-xs uppercase tracking-wider font-semibold">
                   Surface Passivation & Lipid Barrier
                 </div>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-950 tracking-tight font-display">
                   Micronized Liquid Coating Manifold (Neem Oil & Wax Agents)
                 </h2>
-                <p className="text-slate-300 text-base leading-relaxed">
+                <p className="text-slate-700 text-base leading-relaxed">
                   Applying coating oil to hot granules causes thermal vaporisation and uneven blotches.
                   Once cooled below 40°C, the granules enter our precision liquid atomization zone.
                   Heated stainless steel spray manifolds deliver a micro-fine mist of hydrophobic coating
@@ -498,10 +495,10 @@ export default function FertilizerCoolingCoatingDrumPage() {
                       <Check className="w-4 h-4" />
                     </div>
                     <div>
-                      <h4 className="text-white font-semibold text-sm">
+                      <h4 className="text-slate-950 font-semibold text-sm">
                         Heated Water-Jacketed Spray Bar
                       </h4>
-                      <p className="text-slate-400 text-xs sm:text-sm mt-0.5">
+                      <p className="text-slate-600 text-xs sm:text-sm mt-0.5">
                         High-viscosity neem oil and molten paraffin wax require strict temperature
                         control (55°C–70°C). Our jacketed circulation bar prevents wax crystallization
                         and guarantees instantaneous pneumatic atomization down to 25-micron droplets.
@@ -514,10 +511,10 @@ export default function FertilizerCoolingCoatingDrumPage() {
                       <Check className="w-4 h-4" />
                     </div>
                     <div>
-                      <h4 className="text-white font-semibold text-sm">
+                      <h4 className="text-slate-950 font-semibold text-sm">
                         Loss-In-Weight Dosing Integration
                       </h4>
-                      <p className="text-slate-400 text-xs sm:text-sm mt-0.5">
+                      <p className="text-slate-600 text-xs sm:text-sm mt-0.5">
                         Coupled with variable-frequency positive displacement gear pumps, dosing rates
                         dynamically calibrate to incoming pellet mass flux, maintaining exact 0.1% to 0.3%
                         oil addition without over-coating or wet slurry buildup.
@@ -530,10 +527,10 @@ export default function FertilizerCoolingCoatingDrumPage() {
                       <Check className="w-4 h-4" />
                     </div>
                     <div>
-                      <h4 className="text-white font-semibold text-sm">
+                      <h4 className="text-slate-950 font-semibold text-sm">
                         Aerosol Containment & Zero-Fume Hood
                       </h4>
-                      <p className="text-slate-400 text-xs sm:text-sm mt-0.5">
+                      <p className="text-slate-600 text-xs sm:text-sm mt-0.5">
                         Engineered sealed end-hoods with internal demister baffles contain oil aerosol
                         mist inside the rotating drum envelope, protecting plant operators and eliminating
                         oil loss into exhaust ductwork.
@@ -545,46 +542,46 @@ export default function FertilizerCoolingCoatingDrumPage() {
 
               {/* Graphic Feature Box */}
               <div className="lg:col-span-6">
-                <div className="p-8 rounded-2xl bg-slate-900 border border-slate-700/80 shadow-xl space-y-6">
-                  <div className="flex items-center justify-between border-b border-slate-800 pb-4">
+                <div className="p-8 rounded-2xl bg-white border border-slate-200 shadow-md space-y-6">
+                  <div className="flex items-center justify-between border-b border-slate-200 pb-4">
                     <div className="flex items-center gap-2 text-amber-400 font-mono text-sm font-bold">
                       <Droplets className="w-5 h-5" />
                       <span>COATING CHEMICAL COMPATIBILITY MATRIX</span>
                     </div>
-                    <span className="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300 font-mono">
+                    <span className="text-xs px-2.5 py-1 rounded bg-slate-100 text-slate-700 font-mono font-semibold">
                       PLC Automated
                     </span>
                   </div>
 
                   <div className="space-y-4 text-xs sm:text-sm">
-                    <div className="p-3.5 rounded-lg bg-slate-800/60 border border-slate-700/50">
-                      <div className="font-bold text-white flex justify-between">
+                    <div className="p-3.5 rounded-lg bg-slate-50 border border-slate-200">
+                      <div className="font-bold text-slate-950 flex justify-between">
                         <span>Refined Neem Oil (Azadirachtin Inoculation)</span>
                         <span className="text-teal-400 font-mono">0.15% - 0.25% wt</span>
                       </div>
-                      <p className="text-slate-400 mt-1">
+                      <p className="text-slate-600 mt-1">
                         Mandatory for neem-coated urea and bio-fertilizer branding. Provides natural
                         nitrification inhibition and insect-repellent surface finish.
                       </p>
                     </div>
 
-                    <div className="p-3.5 rounded-lg bg-slate-800/60 border border-slate-700/50">
-                      <div className="font-bold text-white flex justify-between">
+                    <div className="p-3.5 rounded-lg bg-slate-50 border border-slate-200">
+                      <div className="font-bold text-slate-950 flex justify-between">
                         <span>Paraffin Wax & Microcrystalline Blends</span>
                         <span className="text-amber-400 font-mono">0.10% - 0.20% wt</span>
                       </div>
-                      <p className="text-slate-400 mt-1">
+                      <p className="text-slate-600 mt-1">
                         Molten hydrocarbon barrier sealing micropores against high relative humidity
                         (&gt;75% RH) during maritime shipping and monsoon storage.
                       </p>
                     </div>
 
-                    <div className="p-3.5 rounded-lg bg-slate-800/60 border border-slate-700/50">
-                      <div className="font-bold text-white flex justify-between">
+                    <div className="p-3.5 rounded-lg bg-slate-50 border border-slate-200">
+                      <div className="font-bold text-slate-950 flex justify-between">
                         <span>Fatty Alkyl Amines & Surfactant Formulations</span>
                         <span className="text-yellow-400 font-mono">0.05% - 0.15% wt</span>
                       </div>
-                      <p className="text-slate-400 mt-1">
+                      <p className="text-slate-600 mt-1">
                         Positively charged surfactant molecules that electrostatically neutralize
                         nitrate and potassium surface ions, halting crystal-lattice cross-linking.
                       </p>
@@ -597,16 +594,16 @@ export default function FertilizerCoolingCoatingDrumPage() {
         </section>
 
         {/* Section 3: Powder Dosing Augers for Talc & Inert Parting Powders */}
-        <section className="py-16 sm:py-20 border-b border-slate-800 bg-slate-900">
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-white">
           <Container>
             <div className="max-w-3xl mb-12">
-              <div className="text-teal-400 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
+              <div className="text-teal-700 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
                 Parting Agent Dispersion Technology
               </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-950 tracking-tight font-display">
                 Powder Dosing Augers for Talc &amp; Inert Parting Powders
               </h2>
-              <p className="text-slate-300 text-base mt-4 leading-relaxed">
+              <p className="text-slate-700 text-base mt-4 leading-relaxed">
                 Liquid oil provides moisture repellence, but liquid-only coatings can leave granules tacky.
                 Our dual-action conditioning drum incorporates an automated powder dusting zone immediately
                 following the liquid spray, creating a dry, silk-smooth exterior that flows effortlessly
@@ -615,37 +612,37 @@ export default function FertilizerCoolingCoatingDrumPage() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <div className="p-5 rounded-xl bg-slate-800/80 border border-slate-700/80 space-y-3">
+              <div className="p-5 rounded-xl bg-slate-50 border border-slate-200 space-y-3">
                 <div className="text-teal-400 font-mono font-bold text-lg">01 / Dosing Hopper</div>
-                <h4 className="text-white font-bold text-base">Vibratory Fluidized Bin</h4>
-                <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                <h4 className="text-slate-950 font-bold text-base">Vibratory Fluidized Bin</h4>
+                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
                   Integrated 150-liter SS304 surge hopper equipped with pneumatic vibrators and fluidizing
                   pads prevents bridging of cohesive talc, diatomite, or clay powders.
                 </p>
               </div>
 
-              <div className="p-5 rounded-xl bg-slate-800/80 border border-slate-700/80 space-y-3">
+              <div className="p-5 rounded-xl bg-slate-50 border border-slate-200 space-y-3">
                 <div className="text-teal-400 font-mono font-bold text-lg">02 / Screw Feeder</div>
-                <h4 className="text-white font-bold text-base">Twin Volumetric Augers</h4>
-                <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                <h4 className="text-slate-950 font-bold text-base">Twin Volumetric Augers</h4>
+                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
                   Precision inverter-driven metering screw delivers steady powder rates from 5 to 50
                   kg/hr with ±1.5% accuracy, ensuring consistent parting layer thickness.
                 </p>
               </div>
 
-              <div className="p-5 rounded-xl bg-slate-800/80 border border-slate-700/80 space-y-3">
+              <div className="p-5 rounded-xl bg-slate-50 border border-slate-200 space-y-3">
                 <div className="text-teal-400 font-mono font-bold text-lg">03 / Drum Zone 2</div>
-                <h4 className="text-white font-bold text-base">Polishing Tumble Action</h4>
-                <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                <h4 className="text-slate-950 font-bold text-base">Polishing Tumble Action</h4>
+                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
                   The drum’s downstream flighting gently rolls powder particles across the tacky oil
                   membrane, embedding the talc into a durable, non-dusting exterior shell.
                 </p>
               </div>
 
-              <div className="p-5 rounded-xl bg-slate-800/80 border border-slate-700/80 space-y-3">
+              <div className="p-5 rounded-xl bg-slate-50 border border-slate-200 space-y-3">
                 <div className="text-teal-400 font-mono font-bold text-lg">04 / Bagging Ready</div>
-                <h4 className="text-white font-bold text-base">Zero Scale Buildup</h4>
-                <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                <h4 className="text-slate-950 font-bold text-base">Zero Scale Buildup</h4>
+                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
                   Fully conditioned granules discharge completely dry to the touch, preventing fouling of
                   bagging hoppers, weigh buckets, and heat-sealing jaws.
                 </p>
@@ -655,16 +652,16 @@ export default function FertilizerCoolingCoatingDrumPage() {
         </section>
 
         {/* Section 4: Anti-Caking Mechanism Walkthrough */}
-        <section className="py-16 sm:py-20 border-b border-slate-800 bg-slate-950">
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-slate-50/60">
           <Container>
             <div className="max-w-3xl mx-auto text-center mb-14">
-              <div className="text-teal-400 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
+              <div className="text-teal-700 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
                 Continuous Finishing Line Architecture
               </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-950 tracking-tight font-display">
                 4-Stage Granule Conditioning &amp; Passivation Process
               </h2>
-              <p className="text-slate-400 text-sm sm:text-base mt-3">
+              <p className="text-slate-600 text-sm sm:text-base mt-3">
                 How Minerals Solutions MS-CCD drums transform brittle, hot, hygroscopic granules into
                 free-flowing commercial fertilizer products ready for long-haul transport.
               </p>
@@ -672,12 +669,12 @@ export default function FertilizerCoolingCoatingDrumPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {/* Step 1 */}
-              <div className="relative p-6 rounded-2xl bg-slate-900 border border-slate-800 space-y-4">
-                <div className="w-10 h-10 rounded-xl bg-teal-500/20 text-teal-400 flex items-center justify-center font-mono font-extrabold text-base">
+              <div className="relative p-6 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-4">
+                <div className="w-10 h-10 rounded-xl bg-teal-100 text-teal-800 flex items-center justify-center font-mono font-extrabold text-base">
                   01
                 </div>
-                <h3 className="text-lg font-bold text-white">Counter-Current Thermal Cooling</h3>
-                <p className="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                <h3 className="text-lg font-bold text-slate-950">Counter-Current Thermal Cooling</h3>
+                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
                   Hot granules at 75°C–85°C enter through the feed trunnion. Ambient air pulled by an
                   induced draft fan sweeps across the cascading granule curtain, rapidly lowering bulk
                   temperature below 40°C.
@@ -686,12 +683,12 @@ export default function FertilizerCoolingCoatingDrumPage() {
               </div>
 
               {/* Step 2 */}
-              <div className="relative p-6 rounded-2xl bg-slate-900 border border-slate-800 space-y-4">
-                <div className="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center font-mono font-extrabold text-base">
+              <div className="relative p-6 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-4">
+                <div className="w-10 h-10 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-mono font-extrabold text-base">
                   02
                 </div>
-                <h3 className="text-lg font-bold text-white">Micro-Atomized Liquid Coating</h3>
-                <p className="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                <h3 className="text-lg font-bold text-slate-950">Micro-Atomized Liquid Coating</h3>
+                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
                   Thermally stabilized granules pass under pneumatic heated spray nozzles. Metered neem oil
                   or paraffin wax is atomized into a 25-micron aerosol, wrapping each pellet in a hydrophobic
                   lipid film.
@@ -700,12 +697,12 @@ export default function FertilizerCoolingCoatingDrumPage() {
               </div>
 
               {/* Step 3 */}
-              <div className="relative p-6 rounded-2xl bg-slate-900 border border-slate-800 space-y-4">
-                <div className="w-10 h-10 rounded-xl bg-yellow-500/20 text-yellow-400 flex items-center justify-center font-mono font-extrabold text-base">
+              <div className="relative p-6 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-4">
+                <div className="w-10 h-10 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-mono font-extrabold text-base">
                   03
                 </div>
-                <h3 className="text-lg font-bold text-white">Dry Parting Powder Dusting</h3>
-                <p className="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                <h3 className="text-lg font-bold text-slate-950">Dry Parting Powder Dusting</h3>
+                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
                   A high-accuracy metering screw injects micronized talcum, silica, or diatomite dust directly
                   into the tumbling bed. The powder electrostatically adheres to the oily film, locking the
                   protective barrier.
@@ -714,12 +711,12 @@ export default function FertilizerCoolingCoatingDrumPage() {
               </div>
 
               {/* Step 4 */}
-              <div className="relative p-6 rounded-2xl bg-slate-900 border border-slate-800 space-y-4">
-                <div className="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-mono font-extrabold text-base">
+              <div className="relative p-6 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-4">
+                <div className="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center font-mono font-extrabold text-base">
                   04
                 </div>
-                <h3 className="text-lg font-bold text-white">Spiral Baffle Polishing &amp; Discharge</h3>
-                <p className="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                <h3 className="text-lg font-bold text-slate-950">Spiral Baffle Polishing &amp; Discharge</h3>
+                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
                   The final polishing flight zone gently tumbles pellets against one another to buff out
                   microscopic imperfections and discharge free-flowing granules directly to the packaging
                   elevator or bagging bin.
@@ -731,16 +728,16 @@ export default function FertilizerCoolingCoatingDrumPage() {
         </section>
 
         {/* Section 5: Technical Specifications & Sizing Matrix */}
-        <section className="py-16 sm:py-20 border-b border-slate-800 bg-slate-900">
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-white">
           <Container>
             <div className="max-w-3xl mb-12">
-              <div className="text-teal-400 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
+              <div className="text-teal-700 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
                 Engineering Sizing &amp; Parameters
               </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-950 tracking-tight font-display">
                 Technical Specifications &amp; Sizing Matrix (MS-CCD Series)
               </h2>
-              <p className="text-slate-300 text-base mt-4 leading-relaxed">
+              <p className="text-slate-700 text-base mt-4 leading-relaxed">
                 Fabricated to heavy-duty industrial standards at our Zak GIDC, Dahegam facility.
                 All models feature machined riding tyres, forged alloy support rollers, precision gear drives,
                 and optional SS304 stainless steel internals for high-corrosion chemical formulations.
@@ -748,11 +745,11 @@ export default function FertilizerCoolingCoatingDrumPage() {
             </div>
 
             {/* Responsive Table Container */}
-            <div className="overflow-x-auto rounded-xl border border-slate-700/80 shadow-2xl bg-slate-950">
-              <table className="w-full text-left text-xs sm:text-sm text-slate-300">
-                <thead className="bg-slate-800/90 text-slate-100 font-mono text-xs uppercase tracking-wider border-b border-slate-700">
+            <div className="overflow-x-auto rounded-xl border border-slate-200 shadow-xs bg-white">
+              <table className="w-full text-left text-xs sm:text-sm text-slate-700">
+                <thead className="bg-slate-100 text-slate-800 font-mono text-xs uppercase tracking-wider border-b border-slate-200">
                   <tr>
-                    <th className="py-4 px-4 font-bold text-white">Model</th>
+                    <th className="py-4 px-4 font-bold text-slate-950">Model</th>
                     <th className="py-4 px-4 font-bold text-teal-400">Capacity (TPH)</th>
                     <th className="py-4 px-4">Drum Dimensions (Dia &times; L)</th>
                     <th className="py-4 px-4">Drive Power</th>
@@ -762,17 +759,17 @@ export default function FertilizerCoolingCoatingDrumPage() {
                     <th className="py-4 px-4">Total Weight</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-slate-800 font-mono">
+                <tbody className="divide-y divide-slate-200 font-mono">
                   {ccdSpecs.map((spec, idx) => (
                     <tr
                       key={spec.model}
                       className={
                         idx % 2 === 0
-                          ? 'bg-slate-950/60 hover:bg-slate-800/50 transition-colors'
-                          : 'bg-slate-900/60 hover:bg-slate-800/50 transition-colors'
+                          ? 'bg-white hover:bg-slate-50 transition-colors'
+                          : 'bg-slate-50/60 hover:bg-slate-100/70 transition-colors'
                       }
                     >
-                      <td className="py-4 px-4 font-bold text-white">{spec.model}</td>
+                      <td className="py-4 px-4 font-bold text-slate-950">{spec.model}</td>
                       <td className="py-4 px-4 font-bold text-teal-400">{spec.capacity}</td>
                       <td className="py-4 px-4">
                         {spec.diameter} &times; {spec.length}
@@ -781,14 +778,14 @@ export default function FertilizerCoolingCoatingDrumPage() {
                       <td className="py-4 px-4">{spec.coolingAirflow}</td>
                       <td className="py-4 px-4 text-amber-300">{spec.nozzleZones}</td>
                       <td className="py-4 px-4">{spec.shellThickness}</td>
-                      <td className="py-4 px-4 text-slate-400">{spec.weight}</td>
+                      <td className="py-4 px-4 text-slate-600">{spec.weight}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
 
-            <div className="mt-4 flex flex-wrap items-center justify-between gap-4 text-xs text-slate-400 font-mono">
+            <div className="mt-4 flex flex-wrap items-center justify-between gap-4 text-xs text-slate-500 font-mono">
               <div>* Custom drum lengths, variable speed VFD drives, and SS316 food-grade contact metallurgy available on request.</div>
               <div className="text-teal-400">Certified IS 2062 Grade B Steel Shell Fabrication</div>
             </div>
@@ -796,16 +793,16 @@ export default function FertilizerCoolingCoatingDrumPage() {
         </section>
 
         {/* Section 6: Warehouse Shelf-Life Demonstration (Untreated vs Coated) */}
-        <section className="py-16 sm:py-20 border-b border-slate-800 bg-slate-950/70">
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-slate-50/60">
           <Container>
             <div className="max-w-3xl mb-12">
-              <div className="text-amber-400 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
+              <div className="text-teal-700 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
                 Storage Stability Comparison
               </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-950 tracking-tight font-display">
                 Preventing Moisture Reabsorption &amp; Bag Caking in Warehouse Storage
               </h2>
-              <p className="text-slate-300 text-base mt-4 leading-relaxed">
+              <p className="text-slate-700 text-base mt-4 leading-relaxed">
                 Chemical fertilizers containing ammonium nitrate, urea, or potassium chloride are
                 inherently hygroscopic. In humid monsoon climates (relative humidity &gt;75%), untreated
                 granules absorb water vapor and cake into hard blocks. The MS-CCD coating drum creates an
@@ -817,18 +814,18 @@ export default function FertilizerCoolingCoatingDrumPage() {
               {/* Failure State Card */}
               <div className="p-8 rounded-2xl bg-rose-950/20 border border-rose-800/40 space-y-5">
                 <div className="flex items-center gap-3">
-                  <div className="p-2.5 rounded-xl bg-rose-500/20 text-rose-400">
+                  <div className="p-2.5 rounded-xl bg-rose-100 text-rose-700">
                     <ShieldAlert className="w-6 h-6" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-white">Untreated / Uncooled Fertilizer</h3>
+                    <h3 className="text-lg font-bold text-slate-950">Untreated / Uncooled Fertilizer</h3>
                     <div className="text-xs text-rose-400 font-mono font-semibold">
                       Direct Bagged at 75°C without Coating
                     </div>
                   </div>
                 </div>
 
-                <ul className="space-y-3 text-xs sm:text-sm text-slate-300">
+                <ul className="space-y-3 text-xs sm:text-sm text-slate-700">
                   <li className="flex items-start gap-2.5">
                     <span className="text-rose-500 font-bold">&times;</span>
                     <span>
@@ -867,18 +864,18 @@ export default function FertilizerCoolingCoatingDrumPage() {
               {/* Success State Card */}
               <div className="p-8 rounded-2xl bg-teal-950/20 border border-teal-800/40 space-y-5">
                 <div className="flex items-center gap-3">
-                  <div className="p-2.5 rounded-xl bg-teal-500/20 text-teal-400">
+                  <div className="p-2.5 rounded-xl bg-teal-100 text-teal-800">
                     <ShieldCheck className="w-6 h-6" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-white">MS-CCD Conditioned Fertilizer</h3>
+                    <h3 className="text-lg font-bold text-slate-950">MS-CCD Conditioned Fertilizer</h3>
                     <div className="text-xs text-teal-400 font-mono font-semibold">
                       Cooled to &lt;40°C + Atomized Neem Oil &amp; Talc
                     </div>
                   </div>
                 </div>
 
-                <ul className="space-y-3 text-xs sm:text-sm text-slate-300">
+                <ul className="space-y-3 text-xs sm:text-sm text-slate-700">
                   <li className="flex items-start gap-2.5">
                     <Check className="w-4 h-4 text-teal-400 shrink-0 mt-0.5" />
                     <span>
@@ -918,17 +915,17 @@ export default function FertilizerCoolingCoatingDrumPage() {
         </section>
 
         {/* Section 7: Workshop Quality Control & Manufacturing Proof */}
-        <section className="py-16 sm:py-20 border-b border-slate-800 bg-slate-900">
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-white">
           <Container>
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
               <div className="lg:col-span-6 space-y-6">
-                <div className="text-teal-400 font-mono text-xs uppercase tracking-wider font-semibold">
+                <div className="text-teal-700 font-mono text-xs uppercase tracking-wider font-semibold">
                   Precision Workshop Fabrication
                 </div>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-950 tracking-tight font-display">
                   Dynamic Balancing &amp; Heavy Mechanical Engineering
                 </h2>
-                <p className="text-slate-300 text-base leading-relaxed">
+                <p className="text-slate-700 text-base leading-relaxed">
                   Every Minerals Solutions cooling and coating drum is fabricated under strict quality
                   protocols at our 10, Shyam Estate, Zak GIDC, Dahegam manufacturing facility. From
                   ultrasonic weld testing to CNC-machined riding rings, our drums are engineered for 24/7
@@ -936,33 +933,33 @@ export default function FertilizerCoolingCoatingDrumPage() {
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-                  <div className="p-4 rounded-xl bg-slate-800/80 border border-slate-700/80 space-y-2">
-                    <div className="text-teal-400 font-bold text-sm">42CrMo Forged Tyres</div>
-                    <p className="text-slate-400 text-xs leading-relaxed">
+                  <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+                    <div className="text-teal-700 font-bold text-sm">42CrMo Forged Tyres</div>
+                    <p className="text-slate-600 text-xs leading-relaxed">
                       Solid forged alloy steel riding rings machined to tight concentric tolerances
                       prevent radial wobble and ensure smooth, vibration-free rotation.
                     </p>
                   </div>
 
-                  <div className="p-4 rounded-xl bg-slate-800/80 border border-slate-700/80 space-y-2">
-                    <div className="text-teal-400 font-bold text-sm">Plummer Block Rollers</div>
-                    <p className="text-slate-400 text-xs leading-relaxed">
+                  <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+                    <div className="text-teal-700 font-bold text-sm">Plummer Block Rollers</div>
+                    <p className="text-slate-600 text-xs leading-relaxed">
                       Heavy cast steel trunnion rollers mounted on spherical roller bearings with grease
                       lubrication and bronze thrust collars to absorb longitudinal thrust loads.
                     </p>
                   </div>
 
-                  <div className="p-4 rounded-xl bg-slate-800/80 border border-slate-700/80 space-y-2">
-                    <div className="text-teal-400 font-bold text-sm">Machined Girth Drive</div>
-                    <p className="text-slate-400 text-xs leading-relaxed">
+                  <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+                    <div className="text-teal-700 font-bold text-sm">Machined Girth Drive</div>
+                    <p className="text-slate-600 text-xs leading-relaxed">
                       Cast steel ring gear paired with hardened alloy pinion, driven by a heavy helical
                       gearbox and variable frequency motor for infinite speed regulation.
                     </p>
                   </div>
 
-                  <div className="p-4 rounded-xl bg-slate-800/80 border border-slate-700/80 space-y-2">
-                    <div className="text-teal-400 font-bold text-sm">Flush Internal Welds</div>
-                    <p className="text-slate-400 text-xs leading-relaxed">
+                  <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+                    <div className="text-teal-700 font-bold text-sm">Flush Internal Welds</div>
+                    <p className="text-slate-600 text-xs leading-relaxed">
                       Internal seam welds are ground perfectly flush before flight installation to prevent
                       granule snagging, stagnation, or sticky paste buildup inside the drum.
                     </p>
@@ -972,7 +969,7 @@ export default function FertilizerCoolingCoatingDrumPage() {
 
               {/* Workshop Images Gallery */}
               <div className="lg:col-span-6 space-y-4">
-                <div className="relative aspect-[16/9] rounded-xl overflow-hidden border border-slate-700/80 shadow-lg">
+                <div className="relative aspect-[16/9] rounded-xl overflow-hidden border border-slate-200 shadow-md">
                   <Image
                     src="/images/products/rotary-dryers/continuous-type-rotary-dryer-lg.webp"
                     alt="Heavy industrial rotary drum cylinder undergoing precision tyre machining and balancing at Minerals Solutions Zak GIDC Dahegam workshop" width={800} height={600}
@@ -986,7 +983,7 @@ export default function FertilizerCoolingCoatingDrumPage() {
                 </div>
 
                 <div className="grid grid-cols-2 gap-4">
-                  <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-slate-700/80 shadow-lg">
+                  <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-slate-200 shadow-md">
                     <Image
                       src="/images/products/fertilizer-pellet/fertilizer-granulation-plant-primary-lg.webp"
                       alt="Turnkey fertilizer granulation and finishing plant assembly line including cooling and coating units" width={800} height={600}
@@ -999,7 +996,7 @@ export default function FertilizerCoolingCoatingDrumPage() {
                     </div>
                   </div>
 
-                  <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-slate-700/80 shadow-lg">
+                  <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-slate-200 shadow-md">
                     <Image
                       src="/images/products/rotary-dryers/roto-louvre-dryer-lg.webp"
                       alt="Rotary drum internal air manifold and flighting inspection at Zak GIDC" width={800} height={600}
@@ -1109,7 +1106,7 @@ export default function FertilizerCoolingCoatingDrumPage() {
         </section>
 
         {/* Section 9: Engineering Sizing & RFQ Form */}
-        <section className="py-16 sm:py-20 border-b border-slate-800 bg-slate-900">
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-slate-50/60">
           <Container>
             <div className="max-w-4xl mx-auto p-8 sm:p-12 rounded-3xl bg-slate-950 border border-teal-500/40 shadow-2xl relative overflow-hidden">
               <div className="absolute top-0 right-0 w-80 h-80 bg-teal-500/10 rounded-full blur-3xl pointer-events-none" />
@@ -1150,7 +1147,7 @@ export default function FertilizerCoolingCoatingDrumPage() {
                   </Button>
                 </div>
 
-                <div className="pt-6 border-t border-slate-800/80 text-xs text-slate-400 font-mono flex flex-wrap justify-center gap-6">
+                <div className="pt-6 border-t border-slate-200/80 text-xs text-slate-400 font-mono flex flex-wrap justify-center gap-6">
                   <span>GSTIN: 24AUSPP9555F1ZZ</span>
                   <span>•</span>
                   <span>Factory: Zak GIDC, Dahegam, Gandhinagar</span>
@@ -1163,16 +1160,16 @@ export default function FertilizerCoolingCoatingDrumPage() {
         </section>
 
         {/* Section 10: Frequently Asked Questions */}
-        <section className="py-16 sm:py-20 bg-slate-950">
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-white">
           <Container>
             <div className="max-w-3xl mx-auto text-center mb-12">
-              <div className="text-teal-400 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
+              <div className="text-teal-700 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
                 Knowledge Base &amp; Specifications
               </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-950 tracking-tight font-display">
                 Frequently Asked Questions on Fertilizer Conditioning Drums
               </h2>
-              <p className="text-slate-400 text-sm sm:text-base mt-3">
+              <p className="text-slate-600 text-sm sm:text-base mt-3">
                 Expert technical answers on thermal cooling limits, neem oil dosing rates, dust collection,
                 and retrofit installation.
               </p>
@@ -1182,13 +1179,13 @@ export default function FertilizerCoolingCoatingDrumPage() {
               {faqs.map((faq, idx) => (
                 <div
                   key={idx}
-                  className="p-6 rounded-2xl bg-slate-900/90 border border-slate-800 space-y-3"
+                  className="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-3"
                 >
-                  <h3 className="text-base sm:text-lg font-bold text-white flex items-start gap-3">
+                  <h3 className="text-base sm:text-lg font-bold text-slate-950 flex items-start gap-3">
                     <span className="text-teal-400 font-mono text-sm mt-0.5">0{idx + 1}.</span>
                     <span>{faq.q}</span>
                   </h3>
-                  <p className="text-slate-300 text-sm sm:text-base leading-relaxed pl-7">
+                  <p className="text-slate-600 text-sm sm:text-base leading-relaxed pl-7">
                     {faq.a}
                   </p>
                 </div>

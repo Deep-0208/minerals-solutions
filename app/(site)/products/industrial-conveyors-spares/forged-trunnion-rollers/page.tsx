@@ -258,12 +258,11 @@ export default function ForgedTrunnionRollersPage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqSchema} />
 
-      <main className="min-h-screen bg-slate-900 text-slate-100">
+      <main className="min-h-screen bg-white text-slate-900">
         {/* Breadcrumb Navigation Bar */}
-        <div className="border-b border-slate-800 bg-slate-950/70 backdrop-blur-md">
+        <section className="bg-slate-50 border-b border-slate-200 py-3">
           <Container>
-            <div className="py-3">
-              <Breadcrumbs
+            <Breadcrumbs
                 items={[
                   { label: 'Home', href: '/' },
                   { label: 'Products', href: '/products/' },
@@ -277,13 +276,11 @@ export default function ForgedTrunnionRollersPage() {
                   },
                 ]}
               />
-            </div>
-          </Container>
-        </div>
+            </Container>
+          </section>
 
         {/* Hero Section */}
-        <section className="relative overflow-hidden pt-12 pb-20 lg:pt-16 lg:pb-28 border-b border-slate-800 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-900">
-          <div className="absolute inset-0 bg-[radial-gradient(#38bdf8_1px,transparent_1px)] [background-size:24px_24px] opacity-10 pointer-events-none" />
+        <section className="relative pt-8 pb-14 lg:pt-12 lg:pb-20 border-b border-slate-200 overflow-hidden bg-gradient-to-b from-amber-50/40 via-white to-white">
 
           <Container>
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -294,14 +291,14 @@ export default function ForgedTrunnionRollersPage() {
                   100% Ultrasonic Tested Forging | 280-320 BHN Hardened Face
                 </div>
 
-                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-slate-950 font-display">
                   Forged Steel Rotary Dryer Support Rollers &amp;{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-cyan-300 to-blue-500">
                     Kiln Running Gear
                   </span>
                 </h1>
 
-                <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-normal">
+                <p className="text-base sm:text-lg text-slate-700 leading-relaxed font-normal">
                   Heavy-duty aftermarket replacement trunnion support rollers, riding tyres, thrust
                   rollers, and precision machined girth gears. Precision forged from EN-8, EN-9, and 42CrMo4
                   alloy steel, induction hardened to 280–320 BHN, and dynamically balanced at our Zak GIDC,
@@ -310,44 +307,44 @@ export default function ForgedTrunnionRollersPage() {
 
                 {/* Key Metric Chips */}
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
-                  <div className="p-3.5 rounded-lg bg-slate-800/80 border border-slate-700/80 shadow-sm">
-                    <div className="text-xs text-slate-400 font-mono uppercase tracking-wider">
+                  <div className="p-3 sm:p-3.5 rounded-lg bg-white border border-slate-200 shadow-xs">
+                    <div className="text-xs text-slate-500 font-mono uppercase tracking-wider">
                       Diameter Range
                     </div>
                     <div className="text-xl sm:text-2xl font-black text-sky-400 mt-1">
                       250 - 1,200mm
                     </div>
-                    <div className="text-[11px] text-slate-400">10&quot; to 48&quot; Face</div>
+                    <div className="text-[11px] text-slate-500">10&quot; to 48&quot; Face</div>
                   </div>
 
-                  <div className="p-3.5 rounded-lg bg-slate-800/80 border border-slate-700/80 shadow-sm">
-                    <div className="text-xs text-slate-400 font-mono uppercase tracking-wider">
+                  <div className="p-3 sm:p-3.5 rounded-lg bg-white border border-slate-200 shadow-xs">
+                    <div className="text-xs text-slate-500 font-mono uppercase tracking-wider">
                       Surface Hardness
                     </div>
                     <div className="text-xl sm:text-2xl font-black text-cyan-400 mt-1">
                       280 - 320 BHN
                     </div>
-                    <div className="text-[11px] text-slate-400">Induction Hardened</div>
+                    <div className="text-[11px] text-slate-500">Induction Hardened</div>
                   </div>
 
-                  <div className="p-3.5 rounded-lg bg-slate-800/80 border border-slate-700/80 shadow-sm">
-                    <div className="text-xs text-slate-400 font-mono uppercase tracking-wider">
+                  <div className="p-3 sm:p-3.5 rounded-lg bg-white border border-slate-200 shadow-xs">
+                    <div className="text-xs text-slate-500 font-mono uppercase tracking-wider">
                       NDT Quality
                     </div>
-                    <div className="text-xl sm:text-2xl font-black text-white mt-1">
+                    <div className="text-xl sm:text-2xl font-bold text-slate-900 mt-1">
                       100% UT Tested
                     </div>
-                    <div className="text-[11px] text-slate-400">ASTM A388 Standard</div>
+                    <div className="text-[11px] text-slate-500">ASTM A388 Standard</div>
                   </div>
 
-                  <div className="p-3.5 rounded-lg bg-slate-800/80 border border-slate-700/80 shadow-sm">
-                    <div className="text-xs text-slate-400 font-mono uppercase tracking-wider">
+                  <div className="p-3 sm:p-3.5 rounded-lg bg-white border border-slate-200 shadow-xs">
+                    <div className="text-xs text-slate-500 font-mono uppercase tracking-wider">
                       Bearing Fit
                     </div>
                     <div className="text-xl sm:text-2xl font-black text-emerald-400 mt-1">
                       SKF / FAG
                     </div>
-                    <div className="text-[11px] text-slate-400">Spherical Roller</div>
+                    <div className="text-[11px] text-slate-500">Spherical Roller</div>
                   </div>
                 </div>
 
@@ -375,7 +372,7 @@ export default function ForgedTrunnionRollersPage() {
 
               {/* Right Column: Visual Frame */}
               <div className="lg:col-span-5 relative">
-                <div className="relative rounded-2xl overflow-hidden border border-slate-700/80 bg-slate-950 shadow-2xl">
+                <div className="relative rounded-2xl overflow-hidden border border-slate-300/80 bg-slate-900 shadow-xl">
                   <div className="relative aspect-[4/3] w-full">
                     <Image
                       src="/images/products/mechanical-spares/dryer-trunnion-support-roller-lg.webp"
@@ -384,10 +381,10 @@ export default function ForgedTrunnionRollersPage() {
                       className="object-cover"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
+                    
                   </div>
 
-                  <div className="p-5 border-t border-slate-800 bg-slate-900/90 space-y-2">
+                  <div className="p-4 bg-slate-950/90 border-t border-slate-800 text-white flex items-center justify-between">
                     <div className="flex items-center justify-between text-xs text-slate-400 font-mono">
                       <span>SERIES: MS-TR-600</span>
                       <span className="text-sky-400 font-bold">50 TONNE CAPACITY PAIR</span>
@@ -419,16 +416,16 @@ export default function ForgedTrunnionRollersPage() {
         </section>
 
         {/* Section 1: Precision Metallurgy: EN-8, EN-9 & 42CrMo4 Alloy Forgings */}
-        <section className="py-16 sm:py-20 border-b border-slate-800 bg-slate-900">
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-white">
           <Container>
             <div className="max-w-3xl mb-12">
               <div className="text-sky-400 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
                 Heavy Forging Science &amp; Grain Flow
               </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-950 tracking-tight font-display">
                 Precision Metallurgy: EN-8, EN-9 &amp; 42CrMo4 Alloy Forgings
               </h2>
-              <p className="text-slate-300 text-base mt-4 leading-relaxed">
+              <p className="text-slate-700 text-base mt-4 leading-relaxed">
                 Inferior cast iron support rollers are the leading cause of sudden catastrophic rim shearing
                 and unplanned plant outages. Minerals Solutions manufactures support rollers exclusively from
                 open-die forged carbon alloy billets with continuous tangential grain flow:
@@ -436,12 +433,12 @@ export default function ForgedTrunnionRollersPage() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="p-6 rounded-xl bg-slate-800/80 border border-slate-700/80 space-y-4">
+              <div className="p-6 rounded-xl bg-slate-50 border border-slate-200 space-y-4">
                 <div className="w-12 h-12 rounded-lg bg-sky-500/10 text-sky-400 flex items-center justify-center">
                   <Disc className="w-6 h-6" />
                 </div>
-                <h3 className="text-lg font-bold text-white">Continuous Tangential Grain Flow</h3>
-                <p className="text-slate-300 text-sm leading-relaxed">
+                <h3 className="text-lg font-bold text-slate-950">Continuous Tangential Grain Flow</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">
                   Open-die hydraulic forging compresses raw steel billets by a minimum 3:1 reduction ratio.
                   This process closes all internal ingot porosity, aligns grain boundaries circumferentially
                   along the rolling surface, and increases impact fracture toughness by over 250% compared
@@ -449,12 +446,12 @@ export default function ForgedTrunnionRollersPage() {
                 </p>
               </div>
 
-              <div className="p-6 rounded-xl bg-slate-800/80 border border-slate-700/80 space-y-4">
+              <div className="p-6 rounded-xl bg-slate-50 border border-slate-200 space-y-4">
                 <div className="w-12 h-12 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center">
                   <ShieldCheck className="w-6 h-6" />
                 </div>
-                <h3 className="text-lg font-bold text-white">Calibrated 30-40 BHN Hardness Delta</h3>
-                <p className="text-slate-300 text-sm leading-relaxed">
+                <h3 className="text-lg font-bold text-slate-950">Calibrated 30-40 BHN Hardness Delta</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">
                   In rotating machinery physics, the support roller must act as the sacrificial member.
                   We precision-harden rollers to 280–320 BHN against 320–360 BHN tyres. This controlled
                   differential prevents tyre scalloping, eliminating the massive capital expenditure of
@@ -462,12 +459,12 @@ export default function ForgedTrunnionRollersPage() {
                 </p>
               </div>
 
-              <div className="p-6 rounded-xl bg-slate-800/80 border border-slate-700/80 space-y-4">
-                <div className="w-12 h-12 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center">
+              <div className="p-6 rounded-xl bg-slate-50 border border-slate-200 space-y-4">
+                <div className="w-12 h-12 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center">
                   <Eye className="w-6 h-6" />
                 </div>
-                <h3 className="text-lg font-bold text-white">100% Ultrasonic Flaw Testing (NDT)</h3>
-                <p className="text-slate-300 text-sm leading-relaxed">
+                <h3 className="text-lg font-bold text-slate-950">100% Ultrasonic Flaw Testing (NDT)</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">
                   Every forged blank is subjected to rigorous ultrasonic testing (UT) in accordance with
                   ASTM A388 / IS 2478 standards. Digital pulse-echo probes scan 100% of the internal volume,
                   certifying complete freedom from sub-surface inclusions, hydrogen flakes, and thermal cracks
@@ -479,17 +476,17 @@ export default function ForgedTrunnionRollersPage() {
         </section>
 
         {/* Section 2: Induction Hardening & Ultrasonic Flaw Testing */}
-        <section className="py-16 sm:py-20 border-b border-slate-800 bg-slate-950/70">
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-slate-50/60">
           <Container>
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
               <div className="lg:col-span-6 space-y-6">
                 <div className="text-cyan-400 font-mono text-xs uppercase tracking-wider font-semibold">
                   Thermal Heat Treatment &amp; Stress Relief
                 </div>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-950 tracking-tight font-display">
                   Induction Hardening (280–320 BHN) &amp; Stress Relief
                 </h2>
-                <p className="text-slate-300 text-base leading-relaxed">
+                <p className="text-slate-700 text-base leading-relaxed">
                   Through-hardening makes rollers brittle and prone to catastrophic rim fracture under shock
                   loads. Minerals Solutions applies precision medium-frequency induction scanning that creates
                   a glass-hard, wear-resistant outer skin while preserving a ductile, shock-absorbing inner core.
@@ -501,10 +498,10 @@ export default function ForgedTrunnionRollersPage() {
                       <Check className="w-4 h-4" />
                     </div>
                     <div>
-                      <h4 className="text-white font-semibold text-sm">
+                      <h4 className="text-slate-950 font-semibold text-sm">
                         3mm to 5mm Effective Case Depth
                       </h4>
-                      <p className="text-slate-400 text-xs sm:text-sm mt-0.5">
+                      <p className="text-slate-600 text-xs sm:text-sm mt-0.5">
                         Induction heating coils heat the rolling circumference above 860°C followed by
                         immediate high-pressure polymer quenchant spray. The resulting martensitic case
                         depth (3–5mm) withstands years of heavy continuous rolling without peeling or spalling.
@@ -517,10 +514,10 @@ export default function ForgedTrunnionRollersPage() {
                       <Check className="w-4 h-4" />
                     </div>
                     <div>
-                      <h4 className="text-white font-semibold text-sm">
+                      <h4 className="text-slate-950 font-semibold text-sm">
                         Sub-Zero Tempering &amp; Stress Relieving
                       </h4>
-                      <p className="text-slate-400 text-xs sm:text-sm mt-0.5">
+                      <p className="text-slate-600 text-xs sm:text-sm mt-0.5">
                         Immediately following induction quenching, rollers undergo 6-hour electric furnace
                         tempering at 220°C to relieve residual thermal stresses, stabilize retained austenite,
                         and eliminate dimensional distortion during subsequent precision grinding.
@@ -533,10 +530,10 @@ export default function ForgedTrunnionRollersPage() {
                       <Check className="w-4 h-4" />
                     </div>
                     <div>
-                      <h4 className="text-white font-semibold text-sm">
+                      <h4 className="text-slate-950 font-semibold text-sm">
                         Shaft Normalizing &amp; Radiused Fillets
                       </h4>
-                      <p className="text-slate-400 text-xs sm:text-sm mt-0.5">
+                      <p className="text-slate-600 text-xs sm:text-sm mt-0.5">
                         Central drive and idler axles are forged from EN-9 / 40Cr carbon steel, normalized to
                         refine grain size, and machined with generous transition fillet radii (&gt;15mm) to
                         eliminate stress concentration notches that trigger fatigue failure.
@@ -548,46 +545,46 @@ export default function ForgedTrunnionRollersPage() {
 
               {/* Engineering Feature Box */}
               <div className="lg:col-span-6">
-                <div className="p-8 rounded-2xl bg-slate-900 border border-slate-700/80 shadow-xl space-y-6">
-                  <div className="flex items-center justify-between border-b border-slate-800 pb-4">
+                <div className="p-8 rounded-2xl bg-white border border-slate-200 shadow-md space-y-6">
+                  <div className="flex items-center justify-between border-b border-slate-200 pb-4">
                     <div className="flex items-center gap-2 text-sky-400 font-mono text-sm font-bold">
                       <Scale className="w-5 h-5" />
                       <span>METALLURGY COMPARISON SPECIFICATION</span>
                     </div>
-                    <span className="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300 font-mono">
+                    <span className="text-xs px-2.5 py-1 rounded bg-slate-100 text-slate-700 font-mono font-semibold">
                       Lab Tested
                     </span>
                   </div>
 
                   <div className="space-y-4 text-xs sm:text-sm">
-                    <div className="p-3.5 rounded-lg bg-slate-800/60 border border-slate-700/50">
-                      <div className="font-bold text-white flex justify-between">
+                    <div className="p-3.5 rounded-lg bg-slate-50 border border-slate-200">
+                      <div className="font-bold text-slate-950 flex justify-between">
                         <span>Minerals Solutions Forged 42CrMo4</span>
                         <span className="text-emerald-400 font-mono">PREMIUM GRADE</span>
                       </div>
-                      <p className="text-slate-400 mt-1">
+                      <p className="text-slate-600 mt-1">
                         Tensile Strength: 900–1100 MPa | Yield: &gt;750 MPa | Hardness: 280–320 BHN.
                         Zero internal porosity, high shock resistance for heavy kilns and calciners.
                       </p>
                     </div>
 
-                    <div className="p-3.5 rounded-lg bg-slate-800/60 border border-slate-700/50">
-                      <div className="font-bold text-white flex justify-between">
+                    <div className="p-3.5 rounded-lg bg-slate-50 border border-slate-200">
+                      <div className="font-bold text-slate-950 flex justify-between">
                         <span>Minerals Solutions Forged EN-8 / EN-9</span>
                         <span className="text-sky-400 font-mono">STANDARD HEAVY</span>
                       </div>
-                      <p className="text-slate-400 mt-1">
+                      <p className="text-slate-600 mt-1">
                         Tensile Strength: 650–850 MPa | Yield: &gt;450 MPa | Hardness: 260–300 BHN.
                         Excellent general-purpose workhorse for sand dryers, bio-pellet drums, and granulators.
                       </p>
                     </div>
 
-                    <div className="p-3.5 rounded-lg bg-slate-800/60 border border-slate-700/50">
-                      <div className="font-bold text-white flex justify-between">
+                    <div className="p-3.5 rounded-lg bg-slate-50 border border-slate-200">
+                      <div className="font-bold text-slate-950 flex justify-between">
                         <span>Common Market Cast Iron / Spheroidal Graphite</span>
                         <span className="text-rose-400 font-mono">HIGH RISK</span>
                       </div>
-                      <p className="text-slate-400 mt-1">
+                      <p className="text-slate-600 mt-1">
                         Tensile Strength: 350–500 MPa | High susceptibility to internal blowholes, brittle
                         fracture under cyclic Hertzian shear stress, and rapid surface spalling.
                       </p>
@@ -600,16 +597,16 @@ export default function ForgedTrunnionRollersPage() {
         </section>
 
         {/* Section 3: Technical Specifications & Sizing Matrix */}
-        <section className="py-16 sm:py-20 border-b border-slate-800 bg-slate-900">
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-white">
           <Container>
             <div className="max-w-3xl mb-12">
               <div className="text-sky-400 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
                 Engineering Sizing &amp; Parameters
               </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-950 tracking-tight font-display">
                 Technical Specifications &amp; Dimensional Standards (MS-TR Series)
               </h2>
-              <p className="text-slate-300 text-base mt-4 leading-relaxed">
+              <p className="text-slate-700 text-base mt-4 leading-relaxed">
                 Standard dimension tables for Minerals Solutions trunnion support roller assemblies.
                 Every assembly includes the forged roller, heat-treated shaft, heavy cast steel plummer blocks,
                 spherical roller bearings, and bronze thrust rings:
@@ -617,11 +614,11 @@ export default function ForgedTrunnionRollersPage() {
             </div>
 
             {/* Responsive Table Container */}
-            <div className="overflow-x-auto rounded-xl border border-slate-700/80 shadow-2xl bg-slate-950">
-              <table className="w-full text-left text-xs sm:text-sm text-slate-300">
-                <thead className="bg-slate-800/90 text-slate-100 font-mono text-xs uppercase tracking-wider border-b border-slate-700">
+            <div className="overflow-x-auto rounded-xl border border-slate-200 shadow-xs bg-white">
+              <table className="w-full text-left text-xs sm:text-sm text-slate-700">
+                <thead className="bg-slate-100 text-slate-800 font-mono text-xs uppercase tracking-wider border-b border-slate-200">
                   <tr>
-                    <th className="py-4 px-4 font-bold text-white">Model</th>
+                    <th className="py-4 px-4 font-bold text-slate-950">Model</th>
                     <th className="py-4 px-4 font-bold text-sky-400">Roller Dia</th>
                     <th className="py-4 px-4">Face Width</th>
                     <th className="py-4 px-4">Shaft Dia</th>
@@ -631,31 +628,31 @@ export default function ForgedTrunnionRollersPage() {
                     <th className="py-4 px-4">Metallurgy</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-slate-800 font-mono">
+                <tbody className="divide-y divide-slate-200 font-mono">
                   {trSpecs.map((spec, idx) => (
                     <tr
                       key={spec.model}
                       className={
                         idx % 2 === 0
-                          ? 'bg-slate-950/60 hover:bg-slate-800/50 transition-colors'
-                          : 'bg-slate-900/60 hover:bg-slate-800/50 transition-colors'
+                          ? 'bg-white hover:bg-slate-50 transition-colors'
+                          : 'bg-slate-50/60 hover:bg-slate-100/70 transition-colors'
                       }
                     >
-                      <td className="py-4 px-4 font-bold text-white">{spec.model}</td>
+                      <td className="py-4 px-4 font-bold text-slate-950">{spec.model}</td>
                       <td className="py-4 px-4 font-bold text-sky-400">{spec.rollerDia}</td>
                       <td className="py-4 px-4">{spec.faceWidth}</td>
                       <td className="py-4 px-4">{spec.shaftDia}</td>
                       <td className="py-4 px-4 font-bold text-emerald-400">{spec.loadRating}</td>
-                      <td className="py-4 px-4 text-slate-300">{spec.housingType}</td>
+                      <td className="py-4 px-4 text-slate-600">{spec.housingType}</td>
                       <td className="py-4 px-4 text-amber-300">{spec.bearingSpec}</td>
-                      <td className="py-4 px-4 text-slate-400">{spec.metallurgy}</td>
+                      <td className="py-4 px-4 text-slate-600">{spec.metallurgy}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
 
-            <div className="mt-4 flex flex-wrap items-center justify-between gap-4 text-xs text-slate-400 font-mono">
+            <div className="mt-4 flex flex-wrap items-center justify-between gap-4 text-xs text-slate-500 font-mono">
               <div>* Custom roller diameters up to 1,500 mm, spherical roller bearing brands (SKF, FAG, TIMKEN), and water-cooled housings available.</div>
               <div className="text-sky-400">Certified IS 1030 Cast Steel &amp; ASTM A388 Forged Alloy</div>
             </div>
@@ -663,16 +660,16 @@ export default function ForgedTrunnionRollersPage() {
         </section>
 
         {/* Section 4: Breakdown Diagnostic Guide */}
-        <section className="py-16 sm:py-20 border-b border-slate-800 bg-slate-950">
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-slate-50/60">
           <Container>
             <div className="max-w-3xl mx-auto text-center mb-14">
               <div className="text-sky-400 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
                 Field Troubleshooting &amp; Failure Analysis
               </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-950 tracking-tight font-display">
                 Breakdown Diagnostic Guide: Roller Wear Modes &amp; Remedies
               </h2>
-              <p className="text-slate-400 text-sm sm:text-base mt-3">
+              <p className="text-slate-600 text-sm sm:text-base mt-3">
                 Identify the root cause of roller failure before replacing parts. Incorrect skew or
                 uneven loading will destroy even the highest-grade replacement within months:
               </p>
@@ -680,12 +677,12 @@ export default function ForgedTrunnionRollersPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {/* Failure 1 */}
-              <div className="p-6 rounded-2xl bg-slate-900 border border-slate-800 space-y-4">
-                <div className="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center font-mono font-extrabold text-base">
+              <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-4">
+                <div className="w-10 h-10 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-mono font-extrabold text-base">
                   01
                 </div>
-                <h3 className="text-lg font-bold text-white">Taper / Conical Wear</h3>
-                <p className="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                <h3 className="text-lg font-bold text-slate-950">Taper / Conical Wear</h3>
+                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
                   <strong>Root Cause:</strong> Support roller axis is not parallel to the drum centerline.
                   Over-skewing forces one edge to take 80%+ of the total contact load.
                 </p>
@@ -695,12 +692,12 @@ export default function ForgedTrunnionRollersPage() {
               </div>
 
               {/* Failure 2 */}
-              <div className="p-6 rounded-2xl bg-slate-900 border border-slate-800 space-y-4">
+              <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-4">
                 <div className="w-10 h-10 rounded-xl bg-red-500/20 text-red-400 flex items-center justify-center font-mono font-extrabold text-base">
                   02
                 </div>
-                <h3 className="text-lg font-bold text-white">Surface Pitting &amp; Spalling</h3>
-                <p className="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                <h3 className="text-lg font-bold text-slate-950">Surface Pitting &amp; Spalling</h3>
+                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
                   <strong>Root Cause:</strong> Metal fatigue caused by excessive Hertzian shear stress,
                   low surface hardness (&lt;240 BHN), or internal casting porosity.
                 </p>
@@ -710,12 +707,12 @@ export default function ForgedTrunnionRollersPage() {
               </div>
 
               {/* Failure 3 */}
-              <div className="p-6 rounded-2xl bg-slate-900 border border-slate-800 space-y-4">
-                <div className="w-10 h-10 rounded-xl bg-yellow-500/20 text-yellow-400 flex items-center justify-center font-mono font-extrabold text-base">
+              <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-4">
+                <div className="w-10 h-10 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-mono font-extrabold text-base">
                   03
                 </div>
-                <h3 className="text-lg font-bold text-white">Hollow / Hourglass Grooving</h3>
-                <p className="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                <h3 className="text-lg font-bold text-slate-950">Hollow / Hourglass Grooving</h3>
+                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
                   <strong>Root Cause:</strong> Drum is running in a locked axial position without dynamic float,
                   allowing the narrower tyre to wear a deep groove into the roller face.
                 </p>
@@ -725,12 +722,12 @@ export default function ForgedTrunnionRollersPage() {
               </div>
 
               {/* Failure 4 */}
-              <div className="p-6 rounded-2xl bg-slate-900 border border-slate-800 space-y-4">
-                <div className="w-10 h-10 rounded-xl bg-rose-500/20 text-rose-400 flex items-center justify-center font-mono font-extrabold text-base">
+              <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-4">
+                <div className="w-10 h-10 rounded-xl bg-rose-100 text-rose-700 flex items-center justify-center font-mono font-extrabold text-base">
                   04
                 </div>
-                <h3 className="text-lg font-bold text-white">Axle Fatigue Shear</h3>
-                <p className="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                <h3 className="text-lg font-bold text-slate-950">Axle Fatigue Shear</h3>
+                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
                   <strong>Root Cause:</strong> Sharp-cornered shoulder fillets on cast iron axles acting as
                   stress risers under cyclic bending loads during drum rotation.
                 </p>
@@ -743,16 +740,16 @@ export default function ForgedTrunnionRollersPage() {
         </section>
 
         {/* Section 5: Heavy Plummer Block Housings & Spherical Roller Bearings */}
-        <section className="py-16 sm:py-20 border-b border-slate-800 bg-slate-900">
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-white">
           <Container>
             <div className="max-w-3xl mb-12">
               <div className="text-sky-400 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
                 Bearing Housings &amp; Ingress Protection
               </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-950 tracking-tight font-display">
                 Heavy Plummer Block Housings &amp; Spherical Roller Bearings
               </h2>
-              <p className="text-slate-300 text-base mt-4 leading-relaxed">
+              <p className="text-slate-700 text-base mt-4 leading-relaxed">
                 A cracked bearing housing under a 50-tonne rotary dryer can trigger catastrophic drum drop.
                 Minerals Solutions equips every trunnion assembly with heavy cast steel plummer blocks
                 specifically designed to absorb dynamic shock and extreme radial loads:
@@ -760,36 +757,36 @@ export default function ForgedTrunnionRollersPage() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="p-6 rounded-xl bg-slate-800/80 border border-slate-700/80 space-y-4">
+              <div className="p-6 rounded-xl bg-slate-50 border border-slate-200 space-y-4">
                 <div className="w-12 h-12 rounded-lg bg-sky-500/10 text-sky-400 flex items-center justify-center">
                   <Factory className="w-6 h-6" />
                 </div>
-                <h3 className="text-lg font-bold text-white">Cast Steel IS 1030 Housings</h3>
-                <p className="text-slate-300 text-sm leading-relaxed">
+                <h3 className="text-lg font-bold text-slate-950">Cast Steel IS 1030 Housings</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">
                   Housings are cast from IS 1030 Grade 280-520 high-strength cast steel rather than brittle
                   gray iron. Reinforced side ribs and heavy baseplate flanges provide indestructible support
                   under sudden material surges and thermal expansion forces.
                 </p>
               </div>
 
-              <div className="p-6 rounded-xl bg-slate-800/80 border border-slate-700/80 space-y-4">
+              <div className="p-6 rounded-xl bg-slate-50 border border-slate-200 space-y-4">
                 <div className="w-12 h-12 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center">
                   <Cog className="w-6 h-6" />
                 </div>
-                <h3 className="text-lg font-bold text-white">Double-Row Spherical Bearings</h3>
-                <p className="text-slate-300 text-sm leading-relaxed">
+                <h3 className="text-lg font-bold text-slate-950">Double-Row Spherical Bearings</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">
                   Fitted with premium SKF, FAG, or TIMKEN 22200 and 22300 series double-row self-aligning
                   spherical roller bearings. Accommodates up to 2.5° of shaft misalignment caused by thermal
                   casing expansion without edge loading or internal friction spikes.
                 </p>
               </div>
 
-              <div className="p-6 rounded-xl bg-slate-800/80 border border-slate-700/80 space-y-4">
-                <div className="w-12 h-12 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center">
+              <div className="p-6 rounded-xl bg-slate-50 border border-slate-200 space-y-4">
+                <div className="w-12 h-12 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center">
                   <ShieldCheck className="w-6 h-6" />
                 </div>
-                <h3 className="text-lg font-bold text-white">Multi-Labyrinth Taconite Seals</h3>
-                <p className="text-slate-300 text-sm leading-relaxed">
+                <h3 className="text-lg font-bold text-slate-950">Multi-Labyrinth Taconite Seals</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">
                   Rotary dryer environments are saturated with abrasive silica sand and mineral dust.
                   Heavy-duty multi-stage labyrinth seals with purge grease cavities block all particulate
                   ingress and prevent moisture contamination, extending bearing life to over 50,000 hours.
@@ -800,16 +797,16 @@ export default function ForgedTrunnionRollersPage() {
         </section>
 
         {/* Section 6: Rotary Riding Tyres, Thrust Rollers & Machined Girth Gears */}
-        <section className="py-16 sm:py-20 border-b border-slate-800 bg-slate-950/70">
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-slate-50/60">
           <Container>
             <div className="max-w-3xl mb-12">
               <div className="text-cyan-400 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
                 Complete Rotary Mechanical Running Gear
               </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-950 tracking-tight font-display">
                 Rotary Riding Tyres, Thrust Rollers &amp; Machined Girth Gears
               </h2>
-              <p className="text-slate-300 text-base mt-4 leading-relaxed">
+              <p className="text-slate-700 text-base mt-4 leading-relaxed">
                 Beyond support rollers, Minerals Solutions manufactures the complete rotating driveline
                 spares package for heavy rotary equipment across India:
               </p>
@@ -817,7 +814,7 @@ export default function ForgedTrunnionRollersPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Spares 1 */}
-              <div className="p-6 rounded-2xl bg-slate-900 border border-slate-800 space-y-4">
+              <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-4">
                 <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-slate-700/80">
                   <Image
                     src="/images/products/mechanical-spares/dryer-riding-ring-tyre-lg.webp"
@@ -825,13 +822,13 @@ export default function ForgedTrunnionRollersPage() {
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 30vw"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
+                  
                   <div className="absolute bottom-2 left-2 text-[11px] font-mono text-sky-400 font-bold">
                     FORGED RIDING TYRES
                   </div>
                 </div>
-                <h3 className="text-lg font-bold text-white">Seamless Forged Riding Tyres</h3>
-                <p className="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                <h3 className="text-lg font-bold text-slate-950">Seamless Forged Riding Tyres</h3>
+                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
                   Forged from 42CrMo4 seamless rings or cast steel 35CrMo, normalized and precision-turned
                   to mirror finish with hardness between 320 and 360 BHN. Loose floating or welded tire
                   mounting with machined expansion shims.
@@ -839,7 +836,7 @@ export default function ForgedTrunnionRollersPage() {
               </div>
 
               {/* Spares 2 */}
-              <div className="p-6 rounded-2xl bg-slate-900 border border-slate-800 space-y-4">
+              <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-4">
                 <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-slate-700/80">
                   <Image
                     src="/images/products/mechanical-spares/industrial-thrust-roller-lg.webp"
@@ -847,13 +844,13 @@ export default function ForgedTrunnionRollersPage() {
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 30vw"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
+                  
                   <div className="absolute bottom-2 left-2 text-[11px] font-mono text-cyan-400 font-bold">
                     AXIAL THRUST ROLLERS
                   </div>
                 </div>
-                <h3 className="text-lg font-bold text-white">Axial Guide Thrust Rollers</h3>
-                <p className="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                <h3 className="text-lg font-bold text-slate-950">Axial Guide Thrust Rollers</h3>
+                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
                   Beveled or cylindrical forged thrust rollers mounted on heavy pivot bases with spherical
                   roller thrust bearings. Controls downhill gravitational drift and maintains drum alignment
                   between upper and lower riding ring positions.
@@ -861,7 +858,7 @@ export default function ForgedTrunnionRollersPage() {
               </div>
 
               {/* Spares 3 */}
-              <div className="p-6 rounded-2xl bg-slate-900 border border-slate-800 space-y-4">
+              <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-4">
                 <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-slate-700/80">
                   <Image
                     src="/images/products/mechanical-spares/dryer-girth-gear-variant-1-lg.webp"
@@ -869,13 +866,13 @@ export default function ForgedTrunnionRollersPage() {
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 30vw"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
+                  
                   <div className="absolute bottom-2 left-2 text-[11px] font-mono text-emerald-400 font-bold">
                     SPLIT GIRTH GEARS
                   </div>
                 </div>
-                <h3 className="text-lg font-bold text-white">Split Girth Gears &amp; Pinions</h3>
-                <p className="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                <h3 className="text-lg font-bold text-slate-950">Split Girth Gears &amp; Pinions</h3>
+                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
                   Two-piece split girth gears cast from 42CrMo / GS-34CrMo4 alloy steel. Precision hobbed
                   teeth up to Module 24 paired with 40Cr forged induction-hardened pinions, guaranteeing
                   silent gear mesh and zero tooth root cracking.
@@ -886,17 +883,17 @@ export default function ForgedTrunnionRollersPage() {
         </section>
 
         {/* Section 7: Emergency Breakdown Replacement & Reverse Engineering */}
-        <section className="py-16 sm:py-20 border-b border-slate-800 bg-slate-900">
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-white">
           <Container>
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
               <div className="lg:col-span-6 space-y-6">
                 <div className="text-sky-400 font-mono text-xs uppercase tracking-wider font-semibold">
                   Fast Aftermarket Dispatch
                 </div>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-950 tracking-tight font-display">
                   Emergency Breakdown Replacement &amp; Custom Drawing Fabrication
                 </h2>
-                <p className="text-slate-300 text-base leading-relaxed">
+                <p className="text-slate-700 text-base leading-relaxed">
                   When a support roller fails, every hour of lost production costs lakhs in idle plant overhead.
                   Minerals Solutions maintains dedicated emergency fabrication capacity at our Zak GIDC,
                   Dahegam facility to manufacture exact-fit replacements to sample or custom site drawing:
@@ -924,13 +921,13 @@ export default function ForgedTrunnionRollersPage() {
 
               {/* Reverse Engineering Steps Card */}
               <div className="lg:col-span-6">
-                <div className="p-8 rounded-2xl bg-slate-950 border border-slate-800 space-y-6">
-                  <div className="flex items-center gap-3 border-b border-slate-800 pb-4">
+                <div className="p-8 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-6">
+                  <div className="flex items-center gap-3 border-b border-slate-200 pb-4">
                     <div className="p-2.5 rounded-xl bg-sky-500/10 text-sky-400 font-mono font-bold">
                       FAST-TRACK
                     </div>
                     <div>
-                      <h3 className="text-lg font-bold text-white">4-Step Custom Spares Delivery</h3>
+                      <h3 className="text-lg font-bold text-slate-950">4-Step Custom Spares Delivery</h3>
                       <div className="text-xs text-sky-400 font-mono">From Site Breakdown to Commissioning</div>
                     </div>
                   </div>
@@ -939,25 +936,25 @@ export default function ForgedTrunnionRollersPage() {
                     <div className="flex gap-3">
                       <span className="font-mono font-bold text-sky-400">01.</span>
                       <div>
-                        <strong className="text-white">Dimension Submission:</strong> Provide roller OD, width, shaft diameter, and bearing center distance via WhatsApp or email.
+                        <strong className="text-slate-950 font-semibold">Dimension Submission:</strong> Provide roller OD, width, shaft diameter, and bearing center distance via WhatsApp or email.
                       </div>
                     </div>
                     <div className="flex gap-3">
                       <span className="font-mono font-bold text-sky-400">02.</span>
                       <div>
-                        <strong className="text-white">GA Approval Drawing:</strong> Our design office issues a certified manufacturing drawing within 4 to 6 hours.
+                        <strong className="text-slate-950 font-semibold">GA Approval Drawing:</strong> Our design office issues a certified manufacturing drawing within 4 to 6 hours.
                       </div>
                     </div>
                     <div className="flex gap-3">
                       <span className="font-mono font-bold text-sky-400">03.</span>
                       <div>
-                        <strong className="text-white">CNC Turning &amp; Induction Hardening:</strong> Machining on heavy CNC lathes followed by induction hardening to 280–320 BHN.
+                        <strong className="text-slate-950 font-semibold">CNC Turning &amp; Induction Hardening:</strong> Machining on heavy CNC lathes followed by induction hardening to 280–320 BHN.
                       </div>
                     </div>
                     <div className="flex gap-3">
                       <span className="font-mono font-bold text-sky-400">04.</span>
                       <div>
-                        <strong className="text-white">Assembly &amp; Direct Dispatch:</strong> Press-fit onto forged axles with SKF bearings and express transport to your plant.
+                        <strong className="text-slate-950 font-semibold">Assembly &amp; Direct Dispatch:</strong> Press-fit onto forged axles with SKF bearings and express transport to your plant.
                       </div>
                     </div>
                   </div>
@@ -1059,7 +1056,7 @@ export default function ForgedTrunnionRollersPage() {
         </section>
 
         {/* Section 9: Sizing Proposal & Drawing Upload Form */}
-        <section className="py-16 sm:py-20 border-b border-slate-800 bg-slate-900">
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-slate-50/60">
           <Container>
             <div className="max-w-4xl mx-auto p-8 sm:p-12 rounded-3xl bg-slate-950 border border-sky-500/40 shadow-2xl relative overflow-hidden">
               <div className="absolute top-0 right-0 w-80 h-80 bg-sky-500/10 rounded-full blur-3xl pointer-events-none" />
@@ -1099,7 +1096,7 @@ export default function ForgedTrunnionRollersPage() {
                   </Button>
                 </div>
 
-                <div className="pt-6 border-t border-slate-800/80 text-xs text-slate-400 font-mono flex flex-wrap justify-center gap-6">
+                <div className="pt-6 border-t border-slate-200/80 text-xs text-slate-400 font-mono flex flex-wrap justify-center gap-6">
                   <span>GSTIN: 24AUSPP9555F1ZZ</span>
                   <span>•</span>
                   <span>Works: 10, Shyam Estate, Zak GIDC, Dahegam</span>
@@ -1112,16 +1109,16 @@ export default function ForgedTrunnionRollersPage() {
         </section>
 
         {/* Section 10: Frequently Asked Questions */}
-        <section className="py-16 sm:py-20 bg-slate-950">
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-white">
           <Container>
             <div className="max-w-3xl mx-auto text-center mb-12">
               <div className="text-sky-400 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
                 Knowledge Base &amp; Maintenance FAQs
               </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-950 tracking-tight font-display">
                 Frequently Asked Questions on Dryer Support Rollers &amp; Running Gear
               </h2>
-              <p className="text-slate-400 text-sm sm:text-base mt-3">
+              <p className="text-slate-600 text-sm sm:text-base mt-3">
                 Expert technical guidance on metallurgy selection, hardness differential, taper wear
                 remedies, and custom reverse engineering.
               </p>
@@ -1131,13 +1128,13 @@ export default function ForgedTrunnionRollersPage() {
               {faqs.map((faq, idx) => (
                 <div
                   key={idx}
-                  className="p-6 rounded-2xl bg-slate-900 border border-slate-800 space-y-3"
+                  className="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-3"
                 >
-                  <h3 className="text-base sm:text-lg font-bold text-white flex items-start gap-3">
+                  <h3 className="text-base sm:text-lg font-bold text-slate-950 flex items-start gap-3">
                     <span className="text-sky-400 font-mono text-sm mt-0.5">0{idx + 1}.</span>
                     <span>{faq.q}</span>
                   </h3>
-                  <p className="text-slate-300 text-sm sm:text-base leading-relaxed pl-7">
+                  <p className="text-slate-600 text-sm sm:text-base leading-relaxed pl-7">
                     {faq.a}
                   </p>
                 </div>

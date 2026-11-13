@@ -245,12 +245,11 @@ export default function BucketElevatorPage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqSchema} />
 
-      <main className="min-h-screen bg-slate-900 text-slate-100">
+      <main className="min-h-screen bg-white text-slate-900">
         {/* Breadcrumb Navigation Bar */}
-        <div className="border-b border-slate-800 bg-slate-950/70 backdrop-blur-md">
+        <section className="bg-slate-50 border-b border-slate-200 py-3">
           <Container>
-            <div className="py-3">
-              <Breadcrumbs
+            <Breadcrumbs
                 items={[
                   { label: 'Home', href: '/' },
                   { label: 'Products', href: '/products/' },
@@ -264,31 +263,29 @@ export default function BucketElevatorPage() {
                   },
                 ]}
               />
-            </div>
-          </Container>
-        </div>
+            </Container>
+          </section>
 
         {/* Hero Section */}
-        <section className="relative overflow-hidden pt-12 pb-20 lg:pt-16 lg:pb-28 border-b border-slate-800 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-900">
-          <div className="absolute inset-0 bg-[radial-gradient(#f59e0b_1px,transparent_1px)] [background-size:24px_24px] opacity-10 pointer-events-none" />
+        <section className="relative pt-8 pb-14 lg:pt-12 lg:pb-20 border-b border-slate-200 overflow-hidden bg-gradient-to-b from-amber-50/40 via-white to-white">
 
           <Container>
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
               {/* Left Column: Copy & CTAs */}
               <div className="lg:col-span-7 space-y-6">
-                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-semibold uppercase tracking-wider">
+                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-100/80 border border-amber-300 text-amber-950 text-xs font-semibold uppercase tracking-wider">
                   <ArrowUpCircle className="w-3.5 h-3.5" />
                   Dust-Tight Enclosed Vertical Elevation | Up to 45m Lift Height
                 </div>
 
-                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-slate-950 font-display">
                   Heavy Duty Industrial{' '}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-yellow-300 to-orange-400">
+                  <span className="text-amber-700">
                     Bucket Elevator Systems
                   </span>
                 </h1>
 
-                <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-normal">
+                <p className="text-base sm:text-lg text-slate-700 leading-relaxed font-normal">
                   Continuous, high-tonnage vertical bulk conveying engineered for abrasive silica sand,
                   calcined minerals, fertilizer granules, cement clinker, and foundry sand. Designed with
                   laser-cut jig-welded modular casings, anti-rollback cam clutches, and multi-ply EP belt
@@ -297,44 +294,44 @@ export default function BucketElevatorPage() {
 
                 {/* Key Metric Chips */}
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
-                  <div className="p-3.5 rounded-lg bg-slate-800/80 border border-slate-700/80 shadow-sm">
-                    <div className="text-xs text-slate-400 font-mono uppercase tracking-wider">
+                  <div className="p-3 sm:p-3.5 rounded-lg bg-white border border-slate-200 shadow-xs">
+                    <div className="text-xs text-slate-500 font-mono uppercase tracking-wider">
                       Max Lift Height
                     </div>
-                    <div className="text-xl sm:text-2xl font-black text-amber-400 mt-1">
+                    <div className="text-xl sm:text-2xl font-bold text-slate-900-400 mt-1">
                       Up to 45m
                     </div>
-                    <div className="text-[11px] text-slate-400">Vertical Rise</div>
+                    <div className="text-[11px] text-slate-500">Vertical Rise</div>
                   </div>
 
-                  <div className="p-3.5 rounded-lg bg-slate-800/80 border border-slate-700/80 shadow-sm">
-                    <div className="text-xs text-slate-400 font-mono uppercase tracking-wider">
+                  <div className="p-3 sm:p-3.5 rounded-lg bg-white border border-slate-200 shadow-xs">
+                    <div className="text-xs text-slate-500 font-mono uppercase tracking-wider">
                       Capacity Range
                     </div>
-                    <div className="text-xl sm:text-2xl font-black text-yellow-400 mt-1">
+                    <div className="text-xl sm:text-2xl font-bold text-slate-900-400 mt-1">
                       5 - 100 TPH
                     </div>
-                    <div className="text-[11px] text-slate-400">Continuous Bulk</div>
+                    <div className="text-[11px] text-slate-500">Continuous Bulk</div>
                   </div>
 
-                  <div className="p-3.5 rounded-lg bg-slate-800/80 border border-slate-700/80 shadow-sm">
-                    <div className="text-xs text-slate-400 font-mono uppercase tracking-wider">
+                  <div className="p-3 sm:p-3.5 rounded-lg bg-white border border-slate-200 shadow-xs">
+                    <div className="text-xs text-slate-500 font-mono uppercase tracking-wider">
                       Discharge Type
                     </div>
-                    <div className="text-xl sm:text-2xl font-black text-white mt-1">
+                    <div className="text-xl sm:text-2xl font-bold text-slate-900 mt-1">
                       Dual Mode
                     </div>
-                    <div className="text-[11px] text-slate-400">Centrifugal / Cont.</div>
+                    <div className="text-[11px] text-slate-500">Centrifugal / Cont.</div>
                   </div>
 
-                  <div className="p-3.5 rounded-lg bg-slate-800/80 border border-slate-700/80 shadow-sm">
-                    <div className="text-xs text-slate-400 font-mono uppercase tracking-wider">
+                  <div className="p-3 sm:p-3.5 rounded-lg bg-white border border-slate-200 shadow-xs">
+                    <div className="text-xs text-slate-500 font-mono uppercase tracking-wider">
                       Safety Clutch
                     </div>
                     <div className="text-xl sm:text-2xl font-black text-emerald-400 mt-1">
                       Zero Rollback
                     </div>
-                    <div className="text-[11px] text-slate-400">Sprag Cam Backstop</div>
+                    <div className="text-[11px] text-slate-500">Sprag Cam Backstop</div>
                   </div>
                 </div>
 
@@ -362,7 +359,7 @@ export default function BucketElevatorPage() {
 
               {/* Right Column: Visual Frame */}
               <div className="lg:col-span-5 relative">
-                <div className="relative rounded-2xl overflow-hidden border border-slate-700/80 bg-slate-950 shadow-2xl">
+                <div className="relative rounded-2xl overflow-hidden border border-slate-300/80 bg-slate-900 shadow-xl">
                   <div className="relative aspect-[4/3] w-full">
                     <Image
                       src="/images/products/conveyor-systems/belt-conveyor-mineral-ore-beneficiation-lg.webp"
@@ -371,13 +368,13 @@ export default function BucketElevatorPage() {
                       className="object-cover"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
+                    
                   </div>
 
-                  <div className="p-5 border-t border-slate-800 bg-slate-900/90 space-y-2">
+                  <div className="p-4 bg-slate-950/90 border-t border-slate-800 text-white flex items-center justify-between">
                     <div className="flex items-center justify-between text-xs text-slate-400 font-mono">
                       <span>SERIES: MS-BEL-400</span>
-                      <span className="text-amber-400 font-bold">45 TPH VERTICAL LIFT</span>
+                      <span className="text-amber-700 font-bold">45 TPH VERTICAL LIFT</span>
                     </div>
                     <p className="text-xs text-slate-300 leading-relaxed">
                       Factory view: Heavy folded plate casing section with laser-machined inspection
@@ -406,16 +403,16 @@ export default function BucketElevatorPage() {
         </section>
 
         {/* Section 1: Vertical Bulk Elevation: Centrifugal vs Continuous Discharge */}
-        <section className="py-16 sm:py-20 border-b border-slate-800 bg-slate-900">
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-white">
           <Container>
             <div className="max-w-3xl mb-12">
-              <div className="text-amber-400 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
+              <div className="text-amber-700 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
                 Kinematics &amp; Discharge Dynamics
               </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-950 tracking-tight font-display">
                 Vertical Bulk Elevation: Centrifugal vs Continuous Discharge
               </h2>
-              <p className="text-slate-300 text-base mt-4 leading-relaxed">
+              <p className="text-slate-700 text-base mt-4 leading-relaxed">
                 Selecting the correct discharge kinematics is the single most critical engineering decision
                 in vertical conveyor design. Operating a fragile material at centrifugal speed causes severe
                 pellet fracture, while operating sluggish material in a continuous unit causes boot blockages.
@@ -424,14 +421,14 @@ export default function BucketElevatorPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Centrifugal Card */}
-              <div className="p-8 rounded-2xl bg-slate-800/80 border border-slate-700/80 space-y-6">
-                <div className="flex items-center justify-between border-b border-slate-700 pb-4">
+              <div className="p-8 rounded-2xl bg-slate-50 border border-slate-200 space-y-6">
+                <div className="flex items-center justify-between border-b border-slate-200 pb-4">
                   <div className="flex items-center gap-3">
-                    <div className="p-2.5 rounded-xl bg-amber-500/10 text-amber-400 font-mono font-bold">
+                    <div className="p-2.5 rounded-xl bg-amber-100 text-amber-800 font-mono font-bold">
                       MODE A
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-white">Centrifugal Discharge Elevators</h3>
+                      <h3 className="text-xl font-bold text-slate-950">Centrifugal Discharge Elevators</h3>
                       <div className="text-xs text-amber-400 font-mono">High Velocity: 1.2 to 2.0 m/sec</div>
                     </div>
                   </div>
@@ -440,7 +437,7 @@ export default function BucketElevatorPage() {
                   </span>
                 </div>
 
-                <p className="text-slate-300 text-sm leading-relaxed">
+                <p className="text-slate-600 text-sm leading-relaxed">
                   Buckets are spaced intermittently along the belt or chain. At the boot section, buckets
                   dredge through the material pool. At the head pulley, high centrifugal force throws material
                   outward in a parabolic arc directly into the discharge throat before the bucket reaches top dead center.
@@ -449,7 +446,7 @@ export default function BucketElevatorPage() {
                 <div className="space-y-2.5 text-xs text-slate-300 font-mono pt-2 border-t border-slate-700/60">
                   <div className="flex justify-between">
                     <span className="text-slate-400">Best Materials:</span>
-                    <span className="text-white font-semibold">Dry Silica Sand, Grains, Coal Fines, Prilled Urea</span>
+                    <span className="text-slate-900 font-semibold">Dry Silica Sand, Grains, Coal Fines, Prilled Urea</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-slate-400">Bucket Spacing:</span>
@@ -457,7 +454,7 @@ export default function BucketElevatorPage() {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-slate-400">Boot Intake:</span>
-                    <span className="text-white">Dredge &amp; Direct Chute Combination</span>
+                    <span className="text-slate-900">Dredge &amp; Direct Chute Combination</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-slate-400">Traction Type:</span>
@@ -467,14 +464,14 @@ export default function BucketElevatorPage() {
               </div>
 
               {/* Continuous Card */}
-              <div className="p-8 rounded-2xl bg-slate-800/80 border border-slate-700/80 space-y-6">
-                <div className="flex items-center justify-between border-b border-slate-700 pb-4">
+              <div className="p-8 rounded-2xl bg-slate-50 border border-slate-200 space-y-6">
+                <div className="flex items-center justify-between border-b border-slate-200 pb-4">
                   <div className="flex items-center gap-3">
-                    <div className="p-2.5 rounded-xl bg-yellow-500/10 text-yellow-400 font-mono font-bold">
+                    <div className="p-2.5 rounded-xl bg-amber-100 text-amber-800 font-mono font-bold">
                       MODE B
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-white">Continuous Discharge Elevators</h3>
+                      <h3 className="text-xl font-bold text-slate-950">Continuous Discharge Elevators</h3>
                       <div className="text-xs text-yellow-400 font-mono">Gentle Velocity: 0.5 to 0.8 m/sec</div>
                     </div>
                   </div>
@@ -483,7 +480,7 @@ export default function BucketElevatorPage() {
                   </span>
                 </div>
 
-                <p className="text-slate-300 text-sm leading-relaxed">
+                <p className="text-slate-600 text-sm leading-relaxed">
                   Buckets are mounted edge-to-edge without gaps. Material feeds directly into the buckets
                   from an elevated inlet chute, bypassing boot dredging entirely. Over the head pulley, gravity
                   causes material to slide gently out and flow down the flanged chute-back of the preceding bucket.
@@ -492,7 +489,7 @@ export default function BucketElevatorPage() {
                 <div className="space-y-2.5 text-xs text-slate-300 font-mono pt-2 border-t border-slate-700/60">
                   <div className="flex justify-between">
                     <span className="text-slate-400">Best Materials:</span>
-                    <span className="text-white font-semibold">Abrasive Quartz Lumps, Friable Fertilizer, Hot Clinker</span>
+                    <span className="text-slate-900 font-semibold">Abrasive Quartz Lumps, Friable Fertilizer, Hot Clinker</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-slate-400">Bucket Spacing:</span>
@@ -500,7 +497,7 @@ export default function BucketElevatorPage() {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-slate-400">Boot Intake:</span>
-                    <span className="text-white">Direct Feed Chute (Zero Dredging Damage)</span>
+                    <span className="text-slate-900">Direct Feed Chute (Zero Dredging Damage)</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-slate-400">Traction Type:</span>
@@ -513,17 +510,17 @@ export default function BucketElevatorPage() {
         </section>
 
         {/* Section 2: Belt-Type vs Link-Chain Drive Selection Matrix */}
-        <section className="py-16 sm:py-20 border-b border-slate-800 bg-slate-950/70">
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-slate-50/60">
           <Container>
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
               <div className="lg:col-span-6 space-y-6">
-                <div className="text-amber-400 font-mono text-xs uppercase tracking-wider font-semibold">
+                <div className="text-amber-700 font-mono text-xs uppercase tracking-wider font-semibold">
                   Traction Media Engineering
                 </div>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-950 tracking-tight font-display">
                   Belt-Type vs Link-Chain Drive Selection Matrix
                 </h2>
-                <p className="text-slate-300 text-base leading-relaxed">
+                <p className="text-slate-700 text-base leading-relaxed">
                   The choice between industrial rubber belting and forged alloy chains is determined by
                   material lump size, operating temperature, and continuous duty factor. Minerals Solutions
                   manufactures both drive architectures with certified metallurgy.
@@ -535,10 +532,10 @@ export default function BucketElevatorPage() {
                       <Check className="w-4 h-4" />
                     </div>
                     <div>
-                      <h4 className="text-white font-semibold text-sm">
+                      <h4 className="text-slate-950 font-semibold text-sm">
                         High-Tensile EP Rubber Belting (IS 1891 Grade M24 / HR)
                       </h4>
-                      <p className="text-slate-400 text-xs sm:text-sm mt-0.5">
+                      <p className="text-slate-600 text-xs sm:text-sm mt-0.5">
                         Constructed with polyester-warp and nylon-weft multi-ply carcasses offering
                         minimal elongation (&lt;1.5%), high fastener tear-resistance, and whisper-quiet
                         operation up to 80°C (or 150°C with EPDM heat-resistant covers).
@@ -551,10 +548,10 @@ export default function BucketElevatorPage() {
                       <Check className="w-4 h-4" />
                     </div>
                     <div>
-                      <h4 className="text-white font-semibold text-sm">
+                      <h4 className="text-slate-950 font-semibold text-sm">
                         20MnCr5 Forged Case-Hardened Round Link Chains
                       </h4>
-                      <p className="text-slate-400 text-xs sm:text-sm mt-0.5">
+                      <p className="text-slate-600 text-xs sm:text-sm mt-0.5">
                         High-strength alloy steel chain links with deep case hardening (58–62 HRC) to
                         resist severe abrasive quartz and mineral slurry. Operates reliably at extreme bulk
                         temperatures up to 250°C without loss of structural yield strength.
@@ -567,10 +564,10 @@ export default function BucketElevatorPage() {
                       <Check className="w-4 h-4" />
                     </div>
                     <div>
-                      <h4 className="text-white font-semibold text-sm">
+                      <h4 className="text-slate-950 font-semibold text-sm">
                         Segmented Toothed Drive Sprockets
                       </h4>
-                      <p className="text-slate-400 text-xs sm:text-sm mt-0.5">
+                      <p className="text-slate-600 text-xs sm:text-sm mt-0.5">
                         Chain elevators utilize bolt-on reversible induction-hardened sprocket tooth
                         segments. Worn teeth can be replaced without disassembling the head shaft or
                         unstringing the heavy vertical chain loop, slashing maintenance downtime by 70%.
@@ -582,46 +579,46 @@ export default function BucketElevatorPage() {
 
               {/* Engineering Feature Box */}
               <div className="lg:col-span-6">
-                <div className="p-8 rounded-2xl bg-slate-900 border border-slate-700/80 shadow-xl space-y-6">
-                  <div className="flex items-center justify-between border-b border-slate-800 pb-4">
+                <div className="p-8 rounded-2xl bg-white border border-slate-200 shadow-md space-y-6">
+                  <div className="flex items-center justify-between border-b border-slate-200 pb-4">
                     <div className="flex items-center gap-2 text-amber-400 font-mono text-sm font-bold">
                       <Scale className="w-5 h-5" />
                       <span>TRACTION MEDIA SELECTION GUIDE</span>
                     </div>
-                    <span className="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300 font-mono">
+                    <span className="text-xs px-2.5 py-1 rounded bg-slate-100 text-slate-700 font-mono font-semibold">
                       Design Guide
                     </span>
                   </div>
 
                   <div className="space-y-4 text-xs sm:text-sm">
-                    <div className="p-3.5 rounded-lg bg-slate-800/60 border border-slate-700/50">
-                      <div className="font-bold text-white flex justify-between">
+                    <div className="p-3.5 rounded-lg bg-slate-50 border border-slate-200">
+                      <div className="font-bold text-slate-950 flex justify-between">
                         <span>High-Speed Sand &amp; Chemical Elevation</span>
                         <span className="text-emerald-400 font-mono">BELT DRIVE</span>
                       </div>
-                      <p className="text-slate-400 mt-1">
+                      <p className="text-slate-600 mt-1">
                         Best for material temp &lt;80°C, lump size &lt;20mm. Multi-ply EP315 to EP630
                         belting with countersunk bucket bolts and heavy rubber top covers.
                       </p>
                     </div>
 
-                    <div className="p-3.5 rounded-lg bg-slate-800/60 border border-slate-700/50">
-                      <div className="font-bold text-white flex justify-between">
+                    <div className="p-3.5 rounded-lg bg-slate-50 border border-slate-200">
+                      <div className="font-bold text-slate-950 flex justify-between">
                         <span>Abrasive Minerals, Clinker &amp; Large Ores</span>
                         <span className="text-amber-400 font-mono">CHAIN DRIVE</span>
                       </div>
-                      <p className="text-slate-400 mt-1">
+                      <p className="text-slate-600 mt-1">
                         Best for material temp up to 250°C, lump size &gt;25mm. 14mm to 26mm calibrated
                         alloy chain with forged bucket shackles and wear-resistant guide rails.
                       </p>
                     </div>
 
-                    <div className="p-3.5 rounded-lg bg-slate-800/60 border border-slate-700/50">
-                      <div className="font-bold text-white flex justify-between">
+                    <div className="p-3.5 rounded-lg bg-slate-50 border border-slate-200">
+                      <div className="font-bold text-slate-950 flex justify-between">
                         <span>Extreme Heavy Lift Above 35 Meters</span>
                         <span className="text-yellow-400 font-mono">STEEL CORD BELT</span>
                       </div>
-                      <p className="text-slate-400 mt-1">
+                      <p className="text-slate-600 mt-1">
                         Zero elongation, high safety factor (&gt;10:1), and high throughput up to 100 TPH
                         for tall cement silos and glass plant batching towers.
                       </p>
@@ -634,16 +631,16 @@ export default function BucketElevatorPage() {
         </section>
 
         {/* Section 3: Technical Specifications & Lift Heights */}
-        <section className="py-16 sm:py-20 border-b border-slate-800 bg-slate-900">
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-white">
           <Container>
             <div className="max-w-3xl mb-12">
-              <div className="text-amber-400 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
+              <div className="text-amber-700 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
                 Engineering Sizing &amp; Lift Parameters
               </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-950 tracking-tight font-display">
                 Technical Specifications &amp; Lift Heights (MS-BEL Series)
               </h2>
-              <p className="text-slate-300 text-base mt-4 leading-relaxed">
+              <p className="text-slate-700 text-base mt-4 leading-relaxed">
                 Standard modular specifications for Minerals Solutions bucket elevators fabricated in Zak
                 GIDC, Dahegam. Standard modular casing lengths are 2.0m and 2.5m, allowing easy plant
                 expansion or custom site height matching.
@@ -651,11 +648,11 @@ export default function BucketElevatorPage() {
             </div>
 
             {/* Responsive Table Container */}
-            <div className="overflow-x-auto rounded-xl border border-slate-700/80 shadow-2xl bg-slate-950">
-              <table className="w-full text-left text-xs sm:text-sm text-slate-300">
-                <thead className="bg-slate-800/90 text-slate-100 font-mono text-xs uppercase tracking-wider border-b border-slate-700">
+            <div className="overflow-x-auto rounded-xl border border-slate-200 shadow-xs bg-white">
+              <table className="w-full text-left text-xs sm:text-sm text-slate-700">
+                <thead className="bg-slate-100 text-slate-800 font-mono text-xs uppercase tracking-wider border-b border-slate-200">
                   <tr>
-                    <th className="py-4 px-4 font-bold text-white">Model</th>
+                    <th className="py-4 px-4 font-bold text-slate-950">Model</th>
                     <th className="py-4 px-4 font-bold text-amber-400">Capacity (TPH)</th>
                     <th className="py-4 px-4">Bucket Width</th>
                     <th className="py-4 px-4">Max Lift Height</th>
@@ -665,31 +662,31 @@ export default function BucketElevatorPage() {
                     <th className="py-4 px-4">Speed Range</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-slate-800 font-mono">
+                <tbody className="divide-y divide-slate-200 font-mono">
                   {belSpecs.map((spec, idx) => (
                     <tr
                       key={spec.model}
                       className={
                         idx % 2 === 0
-                          ? 'bg-slate-950/60 hover:bg-slate-800/50 transition-colors'
-                          : 'bg-slate-900/60 hover:bg-slate-800/50 transition-colors'
+                          ? 'bg-white hover:bg-slate-50 transition-colors'
+                          : 'bg-slate-50/60 hover:bg-slate-100/70 transition-colors'
                       }
                     >
-                      <td className="py-4 px-4 font-bold text-white">{spec.model}</td>
+                      <td className="py-4 px-4 font-bold text-slate-950">{spec.model}</td>
                       <td className="py-4 px-4 font-bold text-amber-400">{spec.capacity}</td>
                       <td className="py-4 px-4">{spec.bucketWidth}</td>
                       <td className="py-4 px-4 text-emerald-400 font-semibold">{spec.maxHeight}</td>
                       <td className="py-4 px-4">{spec.drivePower}</td>
-                      <td className="py-4 px-4 text-slate-300">{spec.tractionMedia}</td>
+                      <td className="py-4 px-4 text-slate-600">{spec.tractionMedia}</td>
                       <td className="py-4 px-4">{spec.casingGauge}</td>
-                      <td className="py-4 px-4 text-slate-400">{spec.speed}</td>
+                      <td className="py-4 px-4 text-slate-600">{spec.speed}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
 
-            <div className="mt-4 flex flex-wrap items-center justify-between gap-4 text-xs text-slate-400 font-mono">
+            <div className="mt-4 flex flex-wrap items-center justify-between gap-4 text-xs text-slate-500 font-mono">
               <div>* Dual casing trunking, explosion relief vents, and SS304/SS316 food-grade construction available on request.</div>
               <div className="text-amber-400">Certified IS 2062 Structural Steel Fabrication</div>
             </div>
@@ -697,16 +694,16 @@ export default function BucketElevatorPage() {
         </section>
 
         {/* Section 4: Deep-Drawn Steel & Polyurethane Bucket Profiles */}
-        <section className="py-16 sm:py-20 border-b border-slate-800 bg-slate-950">
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-slate-50/60">
           <Container>
             <div className="max-w-3xl mx-auto text-center mb-14">
-              <div className="text-amber-400 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
+              <div className="text-amber-700 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
                 Bucket Metallurgy &amp; Material Profiles
               </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-950 tracking-tight font-display">
                 Deep-Drawn Steel &amp; Polyurethane Bucket Profiles
               </h2>
-              <p className="text-slate-400 text-sm sm:text-base mt-3">
+              <p className="text-slate-600 text-sm sm:text-base mt-3">
                 Choosing the right bucket metallurgy and geometry determines scooping efficiency, wear
                 life, and energy consumption. Explore our 3 industrial bucket grades:
               </p>
@@ -714,12 +711,12 @@ export default function BucketElevatorPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Profile 1 */}
-              <div className="p-6 rounded-2xl bg-slate-900 border border-slate-800 space-y-4">
-                <div className="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center font-mono font-extrabold text-base">
+              <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-4">
+                <div className="w-10 h-10 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-mono font-extrabold text-base">
                   01
                 </div>
-                <h3 className="text-lg font-bold text-white">Seamless Deep-Drawn Carbon Steel</h3>
-                <p className="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                <h3 className="text-lg font-bold text-slate-950">Seamless Deep-Drawn Carbon Steel</h3>
+                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
                   Pressed from single sheets of IS 513 deep-draw carbon steel with zero internal corner welds.
                   Smooth radiused corners eliminate material hang-up, while an induction-hardened digger lip
                   resists scooping wear against hard silica grains and coal.
@@ -728,12 +725,12 @@ export default function BucketElevatorPage() {
               </div>
 
               {/* Profile 2 */}
-              <div className="p-6 rounded-2xl bg-slate-900 border border-slate-800 space-y-4">
-                <div className="w-10 h-10 rounded-xl bg-yellow-500/20 text-yellow-400 flex items-center justify-center font-mono font-extrabold text-base">
+              <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-4">
+                <div className="w-10 h-10 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-mono font-extrabold text-base">
                   02
                 </div>
-                <h3 className="text-lg font-bold text-white">Heavy Fabricated Hardox 400 Buckets</h3>
-                <p className="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                <h3 className="text-lg font-bold text-slate-950">Heavy Fabricated Hardox 400 Buckets</h3>
+                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
                   Fabricated from 4mm to 8mm heavy steel plate with welded Hardox 400 wear strips across
                   the leading lip. Designed for high-impact continuous dredging of sharp quartz rocks,
                   granite aggregates, iron ore, and abrasive mineral beneficiation feed.
@@ -742,12 +739,12 @@ export default function BucketElevatorPage() {
               </div>
 
               {/* Profile 3 */}
-              <div className="p-6 rounded-2xl bg-slate-900 border border-slate-800 space-y-4">
-                <div className="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-mono font-extrabold text-base">
+              <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-4">
+                <div className="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center font-mono font-extrabold text-base">
                   03
                 </div>
-                <h3 className="text-lg font-bold text-white">Molded Anti-Static Nylon / PU Buckets</h3>
-                <p className="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                <h3 className="text-lg font-bold text-slate-950">Molded Anti-Static Nylon / PU Buckets</h3>
+                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
                   Engineered from high-density polyethylene (HDPE), nylon, or polyurethane with anti-static
                   compounds. 70% lighter than steel buckets, drastically reducing motor power consumption while
                   providing 100% non-stick release for sticky damp fertilizers and chemical powders.
@@ -759,16 +756,16 @@ export default function BucketElevatorPage() {
         </section>
 
         {/* Section 5: Boot Section Gravity & Screw Take-Up Tensioning Mechanisms */}
-        <section className="py-16 sm:py-20 border-b border-slate-800 bg-slate-900">
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-white">
           <Container>
             <div className="max-w-3xl mb-12">
-              <div className="text-amber-400 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
+              <div className="text-amber-700 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
                 Tensioning &amp; Alignment Systems
               </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-950 tracking-tight font-display">
                 Boot Section Gravity &amp; Screw Take-Up Tensioning Mechanisms
               </h2>
-              <p className="text-slate-300 text-base mt-4 leading-relaxed">
+              <p className="text-slate-700 text-base mt-4 leading-relaxed">
                 Proper tensioning prevents belt slippage on the head pulley and ensures chains do not ride
                 off sprocket teeth. Minerals Solutions provides two field-proven take-up architectures:
               </p>
@@ -776,20 +773,20 @@ export default function BucketElevatorPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Screw Take-Up */}
-              <div className="p-8 rounded-2xl bg-slate-800/80 border border-slate-700/80 space-y-5">
+              <div className="p-8 rounded-2xl bg-slate-50 border border-slate-200 space-y-5">
                 <div className="flex items-center gap-3">
-                  <div className="p-2.5 rounded-xl bg-amber-500/20 text-amber-400">
+                  <div className="p-2.5 rounded-xl bg-amber-100 text-amber-800">
                     <Wrench className="w-6 h-6" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-white">Heavy ACME Screw Take-Up (Low to Mid Rise)</h3>
+                    <h3 className="text-lg font-bold text-slate-950">Heavy ACME Screw Take-Up (Low to Mid Rise)</h3>
                     <div className="text-xs text-amber-400 font-mono font-semibold">
                       Standard on Lifts Up to 25 Meters
                     </div>
                   </div>
                 </div>
 
-                <ul className="space-y-3 text-xs sm:text-sm text-slate-300">
+                <ul className="space-y-3 text-xs sm:text-sm text-slate-700">
                   <li className="flex items-start gap-2.5">
                     <Check className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
                     <span>
@@ -813,26 +810,26 @@ export default function BucketElevatorPage() {
                   </li>
                 </ul>
 
-                <div className="p-3.5 rounded-lg bg-slate-900 border border-slate-700 text-xs font-mono text-slate-300">
+                <div className="p-3.5 rounded-lg bg-slate-100 border border-slate-200 text-xs font-mono text-slate-700 font-semibold">
                   MAINTENANCE: Manual periodic checks every 500 operating hours.
                 </div>
               </div>
 
               {/* Gravity Counterweight Take-Up */}
-              <div className="p-8 rounded-2xl bg-slate-800/80 border border-slate-700/80 space-y-5">
+              <div className="p-8 rounded-2xl bg-slate-50 border border-slate-200 space-y-5">
                 <div className="flex items-center gap-3">
-                  <div className="p-2.5 rounded-xl bg-yellow-500/20 text-yellow-400">
+                  <div className="p-2.5 rounded-xl bg-amber-100 text-amber-800">
                     <Gauge className="w-6 h-6" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-white">Automatic Internal Gravity Take-Up</h3>
+                    <h3 className="text-lg font-bold text-slate-950">Automatic Internal Gravity Take-Up</h3>
                     <div className="text-xs text-yellow-400 font-mono font-semibold">
                       Mandatory on Lifts Above 25 Meters
                     </div>
                   </div>
                 </div>
 
-                <ul className="space-y-3 text-xs sm:text-sm text-slate-300">
+                <ul className="space-y-3 text-xs sm:text-sm text-slate-700">
                   <li className="flex items-start gap-2.5">
                     <Check className="w-4 h-4 text-yellow-400 shrink-0 mt-0.5" />
                     <span>
@@ -856,7 +853,7 @@ export default function BucketElevatorPage() {
                   </li>
                 </ul>
 
-                <div className="p-3.5 rounded-lg bg-slate-900 border border-slate-700 text-xs font-mono text-yellow-300">
+                <div className="p-3.5 rounded-lg bg-amber-100/70 border border-amber-200 text-xs font-mono text-amber-950 font-semibold">
                   MAINTENANCE: 100% automatic continuous tensioning with zero manual adjustment.
                 </div>
               </div>
@@ -865,50 +862,50 @@ export default function BucketElevatorPage() {
         </section>
 
         {/* Section 6: Safety & Zero-Downtime Instrumentation */}
-        <section className="py-16 sm:py-20 border-b border-slate-800 bg-slate-950/70">
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-slate-50/60">
           <Container>
             <div className="max-w-3xl mb-12">
-              <div className="text-amber-400 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
+              <div className="text-amber-700 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
                 Operational Safety &amp; Protection
               </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-950 tracking-tight font-display">
                 Built-In Safety Instrumentation &amp; Zero-Rollback Clutches
               </h2>
-              <p className="text-slate-300 text-base mt-4 leading-relaxed">
+              <p className="text-slate-700 text-base mt-4 leading-relaxed">
                 Vertical bulk material conveying carries serious mechanical safety risks. Minerals Solutions
                 integrates multiple interlocking fail-safe systems to safeguard plant personnel and capital equipment.
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="p-6 rounded-xl bg-slate-900 border border-slate-800 space-y-4">
-                <div className="w-12 h-12 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center">
+              <div className="p-6 rounded-xl bg-slate-50 border border-slate-200 space-y-4">
+                <div className="w-12 h-12 rounded-lg bg-amber-100 text-amber-800 flex items-center justify-center">
                   <RotateCcw className="w-6 h-6" />
                 </div>
-                <h3 className="text-lg font-bold text-white">Cam-Clutch Anti-Rollback Backstop</h3>
-                <p className="text-slate-300 text-sm leading-relaxed">
+                <h3 className="text-lg font-bold text-slate-950">Cam-Clutch Anti-Rollback Backstop</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">
                   Shaft-mounted mechanical backstop locks instantly if power fails under full vertical load,
                   preventing catastrophic backward runaway, bucket tearing, and motor destruction.
                 </p>
               </div>
 
-              <div className="p-6 rounded-xl bg-slate-900 border border-slate-800 space-y-4">
-                <div className="w-12 h-12 rounded-lg bg-yellow-500/10 text-yellow-400 flex items-center justify-center">
+              <div className="p-6 rounded-xl bg-slate-50 border border-slate-200 space-y-4">
+                <div className="w-12 h-12 rounded-lg bg-amber-100 text-amber-800 flex items-center justify-center">
                   <Activity className="w-6 h-6" />
                 </div>
-                <h3 className="text-lg font-bold text-white">Inductive Zero-Speed Switch</h3>
-                <p className="text-slate-300 text-sm leading-relaxed">
+                <h3 className="text-lg font-bold text-slate-950">Inductive Zero-Speed Switch</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">
                   Non-contact proximity sensor on the tail boot pulley monitors true rotational velocity.
                   If belt slip exceeds 10%, the PLC instantly halts upstream feed conveyors to prevent boot choking.
                 </p>
               </div>
 
-              <div className="p-6 rounded-xl bg-slate-900 border border-slate-800 space-y-4">
-                <div className="w-12 h-12 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center">
+              <div className="p-6 rounded-xl bg-slate-50 border border-slate-200 space-y-4">
+                <div className="w-12 h-12 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center">
                   <ShieldCheck className="w-6 h-6" />
                 </div>
-                <h3 className="text-lg font-bold text-white">Explosion Relief &amp; Misalignment Sensors</h3>
-                <p className="text-slate-300 text-sm leading-relaxed">
+                <h3 className="text-lg font-bold text-slate-950">Explosion Relief &amp; Misalignment Sensors</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">
                   ATEX-compliant rupture panels vent internal overpressure safely outside the building during
                   organic dust deflagrations. Mechanical belt sway limit switches alarm before belt edges rub casing.
                 </p>
@@ -918,50 +915,50 @@ export default function BucketElevatorPage() {
         </section>
 
         {/* Section 7: Workshop Quality Control & Manufacturing Proof */}
-        <section className="py-16 sm:py-20 border-b border-slate-800 bg-slate-900">
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-white">
           <Container>
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
               <div className="lg:col-span-6 space-y-6">
-                <div className="text-amber-400 font-mono text-xs uppercase tracking-wider font-semibold">
+                <div className="text-amber-700 font-mono text-xs uppercase tracking-wider font-semibold">
                   Workshop Engineering Precision
                 </div>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-950 tracking-tight font-display">
                   Jig-Welded Modular Casing &amp; Crowned Pulley Fabrication
                 </h2>
-                <p className="text-slate-300 text-base leading-relaxed">
+                <p className="text-slate-700 text-base leading-relaxed">
                   Every elevator section is manufactured in precision welding jigs at our Zak GIDC,
                   Dahegam workshop. Standardized modular casing sections ensure strict vertical alignment,
                   preventing belt wander and premature casing wear.
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-                  <div className="p-4 rounded-xl bg-slate-800/80 border border-slate-700/80 space-y-2">
-                    <div className="text-amber-400 font-bold text-sm">Crowned Rubber Pulleys</div>
-                    <p className="text-slate-400 text-xs leading-relaxed">
+                  <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+                    <div className="text-amber-700 font-bold text-sm">Crowned Rubber Pulleys</div>
+                    <p className="text-slate-600 text-xs leading-relaxed">
                       Machined crowned head drums hot-vulcanized with diamond-grooved rubber lagging
                       to shed water and maximize traction grip.
                     </p>
                   </div>
 
-                  <div className="p-4 rounded-xl bg-slate-800/80 border border-slate-700/80 space-y-2">
-                    <div className="text-amber-400 font-bold text-sm">Flanged Angle Ring Joints</div>
-                    <p className="text-slate-400 text-xs leading-relaxed">
+                  <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+                    <div className="text-amber-700 font-bold text-sm">Flanged Angle Ring Joints</div>
+                    <p className="text-slate-600 text-xs leading-relaxed">
                       Continuous external angle flanges with Neoprene gasketing provide a 100% dust-tight,
                       weatherproof enclosure suitable for outdoor installation.
                     </p>
                   </div>
 
-                  <div className="p-4 rounded-xl bg-slate-800/80 border border-slate-700/80 space-y-2">
-                    <div className="text-amber-400 font-bold text-sm">Quick-Access Hatches</div>
-                    <p className="text-slate-400 text-xs leading-relaxed">
+                  <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+                    <div className="text-amber-700 font-bold text-sm">Quick-Access Hatches</div>
+                    <p className="text-slate-600 text-xs leading-relaxed">
                       Bolted inspection doors at the head hood, discharge throat, and boot cleanout area
                       permit rapid inspection without dismantling trunking.
                     </p>
                   </div>
 
-                  <div className="p-4 rounded-xl bg-slate-800/80 border border-slate-700/80 space-y-2">
-                    <div className="text-amber-400 font-bold text-sm">Shaft-Mounted Geared Motors</div>
-                    <p className="text-slate-400 text-xs leading-relaxed">
+                  <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+                    <div className="text-amber-700 font-bold text-sm">Shaft-Mounted Geared Motors</div>
+                    <p className="text-slate-600 text-xs leading-relaxed">
                       Helical geared motors mounted directly on the drive shaft via hollow bore and torque arm,
                       eliminating open roller chain maintenance and guards.
                     </p>
@@ -971,7 +968,7 @@ export default function BucketElevatorPage() {
 
               {/* Workshop Images Gallery */}
               <div className="lg:col-span-6 space-y-4">
-                <div className="relative aspect-[16/9] rounded-xl overflow-hidden border border-slate-700/80 shadow-lg">
+                <div className="relative aspect-[16/9] rounded-xl overflow-hidden border border-slate-200 shadow-md">
                   <Image
                     src="/images/products/conveyor-systems/conveyor-head-tail-pulleys-lg.webp"
                     alt="Precision crowned and rubber lagged elevator head pulleys undergoing dynamic balancing at Minerals Solutions Zak GIDC Dahegam workshop" width={800} height={600}
@@ -985,7 +982,7 @@ export default function BucketElevatorPage() {
                 </div>
 
                 <div className="grid grid-cols-2 gap-4">
-                  <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-slate-700/80 shadow-lg">
+                  <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-slate-200 shadow-md">
                     <Image
                       src="/images/products/conveyor-systems/head-pulley-rubber-lagging-lg.webp"
                       alt="Diamond pattern vulcanized rubber lagging on conveyor drive pulley preventing belt slippage" width={800} height={600}
@@ -998,7 +995,7 @@ export default function BucketElevatorPage() {
                     </div>
                   </div>
 
-                  <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-slate-700/80 shadow-lg">
+                  <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-slate-200 shadow-md">
                     <Image
                       src="/images/products/conveyor-systems/conveyor-belt-system-truss-lg.webp"
                       alt="Heavy structural steel trunking and conveyor support trusses assembled at Zak GIDC" width={800} height={600}
@@ -1108,7 +1105,7 @@ export default function BucketElevatorPage() {
         </section>
 
         {/* Section 9: Engineering Sizing & RFQ Form */}
-        <section className="py-16 sm:py-20 border-b border-slate-800 bg-slate-900">
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-slate-50/60">
           <Container>
             <div className="max-w-4xl mx-auto p-8 sm:p-12 rounded-3xl bg-slate-950 border border-amber-500/40 shadow-2xl relative overflow-hidden">
               <div className="absolute top-0 right-0 w-80 h-80 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
@@ -1149,7 +1146,7 @@ export default function BucketElevatorPage() {
                   </Button>
                 </div>
 
-                <div className="pt-6 border-t border-slate-800/80 text-xs text-slate-400 font-mono flex flex-wrap justify-center gap-6">
+                <div className="pt-6 border-t border-slate-200/80 text-xs text-slate-400 font-mono flex flex-wrap justify-center gap-6">
                   <span>GSTIN: 24AUSPP9555F1ZZ</span>
                   <span>•</span>
                   <span>Factory: Zak GIDC, Dahegam, Gandhinagar</span>
@@ -1162,16 +1159,16 @@ export default function BucketElevatorPage() {
         </section>
 
         {/* Section 10: Frequently Asked Questions */}
-        <section className="py-16 sm:py-20 bg-slate-950">
+        <section className="py-14 lg:py-20 border-b border-slate-200 bg-white">
           <Container>
             <div className="max-w-3xl mx-auto text-center mb-12">
-              <div className="text-amber-400 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
+              <div className="text-amber-700 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
                 Knowledge Base &amp; Technical Guidance
               </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-950 tracking-tight font-display">
                 Frequently Asked Questions on Industrial Bucket Elevators
               </h2>
-              <p className="text-slate-400 text-sm sm:text-base mt-3">
+              <p className="text-slate-600 text-sm sm:text-base mt-3">
                 Expert technical guidance on discharge selection, anti-rollback protection, chain vs belt
                 traction, and explosion safety.
               </p>
@@ -1181,13 +1178,13 @@ export default function BucketElevatorPage() {
               {faqs.map((faq, idx) => (
                 <div
                   key={idx}
-                  className="p-6 rounded-2xl bg-slate-900/90 border border-slate-800 space-y-3"
+                  className="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-3"
                 >
-                  <h3 className="text-base sm:text-lg font-bold text-white flex items-start gap-3">
+                  <h3 className="text-base sm:text-lg font-bold text-slate-950 flex items-start gap-3">
                     <span className="text-amber-400 font-mono text-sm mt-0.5">0{idx + 1}.</span>
                     <span>{faq.q}</span>
                   </h3>
-                  <p className="text-slate-300 text-sm sm:text-base leading-relaxed pl-7">
+                  <p className="text-slate-600 text-sm sm:text-base leading-relaxed pl-7">
                     {faq.a}
                   </p>
                 </div>
