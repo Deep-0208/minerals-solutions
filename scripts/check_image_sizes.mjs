@@ -39,3 +39,4 @@ function scan(dir) {
 console.log('Scanning all Image components...');
 scan(path.join(rootDir, 'app'));
 scan(path.join(rootDir, 'components'));
+

@@ -203,7 +203,7 @@ export default function RootLayout({
   ];
 
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth" data-scroll-behavior="smooth">
       <head>
         <JsonLd data={rootSchema} />
       </head>
