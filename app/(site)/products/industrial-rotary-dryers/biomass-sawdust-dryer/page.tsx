@@ -40,7 +40,7 @@ import { defaultOgImage, defaultTwitterImage } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'Biomass & Sawdust Rotary Dryer Manufacturer | Minerals Solutions',
+    absolute: 'Biomass & Sawdust Rotary Dryers | Minerals Solutions',
   },
   description: 'Fabricate industrial biomass and sawdust rotary dryers (500 to 5,000 kg/hr) with anti-clogging flights & spark arrestors. Built at Zak GIDC, Dahegam works.',
   alternates: {

@@ -75,8 +75,8 @@ export default function TermsPage() {
               <h2 className="text-lg font-bold text-[#111111]">1. General Scope</h2>
               <p>
                 These Terms of Supply govern the quotation, engineering design, fabrication, trial testing,
-                and supply of industrial equipment—including rotary drum dryers, sand washing plants, fertilizer
-                granulators, conveyor systems, and mechanical spares—manufactured by Minerals Solutions at its Zak GIDC works.
+                and supply of industrial equipment (including rotary drum dryers, sand washing plants, fertilizer
+                granulators, conveyor systems, and mechanical spares) manufactured by Minerals Solutions at its Zak GIDC works.
               </p>
               <p className="text-xs text-neutral-500">
                 Technical parameters, capacities, and drawings published on this website are indicative engineering
