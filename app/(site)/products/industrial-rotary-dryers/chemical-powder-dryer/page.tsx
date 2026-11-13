@@ -985,8 +985,8 @@ export default function ChemicalPowderDryerPage() {
                   external
                   size="lg"
                   variant="outline"
-                  className="border-slate-700 text-slate-100 hover:bg-slate-900 font-semibold px-8"
-                  icon={<Phone className="w-4 h-4 text-emerald-400" />}
+                  className="bg-white text-slate-900 hover:bg-slate-100 border border-white font-bold px-8 shadow-sm"
+                  icon={<Phone className="w-4 h-4 text-emerald-600" />}
                 >
                   Call Engineering Desk: {primaryPhone}
                 </Button>
