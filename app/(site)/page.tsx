@@ -545,7 +545,6 @@ export default function HomePage() {
                 key={ind.name}
                 className="p-6 rounded-2xl bg-white border border-[#E7E7EB] hover:shadow-[0_12px_32px_rgba(17,17,17,0.08)] hover:border-red-200 transition-all space-y-2 group"
               >
-                <div className="w-2 h-2 rounded-full bg-[#E10613]" />
                 <h3 className="text-base font-bold text-[#111111] group-hover:text-[#E10613] transition-colors">
                   {ind.name}
                 </h3>

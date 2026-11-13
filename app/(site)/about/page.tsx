@@ -294,7 +294,6 @@ export default function AboutPage() {
                 key={pr.title}
                 className="bg-white rounded-2xl border border-[#E7E7EB] p-6 shadow-[0_4px_24px_rgba(17,17,17,0.04)] hover:shadow-[0_12px_32px_rgba(17,17,17,0.08)] hover:border-red-200 transition-all space-y-2 group"
               >
-                <div className="w-2 h-2 rounded-full bg-[#E10613]" />
                 <h3 className="text-base font-bold text-[#111111] group-hover:text-[#E10613] transition-colors">
                   {pr.title}
                 </h3>
