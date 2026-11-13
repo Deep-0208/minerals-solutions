@@ -231,6 +231,7 @@ export default function ProductsPage() {
                     alt={cat.alt}
                     width={800}
                     height={600}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 45vw, 600px"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute top-4 left-4 bg-black/80 backdrop-blur-sm text-white px-3.5 py-1 rounded-full text-xs font-mono font-semibold">

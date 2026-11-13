@@ -289,6 +289,7 @@ export default function HomePage() {
                     width={800}
                     height={600}
                     priority
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-mono font-semibold text-[#111111] border border-[#E7E7EB] shadow-xs">
@@ -357,6 +358,7 @@ export default function HomePage() {
                       alt={item.alt}
                       width={800}
                       height={500}
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                     <div className="absolute top-4 right-4 bg-black/75 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs font-mono font-semibold">
@@ -441,6 +443,7 @@ export default function HomePage() {
                   alt="Heavy fabrication workshop floor showing rotary drum rolling, turning lathes, and structural welding bays"
                   width={600}
                   height={450}
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -450,6 +453,7 @@ export default function HomePage() {
                   alt="Mechanical fabrication and plant engineering working team at Minerals Solutions Dahegam facility"
                   width={600}
                   height={450}
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   className="w-full h-full object-cover"
                 />
               </div>

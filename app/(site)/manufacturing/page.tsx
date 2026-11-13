@@ -211,6 +211,7 @@ export default function ManufacturingPage() {
                 width={800}
                 height={600}
                 priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 45vw, 600px"
                 className="w-full h-full object-cover"
               />
               <div className="absolute bottom-3 left-3 right-3 bg-black/80 backdrop-blur-sm p-3 rounded-xl text-white text-xs">
