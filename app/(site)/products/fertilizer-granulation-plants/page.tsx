@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     absolute: 'Fertilizer Granulation & Pellet Plants | Gujarat Works',
   },
   description:
-    'Turnkey bio-organic and NPK chemical fertilizer granulation plants (1 to 20 TPH). Pan granulators, cooling drums, and pellet mills manufactured in Gujarat.',
+    'Fabricate turnkey bio-organic & chemical fertilizer granulation plants (1 to 20 TPH). Pan granulators and cooling drums built at Zak GIDC, Dahegam works.',
   alternates: {
     canonical: '/products/fertilizer-granulation-plants/',
   },
@@ -280,6 +280,11 @@ export default function FertilizerPlantsPage() {
                 cooling and conditioning drums.
               </p>
 
+              {/* AI Citability Definition Passage */}
+              <div className="p-4 rounded-2xl bg-slate-50 border-l-4 border-[#E10613] text-xs sm:text-sm text-slate-700 leading-relaxed shadow-xs">
+                A fertilizer granulation plant is an industrial manufacturing line engineered to transform fine chemical powders, animal manure, pressed mud, and organic compost into uniform 2.0 mm to 4.5 mm spherical pellets. Engineered in Zak GIDC, Dahegam, Gujarat by Minerals Solutions, these turnkey installations achieve production capacities from 1 to 20 TPH across bio-organic fertilizers, city compost, vermicompost, and compound NPK blends. The process incorporates pan disc granulators with stepless 40° to 55° inclination adjustment, dry double-roller compaction presses, continuous tumbling drum granulators, rotary coolers, and rotary anti-caking coating drums. Built with certified IS 2062 steel shells, acid-resistant 304 stainless steel or UHMWPE liners, and hardened alloy steel internal scrapers, Minerals Solutions granulation lines consistently yield over 90% in-spec finished granules with compressive crush strengths exceeding 15 to 25 N, preventing product degradation and dusting during bagging, transport, and automated field spreading.
+              </div>
+
               <div className="pt-2 flex flex-wrap gap-3">
                 <Button href="/request-quote/" variant="primary" size="md">
                   Request Plant Sizing Quote
@@ -314,9 +319,10 @@ export default function FertilizerPlantsPage() {
                 <Image
                   src="/images/products/fertilizer-pellet/fertilizer-granulation-plant-primary-lg.webp"
                   alt="Minerals Solutions turnkey fertilizer granulation plant installation showing pan disc granulators and conveyor belts"
-                  fill
+                  width={1200}
+                  height={800}
                   priority
-                  className="object-cover"
+                  className="w-full h-full object-cover"
                 />
                 <div className="absolute bottom-3 left-3 right-3 bg-black/80 backdrop-blur-sm p-3 rounded-xl text-white text-xs">
                   <span className="font-bold block">Turnkey Fertilizer Granulation Line</span>

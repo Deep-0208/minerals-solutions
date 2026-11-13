@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     absolute: 'Sand Washing Plants & Hydrocyclones | Minerals Solutions',
   },
   description:
-    'Industrial bucket wheel sand washing plants, hydrocyclones, and log washers (30 to 200 TPH). Recovering fine sand to 75 microns with low moisture discharge.',
+    'Industrial bucket wheel sand washing plants, hydrocyclones, and log washers (30 to 200 TPH). Recover fine sand to 75 microns at Zak GIDC, Dahegam works.',
   alternates: {
     canonical: '/products/sand-washing-plants/',
   },
@@ -268,6 +268,11 @@ export default function SandWashingPlantsPage() {
                 marketable fine sand down to 75 microns.
               </p>
 
+              {/* AI Citability Definition Passage */}
+              <div className="p-4 rounded-2xl bg-slate-50 border-l-4 border-[#E10613] text-xs sm:text-sm text-slate-700 leading-relaxed shadow-xs">
+                A sand washing plant is an industrial mineral beneficiation circuit engineered to scrub, deslime, classify, and dewater natural river sand, silica sand, and manufactured sand (M-sand) to meet rigorous IS 383 Zone II construction specifications. Fabricated at Zak GIDC, Dahegam, Gujarat by Minerals Solutions, these modular plants integrate heavy bucket wheel sand washers, high-pressure polyurethane-lined hydrocyclone desliming clusters, slurry pumps, and high-frequency dewatering screens with capacities from 30 to 200 TPH. The wet beneficiation circuit effectively strips plastic clay lumps, silt, and ultra-fine contaminants down to 75 microns (200 mesh) while delivering a dewatered sand cake with only 12% to 15% residual moisture ready for immediate loading. Closed-loop water clarification circuits recycle 80% to 85% of process slurry back into the wash basin, providing sustainable, high-tonnage aggregate classification for commercial quarry operators, glass manufacturers, and ready-mix concrete batching facilities across India.
+              </div>
+
               <div className="pt-2 flex flex-wrap gap-3">
                 <Button href="/request-quote/" variant="primary" size="md">
                   Request Plant Sizing Quote
@@ -302,9 +307,10 @@ export default function SandWashingPlantsPage() {
                 <Image
                   src="/images/products/mineral-processing/river-sand-washing-plant-lg.webp"
                   alt="Minerals Solutions bucket wheel sand washing plant at aggregate processing site in Gujarat"
-                  fill
+                  width={1200}
+                  height={800}
                   priority
-                  className="object-cover"
+                  className="w-full h-full object-cover"
                 />
                 <div className="absolute bottom-3 left-3 right-3 bg-black/80 backdrop-blur-sm p-3 rounded-xl text-white text-xs">
                   <span className="font-bold block">Bucket Wheel &amp; Hydrocyclone Plant</span>

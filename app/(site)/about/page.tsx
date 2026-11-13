@@ -153,9 +153,10 @@ export default function AboutPage() {
               <Image
                 src="/images/facility/working-team-lg.webp"
                 alt="Mechanical fabrication and plant engineering working team at Minerals Solutions Dahegam facility"
-                fill
+                width={800}
+                height={600}
                 priority
-                className="object-cover"
+                className="w-full h-full object-cover"
               />
               <div className="absolute bottom-3 left-3 right-3 bg-black/80 backdrop-blur-sm p-3 rounded-xl text-white text-xs">
                 <span className="font-bold block">Engineering Team at Zak GIDC Works</span>

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: 'Terms of Supply & Equipment Quotation | Minerals Solutions',
   },
   description:
-    'Commercial terms, quotation validity, warranty policy, and inspection protocols governing industrial machinery manufactured by Minerals Solutions in Gujarat.',
+    'Review commercial terms, quotation validity, and warranty policies for machinery built by Minerals Solutions at our Zak GIDC, Dahegam works in Gujarat.',
   alternates: {
     canonical: '/terms/',
   },

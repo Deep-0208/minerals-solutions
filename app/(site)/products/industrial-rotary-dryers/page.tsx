@@ -280,6 +280,11 @@ export default function RotaryDryersPage() {
                 moisture reduction in silica sand, minerals, sawdust, gypsum, and chemicals.
               </p>
 
+              {/* AI Citability Definition Passage */}
+              <div className="p-4 rounded-2xl bg-slate-50 border-l-4 border-[#E10613] text-xs sm:text-sm text-slate-700 leading-relaxed shadow-xs">
+                An industrial rotary dryer is a heavy continuous thermal processing cylinder designed to reduce the moisture content of bulk solids from up to 35% down to below 0.5%. Manufactured in Zak GIDC, Dahegam, Gujarat by Minerals Solutions, these systems feature single-pass direct-fired drums, concentric double-pass return cylinders, and triple-pass high-efficiency configurations handling throughputs from 500 kg/hr to 50 TPH. The machine utilizes certified IS 2062 Grade B structural steel shells (12 mm to 25 mm thickness), custom engineered internal lifting flights, and forged EN-8/EN-9 alloy steel trunnion support rollers induction hardened to 280-320 BHN. Driven by precision-machined 42CrMo4 girth gears and Siemens/ABB IE3 energy-efficient motors, each unit interfaces with hot air furnaces fueled by coal, agro-waste briquettes, natural gas, or light diesel, delivering thermal efficiencies up to 85% across silica sand, foundry sand, bauxite, clay minerals, and chemical fertilizers.
+              </div>
+
               <div className="pt-2 flex flex-wrap gap-3">
                 <Button href="/request-quote/" variant="primary" size="md">
                   Request Dryer Quote
@@ -314,9 +319,10 @@ export default function RotaryDryersPage() {
                 <Image
                   src="/images/products/rotary-dryers/double-pass-rotary-dryer-primary-lg.webp"
                   alt="Minerals Solutions double pass concentric rotary dryer showing outer shell and heavy blue drive frame at Dahegam workshop"
-                  fill
+                  width={1200}
+                  height={800}
                   priority
-                  className="object-cover"
+                  className="w-full h-full object-cover"
                 />
                 <div className="absolute bottom-3 left-3 right-3 bg-black/80 backdrop-blur-sm p-3 rounded-xl text-white text-xs">
                   <span className="font-bold block">Double Pass Concentric Drum Assembly</span>

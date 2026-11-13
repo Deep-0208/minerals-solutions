@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     absolute: 'Industrial Rotary Dryers & Plants | Minerals Solutions',
   },
   description:
-    'Gujarat manufacturer of high-efficiency industrial rotary dryers, sand washing plants, fertilizer granulators, and heavy conveyor systems at Zak GIDC, Dahegam.',
+    'Manufacture high-efficiency rotary dryers, sand washing plants, fertilizer granulators, and heavy conveyor systems at Zak GIDC, Dahegam works in Gujarat.',
   alternates: {
     canonical: '/',
   },
@@ -286,9 +286,10 @@ export default function HomePage() {
                   <Image
                     src="/images/products/rotary-dryers/double-pass-rotary-dryer-primary-lg.webp"
                     alt="Minerals Solutions double pass concentric rotary dryer showing outer shell and heavy drive frame"
-                    fill
+                    width={800}
+                    height={600}
                     priority
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-mono font-semibold text-[#111111] border border-[#E7E7EB] shadow-xs">
                     Zak GIDC Fabrication Bay
@@ -354,8 +355,9 @@ export default function HomePage() {
                     <Image
                       src={item.image}
                       alt={item.alt}
-                      fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      width={800}
+                      height={500}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                     <div className="absolute top-4 right-4 bg-black/75 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs font-mono font-semibold">
                       {item.capacity}
@@ -437,16 +439,18 @@ export default function HomePage() {
                 <Image
                   src="/images/facility/manufacturing-unit-lg.webp"
                   alt="Heavy fabrication workshop floor showing rotary drum rolling, turning lathes, and structural welding bays"
-                  fill
-                  className="object-cover"
+                  width={600}
+                  height={450}
+                  className="w-full h-full object-cover"
                 />
               </div>
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-[#E7E7EB] shadow-md mt-6">
                 <Image
                   src="/images/facility/working-team-md.webp"
                   alt="Mechanical fabrication and plant engineering working team at Minerals Solutions Dahegam facility"
-                  fill
-                  className="object-cover"
+                  width={600}
+                  height={450}
+                  className="w-full h-full object-cover"
                 />
               </div>
             </div>

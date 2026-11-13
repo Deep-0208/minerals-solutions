@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     absolute: 'Industrial Machinery Catalog | Dryers, Washers & Plants',
   },
   description:
-    'Explore Minerals Solutions catalog: rotary drum dryers, bucket wheel sand washers, fertilizer granulators, and trough belt conveyors manufactured in Gujarat.',
+    'Explore industrial equipment catalog: rotary dryers, sand washing plants, fertilizer granulators, and conveyors manufactured at Zak GIDC, Dahegam, Gujarat.',
   alternates: {
     canonical: '/products/',
   },
@@ -229,8 +229,9 @@ export default function ProductsPage() {
                   <Image
                     src={cat.image}
                     alt={cat.alt}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    width={800}
+                    height={600}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute top-4 left-4 bg-black/80 backdrop-blur-sm text-white px-3.5 py-1 rounded-full text-xs font-mono font-semibold">
                     Capacity: {cat.capacity}

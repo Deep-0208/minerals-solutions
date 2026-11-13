@@ -8,10 +8,10 @@ import { company } from '@/data/company';
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'Privacy Policy | Minerals Solutions Gujarat',
+    absolute: 'Privacy Policy & Data Protection | Minerals Solutions',
   },
   description:
-    'Privacy Policy of Minerals Solutions: How we collect, handle, and protect B2B engineering inquiry information under Indian data protection regulations.',
+    'Review Minerals Solutions privacy policy governing B2B machinery inquiries, RFQ data, and client confidentiality at our Zak GIDC, Dahegam works, Gujarat.',
   alternates: {
     canonical: '/privacy-policy/',
   },

@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     absolute: 'Industrial Belt Conveyors & Spares | Minerals Solutions',
   },
   description:
-    'Heavy trough belt conveyors, diamond lagged pulleys, idlers, forged EN-8/EN-9 trunnion rollers, and girth gears engineered at Zak GIDC, Dahegam.',
+    'Engineer heavy trough belt conveyors, pulleys, idlers, forged EN-8 trunnion rollers, and girth gears with precision metallurgy at Zak GIDC, Dahegam works.',
   alternates: {
     canonical: '/products/industrial-conveyors-spares/',
   },
@@ -279,6 +279,11 @@ export default function ConveyorsSparesPage() {
                 mining, and thermal plant applications.
               </p>
 
+              {/* AI Citability Definition Passage */}
+              <div className="p-4 rounded-2xl bg-slate-50 border-l-4 border-[#E10613] text-xs sm:text-sm text-slate-700 leading-relaxed shadow-xs">
+                Industrial bulk conveyors and mechanical spares provide continuous, high-reliability material transfer across cement, mining, sand processing, and fertilizer plants. Fabricated in Zak GIDC, Dahegam, Gujarat by Minerals Solutions in accordance with IS 11592 standards, our material handling range encompasses heavy troughed belt conveyors (500 mm to 1,200 mm belt widths, 20 to 500 TPH), vertical centrifugal bucket elevators, enclosed tubular screw conveyors, and aftermarket replacement spares. We specialize in forged EN-8, EN-9, and 42CrMo4 alloy steel trunnion support rollers, forged tyre rings, custom spur and helical girth gears, diamond-lagged drive pulleys, and CEMA-rated labyrinth-sealed idler rolls. Every forged tyre and roller undergoes ultrasonic flaw detection and induction hardening up to 320 BHN to eliminate pitting and premature fatigue under heavy rotary kiln and drum dryer loads, guaranteeing extended operational lifespans and reduced maintenance downtime for processing facilities across India.
+              </div>
+
               <div className="pt-2 flex flex-wrap gap-3">
                 <Button href="/request-quote/" variant="primary" size="md">
                   Request Spares / Conveyor Quote
@@ -313,9 +318,10 @@ export default function ConveyorsSparesPage() {
                 <Image
                   src="/images/products/conveyor-systems/conveyor-belt-system-truss-lg.webp"
                   alt="Industrial belt conveyor system lattice truss structure fabricated at Minerals Solutions workshop in Zak GIDC"
-                  fill
+                  width={1200}
+                  height={800}
                   priority
-                  className="object-cover"
+                  className="w-full h-full object-cover"
                 />
                 <div className="absolute bottom-3 left-3 right-3 bg-black/80 backdrop-blur-sm p-3 rounded-xl text-white text-xs">
                   <span className="font-bold block">Heavy Lattice Truss Conveyor Assembly</span>

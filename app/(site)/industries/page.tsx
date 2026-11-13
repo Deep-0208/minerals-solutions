@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     absolute: 'Industries Served | Minerals Solutions Gujarat Works',
   },
   description:
-    'Industrial machinery applications by Minerals Solutions: rotary dryers, sand washers, and granulators across silica sand, foundry, and fertilizer sectors.',
+    'Deploy heavy process machinery across silica sand, foundry, and fertilizer sectors with custom equipment engineered at Zak GIDC, Dahegam works in Gujarat.',
   alternates: {
     canonical: '/industries/',
   },

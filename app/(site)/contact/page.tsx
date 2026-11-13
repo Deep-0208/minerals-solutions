@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: 'Contact Minerals Solutions | Zak GIDC Dahegam Factory',
   },
   description:
-    'Contact Minerals Solutions at Zak GIDC, Dahegam, Gandhinagar. Call +91 6352453050 or email sales@mineralssolution.in for direct machinery engineering quotes.',
+    'Contact Minerals Solutions at Zak GIDC, Dahegam. Call +91 6352453050 or email sales@mineralssolution.in for direct industrial machinery quotes in Gujarat.',
   alternates: {
     canonical: '/contact/',
   },

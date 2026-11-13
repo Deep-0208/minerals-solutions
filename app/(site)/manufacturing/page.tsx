@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     absolute: 'Heavy Fabrication Works & Facility | Minerals Solutions',
   },
   description:
-    'Tour Minerals Solutions heavy fabrication facility in Zak GIDC, Dahegam. Plate rolling to 25mm+, submerged arc welding, and lathe machining.',
+    'Tour Minerals Solutions heavy fabrication facility in Zak GIDC, Dahegam. Plate rolling to 25mm+, submerged arc welding, and lathe turning in Gujarat.',
   alternates: {
     canonical: '/manufacturing/',
   },
@@ -208,9 +208,10 @@ export default function ManufacturingPage() {
               <Image
                 src="/images/facility/manufacturing-unit-lg.webp"
                 alt="Heavy fabrication workshop floor showing rotary drum rolling, turning lathes, and structural welding bays"
-                fill
+                width={800}
+                height={600}
                 priority
-                className="object-cover"
+                className="w-full h-full object-cover"
               />
               <div className="absolute bottom-3 left-3 right-3 bg-black/80 backdrop-blur-sm p-3 rounded-xl text-white text-xs">
                 <span className="font-bold block">Workshop Fabrication Bay at Zak GIDC</span>
