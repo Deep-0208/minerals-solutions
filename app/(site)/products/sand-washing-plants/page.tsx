@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   description:
     'Industrial bucket wheel sand washing plants, hydrocyclones, and log washers (30 to 200 TPH). Recover fine sand to 75 microns at Zak GIDC, Dahegam works.',
   alternates: {
-    canonical: '/products/sand-washing-plants/',
+    canonical: `${company.siteUrl}/products/sand-washing-plants/`,
   },
   openGraph: {
     title: 'Sand Washing Plants & Hydrocyclones | Minerals Solutions',
@@ -59,28 +59,32 @@ export default function SandWashingPlantsPage() {
 
   const equipmentList = [
     {
-      name: 'Sand Washing & Screening Plant',
+      name: 'Silica Sand Washing Plant',
+      href: '/products/sand-washing-plants/silica-sand-washing-plant/',
       badge: 'Integrated Washing Circuit',
       desc: 'Complete turnkey aggregate and sand washing systems combining multi-deck wet vibrating screens, feed hoppers, slurry pumps, and dewatering units.',
       capacity: '30 - 200 TPH',
     },
     {
-      name: 'Mineral Processing Equipment',
+      name: 'Quartz Stone & Mineral Log Washer',
+      href: '/products/sand-washing-plants/mineral-log-washer/',
       badge: 'High-Attrition Beneficiation',
       desc: 'Heavy industrial scrubbers, log washers, spiral screw classifiers, and trommel washing screens designed to liberate tough adhering clay and silts from ores and quartz.',
       capacity: '20 - 150 TPH',
     },
     {
-      name: 'Bucket Wheel & Hydrocyclone Washers',
+      name: 'Bucket Wheel Sand Washer',
+      href: '/products/sand-washing-plants/bucket-wheel-sand-washer/',
       badge: 'Down to 75 Micron Recovery',
       desc: 'High-recovery bucket wheel scooper paired with polyurethane-lined hydrocyclones and high-frequency dewatering screens, minimizing fine sand loss to settling ponds.',
       capacity: '30 - 200 TPH',
     },
     {
-      name: 'Washed & Graded Silica Sand Systems',
-      badge: 'Precision Sieve Classification',
-      desc: 'Specialized wet processing trains producing ultra-clean silica sand for foundries, glass plants, construction chemicals, and epoxy flooring formulations.',
-      capacity: 'Custom Engineered',
+      name: 'Hydrocyclone Sand Separator',
+      href: '/products/sand-washing-plants/hydrocyclone-sand-separator/',
+      badge: 'Fine Slurry Dewatering',
+      desc: 'High-pressure polyurethane hydrocyclones paired with high-frequency dewatering screens to recover marketable 75-150µm fine sand from overflow slurry.',
+      capacity: '30 - 220 m³/hr',
     },
   ];
 
@@ -387,7 +391,9 @@ export default function SandWashingPlantsPage() {
                       </div>
                     </div>
                     <h3 className="text-lg font-bold text-[#111111] group-hover:text-[#E10613] transition-colors">
-                      {item.name}
+                      <Link href={item.href} className="hover:underline">
+                        {item.name}
+                      </Link>
                     </h3>
                     <p className="text-xs sm:text-sm text-[#737373] leading-relaxed">
                       {item.desc}
@@ -395,8 +401,9 @@ export default function SandWashingPlantsPage() {
                   </div>
                   <div className="pt-3 border-t border-neutral-100 flex items-center justify-between text-xs">
                     <span className="text-neutral-500 font-mono font-semibold">Capacity: {item.capacity}</span>
-                    <Link href="/request-quote/" className="font-bold text-[#E10613] hover:underline">
-                      Enquire Now &rarr;
+                    <Link href={item.href} className="font-bold text-[#E10613] hover:underline inline-flex items-center gap-1">
+                      <span>View Specifications</span>
+                      <ChevronRight className="w-3.5 h-3.5" />
                     </Link>
                   </div>
                 </div>

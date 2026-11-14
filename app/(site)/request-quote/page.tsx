@@ -10,9 +10,9 @@ export const metadata: Metadata = {
     absolute: 'Request Machinery Quotation | Minerals Solutions Gujarat',
   },
   description:
-    'Submit process requirements for custom quotations on industrial rotary dryers, sand washing plants, and granulators from our Zak GIDC, Dahegam workshop.',
+    'Request direct factory pricing & custom GA drawings for industrial rotary dryers, sand washing plants, and granulators from our Zak GIDC, Dahegam works.',
   alternates: {
-    canonical: '/request-quote/',
+    canonical: `${company.siteUrl}/request-quote/`,
   },
   openGraph: {
     title: 'Request Machinery Quotation | Minerals Solutions Gujarat',

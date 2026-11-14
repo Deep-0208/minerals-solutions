@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   description:
     'Fabricate turnkey bio-organic & chemical fertilizer granulation plants (1 to 20 TPH). Pan granulators and cooling drums built at Zak GIDC, Dahegam works.',
   alternates: {
-    canonical: '/products/fertilizer-granulation-plants/',
+    canonical: `${company.siteUrl}/products/fertilizer-granulation-plants/`,
   },
   openGraph: {
     title: 'Fertilizer Granulation & Pellet Plants | Gujarat Works',
@@ -60,28 +60,32 @@ export default function FertilizerPlantsPage() {
 
   const equipmentList = [
     {
-      name: 'Fertilizers Granulation Plant',
-      badge: 'Turnkey Continuous Lines',
-      desc: 'Complete industrial bio-organic compost and chemical fertilizer granulation lines engineered with integrated feeding, agglomeration, moisture reduction, and grading.',
-      capacity: '1 - 20 TPH continuous',
-    },
-    {
-      name: 'Fertilizers Plant (Pan / Disc System)',
+      name: 'Pan Disc Fertilizer Granulator',
+      href: '/products/fertilizer-granulation-plants/disc-granulator/',
       badge: '35° - 55° Stepless Tilt',
-      desc: 'Heavy circular disc granulator featuring worm-gear stepless angle adjustment, automatic tungsten carbide scrapers, and liquid binder spray nozzles for dense, spherical granules.',
-      capacity: '100 kg/hr - 5 TPH per pan',
+      desc: 'Heavy circular disc granulator featuring worm-gear stepless angle adjustment, automatic tungsten carbide scrapers, and liquid binder spray nozzles for dense, spherical granules (≥90% yield).',
+      capacity: '0.5 - 5 TPH per pan',
     },
     {
-      name: 'Granulation Cooling & Coating Drums',
+      name: 'Double Roller Granulator (Dry Compaction)',
+      href: '/products/fertilizer-granulation-plants/double-roller-granulator/',
+      badge: 'Zero Thermal Drying',
+      desc: 'High-pressure dry compaction press for chemical salts, ammonium sulphate, and NPK blends. Ambient room-temperature operation saves up to 80% energy vs wet methods.',
+      capacity: '1.0 - 5.5 TPH',
+    },
+    {
+      name: 'Rotary Drum Fertilizer Granulator',
+      href: '/products/fertilizer-granulation-plants/rotary-drum-granulator/',
+      badge: 'Continuous Tumbling Line',
+      desc: 'Heavy industrial rolling-drum granulator with sub-bed steam/liquid spargers, non-stick UHMWPE/rubber liners, and forged girth gear drive for large-scale plants.',
+      capacity: '3.0 - 20.0 TPH',
+    },
+    {
+      name: 'Fertilizer Cooling & Coating Drum',
+      href: '/products/fertilizer-granulation-plants/fertilizer-cooling-coating-drum/',
       badge: 'Anti-Caking Hardening',
       desc: 'Rotary cooling drum hardening granules via ambient air draft, paired with rotary coating drum applying micronized conditioning oils and neem/talc anti-caking powders.',
-      capacity: '1 - 20 TPH',
-    },
-    {
-      name: 'Turnkey Fertilizer Processing Lines',
-      badge: 'End-to-End Plant Integration',
-      desc: 'Comprehensive engineering scope including raw compost crushers, twin-shaft mixers, belt conveyors, bucket elevators, rotary dryers, vibrating screens, and automatic bagging.',
-      capacity: 'Matched to plant capacity',
+      capacity: '2.0 - 15.0 TPH',
     },
   ];
 
@@ -127,6 +131,44 @@ export default function FertilizerPlantsPage() {
       parameter: 'Post-Granulation Hardening',
       bioOrganic: 'Rotary air cooler followed by anti-caking neem oil coat',
       chemicalNpk: 'Intensive rotary cooling and conditioning wax spray',
+    },
+  ];
+
+  const granulatorComparisonRows = [
+    {
+      parameter: 'Working Principle',
+      panDisc: 'Centrifugal rolling snowball agglomeration in 35°–55° inclined rotating pan',
+      rotaryDrum: 'Continuous rolling-curtain cascading tumbling in an inclined rotating cylinder',
+    },
+    {
+      parameter: 'Throughput Capacity',
+      panDisc: '0.5 – 5.0 TPH per pan unit (scalable in multi-pan batteries)',
+      rotaryDrum: '3.0 – 20.0 TPH continuous mega-tonnage single-line processing',
+    },
+    {
+      parameter: 'Pellet Sphericity & Yield',
+      panDisc: '≥90% spherical yield (2.0–4.75 mm) with natural rim self-classification',
+      rotaryDrum: '70%–80% in-spec yield; requires oversize crushing and recycle loop',
+    },
+    {
+      parameter: 'Feed Moisture & Steam Feed',
+      panDisc: 'Wet powder agglomeration (18%–30% moisture with liquid binder sprays)',
+      rotaryDrum: 'Sub-bed steam sparging, chemical slurry reaction, or liquid fertilizer dosing',
+    },
+    {
+      parameter: 'Visual Process Monitoring',
+      panDisc: '100% open visual bed: operators adjust tilt angle and spray mist in real time',
+      rotaryDrum: 'Enclosed continuous cylinder with end-hood inspection ports',
+    },
+    {
+      parameter: 'Lining & Anti-Stick System',
+      panDisc: 'Carbon steel / SS304 pan with spring-loaded tungsten carbide scrapers',
+      rotaryDrum: 'High-wear steel shell with flexible breathing rubber or UHMWPE liners',
+    },
+    {
+      parameter: 'Ideal Production Scope',
+      panDisc: 'Bio-organic compost, city waste, vermicompost, bentonite, small-mid NPK',
+      rotaryDrum: 'High-tonnage chemical compound NPK, DAP, urea-based, and complex fertilizers',
     },
   ];
 
@@ -195,7 +237,17 @@ export default function FertilizerPlantsPage() {
         {
           '@type': 'PropertyValue',
           name: 'Pellet Size Uniformity',
-          value: '2.0 mm to 4.75 mm (≥90% yield)',
+          value: '2.0 mm to 6.0 mm round pellets (≥90% in-spec yield)',
+        },
+        {
+          '@type': 'PropertyValue',
+          name: 'Finished Granule Crush Strength',
+          value: '15 N to 25 N compressive hardness',
+        },
+        {
+          '@type': 'PropertyValue',
+          name: 'Drive Power Range',
+          value: '7.5 kW to 75 kW matched to line capacity',
         },
       ],
       offers: {
@@ -286,8 +338,8 @@ export default function FertilizerPlantsPage() {
               </div>
 
               <div className="pt-2 flex flex-wrap gap-3">
-                <Button href="/request-quote/" variant="primary" size="md">
-                  Request Plant Sizing Quote
+                <Button href="/request-quote/?product=fertilizer-granulation-plant&type=granulation-test" variant="primary" size="md">
+                  Request Custom Granulation Test / Sizing Calculation
                 </Button>
                 <a
                   href={`tel:${cleanPhone}`}
@@ -395,7 +447,9 @@ export default function FertilizerPlantsPage() {
                       </div>
                     </div>
                     <h3 className="text-lg font-bold text-[#111111] group-hover:text-[#E10613] transition-colors">
-                      {item.name}
+                      <Link href={item.href} className="hover:underline">
+                        {item.name}
+                      </Link>
                     </h3>
                     <p className="text-xs sm:text-sm text-[#737373] leading-relaxed">
                       {item.desc}
@@ -403,8 +457,9 @@ export default function FertilizerPlantsPage() {
                   </div>
                   <div className="pt-3 border-t border-neutral-100 flex items-center justify-between text-xs">
                     <span className="text-neutral-500 font-mono font-semibold">Capacity: {item.capacity}</span>
-                    <Link href="/request-quote/" className="font-bold text-[#E10613] hover:underline">
-                      Enquire Now &rarr;
+                    <Link href={item.href} className="font-bold text-[#E10613] hover:underline inline-flex items-center gap-1">
+                      <span>View Specifications</span>
+                      <ChevronRight className="w-3.5 h-3.5" />
                     </Link>
                   </div>
                 </div>
@@ -454,6 +509,54 @@ export default function FertilizerPlantsPage() {
               Because organic manures contain delicate nitrogen-fixing microbes, direct high-temperature flame drying causes
               nutrient loss. Minerals Solutions specifies indirect warm air draft dryers for organic lines and heavy SS304
               lined disc granulators to withstand corrosive manure acids.
+            </div>
+          </div>
+
+          {/* Machinery Selection Comparison: Pan / Disc vs Rotary Drum */}
+          <div className="mb-16 bg-white rounded-3xl border border-[#E7E7EB] p-6 sm:p-10 shadow-[0_4px_24px_rgba(17,17,17,0.04)]">
+            <div className="flex items-center gap-2 mb-3">
+              <Scale className="w-4 h-4 text-[#E10613]" />
+              <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#E10613]">
+                Machinery Selection Matrix
+              </span>
+            </div>
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#111111] tracking-tight mb-3">
+              Pan / Disc Granulator vs. Rotary Drum Granulator
+            </h2>
+            <p className="text-sm text-[#737373] leading-relaxed max-w-3xl mb-8">
+              Selecting between an inclined disc pan granulator and a heavy rotary drum granulator depends on your production
+              scale, raw material chemistry, and target granule sphericity:
+            </p>
+
+            <div className="overflow-x-auto">
+              <table className="w-full text-left text-xs sm:text-sm border-collapse">
+                <thead>
+                  <tr className="border-b border-[#E7E7EB] bg-[#F5F5F7]">
+                    <th className="p-3.5 font-bold text-[#111111] rounded-l-xl">Engineering Parameter</th>
+                    <th className="p-3.5 font-bold text-[#E10613]">Pan / Disc Granulator (MS-PG Series)</th>
+                    <th className="p-3.5 font-bold text-[#111111] rounded-r-xl">Rotary Drum Granulator (MS-RDG Series)</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-neutral-100">
+                  {granulatorComparisonRows.map((row, idx) => (
+                    <tr key={idx} className="hover:bg-neutral-50/50 transition-colors">
+                      <td className="p-3.5 font-semibold text-[#111111]">{row.parameter}</td>
+                      <td className="p-3.5 text-neutral-800 bg-red-50/20 font-medium">{row.panDisc}</td>
+                      <td className="p-3.5 text-neutral-600">{row.rotaryDrum}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+
+            <div className="mt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 p-5 rounded-2xl bg-slate-900 text-white">
+              <div className="space-y-1">
+                <span className="text-xs font-mono uppercase tracking-wider text-[#E10613] font-bold">Unsure which technology matches your formulation?</span>
+                <p className="text-xs text-slate-300">Our Zak GIDC engineers conduct laboratory trial pelletizing and sizing calculations on your raw compost or chemical blend.</p>
+              </div>
+              <Button href="/request-quote/?product=fertilizer-granulation-plant&type=granulation-test" variant="primary" size="sm" className="shrink-0 font-bold">
+                Request Custom Granulation Test / Sizing Calculation &rarr;
+              </Button>
             </div>
           </div>
 
@@ -513,8 +616,8 @@ export default function FertilizerPlantsPage() {
             </div>
 
             <div className="flex flex-col sm:flex-row items-center gap-3 shrink-0">
-              <Button href="/request-quote/" variant="primary" size="lg">
-                Request Plant Proposal
+              <Button href="/request-quote/?product=fertilizer-granulation-plant&type=granulation-test" variant="primary" size="lg">
+                Request Custom Granulation Test / Sizing Calculation
               </Button>
               <a
                 href={`tel:${cleanPhone}`}

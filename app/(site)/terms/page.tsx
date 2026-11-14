@@ -5,6 +5,7 @@ import { FileText, ShieldAlert, CheckCircle2, Phone, Mail } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { company } from '@/data/company';
+import { defaultOgImage, defaultTwitterImage } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: {
@@ -13,7 +14,24 @@ export const metadata: Metadata = {
   description:
     'Review commercial terms, quotation validity, and warranty policies for machinery built by Minerals Solutions at our Zak GIDC, Dahegam works in Gujarat.',
   alternates: {
-    canonical: '/terms/',
+    canonical: `${company.siteUrl}/terms/`,
+  },
+  openGraph: {
+    title: 'Terms of Supply & Equipment Quotation | Minerals Solutions',
+    description:
+      'Commercial terms, quotation validity, and warranty policies for machinery built by Minerals Solutions in Zak GIDC, Dahegam, Gujarat.',
+    url: `${company.siteUrl}/terms/`,
+    siteName: 'Minerals Solutions',
+    locale: 'en_IN',
+    type: 'website',
+    images: [defaultOgImage],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Terms of Supply & Equipment Quotation | Minerals Solutions',
+    description:
+      'Commercial terms and quotation conditions for Minerals Solutions industrial machinery fabrication.',
+    images: [defaultTwitterImage],
   },
 };
 
@@ -126,6 +144,12 @@ export default function TermsPage() {
                 For commercial contract clarifications, reach our works desk at{' '}
                 <a href={`mailto:${company.email}`} className="text-[#E10613] font-bold">{company.email}</a> or call{' '}
                 <a href={`tel:${company.telephones[0].replace(/\s+/g, '')}`} className="text-[#E10613] font-bold">{company.telephones[0]}</a>.
+              </div>
+              <div className="p-4 rounded-2xl bg-[#F5F5F7] border border-[#E7E7EB] text-xs space-y-1 text-neutral-800 mt-3">
+                <p className="font-bold text-[#111111]">{company.legalName}</p>
+                <p>Proprietor: {company.proprietor}</p>
+                <p>Works: {company.address.streetAddress}, {company.address.locality}, Gujarat - {company.address.postalCode}, India.</p>
+                <p>GSTIN: <span className="font-mono font-semibold">{company.gstin}</span></p>
               </div>
             </section>
           </div>

@@ -2,21 +2,22 @@ import React from 'react';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import { JsonLd } from '@/components/seo/JsonLd';
 import { defaultOgImage, defaultTwitterImage } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'Industrial Rotary Dryers & Plants | Minerals Solutions',
+    absolute: 'Rotary Dryers Manufacturer Gujarat | Minerals Solutions',
   },
   description:
-    'Manufacture high-efficiency rotary dryers, sand washing plants, fertilizer granulators, and heavy conveyor systems at Zak GIDC, Dahegam works in Gujarat.',
+    'Leading industrial rotary dryers manufacturer in Gujarat. Minerals Solutions builds custom sand washing plants, granulators & conveyors in Zak GIDC, Dahegam.',
   alternates: {
-    canonical: '/',
+    canonical: 'https://mineralssolution.in/',
   },
   openGraph: {
-    title: 'Industrial Rotary Dryers & Plants | Minerals Solutions',
+    title: 'Rotary Dryers Manufacturer Gujarat | Minerals Solutions',
     description:
-      'Engineered heavy machinery: rotary drum dryers, bucket wheel sand washers, fertilizer granulators, and bulk material handling conveyors from Zak GIDC, Gujarat.',
+      'Leading industrial rotary dryers manufacturer in Gujarat. Minerals Solutions builds custom sand washing plants, granulators & conveyors in Zak GIDC, Dahegam.',
     url: 'https://mineralssolution.in/',
     siteName: 'Minerals Solutions',
     locale: 'en_IN',
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Minerals Solutions | Industrial Rotary Dryers & Plants Gujarat',
+    title: 'Rotary Dryers Manufacturer Gujarat | Minerals Solutions',
     description:
       'Direct manufacturer of rotary drum dryers, sand washing plants, and fertilizer granulators in Gujarat.',
     images: [defaultTwitterImage],
@@ -38,6 +39,7 @@ import {
   Boxes,
   ArrowRight,
   Phone,
+  MessageCircle,
   CheckCircle2,
   ShieldCheck,
   Award,
@@ -200,8 +202,28 @@ export default function HomePage() {
     { step: '08', title: 'Spares & Ongoing Support', desc: 'Continuous provision of wear parts, trunnions, and scheduled preventive maintenance.' },
   ];
 
+  const homeSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': 'https://mineralssolution.in/#webpage',
+    url: 'https://mineralssolution.in/',
+    name: 'Industrial Rotary Dryers & Heavy Machinery Manufacturer | Minerals Solutions',
+    description:
+      'Direct manufacturer of industrial rotary dryers, sand washing plants, fertilizer granulators, and heavy material handling conveyors in Zak GIDC, Dahegam, Gujarat.',
+    isPartOf: {
+      '@type': 'WebSite',
+      '@id': 'https://mineralssolution.in/#website',
+    },
+    about: {
+      '@type': 'Organization',
+      name: 'Minerals Solutions',
+      url: 'https://mineralssolution.in/',
+    },
+  };
+
   return (
     <div className="bg-white">
+      <JsonLd data={homeSchema} />
       {/* SECTION 1: HERO SECTION */}
       <section className="relative bg-gradient-to-b from-neutral-50 via-white to-white border-b border-[#E7E7EB] overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-24">
         {/* Subtle Background Glow & Radial Accents */}
@@ -247,7 +269,7 @@ export default function HomePage() {
               </div>
 
               {/* Direct Engineering Hotline Link */}
-              <div className="pt-1 flex items-center gap-3 text-xs text-neutral-500">
+              <div className="pt-1 flex flex-wrap items-center gap-3 text-xs text-neutral-500">
                 <span>Direct Engineering Desk:</span>
                 <a
                   href={`tel:${cleanPhone}`}
@@ -255,6 +277,18 @@ export default function HomePage() {
                 >
                   <Phone className="w-3.5 h-3.5 text-[#E10613]" />
                   <span>{primaryPhone}</span>
+                </a>
+                <span className="text-neutral-300">|</span>
+                <a
+                  href={`https://wa.me/${company.whatsapp.number.replace('+', '')}?text=${encodeURIComponent(
+                    'Hello Minerals Solutions, I would like to inquire about industrial rotary dryers and processing machinery.'
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-bold text-emerald-700 hover:text-emerald-800 transition-colors flex items-center gap-1"
+                >
+                  <MessageCircle className="w-3.5 h-3.5 text-emerald-600" />
+                  <span>Quick WhatsApp</span>
                 </a>
               </div>
 
@@ -372,7 +406,9 @@ export default function HomePage() {
                         <Icon className="w-5 h-5" />
                       </div>
                       <h3 className="text-xl font-bold text-[#111111] group-hover:text-[#E10613] transition-colors">
-                        {item.title}
+                        <Link href={item.href} className="hover:underline">
+                          {item.title}
+                        </Link>
                       </h3>
                       <p className="text-sm text-[#737373] leading-relaxed">
                         {item.description}
@@ -396,7 +432,7 @@ export default function HomePage() {
                           href={item.href}
                           className="font-bold text-sm text-[#E10613] hover:underline inline-flex items-center gap-1"
                         >
-                          <span>Explore Specifications</span>
+                          <span>Explore {item.title.split(' ')[0]} Specs</span>
                           <ArrowRight className="w-4 h-4" />
                         </Link>
                         <Button href="/request-quote/" variant="ghost" size="sm">

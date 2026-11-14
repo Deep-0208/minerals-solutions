@@ -201,13 +201,13 @@ export function Footer() {
             &copy; {new Date().getFullYear()} Minerals Solutions. All rights reserved. Registered MSME Enterprise in Gujarat, India.
           </p>
           <div className="flex items-center gap-6">
-            <Link href="/privacy-policy" className="hover:text-white transition-colors">
+            <Link href="/privacy-policy/" className="hover:text-white transition-colors">
               Privacy Policy
             </Link>
-            <Link href="/terms" className="hover:text-white transition-colors">
+            <Link href="/terms/" className="hover:text-white transition-colors">
               Terms of Supply
             </Link>
-            <Link href="/request-quote" className="text-[#E10613] hover:underline font-semibold">
+            <Link href="/request-quote/" className="text-[#E10613] hover:underline font-semibold">
               Get Machine Quote
             </Link>
           </div>

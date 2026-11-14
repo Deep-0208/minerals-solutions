@@ -376,7 +376,7 @@ export default function FertilizerCoolingCoatingDrumPage() {
                       className="object-cover"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
                     />
-                    
+
                   </div>
 
                   <div className="p-4 bg-slate-950/90 border-t border-slate-800 text-white flex items-center justify-between">

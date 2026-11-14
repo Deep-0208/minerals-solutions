@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   description:
     'Heavy industrial rotary drum dryers (500 kg/hr to 50 TPH) for silica sand, minerals, sawdust, and chemicals. Fabricated in Zak GIDC, Dahegam, Gujarat.',
   alternates: {
-    canonical: '/products/industrial-rotary-dryers/',
+    canonical: `${company.siteUrl}/products/industrial-rotary-dryers/`,
   },
   openGraph: {
     title: 'Industrial Rotary Dryers Manufacturer | Single & Double Pass',
@@ -59,28 +59,32 @@ export default function RotaryDryersPage() {
 
   const dryerTypes = [
     {
-      name: 'Single / Double / Triple Pass Dryer',
+      name: 'Triple Pass Concentric Rotary Dryer',
+      href: '/products/industrial-rotary-dryers/triple-pass-dryer/',
       badge: 'Concentric Thermal Shells',
-      desc: 'Engineered nested concentric cylinders or single continuous rotating drums with internal cascading lifters, capturing maximum thermal efficiency with minimal factory bay footprint.',
-      applications: 'Silica sand, foundry sands, organic fertilizer granules, and mineral aggregates.',
+      desc: 'Engineered nested concentric cylinders with internal cascading lifters, capturing maximum thermal efficiency with minimal factory bay footprint.',
+      applications: 'Fly ash, mineral slag, gypsum, and fine aggregates.',
     },
     {
-      name: 'Dryer with Hot Air Generator',
+      name: 'Industrial Rotary Sand Dryer',
+      href: '/products/industrial-rotary-dryers/sand-dryer/',
       badge: 'Integrated Thermal Draft',
-      desc: 'Complete thermal assembly paired with high-efficiency refractory-lined hot air generator furnace fired by coal, biomass briquettes, agro-waste, or natural gas.',
-      applications: 'River sand, limestone, crushed slag, bauxite, and coarse mineral ores.',
+      desc: 'Complete thermal assembly paired with high-efficiency refractory-lined furnace for river sand, silica sand, and foundry sand drying to <0.5% moisture.',
+      applications: 'Silica sand, river sand, foundry sand, and bauxite.',
     },
     {
-      name: 'Dryer with Heat Exchanger Unit',
+      name: 'Chemical Powder & Mineral Rotary Dryer',
+      href: '/products/industrial-rotary-dryers/chemical-powder-dryer/',
       badge: 'Indirect Clean Air Heating',
-      desc: 'Indirect shell-and-tube or plate heat exchanger unit ensuring flue gases never contact the material, preventing contamination and soot discoloration of sensitive minerals.',
-      applications: 'High-purity quartz sand, chemical salts, calcined minerals, and food-grade gypsum.',
+      desc: 'Indirect heating and stainless contact surfaces preventing contamination and discoloration of sensitive minerals and chemical crystals.',
+      applications: 'Bentonite, chemical salts, calcined minerals, and pigments.',
     },
     {
-      name: 'Industrial Rotary Drum Dryer',
+      name: 'Biomass & Sawdust Rotary Dryer',
+      href: '/products/industrial-rotary-dryers/biomass-sawdust-dryer/',
       badge: 'High Tonnage Continuous Duty',
-      desc: 'Heavy-duty single cylinder rotary drum inclined at 3 to 5 degrees with heavy IS 2062 steel shell, girth gear drive, and forged EN-8/EN-9 support trunnion rollers.',
-      applications: 'Industrial silica sand, gypsum board slurry, biomass sawdust, and bulk ores.',
+      desc: 'Heavy-duty single cylinder rotary drum with specialized lifters designed for high initial moisture biomass, sawdust, and agricultural residues.',
+      applications: 'Sawdust, wood chips, bagasse, and agro-waste briquettes.',
     },
   ];
 
@@ -407,14 +411,25 @@ export default function RotaryDryersPage() {
                       </div>
                     </div>
                     <h3 className="text-lg font-bold text-[#111111] group-hover:text-[#E10613] transition-colors">
-                      {type.name}
+                      <Link href={type.href} className="hover:underline">
+                        {type.name}
+                      </Link>
                     </h3>
                     <p className="text-xs sm:text-sm text-[#737373] leading-relaxed">
                       {type.desc}
                     </p>
                   </div>
-                  <div className="pt-3 border-t border-neutral-100 text-xs text-neutral-600">
-                    <strong className="text-[#111111]">Typical Materials:</strong> {type.applications}
+                  <div className="pt-3 border-t border-neutral-100 flex items-center justify-between text-xs">
+                    <span className="text-neutral-600">
+                      <strong className="text-[#111111]">Materials:</strong> {type.applications}
+                    </span>
+                    <Link
+                      href={type.href}
+                      className="font-bold text-[#E10613] hover:underline inline-flex items-center gap-1 shrink-0 ml-2"
+                    >
+                      <span>View Machine</span>
+                      <ChevronRight className="w-3.5 h-3.5" />
+                    </Link>
                   </div>
                 </div>
               ))}

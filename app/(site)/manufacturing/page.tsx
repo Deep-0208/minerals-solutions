@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   description:
     'Tour Minerals Solutions heavy fabrication facility in Zak GIDC, Dahegam. Plate rolling to 25mm+, submerged arc welding, and lathe turning in Gujarat.',
   alternates: {
-    canonical: '/manufacturing/',
+    canonical: `${company.siteUrl}/manufacturing/`,
   },
   openGraph: {
     title: 'Heavy Fabrication Works & Facility | Minerals Solutions',

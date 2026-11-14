@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   description:
     'Explore industrial equipment catalog: rotary dryers, sand washing plants, fertilizer granulators, and conveyors manufactured at Zak GIDC, Dahegam, Gujarat.',
   alternates: {
-    canonical: '/products/',
+    canonical: `${company.siteUrl}/products/`,
   },
   openGraph: {
     title: 'Industrial Machinery Catalog | Dryers, Washers & Plants',
@@ -120,10 +120,10 @@ export default function ProductsPage() {
       alt: 'Minerals Solutions double pass concentric rotary dryer showing outer shell and heavy drive frame',
       icon: Flame,
       keyModels: [
-        'Single / Double / Triple Pass Dryer',
-        'Dryer with Hot Air Generator',
-        'Dryer with Heat Exchanger Unit',
-        'Industrial Rotary Drum Dryer',
+        { name: 'Rotary Sand Dryer', href: '/products/industrial-rotary-dryers/sand-dryer/' },
+        { name: 'Triple Pass Drum Dryer', href: '/products/industrial-rotary-dryers/triple-pass-dryer/' },
+        { name: 'Biomass & Sawdust Dryer', href: '/products/industrial-rotary-dryers/biomass-sawdust-dryer/' },
+        { name: 'Chemical & Mineral Powder Dryer', href: '/products/industrial-rotary-dryers/chemical-powder-dryer/' },
       ],
       materials: 'Silica sand, river sand, sawdust, biomass, slag, gypsum, fly ash, chemical salts',
     },
@@ -138,10 +138,10 @@ export default function ProductsPage() {
       alt: 'Minerals Solutions complete fertilizer granulation plant installation showing granulator pan and conveyor feed',
       icon: Sprout,
       keyModels: [
-        'Fertilizers Granulation Plant',
-        'Fertilizers Plant (Pan / Disc System)',
-        'Granulation Cooling & Coating Drums',
-        'Turnkey Fertilizer Processing Lines',
+        { name: 'Pan Disc Fertilizer Granulator', href: '/products/fertilizer-granulation-plants/disc-granulator/' },
+        { name: 'Double Roller Compaction Granulator', href: '/products/fertilizer-granulation-plants/double-roller-granulator/' },
+        { name: 'Rotary Cooling & Coating Drum', href: '/products/fertilizer-granulation-plants/fertilizer-cooling-coating-drum/' },
+        { name: 'Rotary Drum Fertilizer Granulator', href: '/products/fertilizer-granulation-plants/rotary-drum-granulator/' },
       ],
       materials: 'Organic compost, cow dung manure, NPK chemical fertilizers, bentonite clay balls',
     },
@@ -156,10 +156,10 @@ export default function ProductsPage() {
       alt: 'Minerals Solutions heavy bucket wheel sand washing plant at aggregate processing site',
       icon: Waves,
       keyModels: [
-        'Sand Washing & Screening Plant',
-        'Mineral Processing Equipment',
-        'Bucket Wheel & Hydrocyclone Washers',
-        'Washed & Graded Silica Sand Systems',
+        { name: 'Bucket Wheel Sand Washer', href: '/products/sand-washing-plants/bucket-wheel-sand-washer/' },
+        { name: 'Hydrocyclone Sand Separator', href: '/products/sand-washing-plants/hydrocyclone-sand-separator/' },
+        { name: 'Quartz Stone & Mineral Log Washer', href: '/products/sand-washing-plants/mineral-log-washer/' },
+        { name: 'Silica Sand Washing Plant', href: '/products/sand-washing-plants/silica-sand-washing-plant/' },
       ],
       materials: 'River sand, silica sand, crushed stone aggregate, quartz stone, mineral ores',
     },
@@ -174,10 +174,10 @@ export default function ProductsPage() {
       alt: 'Heavy industrial conveyor belt system lattice truss structure fabricated at Minerals Solutions workshop',
       icon: Boxes,
       keyModels: [
-        'Conveyor Systems and Accessories',
-        'Road, Civil, Crusher Plants Spares',
-        'Heavy Troughed Belt Conveyors',
-        'Customized Fabrication Works',
+        { name: 'Heavy Troughed Belt Conveyors', href: '/products/industrial-conveyors-spares/belt-conveyors/' },
+        { name: 'Forged Steel Trunnion Rollers', href: '/products/industrial-conveyors-spares/forged-trunnion-rollers/' },
+        { name: 'Industrial Bucket Elevators', href: '/products/industrial-conveyors-spares/bucket-elevators/' },
+        { name: 'Industrial Screw Conveyors', href: '/products/industrial-conveyors-spares/screw-conveyors/' },
       ],
       materials: 'Bulk mineral transfer, quarry aggregate, dryer feed and discharge logistics',
     },
@@ -263,13 +263,18 @@ export default function ProductsPage() {
 
                     <div className="pt-2">
                       <h3 className="text-xs font-bold uppercase tracking-wider text-[#111111] mb-2.5">
-                        Key Equipment Models &amp; Configurations
+                        Key Equipment Models &amp; Specifications
                       </h3>
                       <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-neutral-700">
                         {cat.keyModels.map((model) => (
-                          <li key={model} className="flex items-center gap-2">
-                            <CheckCircle2 className="w-3.5 h-3.5 text-[#E10613] shrink-0" />
-                            <span>{model}</span>
+                          <li key={model.name}>
+                            <Link
+                              href={model.href}
+                              className="inline-flex items-center gap-2 hover:text-[#E10613] hover:underline transition-colors"
+                            >
+                              <CheckCircle2 className="w-3.5 h-3.5 text-[#E10613] shrink-0" />
+                              <span>{model.name}</span>
+                            </Link>
                           </li>
                         ))}
                       </ul>

@@ -143,7 +143,7 @@ export function RequestQuoteClient() {
           {/* Main RFQ Form (8 cols) */}
           <div className="lg:col-span-8 bg-white rounded-3xl border border-[#E7E7EB] p-6 sm:p-8 lg:p-10 shadow-[0_4px_24px_rgba(17,17,17,0.04)]">
             {status.type === 'success' ? (
-              <div className="py-12 px-4 text-center space-y-4">
+              <div role="status" aria-live="polite" className="py-12 px-4 text-center space-y-4">
                 <div className="w-16 h-16 bg-emerald-50 text-emerald-600 rounded-full flex items-center justify-center mx-auto">
                   <CheckCircle2 className="w-10 h-10" />
                 </div>
@@ -181,7 +181,7 @@ export function RequestQuoteClient() {
                 />
 
                 {status.type === 'error' && (
-                  <div className="p-4 rounded-xl bg-red-50 border border-red-200 text-sm text-[#BC0711] flex items-start gap-3">
+                  <div role="alert" aria-live="assertive" className="p-4 rounded-xl bg-red-50 border border-red-200 text-sm text-[#BC0711] flex items-start gap-3">
                     <AlertCircle className="w-5 h-5 shrink-0 mt-0.5" />
                     <span>{status.message}</span>
                   </div>
@@ -434,6 +434,7 @@ export function RequestQuoteClient() {
                         type="text"
                         id="name"
                         name="name"
+                        autoComplete="name"
                         required
                         value={formData.name}
                         onChange={handleChange}
@@ -450,6 +451,7 @@ export function RequestQuoteClient() {
                         type="text"
                         id="companyName"
                         name="companyName"
+                        autoComplete="organization"
                         value={formData.companyName}
                         onChange={handleChange}
                         placeholder="e.g. Gujarat Mineral Industries Ltd"
@@ -465,6 +467,8 @@ export function RequestQuoteClient() {
                         type="tel"
                         id="phone"
                         name="phone"
+                        inputMode="tel"
+                        autoComplete="tel"
                         required
                         value={formData.phone}
                         onChange={handleChange}
@@ -481,6 +485,8 @@ export function RequestQuoteClient() {
                         type="email"
                         id="email"
                         name="email"
+                        inputMode="email"
+                        autoComplete="email"
                         value={formData.email}
                         onChange={handleChange}
                         placeholder="e.g. procurement@company.com"
@@ -496,6 +502,7 @@ export function RequestQuoteClient() {
                         type="text"
                         id="city"
                         name="city"
+                        autoComplete="address-level2"
                         value={formData.city}
                         onChange={handleChange}
                         placeholder="e.g. Morbi, Ahmedabad, Hyderabad"
@@ -511,6 +518,7 @@ export function RequestQuoteClient() {
                         type="text"
                         id="country"
                         name="country"
+                        autoComplete="country-name"
                         value={formData.country}
                         onChange={handleChange}
                         placeholder="India"

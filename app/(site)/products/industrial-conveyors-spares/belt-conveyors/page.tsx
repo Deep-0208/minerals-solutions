@@ -46,7 +46,7 @@ import { defaultOgImage, defaultTwitterImage } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'Belt Conveyor Manufacturer | Minerals Solutions',
+    absolute: 'Industrial Belt Conveyor Systems | Minerals Solutions',
   },
   description: 'Install heavy duty industrial troughed belt conveyors (300mm to 1400mm width) with M24 rubber belting & lagged pulleys. Heavy built in Zak GIDC, Dahegam.',
   alternates: {

@@ -206,6 +206,44 @@ export default function ForgedTrunnionRollersPage() {
       availability: 'https://schema.org/InStock',
       itemCondition: 'https://schema.org/NewCondition',
     },
+    material: 'Forged Alloy Steel (EN-8 / EN-9 / 42CrMo4 / EN-19 / EN-24)',
+    width: {
+      '@type': 'QuantitativeValue',
+      value: '180 to 450',
+      unitCode: 'MMT',
+    },
+    depth: {
+      '@type': 'QuantitativeValue',
+      value: '250 to 1200',
+      unitCode: 'MMT',
+    },
+    weightCapacity: {
+      '@type': 'QuantitativeValue',
+      value: '5 to 60',
+      unitCode: 'TNE',
+    },
+    additionalProperty: [
+      {
+        '@type': 'PropertyValue',
+        name: 'Surface Hardness',
+        value: '280 to 320 BHN Induction Hardened',
+      },
+      {
+        '@type': 'PropertyValue',
+        name: 'Non-Destructive Testing',
+        value: '100% Ultrasonic Flaw Detection (ASTM A388 Level II)',
+      },
+      {
+        '@type': 'PropertyValue',
+        name: 'Sacrificial Wear Ratio',
+        value: 'Calibrated 30-40 BHN softer than drum riding ring to protect primary tyre',
+      },
+      {
+        '@type': 'PropertyValue',
+        name: 'Bearing Compatibility',
+        value: 'Cast Steel IS 1030 Split Plummer Blocks with SKF/FAG Spherical Roller Bearings',
+      },
+    ],
   };
 
   const breadcrumbSchema = {

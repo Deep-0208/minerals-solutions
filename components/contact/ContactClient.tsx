@@ -264,7 +264,7 @@ export function ContactClient() {
             </p>
 
             {status.type === 'success' ? (
-              <div className="p-6 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-900 space-y-3">
+              <div role="status" aria-live="polite" className="p-6 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-900 space-y-3">
                 <div className="flex items-center gap-2 text-base font-bold">
                   <CheckCircle2 className="w-5 h-5 text-emerald-600" />
                   <span>Enquiry Transmitted Successfully</span>
@@ -285,7 +285,7 @@ export function ContactClient() {
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">
                 {status.type === 'error' && (
-                  <div className="p-4 rounded-xl bg-red-50 border border-red-200 text-red-700 text-xs flex items-center gap-2">
+                  <div role="alert" aria-live="assertive" className="p-4 rounded-xl bg-red-50 border border-red-200 text-red-700 text-xs flex items-center gap-2">
                     <AlertCircle className="w-4 h-4 shrink-0" />
                     <span>{status.message}</span>
                   </div>
@@ -311,6 +311,7 @@ export function ContactClient() {
                       type="text"
                       id="name"
                       name="name"
+                      autoComplete="name"
                       required
                       value={formData.name}
                       onChange={handleChange}
@@ -327,9 +328,10 @@ export function ContactClient() {
                       type="text"
                       id="companyName"
                       name="companyName"
+                      autoComplete="organization"
                       value={formData.companyName}
                       onChange={handleChange}
-                      placeholder="e.g. Patel Minerals &amp; Chemicals"
+                      placeholder="e.g. Patel Minerals & Chemicals"
                       className="w-full text-sm px-3.5 py-2.5 rounded-xl border border-[#E7E7EB] focus:border-[#E10613] focus:ring-1 focus:ring-[#E10613] outline-none"
                     />
                   </div>
@@ -342,6 +344,8 @@ export function ContactClient() {
                       type="tel"
                       id="phone"
                       name="phone"
+                      inputMode="tel"
+                      autoComplete="tel"
                       required
                       value={formData.phone}
                       onChange={handleChange}
@@ -358,6 +362,8 @@ export function ContactClient() {
                       type="email"
                       id="email"
                       name="email"
+                      inputMode="email"
+                      autoComplete="email"
                       value={formData.email}
                       onChange={handleChange}
                       placeholder="e.g. contact@company.com"

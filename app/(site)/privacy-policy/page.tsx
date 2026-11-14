@@ -5,6 +5,7 @@ import { ShieldCheck, Lock, Eye, Mail, Phone, MapPin } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { company } from '@/data/company';
+import { defaultOgImage, defaultTwitterImage } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: {
@@ -13,7 +14,24 @@ export const metadata: Metadata = {
   description:
     'Review Minerals Solutions privacy policy governing B2B machinery inquiries, RFQ data, and client confidentiality at our Zak GIDC, Dahegam works, Gujarat.',
   alternates: {
-    canonical: '/privacy-policy/',
+    canonical: `${company.siteUrl}/privacy-policy/`,
+  },
+  openGraph: {
+    title: 'Privacy Policy & Data Protection | Minerals Solutions',
+    description:
+      'Minerals Solutions privacy policy governing B2B machinery inquiries, RFQ process parameters, and client confidentiality in Gujarat.',
+    url: `${company.siteUrl}/privacy-policy/`,
+    siteName: 'Minerals Solutions',
+    locale: 'en_IN',
+    type: 'website',
+    images: [defaultOgImage],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Privacy Policy & Data Protection | Minerals Solutions',
+    description:
+      'Privacy and data handling policies for client machinery RFQs and engineering inquiries.',
+    images: [defaultTwitterImage],
   },
 };
 

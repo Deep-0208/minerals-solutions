@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   description:
     'Engineer heavy trough belt conveyors, pulleys, idlers, forged EN-8 trunnion rollers, and girth gears with precision metallurgy at Zak GIDC, Dahegam works.',
   alternates: {
-    canonical: '/products/industrial-conveyors-spares/',
+    canonical: `${company.siteUrl}/products/industrial-conveyors-spares/`,
   },
   openGraph: {
     title: 'Industrial Belt Conveyors & Spares | Minerals Solutions',
@@ -60,28 +60,32 @@ export default function ConveyorsSparesPage() {
 
   const conveyorProducts = [
     {
-      name: 'Conveyor Systems and Accessories',
-      badge: 'Bulk Material Handling',
-      desc: 'Complete industrial conveyor systems with motorized head/tail pulleys, impact idlers, return rollers, gravity take-up towers, and self-cleaning belt scrapers.',
-      specs: 'Spans from 5m to 120m, up to 300 TPH bulk material',
-    },
-    {
-      name: 'Road, Civil, Crusher Plants Spares',
-      badge: 'Heavy Mechanical Spares',
-      desc: 'Precision replacement components for stone crushers, asphalt batching plants, and civil works including wear plates, screen meshes, rollers, and drive shafts.',
-      specs: 'Custom machined to sample or drawing',
-    },
-    {
       name: 'Heavy Troughed Belt Conveyors',
+      href: '/products/industrial-conveyors-spares/belt-conveyors/',
       badge: '400 mm to 1600 mm Widths',
-      desc: 'Robust channel-iron or fabricated lattice truss conveyors with 20°, 30°, or 35° troughing idlers engineered for harsh, abrasive aggregate and mineral transport.',
-      specs: 'IS 11592 compliant, 400 - 1600 mm belt widths',
+      desc: 'Robust channel-iron and fabricated lattice truss conveyors with 20°, 30°, or 35° troughing idlers and M24 rubber belts engineered for harsh mineral transport.',
+      specs: 'IS 11592 compliant, 15 to 300 TPH throughput',
     },
     {
-      name: 'Customized Fabrication Works',
-      badge: 'Heavy Engineering & Machining',
-      desc: 'Tailored workshop fabrication including forged EN-8/EN-9 trunnion support rollers, split girth gears, pinions, storage silos, feed hoppers, and ducting assemblies.',
-      specs: 'Fabricated at Zak GIDC Works, Dahegam',
+      name: 'Forged Steel Dryer Support Rollers & Girth Gears',
+      href: '/products/industrial-conveyors-spares/forged-trunnion-rollers/',
+      badge: 'EN-8 / EN-9 / 42CrMo4 Forgings',
+      desc: 'Precision forged steel trunnion rollers induction hardened to 280-320 BHN, split girth gears, pinions, and cast steel pillow block housings for rotary dryers.',
+      specs: '250 mm to 1200 mm OD, up to 60T load per pair',
+    },
+    {
+      name: 'Industrial Bucket Elevators',
+      href: '/products/industrial-conveyors-spares/bucket-elevators/',
+      badge: 'Centrifugal & Continuous Lifts',
+      desc: 'Heavy vertical bucket elevator systems featuring high-tensile rubber belts or forged steel chains, dust-tight casings, and high-wear pressed steel buckets.',
+      specs: 'Lifts up to 45m height, 5 to 100 TPH bulk lift',
+    },
+    {
+      name: 'Industrial Screw Conveyors & Feeders',
+      href: '/products/industrial-conveyors-spares/screw-conveyors/',
+      badge: 'Dust-Tight Powder Transport',
+      desc: 'Continuous U-trough and enclosed tubular screw conveyors with sectional continuous flighting, hardened center shafts, and variable-pitch metering screws.',
+      specs: '100 mm to 600 mm dia, carbon & SS304/SS316',
     },
   ];
 
@@ -180,6 +184,22 @@ export default function ConveyorsSparesPage() {
         '@id': `${company.siteUrl}/#organization`,
       },
       category: 'Conveyor Systems & Material Handling',
+      material: 'Forged Alloy Steel (EN-8/EN-9/EN-24) & Heavy Structural Steel IS 2062',
+      width: {
+        '@type': 'QuantitativeValue',
+        value: '400 to 1600',
+        unitCode: 'MMT',
+      },
+      depth: {
+        '@type': 'QuantitativeValue',
+        value: '250 to 1200',
+        unitCode: 'MMT',
+      },
+      weightCapacity: {
+        '@type': 'QuantitativeValue',
+        value: '15 to 300',
+        unitCode: 'TNE',
+      },
       additionalProperty: [
         {
           '@type': 'PropertyValue',
@@ -189,12 +209,17 @@ export default function ConveyorsSparesPage() {
         {
           '@type': 'PropertyValue',
           name: 'Trunnion Metallurgy',
-          value: 'Forged Alloy Steel EN-8 / EN-9 (280-320 BHN)',
+          value: 'Forged Alloy Steel EN-8 / EN-9 / 42CrMo4 (280-320 BHN)',
         },
         {
           '@type': 'PropertyValue',
           name: 'Design Code',
           value: 'IS 11592 / IS 1891',
+        },
+        {
+          '@type': 'PropertyValue',
+          name: 'Non-Destructive Testing',
+          value: '100% Ultrasonic Flaw Detection (ASTM A388 Level II)',
         },
       ],
       offers: {
@@ -285,8 +310,8 @@ export default function ConveyorsSparesPage() {
               </div>
 
               <div className="pt-2 flex flex-wrap gap-3">
-                <Button href="/request-quote/" variant="primary" size="md">
-                  Request Spares / Conveyor Quote
+                <Button href="/request-quote/?product=industrial-conveyors-spares&type=custom-drawing" variant="primary" size="md">
+                  Request Custom Roller &amp; Conveyor RFQ
                 </Button>
                 <a
                   href={`tel:${cleanPhone}`}
@@ -376,7 +401,9 @@ export default function ConveyorsSparesPage() {
                       </div>
                     </div>
                     <h3 className="text-lg font-bold text-[#111111] group-hover:text-[#E10613] transition-colors">
-                      {p.name}
+                      <Link href={p.href} className="hover:underline">
+                        {p.name}
+                      </Link>
                     </h3>
                     <p className="text-xs sm:text-sm text-[#737373] leading-relaxed">
                       {p.desc}
@@ -384,8 +411,9 @@ export default function ConveyorsSparesPage() {
                   </div>
                   <div className="pt-3 border-t border-neutral-100 flex items-center justify-between text-xs">
                     <span className="text-neutral-500 font-mono font-semibold">{p.specs}</span>
-                    <Link href="/request-quote/" className="font-bold text-[#E10613] hover:underline">
-                      Enquire Now &rarr;
+                    <Link href={p.href} className="font-bold text-[#E10613] hover:underline inline-flex items-center gap-1">
+                      <span>View Specifications</span>
+                      <ChevronRight className="w-3.5 h-3.5" />
                     </Link>
                   </div>
                 </div>
@@ -505,8 +533,8 @@ export default function ConveyorsSparesPage() {
             </div>
 
             <div className="flex flex-col sm:flex-row items-center gap-3 shrink-0">
-              <Button href="/request-quote/" variant="primary" size="lg">
-                Request Spares Quotation
+              <Button href="/request-quote/?product=industrial-conveyors-spares&type=custom-drawing" variant="primary" size="lg">
+                Submit Drawing / RFQ for Custom Rollers &amp; Conveyors
               </Button>
               <a
                 href={`tel:${cleanPhone}`}

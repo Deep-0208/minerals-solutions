@@ -6,8 +6,8 @@ export default function robots(): MetadataRoute.Robots {
     rules: [
       {
         userAgent: '*',
-        allow: '/',
-        disallow: ['/api/'],
+        allow: ['/', '/_next/static/', '/_next/image'],
+        disallow: ['/api/', '/_next/'],
       },
       {
         userAgent: [
@@ -24,8 +24,8 @@ export default function robots(): MetadataRoute.Robots {
           'Meta-ExternalAgent',
           'cohere-ai',
         ],
-        allow: '/',
-        disallow: ['/api/'],
+        allow: ['/', '/_next/static/', '/_next/image'],
+        disallow: ['/api/', '/_next/'],
       },
     ],
     sitemap: `${company.siteUrl}/sitemap.xml`,

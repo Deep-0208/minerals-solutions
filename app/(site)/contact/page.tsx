@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description:
     'Contact Minerals Solutions at Zak GIDC, Dahegam. Call +91 6352453050 or email sales@mineralssolution.in for direct industrial machinery quotes in Gujarat.',
   alternates: {
-    canonical: '/contact/',
+    canonical: `${company.siteUrl}/contact/`,
   },
   openGraph: {
     title: 'Contact Minerals Solutions | Zak GIDC Dahegam Factory',
@@ -56,6 +56,27 @@ export default function ContactPage() {
         postalCode: company.address.postalCode,
         addressCountry: company.address.country,
       },
+      geo: {
+        '@type': 'GeoCoordinates',
+        latitude: company.geo.lat,
+        longitude: company.geo.lng,
+      },
+      contactPoint: [
+        {
+          '@type': 'ContactPoint',
+          telephone: company.telephones[0],
+          contactType: 'sales',
+          areaServed: 'IN',
+          availableLanguage: ['English', 'Hindi', 'Gujarati'],
+        },
+        {
+          '@type': 'ContactPoint',
+          telephone: company.telephones[1],
+          contactType: 'technical support',
+          areaServed: 'IN',
+          availableLanguage: ['English', 'Hindi', 'Gujarati'],
+        },
+      ],
     },
     breadcrumb: {
       '@type': 'BreadcrumbList',

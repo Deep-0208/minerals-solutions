@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   description:
     'Discover Minerals Solutions: Gujarat manufacturer of industrial rotary dryers, fertilizer granulation plants, and sand washers at Zak GIDC, Dahegam.',
   alternates: {
-    canonical: '/about/',
+    canonical: `${company.siteUrl}/about/`,
   },
   openGraph: {
     title: 'About Minerals Solutions | Heavy Machinery Gujarat Works',

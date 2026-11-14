@@ -45,7 +45,7 @@ import { defaultOgImage, defaultTwitterImage } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'Screw Conveyor Manufacturers | Minerals Solutions',
+    absolute: 'Industrial Screw Conveyor Manufacturers | Minerals Solutions',
   },
   description: 'Procure industrial screw conveyors: U-trough & tubular pipe feeders (100mm to 600mm dia). Dust-tight carbon & stainless steel, built in Zak GIDC, Dahegam.',
   alternates: {
