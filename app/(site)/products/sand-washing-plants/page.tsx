@@ -62,6 +62,8 @@ export default function SandWashingPlantsPage() {
       name: 'Silica Sand Washing Plant',
       href: '/products/sand-washing-plants/silica-sand-washing-plant/',
       badge: 'Integrated Washing Circuit',
+      image: '/images/products/mineral-processing/river-sand-washing-plant-md.webp',
+      alt: 'Complete turnkey silica sand washing plant with multi-deck screen and hydrocyclone circuit',
       desc: 'Complete turnkey aggregate and sand washing systems combining multi-deck wet vibrating screens, feed hoppers, slurry pumps, and dewatering units.',
       capacity: '30 - 200 TPH',
     },
@@ -69,6 +71,8 @@ export default function SandWashingPlantsPage() {
       name: 'Quartz Stone & Mineral Log Washer',
       href: '/products/sand-washing-plants/mineral-log-washer/',
       badge: 'High-Attrition Beneficiation',
+      image: '/images/products/mineral-processing/quartz-stone-washer-md.webp',
+      alt: 'Heavy-duty quartz stone washer and industrial mineral log scrubber',
       desc: 'Heavy industrial scrubbers, log washers, spiral screw classifiers, and trommel washing screens designed to liberate tough adhering clay and silts from ores and quartz.',
       capacity: '20 - 150 TPH',
     },
@@ -76,6 +80,8 @@ export default function SandWashingPlantsPage() {
       name: 'Bucket Wheel Sand Washer',
       href: '/products/sand-washing-plants/bucket-wheel-sand-washer/',
       badge: 'Down to 75 Micron Recovery',
+      image: '/images/products/mineral-processing/river-sand-washing-plant-variant-md.webp',
+      alt: 'Heavy bucket wheel sand washer scooper at aggregate quarry site',
       desc: 'High-recovery bucket wheel scooper paired with polyurethane-lined hydrocyclones and high-frequency dewatering screens, minimizing fine sand loss to settling ponds.',
       capacity: '30 - 200 TPH',
     },
@@ -83,6 +89,8 @@ export default function SandWashingPlantsPage() {
       name: 'Hydrocyclone Sand Separator',
       href: '/products/sand-washing-plants/hydrocyclone-sand-separator/',
       badge: 'Fine Slurry Dewatering',
+      image: '/images/products/mineral-processing/circular-vibrating-screen-md.webp',
+      alt: 'High-frequency fine slurry hydrocyclone sand separator and dewatering screen',
       desc: 'High-pressure polyurethane hydrocyclones paired with high-frequency dewatering screens to recover marketable 75-150µm fine sand from overflow slurry.',
       capacity: '30 - 220 m³/hr',
     },
@@ -379,32 +387,67 @@ export default function SandWashingPlantsPage() {
               {equipmentList.map((item) => (
                 <div
                   key={item.name}
-                  className="bg-white rounded-2xl border border-[#E7E7EB] p-6 sm:p-7 shadow-[0_4px_24px_rgba(17,17,17,0.04)] hover:shadow-[0_12px_32px_rgba(17,17,17,0.08)] hover:border-red-200 transition-all flex flex-col justify-between space-y-4 group"
+                  className="bg-white rounded-2xl border border-[#E7E7EB] overflow-hidden shadow-[0_4px_24px_rgba(17,17,17,0.04)] hover:shadow-[0_16px_36px_rgba(17,17,17,0.08)] hover:border-red-200 transition-all flex flex-col justify-between group"
                 >
-                  <div className="space-y-2">
-                    <div className="flex items-center justify-between">
-                      <span className="inline-flex items-center px-2.5 py-0.5 rounded-full bg-red-50 text-[#E10613] text-xs font-mono font-bold uppercase tracking-wider border border-red-100">
+                  {/* Product Image Header with Link */}
+                  <Link
+                    href={item.href}
+                    className="relative block aspect-[16/10] sm:aspect-[16/9] w-full bg-neutral-900 overflow-hidden"
+                    aria-label={`View ${item.name} specifications`}
+                  >
+                    <Image
+                      src={item.image}
+                      alt={item.alt}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+                      className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
+                    <div className="absolute top-3 left-3">
+                      <span className="inline-flex items-center px-2.5 py-1 rounded-full bg-white/95 backdrop-blur-md text-[#E10613] text-[11px] font-mono font-bold uppercase tracking-wider shadow-sm border border-white/50">
                         {item.badge}
                       </span>
-                      <div className="w-8 h-8 rounded-lg bg-red-50 text-[#E10613] flex items-center justify-center border border-red-100">
-                        <Waves className="w-4 h-4" />
-                      </div>
                     </div>
-                    <h3 className="text-lg font-bold text-[#111111] group-hover:text-[#E10613] transition-colors">
-                      <Link href={item.href} className="hover:underline">
-                        {item.name}
+                    <div className="absolute bottom-3 right-3">
+                      <span className="inline-flex items-center px-2 py-0.5 rounded bg-black/75 backdrop-blur-sm text-white text-[10px] font-mono font-medium">
+                        Capacity: {item.capacity}
+                      </span>
+                    </div>
+                  </Link>
+
+                  {/* Card Content */}
+                  <div className="p-6 sm:p-7 flex flex-col justify-between flex-1 space-y-4">
+                    <div className="space-y-2.5">
+                      <div className="flex items-center justify-between">
+                        <span className="text-xs font-mono font-semibold text-neutral-400 uppercase tracking-wider">
+                          Washing Circuit
+                        </span>
+                        <div className="w-7 h-7 rounded-lg bg-red-50 text-[#E10613] flex items-center justify-center border border-red-100">
+                          <Waves className="w-3.5 h-3.5" />
+                        </div>
+                      </div>
+                      <h3 className="text-lg sm:text-xl font-bold text-[#111111] group-hover:text-[#E10613] transition-colors leading-snug">
+                        <Link href={item.href} className="hover:underline">
+                          {item.name}
+                        </Link>
+                      </h3>
+                      <p className="text-xs sm:text-sm text-[#737373] leading-relaxed">
+                        {item.desc}
+                      </p>
+                    </div>
+
+                    <div className="pt-3.5 border-t border-neutral-100 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 text-xs">
+                      <span className="text-neutral-600">
+                        <strong className="text-[#111111]">Throughput:</strong> {item.capacity}
+                      </span>
+                      <Link
+                        href={item.href}
+                        className="font-bold text-[#E10613] hover:text-[#b0050f] inline-flex items-center gap-1 shrink-0 group/link"
+                      >
+                        <span>View Specifications</span>
+                        <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
                       </Link>
-                    </h3>
-                    <p className="text-xs sm:text-sm text-[#737373] leading-relaxed">
-                      {item.desc}
-                    </p>
-                  </div>
-                  <div className="pt-3 border-t border-neutral-100 flex items-center justify-between text-xs">
-                    <span className="text-neutral-500 font-mono font-semibold">Capacity: {item.capacity}</span>
-                    <Link href={item.href} className="font-bold text-[#E10613] hover:underline inline-flex items-center gap-1">
-                      <span>View Specifications</span>
-                      <ChevronRight className="w-3.5 h-3.5" />
-                    </Link>
+                    </div>
                   </div>
                 </div>
               ))}

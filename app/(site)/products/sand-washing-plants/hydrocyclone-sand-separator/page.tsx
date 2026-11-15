@@ -753,66 +753,135 @@ export default function HydrocycloneFineSandRecoveryPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Sibling Spoke 1 */}
-              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-[#DA020D]/40 transition-all flex flex-col justify-between">
-                <div>
-                  <div className="text-xs font-mono font-semibold text-emerald-700 uppercase tracking-wider mb-2">
-                    Sibling Washing Line
-                  </div>
-                  <h3 className="text-lg font-bold text-slate-950 mb-2">
-                    Silica Sand Washing Plant System
-                  </h3>
-                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
-                    Turnkey wet-processing line for high-purity glass, foundry, and construction sand.
-                  </p>
-                </div>
+              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
                 <Link
                   href="/products/sand-washing-plants/silica-sand-washing-plant/"
-                  className="font-bold text-[#DA020D] hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
+                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
+                  aria-label="View Silica Sand Washing Plant System specifications"
                 >
-                  View Machine Specifications <ChevronRight className="w-4 h-4" />
+                  <Image
+                    src="/images/products/mineral-processing/river-sand-washing-plant-md.webp"
+                    alt="Silica Sand Washing Plant Circuit"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent pointer-events-none" />
+                  <div className="absolute top-2.5 left-2.5">
+                    <span className="text-[10px] font-mono font-bold text-emerald-700 bg-white/95 backdrop-blur-sm px-2 py-0.5 rounded shadow-sm uppercase tracking-wider">
+                      Sibling Washing Line
+                    </span>
+                  </div>
                 </Link>
+                <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
+                  <div>
+                    <h3 className="text-base font-bold text-slate-950 group-hover:text-[#DA020D] transition-colors leading-snug">
+                      <Link href="/products/sand-washing-plants/silica-sand-washing-plant/" className="hover:underline">
+                        Silica Sand Washing Plant System
+                      </Link>
+                    </h3>
+                    <p className="text-slate-600 text-xs sm:text-sm leading-relaxed mt-1.5">
+                      Turnkey wet-processing line for high-purity glass, foundry, and construction sand.
+                    </p>
+                  </div>
+                  <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
+                    <Link
+                      href="/products/sand-washing-plants/silica-sand-washing-plant/"
+                      className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link"
+                    >
+                      <span>View Machine Specifications</span>
+                      <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
+                    </Link>
+                  </div>
+                </div>
               </div>
 
               {/* Sibling Spoke 2 */}
-              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-[#DA020D]/40 transition-all flex flex-col justify-between">
-                <div>
-                  <div className="text-xs font-mono font-semibold text-blue-700 uppercase tracking-wider mb-2">
-                    Sibling Washing Line
-                  </div>
-                  <h3 className="text-lg font-bold text-slate-950 mb-2">
-                    Bucket Wheel Sand Washer System
-                  </h3>
-                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
-                    High-volume sand washing wheel separating clays from washed gravel and M-Sand.
-                  </p>
-                </div>
+              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
                 <Link
                   href="/products/sand-washing-plants/bucket-wheel-sand-washer/"
-                  className="font-bold text-[#DA020D] hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
+                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
+                  aria-label="View Bucket Wheel Sand Washer System specifications"
                 >
-                  View Machine Specifications <ChevronRight className="w-4 h-4" />
+                  <Image
+                    src="/images/products/mineral-processing/river-sand-washing-plant-variant-md.webp"
+                    alt="Bucket Wheel Sand Washer"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent pointer-events-none" />
+                  <div className="absolute top-2.5 left-2.5">
+                    <span className="text-[10px] font-mono font-bold text-blue-700 bg-white/95 backdrop-blur-sm px-2 py-0.5 rounded shadow-sm uppercase tracking-wider">
+                      Sibling Washing Line
+                    </span>
+                  </div>
                 </Link>
+                <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
+                  <div>
+                    <h3 className="text-base font-bold text-slate-950 group-hover:text-[#DA020D] transition-colors leading-snug">
+                      <Link href="/products/sand-washing-plants/bucket-wheel-sand-washer/" className="hover:underline">
+                        Bucket Wheel Sand Washer System
+                      </Link>
+                    </h3>
+                    <p className="text-slate-600 text-xs sm:text-sm leading-relaxed mt-1.5">
+                      High-volume sand washing wheel separating clays from washed gravel and M-Sand.
+                    </p>
+                  </div>
+                  <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
+                    <Link
+                      href="/products/sand-washing-plants/bucket-wheel-sand-washer/"
+                      className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link"
+                    >
+                      <span>View Machine Specifications</span>
+                      <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
+                    </Link>
+                  </div>
+                </div>
               </div>
 
               {/* Cross-Pillar Machine */}
-              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-[#DA020D]/40 transition-all flex flex-col justify-between">
-                <div>
-                  <div className="text-xs font-mono font-semibold text-purple-700 uppercase tracking-wider mb-2">
-                    Complementary Material Handling
-                  </div>
-                  <h3 className="text-lg font-bold text-slate-950 mb-2">
-                    Industrial Belt Conveyor Systems
-                  </h3>
-                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
-                    Downstream troughed conveyor elevating dewatered fine sand to stockyard piles.
-                  </p>
-                </div>
+              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
                 <Link
                   href="/products/industrial-conveyors-spares/belt-conveyors/"
-                  className="font-bold text-[#DA020D] hover:underline text-sm inline-flex items-center gap-1.5 mt-2"
+                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
+                  aria-label="View Industrial Belt Conveyor Systems specifications"
                 >
-                  Explore Complementary Machine <ChevronRight className="w-4 h-4" />
+                  <Image
+                    src="/images/products/conveyor-systems/conveyor-belt-system-truss-md.webp"
+                    alt="Troughed Belt Conveyor System"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent pointer-events-none" />
+                  <div className="absolute top-2.5 left-2.5">
+                    <span className="text-[10px] font-mono font-bold text-purple-700 bg-white/95 backdrop-blur-sm px-2 py-0.5 rounded shadow-sm uppercase tracking-wider">
+                      Complementary Material Handling
+                    </span>
+                  </div>
                 </Link>
+                <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
+                  <div>
+                    <h3 className="text-base font-bold text-slate-950 group-hover:text-[#DA020D] transition-colors leading-snug">
+                      <Link href="/products/industrial-conveyors-spares/belt-conveyors/" className="hover:underline">
+                        Industrial Belt Conveyor Systems
+                      </Link>
+                    </h3>
+                    <p className="text-slate-600 text-xs sm:text-sm leading-relaxed mt-1.5">
+                      Downstream troughed conveyor elevating dewatered fine sand to stockyard piles.
+                    </p>
+                  </div>
+                  <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
+                    <Link
+                      href="/products/industrial-conveyors-spares/belt-conveyors/"
+                      className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link"
+                    >
+                      <span>Explore Complementary Machine</span>
+                      <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
           </Container>

@@ -62,29 +62,41 @@ export default function RotaryDryersPage() {
       name: 'Triple Pass Concentric Rotary Dryer',
       href: '/products/industrial-rotary-dryers/triple-pass-dryer/',
       badge: 'Concentric Thermal Shells',
+      image: '/images/products/rotary-dryers/continuous-type-rotary-dryer-md.webp',
+      alt: 'Minerals Solutions triple pass concentric rotary drum dryer assembly at Zak GIDC works',
       desc: 'Engineered nested concentric cylinders with internal cascading lifters, capturing maximum thermal efficiency with minimal factory bay footprint.',
       applications: 'Fly ash, mineral slag, gypsum, and fine aggregates.',
+      capacity: '500 kg/hr - 15 TPH',
     },
     {
       name: 'Industrial Rotary Sand Dryer',
       href: '/products/industrial-rotary-dryers/sand-dryer/',
       badge: 'Integrated Thermal Draft',
+      image: '/images/products/rotary-dryers/silica-sand-rotary-dryer-md.webp',
+      alt: 'Industrial rotary sand dryer drum with high-efficiency refractory furnace',
       desc: 'Complete thermal assembly paired with high-efficiency refractory-lined furnace for river sand, silica sand, and foundry sand drying to <0.5% moisture.',
       applications: 'Silica sand, river sand, foundry sand, and bauxite.',
+      capacity: '1 - 50 TPH',
     },
     {
       name: 'Chemical Powder & Mineral Rotary Dryer',
       href: '/products/industrial-rotary-dryers/chemical-powder-dryer/',
       badge: 'Indirect Clean Air Heating',
+      image: '/images/products/rotary-dryers/boric-powder-dryer-md.webp',
+      alt: 'Indirect clean air heating chemical powder and mineral rotary dryer with stainless steel contacts',
       desc: 'Indirect heating and stainless contact surfaces preventing contamination and discoloration of sensitive minerals and chemical crystals.',
       applications: 'Bentonite, chemical salts, calcined minerals, and pigments.',
+      capacity: '500 kg/hr - 10 TPH',
     },
     {
       name: 'Biomass & Sawdust Rotary Dryer',
       href: '/products/industrial-rotary-dryers/biomass-sawdust-dryer/',
       badge: 'High Tonnage Continuous Duty',
+      image: '/images/products/rotary-dryers/saw-dust-biomass-dryer-md.webp',
+      alt: 'Heavy-duty biomass and sawdust rotary drum dryer line at manufacturing workshop',
       desc: 'Heavy-duty single cylinder rotary drum with specialized lifters designed for high initial moisture biomass, sawdust, and agricultural residues.',
       applications: 'Sawdust, wood chips, bagasse, and agro-waste briquettes.',
+      capacity: '1 - 25 TPH',
     },
   ];
 
@@ -399,37 +411,67 @@ export default function RotaryDryersPage() {
               {dryerTypes.map((type) => (
                 <div
                   key={type.name}
-                  className="bg-white rounded-2xl border border-[#E7E7EB] p-6 sm:p-7 shadow-[0_4px_24px_rgba(17,17,17,0.04)] hover:shadow-[0_12px_32px_rgba(17,17,17,0.08)] hover:border-red-200 transition-all flex flex-col justify-between space-y-4 group"
+                  className="bg-white rounded-2xl border border-[#E7E7EB] overflow-hidden shadow-[0_4px_24px_rgba(17,17,17,0.04)] hover:shadow-[0_16px_36px_rgba(17,17,17,0.08)] hover:border-red-200 transition-all flex flex-col justify-between group"
                 >
-                  <div className="space-y-2">
-                    <div className="flex items-center justify-between">
-                      <span className="inline-flex items-center px-2.5 py-0.5 rounded-full bg-red-50 text-[#E10613] text-xs font-mono font-bold uppercase tracking-wider border border-red-100">
+                  {/* Product Image Header with Link */}
+                  <Link
+                    href={type.href}
+                    className="relative block aspect-[16/10] sm:aspect-[16/9] w-full bg-neutral-900 overflow-hidden"
+                    aria-label={`View ${type.name} specifications`}
+                  >
+                    <Image
+                      src={type.image}
+                      alt={type.alt}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+                      className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
+                    <div className="absolute top-3 left-3">
+                      <span className="inline-flex items-center px-2.5 py-1 rounded-full bg-white/95 backdrop-blur-md text-[#E10613] text-[11px] font-mono font-bold uppercase tracking-wider shadow-sm border border-white/50">
                         {type.badge}
                       </span>
-                      <div className="w-8 h-8 rounded-lg bg-red-50 text-[#E10613] flex items-center justify-center border border-red-100">
-                        <Flame className="w-4 h-4" />
-                      </div>
                     </div>
-                    <h3 className="text-lg font-bold text-[#111111] group-hover:text-[#E10613] transition-colors">
-                      <Link href={type.href} className="hover:underline">
-                        {type.name}
+                    <div className="absolute bottom-3 right-3">
+                      <span className="inline-flex items-center px-2 py-0.5 rounded bg-black/75 backdrop-blur-sm text-white text-[10px] font-mono font-medium">
+                        Capacity: {type.capacity}
+                      </span>
+                    </div>
+                  </Link>
+
+                  {/* Card Content */}
+                  <div className="p-6 sm:p-7 flex flex-col justify-between flex-1 space-y-4">
+                    <div className="space-y-2.5">
+                      <div className="flex items-center justify-between">
+                        <span className="text-xs font-mono font-semibold text-neutral-400 uppercase tracking-wider">
+                          Zak GIDC Works
+                        </span>
+                        <div className="w-7 h-7 rounded-lg bg-red-50 text-[#E10613] flex items-center justify-center border border-red-100">
+                          <Flame className="w-3.5 h-3.5" />
+                        </div>
+                      </div>
+                      <h3 className="text-lg sm:text-xl font-bold text-[#111111] group-hover:text-[#E10613] transition-colors leading-snug">
+                        <Link href={type.href} className="hover:underline">
+                          {type.name}
+                        </Link>
+                      </h3>
+                      <p className="text-xs sm:text-sm text-[#737373] leading-relaxed">
+                        {type.desc}
+                      </p>
+                    </div>
+
+                    <div className="pt-3.5 border-t border-neutral-100 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 text-xs">
+                      <span className="text-neutral-600 line-clamp-1">
+                        <strong className="text-[#111111]">Materials:</strong> {type.applications}
+                      </span>
+                      <Link
+                        href={type.href}
+                        className="font-bold text-[#E10613] hover:text-[#b0050f] inline-flex items-center gap-1 shrink-0 group/link"
+                      >
+                        <span>View Machine Specs</span>
+                        <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
                       </Link>
-                    </h3>
-                    <p className="text-xs sm:text-sm text-[#737373] leading-relaxed">
-                      {type.desc}
-                    </p>
-                  </div>
-                  <div className="pt-3 border-t border-neutral-100 flex items-center justify-between text-xs">
-                    <span className="text-neutral-600">
-                      <strong className="text-[#111111]">Materials:</strong> {type.applications}
-                    </span>
-                    <Link
-                      href={type.href}
-                      className="font-bold text-[#E10613] hover:underline inline-flex items-center gap-1 shrink-0 ml-2"
-                    >
-                      <span>View Machine</span>
-                      <ChevronRight className="w-3.5 h-3.5" />
-                    </Link>
+                    </div>
                   </div>
                 </div>
               ))}

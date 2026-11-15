@@ -63,6 +63,8 @@ export default function ConveyorsSparesPage() {
       name: 'Heavy Troughed Belt Conveyors',
       href: '/products/industrial-conveyors-spares/belt-conveyors/',
       badge: '400 mm to 1600 mm Widths',
+      image: '/images/products/conveyor-systems/conveyor-belt-system-truss-md.webp',
+      alt: 'Heavy industrial troughed belt conveyor lattice truss frame at Zak GIDC Dahegam works',
       desc: 'Robust channel-iron and fabricated lattice truss conveyors with 20°, 30°, or 35° troughing idlers and M24 rubber belts engineered for harsh mineral transport.',
       specs: 'IS 11592 compliant, 15 to 300 TPH throughput',
     },
@@ -70,6 +72,8 @@ export default function ConveyorsSparesPage() {
       name: 'Forged Steel Dryer Support Rollers & Girth Gears',
       href: '/products/industrial-conveyors-spares/forged-trunnion-rollers/',
       badge: 'EN-8 / EN-9 / 42CrMo4 Forgings',
+      image: '/images/products/mechanical-spares/dryer-trunnion-support-roller-md.webp',
+      alt: 'Forged steel trunnion support roller assembly with heavy bearing housing',
       desc: 'Precision forged steel trunnion rollers induction hardened to 280-320 BHN, split girth gears, pinions, and cast steel pillow block housings for rotary dryers.',
       specs: '250 mm to 1200 mm OD, up to 60T load per pair',
     },
@@ -77,6 +81,8 @@ export default function ConveyorsSparesPage() {
       name: 'Industrial Bucket Elevators',
       href: '/products/industrial-conveyors-spares/bucket-elevators/',
       badge: 'Centrifugal & Continuous Lifts',
+      image: '/images/products/conveyor-systems/conveyor-tail-drum-pulley-md.webp',
+      alt: 'Industrial vertical bucket elevator pulley and drive mechanism',
       desc: 'Heavy vertical bucket elevator systems featuring high-tensile rubber belts or forged steel chains, dust-tight casings, and high-wear pressed steel buckets.',
       specs: 'Lifts up to 45m height, 5 to 100 TPH bulk lift',
     },
@@ -84,6 +90,8 @@ export default function ConveyorsSparesPage() {
       name: 'Industrial Screw Conveyors & Feeders',
       href: '/products/industrial-conveyors-spares/screw-conveyors/',
       badge: 'Dust-Tight Powder Transport',
+      image: '/images/products/conveyor-systems/belt-conveyor-system-variant-1-md.webp',
+      alt: 'Industrial screw conveyor and bulk powder feeder assembly',
       desc: 'Continuous U-trough and enclosed tubular screw conveyors with sectional continuous flighting, hardened center shafts, and variable-pitch metering screws.',
       specs: '100 mm to 600 mm dia, carbon & SS304/SS316',
     },
@@ -389,32 +397,62 @@ export default function ConveyorsSparesPage() {
               {conveyorProducts.map((p) => (
                 <div
                   key={p.name}
-                  className="bg-white rounded-2xl border border-[#E7E7EB] p-6 sm:p-7 shadow-[0_4px_24px_rgba(17,17,17,0.04)] hover:shadow-[0_12px_32px_rgba(17,17,17,0.08)] hover:border-red-200 transition-all flex flex-col justify-between space-y-4 group"
+                  className="bg-white rounded-2xl border border-[#E7E7EB] overflow-hidden shadow-[0_4px_24px_rgba(17,17,17,0.04)] hover:shadow-[0_16px_36px_rgba(17,17,17,0.08)] hover:border-red-200 transition-all flex flex-col justify-between group"
                 >
-                  <div className="space-y-2">
-                    <div className="flex items-center justify-between">
-                      <span className="inline-flex items-center px-2.5 py-0.5 rounded-full bg-red-50 text-[#E10613] text-xs font-mono font-bold uppercase tracking-wider border border-red-100">
+                  {/* Product Image Header with Link */}
+                  <Link
+                    href={p.href}
+                    className="relative block aspect-[16/10] sm:aspect-[16/9] w-full bg-neutral-900 overflow-hidden"
+                    aria-label={`View ${p.name} specifications`}
+                  >
+                    <Image
+                      src={p.image}
+                      alt={p.alt}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+                      className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
+                    <div className="absolute top-3 left-3">
+                      <span className="inline-flex items-center px-2.5 py-1 rounded-full bg-white/95 backdrop-blur-md text-[#E10613] text-[11px] font-mono font-bold uppercase tracking-wider shadow-sm border border-white/50">
                         {p.badge}
                       </span>
-                      <div className="w-8 h-8 rounded-lg bg-red-50 text-[#E10613] flex items-center justify-center border border-red-100">
-                        <Boxes className="w-4 h-4" />
-                      </div>
                     </div>
-                    <h3 className="text-lg font-bold text-[#111111] group-hover:text-[#E10613] transition-colors">
-                      <Link href={p.href} className="hover:underline">
-                        {p.name}
+                  </Link>
+
+                  {/* Card Content */}
+                  <div className="p-6 sm:p-7 flex flex-col justify-between flex-1 space-y-4">
+                    <div className="space-y-2.5">
+                      <div className="flex items-center justify-between">
+                        <span className="text-xs font-mono font-semibold text-neutral-400 uppercase tracking-wider">
+                          Transit &amp; Spares
+                        </span>
+                        <div className="w-7 h-7 rounded-lg bg-red-50 text-[#E10613] flex items-center justify-center border border-red-100">
+                          <Boxes className="w-3.5 h-3.5" />
+                        </div>
+                      </div>
+                      <h3 className="text-lg sm:text-xl font-bold text-[#111111] group-hover:text-[#E10613] transition-colors leading-snug">
+                        <Link href={p.href} className="hover:underline">
+                          {p.name}
+                        </Link>
+                      </h3>
+                      <p className="text-xs sm:text-sm text-[#737373] leading-relaxed">
+                        {p.desc}
+                      </p>
+                    </div>
+
+                    <div className="pt-3.5 border-t border-neutral-100 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 text-xs">
+                      <span className="text-neutral-600 line-clamp-1">
+                        <strong className="text-[#111111]">Design:</strong> {p.specs}
+                      </span>
+                      <Link
+                        href={p.href}
+                        className="font-bold text-[#E10613] hover:text-[#b0050f] inline-flex items-center gap-1 shrink-0 group/link"
+                      >
+                        <span>View Specifications</span>
+                        <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
                       </Link>
-                    </h3>
-                    <p className="text-xs sm:text-sm text-[#737373] leading-relaxed">
-                      {p.desc}
-                    </p>
-                  </div>
-                  <div className="pt-3 border-t border-neutral-100 flex items-center justify-between text-xs">
-                    <span className="text-neutral-500 font-mono font-semibold">{p.specs}</span>
-                    <Link href={p.href} className="font-bold text-[#E10613] hover:underline inline-flex items-center gap-1">
-                      <span>View Specifications</span>
-                      <ChevronRight className="w-3.5 h-3.5" />
-                    </Link>
+                    </div>
                   </div>
                 </div>
               ))}

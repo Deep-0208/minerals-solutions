@@ -265,15 +265,18 @@ export default function ProductsPage() {
                       <h3 className="text-xs font-bold uppercase tracking-wider text-[#111111] mb-2.5">
                         Key Equipment Models &amp; Specifications
                       </h3>
-                      <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-neutral-700">
+                      <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs">
                         {cat.keyModels.map((model) => (
                           <li key={model.name}>
                             <Link
                               href={model.href}
-                              className="inline-flex items-center gap-2 hover:text-[#E10613] hover:underline transition-colors"
+                              className="flex items-center justify-between p-2.5 rounded-xl bg-[#F5F5F7] hover:bg-red-50 border border-[#E7E7EB] hover:border-red-200 text-neutral-800 hover:text-[#E10613] transition-all group/model font-medium"
                             >
-                              <CheckCircle2 className="w-3.5 h-3.5 text-[#E10613] shrink-0" />
-                              <span>{model.name}</span>
+                              <div className="flex items-center gap-2">
+                                <CheckCircle2 className="w-3.5 h-3.5 text-[#E10613] shrink-0" />
+                                <span>{model.name}</span>
+                              </div>
+                              <ChevronRight className="w-3.5 h-3.5 text-neutral-400 group-hover/model:text-[#E10613] group-hover/model:translate-x-0.5 transition-all" />
                             </Link>
                           </li>
                         ))}
