@@ -34,6 +34,7 @@ import {
 import { Container } from '@/components/ui/Container';
 import { Button } from '@/components/ui/Button';
 import { Breadcrumbs } from '@/components/common/Breadcrumbs';
+import { FaqAccordion } from '@/components/ui/FaqAccordion';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { company } from '@/data/company';
 import { defaultOgImage, defaultTwitterImage } from '@/lib/seo';
@@ -494,9 +495,6 @@ export default function BiomassSawdustDryerPage() {
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 45vw, 600px"
                     />
-                    <div className="absolute top-3 left-3 bg-white/95 backdrop-blur-md px-3 py-1 rounded-full text-xs font-mono font-semibold text-slate-900 border border-slate-200 shadow-xs">
-                      Zak GIDC Workshop
-                    </div>
                   </div>
 
                   <div className="p-4 bg-slate-950/90 border-t border-slate-800 text-white flex items-center justify-between">
@@ -581,9 +579,9 @@ export default function BiomassSawdustDryerPage() {
                 <div className="text-xs uppercase tracking-widest text-emerald-400 font-bold mb-2">
                   Biofuel Pellet Production Standard
                 </div>
-                <h4 className="text-xl font-bold text-white mb-4">
+                <h3 className="text-xl font-bold text-white mb-4">
                   The Critical 10%–12% Moisture Window
-                </h4>
+                </h3>
                 <div className="space-y-3 text-xs text-slate-300 mb-6">
                   <div className="p-3 rounded-lg bg-slate-950/80 border border-slate-800">
                     <strong className="text-red-400">Feed &gt; 14% Moisture:</strong> Causes excessive steam pressure in pellet die channels, inducing structural cracks, crumbling pellets, and bacterial mould during bagging.
@@ -869,16 +867,13 @@ export default function BiomassSawdustDryerPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent pointer-events-none" />
-                  <div className="absolute top-2.5 left-2.5">
-                    <span className="text-[10px] font-mono font-bold text-emerald-700 bg-white/95 backdrop-blur-sm px-2 py-0.5 rounded shadow-sm uppercase tracking-wider">
-                      Sibling Dryer Line
-                    </span>
-                  </div>
                 </Link>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
-                    <h3 className="text-base font-bold text-slate-950 group-hover:text-[#DA020D] transition-colors leading-snug">
+                    <span className="inline-block text-[11px] font-mono font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded mb-2 border border-emerald-100">
+                      Sibling Dryer Line
+                    </span>
+                    <h3 className="text-base font-bold text-slate-950 group-hover:text-[#E10613] transition-colors leading-snug">
                       <Link href="/products/industrial-rotary-dryers/triple-pass-dryer/" className="hover:underline">
                         Triple Pass Rotary Drum Dryer Line
                       </Link>
@@ -890,7 +885,7 @@ export default function BiomassSawdustDryerPage() {
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
                     <Link
                       href="/products/industrial-rotary-dryers/triple-pass-dryer/"
-                      className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link"
+                      className="font-bold text-[#E10613] hover:text-[#BC0711] text-xs inline-flex items-center gap-1 group/link"
                     >
                       <span>View Machine Specifications</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
@@ -900,7 +895,7 @@ export default function BiomassSawdustDryerPage() {
               </div>
 
               {/* Sibling Spoke 2 */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
+              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#E10613]/40 transition-all flex flex-col justify-between group">
                 <Link
                   href="/products/industrial-rotary-dryers/sand-dryer/"
                   className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
@@ -913,16 +908,13 @@ export default function BiomassSawdustDryerPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent pointer-events-none" />
-                  <div className="absolute top-2.5 left-2.5">
-                    <span className="text-[10px] font-mono font-bold text-blue-700 bg-white/95 backdrop-blur-sm px-2 py-0.5 rounded shadow-sm uppercase tracking-wider">
-                      Sibling Dryer Line
-                    </span>
-                  </div>
                 </Link>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
-                    <h3 className="text-base font-bold text-slate-950 group-hover:text-[#DA020D] transition-colors leading-snug">
+                    <span className="inline-block text-[11px] font-mono font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded mb-2 border border-blue-100">
+                      Sibling Dryer Line
+                    </span>
+                    <h3 className="text-base font-bold text-slate-950 group-hover:text-[#E10613] transition-colors leading-snug">
                       <Link href="/products/industrial-rotary-dryers/sand-dryer/" className="hover:underline">
                         Industrial Rotary Sand Dryer Unit
                       </Link>
@@ -934,7 +926,7 @@ export default function BiomassSawdustDryerPage() {
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
                     <Link
                       href="/products/industrial-rotary-dryers/sand-dryer/"
-                      className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link"
+                      className="font-bold text-[#E10613] hover:text-[#BC0711] text-xs inline-flex items-center gap-1 group/link"
                     >
                       <span>View Machine Specifications</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
@@ -944,7 +936,7 @@ export default function BiomassSawdustDryerPage() {
               </div>
 
               {/* Cross-Pillar Machine */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
+              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#E10613]/40 transition-all flex flex-col justify-between group">
                 <Link
                   href="/products/fertilizer-granulation-plants/disc-granulator/"
                   className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
@@ -957,16 +949,13 @@ export default function BiomassSawdustDryerPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent pointer-events-none" />
-                  <div className="absolute top-2.5 left-2.5">
-                    <span className="text-[10px] font-mono font-bold text-purple-700 bg-white/95 backdrop-blur-sm px-2 py-0.5 rounded shadow-sm uppercase tracking-wider">
-                      Complementary Pelletizing Line
-                    </span>
-                  </div>
                 </Link>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
-                    <h3 className="text-base font-bold text-slate-950 group-hover:text-[#DA020D] transition-colors leading-snug">
+                    <span className="inline-block text-[11px] font-mono font-bold text-purple-700 bg-purple-50 px-2 py-0.5 rounded mb-2 border border-purple-100">
+                      Complementary Pelletizing Line
+                    </span>
+                    <h3 className="text-base font-bold text-slate-950 group-hover:text-[#E10613] transition-colors leading-snug">
                       <Link href="/products/fertilizer-granulation-plants/disc-granulator/" className="hover:underline">
                         Industrial Pan Disc Granulator
                       </Link>
@@ -978,7 +967,7 @@ export default function BiomassSawdustDryerPage() {
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
                     <Link
                       href="/products/fertilizer-granulation-plants/disc-granulator/"
-                      className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link"
+                      className="font-bold text-[#E10613] hover:text-[#BC0711] text-xs inline-flex items-center gap-1 group/link"
                     >
                       <span>Explore Complementary Machine</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
@@ -1006,20 +995,12 @@ export default function BiomassSawdustDryerPage() {
               </p>
             </div>
 
-            <div className="divide-y divide-slate-200 border-t border-b border-slate-200">
-              {faqs.map((faq, idx) => (
-                <div key={idx} className="py-6 sm:py-8">
-                  <h3 className="text-lg sm:text-xl font-bold text-slate-950 mb-3 flex items-start gap-3">
-                    <span className="text-[#DA020D] font-mono text-base font-extrabold shrink-0 mt-0.5">
-                      Q{idx + 1}.
-                    </span>
-                    {faq.question}
-                  </h3>
-                  <p className="text-slate-700 text-sm sm:text-base leading-relaxed pl-7">
-                    {faq.answer}
-                  </p>
-                </div>
-              ))}
+            <div className="max-w-4xl">
+              <FaqAccordion
+                items={faqs}
+                allowMultiple={false}
+                defaultOpenIndex={null}
+              />
             </div>
           </Container>
         </section>
