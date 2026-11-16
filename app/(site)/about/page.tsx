@@ -148,20 +148,23 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="lg:col-span-5">
-            <div className="relative aspect-[4/3] rounded-3xl overflow-hidden border border-[#E7E7EB] bg-neutral-900 shadow-xl">
-              <Image
-                src="/images/facility/working-team-lg.webp"
-                alt="Mechanical fabrication and plant engineering working team at Minerals Solutions Dahegam facility"
-                width={800}
-                height={600}
-                priority
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 45vw, 600px"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute bottom-3 left-3 right-3 bg-black/80 backdrop-blur-sm p-3 rounded-xl text-white text-xs">
-                <span className="font-bold block">Engineering Team at Zak GIDC Works</span>
-                <span className="text-neutral-400 text-[11px]">Led by Mr. Vipulbhai Prajapati</span>
+          <div className="lg:col-span-5 w-full">
+            <div className="relative rounded-3xl overflow-hidden border border-[#E7E7EB] bg-white shadow-xl group">
+              <div className="relative aspect-[4/3] sm:aspect-[16/10] lg:aspect-[4/3] xl:aspect-[16/11] 2xl:aspect-[4/3] w-full min-h-[280px] sm:min-h-[340px] lg:min-h-[380px] xl:min-h-[440px] 2xl:min-h-[480px] overflow-hidden bg-neutral-100">
+                <Image
+                  src="/images/facility/working-team-lg.webp"
+                  alt="Mechanical fabrication and plant engineering working team at Minerals Solutions Dahegam facility"
+                  fill
+                  priority
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 45vw, 650px"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              <div className="p-4 bg-slate-950 text-white border-t border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
+                <div className="min-w-0 flex-1">
+                  <span className="font-bold text-sm block truncate">Engineering Team at Zak GIDC Works</span>
+                  <span className="text-neutral-400 text-xs">Led by Mr. Vipulbhai Prajapati</span>
+                </div>
               </div>
             </div>
           </div>
