@@ -263,9 +263,9 @@ export function Header() {
                             onClick={() => setProductsMegaOpen(false)}
                             className="block group"
                           >
-                            <h3 className="text-[13px] font-bold text-[#111111] group-hover:text-[#E10613] leading-snug transition-colors">
+                            <span className="block text-[13px] font-bold text-[#111111] group-hover:text-[#E10613] leading-snug transition-colors">
                               {pillar.shortName}
-                            </h3>
+                            </span>
                             <p className="text-[11px] text-[#737373] mt-0.5 line-clamp-2 leading-relaxed">
                               {pillar.description}
                             </p>

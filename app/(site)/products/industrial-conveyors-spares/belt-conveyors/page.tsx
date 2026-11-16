@@ -277,7 +277,7 @@ export default function BeltConveyorPage() {
         <section className="relative pt-8 pb-14 lg:pt-12 lg:pb-20 border-b border-slate-200 overflow-hidden bg-gradient-to-b from-amber-50/40 via-white to-white">
 
           <Container>
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
               {/* Left Column: Copy & CTAs */}
               <div className="lg:col-span-7 space-y-6">
                 <div className="flex flex-wrap items-center gap-2">

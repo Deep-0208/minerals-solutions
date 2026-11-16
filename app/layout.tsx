@@ -251,7 +251,7 @@ export default function RootLayout({
       <head>
         <link rel="alternate" type="text/plain" href={`${company.siteUrl}/llms.txt`} title="LLM Knowledge Graph" />
         <link rel="alternate" type="text/plain" href={`${company.siteUrl}/llms-full.txt`} title="Full Engineering Context" />
-        <link rel="alternate" type="application/json" href={`${company.siteUrl}/.well-known/ai-catalog.json`} title="AI Agent Discovery Catalog" />
+        <link rel="ai-catalog" type="application/ai-catalog+json" href={`${company.siteUrl}/.well-known/ai-catalog.json`} title="AI Agent Discovery Catalog" />
         <JsonLd data={rootSchema} />
       </head>
       <body

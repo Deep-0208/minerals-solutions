@@ -382,13 +382,14 @@ export default function HomePage() {
                     <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-[#E10613] block">
                       Featured Industrial Equipment
                     </span>
-                    <h3 className="text-sm font-bold text-[#111111] group-hover:text-[#E10613] transition-colors">
+                    <p className="text-sm font-bold text-[#111111] group-hover:text-[#E10613] transition-colors">
                       Double Pass Concentric Rotary Dryer
-                    </h3>
+                    </p>
                   </div>
                   <Link
                     href="/products/industrial-rotary-dryers/"
                     className="text-xs font-bold text-[#111111] hover:text-[#E10613] flex items-center gap-1 transition-colors"
+                    aria-label="View specifications for Double Pass Concentric Rotary Dryer"
                   >
                     <span>View Specifications</span>
                     <ChevronRight className="w-3.5 h-3.5 text-[#E10613]" />
@@ -418,7 +419,13 @@ export default function HomePage() {
               </p>
             </div>
             <div className="mt-4 md:mt-0">
-              <Button href="/products/" variant="outline" size="md" icon={<ArrowRight className="w-4 h-4" />}>
+              <Button
+                href="/products/"
+                variant="outline"
+                size="md"
+                icon={<ArrowRight className="w-4 h-4" />}
+                aria-label="View complete machinery catalog"
+              >
                 View Complete Catalog
               </Button>
             </div>
@@ -481,7 +488,12 @@ export default function HomePage() {
                           <span>Explore {item.title.split(' ')[0]} Specs</span>
                           <ArrowRight className="w-4 h-4" />
                         </Link>
-                        <Button href="/request-quote/" variant="ghost" size="sm">
+                        <Button
+                          href="/request-quote/"
+                          variant="ghost"
+                          size="sm"
+                          aria-label={`Request quotation for ${item.title}`}
+                        >
                           Quote
                         </Button>
                       </div>
@@ -691,9 +703,9 @@ export default function HomePage() {
               <span className="text-xs font-mono uppercase tracking-wider text-[#E10613] font-bold">
                 Commercial &amp; Compliance Transparency
               </span>
-              <h3 className="text-2xl sm:text-3xl font-bold text-white">
+              <h2 className="text-2xl sm:text-3xl font-bold text-white">
                 Verified Indian Manufacturing Enterprise
-              </h3>
+              </h2>
               <p className="text-xs sm:text-sm text-neutral-400 max-w-2xl leading-relaxed">
                 Registered under the Ministry of Micro, Small and Medium Enterprises (UDYAM-GJ-09-0021428)
                 with active GST compliance (24AUSPP9555F1ZZ) and verified 4.8/5.0 seller reputation on IndiaMART.

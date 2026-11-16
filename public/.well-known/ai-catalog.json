@@ -1,31 +1,27 @@
 {
-  "schema_version": "1.0.0",
-  "name": "Minerals Solutions Heavy Machinery Catalog",
-  "description": "Industrial rotary dryers, sand washing plants, fertilizer granulation lines, and conveyor systems.",
-  "provider": {
-    "name": "Minerals Solutions",
-    "legalName": "Minerals Solutions",
-    "url": "https://mineralssolution.in",
-    "contact": "sales@mineralssolution.in",
-    "telephone": "+916352453050",
-    "location": "Zak GIDC, Dahegam, Gandhinagar, Gujarat - 382330, India",
-    "geo": {
-      "latitude": 23.1672,
-      "longitude": 72.8125
-    }
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "Minerals Solutions",
+    "identifier": "mineralssolution.in",
+    "documentationUrl": "https://mineralssolution.in/llms.txt"
   },
-  "capabilities": [
-    "industrial-rotary-dryers",
-    "sand-washing-plants",
-    "fertilizer-granulation-plants",
-    "industrial-conveyor-systems"
-  ],
-  "endpoints": {
-    "catalog": "https://mineralssolution.in/products/",
-    "rfq": "https://mineralssolution.in/request-quote/",
-    "contact": "https://mineralssolution.in/contact/",
-    "llms_txt": "https://mineralssolution.in/llms.txt",
-    "sitemap": "https://mineralssolution.in/sitemap.xml"
-  }
+  "entries": [
+    {
+      "identifier": "urn:air:mineralssolution.in:catalog:machinery",
+      "displayName": "Minerals Solutions Heavy Machinery Catalog",
+      "type": "application/ai-catalog+json",
+      "url": "https://mineralssolution.in/llms.txt",
+      "description": "Industrial rotary drum dryers, sand washing plants, fertilizer granulation lines, and material handling conveyors.",
+      "capabilities": [
+        "IndustrialRotaryDryers",
+        "SandWashingPlants",
+        "FertilizerGranulation",
+        "ConveyorSystems"
+      ],
+      "representativeQueries": [
+        "What rotary drum dryer capacities are manufactured by Minerals Solutions?",
+        "How does the silica sand washing plant hydrocyclone recover fine sand?"
+      ]
+    }
+  ]
 }
-

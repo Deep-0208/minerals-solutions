@@ -55,6 +55,7 @@ export function Button({
           target="_blank"
           rel="noopener noreferrer"
           className={combinedStyles}
+          {...(props as React.AnchorHTMLAttributes<HTMLAnchorElement>)}
         >
           {children}
           {icon && <span className="shrink-0">{icon}</span>}
@@ -62,7 +63,7 @@ export function Button({
       );
     }
     return (
-      <Link href={href} className={combinedStyles}>
+      <Link href={href} className={combinedStyles} {...(props as React.AnchorHTMLAttributes<HTMLAnchorElement>)}>
         {children}
         {icon && <span className="shrink-0">{icon}</span>}
       </Link>
