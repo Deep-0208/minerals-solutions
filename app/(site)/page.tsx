@@ -56,6 +56,7 @@ import {
 import { Container } from '@/components/ui/Container';
 import { Button } from '@/components/ui/Button';
 import { SectionHeading } from '@/components/ui/SectionHeading';
+import { FaqAccordion } from '@/components/ui/FaqAccordion';
 import { company } from '@/data/company';
 
 export default function HomePage() {
@@ -372,9 +373,6 @@ export default function HomePage() {
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-mono font-semibold text-[#111111] border border-[#E7E7EB] shadow-xs">
-                    Zak GIDC Fabrication Bay
-                  </div>
                 </div>
 
                 <div className="p-5 bg-white border-t border-[#E7E7EB] flex items-center justify-between">
@@ -448,15 +446,17 @@ export default function HomePage() {
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
-                    <div className="absolute top-4 right-4 bg-black/75 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs font-mono font-semibold">
-                      {item.capacity}
-                    </div>
                   </div>
 
                   <div className="p-6 sm:p-8 flex-1 flex flex-col justify-between space-y-4">
                     <div className="space-y-2">
-                      <div className="w-10 h-10 rounded-xl bg-red-50 text-[#E10613] flex items-center justify-center border border-red-100">
-                        <Icon className="w-5 h-5" />
+                      <div className="flex items-center justify-between">
+                        <div className="w-10 h-10 rounded-xl bg-red-50 text-[#E10613] flex items-center justify-center border border-red-100">
+                          <Icon className="w-5 h-5" />
+                        </div>
+                        <span className="text-xs font-mono font-semibold px-2.5 py-1 rounded-full bg-neutral-100 text-neutral-700 border border-neutral-200">
+                          {item.capacity}
+                        </span>
                       </div>
                       <h3 className="text-xl font-bold text-[#111111] group-hover:text-[#E10613] transition-colors">
                         <Link href={item.href} className="hover:underline">
@@ -678,17 +678,24 @@ export default function HomePage() {
             {processSteps.map((step) => (
               <div
                 key={step.step}
-                className="p-6 rounded-2xl border border-[#E7E7EB] bg-[#FAFAFA] hover:bg-white hover:border-red-200 hover:shadow-md transition-all relative overflow-hidden space-y-2 group"
+                className="p-6 rounded-2xl border border-[#E7E7EB] bg-[#FAFAFA] hover:bg-white hover:border-red-200 hover:shadow-md transition-all flex flex-col justify-between group"
               >
-                <span className="text-3xl font-black font-mono text-neutral-200 group-hover:text-red-100 transition-colors absolute top-4 right-4">
-                  {step.step}
-                </span>
-                <h3 className="text-base font-bold text-[#111111] pt-2 group-hover:text-[#E10613] transition-colors">
-                  {step.title}
-                </h3>
-                <p className="text-xs text-[#737373] leading-relaxed">
-                  {step.desc}
-                </p>
+                <div>
+                  <div className="flex items-center justify-between gap-2 mb-3 pb-2.5 border-b border-neutral-200/60">
+                    <span className="inline-flex items-center px-2.5 py-1 rounded-md text-[11px] font-mono font-bold tracking-wider bg-red-50 text-[#E10613] border border-red-100 group-hover:bg-[#E10613] group-hover:text-white transition-colors duration-200">
+                      STEP {step.step}
+                    </span>
+                    <span className="text-xs font-mono font-semibold text-neutral-400 group-hover:text-neutral-600 transition-colors">
+                      Phase {parseInt(step.step, 10)}/08
+                    </span>
+                  </div>
+                  <h3 className="text-base font-bold text-[#111111] group-hover:text-[#E10613] transition-colors leading-snug">
+                    {step.title}
+                  </h3>
+                  <p className="text-xs text-[#737373] leading-relaxed mt-2">
+                    {step.desc}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
@@ -739,30 +746,16 @@ export default function HomePage() {
             centered
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto pt-4">
-            {homeFaqs.map((faq, idx) => (
-              <div
-                key={idx}
-                className="bg-white rounded-2xl p-6 sm:p-7 border border-[#E7E7EB] shadow-xs hover:border-red-200 transition-all space-y-3 flex flex-col justify-between"
-              >
-                <div className="space-y-2">
-                  <div className="flex items-start gap-3">
-                    <span className="w-6 h-6 rounded-full bg-red-100 text-[#E10613] font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">
-                      Q
-                    </span>
-                    <h3 className="text-base sm:text-lg font-bold text-neutral-900 leading-snug">
-                      {faq.question}
-                    </h3>
-                  </div>
-                  <p className="text-sm text-neutral-600 leading-relaxed pl-9">
-                    {faq.answer}
-                  </p>
-                </div>
-                <div className="pt-2 pl-9 flex items-center gap-1.5 text-xs font-semibold text-[#E10613]">
-                  <span>Verified Factory Engineering Specification</span>
-                </div>
-              </div>
-            ))}
+          <div className="max-w-4xl mx-auto pt-6">
+            <FaqAccordion
+              items={homeFaqs.map((faq) => ({
+                question: faq.question,
+                answer: faq.answer,
+                badge: 'Verified Factory Engineering Specification',
+              }))}
+              allowMultiple={false}
+              defaultOpenIndex={null}
+            />
           </div>
 
           <div className="mt-12 text-center">

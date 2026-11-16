@@ -311,9 +311,9 @@ export default function AboutPage() {
             <span className="text-xs font-mono uppercase tracking-wider text-[#E10613] font-bold">
               Factory Visit Coordination
             </span>
-            <h3 className="text-2xl sm:text-3xl font-bold text-white">
+            <h2 className="text-2xl sm:text-3xl font-bold text-white">
               Visit Our Zak GIDC Workshop
-            </h3>
+            </h2>
             <p className="text-sm text-neutral-400 leading-relaxed">
               We welcome prospective plant owners, consulting engineers, and EPC contractors to inspect
               our heavy rolling machines, welding bays, and ongoing dryer assembly work in progress.

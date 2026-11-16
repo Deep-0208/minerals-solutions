@@ -21,6 +21,7 @@ import {
 import { Container } from '@/components/ui/Container';
 import { Button } from '@/components/ui/Button';
 import { TechnicalSpecTable } from '@/components/ui/TechnicalSpecTable';
+import { FaqAccordion } from '@/components/ui/FaqAccordion';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { company } from '@/data/company';
 import { defaultOgImage, defaultTwitterImage } from '@/lib/seo';
@@ -426,29 +427,18 @@ export default function RotaryDryersPage() {
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
                       className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
-                    <div className="absolute top-3 left-3">
-                      <span className="inline-flex items-center px-2.5 py-1 rounded-full bg-white/95 backdrop-blur-md text-[#E10613] text-[11px] font-mono font-bold uppercase tracking-wider shadow-sm border border-white/50">
-                        {type.badge}
-                      </span>
-                    </div>
-                    <div className="absolute bottom-3 right-3">
-                      <span className="inline-flex items-center px-2 py-0.5 rounded bg-black/75 backdrop-blur-sm text-white text-[10px] font-mono font-medium">
-                        Capacity: {type.capacity}
-                      </span>
-                    </div>
                   </Link>
 
                   {/* Card Content */}
                   <div className="p-6 sm:p-7 flex flex-col justify-between flex-1 space-y-4">
                     <div className="space-y-2.5">
-                      <div className="flex items-center justify-between">
-                        <span className="text-xs font-mono font-semibold text-neutral-400 uppercase tracking-wider">
-                          Zak GIDC Works
+                      <div className="flex items-center justify-between gap-2">
+                        <span className="inline-flex items-center px-2.5 py-1 rounded-md text-[11px] font-mono font-bold uppercase tracking-wider bg-red-50 text-[#E10613] border border-red-100">
+                          {type.badge}
                         </span>
-                        <div className="w-7 h-7 rounded-lg bg-red-50 text-[#E10613] flex items-center justify-center border border-red-100">
-                          <Flame className="w-3.5 h-3.5" />
-                        </div>
+                        <span className="text-xs font-mono font-semibold text-neutral-500 bg-neutral-100 px-2.5 py-0.5 rounded-full">
+                          {type.capacity}
+                        </span>
                       </div>
                       <h3 className="text-lg sm:text-xl font-bold text-[#111111] group-hover:text-[#E10613] transition-colors leading-snug">
                         <Link href={type.href} className="hover:underline">
@@ -550,20 +540,12 @@ export default function RotaryDryersPage() {
               Frequently Asked Questions (Technical &amp; Commercial)
             </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {faqs.map((faq, index) => (
-                <div
-                  key={index}
-                  className="p-5 rounded-2xl bg-[#F5F5F7] border border-[#E7E7EB] space-y-2"
-                >
-                  <h3 className="text-sm font-bold text-[#111111] leading-snug">
-                    {faq.question}
-                  </h3>
-                  <p className="text-xs text-[#737373] leading-relaxed">
-                    {faq.answer}
-                  </p>
-                </div>
-              ))}
+            <div className="max-w-4xl">
+              <FaqAccordion
+                items={faqs}
+                allowMultiple={false}
+                defaultOpenIndex={null}
+              />
             </div>
           </div>
 
@@ -573,9 +555,9 @@ export default function RotaryDryersPage() {
               <span className="text-xs font-mono uppercase tracking-wider text-[#E10613] font-bold">
                 Custom Engineering Quote
               </span>
-              <h3 className="text-2xl sm:text-3xl font-bold text-white">
+              <h2 className="text-2xl sm:text-3xl font-bold text-white">
                 Discuss Your Material Drying Requirements
-              </h3>
+              </h2>
               <p className="text-sm text-neutral-400 leading-relaxed">
                 Provide your input moisture, required output moisture, and hourly capacity. Our chief thermal
                 engineers in Zak GIDC will calculate heat balance and recommend the ideal drum configuration.

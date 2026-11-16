@@ -308,9 +308,9 @@ export default function ProductsPage() {
             <span className="text-xs font-mono uppercase tracking-wider text-[#E10613] font-bold">
               Engineering Consultation
             </span>
-            <h3 className="text-2xl sm:text-3xl font-bold text-white">
+            <h2 className="text-2xl sm:text-3xl font-bold text-white">
               Need a Custom Turnkey Plant Configuration?
-            </h3>
+            </h2>
             <p className="text-sm text-neutral-400 leading-relaxed">
               Our engineering team conducts thermal calculations and layout planning tailored to your exact
               space constraints, fuel availability, and target throughput.

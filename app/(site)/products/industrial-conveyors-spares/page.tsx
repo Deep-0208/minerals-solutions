@@ -561,9 +561,9 @@ export default function ConveyorsSparesPage() {
               <span className="text-xs font-mono uppercase tracking-wider text-[#E10613] font-bold">
                 Conveyor &amp; Spares Fabrication
               </span>
-              <h3 className="text-2xl sm:text-3xl font-bold text-white">
+              <h2 className="text-2xl sm:text-3xl font-bold text-white">
                 Need Replacement Spares or Custom Conveyors?
-              </h3>
+              </h2>
               <p className="text-sm text-neutral-400 leading-relaxed">
                 Connect with our mechanical engineering workshop in Zak GIDC, Dahegam. We supply replacement
                 support rollers, pulleys, girth gears, and complete conveyor structures with rapid turnaround.

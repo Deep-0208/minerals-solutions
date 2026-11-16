@@ -303,9 +303,9 @@ export default function ManufacturingPage() {
             <span className="text-xs font-mono uppercase tracking-wider text-[#E10613] font-bold">
               Open Factory Policy
             </span>
-            <h3 className="text-2xl sm:text-3xl font-bold text-white">
+            <h2 className="text-2xl sm:text-3xl font-bold text-white">
               Inspect Our Facility in Person
-            </h3>
+            </h2>
             <p className="text-sm text-neutral-400 leading-relaxed">
               Review our machines in production, examine steel plate thicknesses, inspect trunnion roller
               forgings, and discuss your plant layouts with our senior engineering team.

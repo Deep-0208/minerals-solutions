@@ -548,9 +548,9 @@ export default function SandWashingPlantsPage() {
               <span className="text-xs font-mono uppercase tracking-wider text-[#E10613] font-bold">
                 Aggregate Washing Consultation
               </span>
-              <h3 className="text-2xl sm:text-3xl font-bold text-white">
+              <h2 className="text-2xl sm:text-3xl font-bold text-white">
                 Plan Your Mineral Recovery Plant
-              </h3>
+              </h2>
               <p className="text-sm text-neutral-400 leading-relaxed">
                 Connect with our mineral processing engineers at Zak GIDC. We provide flow sheet design,
                 water balance calculations, and equipment fabrication tailored to your quarry feed.

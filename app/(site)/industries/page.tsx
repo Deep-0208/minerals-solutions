@@ -261,9 +261,9 @@ export default function IndustriesPage() {
             <span className="text-xs font-mono uppercase tracking-wider text-[#E10613] font-bold">
               Material Feasibility Testing
             </span>
-            <h3 className="text-2xl sm:text-3xl font-bold text-white">
+            <h2 className="text-2xl sm:text-3xl font-bold text-white">
               Unsure Which Machine Fits Your Material?
-            </h3>
+            </h2>
             <p className="text-sm text-neutral-400 leading-relaxed">
               Send us a sample or process analysis of your feed. Our engineering team will assess
               bulk density, moisture profile, and thermal behavior to recommend the right machinery.

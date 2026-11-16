@@ -22,6 +22,7 @@ import { company } from '@/data/company';
 interface SpokeItem {
   label: string;
   href: string;
+  keywordTitle: string;
 }
 
 interface PillarItem {
@@ -31,6 +32,8 @@ interface PillarItem {
   badge: string;
   icon: React.ComponentType<{ className?: string }>;
   description: string;
+  geoTarget: string;
+  exploreText: string;
   spokes: SpokeItem[];
 }
 
@@ -43,22 +46,28 @@ const productPillars: PillarItem[] = [
     badge: '500 kg - 50 TPH',
     icon: Flame,
     description: 'High-efficiency single, double, and triple-pass continuous industrial drying drums.',
+    geoTarget: 'Ahmedabad & Gujarat Works • India',
+    exploreText: 'Explore Rotary Dryers in Gujarat',
     spokes: [
       {
         label: 'Triple Pass Drum Dryer',
         href: '/products/industrial-rotary-dryers/triple-pass-dryer/',
+        keywordTitle: 'Triple Pass Drum Dryer Manufacturer in Ahmedabad, Gujarat, India',
       },
       {
         label: 'Industrial Rotary Sand Dryer',
         href: '/products/industrial-rotary-dryers/sand-dryer/',
+        keywordTitle: 'Industrial Rotary Sand Dryer Manufacturer in Gujarat, India',
       },
       {
         label: 'Stainless Chemical Powder Dryer',
         href: '/products/industrial-rotary-dryers/chemical-powder-dryer/',
+        keywordTitle: 'Stainless Chemical Powder Rotary Dryer in Ahmedabad, India',
       },
       {
         label: 'Biomass & Sawdust Rotary Dryer',
         href: '/products/industrial-rotary-dryers/biomass-sawdust-dryer/',
+        keywordTitle: 'Biomass & Sawdust Rotary Dryer Manufacturer in Gujarat, India',
       },
     ],
   },
@@ -69,22 +78,28 @@ const productPillars: PillarItem[] = [
     badge: '30 - 200 TPH',
     icon: Waves,
     description: 'Washing, desliming, attrition scrubbing, and fine sand recovery down to 75 microns.',
+    geoTarget: 'Gujarat Works • Pan-India Supply',
+    exploreText: 'Explore Sand Washing Plants in India',
     spokes: [
       {
         label: 'Silica Sand Washing Plant',
         href: '/products/sand-washing-plants/silica-sand-washing-plant/',
+        keywordTitle: 'Silica Sand Washing Plant Manufacturer in Ahmedabad, Gujarat',
       },
       {
         label: 'Bucket Wheel Sand Washer',
         href: '/products/sand-washing-plants/bucket-wheel-sand-washer/',
+        keywordTitle: 'Bucket Wheel Sand Washer Manufacturer in Gujarat, India',
       },
       {
         label: 'Hydrocyclone Sand Separator',
         href: '/products/sand-washing-plants/hydrocyclone-sand-separator/',
+        keywordTitle: 'Hydrocyclone Sand Separator in Ahmedabad & Gujarat',
       },
       {
         label: 'Heavy Duty Mineral Log Washer',
         href: '/products/sand-washing-plants/mineral-log-washer/',
+        keywordTitle: 'Heavy Duty Mineral Log Washer Manufacturer India',
       },
     ],
   },
@@ -95,22 +110,28 @@ const productPillars: PillarItem[] = [
     badge: '1 - 20 TPH',
     icon: Sprout,
     description: 'Turnkey chemical NPK, DAP, compost, and bio-organic fertilizer pelletizing systems.',
+    geoTarget: 'Dahegam Works (Ahmedabad)',
+    exploreText: 'Explore Fertilizer Plants in Gujarat',
     spokes: [
       {
         label: 'Industrial Pan Disc Granulator',
         href: '/products/fertilizer-granulation-plants/disc-granulator/',
+        keywordTitle: 'Industrial Pan Disc Granulator Manufacturer in Ahmedabad, Gujarat',
       },
       {
         label: 'Double Roller Compactor',
         href: '/products/fertilizer-granulation-plants/double-roller-granulator/',
+        keywordTitle: 'Double Roller Compaction Granulator Manufacturer in India',
       },
       {
         label: 'Rotary Drum Granulator',
         href: '/products/fertilizer-granulation-plants/rotary-drum-granulator/',
+        keywordTitle: 'Rotary Drum Fertilizer Granulator in Gujarat, India',
       },
       {
         label: 'Fertilizer Cooling & Coating Drum',
         href: '/products/fertilizer-granulation-plants/fertilizer-cooling-coating-drum/',
+        keywordTitle: 'Fertilizer Cooling & Coating Drum in Ahmedabad, India',
       },
     ],
   },
@@ -121,22 +142,28 @@ const productPillars: PillarItem[] = [
     badge: 'IS 11592 / CEMA',
     icon: Boxes,
     description: 'Bulk material handling conveyors, bucket elevators, trunnion rollers, and spares.',
+    geoTarget: 'Zak GIDC Heavy Bay • India',
+    exploreText: 'Explore Conveyors & Spares in India',
     spokes: [
       {
         label: 'Heavy Duty Bucket Elevators',
         href: '/products/industrial-conveyors-spares/bucket-elevators/',
+        keywordTitle: 'Heavy Duty Bucket Elevators Manufacturer in Ahmedabad, Gujarat',
       },
       {
         label: 'Industrial Screw Conveyors',
         href: '/products/industrial-conveyors-spares/screw-conveyors/',
+        keywordTitle: 'Industrial Screw Conveyor Manufacturer in Gujarat, India',
       },
       {
         label: 'Forged Trunnion Support Rollers',
         href: '/products/industrial-conveyors-spares/forged-trunnion-rollers/',
+        keywordTitle: 'Forged EN-8/EN-9 Trunnion Rollers Manufacturer in India',
       },
       {
         label: 'Troughed Belt Conveyor Systems',
         href: '/products/industrial-conveyors-spares/belt-conveyors/',
+        keywordTitle: 'Troughed Belt Conveyor Systems in Ahmedabad, Gujarat, India',
       },
     ],
   },
@@ -232,12 +259,24 @@ export function Header() {
             {/* 4-Pillar Mega Panel with Centered Alignment & Zero Horizontal Overflow (Always in DOM for SEO Discovery) */}
             <div
               onMouseLeave={() => setProductsMegaOpen(false)}
-              className={`absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[940px] xl:w-[980px] max-w-[calc(100vw-32px)] bg-white rounded-2xl border border-[#E7E7EB] shadow-[0_24px_60px_-12px_rgba(17,17,17,0.16)] p-5 z-50 transition-all duration-150 before:absolute before:-top-3 before:left-0 before:right-0 before:h-3 ${
+              className={`absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[1020px] xl:w-[1120px] max-w-[calc(100vw-32px)] bg-white rounded-2xl border border-[#E7E7EB] shadow-[0_24px_60px_-12px_rgba(17,17,17,0.16)] p-5 z-50 transition-all duration-200 before:absolute before:-top-3 before:left-0 before:right-0 before:h-3 ${
                 productsMegaOpen
                   ? 'opacity-100 translate-y-0 visible pointer-events-auto'
                   : 'opacity-0 -translate-y-1 invisible pointer-events-none'
               }`}
             >
+                {/* Strategic Geo & Industry Authority Header Banner */}
+                <div className="mb-3 pb-2.5 border-b border-neutral-100 flex items-center justify-between text-xs">
+                  <div className="flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                    <span className="font-bold text-neutral-900">Heavy Machinery Manufacturer:</span>
+                    <span className="text-neutral-500">Zak GIDC Works, Dahegam • Ahmedabad Capital Region, Gujarat • Pan-India Supply</span>
+                  </div>
+                  <span className="text-[11px] font-mono font-bold text-[#E10613] bg-red-50 px-2 py-0.5 rounded border border-red-100">
+                    Direct Factory Pricing
+                  </span>
+                </div>
+
                 {/* 4 Pillar Cards in a Balanced Grid */}
                 <div className="grid grid-cols-4 gap-3.5">
                   {productPillars.map((pillar) => {
@@ -261,10 +300,14 @@ export function Header() {
                           <Link
                             href={pillar.href}
                             onClick={() => setProductsMegaOpen(false)}
+                            title={`Industrial ${pillar.shortName} Manufacturer in Ahmedabad, Gujarat, India`}
                             className="block group"
                           >
                             <span className="block text-[13px] font-bold text-[#111111] group-hover:text-[#E10613] leading-snug transition-colors">
                               {pillar.shortName}
+                            </span>
+                            <span className="text-[10px] font-mono font-semibold text-[#E10613] block mt-0.5">
+                              {pillar.geoTarget}
                             </span>
                             <p className="text-[11px] text-[#737373] mt-0.5 line-clamp-2 leading-relaxed">
                               {pillar.description}
@@ -280,6 +323,8 @@ export function Header() {
                                   key={spoke.label}
                                   href={spoke.href}
                                   onClick={() => setProductsMegaOpen(false)}
+                                  title={spoke.keywordTitle}
+                                  aria-label={spoke.keywordTitle}
                                   className={`group flex items-center justify-between py-1.5 px-2 rounded-md transition-all ${
                                     isActive
                                       ? 'bg-red-50 text-[#E10613] font-semibold shadow-xs'
@@ -313,9 +358,10 @@ export function Header() {
                           <Link
                             href={pillar.href}
                             onClick={() => setProductsMegaOpen(false)}
+                            title={`Explore ${pillar.shortName} Systems manufactured in Ahmedabad, Gujarat, India`}
                             className="text-[11px] font-bold text-[#E10613] hover:text-[#BC0711] inline-flex items-center gap-1 group"
                           >
-                            <span>Explore {pillar.shortName}</span>
+                            <span>{pillar.exploreText}</span>
                             <ArrowRight className="w-3 h-3 transition-transform group-hover:translate-x-0.5" />
                           </Link>
                         </div>
@@ -329,7 +375,7 @@ export function Header() {
                   <div className="flex items-center gap-2 text-neutral-600 truncate">
                     <span className="font-bold text-[#111111] shrink-0 font-mono text-[11px] uppercase tracking-wider text-[#E10613]">16 Spoke Equipment Lines:</span>
                     <span className="text-neutral-500 truncate text-[11px]">
-                      Single / Multi-Pass Dryers • Wet Classifiers • Fertilizer Granulators • IS 11592 Conveyors
+                      Rotary Dryers • Sand Washing • Fertilizer Granulation • Conveyors • Ahmedabad, Gujarat &amp; All-India Supply
                     </span>
                   </div>
 
@@ -485,9 +531,10 @@ export function Header() {
                           <Link
                             href={pillar.href}
                             onClick={() => setMobileMenuOpen(false)}
+                            title={pillar.exploreText}
                             className="block text-xs font-bold text-[#E10613] hover:underline pb-1 border-b border-neutral-100"
                           >
-                            Explore {pillar.shortName} ({pillar.badge})
+                            {pillar.exploreText}
                           </Link>
                           <div className="space-y-1 pt-1 pl-1">
                             {pillar.spokes.map((spoke) => {
@@ -497,6 +544,7 @@ export function Header() {
                                   key={spoke.label}
                                   href={spoke.href}
                                   onClick={() => setMobileMenuOpen(false)}
+                                  title={spoke.keywordTitle}
                                   className={`block text-xs py-1.5 px-2 rounded transition-colors ${
                                     isActive
                                       ? 'text-[#E10613] font-bold bg-red-50'

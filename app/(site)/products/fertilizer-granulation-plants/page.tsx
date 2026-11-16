@@ -649,9 +649,9 @@ export default function FertilizerPlantsPage() {
               <span className="text-xs font-mono uppercase tracking-wider text-[#E10613] font-bold">
                 Turnkey Fertilizer Plant Engineering
               </span>
-              <h3 className="text-2xl sm:text-3xl font-bold text-white">
+              <h2 className="text-2xl sm:text-3xl font-bold text-white">
                 Plan Your Fertilizer Production Plant
-              </h3>
+              </h2>
               <p className="text-sm text-neutral-400 leading-relaxed">
                 Connect with our process equipment engineers at Zak GIDC. We provide plant layout drawings,
                 granulation recipes, and equipment manufacturing for bio-organic and chemical fertilizer projects.
