@@ -41,6 +41,7 @@ import {
 import { Container } from '@/components/ui/Container';
 import { Button } from '@/components/ui/Button';
 import { Breadcrumbs } from '@/components/common/Breadcrumbs';
+import { FaqAccordion } from '@/components/ui/FaqAccordion';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { company } from '@/data/company';
 import { defaultOgImage, defaultTwitterImage } from '@/lib/seo';
@@ -1053,12 +1054,6 @@ export default function FertilizerCoolingCoatingDrumPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent pointer-events-none" />
-                  <div className="absolute top-2.5 left-2.5">
-                    <span className="text-[10px] font-mono font-bold text-emerald-700 bg-white/95 backdrop-blur-sm px-2 py-0.5 rounded shadow-sm uppercase tracking-wider">
-                      Sibling Pellet Line
-                    </span>
-                  </div>
                 </Link>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
@@ -1097,12 +1092,6 @@ export default function FertilizerCoolingCoatingDrumPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent pointer-events-none" />
-                  <div className="absolute top-2.5 left-2.5">
-                    <span className="text-[10px] font-mono font-bold text-blue-700 bg-white/95 backdrop-blur-sm px-2 py-0.5 rounded shadow-sm uppercase tracking-wider">
-                      Sibling Pellet Line
-                    </span>
-                  </div>
                 </Link>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
@@ -1141,12 +1130,6 @@ export default function FertilizerCoolingCoatingDrumPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent pointer-events-none" />
-                  <div className="absolute top-2.5 left-2.5">
-                    <span className="text-[10px] font-mono font-bold text-purple-700 bg-white/95 backdrop-blur-sm px-2 py-0.5 rounded shadow-sm uppercase tracking-wider">
-                      Complementary Material Handling
-                    </span>
-                  </div>
                 </Link>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>

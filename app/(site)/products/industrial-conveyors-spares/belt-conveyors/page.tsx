@@ -40,6 +40,7 @@ import {
 import { Container } from '@/components/ui/Container';
 import { Button } from '@/components/ui/Button';
 import { Breadcrumbs } from '@/components/common/Breadcrumbs';
+import { FaqAccordion } from '@/components/ui/FaqAccordion';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { company } from '@/data/company';
 import { defaultOgImage, defaultTwitterImage } from '@/lib/seo';
@@ -375,12 +376,12 @@ export default function BeltConveyorPage() {
                   <div className="relative aspect-[4/3] w-full">
                     <Image
                       src="/images/products/conveyor-systems/belt-conveyor-mineral-ore-beneficiation-lg.webp"
-                      alt="Minerals Solutions Heavy Troughed Belt Conveyor System for Mineral Processing and Quarry Aggregates at Zak GIDC Dahegam" width={800} height={600}
+                      alt="Minerals Solutions Heavy Troughed Belt Conveyor System for Mineral Processing and Quarry Aggregates at Zak GIDC Dahegam"
+                      fill
                       priority
                       className="object-cover"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
                     />
-                    
                   </div>
 
                   <div className="p-4 bg-slate-950/90 border-t border-slate-800 text-white flex items-center justify-between">
@@ -698,10 +699,11 @@ export default function BeltConveyorPage() {
 
               {/* Belting Image Frame */}
               <div className="lg:col-span-6">
-                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl">
+                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl bg-slate-900">
                   <Image
                     src="/images/products/conveyor-systems/rubber-conveyor-belting-roll-lg.webp"
-                    alt="Heavy duty multi-ply M24 grade rubber conveyor belting rolls stocked at Minerals Solutions Zak GIDC Dahegam workshop" width={800} height={600}
+                    alt="Heavy duty multi-ply M24 grade rubber conveyor belting rolls stocked at Minerals Solutions Zak GIDC Dahegam workshop"
+                    fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 50vw"
                   />
@@ -740,12 +742,13 @@ export default function BeltConveyorPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Pulley 1 */}
               <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-4">
-                <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-slate-700">
+                <div className="relative aspect-[16/10] w-full rounded-xl overflow-hidden bg-slate-100 border border-slate-200 group">
                   <Image
                     src="/images/products/conveyor-systems/head-pulley-rubber-lagging-lg.webp"
-                    alt="Hot vulcanized diamond grooved rubber lagging on conveyor drive head pulley" width={800} height={600}
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 30vw"
+                    alt="Hot vulcanized diamond grooved rubber lagging on conveyor drive head pulley with integrated gear motor drive"
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 380px"
                   />
                 </div>
                 <h3 className="text-lg font-bold text-slate-950">Diamond Grooved Rubber Lagging</h3>
@@ -758,12 +761,13 @@ export default function BeltConveyorPage() {
 
               {/* Pulley 2 */}
               <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-4">
-                <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-slate-700">
+                <div className="relative aspect-[16/10] w-full rounded-xl overflow-hidden bg-slate-100 border border-slate-200 group">
                   <Image
                     src="/images/products/conveyor-systems/conveyor-head-tail-pulleys-lg.webp"
-                    alt="Heavy duty crowned conveyor head and tail drum pulleys precision machined at Zak GIDC" width={800} height={600}
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 30vw"
+                    alt="Heavy duty crowned conveyor head and tail drum pulleys precision machined with center taper at Zak GIDC"
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 380px"
                   />
                 </div>
                 <h3 className="text-lg font-bold text-slate-950">Machined Crowned Shells</h3>
@@ -776,12 +780,13 @@ export default function BeltConveyorPage() {
 
               {/* Pulley 3 */}
               <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-4">
-                <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-slate-700">
+                <div className="relative aspect-[16/10] w-full rounded-xl overflow-hidden bg-slate-100 border border-slate-200 group">
                   <Image
-                    src="/images/products/conveyor-systems/conveyor-troughing-idler-roller-lg.webp"
-                    alt="Precision troughing idler rollers with deep multi-labyrinth seals and heavy steel tubing" width={800} height={600}
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 30vw"
+                    src="/images/products/conveyor-systems/conveyor-idler-roller-variant-2-lg.webp"
+                    alt="Heavy-duty conveyor idler roller featuring multi-lip labyrinth grease seal and deep-groove bearing assembly"
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 380px"
                   />
                 </div>
                 <h3 className="text-lg font-bold text-slate-950">Labyrinth-Sealed Idler Rollers</h3>
@@ -983,12 +988,6 @@ export default function BeltConveyorPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent pointer-events-none" />
-                  <div className="absolute top-2.5 left-2.5">
-                    <span className="text-[10px] font-mono font-bold text-emerald-700 bg-white/95 backdrop-blur-sm px-2 py-0.5 rounded shadow-sm uppercase tracking-wider">
-                      Sibling Conveyor Line
-                    </span>
-                  </div>
                 </Link>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
@@ -1027,12 +1026,6 @@ export default function BeltConveyorPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent pointer-events-none" />
-                  <div className="absolute top-2.5 left-2.5">
-                    <span className="text-[10px] font-mono font-bold text-blue-700 bg-white/95 backdrop-blur-sm px-2 py-0.5 rounded shadow-sm uppercase tracking-wider">
-                      Sibling Conveyor Line
-                    </span>
-                  </div>
                 </Link>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
@@ -1071,12 +1064,6 @@ export default function BeltConveyorPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent pointer-events-none" />
-                  <div className="absolute top-2.5 left-2.5">
-                    <span className="text-[10px] font-mono font-bold text-purple-700 bg-white/95 backdrop-blur-sm px-2 py-0.5 rounded shadow-sm uppercase tracking-wider">
-                      Complementary Wet Circuit
-                    </span>
-                  </div>
                 </Link>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>

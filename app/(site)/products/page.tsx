@@ -234,9 +234,6 @@ export default function ProductsPage() {
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 45vw, 600px"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute top-4 left-4 bg-black/80 backdrop-blur-sm text-white px-3.5 py-1 rounded-full text-xs font-mono font-semibold">
-                    Capacity: {cat.capacity}
-                  </div>
                 </div>
 
                 {/* Content Side (7 cols) */}
@@ -244,13 +241,18 @@ export default function ProductsPage() {
                   isEven ? 'lg:order-1' : ''
                 }`}>
                   <div className="space-y-4">
-                    <div className="flex items-center justify-between">
+                    <div className="flex items-center justify-between gap-3">
                       <div className="w-12 h-12 rounded-2xl bg-red-50 text-[#E10613] flex items-center justify-center border border-red-100">
                         <Icon className="w-6 h-6" />
                       </div>
-                      <span className="text-xs font-mono font-bold text-neutral-400">
-                        Division 0{idx + 1}
-                      </span>
+                      <div className="flex items-center gap-2">
+                        <span className="text-xs font-mono font-semibold px-2.5 py-1 rounded-md bg-neutral-100 text-neutral-700 border border-neutral-200">
+                          {cat.capacity}
+                        </span>
+                        <span className="text-xs font-mono font-bold text-neutral-400">
+                          Division 0{idx + 1}
+                        </span>
+                      </div>
                     </div>
 
                     <h2 className="text-2xl sm:text-3xl font-extrabold text-[#111111] group-hover:text-[#E10613] tracking-tight transition-colors">

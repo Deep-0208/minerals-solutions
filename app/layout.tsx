@@ -5,6 +5,7 @@ import { company } from '@/data/company';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { WebMCPQuoteTool } from '@/components/seo/WebMCPQuoteTool';
 import { AgentationClient } from '@/components/common/AgentationClient';
+import { ScrollAnimation } from '@/components/common/ScrollAnimation';
 import { defaultOgImage, defaultTwitterImage } from '@/lib/seo';
 
 const inter = Inter({
@@ -77,6 +78,7 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   themeColor: '#E10613',
+  colorScheme: 'light',
   width: 'device-width',
   initialScale: 1,
   maximumScale: 5,
@@ -268,6 +270,7 @@ export default function RootLayout({
         {children}
         <WebMCPQuoteTool />
         <AgentationClient />
+        <ScrollAnimation />
       </body>
     </html>
   );
