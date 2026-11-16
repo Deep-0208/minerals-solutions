@@ -380,8 +380,8 @@ export default function BucketWheelSandWasherPage() {
 
         {/* Hero Section */}
         <section className="relative pt-8 pb-14 lg:pt-12 lg:pb-20 border-b border-slate-200 overflow-hidden bg-gradient-to-b from-amber-50/40 via-white to-white">
-          <Container>
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+          <Container size="hero">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
               {/* Left Column: Heading, Metrics & Commercial Positioning */}
               <div className="lg:col-span-7">
                 <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-100/80 border border-amber-300 text-amber-900 text-xs font-semibold uppercase tracking-wider mb-4">
@@ -444,9 +444,9 @@ export default function BucketWheelSandWasherPage() {
               </div>
 
               {/* Right Column: Authentic Equipment Visual */}
-              <div className="lg:col-span-5">
+              <div className="lg:col-span-5 w-full">
                 <div className="relative rounded-2xl overflow-hidden border border-slate-300/80 shadow-xl bg-slate-900">
-                  <div className="relative aspect-[4/3] w-full">
+                  <div className="relative aspect-[4/3] sm:aspect-[16/10] lg:aspect-[4/3] xl:aspect-[16/11] 2xl:aspect-[4/3] w-full min-h-[280px] sm:min-h-[340px] lg:min-h-[380px] xl:min-h-[440px] 2xl:min-h-[480px] overflow-hidden bg-slate-900">
                     <Image
                       src="/images/products/mineral-processing/rotary-trommel-screen-lg.webp"
                       alt="Industrial Bucket Wheel Sand Washing Machine Manufactured by Minerals Solutions in Dahegam Gujarat" width={800} height={600}
@@ -455,12 +455,12 @@ export default function BucketWheelSandWasherPage() {
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 45vw, 540px"
                     />
                   </div>
-                  <div className="p-4 bg-slate-950/90 border-t border-slate-800 text-white flex items-center justify-between">
-                    <div>
-                      <p className="text-sm font-semibold">MS-BWW Heavy Sand Washer</p>
+                  <div className="p-4 bg-slate-950/90 border-t border-slate-800 text-white flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                    <div className="min-w-0 flex-1">
+                      <p className="text-sm font-semibold truncate">MS-BWW Heavy Sand Washer</p>
                       <p className="text-xs text-slate-400">Fabricated at Zak GIDC, Dahegam Workshop</p>
                     </div>
-                    <span className="px-2.5 py-1 text-xs font-bold rounded bg-amber-500/20 text-amber-300 border border-amber-500/40">
+                    <span className="px-2.5 py-1 text-xs font-bold rounded bg-amber-500/20 text-amber-300 border border-amber-500/40 shrink-0 whitespace-nowrap self-start sm:self-center">
                       IS 383 Zone II
                     </span>
                   </div>

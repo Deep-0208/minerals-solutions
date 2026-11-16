@@ -366,8 +366,8 @@ export default function DoubleRollerGranulatorPage() {
 
         {/* Hero Section */}
         <section className="relative pt-8 pb-14 lg:pt-12 lg:pb-20 border-b border-slate-200 overflow-hidden bg-gradient-to-b from-slate-100/70 via-white to-white">
-          <Container>
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+          <Container size="hero">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
               {/* Left Column: Heading, Commercial Positioning & Badges */}
               <div className="lg:col-span-7">
                 <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-100/80 border border-emerald-300 text-emerald-950 text-xs font-semibold uppercase tracking-wider mb-4">
@@ -430,9 +430,9 @@ export default function DoubleRollerGranulatorPage() {
               </div>
 
               {/* Right Column: Authentic Equipment Visual */}
-              <div className="lg:col-span-5">
+              <div className="lg:col-span-5 w-full">
                 <div className="relative rounded-2xl overflow-hidden border border-slate-300/80 shadow-xl bg-slate-900">
-                  <div className="relative aspect-[4/3] w-full">
+                  <div className="relative aspect-[4/3] sm:aspect-[16/10] lg:aspect-[4/3] xl:aspect-[16/11] 2xl:aspect-[4/3] w-full min-h-[280px] sm:min-h-[340px] lg:min-h-[380px] xl:min-h-[440px] 2xl:min-h-[480px] overflow-hidden bg-slate-900">
                     <Image
                       src="/images/products/fertilizer-pellet/pellet-mill-roller-assembly-lg.webp"
                       alt="Double Roller Compaction Fertilizer Granulation Plant Manufactured by Minerals Solutions in Dahegam Gujarat" width={800} height={600}
@@ -441,9 +441,9 @@ export default function DoubleRollerGranulatorPage() {
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 45vw, 540px"
                     />
                   </div>
-                  <div className="p-4 bg-slate-950/90 border-t border-slate-800 text-white flex items-center justify-between">
-                    <div>
-                      <p className="text-sm font-semibold">MS-DRG Roller Press Plant</p>
+                  <div className="p-4 bg-slate-950/90 border-t border-slate-800 text-white flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                    <div className="min-w-0 flex-1">
+                      <p className="text-sm font-semibold truncate">MS-DRG Roller Press Plant</p>
                       <p className="text-xs text-slate-400">Fabricated at Zak GIDC, Dahegam Workshop</p>
                     </div>
                     <span className="px-2.5 py-1 text-xs font-bold rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">

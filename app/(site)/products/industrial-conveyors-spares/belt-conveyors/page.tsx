@@ -277,8 +277,8 @@ export default function BeltConveyorPage() {
         {/* Hero Section */}
         <section className="relative pt-8 pb-14 lg:pt-12 lg:pb-20 border-b border-slate-200 overflow-hidden bg-gradient-to-b from-amber-50/40 via-white to-white">
 
-          <Container>
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          <Container size="hero">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
               {/* Left Column: Copy & CTAs */}
               <div className="lg:col-span-7 space-y-6">
                 <div className="flex flex-wrap items-center gap-2">
@@ -373,7 +373,7 @@ export default function BeltConveyorPage() {
               {/* Right Column: Visual Frame */}
               <div className="lg:col-span-5 relative">
                 <div className="relative rounded-2xl overflow-hidden border border-slate-300/80 bg-slate-900 shadow-xl">
-                  <div className="relative aspect-[4/3] w-full">
+                  <div className="relative aspect-[4/3] sm:aspect-[16/10] lg:aspect-[4/3] xl:aspect-[16/11] 2xl:aspect-[4/3] w-full min-h-[280px] sm:min-h-[340px] lg:min-h-[380px] xl:min-h-[440px] 2xl:min-h-[480px] overflow-hidden bg-slate-900">
                     <Image
                       src="/images/products/conveyor-systems/belt-conveyor-mineral-ore-beneficiation-lg.webp"
                       alt="Minerals Solutions Heavy Troughed Belt Conveyor System for Mineral Processing and Quarry Aggregates at Zak GIDC Dahegam"
@@ -384,7 +384,7 @@ export default function BeltConveyorPage() {
                     />
                   </div>
 
-                  <div className="p-4 bg-slate-950/90 border-t border-slate-800 text-white flex items-center justify-between">
+                  <div className="p-4 bg-slate-950/90 border-t border-slate-800 text-white flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                     <div className="flex items-center justify-between text-xs text-slate-400 font-mono">
                       <span>SERIES: MS-BC-800</span>
                       <span className="text-red-400 font-bold">220 TPH OVERLAND STACKER</span>

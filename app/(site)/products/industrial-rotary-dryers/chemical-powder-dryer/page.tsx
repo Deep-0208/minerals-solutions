@@ -365,8 +365,8 @@ export default function ChemicalPowderDryerPage() {
 
         {/* Hero Section */}
         <section className="relative pt-8 pb-14 lg:pt-12 lg:pb-20 border-b border-slate-200 overflow-hidden bg-gradient-to-b from-slate-100/60 via-white to-white">
-          <Container>
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+          <Container size="hero">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
               {/* Left Column: Headers, Badges & CTAs */}
               <div className="lg:col-span-7">
                 <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 border border-slate-300 text-slate-800 text-xs font-bold tracking-wide uppercase mb-4">
@@ -475,9 +475,9 @@ export default function ChemicalPowderDryerPage() {
               </div>
 
               {/* Right Column: Real Equipment Photograph */}
-              <div className="lg:col-span-5">
+              <div className="lg:col-span-5 w-full">
                 <div className="relative rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-xl shadow-slate-900/5 group">
-                  <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
+                  <div className="relative aspect-[4/3] sm:aspect-[16/10] lg:aspect-[4/3] xl:aspect-[16/11] 2xl:aspect-[4/3] w-full min-h-[280px] sm:min-h-[340px] lg:min-h-[380px] xl:min-h-[440px] 2xl:min-h-[480px] overflow-hidden bg-slate-900">
                     <Image
                       src="/images/products/rotary-dryers/borax-dryer-heat-exchanger-bag-filter-lg.webp"
                       alt="Stainless Steel Chemical Powder Dryer with Shell-and-Tube Heat Exchanger and Pulse-Jet Bag Filter manufactured at Minerals Solutions Zak GIDC Dahegam facility"
@@ -488,12 +488,12 @@ export default function ChemicalPowderDryerPage() {
                     />
                   </div>
 
-                  <div className="p-4 bg-slate-950/90 border-t border-slate-800 text-white flex items-center justify-between">
-                    <div>
-                      <p className="text-sm font-semibold">MS-CPD Series Chemical Powder Dryer</p>
+                  <div className="p-4 bg-slate-950/90 border-t border-slate-800 text-white flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                    <div className="min-w-0 flex-1">
+                      <p className="text-sm font-semibold truncate">MS-CPD Series Chemical Powder Dryer</p>
                       <p className="text-xs text-slate-400">Authentic Factory Assembly · Dahegam Works</p>
                     </div>
-                    <span className="px-2.5 py-1 text-xs font-bold rounded bg-amber-500/20 text-amber-300 border border-amber-500/40">
+                    <span className="px-2.5 py-1 text-xs font-bold rounded bg-amber-500/20 text-amber-300 border border-amber-500/40 shrink-0 whitespace-nowrap self-start sm:self-center">
                       ₹ 22,00,000 Baseline
                     </span>
                   </div>

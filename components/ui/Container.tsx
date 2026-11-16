@@ -14,8 +14,8 @@ export function Container({
   const sizeStyles = {
     sm: 'max-w-3xl',
     md: 'max-w-5xl',
-    content: 'max-w-[1200px]',
-    hero: 'max-w-[1320px]',
+    content: 'max-w-[1200px] xl:max-w-[1280px] 2xl:max-w-[1360px]',
+    hero: 'max-w-[1280px] xl:max-w-[1380px] 2xl:max-w-[1480px]',
     full: 'max-w-full',
   }[size];
 
