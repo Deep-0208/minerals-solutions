@@ -456,9 +456,6 @@ export default function SilicaSandWashingPlantPage() {
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 45vw, 600px"
                     />
-                    <div className="absolute top-3 left-3 bg-white/95 backdrop-blur-md px-3 py-1 rounded-full text-xs font-mono font-semibold text-slate-900 border border-slate-200 shadow-xs">
-                      Zak GIDC Workshop
-                    </div>
                   </div>
 
                   <div className="p-4 bg-slate-950/90 border-t border-slate-800 text-white flex items-center justify-between">

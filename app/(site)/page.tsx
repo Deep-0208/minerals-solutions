@@ -277,8 +277,8 @@ export default function HomePage() {
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-red-500/5 rounded-full blur-[120px] pointer-events-none" />
         <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-neutral-200/40 rounded-full blur-[100px] pointer-events-none" />
 
-        <Container className="relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-start">
+        <Container size="hero" className="relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 xl:gap-12 lg:items-center">
             {/* Left Content Column (7 cols) */}
             <div className="lg:col-span-7 space-y-6">
               {/* Badge */}
@@ -361,32 +361,31 @@ export default function HomePage() {
             </div>
 
             {/* Right Media Column (5 cols) */}
-            <div className="lg:col-span-5">
+            <div className="lg:col-span-5 w-full">
               <div className="relative rounded-3xl overflow-hidden border border-[#E7E7EB] bg-white shadow-[0_20px_48px_rgba(17,17,17,0.08)] group">
-                <div className="relative aspect-[4/3] w-full overflow-hidden bg-neutral-100">
+                <div className="relative aspect-[4/3] sm:aspect-[16/10] lg:aspect-[4/3] xl:aspect-[16/11] 2xl:aspect-[4/3] w-full min-h-[300px] sm:min-h-[360px] lg:min-h-[380px] xl:min-h-[460px] 2xl:min-h-[520px] overflow-hidden bg-neutral-100">
                   <Image
                     src="/images/products/rotary-dryers/double-pass-rotary-dryer-primary-lg.webp"
                     alt="Minerals Solutions double pass concentric rotary dryer showing outer shell and heavy drive frame"
-                    width={800}
-                    height={600}
+                    fill
                     priority
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, (max-width: 1536px) 45vw, 750px"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
 
-                <div className="p-5 bg-white border-t border-[#E7E7EB] flex items-center justify-between">
-                  <div>
+                <div className="p-4 sm:p-5 bg-white border-t border-[#E7E7EB] flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                  <div className="min-w-0 flex-1">
                     <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-[#E10613] block">
                       Featured Industrial Equipment
                     </span>
-                    <p className="text-sm font-bold text-[#111111] group-hover:text-[#E10613] transition-colors">
+                    <p className="text-sm sm:text-base font-bold text-[#111111] group-hover:text-[#E10613] transition-colors truncate">
                       Double Pass Concentric Rotary Dryer
                     </p>
                   </div>
                   <Link
                     href="/products/industrial-rotary-dryers/"
-                    className="text-xs font-bold text-[#111111] hover:text-[#E10613] flex items-center gap-1 transition-colors"
+                    className="text-xs font-bold text-[#111111] hover:text-[#E10613] inline-flex items-center gap-1.5 transition-colors shrink-0 whitespace-nowrap self-start sm:self-center bg-neutral-50 hover:bg-red-50 border border-neutral-200 hover:border-red-200 px-3 py-1.5 rounded-lg"
                     aria-label="View specifications for Double Pass Concentric Rotary Dryer"
                   >
                     <span>View Specifications</span>

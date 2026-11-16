@@ -326,7 +326,7 @@ export default function FertilizerPlantsPage() {
           </nav>
 
           {/* Hero Section */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start mb-16">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center mb-16">
             <div className="lg:col-span-7 space-y-4">
               <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-red-50 text-[#E10613] text-xs font-bold uppercase tracking-wider border border-red-100 mb-3">
                 <Sprout className="w-3.5 h-3.5" />
@@ -375,20 +375,23 @@ export default function FertilizerPlantsPage() {
               </div>
             </div>
 
-            <div className="lg:col-span-5">
-              <div className="relative aspect-[4/3] rounded-3xl overflow-hidden border border-[#E7E7EB] bg-neutral-900 shadow-xl">
-                <Image
-                  src="/images/products/fertilizer-pellet/fertilizer-granulation-plant-primary-lg.webp"
-                  alt="Minerals Solutions turnkey fertilizer granulation plant installation showing pan disc granulators and conveyor belts"
-                  width={1200}
-                  height={800}
-                  priority
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 45vw, 600px"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute bottom-3 left-3 right-3 bg-black/80 backdrop-blur-sm p-3 rounded-xl text-white text-xs">
-                  <span className="font-bold block">Turnkey Fertilizer Granulation Line</span>
-                  <span className="text-neutral-400 text-[11px]">Fabricated at Zak GIDC Works, Dahegam</span>
+            <div className="lg:col-span-5 w-full">
+              <div className="relative rounded-3xl overflow-hidden border border-[#E7E7EB] bg-white shadow-xl group">
+                <div className="relative aspect-[4/3] sm:aspect-[16/10] lg:aspect-[4/3] xl:aspect-[16/11] 2xl:aspect-[4/3] w-full min-h-[280px] sm:min-h-[340px] lg:min-h-[380px] xl:min-h-[440px] 2xl:min-h-[480px] overflow-hidden bg-neutral-100">
+                  <Image
+                    src="/images/products/fertilizer-pellet/fertilizer-granulation-plant-primary-lg.webp"
+                    alt="Minerals Solutions turnkey fertilizer granulation plant installation showing pan disc granulators and conveyor belts"
+                    fill
+                    priority
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 45vw, 650px"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <div className="p-4 bg-slate-950 text-white border-t border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
+                  <div className="min-w-0 flex-1">
+                    <span className="font-bold text-sm block truncate">Turnkey Fertilizer Granulation Line</span>
+                    <span className="text-neutral-400 text-xs">Fabricated at Zak GIDC Works, Dahegam</span>
+                  </div>
                 </div>
               </div>
             </div>

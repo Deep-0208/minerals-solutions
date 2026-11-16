@@ -255,24 +255,24 @@ export default function BeltConveyorPage() {
 
       <main className="min-h-screen bg-white text-slate-900">
         {/* Breadcrumb Navigation Bar */}
-        <section className="bg-slate-50 border-b border-slate-200 py-3">
+        <div className="border-b border-slate-200 bg-slate-50/80">
           <Container>
             <Breadcrumbs
-                items={[
-                  { label: 'Home', href: '/' },
-                  { label: 'Products', href: '/products/' },
-                  {
-                    label: 'Industrial Conveyors & Spares',
-                    href: '/products/industrial-conveyors-spares/',
-                  },
-                  {
-                    label: 'Belt Conveyors',
-                    href: '/products/industrial-conveyors-spares/belt-conveyors/',
-                  },
-                ]}
-              />
-            </Container>
-          </section>
+              items={[
+                { label: 'Home', href: '/' },
+                { label: 'Products', href: '/products/' },
+                {
+                  label: 'Industrial Conveyors & Spares',
+                  href: '/products/industrial-conveyors-spares/',
+                },
+                {
+                  label: 'Belt Conveyors',
+                  href: '/products/industrial-conveyors-spares/belt-conveyors/',
+                },
+              ]}
+            />
+          </Container>
+        </div>
 
         {/* Hero Section */}
         <section className="relative pt-8 pb-14 lg:pt-12 lg:pb-20 border-b border-slate-200 overflow-hidden bg-gradient-to-b from-amber-50/40 via-white to-white">
@@ -1146,7 +1146,7 @@ export default function BeltConveyorPage() {
         </section>
 
         {/* Section 9: Frequently Asked Questions */}
-        <section className="py-14 lg:py-20 border-b border-slate-200 bg-white">
+        <section className="py-14 lg:py-20 bg-white">
           <Container>
             <div className="max-w-3xl mx-auto text-center mb-12">
               <div className="text-red-400 font-mono text-xs uppercase tracking-wider font-semibold mb-2">
@@ -1161,21 +1161,15 @@ export default function BeltConveyorPage() {
               </p>
             </div>
 
-            <div className="max-w-4xl mx-auto space-y-4">
-              {faqs.map((faq, idx) => (
-                <div
-                  key={idx}
-                  className="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-3"
-                >
-                  <h3 className="text-base sm:text-lg font-bold text-slate-950 flex items-start gap-3">
-                    <span className="text-red-400 font-mono text-sm mt-0.5">0{idx + 1}.</span>
-                    <span>{faq.q}</span>
-                  </h3>
-                  <p className="text-slate-600 text-sm sm:text-base leading-relaxed pl-7">
-                    {faq.a}
-                  </p>
-                </div>
-              ))}
+            <div className="max-w-4xl mx-auto">
+              <FaqAccordion
+                items={faqs.map((f) => ({
+                  question: f.q,
+                  answer: f.a,
+                }))}
+                allowMultiple={false}
+                defaultOpenIndex={null}
+              />
             </div>
           </Container>
         </section>
