@@ -3,6 +3,7 @@ import { Inter, Poppins } from 'next/font/google';
 import './globals.css';
 import { company } from '@/data/company';
 import { JsonLd } from '@/components/seo/JsonLd';
+import { WebMCPQuoteTool } from '@/components/seo/WebMCPQuoteTool';
 import { AgentationClient } from '@/components/common/AgentationClient';
 import { defaultOgImage, defaultTwitterImage } from '@/lib/seo';
 
@@ -100,10 +101,53 @@ export default function RootLayout({
       telephone: company.telephones[0],
       email: company.email,
       taxID: company.gstin,
+      currenciesAccepted: 'INR, USD',
+      paymentAccepted: 'Cash, Cheque, Wire Transfer (NEFT/RTGS), Letter of Credit (LC)',
+      priceRange: '₹₹₹',
+      knowsAbout: [
+        'Industrial Rotary Drum Dryers',
+        'Triple-Pass Concentric Rotary Dryers',
+        'Thermodynamic Heat Balance Calculations',
+        'Silica Sand & Mineral Drying Systems',
+        'Bucket Wheel Sand Washing Plants',
+        'Hydrocyclone Slurry Desliming & 75 Micron Recovery',
+        'Bio-Fertilizer Disc Granulators',
+        'Double Roller Compaction Granulators',
+        'Industrial Trough Belt Conveyor Systems',
+        'IS 2062 Grade B Structural Carbon Steel Fabrication',
+        'Submerged Arc Welding (ASME Sec IX)',
+        'Forged EN-8/EN-9 Trunnion Roller Induction Hardening',
+      ],
       founder: {
         '@type': 'Person',
+        '@id': `${company.siteUrl}/#vipulbhai-prajapati`,
         name: company.proprietor,
+        jobTitle: 'Founder & Chief Fabrication Specialist',
+        worksFor: {
+          '@id': `${company.siteUrl}/#organization`,
+        },
+        knowsAbout: [
+          'Heavy Industrial Machinery Fabrication',
+          'Rotary Drum Dynamic Balancing',
+          'Structural Steel Rolling',
+        ],
       },
+      employee: [
+        {
+          '@type': 'Person',
+          '@id': `${company.siteUrl}/#p-amrutlal`,
+          name: company.ceo,
+          jobTitle: 'Chief Executive Officer & Mineral Thermal Systems Engineer',
+          worksFor: {
+            '@id': `${company.siteUrl}/#organization`,
+          },
+          knowsAbout: [
+            'Thermodynamic Dryer Sizing',
+            'Combustion Chamber Refractory Design',
+            'Hydrocyclone Slurry Dynamics',
+          ],
+        },
+      ],
       address: {
         '@type': 'PostalAddress',
         streetAddress: company.address.streetAddress,
@@ -205,6 +249,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth" data-scroll-behavior="smooth">
       <head>
+        <link rel="alternate" type="text/plain" href={`${company.siteUrl}/llms.txt`} title="LLM Knowledge Graph" />
+        <link rel="alternate" type="text/plain" href={`${company.siteUrl}/llms-full.txt`} title="Full Engineering Context" />
+        <link rel="alternate" type="application/json" href={`${company.siteUrl}/.well-known/ai-catalog.json`} title="AI Agent Discovery Catalog" />
         <JsonLd data={rootSchema} />
       </head>
       <body
@@ -219,6 +266,7 @@ export default function RootLayout({
         </a>
 
         {children}
+        <WebMCPQuoteTool />
         <AgentationClient />
       </body>
     </html>

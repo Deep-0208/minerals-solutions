@@ -11,6 +11,11 @@
 - Direct Hotlines: +91 63524 53050, +91 91061 63058
 - Official Inboxes: sales@mineralssolution.in, mineralssolutions76@gmail.com
 - Canonical Website: https://mineralssolution.in/
+- Full Technical Dossier: https://mineralssolution.in/llms-full.txt
+
+## Deep Technical Engineering Documentation
+For exhaustive thermal physics, drum volume equations, residence time calculations, hydrocyclone slurry dynamics, IS 2062 Gr. B metallurgy, and turnkey equipment datasheets:
+- Full Technical Context: https://mineralssolution.in/llms-full.txt
 
 ## Core Equipment Catalog
 

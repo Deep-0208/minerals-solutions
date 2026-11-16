@@ -163,7 +163,7 @@ export default function BucketElevatorPage() {
     name: 'Industrial Bucket Elevator System',
     description:
       'Heavy duty vertical bucket elevator systems (5 to 100 TPH, up to 45m lift height). Centrifugal and continuous discharge configurations with heavy folded plate casing, anti-rollback cam clutches, and forged chain or high-tensile rubber belt drives.',
-    image: `${company.siteUrl}/images/products/conveyor-systems/belt-conveyor-mineral-ore-beneficiation-lg.webp`,
+    image: `${company.siteUrl}/images/products/conveyor-systems/conveyor-tail-drum-pulley-lg.webp`,
     sku: 'MS-BEL-200-600',
     mpn: 'MS-BEL-SERIES',
     brand: {
@@ -362,7 +362,7 @@ export default function BucketElevatorPage() {
                 <div className="relative rounded-2xl overflow-hidden border border-slate-300/80 bg-slate-900 shadow-xl">
                   <div className="relative aspect-[4/3] w-full">
                     <Image
-                      src="/images/products/conveyor-systems/belt-conveyor-mineral-ore-beneficiation-lg.webp"
+                      src="/images/products/conveyor-systems/conveyor-tail-drum-pulley-lg.webp"
                       alt="Minerals Solutions Industrial Vertical Bulk Material Handling and Bucket Elevator Systems at Zak GIDC Dahegam" width={800} height={600}
                       priority
                       className="object-cover"

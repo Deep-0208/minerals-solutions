@@ -3,6 +3,10 @@ import path from 'path';
 
 const securityHeaders = [
   {
+    key: 'Content-Signal',
+    value: 'ai-train=no, search=yes, ai-retrieval=yes',
+  },
+  {
     key: 'X-DNS-Prefetch-Control',
     value: 'on',
   },

@@ -260,7 +260,7 @@ export default function BucketWheelSandWasherPage() {
       '@context': 'https://schema.org',
       '@type': 'Product',
       name: 'Bucket Wheel Sand Washing & Dewatering Machine',
-      image: `${company.siteUrl}/images/products/mineral-processing/river-sand-washing-plant-lg.webp`,
+      image: `${company.siteUrl}/images/products/mineral-processing/rotary-trommel-screen-lg.webp`,
       description:
         'Heavy-duty industrial bucket wheel sand washing and dewatering machines (30 to 120 TPH) for manufactured sand (M-Sand) and river gravel. Low energy consumption, modular polyurethane screens, and outboard bearing protection.',
       brand: {
@@ -447,7 +447,7 @@ export default function BucketWheelSandWasherPage() {
                 <div className="relative rounded-2xl overflow-hidden border border-slate-300/80 shadow-xl bg-slate-900">
                   <div className="relative aspect-[4/3] w-full">
                     <Image
-                      src="/images/products/mineral-processing/river-sand-washing-plant-lg.webp"
+                      src="/images/products/mineral-processing/rotary-trommel-screen-lg.webp"
                       alt="Industrial Bucket Wheel Sand Washing Machine Manufactured by Minerals Solutions in Dahegam Gujarat" width={800} height={600}
                       priority
                       className="object-cover object-center"

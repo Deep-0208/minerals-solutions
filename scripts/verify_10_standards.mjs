@@ -214,14 +214,15 @@ spokePages.forEach((item, index) => {
     issuesList.push(`[${item.spoke}] Em-dash found`);
   }
 
-  // 7. Next.js Image Compliance (WebP, explicit width/height)
+  // 7. Next.js Image Compliance (WebP, explicit width/height or Next.js fill)
   const multiImageMatches = [...content.matchAll(/<Image\b([\s\S]*?)\/>/g)];
   let imagesOk = multiImageMatches.length > 0;
   multiImageMatches.forEach(m => {
     const imgBlock = m[1];
     const hasWidth = imgBlock.includes('width=');
     const hasHeight = imgBlock.includes('height=');
-    if (!hasWidth || !hasHeight) imagesOk = false;
+    const hasFill = /\bfill\b/.test(imgBlock);
+    if ((!hasWidth || !hasHeight) && !hasFill) imagesOk = false;
   });
   console.log(`  7. Image Compliance: ${imagesOk ? 'PASS' : 'FAIL'} (${multiImageMatches.length} images checked)`);
   if (!imagesOk) {

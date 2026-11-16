@@ -175,7 +175,7 @@ export default function ScrewConveyorPage() {
     name: 'Industrial Screw Conveyor',
     description:
       'Heavy duty industrial screw conveyors: U-trough and tubular pipe feeders (100mm to 600mm diameter). Dust-tight carbon steel and SS304/SS316 construction with split gland stuffing box seals and shaft-mounted geared motors.',
-    image: `${company.siteUrl}/images/products/conveyor-systems/belt-conveyor-system-variant-1-lg.webp`,
+    image: `${company.siteUrl}/images/products/conveyor-systems/conveyor-idler-roller-variant-1-lg.webp`,
     sku: 'MS-SC-150-600',
     mpn: 'MS-SC-SERIES',
     brand: {
@@ -374,7 +374,7 @@ export default function ScrewConveyorPage() {
                 <div className="relative rounded-2xl overflow-hidden border border-slate-300/80 bg-slate-900 shadow-xl">
                   <div className="relative aspect-[4/3] w-full">
                     <Image
-                      src="/images/products/conveyor-systems/belt-conveyor-system-variant-1-lg.webp"
+                      src="/images/products/conveyor-systems/conveyor-idler-roller-variant-1-lg.webp"
                       alt="Minerals Solutions Industrial Screw Conveyor Systems Workshop Assembly at Zak GIDC Dahegam" width={800} height={600}
                       priority
                       className="object-cover"

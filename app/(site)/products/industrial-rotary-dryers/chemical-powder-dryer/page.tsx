@@ -475,44 +475,29 @@ export default function ChemicalPowderDryerPage() {
 
               {/* Right Column: Real Equipment Photograph */}
               <div className="lg:col-span-5">
-                <div className="relative rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-xl shadow-slate-900/5">
-                  <div className="relative aspect-[4/3] w-full bg-slate-900">
+                <div className="relative rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-xl shadow-slate-900/5 group">
+                  <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
                     <Image
                       src="/images/products/rotary-dryers/borax-dryer-heat-exchanger-bag-filter-lg.webp"
-                      alt="Stainless Steel Chemical Powder Dryer with Shell-and-Tube Heat Exchanger and Pulse-Jet Bag Filter manufactured at Minerals Solutions Zak GIDC Dahegam facility" width={800} height={600}
+                      alt="Stainless Steel Chemical Powder Dryer with Shell-and-Tube Heat Exchanger and Pulse-Jet Bag Filter manufactured at Minerals Solutions Zak GIDC Dahegam facility"
+                      fill
                       priority
-                      className="object-cover"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 45vw, 550px"
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 45vw, 600px"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none" />
-                    <div className="absolute bottom-4 left-4 right-4 text-white">
-                      <div className="text-xs uppercase tracking-wider font-bold text-amber-400 mb-1">
-                        Verified Chemical Plant Deployment
-                      </div>
-                      <div className="text-sm font-semibold text-slate-100">
-                        Borax & Chemical Powder Dryer with Integrated Baghouse
-                      </div>
+                    <div className="absolute top-3 left-3 bg-white/95 backdrop-blur-md px-3 py-1 rounded-full text-xs font-mono font-semibold text-slate-900 border border-slate-200 shadow-xs">
+                      Zak GIDC Workshop
                     </div>
                   </div>
 
-                  {/* Micro Specs Card Strip */}
-                  <div className="p-4 bg-slate-900 text-slate-200 text-xs divide-y divide-slate-800">
-                    <div className="flex justify-between py-2">
-                      <span className="text-slate-400">Design Flowrate</span>
-                      <span className="font-semibold text-white">3,000 m³/hr Clean Airflow</span>
+                  <div className="p-4 bg-slate-950/90 border-t border-slate-800 text-white flex items-center justify-between">
+                    <div>
+                      <p className="text-sm font-semibold">MS-CPD Series Chemical Powder Dryer</p>
+                      <p className="text-xs text-slate-400">Authentic Factory Assembly · Dahegam Works</p>
                     </div>
-                    <div className="flex justify-between py-2">
-                      <span className="text-slate-400">Baghouse Elements</span>
-                      <span className="font-semibold text-white">24 Pulse-Jet Antistatic Bags</span>
-                    </div>
-                    <div className="flex justify-between py-2">
-                      <span className="text-slate-400">Operating Temperature</span>
-                      <span className="font-semibold text-amber-400">Up to 120°C – 180°C Modulated</span>
-                    </div>
-                    <div className="flex justify-between py-2">
-                      <span className="text-slate-400">Manufacturing Works</span>
-                      <span className="font-semibold text-white">10, Shyam Estate, Dahegam, Gujarat</span>
-                    </div>
+                    <span className="px-2.5 py-1 text-xs font-bold rounded bg-amber-500/20 text-amber-300 border border-amber-500/40">
+                      ₹ 22,00,000 Baseline
+                    </span>
                   </div>
                 </div>
               </div>

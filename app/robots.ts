@@ -5,11 +5,6 @@ export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
       {
-        userAgent: '*',
-        allow: ['/', '/_next/static/', '/_next/image'],
-        disallow: ['/api/', '/_next/'],
-      },
-      {
         userAgent: [
           'GPTBot',
           'OAI-SearchBot',
@@ -23,8 +18,26 @@ export default function robots(): MetadataRoute.Robots {
           'Amazonbot',
           'Meta-ExternalAgent',
           'cohere-ai',
+          'FacebookBot',
+          'GoogleOther',
         ],
-        allow: ['/', '/_next/static/', '/_next/image'],
+        allow: ['/', '/_next/static/', '/_next/image/'],
+        disallow: ['/api/', '/_next/'],
+      },
+      {
+        userAgent: [
+          'Bytespider',
+          'CCBot',
+          'AhrefsBot',
+          'SemrushBot',
+          'MJ12bot',
+          'DotBot',
+        ],
+        disallow: ['/'],
+      },
+      {
+        userAgent: '*',
+        allow: ['/', '/_next/static/', '/_next/image/'],
         disallow: ['/api/', '/_next/'],
       },
     ],

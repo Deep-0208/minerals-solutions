@@ -223,7 +223,7 @@ export default function RotaryDrumGranulatorPage() {
       '@context': 'https://schema.org',
       '@type': 'Product',
       name: 'Rotary Drum Fertilizer Granulator',
-      image: `${company.siteUrl}/images/products/fertilizer-pellet/fertilizer-granulation-plant-variant-lg.webp`,
+      image: `${company.siteUrl}/images/products/rotary-dryers/rotary-drum-dryer-lg.webp`,
       description:
         'High-capacity industrial rotary drum fertilizer granulators (3 to 20 TPH). Internal steam injection spargers, anti-stick UHMWPE/rubber lining, forged girth gear drive, and continuous tumbling agglomeration for NPK and bio-organic plants.',
       brand: {
@@ -410,7 +410,7 @@ export default function RotaryDrumGranulatorPage() {
                 <div className="relative rounded-2xl overflow-hidden border border-slate-300/80 shadow-xl bg-slate-900">
                   <div className="relative aspect-[4/3] w-full">
                     <Image
-                      src="/images/products/fertilizer-pellet/fertilizer-granulation-plant-variant-lg.webp"
+                      src="/images/products/rotary-dryers/rotary-drum-dryer-lg.webp"
                       alt="Industrial Rotary Drum Fertilizer Granulator Fabricated by Minerals Solutions in Dahegam Gujarat" width={800} height={600}
                       priority
                       className="object-cover object-center"

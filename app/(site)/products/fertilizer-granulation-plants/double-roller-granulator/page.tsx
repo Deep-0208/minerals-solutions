@@ -246,7 +246,7 @@ export default function DoubleRollerGranulatorPage() {
       '@context': 'https://schema.org',
       '@type': 'Product',
       name: 'Double Roller Compaction Granulator',
-      image: `${company.siteUrl}/images/products/fertilizer-pellet/fertilizer-granulation-plant-primary-lg.webp`,
+      image: `${company.siteUrl}/images/products/fertilizer-pellet/pellet-mill-roller-assembly-lg.webp`,
       description:
         'High-pressure double roller dry compaction fertilizer granulators (1 to 5 TPH). Room-temperature granulation with zero drying required for ammonium sulphate, MOP, bentonite, and dry NPK blends.',
       brand: {
@@ -433,7 +433,7 @@ export default function DoubleRollerGranulatorPage() {
                 <div className="relative rounded-2xl overflow-hidden border border-slate-300/80 shadow-xl bg-slate-900">
                   <div className="relative aspect-[4/3] w-full">
                     <Image
-                      src="/images/products/fertilizer-pellet/fertilizer-granulation-plant-primary-lg.webp"
+                      src="/images/products/fertilizer-pellet/pellet-mill-roller-assembly-lg.webp"
                       alt="Double Roller Compaction Fertilizer Granulation Plant Manufactured by Minerals Solutions in Dahegam Gujarat" width={800} height={600}
                       priority
                       className="object-cover object-center"

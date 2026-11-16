@@ -51,6 +51,7 @@ import {
   Wrench,
   Gauge,
   Factory,
+  HelpCircle,
 } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { Button } from '@/components/ui/Button';
@@ -202,36 +203,81 @@ export default function HomePage() {
     { step: '08', title: 'Spares & Ongoing Support', desc: 'Continuous provision of wear parts, trunnions, and scheduled preventive maintenance.' },
   ];
 
-  const homeSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'WebPage',
-    '@id': 'https://mineralssolution.in/#webpage',
-    url: 'https://mineralssolution.in/',
-    name: 'Industrial Rotary Dryers & Heavy Machinery Manufacturer | Minerals Solutions',
-    description:
-      'Direct manufacturer of industrial rotary dryers, sand washing plants, fertilizer granulators, and heavy material handling conveyors in Zak GIDC, Dahegam, Gujarat.',
-    isPartOf: {
-      '@type': 'WebSite',
-      '@id': 'https://mineralssolution.in/#website',
+  const homeFaqs = [
+    {
+      question: 'What heavy industrial machinery does Minerals Solutions manufacture?',
+      answer:
+        'Minerals Solutions is a heavy machinery manufacturer in Dahegam, Gandhinagar, Gujarat, specializing in four core divisions: industrial rotary drum dryers (500 kg/hr to 50 TPH capacity), sand washing and hydrocyclone desliming plants (30 to 200 TPH), fertilizer granulation and pelletizing plants (1 to 20 TPH), and heavy industrial trough belt conveyor systems.',
     },
-    about: {
-      '@type': 'Organization',
-      name: 'Minerals Solutions',
+    {
+      question: 'How does a triple-pass rotary drum dryer reduce fuel consumption by 30% to 40%?',
+      answer:
+        'A triple-pass rotary dryer utilizes three concentric nested cylinders rotating on a single drive axis. Material passes sequentially through inner, intermediate, and outer drums, allowing thermal energy from the inner core to preheat the outer passes. This concentric heat retention lowers exhaust gas temperatures to 65°C-85°C and cuts fuel requirements by 30% to 40% compared to conventional single-pass drums.',
+    },
+    {
+      question: 'What fine silt separation cut-point do Minerals Solutions sand washing plants achieve?',
+      answer:
+        'Minerals Solutions sand washing plants and hydrocyclone separator units achieve a fine silt desliming cut-point down to 75 microns (200 mesh). The circuit separates 98% of deleterious clay while recovering 95% of construction-grade fines (75–150 microns), discharging washed sand with moisture content between 12% and 15% compliant with IS 383 Zone II aggregate standards.',
+    },
+    {
+      question: 'Where is Minerals Solutions located and can clients inspect machinery under fabrication?',
+      answer:
+        'Minerals Solutions is located at Plot No. 10, Shyam Estate, Zak GIDC Industrial Zone, Zak-Vahelal Road, Dahegam, Gandhinagar - 382330, Gujarat, India (Coordinates: 23.1672° N, 72.8125° E). Clients and engineering consultants are welcome to visit our heavy workshop for in-person inspection of plate rolling, submerged arc welding, and trial run balancing.',
+    },
+    {
+      question: 'What metallurgy and structural standards are used in Minerals Solutions drying drums?',
+      answer:
+        'Minerals Solutions rotary shells are fabricated from certified IS 2062 Grade B structural carbon steel plates (12 mm to 25 mm thickness) or optional SS 304/316 for corrosive chemical duty. Trunnion riding tyres are forged from alloy steel EN-8/EN-9 or 42CrMo4, ultrasonic tested to ASTM A388 Level II and induction hardened to 280-320 BHN.',
+    },
+    {
+      question: 'What is the production capacity and granule sphericity of your fertilizer pan granulators?',
+      answer:
+        'Minerals Solutions disc pan granulators operate across capacities from 1 TPH to 8 TPH per disc (and up to 20 TPH in multi-pan turnkey plants). Featuring stepless inclination adjustment from 40° to 55° and tungsten carbide scrapers, our granulators achieve over 92% uniform spherical granule yield between 2.0 mm and 4.5 mm diameter.',
+    },
+  ];
+
+  const homeSchema = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'WebPage',
+      '@id': 'https://mineralssolution.in/#webpage',
       url: 'https://mineralssolution.in/',
+      name: 'Industrial Rotary Dryers & Heavy Machinery Manufacturer | Minerals Solutions',
+      description:
+        'Direct manufacturer of industrial rotary dryers, sand washing plants, fertilizer granulators, and heavy material handling conveyors in Zak GIDC, Dahegam, Gujarat.',
+      isPartOf: {
+        '@type': 'WebSite',
+        '@id': 'https://mineralssolution.in/#website',
+      },
+      about: {
+        '@id': 'https://mineralssolution.in/#organization',
+      },
     },
-  };
+    {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: homeFaqs.map((faq) => ({
+        '@type': 'Question',
+        name: faq.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: faq.answer,
+        },
+      })),
+    },
+  ];
 
   return (
     <div className="bg-white">
       <JsonLd data={homeSchema} />
       {/* SECTION 1: HERO SECTION */}
-      <section className="relative bg-gradient-to-b from-neutral-50 via-white to-white border-b border-[#E7E7EB] overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-24">
+      <section className="relative bg-gradient-to-b from-neutral-50 via-white to-white border-b border-[#E7E7EB] overflow-hidden pt-6 pb-16 lg:pt-8 lg:pb-20">
         {/* Subtle Background Glow & Radial Accents */}
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-red-500/5 rounded-full blur-[120px] pointer-events-none" />
         <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-neutral-200/40 rounded-full blur-[100px] pointer-events-none" />
 
         <Container className="relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-start">
             {/* Left Content Column (7 cols) */}
             <div className="lg:col-span-7 space-y-6">
               {/* Badge */}
@@ -667,6 +713,58 @@ export default function HomePage() {
                 About Our Leadership &amp; Works
               </Button>
             </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* SECTION 7.5: FREQUENTLY ASKED QUESTIONS (GEO & SEARCH CITABILITY) */}
+      <section className="py-16 lg:py-24 bg-neutral-50 border-t border-[#E7E7EB]" id="faqs">
+        <Container>
+          <SectionHeading
+            badge="Engineering Answers"
+            title="Frequently Asked Questions on Industrial Machinery"
+            subtitle="Authoritative answers on industrial rotary drying physics, sand washing silt recovery, fertilizer granulation, and manufacturing compliance at our Zak GIDC works."
+            centered
+          />
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto pt-4">
+            {homeFaqs.map((faq, idx) => (
+              <div
+                key={idx}
+                className="bg-white rounded-2xl p-6 sm:p-7 border border-[#E7E7EB] shadow-xs hover:border-red-200 transition-all space-y-3 flex flex-col justify-between"
+              >
+                <div className="space-y-2">
+                  <div className="flex items-start gap-3">
+                    <span className="w-6 h-6 rounded-full bg-red-100 text-[#E10613] font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">
+                      Q
+                    </span>
+                    <h3 className="text-base sm:text-lg font-bold text-neutral-900 leading-snug">
+                      {faq.question}
+                    </h3>
+                  </div>
+                  <p className="text-sm text-neutral-600 leading-relaxed pl-9">
+                    {faq.answer}
+                  </p>
+                </div>
+                <div className="pt-2 pl-9 flex items-center gap-1.5 text-xs font-semibold text-[#E10613]">
+                  <span>Verified Factory Engineering Specification</span>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-12 text-center">
+            <p className="text-xs text-neutral-500">
+              Need comprehensive thermodynamic calculations, drum volume sizing models, or material safety specs?{' '}
+              <a
+                href="/llms-full.txt"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#E10613] hover:underline font-semibold"
+              >
+                Access our LLM Engineering Dossier (llms-full.txt)
+              </a>
+            </p>
           </div>
         </Container>
       </section>

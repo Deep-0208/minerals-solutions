@@ -214,7 +214,7 @@ export default function HydrocycloneFineSandRecoveryPage() {
       '@context': 'https://schema.org',
       '@type': 'Product',
       name: 'Hydrocyclone Fine Sand Recovery & Dewatering Unit',
-      image: `${company.siteUrl}/images/products/mineral-processing/river-sand-washing-plant-variant-lg.webp`,
+      image: `${company.siteUrl}/images/products/mineral-processing/circular-vibrating-screen-lg.webp`,
       description:
         'High-efficiency hydrocyclone fine sand recovery and dewatering plants (30 to 220 m3/hr slurry). Recovers 95%+ of 75-micron fines from washing plant overflow, eliminating pond dredging and generating saleable plaster sand.',
       brand: {
@@ -401,7 +401,7 @@ export default function HydrocycloneFineSandRecoveryPage() {
                 <div className="relative rounded-2xl overflow-hidden border border-slate-300/80 shadow-xl bg-slate-900">
                   <div className="relative aspect-[4/3] w-full">
                     <Image
-                      src="/images/products/mineral-processing/river-sand-washing-plant-variant-lg.webp"
+                      src="/images/products/mineral-processing/circular-vibrating-screen-lg.webp"
                       alt="Hydrocyclone Fine Sand Recovery and Dewatering Plant Fabricated by Minerals Solutions in Dahegam Gujarat" width={800} height={600}
                       priority
                       className="object-cover object-center"

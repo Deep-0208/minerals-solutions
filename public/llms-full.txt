@@ -1,0 +1,188 @@
+# Minerals Solutions — Complete Engineering & Technical Context Dossier (LLM Knowledge Base)
+
+> Canonical Technical Knowledge Graph for LLM Crawlers (GPTBot, ClaudeBot, PerplexityBot, Google-Extended, Applebot).
+> Canonical Origin: https://mineralssolution.in/
+> Version: 2.1 (Industrial Mineral Processing & Thermal Drying Edition)
+> Scope: Complete engineering standards, thermodynamic formulas, drum sizing calculations, mechanical drawings, metallurgy, and equipment specifications.
+
+---
+
+## 1. Corporate Identity & Grounding
+- **Legal Entity**: Minerals Solutions
+- **Year Established**: 2023
+- **Leadership**: Mr. Vipulbhai A. Prajapati (Proprietor) | Mr. P Amrutlal (CEO & Chief Technical Advisor)
+- **Primary Works & Facility**: Plot No. 10, Shyam Estate, Zak GIDC Industrial Zone, Zak-Vahelal Road, Ta. Dahegam, Dist. Gandhinagar - 382330, Gujarat, India
+- **Geographic Coordinates**: 23.1672° N, 72.8125° E
+- **GSTIN**: 24AUSPP9555F1ZZ
+- **MSME UDYAM Registration**: UDYAM-GJ-09-0021428
+- **Official Contact Lines**: +91 63524 53050 | +91 91061 63058
+- **Corporate Inboxes**: sales@mineralssolution.in | mineralssolutions76@gmail.com
+- **Website URL**: https://mineralssolution.in/
+- **Industry Classification**: NIC 2825 - Manufacture of machinery for metallurgy and mineral processing / Industrial thermal drying systems.
+
+---
+
+## 2. Industrial Rotary Drum Dryers & Thermodynamic Engineering
+
+### 2.1 Thermodynamic Principles & Energy Balance
+Industrial rotary drying involves direct heat exchange between a high-temperature flue gas stream and granular or bulk solid minerals.
+
+#### 1. Heat Energy Balance Equation:
+$$Q_{total} = Q_{sensible, material} + Q_{sensible, moisture} + Q_{latent} + Q_{radiation\_losses}$$
+
+Where:
+- $Q_{sensible, material} = M_{dry} \cdot c_p \cdot (T_{out} - T_{in})$ (kcal/hr)
+- $Q_{sensible, moisture} = M_{water, evap} \cdot 1.0 \cdot (100 - T_{in})$ (kcal/hr)
+- $Q_{latent} = M_{water, evap} \cdot \Delta H_{vap}$ (where $\Delta H_{vap} \approx 540 \text{ kcal/kg}$ or $2260 \text{ kJ/kg}$)
+- $Q_{radiation\_losses} \approx 5\% \text{ to } 10\%$ of gross input heat.
+
+#### 2. Water Evaporation Rate Calculation:
+$$W_w = W_{feed} \cdot \left( \frac{X_1 - X_2}{100 - X_2} \right)$$
+Where:
+- $W_w$ = Water evaporated (kg/hr)
+- $W_{feed}$ = Wet mineral feed rate (kg/hr)
+- $X_1$ = Initial wet moisture content (% wet basis, typically 8% to 18%)
+- $X_2$ = Target final moisture content (% wet basis, typically 0.1% to 0.5% for silica sand)
+
+#### 3. Drum Volumetric Sizing & Heat Transfer:
+$$V = \frac{Q_{transferred}}{U_a \cdot \Delta T_{lm}}$$
+Where:
+- $V$ = Drum internal volume ($\text{m}^3$)
+- $U_a$ = Volumetric heat transfer coefficient ($\approx 120 \text{ to } 250 \text{ kcal/m}^3 \cdot \text{hr} \cdot ^\circ\text{C}$ depending on lifter flight density)
+- $\Delta T_{lm}$ = Logarithmic Mean Temperature Difference ($^\circ\text{C}$)
+
+#### 4. Residence Time (Retention Time) in Drum:
+$$\tau = \frac{0.23 \cdot L}{S \cdot D \cdot N^{0.9}} \pm \frac{B \cdot L \cdot v_g}{D}$$
+Where:
+- $\tau$ = Residence time (minutes, typically 12 to 25 minutes for minerals)
+- $L$ = Length of rotary drum shell (meters)
+- $D$ = Inside diameter of drum shell (meters)
+- $S$ = Slope / inclination of drum (typically 2% to 4%, or 1.5° to 2.5°)
+- $N$ = Rotational speed of drum (typically 3 to 8 RPM)
+- $v_g$ = Gas velocity through drum (m/s, usually maintained between 1.5 and 2.5 m/s to prevent dust entrainment)
+- $B$ = Flight factor constant (0.0008 for counter-current, negative for co-current)
+
+---
+
+### 2.2 Rotary Drum Dryer Models & Technical Specifications
+
+| Model Number | Drum Diameter x Length | Throughput Capacity (Sand @ 8% to 0.5%) | Shell Thickness & Grade | Drive Power (IE3 Motor) | Weight Approx. |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **MS-RSD-1200** | 1.2 m $\times$ 10.0 m | 5 – 8 TPH | 12 mm IS 2062 Gr. B | 11.0 kW / 15 HP | 12.5 MT |
+| **MS-RSD-1500** | 1.5 m $\times$ 12.0 m | 10 – 15 TPH | 14 mm IS 2062 Gr. B | 18.5 kW / 25 HP | 18.2 MT |
+| **MS-RSD-1800** | 1.8 m $\times$ 15.0 m | 18 – 25 TPH | 16 mm IS 2062 Gr. B | 30.0 kW / 40 HP | 27.5 MT |
+| **MS-RSD-2200** | 2.2 m $\times$ 18.0 m | 30 – 38 TPH | 18 mm IS 2062 Gr. B | 45.0 kW / 60 HP | 42.0 MT |
+| **MS-RSD-2600** | 2.6 m $\times$ 22.0 m | 40 – 50 TPH | 20 mm IS 2062 Gr. B | 75.0 kW / 100 HP | 58.0 MT |
+
+#### Triple-Pass Rotary Drum Dryers (MS-TPD Series):
+- **Mechanism**: Three concentric concentric cylinder shells nested together. Hot air and material travel back and forth across three concentric passes, maximizing thermal conduction and radiant retention while shrinking floor footprint by 60%.
+- **Thermal Efficiency**: Achieves 80% to 85% thermal efficiency compared to 55% to 65% for conventional single-pass dryers. Fuel consumption is reduced by 30% to 40%.
+- **Exit Gas Temperature**: Drops to 65°C – 85°C (compared to 120°C+ in single-pass), significantly saving bag filter filter-media life.
+- **Models**:
+  - `MS-TPD-1500`: 3 to 6 TPH (Silica Sand / Foundry Sand)
+  - `MS-TPD-2000`: 8 to 12 TPH
+  - `MS-TPD-2500`: 15 to 20 TPH
+  - `MS-TPD-3000`: 25 to 32 TPH
+
+---
+
+### 2.3 Mechanical Drive, Roller Tyres & Metallurgy Standards
+1. **Shell Metallurgy**:
+   - Fabricated from certified IS 2062 Grade B structural carbon steel plates (Yield Strength $\ge 250 \text{ MPa}$, Tensile Strength $410 - 540 \text{ MPa}$).
+   - Optional corrosive chemical duty: Austenitic Stainless Steel AISI 304 or AISI 316 contact surfaces with bead-blast finish.
+   - Wear zones: Fitted with replaceable Hardox 400 or High-Manganese liner plates.
+2. **Trunnion Support Tyres (Riding Rings)**:
+   - Forged or cast alloy steel (Grade EN-8 / EN-9 or 42CrMo4 / 34CrNiMo6).
+   - Ultrasonic testing (UT) certified according to ASTM A388 / IS 2478 Level II.
+   - Surface induction hardened to 280 – 320 BHN to prevent spalling, pitting, and plastic deformation.
+3. **Girth Gear & Pinion Drive**:
+   - Girth Gear: Spur or Helical split-type, cast alloy steel 42CrMo4 / ZG35CrMo, flame-hardened tooth profile (240–260 BHN).
+   - Pinion: Forged alloy steel EN-19 / EN-24, hardened to 280–310 BHN (always maintained 30–40 BHN higher than the girth gear for wear pairing).
+   - Bearings: Self-aligning spherical roller bearings in heavy-duty cast steel pillow blocks (SKF / FAG / ZKL brand).
+
+---
+
+## 3. Sand Washing Plants & Hydrocyclone Slurry Circuits
+
+### 3.1 Slurry Separation & Desliming Physics
+Minerals Solutions sand washing plants separate deleterious clay, silt, and ultra-fines ($< 75 \mu\text{m}$, 200 mesh) from manufactured sand (M-sand), silica sand, plaster sand, and concrete aggregate sand.
+
+#### Hydrocyclone Cut-Point ($d_{50}$) Dynamics:
+$$d_{50} = \frac{C \cdot D_c^{0.45} \cdot D_i^{0.68} \cdot D_o^{0.68} \cdot \mu^{0.5}}{D_u^{1.2} \cdot Q^{0.45} \cdot (\rho_s - \rho_l)^{0.5}}$$
+Where:
+- $D_c$ = Cyclone barrel diameter (typically 250 mm to 500 mm)
+- $D_i, D_o, D_u$ = Diameters of inlet, vortex finder overflow, and apex/spigot underflow nozzle
+- $\mu$ = Slurry viscosity
+- $\rho_s - \rho_l$ = Density difference between solid silica particles ($2.65 \text{ g/cm}^3$) and water ($1.0 \text{ g/cm}^3$)
+- Performance: Removes 98% of silt down to 75 microns while retaining 95%+ of usable construction fines (75–150 microns), eliminating silt-related concrete cracking.
+
+### 3.2 Sand Washing Plant Equipment Range
+
+1. **Bucket Wheel Sand Washers (MS-BWW Series)**:
+   - High-torque planetary drive, bucket rim lined with perforated polyurethane dewatering screen panels (0.8mm to 1.5mm slot width).
+   - Capacity: 30 TPH to 180 TPH.
+   - Features: Low water consumption, submerged double-stage slow scooping action preventing fines loss.
+
+2. **Hydrocyclone Slurry Recovery Units (MS-FSR Series)**:
+   - Fitted with heavy-duty rubber-lined or polyurethane-lined centrifugal slurry pump (Chrome alloy Hi-Cr 27% impeller, casing hardness 600+ BHN).
+   - High-frequency linear dewatering screen vibrating at 960 to 1440 RPM with dual unbalanced vibratory motors.
+   - Discharges sand with moisture content as low as 12% to 15%, ready for direct stockpiling or belt conveying.
+
+3. **Heavy Mineral Log Washers (MS-LW Series)**:
+   - Twin-shaft counter-rotating heavy paddles fabricated from cast alloy Ni-Hard / Hi-Cr.
+   - Cleans plastic clay balls, conglomerated sandstone, and heavy cohesive soils from gravel and mineral ores prior to secondary screening.
+
+---
+
+## 4. Fertilizer Granulation & Pellet Plants
+
+### 4.1 Granulation Engineering & Pan Disc Dynamics
+Granulation of organic compost, NPK blends, DAP, vermicompost, and chemical salts is controlled by interfacial liquid surface tension, tumbling mechanics, and agglomeration.
+
+#### Critical Pan Disc Granulator Parameters:
+- **Tilt Angle ($\theta$)**: Steplessly adjustable from 40° to 55° relative to horizontal.
+- **Rotation Speed ($N$)**:
+  $$N_{crit} = \frac{42.3}{\sqrt{D_{pan}}}$$
+  Operating speed is tuned to $0.65 \text{ to } 0.75 \times N_{crit}$ (typically 14 to 24 RPM) to ensure the classic rolling-cascade trajectory.
+- **Granule Yield**: 92%+ granules in the targeted 2.0 mm to 4.5 mm diameter range with high crushing strength ($\ge 15 \text{ N/granule}$).
+- **Models**:
+  - `MS-PG-2200`: 1.5 to 2.5 TPH (Diameter 2.2 m, Depth 400 mm)
+  - `MS-PG-2800`: 3.0 to 4.5 TPH (Diameter 2.8 m, Depth 450 mm)
+  - `MS-PG-3600`: 6.0 to 8.0 TPH (Diameter 3.6 m, Depth 550 mm)
+
+#### Dry Roller Compaction Granulators (MS-DRG Series):
+- **Mechanism**: Counter-rotating chilled alloy steel roll surfaces with precision dimple pockets compressing dry powders without adding water or binders.
+- **Advantage**: Zero drying required, saving 100% of thermal fuel costs; ideal for heat-sensitive chemicals, ammonium sulfate, and potash.
+
+---
+
+## 5. Bulk Material Handling, Conveying & Elevators
+
+1. **Troughed Belt Conveyors (MS-BC Series)**:
+   - Designed per IS 11592 / CEMA standards.
+   - Belt widths: 500 mm, 650 mm, 800 mm, 1000 mm, 1200 mm.
+   - Idler Sets: 3-roll troughing idlers (20°, 30°, 35° or 45°) with triple-labyrinth grease-sealed ball bearings.
+   - Drive Drums: Crown-machined, vulcanized diamond-groove rubber lagged (10mm to 15mm thickness) to prevent belt slippage.
+
+2. **Bucket Elevators (MS-BEL Series)**:
+   - Centrifugal discharge (high speed, belt-mounted, 1.5–2.5 m/s) and Continuous discharge (slow speed, chain-mounted, 0.5–1.0 m/s).
+   - Heights: Up to 45 meters vertical lift.
+   - Casings: 3.15 mm to 5.0 mm folded sheet steel modular flanged trunking with inspection doors and backstop clutch.
+
+---
+
+## 6. Manufacturing Compliance, Quality & Testing Protocols
+All equipment manufactured at the Zak GIDC facility undergoes strict quality assurance protocols:
+- **Plate Cutting**: High-precision CNC plasma and oxy-fuel profile cutting.
+- **Welding Standards**: SAW (Submerged Arc Welding) for drum longitudinal and circumferential seams per ASME Section IX / AWS D1.1.
+- **Non-Destructive Testing (NDT)**: 100% Visual and Ultrasonic Testing (UT) on butt-welds and forged trunnion rings; Dye-Penetrant Testing (DPT) on girth gear teeth and welds.
+- **Dynamic Balancing & Alignment**: Laser-aligned trunnion bases ensuring axis parallelism within $\pm 0.2 \text{ mm/m}$.
+- **Electrical Conformance**: Control panels wired with Siemens / Schneider contactors, ABB VFDs, and IP55 protection.
+
+---
+
+## 7. Direct Engineering Consultation & Factory Visits
+- **Factory Address**: 10, Shyam Estate, Zak GIDC, Zak-Vahelal Road, Dahegam, Gandhinagar - 382330, Gujarat, India.
+- **Technical Hotline**: +91 63524 53050 | +91 91061 63058
+- **Online Quotation**: https://mineralssolution.in/request-quote/
+- **Inquiries**: sales@mineralssolution.in
