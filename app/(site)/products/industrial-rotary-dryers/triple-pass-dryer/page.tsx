@@ -29,6 +29,7 @@ import {
 import { Container } from '@/components/ui/Container';
 import { Button } from '@/components/ui/Button';
 import { Breadcrumbs } from '@/components/common/Breadcrumbs';
+import { FaqAccordion } from '@/components/ui/FaqAccordion';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { company } from '@/data/company';
 import { defaultOgImage, defaultTwitterImage } from '@/lib/seo';
@@ -496,9 +497,6 @@ export default function TriplePassDryerPage() {
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 45vw, 600px"
                     />
-                    <div className="absolute top-3 left-3 bg-white/95 backdrop-blur-md px-3 py-1 rounded-full text-xs font-mono font-semibold text-slate-900 border border-slate-200 shadow-xs">
-                      Zak GIDC Workshop
-                    </div>
                   </div>
 
                   <div className="p-4 bg-slate-950/90 border-t border-slate-800 text-white flex items-center justify-between">
@@ -595,9 +593,9 @@ export default function TriplePassDryerPage() {
                   <Gauge className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h4 className="text-lg font-bold text-white">
+                  <h3 className="text-lg font-bold text-white">
                     Need Custom TPH Sizing for Wet River Sand or Slurry?
-                  </h4>
+                  </h3>
                   <p className="text-slate-300 text-sm mt-1 max-w-2xl">
                     Our technical engineering team calculates heat balances, water evaporation loads, and required air volumes (CFM) tailored to your specific fuel and feed moisture.
                   </p>
@@ -812,9 +810,9 @@ export default function TriplePassDryerPage() {
                       <CheckCircle2 className="w-4 h-4" />
                     </div>
                     <div>
-                      <h4 className="font-bold text-slate-900 text-sm">
+                      <h3 className="font-bold text-slate-900 text-sm">
                         Hydraulic Plate Rolling to 20mm+ (IS 2062 Grade B)
-                      </h4>
+                      </h3>
                       <p className="text-xs text-slate-600 mt-0.5">
                         High structural rigidity carbon steel shells fabricated with double-bevel edge preparation for 100% full-penetration SAW welds.
                       </p>
@@ -826,9 +824,9 @@ export default function TriplePassDryerPage() {
                       <CheckCircle2 className="w-4 h-4" />
                     </div>
                     <div>
-                      <h4 className="font-bold text-slate-900 text-sm">
+                      <h3 className="font-bold text-slate-900 text-sm">
                         Forged EN-8 / EN-9 Alloy Support Trunnions
-                      </h4>
+                      </h3>
                       <p className="text-xs text-slate-600 mt-0.5">
                         Solid forged alloy steel rollers, induction-hardened to 280–320 BHN, mounted in heavy split plummer blocks with spherical roller bearings.
                       </p>
@@ -840,9 +838,9 @@ export default function TriplePassDryerPage() {
                       <CheckCircle2 className="w-4 h-4" />
                     </div>
                     <div>
-                      <h4 className="font-bold text-slate-900 text-sm">
+                      <h3 className="font-bold text-slate-900 text-sm">
                         ISO 1940 Dynamic Balancing Test
-                      </h4>
+                      </h3>
                       <p className="text-xs text-slate-600 mt-0.5">
                         Pre-dispatch trial rotation testing ensuring drum vibration velocity remains below 1.8 mm/s across the full operating RPM.
                       </p>
