@@ -197,6 +197,20 @@ export default function FertilizerPlantsPage() {
       question: 'When should a plant use a pan (disc) granulator versus a rotary drum granulator?',
       answer:
         'Pan (disc) granulators are ideal for bio-organic compost and lines up to 5 TPH where operators need visual control over granule snowballing and high spherical uniformity (≥90%). Rotary drum granulators are favored for mega-tonnage chemical NPK plants (10 to 30 TPH) handling chemical slurry ammoniation.',
+      answerNode: (
+        <>
+          <Link href="/products/fertilizer-granulation-plants/disc-granulator/" className="font-semibold text-[#E10613] hover:underline">
+            Pan (disc) granulators
+          </Link>{' '}
+          are ideal for bio-organic compost and lines up to 5 TPH where operators need visual control
+          over granule snowballing and high spherical uniformity (≥90%).{' '}
+          <Link href="/products/fertilizer-granulation-plants/rotary-drum-granulator/" className="font-semibold text-[#E10613] hover:underline">
+            Rotary drum granulators
+          </Link>{' '}
+          are favored for mega-tonnage chemical NPK plants (10 to 30 TPH) handling chemical slurry
+          ammoniation.
+        </>
+      ),
     },
     {
       question: 'How do you prevent heat damage to organic microbes during fertilizer drying?',
@@ -207,6 +221,17 @@ export default function FertilizerPlantsPage() {
       question: 'What is the function of the rotary cooling and coating drum in the circuit?',
       answer:
         'Warm granules discharged from the dryer are prone to caking and clumping if bagged immediately. The rotary cooler lowers granule core temperatures to within 5°C of ambient, while the downstream coating drum coats each sphere with neem oil or talc powder to prevent moisture absorption in storage.',
+      answerNode: (
+        <>
+          Warm granules discharged from the dryer are prone to caking and clumping if bagged immediately.
+          The{' '}
+          <Link href="/products/fertilizer-granulation-plants/fertilizer-cooling-coating-drum/" className="font-semibold text-[#E10613] hover:underline">
+            rotary cooler and downstream coating drum
+          </Link>{' '}
+          lower granule core temperatures to within 5°C of ambient and coat each sphere with neem oil or
+          talc powder to prevent moisture absorption in storage.
+        </>
+      ),
     },
     {
       question: 'What is the required floor space for a 3 TPH complete granulation plant?',
@@ -337,8 +362,15 @@ export default function FertilizerPlantsPage() {
               </h1>
               <p className="text-base sm:text-lg text-[#737373] leading-relaxed">
                 Minerals Solutions designs and manufactures turnkey organic compost and chemical NPK fertilizer
-                granulation machinery. From disc pan granulators with stepless tilt control to continuous rotary
-                cooling and conditioning drums.
+                granulation machinery. From{' '}
+                <Link href="/products/fertilizer-granulation-plants/disc-granulator/" className="font-semibold text-[#E10613] hover:underline">
+                  disc pan granulators with stepless tilt control
+                </Link>{' '}
+                to continuous{' '}
+                <Link href="/products/fertilizer-granulation-plants/fertilizer-cooling-coating-drum/" className="font-semibold text-[#E10613] hover:underline">
+                  rotary cooling and conditioning drums
+                </Link>
+                .
               </p>
 
               {/* AI Citability Definition Passage */}
@@ -398,7 +430,7 @@ export default function FertilizerPlantsPage() {
           </div>
 
           {/* Turnkey Process Flow */}
-          <div className="bg-white rounded-3xl border border-[#E7E7EB] p-8 sm:p-10 mb-12 shadow-[0_4px_24px_rgba(17,17,17,0.04)] space-y-6">
+          <div id="process" className="bg-white rounded-3xl border border-[#E7E7EB] p-8 sm:p-10 mb-12 shadow-[0_4px_24px_rgba(17,17,17,0.04)] space-y-6">
             <div className="max-w-3xl space-y-2">
               <h2 className="text-2xl font-bold text-[#111111] tracking-tight">
                 Turnkey Process Flow: From Raw Manure to Bagged Granules
@@ -406,7 +438,7 @@ export default function FertilizerPlantsPage() {
               <p className="text-sm text-[#737373] leading-relaxed">
                 Producing commercial-grade organic and compound fertilizer pellets requires an integrated sequential
                 circuit. Each unit operation is linked via heavy-duty{' '}
-                <Link href="/products/industrial-conveyors-spares/" className="font-semibold text-[#E10613] hover:underline">
+                <Link href="/products/industrial-conveyors-spares/belt-conveyors/" className="font-semibold text-[#E10613] hover:underline">
                   troughed belt conveyors
                 </Link>{' '}
                 and specialized{' '}
@@ -447,14 +479,10 @@ export default function FertilizerPlantsPage() {
               {equipmentList.map((item) => (
                 <div
                   key={item.name}
-                  className="bg-white rounded-2xl border border-[#E7E7EB] overflow-hidden shadow-[0_4px_24px_rgba(17,17,17,0.04)] hover:shadow-[0_16px_36px_rgba(17,17,17,0.08)] hover:border-red-200 transition-all flex flex-col justify-between group"
+                  className="relative bg-white rounded-2xl border border-[#E7E7EB] overflow-hidden shadow-[0_4px_24px_rgba(17,17,17,0.04)] hover:shadow-[0_16px_36px_rgba(17,17,17,0.08)] hover:border-red-200 transition-all flex flex-col justify-between group"
                 >
                   {/* Product Image Header with Link */}
-                  <Link
-                    href={item.href}
-                    className="relative block aspect-[16/10] sm:aspect-[16/9] w-full bg-neutral-900 overflow-hidden"
-                    aria-label={`View ${item.name} specifications`}
-                  >
+                  <div className="relative block aspect-[16/10] sm:aspect-[16/9] w-full bg-neutral-900 overflow-hidden">
                     <Image
                       src={item.image}
                       alt={item.alt}
@@ -462,7 +490,7 @@ export default function FertilizerPlantsPage() {
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
                       className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                     />
-                  </Link>
+                  </div>
 
                   {/* Card Content */}
                   <div className="p-6 sm:p-7 flex flex-col justify-between flex-1 space-y-4">
@@ -476,7 +504,7 @@ export default function FertilizerPlantsPage() {
                         </span>
                       </div>
                       <h3 className="text-lg sm:text-xl font-bold text-[#111111] group-hover:text-[#E10613] transition-colors leading-snug">
-                        <Link href={item.href} className="hover:underline">
+                        <Link href={item.href} className="hover:underline after:absolute after:inset-0">
                           {item.name}
                         </Link>
                       </h3>
@@ -489,13 +517,10 @@ export default function FertilizerPlantsPage() {
                       <span className="text-neutral-600">
                         <strong className="text-[#111111]">Output:</strong> {item.capacity}
                       </span>
-                      <Link
-                        href={item.href}
-                        className="font-bold text-[#E10613] hover:text-[#b0050f] inline-flex items-center gap-1 shrink-0 group/link"
-                      >
+                      <span aria-hidden="true" className="font-bold text-[#E10613] hover:text-[#b0050f] inline-flex items-center gap-1 shrink-0 group/link">
                         <span>View Specifications</span>
                         <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                      </Link>
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -560,8 +585,15 @@ export default function FertilizerPlantsPage() {
               Pan / Disc Granulator vs. Rotary Drum Granulator
             </h2>
             <p className="text-sm text-[#737373] leading-relaxed max-w-3xl mb-8">
-              Selecting between an inclined disc pan granulator and a heavy rotary drum granulator depends on your production
-              scale, raw material chemistry, and target granule sphericity:
+              Selecting between an inclined{' '}
+              <Link href="/products/fertilizer-granulation-plants/disc-granulator/" className="font-semibold text-[#E10613] hover:underline">
+                disc pan granulator
+              </Link>{' '}
+              and a{' '}
+              <Link href="/products/fertilizer-granulation-plants/rotary-drum-granulator/" className="font-semibold text-[#E10613] hover:underline">
+                heavy rotary drum granulator
+              </Link>{' '}
+              depends on your production scale, raw material chemistry, and target granule sphericity:
             </p>
 
             <div className="overflow-x-auto">
@@ -588,7 +620,13 @@ export default function FertilizerPlantsPage() {
             <div className="mt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 p-5 rounded-2xl bg-slate-900 text-white">
               <div className="space-y-1">
                 <span className="text-xs font-mono uppercase tracking-wider text-[#E10613] font-bold">Unsure which technology matches your formulation?</span>
-                <p className="text-xs text-slate-300">Our Zak GIDC engineers conduct laboratory trial pelletizing and sizing calculations on your raw compost or chemical blend.</p>
+                <p className="text-xs text-slate-300">
+                  Our{' '}
+                  <Link href="/manufacturing/" className="font-semibold text-white underline hover:text-[#E10613]">
+                    Zak GIDC
+                  </Link>{' '}
+                  engineers conduct laboratory trial pelletizing and sizing calculations on your raw compost or chemical blend.
+                </p>
               </div>
               <Button href="/request-quote/?product=fertilizer-granulation-plant&type=granulation-test" variant="primary" size="sm" className="shrink-0 font-bold">
                 Request Custom Granulation Test / Sizing Calculation &rarr;

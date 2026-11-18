@@ -297,7 +297,7 @@ export default function ForgedTrunnionRollersPage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqSchema} />
 
-      <main className="min-h-screen bg-white text-slate-900">
+      <div className="min-h-screen bg-white text-slate-900">
         {/* Breadcrumb Navigation Bar */}
         <section className="bg-slate-50 border-b border-slate-200 py-3">
           <Container>
@@ -398,7 +398,7 @@ export default function ForgedTrunnionRollersPage() {
                     Submit Drawing for 24-Hr Quote
                   </Button>
                   <Button
-                    href="tel:+919227004455"
+                    href={`tel:${company.telephones[0].replace(/\s+/g, '')}`}
                     variant="outline"
                     size="lg"
                     external
@@ -614,7 +614,15 @@ export default function ForgedTrunnionRollersPage() {
                       </div>
                       <p className="text-slate-600 mt-1">
                         Tensile Strength: 650–850 MPa | Yield: &gt;450 MPa | Hardness: 260–300 BHN.
-                        Excellent general-purpose workhorse for sand dryers, bio-pellet drums, and granulators.
+                        Excellent general-purpose workhorse for{' '}
+                        <Link href="/products/industrial-rotary-dryers/sand-dryer/" className="font-semibold text-sky-700 hover:underline">
+                          sand dryers
+                        </Link>
+                        , bio-pellet drums, and{' '}
+                        <Link href="/products/fertilizer-granulation-plants/rotary-drum-granulator/" className="font-semibold text-sky-700 hover:underline">
+                          granulators
+                        </Link>
+                        .
                       </p>
                     </div>
 
@@ -934,8 +942,11 @@ export default function ForgedTrunnionRollersPage() {
                 </h2>
                 <p className="text-slate-700 text-base leading-relaxed">
                   When a support roller fails, every hour of lost production costs lakhs in idle plant overhead.
-                  Minerals Solutions maintains dedicated emergency fabrication capacity at our Zak GIDC,
-                  Dahegam facility to manufacture exact-fit replacements to sample or custom site drawing:
+                  Minerals Solutions maintains dedicated emergency fabrication capacity at{' '}
+                  <Link href="/manufacturing/" className="font-semibold text-sky-700 hover:underline">
+                    our Zak GIDC, Dahegam facility
+                  </Link>
+                  {' '}to manufacture exact-fit replacements to sample or custom site drawing:
                 </p>
 
                 <div className="space-y-3 pt-2 text-xs sm:text-sm text-slate-300">
@@ -1029,12 +1040,8 @@ export default function ForgedTrunnionRollersPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Sibling Spoke 1 */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
-                <Link
-                  href="/products/industrial-conveyors-spares/bucket-elevators/"
-                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
-                  aria-label="View Industrial Bucket Elevator Systems specifications"
-                >
+              <div className="relative rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
+                <div className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                   <Image
                     src="/images/products/conveyor-systems/conveyor-tail-drum-pulley-md.webp"
                     alt="Industrial Bucket Elevator System"
@@ -1042,11 +1049,11 @@ export default function ForgedTrunnionRollersPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </Link>
+                </div>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
                     <h3 className="text-base font-bold text-slate-950 group-hover:text-[#DA020D] transition-colors leading-snug">
-                      <Link href="/products/industrial-conveyors-spares/bucket-elevators/" className="hover:underline">
+                      <Link href="/products/industrial-conveyors-spares/bucket-elevators/" className="hover:underline after:absolute after:inset-0">
                         Industrial Bucket Elevator Systems
                       </Link>
                     </h3>
@@ -1055,24 +1062,17 @@ export default function ForgedTrunnionRollersPage() {
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <Link
-                      href="/products/industrial-conveyors-spares/bucket-elevators/"
-                      className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link"
-                    >
+                    <span aria-hidden="true" className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link">
                       <span>View Machine Specifications</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
 
               {/* Sibling Spoke 2 */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
-                <Link
-                  href="/products/industrial-conveyors-spares/screw-conveyors/"
-                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
-                  aria-label="View Industrial Screw Conveyor Systems specifications"
-                >
+              <div className="relative rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
+                <div className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                   <Image
                     src="/images/products/conveyor-systems/belt-conveyor-system-variant-1-md.webp"
                     alt="Industrial Screw Conveyor Feeder"
@@ -1080,11 +1080,11 @@ export default function ForgedTrunnionRollersPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </Link>
+                </div>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
                     <h3 className="text-base font-bold text-slate-950 group-hover:text-[#DA020D] transition-colors leading-snug">
-                      <Link href="/products/industrial-conveyors-spares/screw-conveyors/" className="hover:underline">
+                      <Link href="/products/industrial-conveyors-spares/screw-conveyors/" className="hover:underline after:absolute after:inset-0">
                         Industrial Screw Conveyor Systems
                       </Link>
                     </h3>
@@ -1093,24 +1093,17 @@ export default function ForgedTrunnionRollersPage() {
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <Link
-                      href="/products/industrial-conveyors-spares/screw-conveyors/"
-                      className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link"
-                    >
+                    <span aria-hidden="true" className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link">
                       <span>View Machine Specifications</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
 
               {/* Cross-Pillar Machine */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
-                <Link
-                  href="/products/industrial-rotary-dryers/triple-pass-dryer/"
-                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
-                  aria-label="View Triple Pass Rotary Drum Dryer Line specifications"
-                >
+              <div className="relative rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
+                <div className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                   <Image
                     src="/images/products/rotary-dryers/continuous-type-rotary-dryer-md.webp"
                     alt="Triple Pass Concentric Rotary Drum Dryer"
@@ -1118,11 +1111,11 @@ export default function ForgedTrunnionRollersPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </Link>
+                </div>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
                     <h3 className="text-base font-bold text-slate-950 group-hover:text-[#DA020D] transition-colors leading-snug">
-                      <Link href="/products/industrial-rotary-dryers/triple-pass-dryer/" className="hover:underline">
+                      <Link href="/products/industrial-rotary-dryers/triple-pass-dryer/" className="hover:underline after:absolute after:inset-0">
                         Triple Pass Rotary Drum Dryer Line
                       </Link>
                     </h3>
@@ -1131,13 +1124,10 @@ export default function ForgedTrunnionRollersPage() {
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <Link
-                      href="/products/industrial-rotary-dryers/triple-pass-dryer/"
-                      className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link"
-                    >
+                    <span aria-hidden="true" className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link">
                       <span>Explore Complementary Machine</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -1176,13 +1166,13 @@ export default function ForgedTrunnionRollersPage() {
                     Submit Drawing for Price Proposal
                   </Button>
                   <Button
-                    href="tel:+919227004455"
+                    href={`tel:${company.telephones[0].replace(/\s+/g, '')}`}
                     variant="outline"
                     size="lg"
                     external
                     icon={<Phone className="w-5 h-5 text-sky-400" />}
                   >
-                    Direct Breakdown Line: +91 92270 04455
+                    Direct Breakdown Line: {company.telephones[0]}
                   </Button>
                 </div>
 
@@ -1232,7 +1222,7 @@ export default function ForgedTrunnionRollersPage() {
             </div>
           </Container>
         </section>
-      </main>
+      </div>
     </>
   );
 }

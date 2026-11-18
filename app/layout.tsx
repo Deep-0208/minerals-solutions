@@ -240,11 +240,6 @@ export default function RootLayout({
         '@id': `${company.siteUrl}/#organization`,
       },
       inLanguage: 'en-IN',
-      potentialAction: {
-        '@type': 'SearchAction',
-        target: `${company.siteUrl}/products/?q={search_term_string}`,
-        'query-input': 'required name=search_term_string',
-      },
     },
   ];
 

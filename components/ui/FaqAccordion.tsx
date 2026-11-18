@@ -6,6 +6,7 @@ import { ChevronDown } from 'lucide-react';
 export interface FaqItem {
   question: string;
   answer: string;
+  answerNode?: React.ReactNode;
   badge?: string;
   category?: string;
 }
@@ -105,7 +106,7 @@ export function FaqAccordion({
               <div className="overflow-hidden">
                 <div className="px-5 sm:px-6 pb-6 pt-1 border-t border-neutral-100">
                   <div className="text-sm sm:text-base text-neutral-600 leading-relaxed pl-10">
-                    {item.answer}
+                    {item.answerNode ?? item.answer}
                   </div>
                   {item.badge && (
                     <div className="mt-3 pl-10 flex items-center gap-1.5 text-xs font-semibold text-[#E10613]">

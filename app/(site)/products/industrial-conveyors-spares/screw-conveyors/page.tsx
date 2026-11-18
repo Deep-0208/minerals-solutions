@@ -258,7 +258,7 @@ export default function ScrewConveyorPage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqSchema} />
 
-      <main className="min-h-screen bg-white text-slate-900">
+      <div className="min-h-screen bg-white text-slate-900">
         {/* Breadcrumb Navigation Bar */}
         <section className="bg-slate-50 border-b border-slate-200 py-3">
           <Container>
@@ -351,7 +351,7 @@ export default function ScrewConveyorPage() {
                 {/* Direct Action Buttons */}
                 <div className="flex flex-wrap items-center gap-4 pt-4">
                   <Button
-                    href="/request-quote/?product=screw-conveyor"
+                    href="/request-quote/?product=screw-conveyors"
                     variant="primary"
                     size="lg"
                     icon={<FileText className="w-5 h-5" />}
@@ -359,7 +359,7 @@ export default function ScrewConveyorPage() {
                     Request Sizing Quote &amp; Drawing
                   </Button>
                   <Button
-                    href="tel:+919227004455"
+                    href={`tel:${company.telephones[0].replace(/\s+/g, '')}`}
                     variant="outline"
                     size="lg"
                     external
@@ -426,7 +426,10 @@ export default function ScrewConveyorPage() {
                 Enclosed Dust-Tight Powder &amp; Granular Material Transport
               </h2>
               <p className="text-slate-700 text-base mt-4 leading-relaxed">
-                Open belt conveyors create hazardous airborne fugitive dust when handling fine powders,
+                <Link href="/products/industrial-conveyors-spares/belt-conveyors/" className="font-semibold text-[#E10613] hover:underline">
+                  Open belt conveyors
+                </Link>{' '}
+                create hazardous airborne fugitive dust when handling fine powders,
                 fly ash, and toxic minerals. Minerals Solutions screw conveyors seal bulk materials inside
                 continuous gasketed housings, protecting workforce health and eliminating raw material shrinkage.
               </p>
@@ -464,7 +467,10 @@ export default function ScrewConveyorPage() {
                 <h3 className="text-lg font-bold text-slate-950">Compact Mechanical Footprint</h3>
                 <p className="text-slate-600 text-sm leading-relaxed">
                   Requires zero return belt run, tensioning towers, or idler frames. The self-contained
-                  trough installs directly beneath hoppers, bag filters, cyclone discharges, and rotary dryers
+                  trough installs directly beneath hoppers, bag filters, cyclone discharges, and{' '}
+                  <Link href="/products/industrial-rotary-dryers/" className="font-semibold text-[#E10613] hover:underline">
+                    rotary dryers
+                  </Link>
                   where overhead clearance is severely restricted.
                 </p>
               </div>
@@ -838,7 +844,11 @@ export default function ScrewConveyorPage() {
                   True-Formed Flight Pressing &amp; Heavy Pipe Center Shafts
                 </h2>
                 <p className="text-slate-700 text-base leading-relaxed">
-                  Fabricated in precision hydraulic flight-forming fixtures at our Zak GIDC, Dahegam facility.
+                  Fabricated in precision hydraulic flight-forming fixtures at{' '}
+                  <Link href="/manufacturing/" className="font-semibold text-[#E10613] hover:underline">
+                    our Zak GIDC, Dahegam facility
+                  </Link>
+                  .
                   Our heavy center pipe shafts eliminate rotational whip and center sag, guaranteeing smooth
                   clearance and whisper-quiet rotation across 24/7 continuous industrial duty.
                 </p>
@@ -871,7 +881,10 @@ export default function ScrewConveyorPage() {
                   <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
                     <div className="text-red-400 font-bold text-sm">Chemical Sanitary Polish</div>
                     <p className="text-slate-600 text-xs leading-relaxed">
-                      SS304/SS316 food and chemical augers are glass-bead blasted or mirror-polished
+                      <Link href="/products/industrial-rotary-dryers/chemical-powder-dryer/" className="font-semibold text-[#E10613] hover:underline">
+                        SS304/SS316 food and chemical augers
+                      </Link>{' '}
+                      are glass-bead blasted or mirror-polished
                       (Ra &lt;0.8 µm) to eliminate crevices and chemical cross-contamination.
                     </p>
                   </div>
@@ -951,12 +964,8 @@ export default function ScrewConveyorPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Sibling Spoke 1 */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
-                <Link
-                  href="/products/industrial-conveyors-spares/bucket-elevators/"
-                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
-                  aria-label="View Industrial Bucket Elevator Systems specifications"
-                >
+              <div className="relative rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
+                <div className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                   <Image
                     src="/images/products/conveyor-systems/conveyor-tail-drum-pulley-md.webp"
                     alt="Industrial Bucket Elevator System"
@@ -964,11 +973,11 @@ export default function ScrewConveyorPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </Link>
+                </div>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
                     <h3 className="text-base font-bold text-slate-950 group-hover:text-[#DA020D] transition-colors leading-snug">
-                      <Link href="/products/industrial-conveyors-spares/bucket-elevators/" className="hover:underline">
+                      <Link href="/products/industrial-conveyors-spares/bucket-elevators/" className="hover:underline after:absolute after:inset-0">
                         Industrial Bucket Elevator Systems
                       </Link>
                     </h3>
@@ -977,24 +986,17 @@ export default function ScrewConveyorPage() {
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <Link
-                      href="/products/industrial-conveyors-spares/bucket-elevators/"
-                      className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link"
-                    >
+                    <span aria-hidden="true" className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link">
                       <span>View Machine Specifications</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
 
               {/* Sibling Spoke 2 */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
-                <Link
-                  href="/products/industrial-conveyors-spares/belt-conveyors/"
-                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
-                  aria-label="View Industrial Belt Conveyor Systems specifications"
-                >
+              <div className="relative rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
+                <div className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                   <Image
                     src="/images/products/conveyor-systems/conveyor-belt-system-truss-md.webp"
                     alt="Troughed Belt Conveyor System"
@@ -1002,11 +1004,11 @@ export default function ScrewConveyorPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </Link>
+                </div>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
                     <h3 className="text-base font-bold text-slate-950 group-hover:text-[#DA020D] transition-colors leading-snug">
-                      <Link href="/products/industrial-conveyors-spares/belt-conveyors/" className="hover:underline">
+                      <Link href="/products/industrial-conveyors-spares/belt-conveyors/" className="hover:underline after:absolute after:inset-0">
                         Industrial Belt Conveyor Systems
                       </Link>
                     </h3>
@@ -1015,24 +1017,17 @@ export default function ScrewConveyorPage() {
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <Link
-                      href="/products/industrial-conveyors-spares/belt-conveyors/"
-                      className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link"
-                    >
+                    <span aria-hidden="true" className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link">
                       <span>View Machine Specifications</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
 
               {/* Cross-Pillar Machine */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
-                <Link
-                  href="/products/fertilizer-granulation-plants/disc-granulator/"
-                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
-                  aria-label="View Industrial Pan Disc Granulator specifications"
-                >
+              <div className="relative rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
+                <div className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                   <Image
                     src="/images/products/fertilizer-pellet/fertilizer-pan-granulator-unit-md.webp"
                     alt="Pan Disc Fertilizer Granulator"
@@ -1040,11 +1035,11 @@ export default function ScrewConveyorPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </Link>
+                </div>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
                     <h3 className="text-base font-bold text-slate-950 group-hover:text-[#DA020D] transition-colors leading-snug">
-                      <Link href="/products/fertilizer-granulation-plants/disc-granulator/" className="hover:underline">
+                      <Link href="/products/fertilizer-granulation-plants/disc-granulator/" className="hover:underline after:absolute after:inset-0">
                         Industrial Pan Disc Granulator
                       </Link>
                     </h3>
@@ -1053,13 +1048,10 @@ export default function ScrewConveyorPage() {
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <Link
-                      href="/products/fertilizer-granulation-plants/disc-granulator/"
-                      className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link"
-                    >
+                    <span aria-hidden="true" className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link">
                       <span>Explore Complementary Machine</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -1090,7 +1082,7 @@ export default function ScrewConveyorPage() {
 
                 <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
                   <Button
-                    href="/request-quote/?product=screw-conveyor"
+                    href="/request-quote/?product=screw-conveyors"
                     variant="primary"
                     size="lg"
                     icon={<FileText className="w-5 h-5" />}
@@ -1098,13 +1090,13 @@ export default function ScrewConveyorPage() {
                     Get Detailed Proposal &amp; Pricing
                   </Button>
                   <Button
-                    href="tel:+919227004455"
+                    href={`tel:${company.telephones[0].replace(/\s+/g, '')}`}
                     variant="outline"
                     size="lg"
                     external
                     icon={<Phone className="w-5 h-5 text-red-400" />}
                   >
-                    Direct Technical Call: +91 92270 04455
+                    Direct Technical Call: {company.telephones[0]}
                   </Button>
                 </div>
 
@@ -1154,7 +1146,7 @@ export default function ScrewConveyorPage() {
             </div>
           </Container>
         </section>
-      </main>
+      </div>
     </>
   );
 }

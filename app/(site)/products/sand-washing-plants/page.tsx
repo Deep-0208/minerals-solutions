@@ -157,6 +157,20 @@ export default function SandWashingPlantsPage() {
       question: 'Can the washed sand be transferred directly into an industrial rotary dryer?',
       answer:
         'Yes. Because our high-frequency dewatering screen reduces sand moisture down to 12-14%, it can be transferred directly via trough belt conveyor into an industrial rotary sand dryer, dramatically cutting fuel consumption in downstream thermal drying.',
+      answerNode: (
+        <>
+          Yes. Because our high-frequency dewatering screen reduces sand moisture down to 12-14%, it can
+          be transferred directly via{' '}
+          <Link href="/products/industrial-conveyors-spares/belt-conveyors/" className="font-semibold text-[#E10613] hover:underline">
+            trough belt conveyor
+          </Link>{' '}
+          into an{' '}
+          <Link href="/products/industrial-rotary-dryers/sand-dryer/" className="font-semibold text-[#E10613] hover:underline">
+            industrial rotary sand dryer
+          </Link>
+          , dramatically cutting fuel consumption in downstream thermal drying.
+        </>
+      ),
     },
     {
       question: 'What is the required water supply for a 50 TPH sand washing plant?',
@@ -255,7 +269,7 @@ export default function SandWashingPlantsPage() {
     <>
       <JsonLd data={sandSchema} />
       <div className="bg-[#F5F5F7] min-h-screen py-10 lg:py-16">
-        <Container>
+        <Container size="hero">
           {/* Breadcrumb Navigation */}
           <nav className="flex items-center gap-2 text-xs text-neutral-500 mb-4" aria-label="Breadcrumb">
             <Link href="/" className="hover:text-[#E10613]">Home</Link>
@@ -347,7 +361,7 @@ export default function SandWashingPlantsPage() {
                 Raw mineral feeds contain varying percentages of plastic clays, organic impurities, and micro-silts.
                 Selecting the proper washing circuit ensures IS 383 sand compliance without wasting usable fines.
                 Washed sand can subsequently be transferred via{' '}
-                <Link href="/products/industrial-conveyors-spares/" className="font-semibold text-[#E10613] hover:underline">
+                <Link href="/products/industrial-conveyors-spares/belt-conveyors/" className="font-semibold text-[#E10613] hover:underline">
                   heavy belt conveyors
                 </Link>{' '}
                 to an{' '}
@@ -361,11 +375,26 @@ export default function SandWashingPlantsPage() {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
               <div className="p-4 rounded-2xl bg-[#F5F5F7] border border-[#E7E7EB] hover:border-red-200 transition-all space-y-1">
                 <span className="text-xs font-bold text-[#111111] block">1. Silt &amp; Clay Fraction</span>
-                <p className="text-xs text-neutral-600">High-clay ores require intensive attrition log washers before screening; sandy feeds need bucket wheel desliming.</p>
+                <p className="text-xs text-neutral-600">
+                  High-clay ores require{' '}
+                  <Link href="/products/sand-washing-plants/mineral-log-washer/" className="font-semibold text-[#E10613] hover:underline">
+                    intensive attrition log washers
+                  </Link>{' '}
+                  before screening; sandy feeds need{' '}
+                  <Link href="/products/sand-washing-plants/bucket-wheel-sand-washer/" className="font-semibold text-[#E10613] hover:underline">
+                    bucket wheel desliming
+                  </Link>
+                  .
+                </p>
               </div>
               <div className="p-4 rounded-2xl bg-[#F5F5F7] border border-[#E7E7EB] hover:border-red-200 transition-all space-y-1">
                 <span className="text-xs font-bold text-[#111111] block">2. Fines Recovery Target</span>
-                <p className="text-xs text-neutral-600">Polyurethane hydrocyclone circuits capture 75-150 micron sand that standard wheel washers discharge into waste pits.</p>
+                <p className="text-xs text-neutral-600">
+                  <Link href="/products/sand-washing-plants/hydrocyclone-sand-separator/" className="font-semibold text-[#E10613] hover:underline">
+                    Polyurethane hydrocyclone circuits
+                  </Link>{' '}
+                  capture 75-150 micron sand that standard wheel washers discharge into waste pits.
+                </p>
               </div>
               <div className="p-4 rounded-2xl bg-[#F5F5F7] border border-[#E7E7EB] hover:border-red-200 transition-all space-y-1">
                 <span className="text-xs font-bold text-[#111111] block">3. Water Conservation</span>
@@ -377,13 +406,17 @@ export default function SandWashingPlantsPage() {
               <Info className="w-4 h-4 text-[#E10613] shrink-0 mt-0.5" />
               <span>
                 <strong className="text-[#111111]">Engineering Note:</strong> Silt content and water recovery depend on quarry feed variability.
-                Our engineering team in Zak GIDC conducts sieve analysis on your raw sample before determining screen aperture sizes.
+                Our engineering team in{' '}
+                <Link href="/manufacturing/" className="font-semibold text-[#E10613] hover:underline">
+                  Zak GIDC
+                </Link>{' '}
+                conducts sieve analysis on your raw sample before determining screen aperture sizes.
               </span>
             </div>
           </div>
 
           {/* Available Equipment Grid */}
-          <div className="mb-16">
+          <div className="mb-16" id="machinery">
             <h2 className="text-2xl font-bold text-[#111111] tracking-tight mb-6">
               Available Sand Washing &amp; Separation Equipment
             </h2>
@@ -391,14 +424,10 @@ export default function SandWashingPlantsPage() {
               {equipmentList.map((item) => (
                 <div
                   key={item.name}
-                  className="bg-white rounded-2xl border border-[#E7E7EB] overflow-hidden shadow-[0_4px_24px_rgba(17,17,17,0.04)] hover:shadow-[0_16px_36px_rgba(17,17,17,0.08)] hover:border-red-200 transition-all flex flex-col justify-between group"
+                  className="relative bg-white rounded-2xl border border-[#E7E7EB] overflow-hidden shadow-[0_4px_24px_rgba(17,17,17,0.04)] hover:shadow-[0_16px_36px_rgba(17,17,17,0.08)] hover:border-red-200 transition-all flex flex-col justify-between group"
                 >
                   {/* Product Image Header with Link */}
-                  <Link
-                    href={item.href}
-                    className="relative block aspect-[16/10] sm:aspect-[16/9] w-full bg-neutral-900 overflow-hidden"
-                    aria-label={`View ${item.name} specifications`}
-                  >
+                  <div className="relative block aspect-[16/10] sm:aspect-[16/9] w-full bg-neutral-900 overflow-hidden">
                     <Image
                       src={item.image}
                       alt={item.alt}
@@ -406,7 +435,7 @@ export default function SandWashingPlantsPage() {
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
                       className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                     />
-                  </Link>
+                  </div>
 
                   {/* Card Content */}
                   <div className="p-6 sm:p-7 flex flex-col justify-between flex-1 space-y-4">
@@ -420,7 +449,7 @@ export default function SandWashingPlantsPage() {
                         </span>
                       </div>
                       <h3 className="text-lg sm:text-xl font-bold text-[#111111] group-hover:text-[#E10613] transition-colors leading-snug">
-                        <Link href={item.href} className="hover:underline">
+                        <Link href={item.href} className="hover:underline after:absolute after:inset-0">
                           {item.name}
                         </Link>
                       </h3>
@@ -433,13 +462,10 @@ export default function SandWashingPlantsPage() {
                       <span className="text-neutral-600">
                         <strong className="text-[#111111]">Throughput:</strong> {item.capacity}
                       </span>
-                      <Link
-                        href={item.href}
-                        className="font-bold text-[#E10613] hover:text-[#b0050f] inline-flex items-center gap-1 shrink-0 group/link"
-                      >
+                      <span aria-hidden="true" className="font-bold text-[#E10613] hover:text-[#b0050f] inline-flex items-center gap-1 shrink-0 group/link">
                         <span>View Specifications</span>
                         <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                      </Link>
+                      </span>
                     </div>
                   </div>
                 </div>

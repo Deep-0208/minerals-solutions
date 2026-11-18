@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import { useSearchParams } from 'next/navigation';
 import {
   FileText,
   Phone,
@@ -23,6 +24,7 @@ import { Button } from '@/components/ui/Button';
 import { company } from '@/data/company';
 
 export function RequestQuoteClient() {
+  const searchParams = useSearchParams();
   const primaryPhone = company.telephones[0] || '+91 63524 53050';
   const cleanPhone = primaryPhone.replace(/\s+/g, '');
   const secondaryPhone = company.telephones[1] || '+91 91061 63058';
@@ -32,23 +34,64 @@ export function RequestQuoteClient() {
     'Hello Minerals Solutions, I would like to request an engineering quotation for industrial machinery.'
   )}`;
 
-  // Form State
-  const [formData, setFormData] = useState({
-    name: '',
-    companyName: '',
-    phone: '',
-    email: '',
-    city: '',
-    country: 'India',
-    category: 'rotary-dryers',
-    capacity: '',
-    material: '',
-    inputMoisture: '',
-    outputMoisture: '',
-    heatSource: 'Coal / Biomass Hot Air Generator',
-    beltWidth: '800 mm',
-    message: '',
-    honeypot: '', // anti-spam
+  const productMap: Record<string, { category: string; label: string }> = {
+    'rotary-dryers': { category: 'rotary-dryers', label: 'Industrial Rotary Dryers' },
+    'industrial-rotary-dryers': { category: 'rotary-dryers', label: 'Industrial Rotary Dryers' },
+    'triple-pass-dryer': { category: 'rotary-dryers', label: 'Triple Pass Rotary Drum Dryer (MS-TPD)' },
+    'sand-dryer': { category: 'rotary-dryers', label: 'Industrial Rotary Sand Dryer (MS-RSD)' },
+    'chemical-powder-dryer': { category: 'rotary-dryers', label: 'Stainless Chemical Powder Dryer (MS-CPD)' },
+    'biomass-sawdust-dryer': { category: 'rotary-dryers', label: 'Biomass & Sawdust Rotary Dryer (MS-BMD)' },
+    'sand-washing': { category: 'sand-washing', label: 'Sand Washing Plants' },
+    'sand-washing-plant': { category: 'sand-washing', label: 'Sand Washing Plant' },
+    'sand-washing-plants': { category: 'sand-washing', label: 'Sand Washing Plants' },
+    'silica-sand-washing-plant': { category: 'sand-washing', label: 'Silica Sand Washing Plant (MS-SWP)' },
+    'bucket-wheel-sand-washer': { category: 'sand-washing', label: 'Bucket Wheel Sand Washer (MS-BWW)' },
+    'hydrocyclone-sand-separator': { category: 'sand-washing', label: 'Hydrocyclone Fine Sand Recovery Unit (MS-FSR)' },
+    'mineral-log-washer': { category: 'sand-washing', label: 'Heavy Mineral Log Washer (MS-LW)' },
+    'fertilizer-plants': { category: 'fertilizer-plants', label: 'Fertilizer Granulation Plants' },
+    'fertilizer-granulation-plant': { category: 'fertilizer-plants', label: 'Fertilizer Granulation Plant' },
+    'fertilizer-granulation-plants': { category: 'fertilizer-plants', label: 'Fertilizer Granulation Plants' },
+    'disc-granulator': { category: 'fertilizer-plants', label: 'Pan Disc Fertilizer Granulator (MS-PG)' },
+    'double-roller-granulator': { category: 'fertilizer-plants', label: 'Double Roller Compaction Granulator (MS-DRG)' },
+    'rotary-drum-granulator': { category: 'fertilizer-plants', label: 'Industrial Rotary Drum Granulator (MS-RDG)' },
+    'fertilizer-cooling-coating-drum': { category: 'fertilizer-plants', label: 'Fertilizer Cooling & Coating Drum (MS-CCD)' },
+    'conveyors-spares': { category: 'conveyors-spares', label: 'Industrial Conveyors & Spares' },
+    'industrial-conveyors-spares': { category: 'conveyors-spares', label: 'Industrial Conveyors & Spares' },
+    'belt-conveyor': { category: 'conveyors-spares', label: 'Industrial Troughed Belt Conveyor (MS-BC)' },
+    'belt-conveyors': { category: 'conveyors-spares', label: 'Industrial Troughed Belt Conveyor (MS-BC)' },
+    'bucket-elevator': { category: 'conveyors-spares', label: 'Heavy Duty Industrial Bucket Elevator (MS-BEL)' },
+    'bucket-elevators': { category: 'conveyors-spares', label: 'Heavy Duty Industrial Bucket Elevator (MS-BEL)' },
+    'screw-conveyor': { category: 'conveyors-spares', label: 'Industrial U-Trough / Tubular Screw Conveyor (MS-SC)' },
+    'screw-conveyors': { category: 'conveyors-spares', label: 'Industrial U-Trough / Tubular Screw Conveyor (MS-SC)' },
+    'forged-trunnion-rollers': { category: 'conveyors-spares', label: 'Forged Steel Dryer Support Rollers & Girth Gears (MS-TR)' },
+  };
+
+  // Form State (initialized directly from ?product= / ?sector= to preserve buyer intent)
+  const [formData, setFormData] = useState(() => {
+    const productParam = searchParams.get('product')?.toLowerCase().trim() || '';
+    const sectorParam = searchParams.get('sector')?.toLowerCase().trim() || '';
+    const matched = productMap[productParam];
+    return {
+      name: '',
+      companyName: '',
+      phone: '',
+      email: '',
+      city: '',
+      country: 'India',
+      category: matched ? matched.category : 'rotary-dryers',
+      capacity: '',
+      material: '',
+      inputMoisture: '',
+      outputMoisture: '',
+      heatSource: 'Coal / Biomass Hot Air Generator',
+      beltWidth: '800 mm',
+      message: matched
+        ? `Quotation inquiry for: ${matched.label}.`
+        : sectorParam
+        ? `Sector engineering inquiry for: ${sectorParam.replace(/-/g, ' ')}.`
+        : '',
+      honeypot: '', // anti-spam
+    };
   });
 
   const [loading, setLoading] = useState(false);
@@ -106,10 +149,10 @@ export function RequestQuoteClient() {
         message: '',
         honeypot: '',
       });
-    } catch (err: any) {
+    } catch (err: unknown) {
       setStatus({
         type: 'error',
-        message: err.message || 'Something went wrong. Please call our works directly.',
+        message: err instanceof Error ? err.message : 'Something went wrong. Please call our works directly.',
       });
     } finally {
       setLoading(false);
@@ -547,7 +590,17 @@ export function RequestQuoteClient() {
                 <div className="pt-4 border-t border-neutral-100 flex flex-col sm:flex-row items-center justify-between gap-4">
                   <div className="text-xs text-neutral-500 flex items-center gap-2">
                     <ShieldCheck className="w-4 h-4 text-emerald-600 shrink-0" />
-                    <span>Your technical data is kept strictly confidential.</span>
+                    <span>
+                      Your technical data is governed by our{' '}
+                      <Link href="/privacy-policy/" className="font-semibold text-[#111111] hover:text-[#E10613] underline">
+                        Privacy Policy
+                      </Link>{' '}
+                      and{' '}
+                      <Link href="/terms/" className="font-semibold text-[#111111] hover:text-[#E10613] underline">
+                        Terms of Supply
+                      </Link>
+                      .
+                    </span>
                   </div>
 
                   <Button
@@ -622,6 +675,47 @@ export function RequestQuoteClient() {
                 <p><strong>GSTIN:</strong> {company.gstin}</p>
                 <p><strong>UDYAM:</strong> {company.udyamRegistration}</p>
               </div>
+              <div className="pt-2 border-t border-neutral-100 flex flex-wrap gap-3 text-xs font-semibold">
+                <Link href="/manufacturing/" className="text-[#E10613] hover:underline">
+                  Inspect Fabrication Bay
+                </Link>
+                <Link href="/contact/" className="text-neutral-700 hover:text-[#E10613] hover:underline">
+                  Works Contact Desk
+                </Link>
+              </div>
+            </div>
+
+            {/* Equipment Specification Reference Links */}
+            <div className="bg-white rounded-3xl p-6 sm:p-7 border border-[#E7E7EB] shadow-[0_4px_24px_rgba(17,17,17,0.04)] space-y-3">
+              <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#111111]">
+                <FileText className="w-4 h-4 text-[#E10613]" />
+                <span>Compare Equipment Specs</span>
+              </div>
+              <p className="text-xs text-neutral-600 leading-relaxed">
+                Need capacity ranges or metallurgy references before submitting? Review our equipment divisions:
+              </p>
+              <ul className="space-y-1.5 text-xs font-semibold text-[#111111]">
+                <li>
+                  <Link href="/products/industrial-rotary-dryers/" className="hover:text-[#E10613] hover:underline">
+                    Industrial Rotary Dryers (500 kg/hr to 50 TPH)
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/products/sand-washing-plants/" className="hover:text-[#E10613] hover:underline">
+                    Sand Washing &amp; Hydrocyclone Plants
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/products/fertilizer-granulation-plants/" className="hover:text-[#E10613] hover:underline">
+                    Fertilizer Granulation &amp; Coating Plants
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/products/industrial-conveyors-spares/" className="hover:text-[#E10613] hover:underline">
+                    Industrial Conveyors &amp; Forged Spares
+                  </Link>
+                </li>
+              </ul>
             </div>
 
             {/* Turnkey Assurance */}

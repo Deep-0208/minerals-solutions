@@ -248,11 +248,29 @@ export default function BucketWheelSandWasherPage() {
       question: 'How much water does a bucket wheel sand washing machine require?',
       answer:
         'Water consumption depends on wheel diameter and plant feed throughput, typically ranging from 40 m³/hr for the MS-BWW-2600 (30–45 TPH) up to 160 m³/hr for the MS-BWW-3600 (90–120 TPH). However, the net water lost with the washed sand is only 12% to 15% of the sand weight. When integrated with a closed-loop water recovery circuit (hydrocyclone dewatering screen and settling pond or high-rate thickener), up to 85% to 90% of the wash water is continuously clarified and recycled back into the process.',
+      answerNode: (
+        <>
+          Water consumption depends on wheel diameter and plant feed throughput, typically ranging from 40 m³/hr for the MS-BWW-2600 (30–45 TPH) up to 160 m³/hr for the MS-BWW-3600 (90–120 TPH). However, the net water lost with the washed sand is only 12% to 15% of the sand weight. When integrated with a closed-loop water recovery circuit (
+          <Link href="/products/sand-washing-plants/hydrocyclone-sand-separator/" className="font-semibold text-[#E10613] hover:underline">
+            hydrocyclone dewatering screen
+          </Link>{' '}
+          and settling pond or high-rate thickener), up to 85% to 90% of the wash water is continuously clarified and recycled back into the process.
+        </>
+      ),
     },
     {
       question: 'What models and wheel diameters are manufactured at your Dahegam workshop?',
       answer:
         'We manufacture standard single-wheel models with diameters of 2,600 mm, 2,800 mm, 3,200 mm, and 3,600 mm covering throughput capacities from 30 TPH to 120 TPH. For massive 120–160 TPH quarry installations, we fabricate dual-wheel twin-basin systems (MS-BWW-3200D). Custom bucket depths, variable speed VFD drives, and integrated dewatering screen chutes are fabricated to exact client specifications in Zak GIDC, Dahegam.',
+      answerNode: (
+        <>
+          We manufacture standard single-wheel models with diameters of 2,600 mm, 2,800 mm, 3,200 mm, and 3,600 mm covering throughput capacities from 30 TPH to 120 TPH. For massive 120–160 TPH quarry installations, we fabricate dual-wheel twin-basin systems (MS-BWW-3200D). Custom bucket depths, variable speed VFD drives, and integrated dewatering screen chutes are fabricated to exact client specifications in{' '}
+          <Link href="/manufacturing/" className="font-semibold text-[#E10613] hover:underline">
+            Zak GIDC, Dahegam
+          </Link>
+          .
+        </>
+      ),
     },
   ];
 
@@ -370,7 +388,7 @@ export default function BucketWheelSandWasherPage() {
     <>
       <JsonLd data={jsonLd} />
 
-      <main className="min-h-screen bg-white text-slate-900">
+      <div className="min-h-screen bg-white text-slate-900">
         {/* Breadcrumb Navigation Header */}
         <section className="bg-slate-50 border-b border-slate-200 py-3">
           <Container>
@@ -550,7 +568,15 @@ export default function BucketWheelSandWasherPage() {
                     In a standard 100 TPH sand processing facility operating 16 hours daily, a spiral screw classifier draws
                     roughly 37 kW (50 HP) with monthly replacement of submerged lower bearings and flights. A Minerals Solutions
                     MS-BWW-3600 bucket wheel draws only 15 kW (20 HP) with an external bearing pedestal, saving over ₹6,80,000 in
-                    annual electricity and avoiding catastrophic bearing contamination.
+                    annual electricity and avoiding catastrophic bearing contamination. For coarse quarry feeds encased in plastic clay, pair an upstream{' '}
+                    <Link href="/products/sand-washing-plants/mineral-log-washer/" className="font-semibold text-[#E10613] hover:underline">
+                      twin-shaft mineral log washer
+                    </Link>{' '}
+                    before wheel classification and discharge dewatered sand onto{' '}
+                    <Link href="/products/industrial-conveyors-spares/belt-conveyors/" className="font-semibold text-[#E10613] hover:underline">
+                      M24 troughed belt conveyors
+                    </Link>
+                    .
                   </p>
                 </div>
                 <div className="lg:col-span-4 flex justify-end">
@@ -847,12 +873,8 @@ export default function BucketWheelSandWasherPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Sibling Spoke 1 */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
-                <Link
-                  href="/products/sand-washing-plants/silica-sand-washing-plant/"
-                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
-                  aria-label="View Silica Sand Washing Plant System specifications"
-                >
+              <div className="relative rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
+                <div className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                   <Image
                     src="/images/products/mineral-processing/river-sand-washing-plant-md.webp"
                     alt="Silica Sand Washing Plant Circuit"
@@ -860,11 +882,11 @@ export default function BucketWheelSandWasherPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </Link>
+                </div>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
                     <h3 className="text-base font-bold text-slate-950 group-hover:text-[#DA020D] transition-colors leading-snug">
-                      <Link href="/products/sand-washing-plants/silica-sand-washing-plant/" className="hover:underline">
+                      <Link href="/products/sand-washing-plants/silica-sand-washing-plant/" className="hover:underline after:absolute after:inset-0">
                         Silica Sand Washing Plant System
                       </Link>
                     </h3>
@@ -873,24 +895,17 @@ export default function BucketWheelSandWasherPage() {
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <Link
-                      href="/products/sand-washing-plants/silica-sand-washing-plant/"
-                      className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link"
-                    >
+                    <span aria-hidden="true" className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link">
                       <span>View Machine Specifications</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
 
               {/* Sibling Spoke 2 */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
-                <Link
-                  href="/products/sand-washing-plants/hydrocyclone-sand-separator/"
-                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
-                  aria-label="View Hydrocyclone Fine Sand Recovery Unit specifications"
-                >
+              <div className="relative rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
+                <div className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                   <Image
                     src="/images/products/mineral-processing/circular-vibrating-screen-md.webp"
                     alt="Hydrocyclone Sand Separator System"
@@ -898,11 +913,11 @@ export default function BucketWheelSandWasherPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </Link>
+                </div>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
                     <h3 className="text-base font-bold text-slate-950 group-hover:text-[#DA020D] transition-colors leading-snug">
-                      <Link href="/products/sand-washing-plants/hydrocyclone-sand-separator/" className="hover:underline">
+                      <Link href="/products/sand-washing-plants/hydrocyclone-sand-separator/" className="hover:underline after:absolute after:inset-0">
                         Hydrocyclone Fine Sand Recovery Unit
                       </Link>
                     </h3>
@@ -911,24 +926,17 @@ export default function BucketWheelSandWasherPage() {
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <Link
-                      href="/products/sand-washing-plants/hydrocyclone-sand-separator/"
-                      className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link"
-                    >
+                    <span aria-hidden="true" className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link">
                       <span>View Machine Specifications</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
 
               {/* Cross-Pillar Machine */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
-                <Link
-                  href="/products/industrial-rotary-dryers/sand-dryer/"
-                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
-                  aria-label="View Industrial Rotary Sand Dryer Unit specifications"
-                >
+              <div className="relative rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
+                <div className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                   <Image
                     src="/images/products/rotary-dryers/silica-sand-rotary-dryer-md.webp"
                     alt="Industrial Rotary Sand Dryer Drum"
@@ -936,11 +944,11 @@ export default function BucketWheelSandWasherPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </Link>
+                </div>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
                     <h3 className="text-base font-bold text-slate-950 group-hover:text-[#DA020D] transition-colors leading-snug">
-                      <Link href="/products/industrial-rotary-dryers/sand-dryer/" className="hover:underline">
+                      <Link href="/products/industrial-rotary-dryers/sand-dryer/" className="hover:underline after:absolute after:inset-0">
                         Industrial Rotary Sand Dryer Unit
                       </Link>
                     </h3>
@@ -949,13 +957,10 @@ export default function BucketWheelSandWasherPage() {
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <Link
-                      href="/products/industrial-rotary-dryers/sand-dryer/"
-                      className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link"
-                    >
+                    <span aria-hidden="true" className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link">
                       <span>Explore Complementary Machine</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -986,7 +991,7 @@ export default function BucketWheelSandWasherPage() {
                     <HelpCircle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
                     <span>{faq.question}</span>
                   </h3>
-                  <p className="mt-3 text-sm text-slate-600 leading-relaxed pl-8">{faq.answer}</p>
+                  <p className="mt-3 text-sm text-slate-600 leading-relaxed pl-8">{('answerNode' in faq && faq.answerNode) ? faq.answerNode : faq.answer}</p>
                 </div>
               ))}
             </div>
@@ -1042,7 +1047,7 @@ export default function BucketWheelSandWasherPage() {
             </div>
           </Container>
         </section>
-      </main>
+      </div>
     </>
   );
 }

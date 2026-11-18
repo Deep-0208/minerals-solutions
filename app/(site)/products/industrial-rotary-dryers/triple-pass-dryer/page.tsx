@@ -256,16 +256,57 @@ export default function TriplePassDryerPage() {
       question: 'Can sticky river sand or clay-rich silt be dried in a triple pass dryer?',
       answer:
         'Triple pass dryers are engineered primarily for free-flowing granular solids up to 10mm. Highly sticky materials or wet clay pastes with plasticity indices above 15 may blind the narrow annular clearances between the inner and middle shells. For high-clay river sand, Minerals Solutions engineers recommend either pre-screening via our Rotary Trommel / Sand Washing Plant or installing our Double-Pass Dryer equipped with heavy anti-stick mechanical scrapers.',
+      answerNode: (
+        <>
+          Triple pass dryers are engineered primarily for free-flowing granular solids up to 10mm. Highly
+          sticky materials or wet clay pastes with plasticity indices above 15 may blind the narrow
+          annular clearances between the inner and middle shells. For high-clay river sand, Minerals
+          Solutions engineers recommend either pre-screening via our Rotary Trommel /{' '}
+          <Link href="/products/sand-washing-plants/silica-sand-washing-plant/" className="font-semibold text-[#E10613] hover:underline">
+            Sand Washing Plant
+          </Link>{' '}
+          or installing our{' '}
+          <Link href="/products/industrial-rotary-dryers/" className="font-semibold text-[#E10613] hover:underline">
+            Double-Pass Dryer
+          </Link>{' '}
+          equipped with heavy anti-stick mechanical scrapers.
+        </>
+      ),
     },
     {
       question: 'Which combustion fuels can fire Minerals Solutions triple pass dryers?',
       answer:
         'Our hot air generators (HAG) are fully modular. We engineer combustion systems for pulverized coal, agro-waste briquettes, wood chips, natural gas (PNG), LPG, and light diesel. Indirect shell-and-tube heat exchangers are also available for chemical and food-grade mineral drying where combustion flue gases must not touch the product.',
+      answerNode: (
+        <>
+          Our hot air generators (HAG) are fully modular. We engineer combustion systems for pulverized
+          coal, agro-waste briquettes, wood chips, natural gas (PNG), LPG, and light diesel. Indirect
+          shell-and-tube heat exchangers are also available for{' '}
+          <Link href="/products/industrial-rotary-dryers/chemical-powder-dryer/" className="font-semibold text-[#E10613] hover:underline">
+            chemical and food-grade mineral drying
+          </Link>{' '}
+          where combustion flue gases must not touch the product.
+        </>
+      ),
     },
     {
       question: 'What quality testing and guarantees are provided at your Zak GIDC works?',
       answer:
         'Every Minerals Solutions triple pass dryer undergoes ultrasonic weld inspection, hydrostatic alignment, and workshop dynamic balancing to ISO 1940 standards before dispatch from our Dahegam facility. Shells are fabricated from certified IS 2062 Grade B structural steel, and trunnions are forged from high-hardness EN-8/EN-9 alloy steel, backed by a comprehensive 12-month structural manufacturing guarantee.',
+      answerNode: (
+        <>
+          Every Minerals Solutions triple pass dryer undergoes ultrasonic weld inspection, hydrostatic
+          alignment, and workshop dynamic balancing to ISO 1940 standards before dispatch from our{' '}
+          <Link href="/manufacturing/" className="font-semibold text-[#E10613] hover:underline">
+            Dahegam facility
+          </Link>
+          . Shells are fabricated from certified IS 2062 Grade B structural steel, and{' '}
+          <Link href="/products/industrial-conveyors-spares/forged-trunnion-rollers/" className="font-semibold text-[#E10613] hover:underline">
+            trunnions are forged from high-hardness EN-8/EN-9 alloy steel
+          </Link>
+          , backed by a comprehensive 12-month structural manufacturing guarantee.
+        </>
+      ),
     },
   ];
 
@@ -382,7 +423,7 @@ export default function TriplePassDryerPage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqSchema} />
 
-      <main className="bg-white text-slate-900 min-h-screen">
+      <div className="bg-white text-slate-900 min-h-screen">
         {/* Breadcrumb Navigation */}
         <div className="border-b border-slate-200 bg-slate-50/80">
           <Container>
@@ -828,7 +869,10 @@ export default function TriplePassDryerPage() {
                         Forged EN-8 / EN-9 Alloy Support Trunnions
                       </h3>
                       <p className="text-xs text-slate-600 mt-0.5">
-                        Solid forged alloy steel rollers, induction-hardened to 280–320 BHN, mounted in heavy split plummer blocks with spherical roller bearings.
+                        <Link href="/products/industrial-conveyors-spares/forged-trunnion-rollers/" className="font-semibold text-[#DA020D] hover:underline">
+                          Solid forged alloy steel rollers
+                        </Link>
+                        , induction-hardened to 280–320 BHN, mounted in heavy split plummer blocks with spherical roller bearings.
                       </p>
                     </div>
                   </div>
@@ -907,12 +951,8 @@ export default function TriplePassDryerPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Sibling Spoke 1 */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
-                <Link
-                  href="/products/industrial-rotary-dryers/sand-dryer/"
-                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
-                  aria-label="View Industrial Rotary Sand Dryer specifications"
-                >
+              <div className="relative rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
+                <div className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                   <Image
                     src="/images/products/rotary-dryers/silica-sand-rotary-dryer-md.webp"
                     alt="Industrial Rotary Sand Dryer Drum"
@@ -920,14 +960,14 @@ export default function TriplePassDryerPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </Link>
+                </div>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
                     <span className="inline-block text-[11px] font-mono font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded mb-2 border border-emerald-100">
                       Sibling Dryer Line
                     </span>
                     <h3 className="text-base font-bold text-slate-950 group-hover:text-[#E10613] transition-colors leading-snug">
-                      <Link href="/products/industrial-rotary-dryers/sand-dryer/" className="hover:underline">
+                      <Link href="/products/industrial-rotary-dryers/sand-dryer/" className="hover:underline after:absolute after:inset-0">
                         Industrial Rotary Sand Dryer
                       </Link>
                     </h3>
@@ -936,24 +976,17 @@ export default function TriplePassDryerPage() {
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <Link
-                      href="/products/industrial-rotary-dryers/sand-dryer/"
-                      className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link"
-                    >
+                    <span aria-hidden="true" className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link">
                       <span>View Machine Specifications</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
 
               {/* Sibling Spoke 2 */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
-                <Link
-                  href="/products/industrial-rotary-dryers/chemical-powder-dryer/"
-                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
-                  aria-label="View Stainless Chemical Powder Dryer specifications"
-                >
+              <div className="relative rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
+                <div className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                   <Image
                     src="/images/products/rotary-dryers/boric-powder-dryer-md.webp"
                     alt="Chemical Powder and Mineral Rotary Dryer"
@@ -961,14 +994,14 @@ export default function TriplePassDryerPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </Link>
+                </div>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
                     <span className="inline-block text-[11px] font-mono font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded mb-2 border border-blue-100">
                       Sibling Dryer Line
                     </span>
                     <h3 className="text-base font-bold text-slate-950 group-hover:text-[#E10613] transition-colors leading-snug">
-                      <Link href="/products/industrial-rotary-dryers/chemical-powder-dryer/" className="hover:underline">
+                      <Link href="/products/industrial-rotary-dryers/chemical-powder-dryer/" className="hover:underline after:absolute after:inset-0">
                         Stainless Chemical Powder Dryer
                       </Link>
                     </h3>
@@ -977,24 +1010,17 @@ export default function TriplePassDryerPage() {
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <Link
-                      href="/products/industrial-rotary-dryers/chemical-powder-dryer/"
-                      className="font-bold text-[#E10613] hover:text-[#BC0711] text-xs inline-flex items-center gap-1 group/link"
-                    >
+                    <span aria-hidden="true" className="font-bold text-[#E10613] hover:text-[#BC0711] text-xs inline-flex items-center gap-1 group/link">
                       <span>View Machine Specifications</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
 
               {/* Cross-Pillar Machine */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#E10613]/40 transition-all flex flex-col justify-between group">
-                <Link
-                  href="/products/sand-washing-plants/silica-sand-washing-plant/"
-                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
-                  aria-label="View Silica Sand Washing Plant System specifications"
-                >
+              <div className="relative rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#E10613]/40 transition-all flex flex-col justify-between group">
+                <div className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                   <Image
                     src="/images/products/mineral-processing/river-sand-washing-plant-md.webp"
                     alt="Silica Sand Washing Plant Circuit"
@@ -1002,14 +1028,14 @@ export default function TriplePassDryerPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </Link>
+                </div>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
                     <span className="inline-block text-[11px] font-mono font-bold text-purple-700 bg-purple-50 px-2 py-0.5 rounded mb-2 border border-purple-100">
                       Complementary Wet Circuit
                     </span>
                     <h3 className="text-base font-bold text-slate-950 group-hover:text-[#E10613] transition-colors leading-snug">
-                      <Link href="/products/sand-washing-plants/silica-sand-washing-plant/" className="hover:underline">
+                      <Link href="/products/sand-washing-plants/silica-sand-washing-plant/" className="hover:underline after:absolute after:inset-0">
                         Silica Sand Washing Plant System
                       </Link>
                     </h3>
@@ -1018,13 +1044,10 @@ export default function TriplePassDryerPage() {
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <Link
-                      href="/products/sand-washing-plants/silica-sand-washing-plant/"
-                      className="font-bold text-[#E10613] hover:text-[#BC0711] text-xs inline-flex items-center gap-1 group/link"
-                    >
+                    <span aria-hidden="true" className="font-bold text-[#E10613] hover:text-[#BC0711] text-xs inline-flex items-center gap-1 group/link">
                       <span>Explore Complementary Machine</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -1108,7 +1131,7 @@ export default function TriplePassDryerPage() {
             </div>
           </Container>
         </section>
-      </main>
+      </div>
     </>
   );
 }

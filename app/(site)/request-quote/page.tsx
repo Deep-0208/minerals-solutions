@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import type { Metadata } from 'next';
 import { RequestQuoteClient } from '@/components/quote/RequestQuoteClient';
 import { JsonLd } from '@/components/seo/JsonLd';
@@ -75,7 +75,9 @@ export default function RequestQuotePage() {
   return (
     <>
       <JsonLd data={quoteSchema} />
-      <RequestQuoteClient />
+      <Suspense fallback={null}>
+        <RequestQuoteClient />
+      </Suspense>
     </>
   );
 }

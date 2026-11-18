@@ -194,6 +194,22 @@ export default function SilicaSandWashingPlantPage() {
       question: 'How does the plant reduce Iron Oxide (Fe2O3) to meet glass-grade standards?',
       answer:
         'Most iron in natural silica sand occurs as red hematite/limonite clay films coating quartz crystals. Our intensive twin-shaft log washer rubs grain against grain in a dense slurry bed, shearing away the adherent iron-bearing clay coatings. The downstream hydrocyclone then ejects these liberated iron-clay micro-slimes into the overflow, dropping Fe2O3 levels from 0.8% down to <0.035% without requiring hazardous chemical acid leaching.',
+      answerNode: (
+        <>
+          Most iron in natural silica sand occurs as red hematite/limonite clay films coating quartz
+          crystals. Our intensive{' '}
+          <Link href="/products/sand-washing-plants/mineral-log-washer/" className="font-semibold text-cyan-800 hover:underline">
+            twin-shaft log washer
+          </Link>{' '}
+          rubs grain against grain in a dense slurry bed, shearing away the adherent iron-bearing clay
+          coatings. The{' '}
+          <Link href="/products/sand-washing-plants/hydrocyclone-sand-separator/" className="font-semibold text-cyan-800 hover:underline">
+            downstream hydrocyclone
+          </Link>{' '}
+          then ejects these liberated iron-clay micro-slimes into the overflow, dropping Fe2O3 levels
+          from 0.8% down to &lt;0.035% without requiring hazardous chemical acid leaching.
+        </>
+      ),
     },
     {
       question: 'What are the water consumption and recycling requirements of the washing plant?',
@@ -209,6 +225,20 @@ export default function SilicaSandWashingPlantPage() {
       question: 'Can the washed silica sand feed directly into your industrial rotary dryer?',
       answer:
         'Yes. Our high-frequency dewatering screen discharges washed silica sand at approximately 12% to 14% moisture, which is dripless and free-flowing. It discharges directly onto an inclined troughed belt conveyor that charges our Industrial Rotary Sand Dryer, creating a continuous automated Wash-and-Dry production line.',
+      answerNode: (
+        <>
+          Yes. Our high-frequency dewatering screen discharges washed silica sand at approximately 12% to
+          14% moisture, which is dripless and free-flowing. It discharges directly onto an{' '}
+          <Link href="/products/industrial-conveyors-spares/belt-conveyors/" className="font-semibold text-cyan-800 hover:underline">
+            inclined troughed belt conveyor
+          </Link>{' '}
+          that charges our{' '}
+          <Link href="/products/industrial-rotary-dryers/sand-dryer/" className="font-semibold text-cyan-800 hover:underline">
+            Industrial Rotary Sand Dryer
+          </Link>
+          , creating a continuous automated Wash-and-Dry production line.
+        </>
+      ),
     },
   ];
 
@@ -325,7 +355,7 @@ export default function SilicaSandWashingPlantPage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqSchema} />
 
-      <main className="bg-white text-slate-900 min-h-screen">
+      <div className="bg-white text-slate-900 min-h-screen">
         {/* Breadcrumb Navigation */}
         <div className="border-b border-slate-200 bg-slate-50/80">
           <Container>
@@ -349,7 +379,15 @@ export default function SilicaSandWashingPlantPage() {
                 </h1>
 
                 <p className="text-base sm:text-lg text-slate-700 leading-relaxed mb-6 font-normal">
-                  Heavy-duty wet classification systems engineered to upgrade raw mined quartz and silica sand into ultra-pure <strong>glass-grade (Fe2O3 &lt; 0.03%)</strong> and <strong>Morbi ceramic-grade</strong> feed. Featuring twin-shaft attrition log washers, polyurethane hydrocyclone desliming, and 45Hz dewatering screens across capacities from <strong>20 to 150 TPH</strong>.
+                  Heavy-duty wet classification systems engineered to upgrade raw mined quartz and silica sand into ultra-pure <strong>glass-grade (Fe2O3 &lt; 0.03%)</strong> and <strong>Morbi ceramic-grade</strong> feed. Featuring{' '}
+                  <Link href="/products/sand-washing-plants/mineral-log-washer/" className="font-semibold text-cyan-800 hover:underline">
+                    twin-shaft attrition log washers
+                  </Link>
+                  ,{' '}
+                  <Link href="/products/sand-washing-plants/hydrocyclone-sand-separator/" className="font-semibold text-cyan-800 hover:underline">
+                    polyurethane hydrocyclone desliming
+                  </Link>
+                  , and 45Hz dewatering screens across capacities from <strong>20 to 150 TPH</strong>.
                 </p>
 
                 {/* Pricing & Commercial Badge */}
@@ -570,7 +608,11 @@ export default function SilicaSandWashingPlantPage() {
                 Achieving Glass & Ceramic Grade Purity: Fe2O3 and Clay Reduction
               </h2>
               <p className="text-slate-600 mt-3 text-base">
-                Direct metallurgical comparison between raw pit sand and high-purity glassmaker sand processed through our Dahegam-manufactured lines.
+                Direct metallurgical comparison between raw pit sand and high-purity glassmaker sand processed through{' '}
+                <Link href="/manufacturing/" className="font-semibold text-cyan-800 hover:underline">
+                  our Dahegam-manufactured lines
+                </Link>
+                .
               </p>
             </div>
 
@@ -698,7 +740,11 @@ export default function SilicaSandWashingPlantPage() {
                 Hydrocyclone Fines Recovery & Polyurethane Dewatering Screen
               </h2>
               <p className="text-slate-600 mt-3 text-base">
-                Why traditional bucket wheel sand washers lose up to 25% of valuable fine sand (150 to 75 microns) into tailing ponds, and how our hydrocyclone circuit recovers it completely.
+                Why traditional{' '}
+                <Link href="/products/sand-washing-plants/bucket-wheel-sand-washer/" className="font-semibold text-cyan-800 hover:underline">
+                  bucket wheel sand washers
+                </Link>{' '}
+                lose up to 25% of valuable fine sand (150 to 75 microns) into tailing ponds, and how our hydrocyclone circuit recovers it completely.
               </p>
             </div>
 
@@ -814,12 +860,8 @@ export default function SilicaSandWashingPlantPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Sibling Spoke 1 */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
-                <Link
-                  href="/products/sand-washing-plants/bucket-wheel-sand-washer/"
-                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
-                  aria-label="View Bucket Wheel Sand Washer System specifications"
-                >
+              <div className="relative rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
+                <div className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                   <Image
                     src="/images/products/mineral-processing/river-sand-washing-plant-variant-md.webp"
                     alt="Bucket Wheel Sand Washer"
@@ -827,11 +869,11 @@ export default function SilicaSandWashingPlantPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </Link>
+                </div>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
                     <h3 className="text-base font-bold text-slate-950 group-hover:text-[#DA020D] transition-colors leading-snug">
-                      <Link href="/products/sand-washing-plants/bucket-wheel-sand-washer/" className="hover:underline">
+                      <Link href="/products/sand-washing-plants/bucket-wheel-sand-washer/" className="hover:underline after:absolute after:inset-0">
                         Bucket Wheel Sand Washer System
                       </Link>
                     </h3>
@@ -840,24 +882,17 @@ export default function SilicaSandWashingPlantPage() {
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <Link
-                      href="/products/sand-washing-plants/bucket-wheel-sand-washer/"
-                      className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link"
-                    >
+                    <span aria-hidden="true" className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link">
                       <span>View Machine Specifications</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
 
               {/* Sibling Spoke 2 */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
-                <Link
-                  href="/products/sand-washing-plants/hydrocyclone-sand-separator/"
-                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
-                  aria-label="View Hydrocyclone Fine Sand Recovery Unit specifications"
-                >
+              <div className="relative rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
+                <div className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                   <Image
                     src="/images/products/mineral-processing/circular-vibrating-screen-md.webp"
                     alt="Hydrocyclone Sand Separator System"
@@ -865,11 +900,11 @@ export default function SilicaSandWashingPlantPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </Link>
+                </div>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
                     <h3 className="text-base font-bold text-slate-950 group-hover:text-[#DA020D] transition-colors leading-snug">
-                      <Link href="/products/sand-washing-plants/hydrocyclone-sand-separator/" className="hover:underline">
+                      <Link href="/products/sand-washing-plants/hydrocyclone-sand-separator/" className="hover:underline after:absolute after:inset-0">
                         Hydrocyclone Fine Sand Recovery Unit
                       </Link>
                     </h3>
@@ -878,24 +913,17 @@ export default function SilicaSandWashingPlantPage() {
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <Link
-                      href="/products/sand-washing-plants/hydrocyclone-sand-separator/"
-                      className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link"
-                    >
+                    <span aria-hidden="true" className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link">
                       <span>View Machine Specifications</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
 
               {/* Cross-Pillar Machine */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
-                <Link
-                  href="/products/industrial-rotary-dryers/sand-dryer/"
-                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
-                  aria-label="View Industrial Rotary Sand Dryer Unit specifications"
-                >
+              <div className="relative rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
+                <div className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                   <Image
                     src="/images/products/rotary-dryers/silica-sand-rotary-dryer-md.webp"
                     alt="Industrial Rotary Sand Dryer Drum"
@@ -903,11 +931,11 @@ export default function SilicaSandWashingPlantPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </Link>
+                </div>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
                     <h3 className="text-base font-bold text-slate-950 group-hover:text-[#DA020D] transition-colors leading-snug">
-                      <Link href="/products/industrial-rotary-dryers/sand-dryer/" className="hover:underline">
+                      <Link href="/products/industrial-rotary-dryers/sand-dryer/" className="hover:underline after:absolute after:inset-0">
                         Industrial Rotary Sand Dryer Unit
                       </Link>
                     </h3>
@@ -916,13 +944,10 @@ export default function SilicaSandWashingPlantPage() {
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <Link
-                      href="/products/industrial-rotary-dryers/sand-dryer/"
-                      className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link"
-                    >
+                    <span aria-hidden="true" className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link">
                       <span>Explore Complementary Machine</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -1006,7 +1031,7 @@ export default function SilicaSandWashingPlantPage() {
             </div>
           </Container>
         </section>
-      </main>
+      </div>
     </>
   );
 }

@@ -204,7 +204,15 @@ export default function ProductsPage() {
           </h1>
           <p className="mt-3 text-base sm:text-lg text-[#737373] leading-relaxed">
             Custom-engineered thermal rotary dryers, continuous fertilizer granulation lines,
-            sand washing separators, and heavy material handling conveyors built at our Zak GIDC works.
+            sand washing separators, and heavy material handling conveyors built at our{' '}
+            <Link href="/manufacturing/" className="font-semibold text-[#E10613] hover:underline">
+              Zak GIDC works
+            </Link>
+            . Explore equipment matched to your process across our{' '}
+            <Link href="/industries/" className="font-semibold text-[#E10613] hover:underline">
+              industrial sector applications
+            </Link>
+            .
           </p>
         </div>
 
@@ -256,7 +264,9 @@ export default function ProductsPage() {
                     </div>
 
                     <h2 className="text-2xl sm:text-3xl font-extrabold text-[#111111] group-hover:text-[#E10613] tracking-tight transition-colors">
-                      {cat.title}
+                      <Link href={cat.slug} className="hover:underline">
+                        {cat.title}
+                      </Link>
                     </h2>
 
                     <p className="text-sm sm:text-base text-[#737373] leading-relaxed">
@@ -292,10 +302,10 @@ export default function ProductsPage() {
 
                   <div className="pt-4 border-t border-neutral-100 flex flex-wrap items-center justify-between gap-4">
                     <Button href={cat.slug} variant="primary" size="md" icon={<ArrowRight className="w-4 h-4" />}>
-                      Explore Specifications
+                      Explore {cat.title.split(' &')[0]}
                     </Button>
-                    <Button href="/request-quote/" variant="outline" size="md">
-                      Request Quotation
+                    <Button href={`/request-quote/?product=${cat.id}`} variant="outline" size="md">
+                      Request {cat.title.split(' ')[0]} Quote
                     </Button>
                   </div>
                 </div>

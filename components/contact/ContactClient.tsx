@@ -85,10 +85,10 @@ export function ContactClient() {
         message: '',
         honeypot: '',
       });
-    } catch (err: any) {
+    } catch (err: unknown) {
       setStatus({
         type: 'error',
-        message: err.message || 'Something went wrong. Please call our works directly.',
+        message: err instanceof Error ? err.message : 'Something went wrong. Please call our works directly.',
       });
     } finally {
       setLoading(false);
@@ -115,8 +115,19 @@ export function ContactClient() {
             Contact Minerals Solutions Works
           </h1>
           <p className="text-base sm:text-lg text-[#737373] leading-relaxed">
-            Reach out directly to our manufacturing and design engineers. Whether you need equipment
-            quotes, replacement spares, or directions to visit our Zak GIDC plant, we are here to assist.
+            Reach out directly to our manufacturing and design engineers. Whether you need{' '}
+            <Link href="/request-quote/" className="font-semibold text-[#E10613] hover:underline">
+              equipment quotes
+            </Link>
+            ,{' '}
+            <Link href="/products/industrial-conveyors-spares/forged-trunnion-rollers/" className="font-semibold text-[#E10613] hover:underline">
+              replacement spares
+            </Link>
+            , or directions to visit our{' '}
+            <Link href="/manufacturing/" className="font-semibold text-[#E10613] hover:underline">
+              Zak GIDC plant
+            </Link>
+            , we are here to assist.
           </p>
         </div>
 

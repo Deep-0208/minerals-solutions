@@ -157,7 +157,15 @@ export default function RotaryDrumGranulatorPage() {
     },
     {
       title: 'Forged 42CrMo Riding Tyres & Trunnion Rollers',
-      desc: 'Heavy seamless forged alloy tyres mounted on floating chair pads accommodate thermal shell expansion, supported by spherical roller bearing trunnions with dual mechanical thrust rollers for axial stability.',
+      desc: (
+        <>
+          Heavy seamless forged alloy tyres mounted on floating chair pads accommodate thermal shell expansion, supported by{' '}
+          <Link href="/products/industrial-conveyors-spares/forged-trunnion-rollers/" className="font-semibold text-amber-700 hover:underline">
+            spherical roller bearing trunnions
+          </Link>{' '}
+          with dual mechanical thrust rollers for axial stability.
+        </>
+      ),
       spec: 'Forged 42CrMo Tyres',
       icon: <RotateCw className="h-6 w-6 text-amber-600" />,
     },
@@ -211,11 +219,37 @@ export default function RotaryDrumGranulatorPage() {
       question: 'How are the girth gears and forged trunnion rollers maintained?',
       answer:
         'The forged girth gear and drive pinion run inside a heavy sheet-steel lubrication guard equipped with continuous automatic spray or bath lubrication. Support trunnions feature heavy-duty spherical roller bearings housed in cast steel plummer blocks with grease purge ports. Periodic greasing every 150 operating hours and monitoring tyre-roller contact patterns ensures trouble-free 24/7 continuous operation for over 10 years.',
+      answerNode: (
+        <>
+          The forged girth gear and drive pinion run inside a heavy sheet-steel lubrication guard equipped with continuous automatic spray or bath lubrication.{' '}
+          <Link href="/products/industrial-conveyors-spares/forged-trunnion-rollers/" className="font-semibold text-amber-700 hover:underline">
+            Support trunnions
+          </Link>{' '}
+          feature heavy-duty spherical roller bearings housed in cast steel plummer blocks with grease purge ports. Periodic greasing every 150 operating hours and monitoring tyre-roller contact patterns ensures trouble-free 24/7 continuous operation for over 10 years.
+        </>
+      ),
     },
     {
       question: 'What downstream equipment is required to complete an NPK granulation plant?',
       answer:
         'A complete turnkey NPK granulation plant requires a 4-stage continuous circuit: 1) Rotary Drum Granulator (MS-RDG series), 2) Heavy Duty Rotary Drum Dryer (to reduce moisture below 2%), 3) Rotary Fertilizer Cooler (to cool granules before coating), 4) Rotary Coating Drum (to apply anti-caking wax and neem oil), integrated with our heavy bucket elevators and screening trommels.',
+      answerNode: (
+        <>
+          A complete turnkey NPK granulation plant requires a 4-stage continuous circuit: 1) Rotary Drum Granulator (MS-RDG series), 2){' '}
+          <Link href="/products/industrial-rotary-dryers/" className="font-semibold text-amber-700 hover:underline">
+            Heavy Duty Rotary Drum Dryer
+          </Link>{' '}
+          (to reduce moisture below 2%), 3) Rotary Fertilizer Cooler (to cool granules before coating), 4){' '}
+          <Link href="/products/fertilizer-granulation-plants/fertilizer-cooling-coating-drum/" className="font-semibold text-amber-700 hover:underline">
+            Rotary Coating Drum
+          </Link>{' '}
+          (to apply anti-caking wax and neem oil), integrated with our heavy{' '}
+          <Link href="/products/industrial-conveyors-spares/bucket-elevators/" className="font-semibold text-amber-700 hover:underline">
+            bucket elevators
+          </Link>{' '}
+          and screening trommels.
+        </>
+      ),
     },
   ];
 
@@ -333,7 +367,7 @@ export default function RotaryDrumGranulatorPage() {
     <>
       <JsonLd data={jsonLd} />
 
-      <main className="min-h-screen bg-white text-slate-900">
+      <div className="min-h-screen bg-white text-slate-900">
         {/* Breadcrumb Navigation Header */}
         <section className="bg-slate-50 border-b border-slate-200 py-3">
           <Container>
@@ -694,7 +728,10 @@ export default function RotaryDrumGranulatorPage() {
                   </div>
                   <h4 className="font-bold text-slate-950 text-base mb-2">Thermal Drum Drying</h4>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Rotary dryer evaporates residual moisture from 10% down to &lt;2% without thermal degradation.
+                    <Link href="/products/industrial-rotary-dryers/triple-pass-dryer/" className="font-semibold text-amber-700 hover:underline">
+                      Rotary dryer
+                    </Link>{' '}
+                    evaporates residual moisture from 10% down to &lt;2% without thermal degradation.
                   </p>
                 </div>
               </div>
@@ -720,7 +757,10 @@ export default function RotaryDrumGranulatorPage() {
                   </div>
                   <h4 className="font-bold text-slate-950 text-base mb-2">Anti-Caking Coating</h4>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Coating drum atomizes anti-caking oil, neem oil, or talc powder onto granules for bag storage.
+                    <Link href="/products/fertilizer-granulation-plants/fertilizer-cooling-coating-drum/" className="font-semibold text-amber-700 hover:underline">
+                      Coating drum
+                    </Link>{' '}
+                    atomizes anti-caking oil, neem oil, or talc powder onto granules for bag storage.
                   </p>
                 </div>
               </div>
@@ -754,12 +794,8 @@ export default function RotaryDrumGranulatorPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Sibling Spoke 1 */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
-                <Link
-                  href="/products/fertilizer-granulation-plants/disc-granulator/"
-                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
-                  aria-label="View Industrial Pan Disc Granulator specifications"
-                >
+              <div className="relative rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
+                <div className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                   <Image
                     src="/images/products/fertilizer-pellet/fertilizer-pan-granulator-unit-md.webp"
                     alt="Pan Disc Fertilizer Granulator"
@@ -767,11 +803,11 @@ export default function RotaryDrumGranulatorPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </Link>
+                </div>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
                     <h3 className="text-base font-bold text-slate-950 group-hover:text-[#DA020D] transition-colors leading-snug">
-                      <Link href="/products/fertilizer-granulation-plants/disc-granulator/" className="hover:underline">
+                      <Link href="/products/fertilizer-granulation-plants/disc-granulator/" className="hover:underline after:absolute after:inset-0">
                         Industrial Pan Disc Granulator
                       </Link>
                     </h3>
@@ -780,24 +816,17 @@ export default function RotaryDrumGranulatorPage() {
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <Link
-                      href="/products/fertilizer-granulation-plants/disc-granulator/"
-                      className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link"
-                    >
+                    <span aria-hidden="true" className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link">
                       <span>View Machine Specifications</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
 
               {/* Sibling Spoke 2 */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
-                <Link
-                  href="/products/fertilizer-granulation-plants/fertilizer-cooling-coating-drum/"
-                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
-                  aria-label="View Fertilizer Coating & Cooling Drum specifications"
-                >
+              <div className="relative rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
+                <div className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                   <Image
                     src="/images/products/rotary-dryers/rotary-drum-dryer-md.webp"
                     alt="Fertilizer Rotary Cooling and Coating Drum"
@@ -805,11 +834,11 @@ export default function RotaryDrumGranulatorPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </Link>
+                </div>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
                     <h3 className="text-base font-bold text-slate-950 group-hover:text-[#DA020D] transition-colors leading-snug">
-                      <Link href="/products/fertilizer-granulation-plants/fertilizer-cooling-coating-drum/" className="hover:underline">
+                      <Link href="/products/fertilizer-granulation-plants/fertilizer-cooling-coating-drum/" className="hover:underline after:absolute after:inset-0">
                         Fertilizer Coating & Cooling Drum
                       </Link>
                     </h3>
@@ -818,24 +847,17 @@ export default function RotaryDrumGranulatorPage() {
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <Link
-                      href="/products/fertilizer-granulation-plants/fertilizer-cooling-coating-drum/"
-                      className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link"
-                    >
+                    <span aria-hidden="true" className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link">
                       <span>View Machine Specifications</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
 
               {/* Cross-Pillar Machine */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
-                <Link
-                  href="/products/industrial-rotary-dryers/triple-pass-dryer/"
-                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
-                  aria-label="View Triple Pass Rotary Drum Dryer Line specifications"
-                >
+              <div className="relative rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
+                <div className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                   <Image
                     src="/images/products/rotary-dryers/continuous-type-rotary-dryer-md.webp"
                     alt="Triple Pass Concentric Rotary Drum Dryer"
@@ -843,11 +865,11 @@ export default function RotaryDrumGranulatorPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </Link>
+                </div>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
                     <h3 className="text-base font-bold text-slate-950 group-hover:text-[#DA020D] transition-colors leading-snug">
-                      <Link href="/products/industrial-rotary-dryers/triple-pass-dryer/" className="hover:underline">
+                      <Link href="/products/industrial-rotary-dryers/triple-pass-dryer/" className="hover:underline after:absolute after:inset-0">
                         Triple Pass Rotary Drum Dryer Line
                       </Link>
                     </h3>
@@ -856,13 +878,10 @@ export default function RotaryDrumGranulatorPage() {
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <Link
-                      href="/products/industrial-rotary-dryers/triple-pass-dryer/"
-                      className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link"
-                    >
+                    <span aria-hidden="true" className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link">
                       <span>Explore Complementary Machine</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -892,7 +911,7 @@ export default function RotaryDrumGranulatorPage() {
                     <HelpCircle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
                     <span>{faq.question}</span>
                   </h3>
-                  <p className="mt-3 text-sm text-slate-600 leading-relaxed pl-8">{faq.answer}</p>
+                  <p className="mt-3 text-sm text-slate-600 leading-relaxed pl-8">{('answerNode' in faq && faq.answerNode) ? faq.answerNode : faq.answer}</p>
                 </div>
               ))}
             </div>
@@ -913,7 +932,11 @@ export default function RotaryDrumGranulatorPage() {
                   Order Your High-Tonnage Rotary Drum Granulator from the Manufacturer
                 </h2>
                 <p className="mt-4 text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl">
-                  Inspect heavy steel plate rolling, submerged arc welding, and girth gear machining in progress at our
+                  Inspect{' '}
+                  <Link href="/manufacturing/" className="font-semibold text-white underline hover:text-amber-300">
+                    heavy steel plate rolling, submerged arc welding, and girth gear machining
+                  </Link>{' '}
+                  in progress at our
                   Dahegam workshop. Direct factory procurement, guaranteed performance, and comprehensive site commissioning.
                 </p>
 
@@ -948,7 +971,7 @@ export default function RotaryDrumGranulatorPage() {
             </div>
           </Container>
         </section>
-      </main>
+      </div>
     </>
   );
 }

@@ -69,6 +69,7 @@ export default function HomePage() {
     {
       id: 'rotary-dryers',
       title: 'Industrial Rotary Dryers & Thermal Systems',
+      exploreLabel: 'Explore Rotary Dryers',
       description:
         'Single-pass, double-pass concentric drum, and triple-pass dryers engineered for silica sand, minerals, sawdust, and chemicals with custom hot air furnaces.',
       capacity: '500 kg/hr - 50 TPH',
@@ -81,6 +82,7 @@ export default function HomePage() {
     {
       id: 'fertilizer-plants',
       title: 'Fertilizer Granulation & Pellet Plants',
+      exploreLabel: 'Explore Granulation Plants',
       description:
         'Turnkey organic compost and chemical NPK fertilizer pelletizing systems featuring heavy pan granulators with 35°-55° stepless angle adjustment.',
       capacity: '1 - 20 TPH',
@@ -93,6 +95,7 @@ export default function HomePage() {
     {
       id: 'sand-washing',
       title: 'Sand Washing & Mineral Recovery Plants',
+      exploreLabel: 'Explore Sand Washing Plants',
       description:
         'Bucket wheel sand washing units, hydrocyclone deslimers, and spiral screw classifiers recovering fines down to 75 microns (200 mesh) with low moisture discharge.',
       capacity: '30 - 200 TPH',
@@ -105,6 +108,7 @@ export default function HomePage() {
     {
       id: 'conveyors-spares',
       title: 'Industrial Conveyors & Heavy Mechanical Spares',
+      exploreLabel: 'Explore Conveyors & Spares',
       description:
         'Heavy-duty trough belt conveyor assemblies (400 mm to 1600 mm width), motorized pulleys with vulcanized diamond lagging, forged trunnions, and girth gears.',
       capacity: '400 - 1600 mm Width',
@@ -182,14 +186,14 @@ export default function HomePage() {
 
   // 8 Industries Served
   const industries = [
-    { name: 'Silica Sand & Foundry', desc: 'Drying and classification of high-purity glass and casting sands.' },
-    { name: 'Fertilizer & Bio-Compost', desc: 'NPK compounding and organic manure pelletizing granulation.' },
-    { name: 'Chemicals & Industrial Salts', desc: 'Continuous moisture removal for boric acid, soda ash, and salts.' },
-    { name: 'Biomass & Wood Pelletizing', desc: 'Thermal drying of sawdust and agro-waste for biofuel production.' },
-    { name: 'River Sand & Aggregate Washing', desc: 'Desliming and fine sand recovery for construction aggregate.' },
-    { name: 'Fly Ash & Slag Processing', desc: 'Rotary drying and handling of thermal power and steel mill byproducts.' },
-    { name: 'Mineral Beneficiation & Clays', desc: 'Calcining, drying, and washing of bentonite, quartz, and bauxite.' },
-    { name: 'Bulk Material Handling', desc: 'Heavy overland conveyors and truck loading systems for mines and ports.' },
+    { name: 'Silica Sand & Foundry', desc: 'Drying and classification of high-purity glass and casting sands.', href: '/products/industrial-rotary-dryers/sand-dryer/' },
+    { name: 'Fertilizer & Bio-Compost', desc: 'NPK compounding and organic manure pelletizing granulation.', href: '/products/fertilizer-granulation-plants/' },
+    { name: 'Chemicals & Industrial Salts', desc: 'Continuous moisture removal for boric acid, soda ash, and salts.', href: '/products/industrial-rotary-dryers/chemical-powder-dryer/' },
+    { name: 'Biomass & Wood Pelletizing', desc: 'Thermal drying of sawdust and agro-waste for biofuel production.', href: '/products/industrial-rotary-dryers/biomass-sawdust-dryer/' },
+    { name: 'River Sand & Aggregate Washing', desc: 'Desliming and fine sand recovery for construction aggregate.', href: '/products/sand-washing-plants/' },
+    { name: 'Fly Ash & Slag Processing', desc: 'Rotary drying and handling of thermal power and steel mill byproducts.', href: '/products/industrial-rotary-dryers/triple-pass-dryer/' },
+    { name: 'Mineral Beneficiation & Clays', desc: 'Calcining, drying, and washing of bentonite, quartz, and bauxite.', href: '/products/sand-washing-plants/mineral-log-washer/' },
+    { name: 'Bulk Material Handling', desc: 'Heavy overland conveyors and truck loading systems for mines and ports.', href: '/products/industrial-conveyors-spares/belt-conveyors/' },
   ];
 
   // 8 Process Steps
@@ -214,26 +218,90 @@ export default function HomePage() {
       question: 'How does a triple-pass rotary drum dryer reduce fuel consumption by 30% to 40%?',
       answer:
         'A triple-pass rotary dryer utilizes three concentric nested cylinders rotating on a single drive axis. Material passes sequentially through inner, intermediate, and outer drums, allowing thermal energy from the inner core to preheat the outer passes. This concentric heat retention lowers exhaust gas temperatures to 65°C-85°C and cuts fuel requirements by 30% to 40% compared to conventional single-pass drums.',
+      answerNode: (
+        <>
+          A{' '}
+          <Link href="/products/industrial-rotary-dryers/triple-pass-dryer/" className="font-semibold text-[#E10613] hover:underline">
+            triple-pass rotary dryer
+          </Link>{' '}
+          utilizes three concentric nested cylinders rotating on a single drive axis. Material passes
+          sequentially through inner, intermediate, and outer drums, allowing thermal energy from the
+          inner core to preheat the outer passes. This concentric heat retention lowers exhaust gas
+          temperatures to 65°C-85°C and cuts fuel requirements by 30% to 40% compared to conventional
+          single-pass drums.
+        </>
+      ),
     },
     {
       question: 'What fine silt separation cut-point do Minerals Solutions sand washing plants achieve?',
       answer:
         'Minerals Solutions sand washing plants and hydrocyclone separator units achieve a fine silt desliming cut-point down to 75 microns (200 mesh). The circuit separates 98% of deleterious clay while recovering 95% of construction-grade fines (75–150 microns), discharging washed sand with moisture content between 12% and 15% compliant with IS 383 Zone II aggregate standards.',
+      answerNode: (
+        <>
+          Minerals Solutions{' '}
+          <Link href="/products/sand-washing-plants/" className="font-semibold text-[#E10613] hover:underline">
+            sand washing plants
+          </Link>{' '}
+          and{' '}
+          <Link href="/products/sand-washing-plants/hydrocyclone-sand-separator/" className="font-semibold text-[#E10613] hover:underline">
+            hydrocyclone separator units
+          </Link>{' '}
+          achieve a fine silt desliming cut-point down to 75 microns (200 mesh). The circuit separates
+          98% of deleterious clay while recovering 95% of construction-grade fines (75–150 microns),
+          discharging washed sand with moisture content between 12% and 15% compliant with IS 383 Zone II
+          aggregate standards.
+        </>
+      ),
     },
     {
       question: 'Where is Minerals Solutions located and can clients inspect machinery under fabrication?',
       answer:
         'Minerals Solutions is located at Plot No. 10, Shyam Estate, Zak GIDC Industrial Zone, Zak-Vahelal Road, Dahegam, Gandhinagar - 382330, Gujarat, India (Coordinates: 23.1672° N, 72.8125° E). Clients and engineering consultants are welcome to visit our heavy workshop for in-person inspection of plate rolling, submerged arc welding, and trial run balancing.',
+      answerNode: (
+        <>
+          Minerals Solutions is located at Plot No. 10, Shyam Estate, Zak GIDC Industrial Zone,
+          Zak-Vahelal Road, Dahegam, Gandhinagar - 382330, Gujarat, India (Coordinates: 23.1672° N,
+          72.8125° E). Clients and engineering consultants are welcome to visit our{' '}
+          <Link href="/manufacturing/" className="font-semibold text-[#E10613] hover:underline">
+            heavy workshop for in-person inspection
+          </Link>{' '}
+          of plate rolling, submerged arc welding, and trial run balancing.
+        </>
+      ),
     },
     {
       question: 'What metallurgy and structural standards are used in Minerals Solutions drying drums?',
       answer:
         'Minerals Solutions rotary shells are fabricated from certified IS 2062 Grade B structural carbon steel plates (12 mm to 25 mm thickness) or optional SS 304/316 for corrosive chemical duty. Trunnion riding tyres are forged from alloy steel EN-8/EN-9 or 42CrMo4, ultrasonic tested to ASTM A388 Level II and induction hardened to 280-320 BHN.',
+      answerNode: (
+        <>
+          Minerals Solutions rotary shells are fabricated from certified IS 2062 Grade B structural
+          carbon steel plates (12 mm to 25 mm thickness) or optional SS 304/316 for corrosive chemical
+          duty.{' '}
+          <Link href="/products/industrial-conveyors-spares/forged-trunnion-rollers/" className="font-semibold text-[#E10613] hover:underline">
+            Trunnion riding tyres
+          </Link>{' '}
+          are forged from alloy steel EN-8/EN-9 or 42CrMo4, ultrasonic tested to ASTM A388 Level II and
+          induction hardened to 280-320 BHN.
+        </>
+      ),
     },
     {
       question: 'What is the production capacity and granule sphericity of your fertilizer pan granulators?',
       answer:
         'Minerals Solutions disc pan granulators operate across capacities from 1 TPH to 8 TPH per disc (and up to 20 TPH in multi-pan turnkey plants). Featuring stepless inclination adjustment from 40° to 55° and tungsten carbide scrapers, our granulators achieve over 92% uniform spherical granule yield between 2.0 mm and 4.5 mm diameter.',
+      answerNode: (
+        <>
+          Minerals Solutions{' '}
+          <Link href="/products/fertilizer-granulation-plants/disc-granulator/" className="font-semibold text-[#E10613] hover:underline">
+            disc pan granulators
+          </Link>{' '}
+          operate across capacities from 1 TPH to 8 TPH per disc (and up to 20 TPH in multi-pan turnkey
+          plants). Featuring stepless inclination adjustment from 40° to 55° and tungsten carbide
+          scrapers, our granulators achieve over 92% uniform spherical granule yield between 2.0 mm and
+          4.5 mm diameter.
+        </>
+      ),
     },
   ];
 
@@ -388,7 +456,7 @@ export default function HomePage() {
                     className="text-xs font-bold text-[#111111] hover:text-[#E10613] inline-flex items-center gap-1.5 transition-colors shrink-0 whitespace-nowrap self-start sm:self-center bg-neutral-50 hover:bg-red-50 border border-neutral-200 hover:border-red-200 px-3 py-1.5 rounded-lg"
                     aria-label="View specifications for Double Pass Concentric Rotary Dryer"
                   >
-                    <span>View Specifications</span>
+                    <span>Rotary Dryer Specifications</span>
                     <ChevronRight className="w-3.5 h-3.5 text-[#E10613]" />
                   </Link>
                 </div>
@@ -484,16 +552,16 @@ export default function HomePage() {
                           href={item.href}
                           className="font-bold text-sm text-[#E10613] hover:underline inline-flex items-center gap-1"
                         >
-                          <span>Explore {item.title.split(' ')[0]} Specs</span>
+                          <span>{item.exploreLabel}</span>
                           <ArrowRight className="w-4 h-4" />
                         </Link>
                         <Button
-                          href="/request-quote/"
+                          href={`/request-quote/?product=${item.id}`}
                           variant="ghost"
                           size="sm"
                           aria-label={`Request quotation for ${item.title}`}
                         >
-                          Quote
+                          Request Quote
                         </Button>
                       </div>
                     </div>
@@ -639,7 +707,9 @@ export default function HomePage() {
                 className="p-6 rounded-2xl bg-white border border-[#E7E7EB] hover:shadow-[0_12px_32px_rgba(17,17,17,0.08)] hover:border-red-200 transition-all space-y-2 group"
               >
                 <h3 className="text-base font-bold text-[#111111] group-hover:text-[#E10613] transition-colors">
-                  {ind.name}
+                  <Link href={ind.href} className="hover:underline">
+                    {ind.name}
+                  </Link>
                 </h3>
                 <p className="text-xs text-[#737373] leading-relaxed">
                   {ind.desc}
@@ -650,7 +720,7 @@ export default function HomePage() {
 
           <div className="mt-12 text-center">
             <Button href="/industries/" variant="outline" size="md">
-              Learn More About Sector Applications
+              Explore All 9 Industrial Applications
             </Button>
           </div>
         </Container>
@@ -750,25 +820,12 @@ export default function HomePage() {
               items={homeFaqs.map((faq) => ({
                 question: faq.question,
                 answer: faq.answer,
+                answerNode: faq.answerNode,
                 badge: 'Verified Factory Engineering Specification',
               }))}
               allowMultiple={false}
               defaultOpenIndex={null}
             />
-          </div>
-
-          <div className="mt-12 text-center">
-            <p className="text-xs text-neutral-500">
-              Need comprehensive thermodynamic calculations, drum volume sizing models, or material safety specs?{' '}
-              <a
-                href="/llms-full.txt"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[#E10613] hover:underline font-semibold"
-              >
-                Access our LLM Engineering Dossier (llms-full.txt)
-              </a>
-            </p>
           </div>
         </Container>
       </section>
@@ -786,7 +843,7 @@ export default function HomePage() {
             </h2>
 
             <p className="text-base sm:text-lg text-neutral-300 leading-relaxed max-w-xl mx-auto">
-              Share your material, capacity, and process requirements with our team. We'll help identify
+              Share your material, capacity, and process requirements with our team. We&apos;ll help identify
               a suitable machinery or plant solution.
             </p>
 

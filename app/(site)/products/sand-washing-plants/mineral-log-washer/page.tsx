@@ -184,6 +184,15 @@ export default function MineralLogWasherPage() {
       question: 'Why is a log washer required instead of a rotary trommel or bucket wheel for coarse quartz?',
       answer:
         'Rotary trommels and bucket wheel washers rely on tumbling or gentle mechanical dredging, which is insufficient to break down tough, plastic clay envelopes and cohesive lateritic mud adhering to quartz rocks. A twin-shaft log washer operates like an intense industrial pug mill: two intermeshing contra-rotating shafts with heavy manganese paddles physically grind coarse rocks against one another (rock-on-rock attrition) under continuous hydrodynamic shear, stripping away 98%+ of adherent clay.',
+      answerNode: (
+        <>
+          Rotary trommels and{' '}
+          <Link href="/products/sand-washing-plants/bucket-wheel-sand-washer/" className="font-semibold text-amber-800 hover:underline">
+            bucket wheel washers
+          </Link>{' '}
+          rely on tumbling or gentle mechanical dredging, which is insufficient to break down tough, plastic clay envelopes and cohesive lateritic mud adhering to quartz rocks. A twin-shaft log washer operates like an intense industrial pug mill: two intermeshing contra-rotating shafts with heavy manganese paddles physically grind coarse rocks against one another (rock-on-rock attrition) under continuous hydrodynamic shear, stripping away 98%+ of adherent clay.
+        </>
+      ),
     },
     {
       question: 'What is the maximum feed lump size the MS-LW log washer can handle?',
@@ -209,6 +218,15 @@ export default function MineralLogWasherPage() {
       question: 'What downstream equipment is typically paired with the mineral log washer?',
       answer:
         'After scrubbing in the log washer, clean rocks discharge onto a double-deck rinsing screen to wash away residual surface films. The dirty overflow slurry from the log washer lower weir is directed into our Hydrocyclone Fine Sand Recovery Unit (MS-FSR series) to recover valuable +75 micron fine sand, while clean, de-slimed quartz lumps proceed to secondary cone crushers or optical color sorters.',
+      answerNode: (
+        <>
+          After scrubbing in the log washer, clean rocks discharge onto a double-deck rinsing screen to wash away residual surface films. The dirty overflow slurry from the log washer lower weir is directed into our{' '}
+          <Link href="/products/sand-washing-plants/hydrocyclone-sand-separator/" className="font-semibold text-amber-800 hover:underline">
+            Hydrocyclone Fine Sand Recovery Unit (MS-FSR series)
+          </Link>{' '}
+          to recover valuable +75 micron fine sand, while clean, de-slimed quartz lumps proceed to secondary cone crushers or optical color sorters.
+        </>
+      ),
     },
   ];
 
@@ -326,7 +344,7 @@ export default function MineralLogWasherPage() {
     <>
       <JsonLd data={jsonLd} />
 
-      <main className="min-h-screen bg-white text-slate-900">
+      <div className="min-h-screen bg-white text-slate-900">
         {/* Breadcrumb Navigation Header */}
         <section className="bg-slate-50 border-b border-slate-200 py-3">
           <Container>
@@ -732,12 +750,8 @@ export default function MineralLogWasherPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Sibling Spoke 1 */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
-                <Link
-                  href="/products/sand-washing-plants/silica-sand-washing-plant/"
-                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
-                  aria-label="View Silica Sand Washing Plant System specifications"
-                >
+              <div className="relative rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
+                <div className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                   <Image
                     src="/images/products/mineral-processing/river-sand-washing-plant-md.webp"
                     alt="Silica Sand Washing Plant Circuit"
@@ -745,11 +759,11 @@ export default function MineralLogWasherPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </Link>
+                </div>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
                     <h3 className="text-base font-bold text-slate-950 group-hover:text-[#DA020D] transition-colors leading-snug">
-                      <Link href="/products/sand-washing-plants/silica-sand-washing-plant/" className="hover:underline">
+                      <Link href="/products/sand-washing-plants/silica-sand-washing-plant/" className="hover:underline after:absolute after:inset-0">
                         Silica Sand Washing Plant System
                       </Link>
                     </h3>
@@ -758,24 +772,17 @@ export default function MineralLogWasherPage() {
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <Link
-                      href="/products/sand-washing-plants/silica-sand-washing-plant/"
-                      className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link"
-                    >
+                    <span aria-hidden="true" className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link">
                       <span>View Machine Specifications</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
 
               {/* Sibling Spoke 2 */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
-                <Link
-                  href="/products/sand-washing-plants/bucket-wheel-sand-washer/"
-                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
-                  aria-label="View Bucket Wheel Sand Washer System specifications"
-                >
+              <div className="relative rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
+                <div className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                   <Image
                     src="/images/products/mineral-processing/river-sand-washing-plant-variant-md.webp"
                     alt="Bucket Wheel Sand Washer"
@@ -783,11 +790,11 @@ export default function MineralLogWasherPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </Link>
+                </div>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
                     <h3 className="text-base font-bold text-slate-950 group-hover:text-[#DA020D] transition-colors leading-snug">
-                      <Link href="/products/sand-washing-plants/bucket-wheel-sand-washer/" className="hover:underline">
+                      <Link href="/products/sand-washing-plants/bucket-wheel-sand-washer/" className="hover:underline after:absolute after:inset-0">
                         Bucket Wheel Sand Washer System
                       </Link>
                     </h3>
@@ -796,24 +803,17 @@ export default function MineralLogWasherPage() {
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <Link
-                      href="/products/sand-washing-plants/bucket-wheel-sand-washer/"
-                      className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link"
-                    >
+                    <span aria-hidden="true" className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link">
                       <span>View Machine Specifications</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
 
               {/* Cross-Pillar Machine */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
-                <Link
-                  href="/products/industrial-rotary-dryers/sand-dryer/"
-                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
-                  aria-label="View Industrial Rotary Sand Dryer Unit specifications"
-                >
+              <div className="relative rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
+                <div className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                   <Image
                     src="/images/products/rotary-dryers/silica-sand-rotary-dryer-md.webp"
                     alt="Industrial Rotary Sand Dryer Drum"
@@ -821,11 +821,11 @@ export default function MineralLogWasherPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </Link>
+                </div>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
                     <h3 className="text-base font-bold text-slate-950 group-hover:text-[#DA020D] transition-colors leading-snug">
-                      <Link href="/products/industrial-rotary-dryers/sand-dryer/" className="hover:underline">
+                      <Link href="/products/industrial-rotary-dryers/sand-dryer/" className="hover:underline after:absolute after:inset-0">
                         Industrial Rotary Sand Dryer Unit
                       </Link>
                     </h3>
@@ -834,13 +834,10 @@ export default function MineralLogWasherPage() {
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <Link
-                      href="/products/industrial-rotary-dryers/sand-dryer/"
-                      className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link"
-                    >
+                    <span aria-hidden="true" className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link">
                       <span>Explore Complementary Machine</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -871,7 +868,7 @@ export default function MineralLogWasherPage() {
                     <HelpCircle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
                     <span>{faq.question}</span>
                   </h3>
-                  <p className="mt-3 text-sm text-slate-600 leading-relaxed pl-8">{faq.answer}</p>
+                  <p className="mt-3 text-sm text-slate-600 leading-relaxed pl-8">{('answerNode' in faq && faq.answerNode) ? faq.answerNode : faq.answer}</p>
                 </div>
               ))}
             </div>
@@ -892,7 +889,11 @@ export default function MineralLogWasherPage() {
                   Order Your Heavy Duty Mineral Log Washer Directly from the Manufacturer
                 </h2>
                 <p className="mt-4 text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl">
-                  Inspect raw steel test certificates and witness trial assembly at our Dahegam heavy fabrication workshop.
+                  Inspect raw steel test certificates and witness trial assembly at{' '}
+                  <Link href="/manufacturing/" className="font-semibold text-white underline hover:text-amber-300">
+                    our Dahegam heavy fabrication workshop
+                  </Link>
+                  .
                   Get direct OEM pricing, full site erection support, and guaranteed spare parts availability.
                 </p>
 
@@ -927,7 +928,7 @@ export default function MineralLogWasherPage() {
             </div>
           </Container>
         </section>
-      </main>
+      </div>
     </>
   );
 }

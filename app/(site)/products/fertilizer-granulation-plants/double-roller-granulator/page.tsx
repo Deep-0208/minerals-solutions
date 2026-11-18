@@ -234,11 +234,29 @@ export default function DoubleRollerGranulatorPage() {
       question: 'How does the closed-loop crushing and screening circuit work?',
       answer:
         'The compacted sheets or briquettes discharging from the roller press enter an integrated flaker breaker that gently shatters the cake along natural cleavage lines. The product falls into a twin-deck rotary sifter or vibrating screen: on-spec granules (2 mm to 4.5 mm) discharge to the finished product packaging line, oversize lumps are returned to the breaker, and undersize fines are elevated back to the feed hopper via a bucket elevator, achieving a 100% closed-circuit yield with zero material waste.',
+      answerNode: (
+        <>
+          The compacted sheets or briquettes discharging from the roller press enter an integrated flaker breaker that gently shatters the cake along natural cleavage lines. The product falls into a twin-deck rotary sifter or vibrating screen: on-spec granules (2 mm to 4.5 mm) discharge to the finished product packaging line, oversize lumps are returned to the breaker, and undersize fines are elevated back to the feed hopper via a{' '}
+          <Link href="/products/industrial-conveyors-spares/bucket-elevators/" className="font-semibold text-emerald-700 hover:underline">
+            bucket elevator
+          </Link>
+          , achieving a 100% closed-circuit yield with zero material waste.
+        </>
+      ),
     },
     {
       question: 'What is the price range and delivery timeline from your Dahegam workshop?',
       answer:
         'Standard standalone MS-DRG-1000 roller presses start at ₹ 6,80,000, while complete 2 to 3 TPH turnkey closed-loop granulation lines (including pre-feeder, hydraulic roller press, flaker breaker, rotary screen, and return elevator) range from ₹ 14,50,000 to ₹ 22,00,000. All machines are fabricated in our Zak GIDC, Dahegam facility with delivery in 14 to 21 business days.',
+      answerNode: (
+        <>
+          Standard standalone MS-DRG-1000 roller presses start at ₹ 6,80,000, while complete 2 to 3 TPH turnkey closed-loop granulation lines (including pre-feeder, hydraulic roller press, flaker breaker, rotary screen, and return elevator) range from ₹ 14,50,000 to ₹ 22,00,000. All machines are fabricated in{' '}
+          <Link href="/manufacturing/" className="font-semibold text-emerald-700 hover:underline">
+            our Zak GIDC, Dahegam facility
+          </Link>{' '}
+          with delivery in 14 to 21 business days.
+        </>
+      ),
     },
   ];
 
@@ -356,7 +374,7 @@ export default function DoubleRollerGranulatorPage() {
     <>
       <JsonLd data={jsonLd} />
 
-      <main className="min-h-screen bg-white text-slate-900">
+      <div className="min-h-screen bg-white text-slate-900">
         {/* Breadcrumb Navigation Header */}
         <section className="bg-slate-50 border-b border-slate-200 py-3">
           <Container>
@@ -482,8 +500,20 @@ export default function DoubleRollerGranulatorPage() {
                 Room-Temperature Extrusion: Eliminating Thermal Drying Costs
               </h2>
               <p className="mt-4 text-slate-700 leading-relaxed">
-                In wet drum or pan granulation, evaporating water from wet granules consumes hundreds of kilograms of coal or
-                furnace oil per ton. Double roller dry compaction operates completely without boilers, rotary dryers, or cooling
+                In{' '}
+                <Link href="/products/fertilizer-granulation-plants/rotary-drum-granulator/" className="font-semibold text-emerald-700 hover:underline">
+                  wet drum
+                </Link>{' '}
+                or{' '}
+                <Link href="/products/fertilizer-granulation-plants/disc-granulator/" className="font-semibold text-emerald-700 hover:underline">
+                  pan granulation
+                </Link>
+                , evaporating water from wet granules consumes hundreds of kilograms of coal or
+                furnace oil per ton. Double roller dry compaction operates completely without boilers,{' '}
+                <Link href="/products/industrial-rotary-dryers/" className="font-semibold text-emerald-700 hover:underline">
+                  rotary dryers
+                </Link>
+                , or cooling
                 fans, transforming plant economics.
               </p>
             </div>
@@ -746,7 +776,11 @@ export default function DoubleRollerGranulatorPage() {
                 <span className="text-xs font-bold text-emerald-700 block mb-1">STAGE 05</span>
                 <h4 className="font-bold text-slate-950 text-base mb-2">Elevator Recycle</h4>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Undersize fines travel via bucket elevator back to the feed hopper with 0% waste.
+                  Undersize fines travel via{' '}
+                  <Link href="/products/industrial-conveyors-spares/bucket-elevators/" className="font-semibold text-emerald-700 hover:underline">
+                    bucket elevator
+                  </Link>{' '}
+                  back to the feed hopper with 0% waste.
                 </p>
               </div>
             </div>
@@ -779,12 +813,8 @@ export default function DoubleRollerGranulatorPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Sibling Spoke 1 */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
-                <Link
-                  href="/products/fertilizer-granulation-plants/disc-granulator/"
-                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
-                  aria-label="View Industrial Pan Disc Granulator specifications"
-                >
+              <div className="relative rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
+                <div className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                   <Image
                     src="/images/products/fertilizer-pellet/fertilizer-pan-granulator-unit-md.webp"
                     alt="Pan Disc Fertilizer Granulator"
@@ -792,11 +822,11 @@ export default function DoubleRollerGranulatorPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </Link>
+                </div>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
                     <h3 className="text-base font-bold text-slate-950 group-hover:text-[#DA020D] transition-colors leading-snug">
-                      <Link href="/products/fertilizer-granulation-plants/disc-granulator/" className="hover:underline">
+                      <Link href="/products/fertilizer-granulation-plants/disc-granulator/" className="hover:underline after:absolute after:inset-0">
                         Industrial Pan Disc Granulator
                       </Link>
                     </h3>
@@ -805,24 +835,17 @@ export default function DoubleRollerGranulatorPage() {
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <Link
-                      href="/products/fertilizer-granulation-plants/disc-granulator/"
-                      className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link"
-                    >
+                    <span aria-hidden="true" className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link">
                       <span>View Machine Specifications</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
 
               {/* Sibling Spoke 2 */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
-                <Link
-                  href="/products/fertilizer-granulation-plants/rotary-drum-granulator/"
-                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
-                  aria-label="View Rotary Drum Granulator Machines specifications"
-                >
+              <div className="relative rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
+                <div className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                   <Image
                     src="/images/products/fertilizer-pellet/fertilizer-granulation-plant-variant-md.webp"
                     alt="Rotary Drum Fertilizer Granulator"
@@ -830,11 +853,11 @@ export default function DoubleRollerGranulatorPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </Link>
+                </div>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
                     <h3 className="text-base font-bold text-slate-950 group-hover:text-[#DA020D] transition-colors leading-snug">
-                      <Link href="/products/fertilizer-granulation-plants/rotary-drum-granulator/" className="hover:underline">
+                      <Link href="/products/fertilizer-granulation-plants/rotary-drum-granulator/" className="hover:underline after:absolute after:inset-0">
                         Rotary Drum Granulator Machines
                       </Link>
                     </h3>
@@ -843,24 +866,17 @@ export default function DoubleRollerGranulatorPage() {
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <Link
-                      href="/products/fertilizer-granulation-plants/rotary-drum-granulator/"
-                      className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link"
-                    >
+                    <span aria-hidden="true" className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link">
                       <span>View Machine Specifications</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
 
               {/* Cross-Pillar Machine */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
-                <Link
-                  href="/products/industrial-conveyors-spares/bucket-elevators/"
-                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
-                  aria-label="View Industrial Bucket Elevator Systems specifications"
-                >
+              <div className="relative rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
+                <div className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                   <Image
                     src="/images/products/conveyor-systems/conveyor-tail-drum-pulley-md.webp"
                     alt="Industrial Bucket Elevator System"
@@ -868,11 +884,11 @@ export default function DoubleRollerGranulatorPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </Link>
+                </div>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
                     <h3 className="text-base font-bold text-slate-950 group-hover:text-[#DA020D] transition-colors leading-snug">
-                      <Link href="/products/industrial-conveyors-spares/bucket-elevators/" className="hover:underline">
+                      <Link href="/products/industrial-conveyors-spares/bucket-elevators/" className="hover:underline after:absolute after:inset-0">
                         Industrial Bucket Elevator Systems
                       </Link>
                     </h3>
@@ -881,13 +897,10 @@ export default function DoubleRollerGranulatorPage() {
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <Link
-                      href="/products/industrial-conveyors-spares/bucket-elevators/"
-                      className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link"
-                    >
+                    <span aria-hidden="true" className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link">
                       <span>Explore Complementary Machine</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -918,7 +931,7 @@ export default function DoubleRollerGranulatorPage() {
                     <HelpCircle className="h-5 w-5 text-emerald-600 shrink-0 mt-0.5" />
                     <span>{faq.question}</span>
                   </h3>
-                  <p className="mt-3 text-sm text-slate-600 leading-relaxed pl-8">{faq.answer}</p>
+                  <p className="mt-3 text-sm text-slate-600 leading-relaxed pl-8">{('answerNode' in faq && faq.answerNode) ? faq.answerNode : faq.answer}</p>
                 </div>
               ))}
             </div>
@@ -974,7 +987,7 @@ export default function DoubleRollerGranulatorPage() {
             </div>
           </Container>
         </section>
-      </main>
+      </div>
     </>
   );
 }

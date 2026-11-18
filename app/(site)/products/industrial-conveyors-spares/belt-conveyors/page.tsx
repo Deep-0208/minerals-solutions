@@ -253,7 +253,7 @@ export default function BeltConveyorPage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqSchema} />
 
-      <main className="min-h-screen bg-white text-slate-900">
+      <div className="min-h-screen bg-white text-slate-900">
         {/* Breadcrumb Navigation Bar */}
         <div className="border-b border-slate-200 bg-slate-50/80">
           <Container>
@@ -359,7 +359,7 @@ export default function BeltConveyorPage() {
                     Request Sizing Quote &amp; GA Drawing
                   </Button>
                   <Button
-                    href="tel:+919227004455"
+                    href={`tel:${company.telephones[0].replace(/\s+/g, '')}`}
                     variant="outline"
                     size="lg"
                     external
@@ -529,7 +529,11 @@ export default function BeltConveyorPage() {
                 </div>
 
                 <p className="text-slate-600 text-sm leading-relaxed">
-                  The universal workhorse standard across Indian stone crushing and sand washing plants.
+                  The universal workhorse standard across Indian stone crushing and{' '}
+                  <Link href="/products/sand-washing-plants/" className="font-semibold text-[#E10613] hover:underline">
+                    sand washing plants
+                  </Link>
+                  .
                   Offers an optimal balance between volumetric payload and belt flex fatigue, preventing
                   center-line belt creasing while conveying sand, gravel, and coal.
                 </p>
@@ -579,7 +583,11 @@ export default function BeltConveyorPage() {
               </h2>
               <p className="text-slate-700 text-base mt-4 leading-relaxed">
                 Standard technical specifications for Minerals Solutions industrial troughed belt conveyors
-                fabricated at our Zak GIDC, Dahegam facility. Available in channel stringer or lattice truss frames:
+                fabricated at{' '}
+                <Link href="/manufacturing/" className="font-semibold text-[#E10613] hover:underline">
+                  our Zak GIDC, Dahegam facility
+                </Link>
+                . Available in channel stringer or lattice truss frames:
               </p>
             </div>
 
@@ -690,7 +698,11 @@ export default function BeltConveyorPage() {
                       <p className="text-slate-600 text-xs sm:text-sm mt-0.5">
                         Specialized EPDM / butyl rubber compounds engineered to convey hot materials up to 150°C
                         continuous (HR) or 180°C peak (SHR), eliminating belt hardening, surface cracking, and
-                        carcass delamination downstream of industrial rotary sand dryers.
+                        carcass delamination downstream of{' '}
+                        <Link href="/products/industrial-rotary-dryers/sand-dryer/" className="font-semibold text-[#E10613] hover:underline">
+                          industrial rotary sand dryers
+                        </Link>
+                        .
                       </p>
                     </div>
                   </div>
@@ -975,12 +987,8 @@ export default function BeltConveyorPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Sibling Spoke 1 */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
-                <Link
-                  href="/products/industrial-conveyors-spares/bucket-elevators/"
-                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
-                  aria-label="View Industrial Bucket Elevator Systems specifications"
-                >
+              <div className="relative rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
+                <div className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                   <Image
                     src="/images/products/conveyor-systems/conveyor-tail-drum-pulley-md.webp"
                     alt="Industrial Bucket Elevator System"
@@ -988,11 +996,11 @@ export default function BeltConveyorPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </Link>
+                </div>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
                     <h3 className="text-base font-bold text-slate-950 group-hover:text-[#DA020D] transition-colors leading-snug">
-                      <Link href="/products/industrial-conveyors-spares/bucket-elevators/" className="hover:underline">
+                      <Link href="/products/industrial-conveyors-spares/bucket-elevators/" className="hover:underline after:absolute after:inset-0">
                         Industrial Bucket Elevator Systems
                       </Link>
                     </h3>
@@ -1001,24 +1009,17 @@ export default function BeltConveyorPage() {
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <Link
-                      href="/products/industrial-conveyors-spares/bucket-elevators/"
-                      className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link"
-                    >
+                    <span aria-hidden="true" className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link">
                       <span>View Machine Specifications</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
 
               {/* Sibling Spoke 2 */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
-                <Link
-                  href="/products/industrial-conveyors-spares/screw-conveyors/"
-                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
-                  aria-label="View Industrial Screw Conveyor Systems specifications"
-                >
+              <div className="relative rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
+                <div className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                   <Image
                     src="/images/products/conveyor-systems/belt-conveyor-system-variant-1-md.webp"
                     alt="Industrial Screw Conveyor Feeder"
@@ -1026,11 +1027,11 @@ export default function BeltConveyorPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </Link>
+                </div>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
                     <h3 className="text-base font-bold text-slate-950 group-hover:text-[#DA020D] transition-colors leading-snug">
-                      <Link href="/products/industrial-conveyors-spares/screw-conveyors/" className="hover:underline">
+                      <Link href="/products/industrial-conveyors-spares/screw-conveyors/" className="hover:underline after:absolute after:inset-0">
                         Industrial Screw Conveyor Systems
                       </Link>
                     </h3>
@@ -1039,24 +1040,17 @@ export default function BeltConveyorPage() {
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <Link
-                      href="/products/industrial-conveyors-spares/screw-conveyors/"
-                      className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link"
-                    >
+                    <span aria-hidden="true" className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link">
                       <span>View Machine Specifications</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
 
               {/* Cross-Pillar Machine */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
-                <Link
-                  href="/products/sand-washing-plants/silica-sand-washing-plant/"
-                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
-                  aria-label="View Silica Sand Washing Plant System specifications"
-                >
+              <div className="relative rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
+                <div className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                   <Image
                     src="/images/products/mineral-processing/river-sand-washing-plant-md.webp"
                     alt="Silica Sand Washing Plant Circuit"
@@ -1064,11 +1058,11 @@ export default function BeltConveyorPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </Link>
+                </div>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
                     <h3 className="text-base font-bold text-slate-950 group-hover:text-[#DA020D] transition-colors leading-snug">
-                      <Link href="/products/sand-washing-plants/silica-sand-washing-plant/" className="hover:underline">
+                      <Link href="/products/sand-washing-plants/silica-sand-washing-plant/" className="hover:underline after:absolute after:inset-0">
                         Silica Sand Washing Plant System
                       </Link>
                     </h3>
@@ -1077,13 +1071,10 @@ export default function BeltConveyorPage() {
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <Link
-                      href="/products/sand-washing-plants/silica-sand-washing-plant/"
-                      className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link"
-                    >
+                    <span aria-hidden="true" className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link">
                       <span>Explore Complementary Machine</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -1123,13 +1114,13 @@ export default function BeltConveyorPage() {
                     Get Detailed Proposal &amp; Pricing
                   </Button>
                   <Button
-                    href="tel:+919227004455"
+                    href={`tel:${company.telephones[0].replace(/\s+/g, '')}`}
                     variant="outline"
                     size="lg"
                     external
                     icon={<Phone className="w-5 h-5 text-red-400" />}
                   >
-                    Direct Technical Call: +91 92270 04455
+                    Direct Technical Call: {company.telephones[0]}
                   </Button>
                 </div>
 
@@ -1173,7 +1164,7 @@ export default function BeltConveyorPage() {
             </div>
           </Container>
         </section>
-      </main>
+      </div>
     </>
   );
 }

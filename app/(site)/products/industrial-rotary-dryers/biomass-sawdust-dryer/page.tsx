@@ -200,11 +200,22 @@ export default function BiomassSawdustDryerPage() {
     },
   ];
 
-  const plantSteps = [
+  const plantSteps: Array<{ step: string; title: string; desc: React.ReactNode }> = [
     {
       step: '01',
       title: 'Raw Material Shredding & Infeed',
-      desc: 'Tubular screw feeder or inclined belt conveyor with magnetic cross-belt separator to remove tramp iron before dryer entry.',
+      desc: (
+        <>
+          <Link href="/products/industrial-conveyors-spares/screw-conveyors/" className="font-semibold text-[#DA020D] hover:underline">
+            Tubular screw feeder
+          </Link>{' '}
+          or{' '}
+          <Link href="/products/industrial-conveyors-spares/belt-conveyors/" className="font-semibold text-[#DA020D] hover:underline">
+            inclined belt conveyor
+          </Link>{' '}
+          with magnetic cross-belt separator to remove tramp iron before dryer entry.
+        </>
+      ),
     },
     {
       step: '02',
@@ -248,6 +259,21 @@ export default function BiomassSawdustDryerPage() {
       question: 'What is the indicative price and footprint of the MS-BMD-1500 biomass drying plant?',
       answer:
         'Our popular 1,500 kg/hr biomass rotary drying system begins at approximately ₹ 14,50,000 for the core rotating drum, girth gear drive, trunnion rollers, and discharge hood. Complete turnkey packages including agro-waste furnace, twin cyclones, ID fan, spark arrestor, and screw conveyor feed start at ₹ 24,00,000, requiring a bay length of approximately 14 meters at your plant.',
+      answerNode: (
+        <>
+          Our popular 1,500 kg/hr biomass rotary drying system begins at approximately ₹ 14,50,000 for the
+          core rotating drum, girth gear drive,{' '}
+          <Link href="/products/industrial-conveyors-spares/forged-trunnion-rollers/" className="font-semibold text-[#DA020D] hover:underline">
+            trunnion rollers
+          </Link>
+          , and discharge hood. Complete turnkey packages including agro-waste furnace, twin cyclones, ID
+          fan, spark arrestor, and{' '}
+          <Link href="/products/industrial-conveyors-spares/screw-conveyors/" className="font-semibold text-[#DA020D] hover:underline">
+            screw conveyor feed
+          </Link>{' '}
+          start at ₹ 24,00,000, requiring a bay length of approximately 14 meters at your plant.
+        </>
+      ),
     },
   ];
 
@@ -364,7 +390,7 @@ export default function BiomassSawdustDryerPage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqSchema} />
 
-      <main className="bg-white text-slate-900 min-h-screen">
+      <div className="bg-white text-slate-900 min-h-screen">
         {/* Breadcrumb Navigation */}
         <div className="border-b border-slate-200 bg-slate-50/80">
           <Container>
@@ -539,7 +565,11 @@ export default function BiomassSawdustDryerPage() {
                 Thermal Physics of Fibrous & Low-Density Organic Materials
               </h2>
               <p className="text-slate-600 mt-3 text-base">
-                Why standard mineral sand dryers fail on biomass: managing low bulk density, variable fiber lengths, and hygroscopic bound cellular water.
+                Why standard{' '}
+                <Link href="/products/industrial-rotary-dryers/sand-dryer/" className="font-semibold text-[#DA020D] hover:underline">
+                  mineral sand dryers
+                </Link>{' '}
+                fail on biomass: managing low bulk density, variable fiber lengths, and hygroscopic bound cellular water.
               </p>
             </div>
 
@@ -854,12 +884,8 @@ export default function BiomassSawdustDryerPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Sibling Spoke 1 */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
-                <Link
-                  href="/products/industrial-rotary-dryers/triple-pass-dryer/"
-                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
-                  aria-label="View Triple Pass Rotary Drum Dryer Line specifications"
-                >
+              <div className="relative rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
+                <div className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                   <Image
                     src="/images/products/rotary-dryers/continuous-type-rotary-dryer-md.webp"
                     alt="Triple Pass Concentric Rotary Drum Dryer"
@@ -867,14 +893,14 @@ export default function BiomassSawdustDryerPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </Link>
+                </div>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
                     <span className="inline-block text-[11px] font-mono font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded mb-2 border border-emerald-100">
                       Sibling Dryer Line
                     </span>
                     <h3 className="text-base font-bold text-slate-950 group-hover:text-[#E10613] transition-colors leading-snug">
-                      <Link href="/products/industrial-rotary-dryers/triple-pass-dryer/" className="hover:underline">
+                      <Link href="/products/industrial-rotary-dryers/triple-pass-dryer/" className="hover:underline after:absolute after:inset-0">
                         Triple Pass Rotary Drum Dryer Line
                       </Link>
                     </h3>
@@ -883,24 +909,17 @@ export default function BiomassSawdustDryerPage() {
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <Link
-                      href="/products/industrial-rotary-dryers/triple-pass-dryer/"
-                      className="font-bold text-[#E10613] hover:text-[#BC0711] text-xs inline-flex items-center gap-1 group/link"
-                    >
+                    <span aria-hidden="true" className="font-bold text-[#E10613] hover:text-[#BC0711] text-xs inline-flex items-center gap-1 group/link">
                       <span>View Machine Specifications</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
 
               {/* Sibling Spoke 2 */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#E10613]/40 transition-all flex flex-col justify-between group">
-                <Link
-                  href="/products/industrial-rotary-dryers/sand-dryer/"
-                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
-                  aria-label="View Industrial Rotary Sand Dryer Unit specifications"
-                >
+              <div className="relative rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#E10613]/40 transition-all flex flex-col justify-between group">
+                <div className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                   <Image
                     src="/images/products/rotary-dryers/silica-sand-rotary-dryer-md.webp"
                     alt="Industrial Rotary Sand Dryer Drum"
@@ -908,14 +927,14 @@ export default function BiomassSawdustDryerPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </Link>
+                </div>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
                     <span className="inline-block text-[11px] font-mono font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded mb-2 border border-blue-100">
                       Sibling Dryer Line
                     </span>
                     <h3 className="text-base font-bold text-slate-950 group-hover:text-[#E10613] transition-colors leading-snug">
-                      <Link href="/products/industrial-rotary-dryers/sand-dryer/" className="hover:underline">
+                      <Link href="/products/industrial-rotary-dryers/sand-dryer/" className="hover:underline after:absolute after:inset-0">
                         Industrial Rotary Sand Dryer Unit
                       </Link>
                     </h3>
@@ -924,24 +943,17 @@ export default function BiomassSawdustDryerPage() {
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <Link
-                      href="/products/industrial-rotary-dryers/sand-dryer/"
-                      className="font-bold text-[#E10613] hover:text-[#BC0711] text-xs inline-flex items-center gap-1 group/link"
-                    >
+                    <span aria-hidden="true" className="font-bold text-[#E10613] hover:text-[#BC0711] text-xs inline-flex items-center gap-1 group/link">
                       <span>View Machine Specifications</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
 
               {/* Cross-Pillar Machine */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#E10613]/40 transition-all flex flex-col justify-between group">
-                <Link
-                  href="/products/fertilizer-granulation-plants/disc-granulator/"
-                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
-                  aria-label="View Industrial Pan Disc Granulator specifications"
-                >
+              <div className="relative rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#E10613]/40 transition-all flex flex-col justify-between group">
+                <div className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                   <Image
                     src="/images/products/fertilizer-pellet/fertilizer-pan-granulator-unit-md.webp"
                     alt="Pan Disc Fertilizer Granulator"
@@ -949,14 +961,14 @@ export default function BiomassSawdustDryerPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </Link>
+                </div>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
                     <span className="inline-block text-[11px] font-mono font-bold text-purple-700 bg-purple-50 px-2 py-0.5 rounded mb-2 border border-purple-100">
                       Complementary Pelletizing Line
                     </span>
                     <h3 className="text-base font-bold text-slate-950 group-hover:text-[#E10613] transition-colors leading-snug">
-                      <Link href="/products/fertilizer-granulation-plants/disc-granulator/" className="hover:underline">
+                      <Link href="/products/fertilizer-granulation-plants/disc-granulator/" className="hover:underline after:absolute after:inset-0">
                         Industrial Pan Disc Granulator
                       </Link>
                     </h3>
@@ -965,13 +977,10 @@ export default function BiomassSawdustDryerPage() {
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <Link
-                      href="/products/fertilizer-granulation-plants/disc-granulator/"
-                      className="font-bold text-[#E10613] hover:text-[#BC0711] text-xs inline-flex items-center gap-1 group/link"
-                    >
+                    <span aria-hidden="true" className="font-bold text-[#E10613] hover:text-[#BC0711] text-xs inline-flex items-center gap-1 group/link">
                       <span>Explore Complementary Machine</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -1055,7 +1064,7 @@ export default function BiomassSawdustDryerPage() {
             </div>
           </Container>
         </section>
-      </main>
+      </div>
     </>
   );
 }

@@ -150,6 +150,15 @@ const faqs = [
   {
     q: 'Why must fertilizer granules be cooled below 40°C before applying anti-caking coatings?',
     a: 'Granules discharging from the rotary drying drum typically exit at 75°C to 85°C. At these elevated temperatures, standard hydrophobic coating agents, such as refined neem oil, paraffin wax emulsions, and fatty amine conditioners, experience severe thermal breakdown and fail to form an intact external lipid film. Furthermore, if hot granules are directly bagged, internal thermal condensation creates microscopic water pockets inside the 50kg poly-woven sacks, dissolving granule contact surfaces and forming hard crystalline bridges that cause severe bag caking within 14 to 30 days of warehouse stacking.',
+    aNode: (
+      <>
+        Granules discharging from the{' '}
+        <Link href="/products/industrial-rotary-dryers/" className="font-semibold text-teal-700 hover:underline">
+          rotary drying drum
+        </Link>{' '}
+        typically exit at 75°C to 85°C. At these elevated temperatures, standard hydrophobic coating agents, such as refined neem oil, paraffin wax emulsions, and fatty amine conditioners, experience severe thermal breakdown and fail to form an intact external lipid film. Furthermore, if hot granules are directly bagged, internal thermal condensation creates microscopic water pockets inside the 50kg poly-woven sacks, dissolving granule contact surfaces and forming hard crystalline bridges that cause severe bag caking within 14 to 30 days of warehouse stacking.
+      </>
+    ),
   },
   {
     q: 'What is the typical consumption rate of neem oil or anti-caking agent in the MS-CCD drum?',
@@ -254,7 +263,7 @@ export default function FertilizerCoolingCoatingDrumPage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqSchema} />
 
-      <main className="min-h-screen bg-white text-slate-900">
+      <div className="min-h-screen bg-white text-slate-900">
         {/* Breadcrumb Navigation Bar */}
         <section className="bg-slate-50 border-b border-slate-200 py-3">
           <Container>
@@ -355,7 +364,7 @@ export default function FertilizerCoolingCoatingDrumPage() {
                     Request Sizing Quote & Drawing
                   </Button>
                   <Button
-                    href="tel:+919227004455"
+                    href={`tel:${company.telephones[0].replace(/\s+/g, '')}`}
                     variant="outline"
                     size="lg"
                     external
@@ -719,8 +728,11 @@ export default function FertilizerCoolingCoatingDrumPage() {
                 <h3 className="text-lg font-bold text-slate-950">Spiral Baffle Polishing &amp; Discharge</h3>
                 <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
                   The final polishing flight zone gently tumbles pellets against one another to buff out
-                  microscopic imperfections and discharge free-flowing granules directly to the packaging
-                  elevator or bagging bin.
+                  microscopic imperfections and discharge free-flowing granules directly to the{' '}
+                  <Link href="/products/industrial-conveyors-spares/bucket-elevators/" className="font-semibold text-teal-700 hover:underline">
+                    packaging elevator
+                  </Link>
+                  or bagging bin.
                 </p>
                 <div className="pt-2 text-xs font-mono text-emerald-400">Granule Roundness: &gt;90%</div>
               </div>
@@ -928,7 +940,11 @@ export default function FertilizerCoolingCoatingDrumPage() {
                 </h2>
                 <p className="text-slate-700 text-base leading-relaxed">
                   Every Minerals Solutions cooling and coating drum is fabricated under strict quality
-                  protocols at our 10, Shyam Estate, Zak GIDC, Dahegam manufacturing facility. From
+                  protocols at our{' '}
+                  <Link href="/manufacturing/" className="font-semibold text-teal-700 hover:underline">
+                    10, Shyam Estate, Zak GIDC, Dahegam manufacturing facility
+                  </Link>
+                  . From
                   ultrasonic weld testing to CNC-machined riding rings, our drums are engineered for 24/7
                   continuous plant operation.
                 </p>
@@ -945,7 +961,11 @@ export default function FertilizerCoolingCoatingDrumPage() {
                   <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
                     <div className="text-teal-700 font-bold text-sm">Plummer Block Rollers</div>
                     <p className="text-slate-600 text-xs leading-relaxed">
-                      Heavy cast steel trunnion rollers mounted on spherical roller bearings with grease
+                      Heavy cast steel{' '}
+                      <Link href="/products/industrial-conveyors-spares/forged-trunnion-rollers/" className="font-semibold text-teal-700 hover:underline">
+                        trunnion rollers mounted on spherical roller bearings
+                      </Link>{' '}
+                      with grease
                       lubrication and bronze thrust collars to absorb longitudinal thrust loads.
                     </p>
                   </div>
@@ -1041,12 +1061,8 @@ export default function FertilizerCoolingCoatingDrumPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Sibling Spoke 1 */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
-                <Link
-                  href="/products/fertilizer-granulation-plants/disc-granulator/"
-                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
-                  aria-label="View Industrial Pan Disc Granulator specifications"
-                >
+              <div className="relative rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
+                <div className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                   <Image
                     src="/images/products/fertilizer-pellet/fertilizer-pan-granulator-unit-md.webp"
                     alt="Pan Disc Fertilizer Granulator"
@@ -1054,11 +1070,11 @@ export default function FertilizerCoolingCoatingDrumPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </Link>
+                </div>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
                     <h3 className="text-base font-bold text-slate-950 group-hover:text-[#DA020D] transition-colors leading-snug">
-                      <Link href="/products/fertilizer-granulation-plants/disc-granulator/" className="hover:underline">
+                      <Link href="/products/fertilizer-granulation-plants/disc-granulator/" className="hover:underline after:absolute after:inset-0">
                         Industrial Pan Disc Granulator
                       </Link>
                     </h3>
@@ -1067,24 +1083,17 @@ export default function FertilizerCoolingCoatingDrumPage() {
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <Link
-                      href="/products/fertilizer-granulation-plants/disc-granulator/"
-                      className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link"
-                    >
+                    <span aria-hidden="true" className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link">
                       <span>View Machine Specifications</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
 
               {/* Sibling Spoke 2 */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
-                <Link
-                  href="/products/fertilizer-granulation-plants/rotary-drum-granulator/"
-                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
-                  aria-label="View Rotary Drum Granulator Machines specifications"
-                >
+              <div className="relative rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
+                <div className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                   <Image
                     src="/images/products/fertilizer-pellet/fertilizer-granulation-plant-variant-md.webp"
                     alt="Rotary Drum Fertilizer Granulator"
@@ -1092,11 +1101,11 @@ export default function FertilizerCoolingCoatingDrumPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </Link>
+                </div>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
                     <h3 className="text-base font-bold text-slate-950 group-hover:text-[#DA020D] transition-colors leading-snug">
-                      <Link href="/products/fertilizer-granulation-plants/rotary-drum-granulator/" className="hover:underline">
+                      <Link href="/products/fertilizer-granulation-plants/rotary-drum-granulator/" className="hover:underline after:absolute after:inset-0">
                         Rotary Drum Granulator Machines
                       </Link>
                     </h3>
@@ -1105,24 +1114,17 @@ export default function FertilizerCoolingCoatingDrumPage() {
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <Link
-                      href="/products/fertilizer-granulation-plants/rotary-drum-granulator/"
-                      className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link"
-                    >
+                    <span aria-hidden="true" className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link">
                       <span>View Machine Specifications</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
 
               {/* Cross-Pillar Machine */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
-                <Link
-                  href="/products/industrial-conveyors-spares/belt-conveyors/"
-                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
-                  aria-label="View Industrial Belt Conveyor Systems specifications"
-                >
+              <div className="relative rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
+                <div className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                   <Image
                     src="/images/products/conveyor-systems/conveyor-belt-system-truss-md.webp"
                     alt="Troughed Belt Conveyor System"
@@ -1130,11 +1132,11 @@ export default function FertilizerCoolingCoatingDrumPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </Link>
+                </div>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
                     <h3 className="text-base font-bold text-slate-950 group-hover:text-[#DA020D] transition-colors leading-snug">
-                      <Link href="/products/industrial-conveyors-spares/belt-conveyors/" className="hover:underline">
+                      <Link href="/products/industrial-conveyors-spares/belt-conveyors/" className="hover:underline after:absolute after:inset-0">
                         Industrial Belt Conveyor Systems
                       </Link>
                     </h3>
@@ -1143,13 +1145,10 @@ export default function FertilizerCoolingCoatingDrumPage() {
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <Link
-                      href="/products/industrial-conveyors-spares/belt-conveyors/"
-                      className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link"
-                    >
+                    <span aria-hidden="true" className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link">
                       <span>Explore Complementary Machine</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -1189,13 +1188,13 @@ export default function FertilizerCoolingCoatingDrumPage() {
                     Get Sizing Proposal &amp; Price Quote
                   </Button>
                   <Button
-                    href="tel:+919227004455"
+                    href={`tel:${company.telephones[0].replace(/\s+/g, '')}`}
                     variant="outline"
                     size="lg"
                     external
                     icon={<Phone className="w-5 h-5 text-teal-400" />}
                   >
-                    Direct Technical Call: +91 92270 04455
+                    Direct Technical Call: {company.telephones[0]}
                   </Button>
                 </div>
 
@@ -1238,14 +1237,14 @@ export default function FertilizerCoolingCoatingDrumPage() {
                     <span>{faq.q}</span>
                   </h3>
                   <p className="text-slate-600 text-sm sm:text-base leading-relaxed pl-7">
-                    {faq.a}
+                    {('aNode' in faq && faq.aNode) ? faq.aNode : faq.a}
                   </p>
                 </div>
               ))}
             </div>
           </Container>
         </section>
-      </main>
+      </div>
     </>
   );
 }

@@ -234,6 +234,17 @@ export default function ChemicalPowderDryerPage() {
       question: 'What surface finish standards are maintained for pharmaceutical intermediates?',
       answer:
         'For pharmaceutical chemical intermediates and cosmetic-grade powders, our Zak GIDC workshops grind and polish all internal welds flush, finishing contact plates to 240-grit mirror finish (Ra < 0.4 µm). This eliminates microscopic crevices where wet powders could stagnate, ferment, or cause microbial cross-contamination between product batches.',
+      answerNode: (
+        <>
+          For pharmaceutical chemical intermediates and cosmetic-grade powders,{' '}
+          <Link href="/manufacturing/" className="font-semibold text-[#DA020D] hover:underline">
+            our Zak GIDC workshops
+          </Link>{' '}
+          grind and polish all internal welds flush, finishing contact plates to 240-grit mirror finish
+          (Ra &lt; 0.4 µm). This eliminates microscopic crevices where wet powders could stagnate,
+          ferment, or cause microbial cross-contamination between product batches.
+        </>
+      ),
     },
     {
       question: 'What is the indicative pricing and manufacturing lead time for MS-CPD systems?',
@@ -355,7 +366,7 @@ export default function ChemicalPowderDryerPage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqSchema} />
 
-      <main className="bg-white text-slate-900 min-h-screen">
+      <div className="bg-white text-slate-900 min-h-screen">
         {/* Breadcrumb Navigation */}
         <div className="border-b border-slate-200 bg-slate-50/80">
           <Container>
@@ -379,7 +390,11 @@ export default function ChemicalPowderDryerPage() {
                 </h1>
 
                 <p className="text-base sm:text-lg text-slate-700 leading-relaxed mb-6 font-normal">
-                  Sanitary industrial rotary drying systems engineered with <strong>AISI 304 / 316 stainless steel</strong> contact barrels, external shell-and-tube heat exchangers, and 99.8% recovery pulse-jet baghouse filters. Designed for contamination-free moisture removal in borax, chemical salts, pharmaceutical intermediates, and fine pigments across Ankleshwar, Dahej, and Vatva corridors.
+                  Sanitary industrial rotary drying systems engineered with <strong>AISI 304 / 316 stainless steel</strong> contact barrels, external shell-and-tube heat exchangers, and 99.8% recovery pulse-jet baghouse filters. Designed for contamination-free moisture removal in{' '}
+                  <Link href="/industries/" className="font-semibold text-[#DA020D] hover:underline">
+                    borax, chemical salts, pharmaceutical intermediates
+                  </Link>
+                  , and fine pigments across Ankleshwar, Dahej, and Vatva corridors.
                 </p>
 
                 {/* Pricing & Commercial Badge */}
@@ -834,12 +849,8 @@ export default function ChemicalPowderDryerPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Sibling Spoke 1 */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
-                <Link
-                  href="/products/industrial-rotary-dryers/triple-pass-dryer/"
-                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
-                  aria-label="View Triple Pass Rotary Drum Dryer Line specifications"
-                >
+              <div className="relative rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
+                <div className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                   <Image
                     src="/images/products/rotary-dryers/continuous-type-rotary-dryer-md.webp"
                     alt="Triple Pass Concentric Rotary Drum Dryer"
@@ -847,14 +858,14 @@ export default function ChemicalPowderDryerPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </Link>
+                </div>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
                     <span className="inline-block text-[11px] font-mono font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded mb-2 border border-emerald-100">
                       Sibling Dryer Line
                     </span>
                     <h3 className="text-base font-bold text-slate-950 group-hover:text-[#E10613] transition-colors leading-snug">
-                      <Link href="/products/industrial-rotary-dryers/triple-pass-dryer/" className="hover:underline">
+                      <Link href="/products/industrial-rotary-dryers/triple-pass-dryer/" className="hover:underline after:absolute after:inset-0">
                         Triple Pass Rotary Drum Dryer Line
                       </Link>
                     </h3>
@@ -863,24 +874,17 @@ export default function ChemicalPowderDryerPage() {
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <Link
-                      href="/products/industrial-rotary-dryers/triple-pass-dryer/"
-                      className="font-bold text-[#E10613] hover:text-[#BC0711] text-xs inline-flex items-center gap-1 group/link"
-                    >
+                    <span aria-hidden="true" className="font-bold text-[#E10613] hover:text-[#BC0711] text-xs inline-flex items-center gap-1 group/link">
                       <span>View Machine Specifications</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
 
               {/* Sibling Spoke 2 */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#E10613]/40 transition-all flex flex-col justify-between group">
-                <Link
-                  href="/products/industrial-rotary-dryers/sand-dryer/"
-                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
-                  aria-label="View Industrial Rotary Sand Dryer Unit specifications"
-                >
+              <div className="relative rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#E10613]/40 transition-all flex flex-col justify-between group">
+                <div className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                   <Image
                     src="/images/products/rotary-dryers/silica-sand-rotary-dryer-md.webp"
                     alt="Industrial Rotary Sand Dryer Drum"
@@ -888,14 +892,14 @@ export default function ChemicalPowderDryerPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </Link>
+                </div>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
                     <span className="inline-block text-[11px] font-mono font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded mb-2 border border-blue-100">
                       Sibling Dryer Line
                     </span>
                     <h3 className="text-base font-bold text-slate-950 group-hover:text-[#E10613] transition-colors leading-snug">
-                      <Link href="/products/industrial-rotary-dryers/sand-dryer/" className="hover:underline">
+                      <Link href="/products/industrial-rotary-dryers/sand-dryer/" className="hover:underline after:absolute after:inset-0">
                         Industrial Rotary Sand Dryer Unit
                       </Link>
                     </h3>
@@ -904,24 +908,17 @@ export default function ChemicalPowderDryerPage() {
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <Link
-                      href="/products/industrial-rotary-dryers/sand-dryer/"
-                      className="font-bold text-[#E10613] hover:text-[#BC0711] text-xs inline-flex items-center gap-1 group/link"
-                    >
+                    <span aria-hidden="true" className="font-bold text-[#E10613] hover:text-[#BC0711] text-xs inline-flex items-center gap-1 group/link">
                       <span>View Machine Specifications</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
 
               {/* Cross-Pillar Machine */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#E10613]/40 transition-all flex flex-col justify-between group">
-                <Link
-                  href="/products/industrial-conveyors-spares/screw-conveyors/"
-                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
-                  aria-label="View Industrial Screw Conveyor Systems specifications"
-                >
+              <div className="relative rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#E10613]/40 transition-all flex flex-col justify-between group">
+                <div className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                   <Image
                     src="/images/products/conveyor-systems/belt-conveyor-system-variant-1-md.webp"
                     alt="Industrial Screw Conveyor Feeder"
@@ -929,14 +926,14 @@ export default function ChemicalPowderDryerPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </Link>
+                </div>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
                     <span className="inline-block text-[11px] font-mono font-bold text-purple-700 bg-purple-50 px-2 py-0.5 rounded mb-2 border border-purple-100">
                       Complementary Material Handling
                     </span>
                     <h3 className="text-base font-bold text-slate-950 group-hover:text-[#E10613] transition-colors leading-snug">
-                      <Link href="/products/industrial-conveyors-spares/screw-conveyors/" className="hover:underline">
+                      <Link href="/products/industrial-conveyors-spares/screw-conveyors/" className="hover:underline after:absolute after:inset-0">
                         Industrial Screw Conveyor Systems
                       </Link>
                     </h3>
@@ -945,13 +942,10 @@ export default function ChemicalPowderDryerPage() {
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <Link
-                      href="/products/industrial-conveyors-spares/screw-conveyors/"
-                      className="font-bold text-[#E10613] hover:text-[#BC0711] text-xs inline-flex items-center gap-1 group/link"
-                    >
+                    <span aria-hidden="true" className="font-bold text-[#E10613] hover:text-[#BC0711] text-xs inline-flex items-center gap-1 group/link">
                       <span>Explore Complementary Machine</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -1035,7 +1029,7 @@ export default function ChemicalPowderDryerPage() {
             </div>
           </Container>
         </section>
-      </main>
+      </div>
     </>
   );
 }

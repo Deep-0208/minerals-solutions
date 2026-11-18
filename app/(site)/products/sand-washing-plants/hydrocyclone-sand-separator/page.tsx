@@ -202,11 +202,33 @@ export default function HydrocycloneFineSandRecoveryPage() {
       question: 'Can the hydrocyclone unit be retrofitted to an existing sand washing plant?',
       answer:
         'Yes. Over 60% of our installations across Gujarat, Rajasthan, and Maharashtra are retrofits to existing bucket wheel washers, spiral classifiers, or log washers. The unit connects directly to the overflow launder of your existing washer; slurry drains into our compact sump tank, where the slurry pump feeds the hydrocyclone cluster mounted overhead above the dewatering screen.',
+      answerNode: (
+        <>
+          Yes. Over 60% of our installations across Gujarat, Rajasthan, and Maharashtra are retrofits to existing{' '}
+          <Link href="/products/sand-washing-plants/bucket-wheel-sand-washer/" className="font-semibold text-cyan-800 hover:underline">
+            bucket wheel washers
+          </Link>
+          , spiral classifiers, or{' '}
+          <Link href="/products/sand-washing-plants/mineral-log-washer/" className="font-semibold text-cyan-800 hover:underline">
+            log washers
+          </Link>
+          . The unit connects directly to the overflow launder of your existing washer; slurry drains into our compact sump tank, where the slurry pump feeds the hydrocyclone cluster mounted overhead above the dewatering screen.
+        </>
+      ),
     },
     {
       question: 'What maintenance is required and what are the primary wear parts?',
       answer:
         'Primary wear parts include the hydrocyclone apex nozzle (spigot), vortex finder, and slurry pump impeller. Because our hydrocyclone components are molded from high-resilience polyurethane (90–95 Shore A), apex spigots typically last 1,200 to 1,800 operating hours. Polyurethane dewatering screen decks routinely operate for 2,500+ hours. All spare parts are manufactured in-house at our Zak GIDC, Dahegam facility for immediate off-the-shelf dispatch.',
+      answerNode: (
+        <>
+          Primary wear parts include the hydrocyclone apex nozzle (spigot), vortex finder, and slurry pump impeller. Because our hydrocyclone components are molded from high-resilience polyurethane (90–95 Shore A), apex spigots typically last 1,200 to 1,800 operating hours. Polyurethane dewatering screen decks routinely operate for 2,500+ hours. All spare parts are manufactured in-house at our{' '}
+          <Link href="/manufacturing/" className="font-semibold text-cyan-800 hover:underline">
+            Zak GIDC, Dahegam facility
+          </Link>{' '}
+          for immediate off-the-shelf dispatch.
+        </>
+      ),
     },
   ];
 
@@ -324,7 +346,7 @@ export default function HydrocycloneFineSandRecoveryPage() {
     <>
       <JsonLd data={jsonLd} />
 
-      <main className="min-h-screen bg-white text-slate-900">
+      <div className="min-h-screen bg-white text-slate-900">
         {/* Breadcrumb Navigation Header */}
         <section className="bg-slate-50 border-b border-slate-200 py-3">
           <Container>
@@ -450,7 +472,15 @@ export default function HydrocycloneFineSandRecoveryPage() {
                 Centrifugal Slurry Separation & 75-Micron Fines Conservation
               </h2>
               <p className="mt-4 text-slate-700 leading-relaxed">
-                Quarries operating bucket wheels or log washers lose massive volumes of valuable fines because fine sand
+                Quarries operating{' '}
+                <Link href="/products/sand-washing-plants/bucket-wheel-sand-washer/" className="font-semibold text-cyan-800 hover:underline">
+                  bucket wheels
+                </Link>{' '}
+                or{' '}
+                <Link href="/products/sand-washing-plants/mineral-log-washer/" className="font-semibold text-cyan-800 hover:underline">
+                  log washers
+                </Link>{' '}
+                lose massive volumes of valuable fines because fine sand
                 particles (&lt;150µm) cannot settle quickly enough against upward water currents in washing tanks.
                 Centrifugal hydrocyclone classification solves this physical limitation.
               </p>
@@ -754,12 +784,8 @@ export default function HydrocycloneFineSandRecoveryPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Sibling Spoke 1 */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
-                <Link
-                  href="/products/sand-washing-plants/silica-sand-washing-plant/"
-                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
-                  aria-label="View Silica Sand Washing Plant System specifications"
-                >
+              <div className="relative rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
+                <div className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                   <Image
                     src="/images/products/mineral-processing/river-sand-washing-plant-md.webp"
                     alt="Silica Sand Washing Plant Circuit"
@@ -767,11 +793,11 @@ export default function HydrocycloneFineSandRecoveryPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </Link>
+                </div>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
                     <h3 className="text-base font-bold text-slate-950 group-hover:text-[#DA020D] transition-colors leading-snug">
-                      <Link href="/products/sand-washing-plants/silica-sand-washing-plant/" className="hover:underline">
+                      <Link href="/products/sand-washing-plants/silica-sand-washing-plant/" className="hover:underline after:absolute after:inset-0">
                         Silica Sand Washing Plant System
                       </Link>
                     </h3>
@@ -780,24 +806,17 @@ export default function HydrocycloneFineSandRecoveryPage() {
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <Link
-                      href="/products/sand-washing-plants/silica-sand-washing-plant/"
-                      className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link"
-                    >
+                    <span aria-hidden="true" className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link">
                       <span>View Machine Specifications</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
 
               {/* Sibling Spoke 2 */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
-                <Link
-                  href="/products/sand-washing-plants/bucket-wheel-sand-washer/"
-                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
-                  aria-label="View Bucket Wheel Sand Washer System specifications"
-                >
+              <div className="relative rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
+                <div className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                   <Image
                     src="/images/products/mineral-processing/river-sand-washing-plant-variant-md.webp"
                     alt="Bucket Wheel Sand Washer"
@@ -805,11 +824,11 @@ export default function HydrocycloneFineSandRecoveryPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </Link>
+                </div>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
                     <h3 className="text-base font-bold text-slate-950 group-hover:text-[#DA020D] transition-colors leading-snug">
-                      <Link href="/products/sand-washing-plants/bucket-wheel-sand-washer/" className="hover:underline">
+                      <Link href="/products/sand-washing-plants/bucket-wheel-sand-washer/" className="hover:underline after:absolute after:inset-0">
                         Bucket Wheel Sand Washer System
                       </Link>
                     </h3>
@@ -818,24 +837,17 @@ export default function HydrocycloneFineSandRecoveryPage() {
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <Link
-                      href="/products/sand-washing-plants/bucket-wheel-sand-washer/"
-                      className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link"
-                    >
+                    <span aria-hidden="true" className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link">
                       <span>View Machine Specifications</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
 
               {/* Cross-Pillar Machine */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
-                <Link
-                  href="/products/industrial-conveyors-spares/belt-conveyors/"
-                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
-                  aria-label="View Industrial Belt Conveyor Systems specifications"
-                >
+              <div className="relative rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
+                <div className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                   <Image
                     src="/images/products/conveyor-systems/conveyor-belt-system-truss-md.webp"
                     alt="Troughed Belt Conveyor System"
@@ -843,11 +855,11 @@ export default function HydrocycloneFineSandRecoveryPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </Link>
+                </div>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
                     <h3 className="text-base font-bold text-slate-950 group-hover:text-[#DA020D] transition-colors leading-snug">
-                      <Link href="/products/industrial-conveyors-spares/belt-conveyors/" className="hover:underline">
+                      <Link href="/products/industrial-conveyors-spares/belt-conveyors/" className="hover:underline after:absolute after:inset-0">
                         Industrial Belt Conveyor Systems
                       </Link>
                     </h3>
@@ -856,13 +868,10 @@ export default function HydrocycloneFineSandRecoveryPage() {
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <Link
-                      href="/products/industrial-conveyors-spares/belt-conveyors/"
-                      className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link"
-                    >
+                    <span aria-hidden="true" className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link">
                       <span>Explore Complementary Machine</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -893,7 +902,7 @@ export default function HydrocycloneFineSandRecoveryPage() {
                     <HelpCircle className="h-5 w-5 text-cyan-600 shrink-0 mt-0.5" />
                     <span>{faq.question}</span>
                   </h3>
-                  <p className="mt-3 text-sm text-slate-600 leading-relaxed pl-8">{faq.answer}</p>
+                  <p className="mt-3 text-sm text-slate-600 leading-relaxed pl-8">{('answerNode' in faq && faq.answerNode) ? faq.answerNode : faq.answer}</p>
                 </div>
               ))}
             </div>
@@ -949,7 +958,7 @@ export default function HydrocycloneFineSandRecoveryPage() {
             </div>
           </Container>
         </section>
-      </main>
+      </div>
     </>
   );
 }

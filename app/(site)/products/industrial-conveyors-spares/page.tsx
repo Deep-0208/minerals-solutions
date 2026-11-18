@@ -158,6 +158,17 @@ export default function ConveyorsSparesPage() {
       question: 'Why should rotary dryer support rollers be made from forged steel instead of cast steel?',
       answer:
         'Rotary dryers place severe 24/7 dynamic point-loading on support trunnions. Cast steel rollers often contain hidden subsurface casting porosity that spalls or cracks under thermal fatigue. Forged EN-8/EN-9 rollers offer unbroken grain flow and zero internal porosity, preventing sudden trunnion failure and protecting expensive riding rings.',
+      answerNode: (
+        <>
+          Rotary dryers place severe 24/7 dynamic point-loading on support trunnions. Cast steel rollers
+          often contain hidden subsurface casting porosity that spalls or cracks under thermal fatigue.{' '}
+          <Link href="/products/industrial-conveyors-spares/forged-trunnion-rollers/" className="font-semibold text-[#E10613] hover:underline">
+            Forged EN-8/EN-9 rollers
+          </Link>{' '}
+          offer unbroken grain flow and zero internal porosity, preventing sudden trunnion failure and
+          protecting expensive riding rings.
+        </>
+      ),
     },
     {
       question: 'What are the benefits of diamond rubber lagging on conveyor drive pulleys?',
@@ -173,6 +184,16 @@ export default function ConveyorsSparesPage() {
       question: 'Can you fabricate custom replacement trunnions, girth gears, or pulleys to match existing plant drawings?',
       answer:
         'Yes. Our heavy machine shop in Zak GIDC manufactures custom split girth gears, drive pinions, shaft-mounted pulleys, and trunnion assemblies built precisely to sample, worn component dimensions, or engineering drawings.',
+      answerNode: (
+        <>
+          Yes. Our{' '}
+          <Link href="/manufacturing/" className="font-semibold text-[#E10613] hover:underline">
+            heavy machine shop in Zak GIDC
+          </Link>{' '}
+          manufactures custom split girth gears, drive pinions, shaft-mounted pulleys, and trunnion
+          assemblies built precisely to sample, worn component dimensions, or engineering drawings.
+        </>
+      ),
     },
   ];
 
@@ -287,7 +308,7 @@ export default function ConveyorsSparesPage() {
     <>
       <JsonLd data={conveyorSchema} />
       <div className="bg-[#F5F5F7] min-h-screen py-10 lg:py-16">
-        <Container>
+        <Container size="hero">
           {/* Breadcrumb Navigation */}
           <nav className="flex items-center gap-2 text-xs text-neutral-500 mb-4" aria-label="Breadcrumb">
             <Link href="/" className="hover:text-[#E10613]">Home</Link>
@@ -380,20 +401,23 @@ export default function ConveyorsSparesPage() {
                 sand washing plants
               </Link>{' '}
               directly into continuous{' '}
-              <Link href="/products/industrial-rotary-dryers/" className="font-semibold text-[#E10613] hover:underline">
+              <Link href="/products/industrial-rotary-dryers/sand-dryer/" className="font-semibold text-[#E10613] hover:underline">
                 rotary sand dryers
               </Link>
               , or transferring compost into{' '}
-              <Link href="/products/fertilizer-granulation-plants/" className="font-semibold text-[#E10613] hover:underline">
+              <Link href="/products/fertilizer-granulation-plants/disc-granulator/" className="font-semibold text-[#E10613] hover:underline">
                 fertilizer granulation pans
               </Link>
-              . Furthermore, our heavy machining shop supplies forged replacement trunnion support rollers and split
-              girth gears for rotary dryers across Gujarat.
+              . Furthermore, our heavy machining shop supplies{' '}
+              <Link href="/products/industrial-conveyors-spares/forged-trunnion-rollers/" className="font-semibold text-[#E10613] hover:underline">
+                forged replacement trunnion support rollers and split girth gears
+              </Link>{' '}
+              for rotary dryers across Gujarat.
             </p>
           </div>
 
           {/* Product Offerings Grid */}
-          <div className="mb-16">
+          <div className="mb-16" id="conveyors">
             <h2 className="text-2xl font-bold text-[#111111] tracking-tight mb-6">
               Conveyor Equipment &amp; Mechanical Replacement Spares
             </h2>
@@ -401,14 +425,10 @@ export default function ConveyorsSparesPage() {
               {conveyorProducts.map((p) => (
                 <div
                   key={p.name}
-                  className="bg-white rounded-2xl border border-[#E7E7EB] overflow-hidden shadow-[0_4px_24px_rgba(17,17,17,0.04)] hover:shadow-[0_16px_36px_rgba(17,17,17,0.08)] hover:border-red-200 transition-all flex flex-col justify-between group"
+                  className="relative bg-white rounded-2xl border border-[#E7E7EB] overflow-hidden shadow-[0_4px_24px_rgba(17,17,17,0.04)] hover:shadow-[0_16px_36px_rgba(17,17,17,0.08)] hover:border-red-200 transition-all flex flex-col justify-between group"
                 >
                   {/* Product Image Header with Link */}
-                  <Link
-                    href={p.href}
-                    className="relative block aspect-[16/10] sm:aspect-[16/9] w-full bg-neutral-900 overflow-hidden"
-                    aria-label={`View ${p.name} specifications`}
-                  >
+                  <div className="relative block aspect-[16/10] sm:aspect-[16/9] w-full bg-neutral-900 overflow-hidden">
                     <Image
                       src={p.image}
                       alt={p.alt}
@@ -416,7 +436,7 @@ export default function ConveyorsSparesPage() {
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
                       className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                     />
-                  </Link>
+                  </div>
 
                   {/* Card Content */}
                   <div className="p-6 sm:p-7 flex flex-col justify-between flex-1 space-y-4">
@@ -430,7 +450,7 @@ export default function ConveyorsSparesPage() {
                         </div>
                       </div>
                       <h3 className="text-lg sm:text-xl font-bold text-[#111111] group-hover:text-[#E10613] transition-colors leading-snug">
-                        <Link href={p.href} className="hover:underline">
+                        <Link href={p.href} className="hover:underline after:absolute after:inset-0">
                           {p.name}
                         </Link>
                       </h3>
@@ -443,13 +463,10 @@ export default function ConveyorsSparesPage() {
                       <span className="text-neutral-600 line-clamp-1">
                         <strong className="text-[#111111]">Design:</strong> {p.specs}
                       </span>
-                      <Link
-                        href={p.href}
-                        className="font-bold text-[#E10613] hover:text-[#b0050f] inline-flex items-center gap-1 shrink-0 group/link"
-                      >
+                      <span aria-hidden="true" className="font-bold text-[#E10613] hover:text-[#b0050f] inline-flex items-center gap-1 shrink-0 group/link">
                         <span>View Specifications</span>
                         <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                      </Link>
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -469,7 +486,10 @@ export default function ConveyorsSparesPage() {
               Forged Alloy Steel (EN-8/EN-9) vs. Cast Steel Dryer Trunnion Rollers
             </h2>
             <p className="text-sm text-[#737373] leading-relaxed max-w-3xl mb-8">
-              Trunnion support rollers bear the entire dynamic weight of rotating dryer shells (often exceeding 40 to 80 tons).
+              <Link href="/products/industrial-conveyors-spares/forged-trunnion-rollers/" className="font-semibold text-[#E10613] hover:underline">
+                Trunnion support rollers
+              </Link>{' '}
+              bear the entire dynamic weight of rotating dryer shells (often exceeding 40 to 80 tons).
               Selecting the appropriate metallurgy directly impacts plant uptime and tyre life:
             </p>
 

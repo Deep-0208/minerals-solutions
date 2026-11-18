@@ -231,6 +231,15 @@ export default function PanDiscGranulatorPage() {
       question: 'What moisture level is required in the raw material for successful disc granulation?',
       answer:
         'Optimal granulation moisture depends on material composition. For organic compost and cow dung manure, initial powder moisture should be between 20% and 25%, with spray mist bringing total moisture in the pan to 28%–32%. For inorganic chemical NPK formulations and bentonite clay, required moisture is much lower, typically 10% to 16%. Following granulation, the green granules are discharged into a downstream rotary drum dryer to reduce moisture below 10% for bagging.',
+      answerNode: (
+        <>
+          Optimal granulation moisture depends on material composition. For organic compost and cow dung manure, initial powder moisture should be between 20% and 25%, with spray mist bringing total moisture in the pan to 28%–32%. For inorganic chemical NPK formulations and bentonite clay, required moisture is much lower, typically 10% to 16%. Following granulation, the green granules are discharged into a{' '}
+          <Link href="/products/industrial-rotary-dryers/triple-pass-dryer/" className="font-semibold text-emerald-700 hover:underline">
+            downstream rotary drum dryer
+          </Link>{' '}
+          to reduce moisture below 10% for bagging.
+        </>
+      ),
     },
     {
       question: 'What types of liquid binders are used with pan disc granulators?',
@@ -246,6 +255,15 @@ export default function PanDiscGranulatorPage() {
       question: 'What is the indicative price and manufacturing lead time at your Dahegam workshop?',
       answer:
         'Our baseline MS-PG-1500 (1.5 m) starts at ₹ 3,50,000 / piece, while the flagship MS-PG-2200 (2.2 m, 2 TPH line) is priced around ₹ 3,75,000 to ₹ 4,20,000 depending on motor brand and scraper metallurgy. Larger 2.8m and 3.2m lines range up to ₹ 9,50,000. Standard units are manufactured in our Zak GIDC, Dahegam facility with delivery lead times of 10 to 18 business days.',
+      answerNode: (
+        <>
+          Our baseline MS-PG-1500 (1.5 m) starts at ₹ 3,50,000 / piece, while the flagship MS-PG-2200 (2.2 m, 2 TPH line) is priced around ₹ 3,75,000 to ₹ 4,20,000 depending on motor brand and scraper metallurgy. Larger 2.8m and 3.2m lines range up to ₹ 9,50,000. Standard units are manufactured in{' '}
+          <Link href="/manufacturing/" className="font-semibold text-emerald-700 hover:underline">
+            our Zak GIDC, Dahegam facility
+          </Link>{' '}
+          with delivery lead times of 10 to 18 business days.
+        </>
+      ),
     },
   ];
 
@@ -363,7 +381,7 @@ export default function PanDiscGranulatorPage() {
     <>
       <JsonLd data={jsonLd} />
 
-      <main className="min-h-screen bg-white text-slate-900">
+      <div className="min-h-screen bg-white text-slate-900">
         {/* Breadcrumb Navigation Header */}
         <section className="bg-slate-50 border-b border-slate-200 py-3">
           <Container>
@@ -662,8 +680,11 @@ export default function PanDiscGranulatorPage() {
                 Applications: Organic Manure, NPK Compounds & Bentonite Clay
               </h2>
               <p className="mt-4 text-slate-700 leading-relaxed">
-                Minerals Solutions pan disc granulators are deployed in over 85 fertilizer plants and mineral processing
-                facilities across Gujarat, Rajasthan, and central India.
+                Minerals Solutions pan disc granulators are deployed in over 85{' '}
+                <Link href="/industries/" className="font-semibold text-emerald-700 hover:underline">
+                  fertilizer plants and mineral processing facilities
+                </Link>
+                across Gujarat, Rajasthan, and central India.
               </p>
             </div>
 
@@ -703,7 +724,15 @@ export default function PanDiscGranulatorPage() {
               </h2>
               <p className="mt-4 text-slate-700 leading-relaxed">
                 Selling ungranulated powdered manure or compost yields low margins and creates customer complaints due to dust
-                and caking. Upgrading to spherical disc granules transforms waste into premium branded agricultural products.
+                and caking. Upgrading to spherical disc granules transforms waste into premium branded agricultural products. Raw powder is typically metered onto the pan via{' '}
+                <Link href="/products/industrial-conveyors-spares/screw-conveyors/" className="font-semibold text-emerald-700 hover:underline">
+                  dust-tight screw conveyors
+                </Link>
+                , while dried granules pass through a{' '}
+                <Link href="/products/fertilizer-granulation-plants/fertilizer-cooling-coating-drum/" className="font-semibold text-emerald-700 hover:underline">
+                  rotary cooling and anti-caking coating drum
+                </Link>{' '}
+                before bagging.
               </p>
             </div>
 
@@ -759,12 +788,8 @@ export default function PanDiscGranulatorPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Sibling Spoke 1 */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
-                <Link
-                  href="/products/fertilizer-granulation-plants/double-roller-granulator/"
-                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
-                  aria-label="View Double Roller Compactor Granulator specifications"
-                >
+              <div className="relative rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
+                <div className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                   <Image
                     src="/images/products/fertilizer-pellet/fertilizer-granulation-plant-primary-md.webp"
                     alt="Double Roller Compaction Granulator"
@@ -772,11 +797,11 @@ export default function PanDiscGranulatorPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </Link>
+                </div>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
                     <h3 className="text-base font-bold text-slate-950 group-hover:text-[#DA020D] transition-colors leading-snug">
-                      <Link href="/products/fertilizer-granulation-plants/double-roller-granulator/" className="hover:underline">
+                      <Link href="/products/fertilizer-granulation-plants/double-roller-granulator/" className="hover:underline after:absolute after:inset-0">
                         Double Roller Compactor Granulator
                       </Link>
                     </h3>
@@ -785,24 +810,17 @@ export default function PanDiscGranulatorPage() {
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <Link
-                      href="/products/fertilizer-granulation-plants/double-roller-granulator/"
-                      className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link"
-                    >
+                    <span aria-hidden="true" className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link">
                       <span>View Machine Specifications</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
 
               {/* Sibling Spoke 2 */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
-                <Link
-                  href="/products/fertilizer-granulation-plants/rotary-drum-granulator/"
-                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
-                  aria-label="View Rotary Drum Granulator Machines specifications"
-                >
+              <div className="relative rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
+                <div className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                   <Image
                     src="/images/products/fertilizer-pellet/fertilizer-granulation-plant-variant-md.webp"
                     alt="Rotary Drum Fertilizer Granulator"
@@ -810,11 +828,11 @@ export default function PanDiscGranulatorPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </Link>
+                </div>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
                     <h3 className="text-base font-bold text-slate-950 group-hover:text-[#DA020D] transition-colors leading-snug">
-                      <Link href="/products/fertilizer-granulation-plants/rotary-drum-granulator/" className="hover:underline">
+                      <Link href="/products/fertilizer-granulation-plants/rotary-drum-granulator/" className="hover:underline after:absolute after:inset-0">
                         Rotary Drum Granulator Machines
                       </Link>
                     </h3>
@@ -823,24 +841,17 @@ export default function PanDiscGranulatorPage() {
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <Link
-                      href="/products/fertilizer-granulation-plants/rotary-drum-granulator/"
-                      className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link"
-                    >
+                    <span aria-hidden="true" className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link">
                       <span>View Machine Specifications</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
 
               {/* Cross-Pillar Machine */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
-                <Link
-                  href="/products/industrial-rotary-dryers/triple-pass-dryer/"
-                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
-                  aria-label="View Triple Pass Rotary Drum Dryer Line specifications"
-                >
+              <div className="relative rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
+                <div className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                   <Image
                     src="/images/products/rotary-dryers/continuous-type-rotary-dryer-md.webp"
                     alt="Triple Pass Concentric Rotary Drum Dryer"
@@ -848,11 +859,11 @@ export default function PanDiscGranulatorPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </Link>
+                </div>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
                     <h3 className="text-base font-bold text-slate-950 group-hover:text-[#DA020D] transition-colors leading-snug">
-                      <Link href="/products/industrial-rotary-dryers/triple-pass-dryer/" className="hover:underline">
+                      <Link href="/products/industrial-rotary-dryers/triple-pass-dryer/" className="hover:underline after:absolute after:inset-0">
                         Triple Pass Rotary Drum Dryer Line
                       </Link>
                     </h3>
@@ -861,13 +872,10 @@ export default function PanDiscGranulatorPage() {
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <Link
-                      href="/products/industrial-rotary-dryers/triple-pass-dryer/"
-                      className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link"
-                    >
+                    <span aria-hidden="true" className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link">
                       <span>Explore Complementary Machine</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -897,7 +905,7 @@ export default function PanDiscGranulatorPage() {
                     <HelpCircle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
                     <span>{faq.question}</span>
                   </h3>
-                  <p className="mt-3 text-sm text-slate-600 leading-relaxed pl-8">{faq.answer}</p>
+                  <p className="mt-3 text-sm text-slate-600 leading-relaxed pl-8">{('answerNode' in faq && faq.answerNode) ? faq.answerNode : faq.answer}</p>
                 </div>
               ))}
             </div>
@@ -953,7 +961,7 @@ export default function PanDiscGranulatorPage() {
             </div>
           </Container>
         </section>
-      </main>
+      </div>
     </>
   );
 }

@@ -116,7 +116,11 @@ export default function TermsPage() {
               <p>
                 Clients and their designated third-party inspection (TPI) agencies are entitled to inspect fabricated
                 machinery, review material test certificates (MTC), verify weld ultrasonic reports, and witness no-load
-                shop trial runs at our Zak GIDC workshop prior to logistics dispatch.
+                shop trial runs at our{' '}
+                <Link href="/manufacturing/" className="font-semibold text-[#E10613] hover:underline">
+                  Zak GIDC workshop
+                </Link>{' '}
+                prior to logistics dispatch.
               </p>
             </section>
 

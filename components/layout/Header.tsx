@@ -188,10 +188,12 @@ export function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  useEffect(() => {
+  const [prevPathname, setPrevPathname] = useState(pathname);
+  if (prevPathname !== pathname) {
+    setPrevPathname(pathname);
     setMobileMenuOpen(false);
     setProductsMegaOpen(false);
-  }, [pathname]);
+  }
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -234,26 +236,32 @@ export function Header() {
           </Link>
 
           {/* 4-Pillar Mega Menu Dropdown */}
-          <div ref={dropdownRef}>
+          <div ref={dropdownRef} className="relative flex items-center gap-0.5" onMouseEnter={() => setProductsMegaOpen(true)}>
+            <Link
+              href="/products/"
+              onClick={() => setProductsMegaOpen(false)}
+              className={`text-sm font-semibold transition-colors duration-180 py-1 hover:text-[#E10613] relative ${
+                pathname.startsWith('/products') ? 'text-[#E10613]' : 'text-[#171717]'
+              }`}
+            >
+              Products
+              {pathname.startsWith('/products') && (
+                <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#E10613] rounded-full" />
+              )}
+            </Link>
             <button
               type="button"
               onClick={() => setProductsMegaOpen(!productsMegaOpen)}
-              onMouseEnter={() => setProductsMegaOpen(true)}
-              className={`text-sm font-semibold transition-colors duration-180 py-1 flex items-center gap-1 hover:text-[#E10613] focus:outline-none ${
-                pathname.startsWith('/products') ? 'text-[#E10613]' : 'text-[#171717]'
-              }`}
+              className="p-1 text-neutral-500 hover:text-[#E10613] focus:outline-none"
+              aria-label="Toggle product categories menu"
               aria-expanded={productsMegaOpen}
               aria-haspopup="true"
             >
-              <span>Products</span>
               <ChevronDown
                 className={`w-3.5 h-3.5 transition-transform duration-200 ${
                   productsMegaOpen ? 'rotate-180 text-[#E10613]' : 'text-neutral-500'
                 }`}
               />
-              {pathname.startsWith('/products') && (
-                <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#E10613] rounded-full" />
-              )}
             </button>
 
             {/* 4-Pillar Mega Panel with Centered Alignment & Zero Horizontal Overflow (Always in DOM for SEO Discovery) */}
@@ -300,7 +308,6 @@ export function Header() {
                           <Link
                             href={pillar.href}
                             onClick={() => setProductsMegaOpen(false)}
-                            title={`Industrial ${pillar.shortName} Manufacturer in Ahmedabad, Gujarat, India`}
                             className="block group"
                           >
                             <span className="block text-[13px] font-bold text-[#111111] group-hover:text-[#E10613] leading-snug transition-colors">
@@ -323,8 +330,6 @@ export function Header() {
                                   key={spoke.label}
                                   href={spoke.href}
                                   onClick={() => setProductsMegaOpen(false)}
-                                  title={spoke.keywordTitle}
-                                  aria-label={spoke.keywordTitle}
                                   className={`group flex items-center justify-between py-1.5 px-2 rounded-md transition-all ${
                                     isActive
                                       ? 'bg-red-50 text-[#E10613] font-semibold shadow-xs'
@@ -351,19 +356,6 @@ export function Header() {
                               );
                             })}
                           </div>
-                        </div>
-
-                        {/* Pinned Bottom CTA */}
-                        <div className="pt-2.5 mt-3 border-t border-neutral-200/60">
-                          <Link
-                            href={pillar.href}
-                            onClick={() => setProductsMegaOpen(false)}
-                            title={`Explore ${pillar.shortName} Systems manufactured in Ahmedabad, Gujarat, India`}
-                            className="text-[11px] font-bold text-[#E10613] hover:text-[#BC0711] inline-flex items-center gap-1 group"
-                          >
-                            <span>{pillar.exploreText}</span>
-                            <ArrowRight className="w-3 h-3 transition-transform group-hover:translate-x-0.5" />
-                          </Link>
                         </div>
                       </div>
                     );

@@ -107,7 +107,19 @@ export default function RotaryDryersPage() {
     { label: 'Inlet Air Temperature', value: 'Up to 300°C' },
     { label: 'Shell Material & Thickness', value: 'Heavy Mild Steel (IS 2062 Grade E250) / Optional SS304' },
     { label: 'Drive Mechanism', value: 'Machined cast steel girth gear & forged alloy steel pinion' },
-    { label: 'Support Trunnions', value: 'Twin forged alloy steel (EN-8 / EN-9) rollers on spherical bearings' },
+    {
+      label: 'Support Trunnions',
+      value: 'Twin forged alloy steel (EN-8 / EN-9) rollers on spherical bearings',
+      valueNode: (
+        <>
+          Twin{' '}
+          <Link href="/products/industrial-conveyors-spares/forged-trunnion-rollers/" className="font-semibold text-[#E10613] hover:underline">
+            forged alloy steel (EN-8 / EN-9) rollers
+          </Link>{' '}
+          on spherical bearings
+        </>
+      ),
+    },
     { label: 'Flight Metallurgy', value: 'Continuous spiral feed flights with radial cascading lifting vees' },
     { label: 'Heating Combustion Furnace', value: 'Compatible with Biomass, Coal, Natural Gas, or Light Diesel' },
     { label: 'Dust Separation', value: 'High efficiency cyclone collector with rotary air-lock valve' },
@@ -168,11 +180,32 @@ export default function RotaryDryersPage() {
       question: 'How do you prevent abrasive wear on the drum shell and support rollers?',
       answer:
         'We construct shells from certified IS 2062 structural carbon steel (up to 16mm-25mm plate) with optional SS304 liners for corrosive materials. All support trunnion rollers are machined from forged EN-8/EN-9 alloy steel, induction hardened to 280-320 BHN to eliminate pitting and premature fatigue.',
+      answerNode: (
+        <>
+          We construct shells from certified IS 2062 structural carbon steel (up to 16mm-25mm plate) with
+          optional SS304 liners for corrosive materials. All{' '}
+          <Link href="/products/industrial-conveyors-spares/forged-trunnion-rollers/" className="font-semibold text-[#E10613] hover:underline">
+            support trunnion rollers
+          </Link>{' '}
+          are machined from forged EN-8/EN-9 alloy steel, induction hardened to 280-320 BHN to eliminate
+          pitting and premature fatigue.
+        </>
+      ),
     },
     {
       question: 'What is the typical manufacturing lead time for an industrial rotary dryer?',
       answer:
         'Standard capacity units (1 to 5 TPH) typically require 4 to 6 weeks for plate rolling, submerged arc welding, dynamic balancing, and workshop trial testing at our Zak GIDC works. Turnkey plants with hot air furnaces and dust collectors range from 6 to 10 weeks.',
+      answerNode: (
+        <>
+          Standard capacity units (1 to 5 TPH) typically require 4 to 6 weeks for plate rolling, submerged
+          arc welding, dynamic balancing, and workshop trial testing at our{' '}
+          <Link href="/manufacturing/" className="font-semibold text-[#E10613] hover:underline">
+            Zak GIDC works
+          </Link>
+          . Turnkey plants with hot air furnaces and dust collectors range from 6 to 10 weeks.
+        </>
+      ),
     },
   ];
 
@@ -271,7 +304,7 @@ export default function RotaryDryersPage() {
     <>
       <JsonLd data={dryerSchema} />
       <div className="bg-[#F5F5F7] min-h-screen py-10 lg:py-16">
-        <Container>
+        <Container size="hero">
           {/* Breadcrumb Navigation */}
           <nav className="flex items-center gap-2 text-xs text-neutral-500 mb-4" aria-label="Breadcrumb">
             <Link href="/" className="hover:text-[#E10613]">Home</Link>
@@ -282,7 +315,7 @@ export default function RotaryDryersPage() {
           </nav>
 
           {/* Hero Section */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start mb-16">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center mb-16">
             <div className="lg:col-span-7 space-y-4">
               <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-red-50 text-[#E10613] text-xs font-bold uppercase tracking-wider border border-red-100 mb-3">
                 <Flame className="w-3.5 h-3.5" />
@@ -331,20 +364,23 @@ export default function RotaryDryersPage() {
               </div>
             </div>
 
-            <div className="lg:col-span-5">
-              <div className="relative aspect-[4/3] rounded-3xl overflow-hidden border border-[#E7E7EB] bg-neutral-900 shadow-xl">
-                <Image
-                  src="/images/products/rotary-dryers/double-pass-rotary-dryer-primary-lg.webp"
-                  alt="Minerals Solutions double pass concentric rotary dryer showing outer shell and heavy blue drive frame at Dahegam workshop"
-                  width={1200}
-                  height={800}
-                  priority
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 45vw, 600px"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute bottom-3 left-3 right-3 bg-black/80 backdrop-blur-sm p-3 rounded-xl text-white text-xs">
-                  <span className="font-bold block">Double Pass Concentric Drum Assembly</span>
-                  <span className="text-neutral-400 text-[11px]">Fabricated at Zak GIDC Works, Dahegam</span>
+            <div className="lg:col-span-5 w-full">
+              <div className="relative rounded-3xl overflow-hidden border border-[#E7E7EB] bg-white shadow-xl group">
+                <div className="relative aspect-[4/3] sm:aspect-[16/10] lg:aspect-[4/3] xl:aspect-[16/11] 2xl:aspect-[4/3] w-full min-h-[280px] sm:min-h-[340px] lg:min-h-[380px] xl:min-h-[440px] 2xl:min-h-[480px] overflow-hidden bg-neutral-100">
+                  <Image
+                    src="/images/products/rotary-dryers/double-pass-rotary-dryer-primary-lg.webp"
+                    alt="Minerals Solutions double pass concentric rotary dryer showing outer shell and heavy blue drive frame at Dahegam workshop"
+                    fill
+                    priority
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 45vw, 650px"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <div className="p-4 bg-slate-950 text-white border-t border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
+                  <div className="min-w-0 flex-1">
+                    <span className="font-bold text-sm block truncate">Double Pass Concentric Drum Assembly</span>
+                    <span className="text-neutral-400 text-xs">Fabricated at Zak GIDC Works, Dahegam</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -364,7 +400,7 @@ export default function RotaryDryersPage() {
                   sand washing plants
                 </Link>
                 , continuous discharge is typically transported by heavy{' '}
-                <Link href="/products/industrial-conveyors-spares/" className="font-semibold text-[#E10613] hover:underline">
+                <Link href="/products/industrial-conveyors-spares/belt-conveyors/" className="font-semibold text-[#E10613] hover:underline">
                   troughed belt conveyors
                 </Link>{' '}
                 to screening silos.
@@ -412,14 +448,10 @@ export default function RotaryDryersPage() {
               {dryerTypes.map((type) => (
                 <div
                   key={type.name}
-                  className="bg-white rounded-2xl border border-[#E7E7EB] overflow-hidden shadow-[0_4px_24px_rgba(17,17,17,0.04)] hover:shadow-[0_16px_36px_rgba(17,17,17,0.08)] hover:border-red-200 transition-all flex flex-col justify-between group"
+                  className="relative bg-white rounded-2xl border border-[#E7E7EB] overflow-hidden shadow-[0_4px_24px_rgba(17,17,17,0.04)] hover:shadow-[0_16px_36px_rgba(17,17,17,0.08)] hover:border-red-200 transition-all flex flex-col justify-between group"
                 >
                   {/* Product Image Header with Link */}
-                  <Link
-                    href={type.href}
-                    className="relative block aspect-[16/10] sm:aspect-[16/9] w-full bg-neutral-900 overflow-hidden"
-                    aria-label={`View ${type.name} specifications`}
-                  >
+                  <div className="relative block aspect-[16/10] sm:aspect-[16/9] w-full bg-neutral-900 overflow-hidden">
                     <Image
                       src={type.image}
                       alt={type.alt}
@@ -427,7 +459,7 @@ export default function RotaryDryersPage() {
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
                       className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                     />
-                  </Link>
+                  </div>
 
                   {/* Card Content */}
                   <div className="p-6 sm:p-7 flex flex-col justify-between flex-1 space-y-4">
@@ -441,7 +473,7 @@ export default function RotaryDryersPage() {
                         </span>
                       </div>
                       <h3 className="text-lg sm:text-xl font-bold text-[#111111] group-hover:text-[#E10613] transition-colors leading-snug">
-                        <Link href={type.href} className="hover:underline">
+                        <Link href={type.href} className="hover:underline after:absolute after:inset-0">
                           {type.name}
                         </Link>
                       </h3>
@@ -454,13 +486,10 @@ export default function RotaryDryersPage() {
                       <span className="text-neutral-600 line-clamp-1">
                         <strong className="text-[#111111]">Materials:</strong> {type.applications}
                       </span>
-                      <Link
-                        href={type.href}
-                        className="font-bold text-[#E10613] hover:text-[#b0050f] inline-flex items-center gap-1 shrink-0 group/link"
-                      >
+                      <span aria-hidden="true" className="font-bold text-[#E10613] hover:text-[#b0050f] inline-flex items-center gap-1 shrink-0 group/link">
                         <span>View Machine Specs</span>
                         <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                      </Link>
+                      </span>
                     </div>
                   </div>
                 </div>

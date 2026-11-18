@@ -199,8 +199,15 @@ export default function RotarySandDryerPage() {
     {
       cluster: 'Morbi & Surendranagar Ceramic Belt',
       role: 'Ceramic Body Sand & Glaze Aggregates',
-      description:
-        'High-purity silica sand dried from 14% down to <0.2% moisture for vitrified tile body preparation, sanitaryware slurry batches, and engineered quartz slabs in Morbi and Wankaner.',
+      description: (
+        <>
+          High-purity silica sand dried from 14% down to &lt;0.2% moisture for{' '}
+          <Link href="/industries/" className="font-semibold text-[#DA020D] hover:underline">
+            vitrified tile body preparation
+          </Link>
+          , sanitaryware slurry batches, and engineered quartz slabs in Morbi and Wankaner.
+        </>
+      ),
     },
     {
       cluster: 'Ahmedabad & Rajkot Foundry Corridor',
@@ -231,6 +238,18 @@ export default function RotarySandDryerPage() {
       question: 'What is the indicative price for a complete rotary sand drying plant?',
       answer:
         'A standard 1 to 2 TPH rotary sand dryer begins at approximately ₹ 20,50,000, which includes the IS 2062 steel rotating drum, girth gear drive, trunnion rollers, and discharge hood. Turnkey plants with a coal/biomass hot air furnace, high-efficiency twin cyclone dust collector, and induced draft exhaust fan range from ₹ 28,00,000 to ₹ 48,00,000 depending on tonnage capacity.',
+      answerNode: (
+        <>
+          A standard 1 to 2 TPH rotary sand dryer begins at approximately ₹ 20,50,000, which includes the
+          IS 2062 steel rotating drum, girth gear drive,{' '}
+          <Link href="/products/industrial-conveyors-spares/forged-trunnion-rollers/" className="font-semibold text-[#DA020D] hover:underline">
+            trunnion rollers
+          </Link>
+          , and discharge hood. Turnkey plants with a coal/biomass hot air furnace, high-efficiency twin
+          cyclone dust collector, and induced draft exhaust fan range from ₹ 28,00,000 to ₹ 48,00,000
+          depending on tonnage capacity.
+        </>
+      ),
     },
     {
       question: 'Why is IS 2062 Grade B structural steel preferred for the drum shell?',
@@ -357,7 +376,7 @@ export default function RotarySandDryerPage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqSchema} />
 
-      <main className="bg-white text-slate-900 min-h-screen">
+      <div className="bg-white text-slate-900 min-h-screen">
         {/* Breadcrumbs */}
         <div className="border-b border-slate-200 bg-slate-50/80">
           <Container>
@@ -548,7 +567,11 @@ export default function RotarySandDryerPage() {
                     </h3>
                   </div>
                   <p className="text-slate-600 text-sm leading-relaxed">
-                    Wet washed sand exiting bucket washers carries unbound surface water in the pore interstices. The high Delta-T between the 300°C combustion draft and the 30°C wet sand causes instantaneous boiling and flash evaporation, reducing moisture from 16% down to approximately 4% without elevating sand core temperatures above 80°C.
+                    Wet washed sand exiting{' '}
+                    <Link href="/products/sand-washing-plants/bucket-wheel-sand-washer/" className="font-semibold text-[#DA020D] hover:underline">
+                      bucket washers
+                    </Link>{' '}
+                    carries unbound surface water in the pore interstices. The high Delta-T between the 300°C combustion draft and the 30°C wet sand causes instantaneous boiling and flash evaporation, reducing moisture from 16% down to approximately 4% without elevating sand core temperatures above 80°C.
                   </p>
                 </div>
 
@@ -577,7 +600,7 @@ export default function RotarySandDryerPage() {
                 </h3>
                 <div className="p-4 rounded-xl bg-slate-950/80 border border-slate-800 font-mono text-xs text-slate-300 space-y-2 mb-6">
                   <div>Q_total = M_w * [Cp_w * (100 - T_in) + H_evap + Cp_v * (T_out - 100)] + M_s * Cp_s * (T_s - T_in)</div>
-                  <div className="text-amber-400">// Where:</div>
+                  <div className="text-amber-400">{'// Where:'}</div>
                   <div className="text-slate-400">• M_w: Evaporated water mass (kg/hr)</div>
                   <div className="text-slate-400">• H_evap: Latent heat of vaporization (540 kcal/kg)</div>
                   <div className="text-slate-400">• Cp_s: Specific heat of silica quartz (0.19 kcal/kg°C)</div>
@@ -663,7 +686,11 @@ export default function RotarySandDryerPage() {
                 Technical Specifications & Drum Sizing (MS-RSD Series)
               </h2>
               <p className="text-slate-600 mt-3 text-base">
-                Verified dimensional parameters and drive motor ratings based on authentic fabrication data from our Zak GIDC workshops.
+                Verified dimensional parameters and drive motor ratings based on authentic fabrication data from{' '}
+                <Link href="/manufacturing/" className="font-semibold text-[#DA020D] hover:underline">
+                  our Zak GIDC workshops
+                </Link>
+                .
               </p>
             </div>
 
@@ -768,7 +795,15 @@ export default function RotarySandDryerPage() {
                   Replaceable Bolted Lifters for High-Silica Quartz Sand
                 </h3>
                 <p className="text-slate-600 text-sm mt-1">
-                  When drying sharp angular silica or crushed quartz abrasive fines, welded lifters wear out within 18–24 months. Minerals Solutions offers modular bolted flight sections lined with Hardox 400 wear plates for 3X extended operating life.
+                  When drying sharp angular silica or crushed quartz abrasive fines, welded lifters wear out within 18–24 months. Minerals Solutions offers modular bolted flight sections lined with Hardox 400 wear plates for 3X extended operating life. Dried sand discharging at elevated temperature is transferred via{' '}
+                  <Link href="/products/industrial-conveyors-spares/belt-conveyors/" className="font-semibold text-[#DA020D] hover:underline">
+                    heat-resistant troughed belt conveyors
+                  </Link>
+                  , while the rotating drum shell rides on{' '}
+                  <Link href="/products/industrial-conveyors-spares/forged-trunnion-rollers/" className="font-semibold text-[#DA020D] hover:underline">
+                    forged trunnion support rollers
+                  </Link>
+                  .
                 </p>
               </div>
               <Button
@@ -851,12 +886,8 @@ export default function RotarySandDryerPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Sibling Spoke 1 */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
-                <Link
-                  href="/products/industrial-rotary-dryers/triple-pass-dryer/"
-                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
-                  aria-label="View Triple Pass Rotary Drum Dryer Line specifications"
-                >
+              <div className="relative rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
+                <div className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                   <Image
                     src="/images/products/rotary-dryers/continuous-type-rotary-dryer-md.webp"
                     alt="Triple Pass Concentric Rotary Drum Dryer"
@@ -864,14 +895,14 @@ export default function RotarySandDryerPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </Link>
+                </div>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
                     <span className="inline-block text-[11px] font-mono font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded mb-2 border border-emerald-100">
                       Sibling Dryer Line
                     </span>
                     <h3 className="text-base font-bold text-slate-950 group-hover:text-[#E10613] transition-colors leading-snug">
-                      <Link href="/products/industrial-rotary-dryers/triple-pass-dryer/" className="hover:underline">
+                      <Link href="/products/industrial-rotary-dryers/triple-pass-dryer/" className="hover:underline after:absolute after:inset-0">
                         Triple Pass Rotary Drum Dryer Line
                       </Link>
                     </h3>
@@ -880,24 +911,17 @@ export default function RotarySandDryerPage() {
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <Link
-                      href="/products/industrial-rotary-dryers/triple-pass-dryer/"
-                      className="font-bold text-[#E10613] hover:text-[#BC0711] text-xs inline-flex items-center gap-1 group/link"
-                    >
+                    <span aria-hidden="true" className="font-bold text-[#E10613] hover:text-[#BC0711] text-xs inline-flex items-center gap-1 group/link">
                       <span>View Machine Specifications</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
 
               {/* Sibling Spoke 2 */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#E10613]/40 transition-all flex flex-col justify-between group">
-                <Link
-                  href="/products/industrial-rotary-dryers/biomass-sawdust-dryer/"
-                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
-                  aria-label="View Biomass & Sawdust Rotary Dryer Line specifications"
-                >
+              <div className="relative rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#E10613]/40 transition-all flex flex-col justify-between group">
+                <div className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                   <Image
                     src="/images/products/rotary-dryers/saw-dust-biomass-dryer-md.webp"
                     alt="Biomass and Sawdust Rotary Drum Dryer"
@@ -905,14 +929,14 @@ export default function RotarySandDryerPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </Link>
+                </div>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
                     <span className="inline-block text-[11px] font-mono font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded mb-2 border border-blue-100">
                       Sibling Dryer Line
                     </span>
                     <h3 className="text-base font-bold text-slate-950 group-hover:text-[#E10613] transition-colors leading-snug">
-                      <Link href="/products/industrial-rotary-dryers/biomass-sawdust-dryer/" className="hover:underline">
+                      <Link href="/products/industrial-rotary-dryers/biomass-sawdust-dryer/" className="hover:underline after:absolute after:inset-0">
                         Biomass & Sawdust Rotary Dryer Line
                       </Link>
                     </h3>
@@ -921,24 +945,17 @@ export default function RotarySandDryerPage() {
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <Link
-                      href="/products/industrial-rotary-dryers/biomass-sawdust-dryer/"
-                      className="font-bold text-[#E10613] hover:text-[#BC0711] text-xs inline-flex items-center gap-1 group/link"
-                    >
+                    <span aria-hidden="true" className="font-bold text-[#E10613] hover:text-[#BC0711] text-xs inline-flex items-center gap-1 group/link">
                       <span>View Machine Specifications</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
 
               {/* Cross-Pillar Machine */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#E10613]/40 transition-all flex flex-col justify-between group">
-                <Link
-                  href="/products/sand-washing-plants/silica-sand-washing-plant/"
-                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
-                  aria-label="View Silica Sand Washing Plant System specifications"
-                >
+              <div className="relative rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#E10613]/40 transition-all flex flex-col justify-between group">
+                <div className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                   <Image
                     src="/images/products/mineral-processing/river-sand-washing-plant-md.webp"
                     alt="Silica Sand Washing Plant Circuit"
@@ -946,14 +963,14 @@ export default function RotarySandDryerPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </Link>
+                </div>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
                     <span className="inline-block text-[11px] font-mono font-bold text-purple-700 bg-purple-50 px-2 py-0.5 rounded mb-2 border border-purple-100">
                       Complementary Wet Circuit
                     </span>
                     <h3 className="text-base font-bold text-slate-950 group-hover:text-[#E10613] transition-colors leading-snug">
-                      <Link href="/products/sand-washing-plants/silica-sand-washing-plant/" className="hover:underline">
+                      <Link href="/products/sand-washing-plants/silica-sand-washing-plant/" className="hover:underline after:absolute after:inset-0">
                         Silica Sand Washing Plant System
                       </Link>
                     </h3>
@@ -962,13 +979,10 @@ export default function RotarySandDryerPage() {
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <Link
-                      href="/products/sand-washing-plants/silica-sand-washing-plant/"
-                      className="font-bold text-[#E10613] hover:text-[#BC0711] text-xs inline-flex items-center gap-1 group/link"
-                    >
+                    <span aria-hidden="true" className="font-bold text-[#E10613] hover:text-[#BC0711] text-xs inline-flex items-center gap-1 group/link">
                       <span>Explore Complementary Machine</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -1052,7 +1066,7 @@ export default function RotarySandDryerPage() {
             </div>
           </Container>
         </section>
-      </main>
+      </div>
     </>
   );
 }

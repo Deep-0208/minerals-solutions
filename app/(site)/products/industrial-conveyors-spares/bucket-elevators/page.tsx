@@ -246,7 +246,7 @@ export default function BucketElevatorPage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqSchema} />
 
-      <main className="min-h-screen bg-white text-slate-900">
+      <div className="min-h-screen bg-white text-slate-900">
         {/* Breadcrumb Navigation Bar */}
         <section className="bg-slate-50 border-b border-slate-200 py-3">
           <Container>
@@ -288,7 +288,11 @@ export default function BucketElevatorPage() {
 
                 <p className="text-base sm:text-lg text-slate-700 leading-relaxed font-normal">
                   Continuous, high-tonnage vertical bulk conveying engineered for abrasive silica sand,
-                  calcined minerals, fertilizer granules, cement clinker, and foundry sand. Designed with
+                  calcined minerals,{' '}
+                  <Link href="/products/fertilizer-granulation-plants/" className="font-semibold text-amber-700 hover:underline">
+                    fertilizer granules
+                  </Link>
+                  , cement clinker, and foundry sand. Designed with
                   laser-cut jig-welded modular casings, anti-rollback cam clutches, and multi-ply EP belt
                   or alloy chain traction media from 5 to 100+ TPH.
                 </p>
@@ -339,7 +343,7 @@ export default function BucketElevatorPage() {
                 {/* Action Buttons */}
                 <div className="flex flex-wrap items-center gap-4 pt-4">
                   <Button
-                    href="/request-quote/?product=bucket-elevator"
+                    href="/request-quote/?product=bucket-elevators"
                     variant="primary"
                     size="lg"
                     icon={<FileText className="w-5 h-5" />}
@@ -347,7 +351,7 @@ export default function BucketElevatorPage() {
                     Request Sizing Proposal &amp; GA Drawing
                   </Button>
                   <Button
-                    href="tel:+919227004455"
+                    href={`tel:${company.telephones[0].replace(/\s+/g, '')}`}
                     variant="outline"
                     size="lg"
                     external
@@ -927,8 +931,12 @@ export default function BucketElevatorPage() {
                   Jig-Welded Modular Casing &amp; Crowned Pulley Fabrication
                 </h2>
                 <p className="text-slate-700 text-base leading-relaxed">
-                  Every elevator section is manufactured in precision welding jigs at our Zak GIDC,
-                  Dahegam workshop. Standardized modular casing sections ensure strict vertical alignment,
+                  Every elevator section is manufactured in precision welding jigs at{' '}
+                  <Link href="/manufacturing/" className="font-semibold text-amber-700 hover:underline">
+                    our Zak GIDC, Dahegam workshop
+                  </Link>
+                  .
+                  Standardized modular casing sections ensure strict vertical alignment,
                   preventing belt wander and premature casing wear.
                 </p>
 
@@ -1040,12 +1048,8 @@ export default function BucketElevatorPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Sibling Spoke 1 */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
-                <Link
-                  href="/products/industrial-conveyors-spares/screw-conveyors/"
-                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
-                  aria-label="View Industrial Screw Conveyor Systems specifications"
-                >
+              <div className="relative rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
+                <div className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                   <Image
                     src="/images/products/conveyor-systems/belt-conveyor-system-variant-1-md.webp"
                     alt="Industrial Screw Conveyor Feeder"
@@ -1053,11 +1057,11 @@ export default function BucketElevatorPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </Link>
+                </div>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
                     <h3 className="text-base font-bold text-slate-950 group-hover:text-[#DA020D] transition-colors leading-snug">
-                      <Link href="/products/industrial-conveyors-spares/screw-conveyors/" className="hover:underline">
+                      <Link href="/products/industrial-conveyors-spares/screw-conveyors/" className="hover:underline after:absolute after:inset-0">
                         Industrial Screw Conveyor Systems
                       </Link>
                     </h3>
@@ -1066,24 +1070,17 @@ export default function BucketElevatorPage() {
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <Link
-                      href="/products/industrial-conveyors-spares/screw-conveyors/"
-                      className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link"
-                    >
+                    <span aria-hidden="true" className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link">
                       <span>View Machine Specifications</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
 
               {/* Sibling Spoke 2 */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
-                <Link
-                  href="/products/industrial-conveyors-spares/belt-conveyors/"
-                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
-                  aria-label="View Industrial Belt Conveyor Systems specifications"
-                >
+              <div className="relative rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
+                <div className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                   <Image
                     src="/images/products/conveyor-systems/conveyor-belt-system-truss-md.webp"
                     alt="Troughed Belt Conveyor System"
@@ -1091,11 +1088,11 @@ export default function BucketElevatorPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </Link>
+                </div>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
                     <h3 className="text-base font-bold text-slate-950 group-hover:text-[#DA020D] transition-colors leading-snug">
-                      <Link href="/products/industrial-conveyors-spares/belt-conveyors/" className="hover:underline">
+                      <Link href="/products/industrial-conveyors-spares/belt-conveyors/" className="hover:underline after:absolute after:inset-0">
                         Industrial Belt Conveyor Systems
                       </Link>
                     </h3>
@@ -1104,24 +1101,17 @@ export default function BucketElevatorPage() {
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <Link
-                      href="/products/industrial-conveyors-spares/belt-conveyors/"
-                      className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link"
-                    >
+                    <span aria-hidden="true" className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link">
                       <span>View Machine Specifications</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
 
               {/* Cross-Pillar Machine */}
-              <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
-                <Link
-                  href="/products/industrial-rotary-dryers/sand-dryer/"
-                  className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden"
-                  aria-label="View Industrial Rotary Sand Dryer Unit specifications"
-                >
+              <div className="relative rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md hover:border-[#DA020D]/40 transition-all flex flex-col justify-between group">
+                <div className="relative block aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                   <Image
                     src="/images/products/rotary-dryers/silica-sand-rotary-dryer-md.webp"
                     alt="Industrial Rotary Sand Dryer Drum"
@@ -1129,11 +1119,11 @@ export default function BucketElevatorPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </Link>
+                </div>
                 <div className="p-5 flex flex-col justify-between flex-1 space-y-3">
                   <div>
                     <h3 className="text-base font-bold text-slate-950 group-hover:text-[#DA020D] transition-colors leading-snug">
-                      <Link href="/products/industrial-rotary-dryers/sand-dryer/" className="hover:underline">
+                      <Link href="/products/industrial-rotary-dryers/sand-dryer/" className="hover:underline after:absolute after:inset-0">
                         Industrial Rotary Sand Dryer Unit
                       </Link>
                     </h3>
@@ -1142,13 +1132,10 @@ export default function BucketElevatorPage() {
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <Link
-                      href="/products/industrial-rotary-dryers/sand-dryer/"
-                      className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link"
-                    >
+                    <span aria-hidden="true" className="font-bold text-[#DA020D] hover:text-[#900] text-xs inline-flex items-center gap-1 group/link">
                       <span>Explore Complementary Machine</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -1180,7 +1167,7 @@ export default function BucketElevatorPage() {
 
                 <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
                   <Button
-                    href="/request-quote/?product=bucket-elevator"
+                    href="/request-quote/?product=bucket-elevators"
                     variant="primary"
                     size="lg"
                     icon={<FileText className="w-5 h-5" />}
@@ -1188,13 +1175,13 @@ export default function BucketElevatorPage() {
                     Get Detailed Proposal &amp; Pricing
                   </Button>
                   <Button
-                    href="tel:+919227004455"
+                    href={`tel:${company.telephones[0].replace(/\s+/g, '')}`}
                     variant="outline"
                     size="lg"
                     external
                     icon={<Phone className="w-5 h-5 text-amber-400" />}
                   >
-                    Direct Technical Call: +91 92270 04455
+                    Direct Technical Call: {company.telephones[0]}
                   </Button>
                 </div>
 
@@ -1244,7 +1231,7 @@ export default function BucketElevatorPage() {
             </div>
           </Container>
         </section>
-      </main>
+      </div>
     </>
   );
 }

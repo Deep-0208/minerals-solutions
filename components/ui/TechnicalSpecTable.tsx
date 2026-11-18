@@ -4,6 +4,7 @@ import { CheckCircle2, Info } from 'lucide-react';
 export interface SpecRow {
   label: string;
   value: string;
+  valueNode?: React.ReactNode;
   highlight?: boolean;
   unit?: string;
   note?: string;
@@ -89,7 +90,7 @@ export function TechnicalSpecTable({
                   <td className="py-3.5 px-6 text-[#171717] align-top">
                     <div className="flex items-center gap-2 flex-wrap">
                       <span className={spec.highlight ? 'font-bold text-[#111111]' : ''}>
-                        {spec.value}
+                        {spec.valueNode ?? spec.value}
                       </span>
                       {spec.unit && (
                         <span className="text-xs text-neutral-500 font-mono">

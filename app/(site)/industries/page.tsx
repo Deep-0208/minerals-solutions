@@ -79,85 +79,198 @@ export default function IndustriesPage() {
     },
   };
 
-  const sectors = [
+  const sectors: Array<{
+    slug: string;
+    title: string;
+    icon: typeof Factory;
+    challenge: React.ReactNode;
+    solution: React.ReactNode;
+    machinery: Array<{ label: string; href?: string }>;
+    productLink: string;
+    productLabel: string;
+  }> = [
     {
+      slug: 'ceramic-tiles-morbi',
       title: 'Ceramic Tiles & Raw Mineral Body Preparation (Morbi Cluster)',
       icon: Factory,
       challenge: 'High moisture retention in ball clay, feldspar, and silica slurries causing tile pressing cracks and high spray dryer fuel consumption in Morbi tile plants.',
-      solution: 'High-efficiency rotary mineral dryers and heavy log washers pre-conditioning raw minerals down to <1% moisture before ball mill grinding.',
-      machinery: ['Rotary Clay & Mineral Dryer', 'Quartz Stone Log Washer', 'Troughed Raw Body Conveyor'],
+      solution: (
+        <>
+          High-efficiency{' '}
+          <Link href="/products/industrial-rotary-dryers/" className="font-semibold text-[#E10613] hover:underline">
+            rotary mineral dryers
+          </Link>{' '}
+          and{' '}
+          <Link href="/products/sand-washing-plants/mineral-log-washer/" className="font-semibold text-[#E10613] hover:underline">
+            heavy log washers
+          </Link>{' '}
+          pre-conditioning raw minerals down to &lt;1% moisture before ball mill grinding.
+        </>
+      ),
+      machinery: [
+        { label: 'Rotary Clay & Mineral Dryer', href: '/products/industrial-rotary-dryers/sand-dryer/' },
+        { label: 'Quartz Stone Log Washer', href: '/products/sand-washing-plants/mineral-log-washer/' },
+        { label: 'Troughed Raw Body Conveyor', href: '/products/industrial-conveyors-spares/belt-conveyors/' },
+      ],
       productLink: '/products/industrial-rotary-dryers/sand-dryer/',
       productLabel: 'Explore Ceramic Mineral Dryers',
     },
     {
+      slug: 'silica-sand-foundry',
       title: 'Silica Sand & Foundry Sand Processing',
       icon: Flame,
-      challenge: 'High initial moisture in washed silica sand causing sand bonding failure in foundries and glass furnaces.',
+      challenge: (
+        <>
+          High initial moisture in{' '}
+          <Link href="/products/sand-washing-plants/silica-sand-washing-plant/" className="font-semibold text-[#BC0711] underline hover:text-[#E10613]">
+            washed silica sand
+          </Link>{' '}
+          causing sand bonding failure in foundries and glass furnaces.
+        </>
+      ),
       solution: 'Single & double pass rotary sand dryers with high-efficiency cyclones reducing moisture from 15% to below 0.5%.',
-      machinery: ['Double Pass Rotary Dryer', 'Fluidized Bed Cooler', 'Vibrating Sizing Screen'],
+      machinery: [
+        { label: 'Silica Sand Washing Plant', href: '/products/sand-washing-plants/silica-sand-washing-plant/' },
+        { label: 'Triple Pass Rotary Dryer', href: '/products/industrial-rotary-dryers/triple-pass-dryer/' },
+        { label: 'Rotary Sand Dryer', href: '/products/industrial-rotary-dryers/sand-dryer/' },
+      ],
       productLink: '/products/industrial-rotary-dryers/sand-dryer/',
       productLabel: 'Explore Rotary Sand Dryers',
     },
     {
+      slug: 'npk-organic-fertilizer',
       title: 'NPK & Organic Bio-Fertilizer Plants',
       icon: Sprout,
       challenge: 'Uneven granule sizes, poor spherical strength, and high recycle rates during compost agglomeration.',
-      solution: 'Pan/disc granulators with stepless 35°-55° tilt adjustment paired with rotary coolers and anti-caking coating drums.',
-      machinery: ['Disc Granulator MS-PG-2200', 'Rotary Fertilizer Dryer', 'Cooling & Coating Drum'],
+      solution: (
+        <>
+          <Link href="/products/fertilizer-granulation-plants/" className="font-semibold text-[#E10613] hover:underline">
+            Pan/disc granulators
+          </Link>{' '}
+          with stepless 35°-55° tilt adjustment paired with{' '}
+          <Link href="/products/fertilizer-granulation-plants/fertilizer-cooling-coating-drum/" className="font-semibold text-[#E10613] hover:underline">
+            rotary coolers and anti-caking coating drums
+          </Link>
+          .
+        </>
+      ),
+      machinery: [
+        { label: 'Disc Granulator MS-PG-2200', href: '/products/fertilizer-granulation-plants/disc-granulator/' },
+        { label: 'Rotary Drum Granulator', href: '/products/fertilizer-granulation-plants/rotary-drum-granulator/' },
+        { label: 'Double Roller Granulator', href: '/products/fertilizer-granulation-plants/double-roller-granulator/' },
+        { label: 'Cooling & Coating Drum', href: '/products/fertilizer-granulation-plants/fertilizer-cooling-coating-drum/' },
+      ],
       productLink: '/products/fertilizer-granulation-plants/disc-granulator/',
       productLabel: 'Explore Pan Disc Granulators',
     },
     {
+      slug: 'river-sand-aggregate-washing',
       title: 'River Sand & Aggregate Washing',
       icon: Waves,
       challenge: 'Excessive loss of marketable fine sand (down to 75 microns) into quarry slimes and high residual water content.',
-      solution: 'Integrated bucket wheel washers with polyurethane hydrocyclones and linear dewatering screens.',
-      machinery: ['Bucket Wheel Sand Washer', 'Hydrocyclone Separator', 'High-Frequency Dewatering Screen'],
+      solution: (
+        <>
+          Integrated{' '}
+          <Link href="/products/sand-washing-plants/" className="font-semibold text-[#E10613] hover:underline">
+            bucket wheel washers
+          </Link>{' '}
+          with{' '}
+          <Link href="/products/sand-washing-plants/hydrocyclone-sand-separator/" className="font-semibold text-[#E10613] hover:underline">
+            polyurethane hydrocyclones
+          </Link>{' '}
+          and linear dewatering screens.
+        </>
+      ),
+      machinery: [
+        { label: 'Bucket Wheel Sand Washer', href: '/products/sand-washing-plants/bucket-wheel-sand-washer/' },
+        { label: 'Hydrocyclone Separator', href: '/products/sand-washing-plants/hydrocyclone-sand-separator/' },
+        { label: 'High-Frequency Dewatering Screen' },
+      ],
       productLink: '/products/sand-washing-plants/bucket-wheel-sand-washer/',
       productLabel: 'Explore Bucket Wheel Sand Washers',
     },
     {
+      slug: 'chemical-salts-crystals',
       title: 'Chemical Salts & Inorganic Crystals',
       icon: Factory,
       challenge: 'Thermal degradation of heat-sensitive chemical crystals and corrosive vapor damage to dryer drum shells.',
       solution: 'Stainless steel contact parts (SS304/SS316), indirect hot air heating, and pulse-jet baghouse dust collection.',
-      machinery: ['Indirect Rotary Calciner', 'Stainless Steel Rotary Dryer', 'Bag Filter Exhaust'],
+      machinery: [
+        { label: 'Stainless Chemical Powder Dryer', href: '/products/industrial-rotary-dryers/chemical-powder-dryer/' },
+        { label: 'SS304/316 Screw Conveyor', href: '/products/industrial-conveyors-spares/screw-conveyors/' },
+        { label: 'Bag Filter Exhaust' },
+      ],
       productLink: '/products/industrial-rotary-dryers/chemical-powder-dryer/',
       productLabel: 'Explore Chemical Powder Dryers',
     },
     {
+      slug: 'biomass-sawdust-pelletizing',
       title: 'Biomass & Sawdust Pelletizing',
       icon: Layers,
       challenge: 'High moisture variability in raw agro-waste and saw dust causing pellet mill die plugging and low calorific value.',
-      solution: 'Triple pass rotary drum dryers with spark arrestors and uniform hot air draft for safe, continuous drying.',
-      machinery: ['Triple Pass Biomass Dryer', 'Biomass Hammer Mill', 'Heavy Pellet Mill'],
+      solution: (
+        <>
+          <Link href="/products/industrial-rotary-dryers/triple-pass-dryer/" className="font-semibold text-[#E10613] hover:underline">
+            Triple pass rotary drum dryers
+          </Link>{' '}
+          with spark arrestors and uniform hot air draft for safe, continuous drying.
+        </>
+      ),
+      machinery: [
+        { label: 'Biomass & Sawdust Dryer', href: '/products/industrial-rotary-dryers/biomass-sawdust-dryer/' },
+        { label: 'Tubular Screw Feeder', href: '/products/industrial-conveyors-spares/screw-conveyors/' },
+        { label: 'Triple Pass Dryer', href: '/products/industrial-rotary-dryers/triple-pass-dryer/' },
+      ],
       productLink: '/products/industrial-rotary-dryers/biomass-sawdust-dryer/',
       productLabel: 'Explore Biomass & Sawdust Dryers',
     },
     {
+      slug: 'fly-ash-slag-gypsum',
       title: 'Fly Ash, Slag & Gypsum Processing',
       icon: Boxes,
       challenge: 'Extremely abrasive sticky slurry and high cake moisture from flue-gas desulfurization (FGD) systems.',
       solution: 'Heavy-duty rotary kilns and dryers with specialized flight lifters and abrasion-resistant steel plate shells.',
-      machinery: ['Heavy Slag Dryer', 'Troughed Belt Conveyor', 'Support Trunnion Running Gear'],
+      machinery: [
+        { label: 'Heavy Slag & Mineral Dryer', href: '/products/industrial-rotary-dryers/triple-pass-dryer/' },
+        { label: 'Troughed Belt Conveyor', href: '/products/industrial-conveyors-spares/belt-conveyors/' },
+        { label: 'Support Trunnion Running Gear', href: '/products/industrial-conveyors-spares/forged-trunnion-rollers/' },
+      ],
       productLink: '/products/industrial-rotary-dryers/triple-pass-dryer/',
       productLabel: 'Explore Triple Pass Drum Dryers',
     },
     {
+      slug: 'quartz-mineral-beneficiation',
       title: 'Quartz Stone & Mineral Beneficiation',
       icon: Waves,
       challenge: 'Tenacious plastic clay coatings adhering to quartz lumps and gravel preventing pure optical separation.',
       solution: 'Twin-shaft paddle log washers applying high-intensity mechanical scouring to release adhering clays.',
-      machinery: ['Quartz Stone Log Washer', 'Rotary Trommel Screen', 'Slurry Slime Sump'],
+      machinery: [
+        { label: 'Quartz Stone Log Washer', href: '/products/sand-washing-plants/mineral-log-washer/' },
+        { label: 'Hydrocyclone Fine Recovery', href: '/products/sand-washing-plants/hydrocyclone-sand-separator/' },
+        { label: 'Silica Washing Line', href: '/products/sand-washing-plants/silica-sand-washing-plant/' },
+      ],
       productLink: '/products/sand-washing-plants/mineral-log-washer/',
       productLabel: 'Explore Quartz & Ore Log Washers',
     },
     {
+      slug: 'bulk-material-handling-quarry',
       title: 'Bulk Material Handling & Quarry Logistics',
       icon: Boxes,
       challenge: 'Material rollback, belt slippage, and high idler failure rates under severe outdoor quarry dust loads.',
-      solution: 'IS 11592 compliant troughed belt conveyors with hot vulcanized diamond rubber lagged drive pulleys.',
-      machinery: ['Heavy Troughed Belt Conveyor', 'Diamond Lagged Head Pulley', 'Labyrinth Sealed Idlers'],
+      solution: (
+        <>
+          IS 11592 compliant{' '}
+          <Link href="/products/industrial-conveyors-spares/" className="font-semibold text-[#E10613] hover:underline">
+            troughed belt conveyors
+          </Link>{' '}
+          with hot vulcanized diamond rubber lagged drive pulleys.
+        </>
+      ),
+      machinery: [
+        { label: 'Heavy Troughed Belt Conveyor', href: '/products/industrial-conveyors-spares/belt-conveyors/' },
+        { label: 'Vertical Bucket Elevators', href: '/products/industrial-conveyors-spares/bucket-elevators/' },
+        { label: 'Enclosed Screw Conveyors', href: '/products/industrial-conveyors-spares/screw-conveyors/' },
+      ],
       productLink: '/products/industrial-conveyors-spares/belt-conveyors/',
       productLabel: 'Explore Bulk Conveyors & Spares',
     },
@@ -226,14 +339,24 @@ export default function IndustriesPage() {
                     Recommended Equipment:
                   </span>
                   <div className="flex flex-wrap gap-1.5 mb-3">
-                    {sec.machinery.map((m) => (
-                      <span
-                        key={m}
-                        className="px-2.5 py-1 rounded-md bg-[#F5F5F7] text-[#111111] text-xs font-medium border border-neutral-200"
-                      >
-                        {m}
-                      </span>
-                    ))}
+                    {sec.machinery.map((m) =>
+                      m.href ? (
+                        <Link
+                          key={m.label}
+                          href={m.href}
+                          className="px-2.5 py-1 rounded-md bg-[#F5F5F7] hover:bg-red-50 text-[#111111] hover:text-[#E10613] text-xs font-medium border border-neutral-200 hover:border-red-200 transition-colors"
+                        >
+                          {m.label}
+                        </Link>
+                      ) : (
+                        <span
+                          key={m.label}
+                          className="px-2.5 py-1 rounded-md bg-[#F5F5F7] text-[#111111] text-xs font-medium border border-neutral-200"
+                        >
+                          {m.label}
+                        </span>
+                      )
+                    )}
                   </div>
 
                   {sec.productLink && (
@@ -246,7 +369,7 @@ export default function IndustriesPage() {
                     </Link>
                   )}
 
-                  <Button href="/request-quote/" variant="outline" size="sm" className="w-full">
+                  <Button href={`/request-quote/?sector=${sec.slug}`} variant="outline" size="sm" className="w-full">
                     Discuss Sector Requirements
                   </Button>
                 </div>
