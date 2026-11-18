@@ -8,7 +8,9 @@
     "build": "next build --webpack",
     "start": "next start",
     "lint": "eslint",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "indexnow": "node scripts/submit-indexnow.mjs",
+    "indexnow:dry-run": "node scripts/submit-indexnow.mjs --dry-run"
   },
   "dependencies": {
     "agentation": "^3.1.2",
